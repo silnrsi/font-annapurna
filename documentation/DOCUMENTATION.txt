@@ -1,0 +1,15 @@
+DOCUMENTATION
+Annapurna SIL
+========================
+
+
+This file describes the documentation files included with the Annapurna SIL
+font. This information should be distributed along with the Annapurna SIL
+font and any derivative works.
+
+AnnapurnaSIL-features.pdf - documents the OpenType and Graphite
+features, many for use in minority languages, in the font.
+
+AnnapurnaSIL-GraphiteFeatures.odt - documents the Graphite features in the
+font. It serves to illustrate the use of Graphite features in OpenOffice 3.2+
+and LibreOffice 4.2+.

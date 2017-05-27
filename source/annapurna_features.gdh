@@ -1,0 +1,200 @@
+/*******************************************************************
+
+	File: annapurna_features.gdh
+	
+	Features for Annapurna font
+	
+	Author: Sharon Correll
+
+*******************************************************************/
+
+#include "stddef.gdh"
+
+#define bool default = ffalse; \
+    settings { \
+        ffalse { \
+            value = 0; \
+            name.1033 = string("False"); \
+        } \
+        ftrue { \
+            value = 1; \
+            name.1033 = string("True"); \
+        } \
+    }
+
+#define boolWDefTrue default = ftrue; \
+    settings { \
+        ftrue { \
+            value = 0; \
+            name.1033 = string("True"); \
+        } \
+        ffalse { \
+            value = 1; \
+            name.1033 = string("False"); \
+        } \
+    }
+
+// Note that the order in which the features are listed below is how they will be presented
+// in the combo-box in WorldPad.
+
+
+table(feature)
+
+jha {
+	id = "jhav";		// 2001, jha variants
+	name.1033 = string("Jha alternates");
+	default = 0;
+	settings {
+		india {
+			value = 0;
+			name.1033 = string("India");
+		}
+		nepal {
+			value = 1;
+			name.1033 = string("Nepal");
+		}
+		newar {
+			value = 2;
+			name.1033 = string("Newar");
+		}
+	}
+}
+
+kra {
+	id = "krav";		// 2002, kra variant
+	name.1033 = string("Kra alternate");
+	bool
+}
+
+tra {
+	id = "trav";		//  2003, tra variant
+	name.1033 = string("Tra alternate");
+	bool
+}
+
+shra {
+	id = "shra";	// 2004
+	name.1033 = string("Shra alternate");
+	bool
+}
+
+dyahya {
+	id = "dyah";	// 2013
+	name.1033 = string("Dya and hya alternates");
+	bool
+}
+
+rya {
+	id = "ryav";
+	name.1033 = string("Rya alternate");
+	bool
+}
+
+ukar {
+	id = "ukar";	// 2005
+	name.1033 = string("Ukar nukta position");
+	default = 0;
+	settings {
+		inside {
+			value = 0;
+			name.1033 = string("Inside");
+		}
+		outside {
+			value = 1;
+			name.1033 = string("Outside");
+		}
+	}
+}
+
+ekar {
+	id = "ekar";	// 2006
+	name.1033 = string("Ekar nukta position");
+	default = 0;
+	settings {
+		high {
+			value = 0;
+			name.1033 = string("Low");
+		}
+		low {
+			value = 1;
+			name.1033 = string("High");
+		}
+	}
+}
+
+digit5 {
+	id = "dig5";	// 2007
+	name.1033 = string("Digit five alternate");
+	bool
+}
+
+digit8 {
+	id = "dig8";	// 2008
+	name.1033 = string("Digit eight alternate");
+	bool
+}
+
+digit9 {
+	id = "dig9";	// 2009
+	name.1033 = string("Digit nine alternate");
+	default = 0;
+	settings {
+		form1 {
+			value = 0;
+			name.1033 = string("Form 1");
+		}
+		form2 {
+			value = 1;
+			name.1033 = string("Form 2");
+		}
+		form3 {
+			value = 2;
+			name.1033 = string("Form 3");
+		}
+	}
+}
+
+visargabar {
+	id = "vbar";	// 2010
+	name.1033 = string("Visarga connecting bar");
+	bool
+}
+
+glottalbar {
+	id = "gbar";	// 2011
+	name.1033 = string("Limbu glottal stop connecting bar");
+	boolWDefTrue
+}
+
+archaic {
+	id = "arch";	// 2012
+	name.1033 = string("Archaic forms");
+	bool
+}
+
+endtable;	// feature
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//
+//	Languages
+//
+
+table(language)
+
+newar {
+	languages = ( "new" );	// Newar
+	jha = newar;
+	digit9 = form3;
+};
+
+nepali {
+	languages = ( "nep" );	// Nepali
+	jha = nepal;
+	digit5 = true;
+	digit8 = true;
+	digit9 = form2;
+};
+
+
+endtable;
