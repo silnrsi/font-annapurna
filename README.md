@@ -4,6 +4,8 @@ Annapurna SIL is a Unicode-based font family with broad support for writing syst
 
 Font sources are published in a public repository and a smith open workflow is used for building, testing and releasing.
 
+## Project status [![Build Status](http://build.palaso.org/app/rest/builds/buildType:Fonts_Annapurna/statusIcon)](http://build.palaso.org/viewType.html?buildTypeId=Fonts_Annapurna&guest=1)
+
 For copyright and licensing - including any Reserved Font Names - see [OFL.txt](OFL.txt).
 
 For practical information about using, modifying and redistributing this font see [OFL-FAQ.txt](OFL-FAQ.txt).
