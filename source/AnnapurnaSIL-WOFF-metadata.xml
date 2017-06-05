@@ -1,101 +1,110 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<metadata version="1.202">
-<uniqueid id="org.sil.fonts.annapurnasil.1.202" />
-<vendor name="SIL International" url="http://software.sil.org" />
-<credits>
-<credit
+<!--
+    AnnapurnaSIL-WOFF-metadata.xml
+
+    This file is part of the Annapurna font family (http://software.sil.org/annapurna/) 
+    and is Copyright (c) 2007-2017 SIL International (http://www.sil.org/), with 
+    Reserved Font Names "Annapurna" and "SIL".
+
+    This Font Software is licensed under the SIL Open Font License, Version 1.1. 
+    You should have received a copy of the license along with this Font Software. 
+    If this is not the case, go to (http://scripts.sil.org/OFL) for all the details 
+    including a FAQ.
+-->
+<metadata version="1.0">
+    <uniqueid id="org.sil.fonts.annapurnasil.1.202" />
+    <vendor name="SIL International" url="http://software.sil.org" />
+    <credits>
+        <credit
             name="Peter Martin"
             url="http://scripts.sil.org/"
             role="Font Designer" />
-<credit
+        <credit
             name="Jonathan Coblentz"
             url="http://scripts.sil.org/"
             role="OpenType, Graphite and TypeTuner code and build support" />
-</credits>
-<credit
+        <credit
             name="Sharon Correll"
             url="http://scripts.sil.org/"
             role="Graphite code" />
-</credits>
-<description>
-<text lang="en">
-        Annapurna SIL is a Unicode typeface family designed to enable the many 
-        diverse ethnic groups in South Asia who use the Devanagari scripts to 
-        produce readable, high-quality publications. The design is intended to 
-        be highly readable, reasonably compact, and visually attractive. It 
-        comes with regular and bold face only.
-        
-
-        The goal for this product is to provide a single Unicode-based font 
-        family that contains a comprehensive inventory of glyphs needed for 
-        almost any Devanagari-based writing system, whether used for phonetic or 
-        orthographic needs. The fonts makes use of state-of-the-art OpenType® 
-        and Graphite font technologies to provide accurate typography, such as 
-        the need to accurately position combining marks, form conjuncts and 
-        provide Graphite features and OpenType Stylistic Sets for variant 
-        glyphs.
-
-
-        Two fonts from this typeface family are included in this release:
-
-             * Annapurna SIL Regular
-             * Annapurna SIL Bold
-
-        For detailed documentation see the contents of the 'documentation' folder.
-
-        ChangeLog
-        ---------
-        (This should list both major and minor changes, most recent first.)
-        
-        10 February 2017 (SIL NRSI team)  Annapurna SIL version 1.202
-        - Fixed Graphite where reph was skipping the aakar after the ya
-        - Used TTFautohint for hinting which solved disappearing candrabindu in Bold
-
-        01 August 2016 (SIL NRSI team)  Annapurna SIL version 1.201
-        - Fixed Graphite (reordering) issue when reph and ikar are in a cluster
-        - Fixed Graphite issue related to TypeTuner fonts
-        
-        31 March 2015 (SIL NRSI team)  Annapurna SIL version 1.200
-        - Added glyph U+0978 from the Devanagari block
-        - Added half forms of all the consonant-rakar conjuncts
-        - Fixed a near collision between Ha-Nukta and the uukar
-        - Fixed many collisions of ekar/aikar over ra with a preceding upper mark
-        - Fixed advance width on some half form glyphs
-        - Hinting was done to enhance the on-screen rendering
-        - Added Ra with open-Ya ligatures used in some Nepali publications (a graphite
-          feature and for OpenType, in a TypeTuned font only)
-        
-        25 October 2012 (SIL NRSI team)  Annapurna SIL version 1.100
-        - Added glyphs (with OpenType and Graphite support) from the Devanagari block
-          *0900, 093A..093B, 094E..094F, 0955..0957, 0973..0977, 0979..097A
-        - Added glyphs from the Devanagari Extended block
-          *A8E0..A8FB
-        - Added glyphs from the North Indic Number Forms block
-          *A830..A839
-        - U+dot (and UU+dot) is now attached under the Ra instead of the ligature version
-        - Graphite feature IDs are now all four-character tags per CSS requirements
-        - Minor bug fixes
-        
-        12 July 2011 (SIL NRSI team)  Annapurna SIL version 1.001
-        - Added ligature glyphs and smart code support for minority languages
-          * 0930 with 0941 and 093C
-          * 0931 with 0941
-          * 0931 with 0941 and 093C
-          * 0930 with 0942 and 093C
-          * 0931 with 0942
-          * 0931 with 0942 and 093C
-        - Fixed design bug in Bold font. The long I with nasal dot had a missing dot
-        - Minor tweaks by adjusting attachment points and hinting parameters
-        - Numerous bug fixes in Graphite
-        
-        31 Dec 2010 (SIL NRSI team)  Annapurna SIL version 1.0.0.0 (Version 1.000)
-        - First version released under the SIL Open Font License
-</text>
-</description>
-<license url="http://scripts.sil.org/OFL"
+    </credits>
+    <description>
+        <text lang="en">
+            Annapurna SIL is a Unicode typeface family designed to enable the many 
+            diverse ethnic groups in South Asia who use the Devanagari scripts to 
+            produce readable, high-quality publications. The design is intended to 
+            be highly readable, reasonably compact, and visually attractive. It 
+            comes with regular and bold face only.
+    
+            The goal for this product is to provide a single Unicode-based font 
+            family that contains a comprehensive inventory of glyphs needed for 
+            almost any Devanagari-based writing system, whether used for phonetic or 
+            orthographic needs. The fonts makes use of state-of-the-art OpenType® 
+            and Graphite font technologies to provide accurate typography, such as 
+            the need to accurately position combining marks, form conjuncts and 
+            provide Graphite features and OpenType Stylistic Sets for variant 
+            glyphs.
+    
+            Two fonts from this typeface family are included in this release:
+    
+                 * Annapurna SIL Regular
+                 * Annapurna SIL Bold
+    
+            For detailed documentation see the contents of the 'documentation' folder.
+    
+            ChangeLog
+            ---------
+            (This should list both major and minor changes, most recent first.)
+            
+            10 February 2017 (SIL NRSI team)  Annapurna SIL version 1.202
+            - Fixed Graphite where reph was skipping the aakar after the ya
+            - Used TTFautohint for hinting which solved disappearing candrabindu in Bold
+    
+            01 August 2016 (SIL NRSI team)  Annapurna SIL version 1.201
+            - Fixed Graphite (reordering) issue when reph and ikar are in a cluster
+            - Fixed Graphite issue related to TypeTuner fonts
+            
+            31 March 2015 (SIL NRSI team)  Annapurna SIL version 1.200
+            - Added glyph U+0978 from the Devanagari block
+            - Added half forms of all the consonant-rakar conjuncts
+            - Fixed a near collision between Ha-Nukta and the uukar
+            - Fixed many collisions of ekar/aikar over ra with a preceding upper mark
+            - Fixed advance width on some half form glyphs
+            - Hinting was done to enhance the on-screen rendering
+            - Added Ra with open-Ya ligatures used in some Nepali publications (a graphite
+              feature and for OpenType, in a TypeTuned font only)
+            
+            25 October 2012 (SIL NRSI team)  Annapurna SIL version 1.100
+            - Added glyphs (with OpenType and Graphite support) from the Devanagari block
+              *0900, 093A..093B, 094E..094F, 0955..0957, 0973..0977, 0979..097A
+            - Added glyphs from the Devanagari Extended block
+              *A8E0..A8FB
+            - Added glyphs from the North Indic Number Forms block
+              *A830..A839
+            - U+dot (and UU+dot) is now attached under the Ra instead of the ligature version
+            - Graphite feature IDs are now all four-character tags per CSS requirements
+            - Minor bug fixes
+            
+            12 July 2011 (SIL NRSI team)  Annapurna SIL version 1.001
+            - Added ligature glyphs and smart code support for minority languages
+              * 0930 with 0941 and 093C
+              * 0931 with 0941
+              * 0931 with 0941 and 093C
+              * 0930 with 0942 and 093C
+              * 0931 with 0942
+              * 0931 with 0942 and 093C
+            - Fixed design bug in Bold font. The long I with nasal dot had a missing dot
+            - Minor tweaks by adjusting attachment points and hinting parameters
+            - Numerous bug fixes in Graphite
+            
+            31 Dec 2010 (SIL NRSI team)  Annapurna SIL version 1.0.0.0 (Version 1.000)
+            - First version released under the SIL Open Font License
+        </text>
+    </description>
+    <license url="http://scripts.sil.org/OFL"
              id="org.sil.ofl.1.1">
-<text lang="en">
-            Copyright (c) 2003-2016 SIL International (http://www.sil.org/),
+        <text lang="en">
+            Copyright (c) 2007-2016 SIL International (http://www.sil.org/),
             with Reserved Font Names "Annapurna" and "SIL".
 
             This Font Software is licensed under the SIL Open Font License, Version 1.1.
@@ -189,12 +198,12 @@
             DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
             FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
             OTHER DEALINGS IN THE FONT SOFTWARE.
-</text>
-</license>
-<copyright>
-<text lang="en">Copyright (c) 2007-2016 SIL International (http://www.sil.org/)</text>
-</copyright>
-<trademark>
-<text lang="en">Annapurna SIL is a trademark of SIL International</text>
-</trademark>
+        </text>
+    </license>
+    <copyright>
+        <text lang="en">Copyright (c) 2007-2016 SIL International (http://www.sil.org/)</text>
+    </copyright>
+    <trademark>
+        <text lang="en">Annapurna SIL is a trademark of SIL International</text>
+    </trademark>
 </metadata>
