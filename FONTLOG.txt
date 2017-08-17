@@ -11,8 +11,8 @@ any derivative works.
 Basic Font Information
 ----------------------
 
-Annapurna SIL is a TrueType font with “smart font” capabilities added using 
-OpenType® and Graphite font technologies. This means that complex typographic 
+Annapurna SIL is a TrueType font with smart font capabilities added using 
+state-of-the-art font technologies. This means that complex typographic 
 issues such as the placement of combining marks or the formation of ligatures 
 are handled by the font, provided you are running an application that provides 
 an adequate level of support for one of these smart font technologies.
