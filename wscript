@@ -17,8 +17,8 @@ VCS = 'git'
 
 # set the font name, version, licensing and description
 APPNAME = 'AnnapurnaSIL'
-VERSION = '1.202'
-TTF_VERSION = '1.202'
+VERSION = '1.203'
+TTF_VERSION = '1.203'
 #BUILDLABEL = "alpha1"
 COPYRIGHT = 'Copyright (c) 2017 SIL International(http://www.sil.org) with Reserved Font Names Annapurna and SIL"'
 LICENSE = "OFL.txt"
