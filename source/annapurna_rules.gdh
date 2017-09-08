@@ -748,6 +748,10 @@ pass(PASS_MARKSYL)	// 2
 	//	Recognize and mark conjuncts.
 	//	NOTE: These rules must match those below that actually form the conjuncts.
 	//	TODO: figure out if we really need to distinguish between F_CONJ1 and F_HALF.
+
+	//	Sept 2017: Note that in many of the rules below, the inclusion of g_halant in the base of the rule
+	//	instead of only in the context is a workaround for a bug in the Graphite engine (which is
+	//	in the process of being fixed).
 	
 	g0915 {form = F_CONJ1}  g_nukta?  g_halant  cls_0915_2ndhalf  /  _  _  _ ^ _;
 	g0919 {form = F_CONJ1}  g_nukta?  g_halant  cls_0919_2ndhalf  /  _  _  _ ^ _;
@@ -765,35 +769,35 @@ pass(PASS_MARKSYL)	// 2
 	cls_1sthalf_0932_nom {form = F_CONJ1}  g_nukta?  g_halant  g0932  /  _  _  _ ^ _;
 	
 	//  Rakar conjuncts with halants
-	cls_woRakarHalant {form = F_CONJ1}  g_ra {form = F_HALCONS; raform = R_RAKAR}  /  _=C  g_nukta?  g_halant _=R  g_halant;
+	cls_woRakarHalant {form = F_CONJ1}  g_ra {form = F_HALCONS; raform = R_RAKAR}  g_halant /  _=C  g_nukta?  _=H  _=R  g_halant;
 
 	//	Rakar conjuncts (note that cls_woRakar includes forms with nuktas attached, but this rule
 	//	just won't recognize them).
-	cls_woRakar {form = F_CONJ1}  g_ra  /  _=C  g_nukta?  g_halant ^ _=R;
+	cls_woRakar {form = F_CONJ1}  g_halant  g_ra  /  _=C  g_nukta?  _=H ^ _=R;
 	
 	//	Three-way conjuncts:
 	g0915 {form = F_CONJ1}  g_halant  g0937 {form = F_CONJ1}  g_halant  g_ra  /  _  _  _  _ ^ _;
 	g091c {form = F_CONJ1}  g_halant  g091e {form = F_CONJ1}  g_halant  g_ra  /  _  _  _  _ ^ _;
 	
 	//	ZWNJ forces an explicit halant:
-	cls_consNom {form = F_HALANT}  /  _  g_nukta?  g_halant  g_zwnj ^;
+	cls_consNom {form = F_HALANT}  g_halant  /  _  g_nukta?  _=H  g_zwnj ^;
 	
 	//	Exception to the "look-like-halant" rule below: a YA has a form that "connects"
 	//	with the previous consonant, even if it would normally use an explicit halant.
-	cls_hasExplicitHalant {form = F_NOHALANT}  /    _  g_nukta?  g_halant ^ g_zwj?  cls_lowerMark?  cls_openBack;
+	cls_hasExplicitHalant {form = F_NOHALANT}  g_halant  /    _  g_nukta?  _=H ^ g_zwj?  cls_lowerMark?  cls_openBack;
 	
-	//	These are half-forms that "look like" they have an explicit halant, so make them
+	//	These produce half-forms that "look like" they have an explicit halant, so make them
 	//	behave that way.
-	cls_hasExplicitHalant {form = F_HALCONS}  /  _  g_nukta?  g_halant ^ g_zwj?  cls_lowerMark?  cls_consNom;
+	cls_hasExplicitHalant {form = F_HALCONS}  g_halant  /  _  g_nukta?  _=H ^ g_zwj?  cls_lowerMark?  cls_consNom;
 
 	//	These have true half-forms:
-	cls_nHalf {form = F_HALF}  /  _  g_nukta?  g_halant ^ g_zwj?  cls_lowerMark?  cls_consNom;
+	cls_nHalf {form = F_HALF}  g_halant  /  _  g_nukta?  _=H ^ g_zwj?  cls_lowerMark?  cls_consNom;
 	
 	//	ZWJ forces a half-form:
-	cls_nHalf {form = F_HALF}  /  _  g_nukta?  g_halant  g_zwj ^;
+	cls_nHalf {form = F_HALF}  g_halant  /  _  g_nukta?  _=H  g_zwj ^;
 	
 	//	Default to halant form if there is a halant.
-	cls_consNom {form = F_HALANT}  /  _  g_nukta?  g_halant ^;
+	cls_consNom {form = F_HALANT}  g_halant  /  _  g_nukta?  _=H ^;
 	
 	//	No halant--just a standard live consonant.
 	cls_consNom {form = F_LIVE}  /  _  g_nukta? ^;
