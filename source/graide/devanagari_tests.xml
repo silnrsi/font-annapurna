@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Testing.xsl"?>
+<ftml version="1.0">
+  <head>
+    <columns comment="30%" label="15%" string="50%" style="5%"/>
+    <fontsrc>url(AnnapurnaSIL-R GR.ttf)</fontsrc>
+    <styles>
+      <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jha=0 kra=0 ruuv=0 shra=0 tra=0 ukar=0 vbar=0" name="fset1"/>
+      <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset2"/>
+      <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset3"/>
+      <style feats="krav=1 shra=1 trav=1" name="fset4"/>
+      <style feats="dyah=1" name="fset5"/>
+      <style feats="ryav=1" name="fset6"/>
+      <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 ryav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset7"/>
+      <style feats="jhav=1" name="fset8"/>
+    </styles>
+  </head>
+  <testgroup label="main">
+    <test class="fset6" label="temp">
+      <string>र+  ्  + ष +  ् + ठ + ि </string>
+    </test>
+    <test class="fset2" label="halant + ikar">
+      <string>छ्घि</string>
+    </test>
+    <test class="fset1" label="whatever">
+      <string>ॕ ॅ ॅ़ ँ ट़्</string>
+    </test>
+    <test background="#ffff7f" class="fset2" label="double reph">
+      <comment>needs a reph on top of a ra+ halant</comment>
+      <string>र्र्क</string>
+    </test>
+    <test background="#ffff7f" class="fset1" label="reph bug">
+      <string>र्द्रत</string>
+    </test>
+    <test background="#ffff7f" class="fset2" label="ra reordering">
+      <string>द्रत | र्दत</string>
+    </test>
+    <test class="fset2" label="graphite1 bug">
+      <string>ङ्र छ्र ऴ्र</string>
+    </test>
+    <test class="fset3" label="marwari dda">
+      <string>ॸँ ॸै ॸु</string>
+    </test>
+    <test class="fset3" label="dda + ra">
+      <string>ॸ्र</string>
+    </test>
+    <test class="fset2" label="rakar half forms">
+      <string>क्र्ख न्र्क ॿ्र्ग घ्र्ख</string>
+    </test>
+    <test class="fset2" label="rakar half forms w/ nukta">
+      <string>घ़्र्क ॼ़्र्क</string>
+    </test>
+    <test class="fset2" label="rakar half forms w/ nukta 2">
+      <string>क़्र्क ग़्र्क</string>
+    </test>
+    <test class="fset4" label="rakar half forms - alts">
+      <string>क़्र्क त्र्क श्र्क </string>
+    </test>
+    <test class="fset2" label="rakar conjuncts">
+      <string>क्ष्र्क ज्ञ्र्क</string>
+    </test>
+    <test class="fset2" label="rakar halant">
+      <string>ह्र्घ ह़्र्घ</string>
+    </test>
+    <test class="fset2" label="rakar halant 0952">
+      <string>ह्र्॒क ह़्र्॒क</string>
+    </test>
+    <test class="fset2" label="rakar half forms + ikar">
+      <string>क्र्पि झ्र्पि़</string>
+    </test>
+    <test class="fset2" label="rakar halant + ikar">
+      <string>ह्र्घि छ्र्घि</string>
+    </test>
+    <test class="fset2" label="ya rakar half-form">
+      <string>य्र्क य़्र्क य़्र्क </string>
+    </test>
+    <test class="fset2" label="ya rakar conjuncts">
+      <string>ङ्य्र्घ छ्य्र्घ ट्य्र्घ ठ्य्र्घ ड्य़्र्घ ढ्य़्र्ङ द्य्र्ग ह्य़्र्ग</string>
+    </test>
+    <test class="fset2" label="ya rakar 2">
+      <string>द्य्र्ग ह्य्र्ढ</string>
+    </test>
+    <test class="fset5" label="alt dya rakar half-form">
+      <string>ङ्य्र्च छ्य़्र्क द्य़्र्च</string>
+    </test>
+    <test class="fset3" label="eyelash rra">
+      <string>ऱ्ग</string>
+    </test>
+    <test class="fset2" label="rra halant ZWJ cons">
+      <string>ऱ्‍क</string>
+    </test>
+    <test class="fset2" label="ra halant ZWJ cons etc">
+      <string>र्‍क ऱ्‍क ऱ्‍क ऱ्क</string>
+    </test>
+    <test class="fset2" label="rra halant cons">
+      <string>ऱ्क</string>
+    </test>
+    <test class="fset2" label="HaNuktaMatraUU collision">
+      <string>ह़ू</string>
+    </test>
+    <test class="fset2" label="candra + ra + II">
+      <string>ाँऱै ाॅरे ऻँंऱे ौँंऱे</string>
+    </test>
+    <test class="fset2" label="candra + ra + II   2">
+      <string>ो़ऱै र्सोंरै</string>
+    </test>
+    <test class="fset2" label="candra + ra + II   3">
+      <string>र्सॆऱै व्सॆरै</string>
+    </test>
+    <test class="fset2" label="candra + ra + II   4">
+      <string>टँऱै</string>
+    </test>
+    <test class="fset2" label="candra + ra + II   5">
+      <string/>
+    </test>
+    <test class="fset2" label="candra + ra + II   6">
+      <string>ॉऱै</string>
+    </test>
+    <test background="#ffff7f" class="fset2" label="reph + candrabindu">
+      <string>र्ख्ँ</string>
+    </test>
+    <test background="#ffff7f" class="fset2" label="reph in large syllables">
+      <string>र्ङ्धि र्ध्कि</string>
+    </test>
+    <test class="fset2" label="2nd-half-key conjuncts">
+      <string>त्त प्त म्ल ल्ल</string>
+    </test>
+    <test class="fset2" label="reph + half-form + rakar">
+      <string>र्य्र्क र्क्र्क र्झ्र्ख</string>
+    </test>
+    <test class="fset2" label="reph + cons + zwj + cons">
+      <string>तिर्क्‍ता</string>
+    </test>
+    <test class="fset2" label="vowels + candrabindu">
+      <string>तीँ कैँ तॉँ केँ</string>
+    </test>
+    <test class="fset2" label="vowels + anusvara">
+      <string>तीं कैं</string>
+    </test>
+    <test class="fset2" label="ikar + anusvara">
+      <string>भिं</string>
+    </test>
+    <test class="fset2" label="dya">
+      <string>द्य द्य्‍ द्य़ द्य़्‍ द्य्र द्य़्र</string>
+    </test>
+    <test class="fset5" label="dya - alt">
+      <string>द्य द्य्‍ द्य़ द्य़्‍ द्य्र द्य़्र</string>
+    </test>
+    <test class="fset2" label="hya">
+      <string>ह्य ह्य्‍ ह्य़ ह्य़्‍ ह्य्र ह्य़्र</string>
+    </test>
+    <test class="fset5" label="hya - alt">
+      <string>ह्य ह्य्‍ ह्य़ ह्य़्‍ ह्य्र ह्य़्र</string>
+    </test>
+    <test background="#ffff7f" class="fset2" label="ra + cons + cons, cons + vowel-mark">
+      <string>र्स्कने</string>
+    </test>
+    <test class="fset6" label="rya alternate">
+      <string>र्‌य र्‌य़ र्‌य् र्‌य़् र्‌य्र र्‌य़्र</string>
+    </test>
+    <test label="ra + conj + II">
+      <string>र्ष्ठि</string>
+    </test>
+    <test class="fset7" label="half form + ikar">
+      <string>र्घ्ति</string>
+    </test>
+    <test class="fset7" label="cons+rakar+halant+ikar">
+      <string>क्र्ि</string>
+    </test>
+    <test class="fset8" label="jha alternate">
+      <string>झि</string>
+    </test>
+    <test class="fset7" label="candra + ikar">
+      <string>पँरै डाँरै</string>
+    </test>
+    <test class="fset7" label="reph + halant +  II">
+      <string>र्ढ्ठि</string>
+    </test>
+    <test background="#ffff7f" class="fset7" label="don't move ra/reph twice">
+      <string>कर्ल्याक्पा कर्ल्यक्पा कर्ल्युक्पा कर्ल्युक</string>
+    </test>
+    <test class="fset7" label="bug Sept 5 2017">
+      <string>त्र स्त्र स्त्र</string>
+    </test>
+    <test background="#ffff7f" class="fset7" label="4-cons cluster">
+      <string>पर्क्स् पर्क्स्म पर्क्स्मा</string>
+    </test>
+    <test background="#ffff7f" class="fset7" label="5-cons cluster">
+      <string>पर्क्स्त्र पर्क्स्त्रा</string>
+    </test>
+  </testgroup>
+  <testgroup label="tutorial">
+    <test class="fset2" label="(1) matra-II widths">
+      <string>धी ञी ङी छी की फी</string>
+    </test>
+    <test class="fset2" label="(2) merge nukta">
+      <string>ध़ ञ़ ङ़ छ़ क़ फ़ ी़</string>
+    </test>
+    <test class="fset2" label="(2a) matra-II with nukta">
+      <string>फ़ी़</string>
+    </test>
+    <test class="fset2" label="(3) half-forms">
+      <string>ध्ध ञ्ध ङ्ध छ्ध क्ध फ्ध</string>
+    </test>
+    <test class="fset2" label="(3a) half-forms with nuktas">
+      <string>ध़्ध ञ़्ध क़्ध फ़्ध</string>
+    </test>
+    <test class="fset2" label="(5) matra-I reordering">
+      <string>धि ञि ङि छि कि फि</string>
+    </test>
+    <test class="fset2" label="(5a/b) matra-I w/ half-form">
+      <string>ध़्धि ञ़्धि़ क़्धि फ़्धि़</string>
+    </test>
+    <test class="fset2" label="(5c) matra-I w/ halant">
+      <string>ङ्धि छ्धि </string>
+    </test>
+    <test class="fset2" label="(6) reph">
+      <string>र्क र्ध़</string>
+    </test>
+    <test class="fset2" label="(6a) reph w/ half-form and matra-I">
+      <string>र्क़्छि</string>
+    </test>
+  </testgroup>
+</ftml>

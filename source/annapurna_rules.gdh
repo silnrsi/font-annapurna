@@ -39,8 +39,9 @@ Bidi = false;
 #define raform user2
 #define R_NOMINAL	0
 #define R_REPH		1
-#define R_RAKAR		2
-#define R_EYELASH	3
+#define R_REPH_P	2	// final position is pending
+#define R_RAKAR		3
+#define R_EYELASH	4
 
 #define attached user3  // has attachment been performed on this glyph?
 
@@ -818,25 +819,37 @@ pass(PASS_RA)	// 3
 	//	If RA+virama is to be applied to a dead consonant, then the mark is positioned after
 	//	the whole cluster (cluster may be conjunct or half-form-plus-base) and it uses the
 	//	reph (superscript) form.
+
+	//	Cons pair (first cons is conjunct or half-form)
 	//	Don't apply this rule if the RA has already been moved (raform == REPH).
 	//	Reprocess the cons-cons sequence in case it also involves a RA.
 	g_ra  g_halant  _  _  >  _  _  @Rd {raform = R_REPH}  @H
-		/  _=Rd {raform != R_REPH} /*dead, !rakar*/  _=H
-			^  cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT}  g_nukta?  g_halant  g_zwj?
+		/  _=Rd {raform != R_REPH} /* dead, !rakar */  _=H
+			^  
+			cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT}  g_nukta?  g_halant  g_zwj?
 			[g_ra { form == F_HALF }  g_halant]? // rakar
 			cls_consNom {form == F_LIVE}  g_nukta?
 			[cls_vowelRight g_nukta?]?
 			_  _;
+
+	//	Reph is before halant form - move reph after and mark its final position as still pending (R_REPH_P).
+	//	Create a chain in order to continue to move it past dead forms.
+	g_ra  g_halant  _  _  >  _  _  @R {raform = R_REPH_P}  @H
+		/  _=R {raform != R_RAKAR && raform != R_REPH} /* dead but movable */  _=H
+			cls_consNom {F_HALCONS <= form || form <= F_HALANT}  g_nukta?  g_halant?
+			^  _  _;
 		
-	//	Otherwise, if a dead RA precedes a (plain live) consonant or halant form, it is
-	//	replaced by the reph (superscript) form and reordered to be after the last element.
+	//	When we hit a "live" consonant, the reph has found its final place.
 	//	Note that if the RA is *already* marked as a reph, it belongs with the previous syllable,
 	//	not the following one.
 	g_ra  g_halant  _  _  >  _  _  @Rd {raform = R_REPH}  @H
-		/  _=Rd {raform != R_RAKAR && raform != R_REPH} /*- dead*/  _=H
-			cls_consNom {F_LIVE <= form || form <= F_HALANT}  g_nukta?  g_halant?
+		/  _=Rd {raform != R_RAKAR && raform != R_REPH} /* dead */  _=H
+			cls_consNom {F_LIVE == form}  g_nukta?  g_halant?
 			[cls_vowelRight g_nukta?]?
 			_  _ ;
+
+	//	Can't move the reph any further (we hit a vowel, diacritic, space, etc.).
+	g_ra  g_halant  >  @R {raform = R_REPH}  @H  /  _=R {raform == R_REPH_P}  _=H;
 
 	//	According to the Unicode Standard, page 304, two RAs get reordered:
 	g_ra  g_halant  g_ra  >  @R2  @R1 {raform = R_REPH}  @H
