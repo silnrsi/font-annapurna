@@ -1,0 +1,23 @@
+﻿ra - reph - eyelash forms
+र्क	single RA halant 
+र्र्क	double RA halant 
+र्र्‍क	double RA halant ZWJ
+र्र्‌क	double RA halant ZWNJ
+
+पर्कि	single RA halant cons matra-I
+पर्र्कि	double RA halant cons matra-I
+पर्र्‍कि	double RA halant ZWJ cons matra-I
+पर्र्‌कि	double RA halant ZWNJ cons matra-I
+
+र्य	single RA halant YA
+र्‍य	single RA halant ZWJ YA
+र्र्य	double RA halant YA
+र्र्या 	double RA halant YAA
+
+ऱ्क	RA-nukta (U+0931) halant
+ऱ्‍क	RA-nukta halant ZWJ
+ऱ्‌क	RA-nukta halant ZWNJ
+
+ऱ्क	RA+nukta (U+0930 U+093C) halant
+ऱ्‍क	RA+nukta halant ZWJ
+ऱ्‌क	RA+nukta halant ZWNJ
