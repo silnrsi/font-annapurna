@@ -25,9 +25,12 @@
     <test class="fset1" label="whatever">
       <string>ॕ ॅ ॅ़ ँ ट़्</string>
     </test>
-    <test background="#ffff7f" class="fset2" label="double reph">
+    <test background="#ffff7f" class="fset2" label="double RA halant">
       <comment>needs a reph on top of a ra+ halant</comment>
       <string>र्र्क</string>
+    </test>
+    <test class="fset7" label="double RA halant ZWJ">
+      <string>र्र्‍क</string>
     </test>
     <test background="#ffff7f" class="fset1" label="reph bug">
       <string>र्द्रत</string>
@@ -173,8 +176,8 @@
     <test class="fset7" label="candra + ikar">
       <string>पँरै डाँरै</string>
     </test>
-    <test class="fset7" label="reph + halant +  II">
-      <string>र्ढ्ठि</string>
+    <test background="#ffff7f" class="fset7" label="reph + halant +  I">
+      <string>र्ढ्ठि र्ढ्ढ्ठि</string>
     </test>
     <test background="#ffff7f" class="fset7" label="don't move ra/reph twice">
       <string>कर्ल्याक्पा कर्ल्यक्पा कर्ल्युक्पा कर्ल्युक</string>
@@ -187,6 +190,21 @@
     </test>
     <test background="#ffff7f" class="fset7" label="5-cons cluster">
       <string>पर्क्स्त्र पर्क्स्त्रा</string>
+    </test>
+    <test background="#ffff7f" class="fset7" label="stop when no halant">
+      <string>र्ककक</string>
+    </test>
+    <test class="fset7" label="cursor bug">
+      <string>र्का</string>
+    </test>
+    <test class="fset7" label="overprinting">
+      <string>र्गा र्गि</string>
+    </test>
+    <test class="fset7" label="double RA halant YAA">
+      <string>र्र्य र्र्या</string>
+    </test>
+    <test background="#ffff7f" class="fset7" label="reph + half + cons + ra + ra">
+      <string>र्क्परर</string>
     </test>
   </testgroup>
   <testgroup label="tutorial">

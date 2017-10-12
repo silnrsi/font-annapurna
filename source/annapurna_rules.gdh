@@ -839,14 +839,20 @@ pass(PASS_RA)	// 3
 			[cls_vowelRight g_nukta?]?
 			_  _;
 
-	//	Reph is before halant or half form - move reph after and mark its final position as still pending (R_REPH_P).
+	//	Reph is before half form - move reph after and mark its final position as still pending (R_REPH_P).
 	//	Create a chain in order to continue to move it past any more dead forms.
 	g_ra  g_halant  _  _  >  _  _  @R {raform = R_REPH_P}  @H
 		/  _=R {raform != R_RAKAR && raform != R_REPH} /* dead but movable */  _=H
-			cls_consNom {F_HALCONS <= form && form <= F_HALF}  g_nukta?  g_halant?
+			cls_consNom {form == F_HALF}  g_nukta?  g_halant?
 			^  _  _;
 		
-	//	When we hit a "live" consonant, the reph has found its final place.
+	//	Reph is before halant form - move reph after and mark its final position as final (R_REPH).
+	g_ra  g_halant  _  _  >  _  _  @R {raform = R_REPH}  @H
+		/  _=R {raform != R_RAKAR && raform != R_REPH} /* dead but movable */  _=H
+			cls_consNom {F_HALCONS <= form && form <= F_HALANT}  g_nukta?  g_halant?
+			^  _  _;
+		
+	//	When we hit a "live" consonant, the reph has found its final place; mark it R_REPH.
 	//	Note that if the RA is *already* marked as a reph, it belongs with the previous syllable,
 	//	not the following one.
 	g_ra  g_halant  _  _  >  _  _  @Rd {raform = R_REPH}  @H
@@ -860,7 +866,7 @@ pass(PASS_RA)	// 3
 
 	//	According to the Unicode Standard, page 304, two RAs get reordered:
 	g_ra  g_halant  g_ra  >  @R2  @R1 {raform = R_REPH}  @H
-		/  _=R1 /*dead*/  _=H  _=R2 /*live*/;
+		/  _=R1 /*dead*/ {raform == R_NOMINAL}  _=H  _=R2 /*live*/;
 		
 	//	This is an odd sequence, but Steve Smith says it's the way fonts seem to work.
 	g_rra  g_ra {raform = R_RAKAR}  /  _ /*dead*/  g_halant  _ {form == F_LIVE};
@@ -880,11 +886,13 @@ pass(PASS_RA)	// 3
 		/  _=Cd /*dead*/  _  _  _=Rd {form == F_HALF}  _ ;
 
 
-	//	When a dead consonant (other than RA--see rule above) precedes a live RA, then the
+	//	When a dead consonant (other than RA) precedes a live RA, then the
 	//	consonant is replaced with its nominal form and RA is given the rakar (subscript) form.
 	//	No reordering happens. Eventually the halant will be deleted, but not yet.
+	g_ra           g_ra  >  @Cd                   @Rl
+		/  _=Cd /*dead*/   g_nukta?  g_halant  _=Rl {form == F_LIVE};
 	cls_consNom    g_ra  >  @Cd {form = F_CONJ1}  @Rl {raform = R_RAKAR}
-		/  _=Cd /*dead*/  g_nukta?  g_halant  _=Rl {form == F_LIVE};
+		/  _=Cd /*dead*/   g_nukta?  g_halant  _=Rl {form == F_LIVE};
 	
 	//	Use rakar otherwise. Back up and possibly process the RA further.
 	//	For a rakar conjunct, the deadness of the rakar remains to possibly permit a further
