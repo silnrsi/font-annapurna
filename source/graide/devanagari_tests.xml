@@ -8,7 +8,6 @@
       <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jha=0 kra=0 ruuv=0 shra=0 tra=0 ukar=0 vbar=0" name="fset1"/>
       <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset2"/>
       <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset3"/>
-      <style feats="krav=1 shra=1 trav=1" name="fset4"/>
       <style feats="dyah=1" name="fset5"/>
       <style feats="ryav=1" name="fset6"/>
       <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 ryav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset7"/>
@@ -25,18 +24,8 @@
     <test class="fset1" label="whatever">
       <string>ॕ ॅ ॅ़ ँ ट़्</string>
     </test>
-    <test background="#ffff7f" class="fset2" label="double RA halant">
-      <comment>needs a reph on top of a ra+ halant</comment>
-      <string>र्र्क</string>
-    </test>
-    <test class="fset7" label="double RA halant ZWJ">
-      <string>र्र्‍क</string>
-    </test>
     <test background="#ffff7f" class="fset1" label="reph bug">
       <string>र्द्रत</string>
-    </test>
-    <test background="#ffff7f" class="fset2" label="ra reordering">
-      <string>द्रत | र्दत</string>
     </test>
     <test class="fset2" label="graphite1 bug">
       <string>ङ्र छ्र ऴ्र</string>
@@ -44,86 +33,32 @@
     <test class="fset3" label="marwari dda">
       <string>ॸँ ॸै ॸु</string>
     </test>
-    <test class="fset3" label="dda + ra">
-      <string>ॸ्र</string>
-    </test>
-    <test class="fset2" label="rakar half forms">
-      <string>क्र्ख न्र्क ॿ्र्ग घ्र्ख</string>
-    </test>
-    <test class="fset2" label="rakar half forms w/ nukta">
-      <string>घ़्र्क ॼ़्र्क</string>
-    </test>
-    <test class="fset2" label="rakar half forms w/ nukta 2">
-      <string>क़्र्क ग़्र्क</string>
-    </test>
-    <test class="fset4" label="rakar half forms - alts">
-      <string>क़्र्क त्र्क श्र्क </string>
-    </test>
-    <test class="fset2" label="rakar conjuncts">
-      <string>क्ष्र्क ज्ञ्र्क</string>
-    </test>
-    <test class="fset2" label="rakar halant">
-      <string>ह्र्घ ह़्र्घ</string>
-    </test>
-    <test class="fset2" label="rakar halant 0952">
-      <string>ह्र्॒क ह़्र्॒क</string>
-    </test>
-    <test class="fset2" label="rakar half forms + ikar">
-      <string>क्र्पि झ्र्पि़</string>
-    </test>
-    <test class="fset2" label="rakar halant + ikar">
-      <string>ह्र्घि छ्र्घि</string>
-    </test>
-    <test class="fset2" label="ya rakar half-form">
-      <string>य्र्क य़्र्क य़्र्क </string>
-    </test>
-    <test class="fset2" label="ya rakar conjuncts">
-      <string>ङ्य्र्घ छ्य्र्घ ट्य्र्घ ठ्य्र्घ ड्य़्र्घ ढ्य़्र्ङ द्य्र्ग ह्य़्र्ग</string>
-    </test>
-    <test class="fset2" label="ya rakar 2">
-      <string>द्य्र्ग ह्य्र्ढ</string>
-    </test>
-    <test class="fset5" label="alt dya rakar half-form">
-      <string>ङ्य्र्च छ्य़्र्क द्य़्र्च</string>
-    </test>
-    <test class="fset3" label="eyelash rra">
-      <string>ऱ्ग</string>
-    </test>
-    <test class="fset2" label="rra halant ZWJ cons">
-      <string>ऱ्‍क</string>
-    </test>
-    <test class="fset2" label="ra halant ZWJ cons etc">
-      <string>र्‍क ऱ्‍क ऱ्‍क ऱ्क</string>
-    </test>
-    <test class="fset2" label="rra halant cons">
-      <string>ऱ्क</string>
-    </test>
     <test class="fset2" label="HaNuktaMatraUU collision">
       <string>ह़ू</string>
     </test>
     <test class="fset2" label="candra + ra + II">
-      <string>ाँऱै ाॅरे ऻँंऱे ौँंऱे</string>
-    </test>
-    <test class="fset2" label="candra + ra + II   2">
-      <string>ो़ऱै र्सोंरै</string>
-    </test>
-    <test class="fset2" label="candra + ra + II   3">
-      <string>र्सॆऱै व्सॆरै</string>
+      <string>ाँऱै ाॅरे ऻँंऱे ौँंऱे टँऱै</string>
     </test>
     <test class="fset2" label="candra + ra + II   4">
       <string>टँऱै</string>
     </test>
-    <test class="fset2" label="candra + ra + II   5">
-      <string/>
+    <test class="fset2" label="sign-o + ra + II">
+      <string>ो़ऱै र्सोंरै</string>
     </test>
-    <test class="fset2" label="candra + ra + II   6">
-      <string>ॉऱै</string>
+    <test class="fset2" label="short-e + ra + II">
+      <string>र्सॆऱै व्सॆरै</string>
     </test>
-    <test background="#ffff7f" class="fset2" label="reph + candrabindu">
-      <string>र्ख्ँ</string>
+    <test class="fset7" label="candra + ra + ikar">
+      <string>पँरै डाँऱै</string>
     </test>
-    <test background="#ffff7f" class="fset2" label="reph in large syllables">
-      <string>र्ङ्धि र्ध्कि</string>
+    <test class="fset7" label="anusvara + ra + II">
+      <string>ांऱै तंरै टंऱै कंऱै फंरै</string>
+    </test>
+    <test class="fset7" label="vowel + anusvara + ra + II">
+      <string>अंऱै आंरै इंऱै एंरै कांऱै</string>
+    </test>
+    <test background="#ff0000" class="fset7" label="tall vowel + anusvara + ra + II">
+      <string>ऐंऱै ऄंऱै कींऱै कॉंऱै</string>
     </test>
     <test class="fset2" label="2nd-half-key conjuncts">
       <string>त्त प्त म्ल ल्ल</string>
@@ -155,14 +90,11 @@
     <test class="fset5" label="hya - alt">
       <string>ह्य ह्य्‍ ह्य़ ह्य़्‍ ह्य्र ह्य़्र</string>
     </test>
-    <test background="#ffff7f" class="fset2" label="ra + cons + cons, cons + vowel-mark">
-      <string>र्स्कने</string>
-    </test>
     <test class="fset6" label="rya alternate">
       <string>र्‌य र्‌य़ र्‌य् र्‌य़् र्‌य्र र्‌य़्र</string>
     </test>
-    <test label="ra + conj + II">
-      <string>र्ष्ठि</string>
+    <test background="#ffff7f" class="fset2" label="ra + cons + cons, cons + vowel-mark">
+      <string>र्स्कने</string>
     </test>
     <test class="fset7" label="half form + ikar">
       <string>र्घ्ति</string>
@@ -173,9 +105,6 @@
     <test class="fset8" label="jha alternate">
       <string>झि</string>
     </test>
-    <test class="fset7" label="candra + ikar">
-      <string>पँरै डाँरै</string>
-    </test>
     <test background="#ffff7f" class="fset7" label="reph + halant +  I">
       <string>र्ढ्ठि र्ढ्ढ्ठि</string>
     </test>
@@ -184,15 +113,6 @@
     </test>
     <test class="fset7" label="bug Sept 5 2017">
       <string>त्र स्त्र स्त्र</string>
-    </test>
-    <test background="#ffff7f" class="fset7" label="4-cons cluster">
-      <string>पर्क्स् पर्क्स्म पर्क्स्मा</string>
-    </test>
-    <test background="#ffff7f" class="fset7" label="5-cons cluster">
-      <string>पर्क्स्त्र पर्क्स्त्रा</string>
-    </test>
-    <test background="#ffff7f" class="fset7" label="stop when no halant">
-      <string>र्ककक</string>
     </test>
     <test class="fset7" label="cursor bug">
       <string>र्का</string>
@@ -205,6 +125,135 @@
     </test>
     <test background="#ffff7f" class="fset7" label="reph + half + cons + ra + ra">
       <string>र्क्परर</string>
+    </test>
+  </testgroup>
+  <testgroup label="reph and rakar">
+    <test class="fset7" label="ra + ra + cons">
+      <string>र्र्क</string>
+    </test>
+    <test class="fset7" label="ra + ra + zwj + cons">
+      <string>र्र्‍क</string>
+    </test>
+    <test class="fset7" label="ra + cons + ra, cons">
+      <string>र्द्रत</string>
+    </test>
+    <test class="fset7" label="reph + conj + II">
+      <string>र्ष्ठि</string>
+    </test>
+    <test background="#55aaff" class="fset7" label="RAKAR">
+      <string/>
+    </test>
+    <test class="fset7" label="cons + rakar, cons / cons + reph, cons">
+      <string>द्रत र्दत</string>
+    </test>
+    <test class="fset7" label="rakar half forms">
+      <string>क्र्ख न्र्क ॿ्र्ग घ्र्ख</string>
+    </test>
+    <test class="fset7" label="rakar half forms w/ nukta">
+      <string>घ़्र्क ॼ़्र्क</string>
+    </test>
+    <test class="fset7" label="rakar half forms w/ nukta 2">
+      <string>घ़्र्क ॼ़्र्क</string>
+    </test>
+    <test class="fset7" label="rakar half forms - alts">
+      <string>क़्र्क त्र्क श्र्क </string>
+    </test>
+    <test class="fset7" label="rakar conjuncts">
+      <string>क़्र्क त्र्क श्र्क </string>
+    </test>
+    <test class="fset7" label="rakar halant">
+      <string>ह्र्घ ह़्र्घ</string>
+    </test>
+    <test class="fset7" label="rakar halant 0952">
+      <string>ह्र्॒क ह़्र्॒क</string>
+    </test>
+    <test class="fset7" label="rakar half forms + ikar">
+      <string>क्र्पि झ्र्पि़</string>
+    </test>
+    <test class="fset7" label="rakar halant + ikar">
+      <string>ह्र्घि छ्र्घि</string>
+    </test>
+    <test class="fset7" label="ya rakar half form">
+      <string>य्र्क य़्र्क य़्र्क </string>
+    </test>
+    <test class="fset7" label="ya rakar conjuncts">
+      <string>ङ्य्र्घ छ्य्र्घ ट्य्र्घ ठ्य्र्घ ड्य़्र्घ ढ्य़्र्ङ द्य्र्ग ह्य़्र्ग</string>
+    </test>
+    <test class="fset7" label="ya rakar conjuncts">
+      <string>द्य्र्ग ह्य्र्ढ</string>
+    </test>
+    <test class="fset7" label="alt-dya rakar half form">
+      <string>ङ्य्र्च छ्य़्र्क द्य़्र्च</string>
+    </test>
+    <test class="fset7" label="dda + rakar">
+      <string>ॸ्र</string>
+    </test>
+    <test background="#55aaff" class="fset7" label="RA + HALANT">
+      <string/>
+    </test>
+    <test class="fset7" label="cons + rakar + halant + ikar">
+      <string>क्र्ि</string>
+    </test>
+    <test background="#55aaff" class="fset7" label="EYELASH RA">
+      <string/>
+    </test>
+    <test class="fset7" label="eyelash rra">
+      <string>ऱ्ग</string>
+    </test>
+    <test class="fset7" label="rra halant ZWJ cons">
+      <string>ऱ्‍क</string>
+    </test>
+    <test class="fset7" label="ra halant ZWJ cons etc">
+      <string>र्‍क ऱ्‍क ऱ्‍क ऱ्क</string>
+    </test>
+    <test class="fset7" label="rra halant cons">
+      <string>ऱ्‍क</string>
+    </test>
+    <test class="fset7" label="double RA halant YAA">
+      <string>र्र्य र्र्या</string>
+    </test>
+    <test background="#55aaff" class="fset7" label="LARGE SYLLABLES">
+      <string/>
+    </test>
+    <test class="fset7" label="reph in large syllables">
+      <string>र्ङ्धि र्ध्कि</string>
+    </test>
+    <test class="fset7" label="4-cons cluster">
+      <string>पर्क्स् पर्क्स्म पर्क्स्मा</string>
+    </test>
+    <test class="fset7" label="5-cons cluster">
+      <string>पर्क्स्त्र पर्क्स्त्रा</string>
+    </test>
+    <test class="fset7" label="stop when no halant">
+      <string>र्ककक</string>
+    </test>
+  </testgroup>
+  <testgroup label="conjuncts and half-forms">
+    <test class="fset7" label="ta conjunct half-form ">
+      <string>हत्त्व हत्त हत्व</string>
+    </test>
+    <test class="fset7" label="0919 + 095f + ...">
+      <string>ङ्य़्ख</string>
+    </test>
+    <test class="fset7" label="conjunct half-forms">
+      <string>क्ष्ख ज्ञ्घ</string>
+    </test>
+  </testgroup>
+  <testgroup label="positioning">
+    <test background="#55aaff" class="fset7" label="ALTERNATE GLYPHS">
+      <string/>
+    </test>
+    <test class="fset7" label="reph + candrabindu">
+      <string>र्ख्ँ</string>
+    </test>
+    <test class="fset7" label="reph + vowel aw">
+      <string>र्कॏ</string>
+    </test>
+    <test background="#55aaff" class="fset7" label="SHIFTING">
+      <string/>
+    </test>
+    <test class="fset7" label="candra-O + reph">
+      <string>र्गॉ</string>
     </test>
   </testgroup>
   <testgroup label="tutorial">

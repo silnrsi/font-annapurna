@@ -830,7 +830,7 @@ pass(PASS_RA)	// 3
 	//	Cons pair (first cons is conjunct or half-form)
 	//	Don't apply this rule if the RA has already been moved (raform == REPH).
 	//	Reprocess the cons-cons sequence in case it also involves a RA.
-	g_ra  g_halant  _  _  >  _  _  @Rd {raform = R_REPH}  @H
+	g_ra  g_halant  _  _  >  _  _  @Rd:Rd {raform = R_REPH}  @H:H
 		/  _=Rd {raform != R_REPH} /* dead, !rakar */  _=H
 			^  
 			cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT}  g_nukta?  g_halant  g_zwj?
@@ -991,9 +991,10 @@ pass(PASS_NUKTA)	// 5
 endpass;
 
 pass(PASS_AHKAND)	// 5
-	//	Akhand
+	//	Akhand = halant
 	g0915  g_akhand  g0937  >  g0915_094d_0937:(1 2 3)  _  _;
 	g091c  g_akhand  g091e  >  g091c_094d_091e:(1 2 3)  _  _;
+	g0924  g_akhand  g0924  >  g0924_094d_0924:(1 2 3)  _  _;
 endpass;
 
 pass(PASS_REPHRAKAR)	// 5
@@ -1041,7 +1042,7 @@ pass(PASS_RAKARFULL)	// 6
 	//	Then substitute the conjunct:
 	cls_woRakarCaret  g094d_0930_rakar 
 		>  cls_wRakarCaret:(C R) {comp {cons.ref=@C; rakar.ref=@R}}  _ 
-		/  _=C {mergedHalant}  _=R;
+		/  _=C {mergedHalant==true}  _=R;
 		
 	// No components defined:
 	cls_woRakar  g_halant  g094d_0930_rakar 
@@ -1072,6 +1073,9 @@ table(glyph)
 	// These are okay after all: g0917, g095a, g0918, g0918_093c, g092d, g091d, g091d_093c, g0927, g0927_093c, g092c, g092c_093c, g092d_093c, g0935, g0935_093c, g0936, g0936_093c
 
 	cls_shiftCandrabAfterI = (g0930, g0931); // narrow reph forms
+
+	// These have a wide right side:
+	////////////////cls_noShiftAnusvBeforeCandraO = (g0915, g0958, g092b, g095e, g0960);
 endtable;
 
 pass(PASS_MARKMATRAI)  // 6
@@ -1422,7 +1426,7 @@ table(glyph)
 		g091b_094d_095f_094d_0930   g091f_094d_095f_094d_0930   g0920_094d_095f_094d_0930   g0921_094d_095f_094d_0930
 		g0922_094d_095f_094d_0930);
 	
-	cls_consNarrowRightOfStem2 = (cls_fullKha  cls_fullGa cls_fullGha  cls_fullNga  cls_fullCa  cls_fullCha
+	cls_consNarrowRightOfStem = (cls_fullKha  cls_fullGa cls_fullGha  cls_fullNga  cls_fullCa  cls_fullCha
 		cls_fullJa  cls_fullJha  cls_fullNya  cls_fullTta  cls_fullTtha  cls_fullDda  cls_fullDdha  cls_fullNna
 		cls_fullTa  cls_fullTha  cls_fullDa   cls_fullDha  cls_fullNa    cls_fullPa   cls_fullBa    cls_fullBha
 		cls_fullMa  cls_fullYa   cls_fullRa   cls_fullLa   cls_fullLla   cls_fullWa   cls_fullSha   cls_fullSsa
@@ -1432,6 +1436,11 @@ table(glyph)
 		g0932_094d_0932   g0936_094d_091a   g0936_094d_0935   g0937_094d_091f   g0937_094d_0920   g0938_094d_0928
 		g0939_094d_0928   g0939_094d_092e   g0939_094d_092f   g0939_094d_0932   g0939_094d_0935   g0939_0943
 		cls_conjunctsYaAlt);
+
+	cls_vowelNarrowRightOfStem = (g0905  g0906  g0907  g090f  g093e)
+
+	cls_vowelHighTop = (g0904  g0908  g090d  g090e  g0910  g0911  g0912  g0913  g093b  g0940
+		g0949  g094a  g094b  g094f);
 		
 	cls_matraAndRephComb = (g0946_0930_094d   g0946_0930_094d_0902   g0946_0930_094d_0901   g0947_0930_094d
 	 	g0947_0930_094d_0902   g0947_0930_094d_0901   g0948_0930_094d   g0948_0930_094d_0902   g0948_0930_094d_0901
@@ -1510,14 +1519,14 @@ pass(PASS_SUB4POSMORE)
 	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  cls_matraSpacingLeft2  _  _;
 	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  cls_matraSpacingLeft2  _  _;
 
-	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem2  cls_matraAndRephComb  cls_matraWOreph?  _  _;
-	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem2  cls_matraAndRephComb  cls_matraWOreph? _  _;
+	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem  cls_matraAndRephComb  cls_matraWOreph?  _  _;
+	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem  cls_matraAndRephComb  cls_matraWOreph? _  _;
 
-	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem2 g0901  _  _;
-	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem2 g0901  _  _;
+	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem  g0901  _  _;
+	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem  g0901  _  _;
 
-	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  cls_candrab_collide cls_reph_collide  _  _;
-	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  cls_candrab_collide cls_reph_collide  _  _;
+	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  cls_candrab_collide  cls_reph_collide  _  _;
+	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  cls_candrab_collide  cls_reph_collide  _  _;
 
 	cls_ra_rra  g0947  >  cls_ra_0947small:(1 2)  _  /  g0949  _  _;
 	cls_ra_rra  g0948  >  cls_ra_0948small:(1 2)  _  /  g0949  _  _;
@@ -1731,6 +1740,9 @@ pass(PASS_ADJUST) // 10
 	//	This vowel does not have the reph combined form like 094a-094c do (cls_vowelRtHigh).
 	//	So shift as best we can.
 	g094f  g0930_094d_reph_alt {shift.x = 140m}  /  _  g_nukta?  _;
+
+	// Anusvara and vowel-sign ai
+	g0902 {shift.x = -175m}  /  (cls_vowelNarrowRightOfStem  cls_consNarrowRightOfStem)  _  (g0930 g0931)  g0948;
 	
 	//	Tall vowels with candrabindu/anusvara
 	
