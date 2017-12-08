@@ -56,10 +56,16 @@
             ---------
             (This should list both major and minor changes, most recent first.)
             
+            08 December 2017 (SIL NRSI team)  Annapurna SIL version 1.203
+            - Matched OpenType with Graphite rendering where "ra halant ra halant" renders 
+              as "reph over ra-halant" instead of "eyelash ra" with reph over following cons.
+            - Fixed Graphite bugs in reph position chaining rules
+            - Fixed Graphite bug involving ta+ta conjunct half-form
+            
             10 February 2017 (SIL NRSI team)  Annapurna SIL version 1.202
             - Fixed Graphite where reph was skipping the aakar after the ya
             - Used TTFautohint for hinting which solved disappearing candrabindu in Bold
-    
+            
             01 August 2016 (SIL NRSI team)  Annapurna SIL version 1.201
             - Fixed Graphite (reordering) issue when reph and ikar are in a cluster
             - Fixed Graphite issue related to TypeTuner fonts
@@ -104,7 +110,7 @@
     <license url="http://scripts.sil.org/OFL"
              id="org.sil.ofl.1.1">
         <text lang="en">
-            Copyright (c) 2007-2016 SIL International (http://www.sil.org/),
+            Copyright (c) 2007-2017 SIL International (http://www.sil.org/),
             with Reserved Font Names "Annapurna" and "SIL".
 
             This Font Software is licensed under the SIL Open Font License, Version 1.1.
@@ -201,7 +207,7 @@
         </text>
     </license>
     <copyright>
-        <text lang="en">Copyright (c) 2007-2016 SIL International (http://www.sil.org/)</text>
+        <text lang="en">Copyright (c) 2007-2017 SIL International (http://www.sil.org/)</text>
     </copyright>
     <trademark>
         <text lang="en">Annapurna SIL is a trademark of SIL International</text>

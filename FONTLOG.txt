@@ -36,6 +36,12 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
+08 December 2017 (SIL NRSI team)  Annapurna SIL version 1.203
+- Matched OpenType with Graphite rendering where "ra halant ra halant" renders 
+  as "reph over ra-halant" instead of "eyelash ra" with reph over following cons.
+- Fixed Graphite bugs in reph position chaining rules
+- Fixed Graphite bug involving ta+ta conjunct half-form
+
 10 February 2017 (SIL NRSI team)  Annapurna SIL version 1.202
 - Fixed Graphite where reph was skipping the aakar after the ya
 - Used TTFautohint for hinting which solved disappearing candrabindu in Bold
