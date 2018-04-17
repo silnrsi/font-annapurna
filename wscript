@@ -41,6 +41,7 @@ for ext in ('-Regular', '-Bold') :
 		script = ['deva', 'dev2'],
 		opentype = volt ('source/VOLT_AnnapurnaSIL' + ext + '.vtp', no_make = (1)),
 		graphite = gdl ('AnnapurnaSIL' + ext + '.gdl',
+                        params = '-e gdlerr' + ext + '.txt',
 			master = 'source/annapurna_rules.gdh'),
 		ap = 'source/AnnapurnaSIL' + ext + '_anchors.xml',
 		pdf = fret(),
