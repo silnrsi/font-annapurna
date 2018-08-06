@@ -86,11 +86,11 @@ table(glyph) {AttributeOverride = false}
 	//	Underlying (nominal) consonant forms
 
 	cls_consNom = (
-		g0915	g0916	g0917	g0918	g0919	g091a	g091b	g091c	g091d	g091d
-		g091e	g091f	g0920	g0921	g0922	g0923	g0924	g0925	g0926	g0927
-		g0928	g0929	g092a	g092b	g092c	g092d	g092e	g092f	g0930	g0931
-		g0932	g0933	g0934	g0935	g0936	g0937	g0938	g0939	g0958	g0959
-		g095a	g095b	g095c	g095d	g095e	g095f	g0978
+		g0915	g0916	g0917	g0918	g0919	g091a	g091b	g091c	g091d	g091e	
+		g091f	g0920	g0921	g0922	g0923	g0924	g0925	g0926	g0927	g0928
+		g0929	g092a	g092b	g092c	g092d	g092e	g092f	g0930	g0931	g0932
+		g0933	g0934	g0935	g0936	g0937	g0938	g0939	g0958	g0959	g095a
+		g095b	g095c	g095d	g095e	g095f	g0978
 
 		// In the case of a Type Tuned font where the alternate is in the cmap:
 		g091d_alt  g091d_alt2  g0923_archaic
@@ -193,7 +193,7 @@ table(glyph) {AttributeOverride = false}
 		g0915				g0958			g0916				g0959			g0917				g095a			g0918
 		g0918_093c			g0919			g0919_093c			g091a			g091a_093c			g091b			g091b_093c
 		g091c				g095b			g091d				g091d_093c		g091d_alt			g091d_093c_alt	g091d_alt2
-		g091d_093c_alt2	g091e				g091e				g091e_093c		g091f				g091f_093c
+		g091d_093c_alt2		g091e			g091e_093c			g091f			g091f_093c
 		g0920				g0920_093c		g0921				g095c			g0922				g095d			g0923
 		g0923_093c			g0924			g0924_093c			g0924_094d_0930	 	g0924_093c_094d_0930			g0925
 		g0925_093c			g0926			g0926_093c			g0927			g0927_093c			g0928			g0929
@@ -209,7 +209,7 @@ table(glyph) {AttributeOverride = false}
 		g0915_094d_half			g0958_094d_half			g0916_094d_half			g0959_094d_half			g0917_094d_half			g095a_094d_half				g0918_094d_half
 		g0918_093c_094d_half	g0919_094d_half			g0919_093c_094d_half	g091a_094d_half			g091a_093c_094d_half	g091b_094d_half				g091b_093c_094d_half
 		g091c_094d_half			g095b_094d_half			g091d_094d_half			g091d_093c_094d_half	g091d_094d_half_alt		g091d_093c_094d_half_alt	g091d_094d_half_alt2
-		g091d_093c_094d_half_alt2						g091e_094d_half			g091e_094d_half			g091e_093c_094d_half	g091f_094d_half				g091f_093c_094d_half
+		g091d_093c_094d_half_alt2						g091e_094d_half			g091e_093c_094d_half	g091f_094d_half			g091f_093c_094d_half
 		g0920_094d_half			g0920_093c_094d_half	g0921_094d_half			g095c_094d_half			g0922_094d_half			g095d_094d_half				g0923_094d_half
 		g0923_093c_094d_half	g0924_094d_half			g0924_093c_094d_half	g0924_094d_0930_094d_half		g0924_093c_094d_0930_094d_half				g0925_094d_half
 		g0925_093c_094d_half	g0926_094d_half			g0926_093c_094d_half	g0927_094d_half			g0927_093c_094d_half	g0928_094d_half				g0929_094d_half
@@ -401,13 +401,6 @@ table(glyph) {AttributeOverride = false}
 	cls_rakarHalf = (cls_wRakarHalf, cls_wNuktaWRakarHalf);
 	
 	cls_yaRakarHalf_pre = ( g0919	g091b	g091f	g0920	g0921	g0922	g0926	g0939 );
-	cls_yaRakarHalf_pre094d = (
-		// These are place holders; they will never be matched - this allows this class to be used
-		// with cls_yaRakarHalf_conj:
-		gBogus	gBogus	gBogus	gBogus	gBogus	gBogus
-		// These will be matched:
-		g0926_094d_half		g0939_094d_half );
-
 	cls_yaRakarHalf_conj = (
 		g0919_094d_092f_094d_0930_094d_half		g091b_094d_092f_094d_0930_094d_half
 		g091f_094d_092f_094d_0930_094d_half		g0920_094d_092f_094d_0930_094d_half
@@ -419,6 +412,12 @@ table(glyph) {AttributeOverride = false}
 		g091f_094d_095f_094d_0930_094d_half		g0920_094d_095f_094d_0930_094d_half
 		g0921_094d_095f_094d_0930_094d_half		g0922_094d_095f_094d_0930_094d_half
 		g0926_094d_095f_094d_0930_094d_half		g0939_094d_095f_094d_0930_094d_half
+	);
+
+	cls_yaRakarHalf_pre094d = (
+		g0926_094d_half							g0939_094d_half );
+	cls_yaRakarHalf_conj_subs = (
+		g0926_094d_092f_094d_0930_094d_half		g0939_094d_092f_094d_0930_094d_half
 	);
 
 	//	The "rakar" shows up in different forms in these glyphs. The following classes holds glyphs
@@ -1125,8 +1124,8 @@ pass(PASS_FULLCONJ)	//  7
 	cls_yaRakarHalf_pre  g_halant  g095f_094d_0930_094d_half  >	cls_yyaRakarHalf_conj:(1 2 3)  _  _;
 
 	// 0926 is different in that it has already been put into a single glyph with halant.
-	cls_yaRakarHalf_pre094d  g092f_094d_0930_094d_half  >  cls_yaRakarHalf_conj:(1 2)  _;
-	cls_yaRakarHalf_pre094d  g095f_094d_0930_094d_half  >  cls_yyaRakarHalf_conj:(1 2)  _;
+	cls_yaRakarHalf_pre094d  g092f_094d_0930_094d_half  >  cls_yaRakarHalf_conj_subs:(1 2)  _;
+	cls_yaRakarHalf_pre094d  g095f_094d_0930_094d_half  >  cls_yaRakarHalf_conj_subs:(1 2)  _;
 
 	// The form that includes the halant is not necessary except that includes an LowerAlt att pt,
 	// needed for instance for 0952.
