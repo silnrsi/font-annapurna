@@ -2,16 +2,16 @@
 <?xml-stylesheet type="text/xsl" href="Testing.xsl"?>
 <ftml version="1.0">
   <head>
-    <columns comment="30%" label="15%" string="50%" style="5%"/>
+    <columns comment="30%" label="15%" string="50%" style="5%" />
     <fontsrc>url(AnnapurnaSIL-R GR.ttf)</fontsrc>
     <styles>
-      <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jha=0 kra=0 ruuv=0 shra=0 tra=0 ukar=0 vbar=0" name="fset1"/>
-      <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset2"/>
-      <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset3"/>
-      <style feats="dyah=1" name="fset5"/>
-      <style feats="ryav=1" name="fset6"/>
-      <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 ryav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset7"/>
-      <style feats="jhav=1" name="fset8"/>
+      <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jha=0 kra=0 ruuv=0 shra=0 tra=0 ukar=0 vbar=0" name="fset1" />
+      <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset2" />
+      <style feats="=0 arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset3" />
+      <style feats="dyah=1" name="fset5" />
+      <style feats="ryav=1" name="fset6" />
+      <style feats="arch=0 dig5=0 dig8=0 dig9=0 dyah=0 ekar=0 gbar=0 jhav=0 krav=0 ryav=0 shra=0 trav=0 ukar=0 vbar=0" name="fset7" />
+      <style feats="jhav=1" name="fset8" />
     </styles>
   </head>
   <testgroup label="main">
@@ -141,7 +141,7 @@
       <string>र्ष्ठि</string>
     </test>
     <test background="#55aaff" class="fset7" label="RAKAR">
-      <string/>
+      <string />
     </test>
     <test class="fset7" label="cons + rakar, cons / cons + reph, cons">
       <string>द्रत र्दत</string>
@@ -189,13 +189,13 @@
       <string>ॸ्र</string>
     </test>
     <test background="#55aaff" class="fset7" label="RA + HALANT">
-      <string/>
+      <string />
     </test>
     <test class="fset7" label="cons + rakar + halant + ikar">
       <string>क्र्ि</string>
     </test>
     <test background="#55aaff" class="fset7" label="EYELASH RA">
-      <string/>
+      <string />
     </test>
     <test class="fset7" label="eyelash rra">
       <string>ऱ्ग</string>
@@ -213,7 +213,7 @@
       <string>र्र्य र्र्या</string>
     </test>
     <test background="#55aaff" class="fset7" label="LARGE SYLLABLES">
-      <string/>
+      <string />
     </test>
     <test class="fset7" label="reph in large syllables">
       <string>र्ङ्धि र्ध्कि</string>
@@ -238,10 +238,28 @@
     <test class="fset7" label="conjunct half-forms">
       <string>क्ष्ख ज्ञ्घ</string>
     </test>
+    <test label="dyrah">
+      <string>द्य्र्क द्य़्र्क</string>
+    </test>
+    <test class="fset5" label="dyrah - alt">
+      <string>द्य्र्क द्य़्र्क</string>
+    </test>
+    <test label="hryah">
+      <string>ह्य्र्क ह्य़्र्क</string>
+    </test>
+    <test class="fset5" label="hyrah - alt">
+      <string>ह्य्र्क ह्य़्र्क</string>
+    </test>
+    <test label="dyyah hyyah">
+      <string>द्य़ ह्य़</string>
+    </test>
+    <test class="fset5" label="dyyah hyyah - alt">
+      <string>द्य़ ह्य़</string>
+    </test>
   </testgroup>
   <testgroup label="positioning">
     <test background="#55aaff" class="fset7" label="ALTERNATE GLYPHS">
-      <string/>
+      <string />
     </test>
     <test class="fset7" label="reph + candrabindu">
       <string>र्ख्ँ</string>
@@ -250,7 +268,7 @@
       <string>र्कॏ</string>
     </test>
     <test background="#55aaff" class="fset7" label="SHIFTING">
-      <string/>
+      <string />
     </test>
     <test class="fset7" label="candra-O + reph">
       <string>र्गॉ</string>

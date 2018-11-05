@@ -250,8 +250,8 @@ table(glyph) {AttributeOverride = false}
 	cls_0921_conj		= (g0921_094d_0921);
 //	cls_0921_conj_cpress= (g0921_094d_0921_alt);
 	
-	cls_0926_2ndhalf	= (g0926			g0927				g092e				g092f				g0935);
-	cls_0926_conj		= (g0926_094d_0926	g0926_094d_0927	g0926_094d_092e	g0926_094d_092f	g0926_094d_0935);
+	cls_0926_2ndhalf	= (g0926			g0927			g092e			g092f			g0935);           // g095f
+	cls_0926_conj		= (g0926_094d_0926	g0926_094d_0927	g0926_094d_092e	g0926_094d_092f	g0926_094d_0935); // g0926_094d_095f
 	
 	cls_0936_2ndhalf	= (g091a			g0935);
 	cls_0936_conj		= (g0936_094d_091a	g0936_094d_0935);
@@ -417,8 +417,10 @@ table(glyph) {AttributeOverride = false}
 	cls_yaRakarHalf_pre094d = (
 		g0926_094d_half							g0939_094d_half );
 	cls_yaRakarHalf_conj_subs = (
-		g0926_094d_092f_094d_0930_094d_half		g0939_094d_092f_094d_0930_094d_half
-	);
+		g0926_094d_092f_094d_0930_094d_half		g0939_094d_092f_094d_0930_094d_half	);
+	cls_yyaRakarHalf_conj_subs = (
+		g0926_094d_095f_094d_0930_094d_half		g0939_094d_095f_094d_0930_094d_half	);
+		
 
 	//	The "rakar" shows up in different forms in these glyphs. The following classes holds glyphs
 	//	that show the rakar looking like a real rakar at the bottom of the glyph. Since they are
@@ -1124,8 +1126,8 @@ pass(PASS_FULLCONJ)	//  7
 	cls_yaRakarHalf_pre  g_halant  g095f_094d_0930_094d_half  >	cls_yyaRakarHalf_conj:(1 2 3)  _  _;
 
 	// 0926 is different in that it has already been put into a single glyph with halant.
-	cls_yaRakarHalf_pre094d  g092f_094d_0930_094d_half  >  cls_yaRakarHalf_conj_subs:(1 2)  _;
-	cls_yaRakarHalf_pre094d  g095f_094d_0930_094d_half  >  cls_yaRakarHalf_conj_subs:(1 2)  _;
+	////cls_yaRakarHalf_pre094d  g092f_094d_0930_094d_half  >  cls_yaRakarHalf_conj_subs:(1 2)  _;
+	////cls_yaRakarHalf_pre094d  g095f_094d_0930_094d_half  >  cls_yyaRakarHalf_conj_subs:(1 2)  _;
 
 	// The form that includes the halant is not necessary except that includes an LowerAlt att pt,
 	// needed for instance for 0952.
@@ -1265,25 +1267,29 @@ table(glyph)
 	
 	//	Alternate DYA & HYA forms
 	
-	cls_dyahya			= (g0926_094d_092f				g0939_094d_092f);
-	cls_dyyahyya		= (g0926_094d_095f				g0939_094d_095f);
-	cls_dyahya_alt		= (g0926_094d_092f_alt			g0939_094d_092f_alt);
-	cls_daha_half		= (g0926_094d_half				g0939_094d_half);
-	cls_dyahya_half		= (g0926_094d_092f_094d_half	g0939_094d_092f_094d_half);
-	cls_dyyahyya_half	= (g0926_094d_095f_094d_half	g0939_094d_095f_094d_half);
-	cls_dyrhyr			= (g0926_094d_092f_094d_0930	g0939_094d_092f_094d_0930);
-	cls_dyyrhyyr		= (g0926_094d_095f_094d_0930	g0939_094d_095f_094d_0930);
+	cls_dyahya			= (g0926_094d_092f						g0939_094d_092f);
+	cls_dyyahyya		= (g0926_094d_095f						g0939_094d_095f);
+	cls_dyahya_alt		= (g0926_094d_092f_alt					g0939_094d_092f_alt);
+	cls_daha_half		= (g0926_094d_half						g0939_094d_half);
+	cls_dyahya_half		= (g0926_094d_092f_094d_half			g0939_094d_092f_094d_half);
+	cls_dyyahyya_half	= (g0926_094d_095f_094d_half			g0939_094d_095f_094d_half);
+	cls_dyrhyr			= (g0926_094d_092f_094d_0930			g0939_094d_092f_094d_0930);
+	cls_dyyrhyyr		= (g0926_094d_095f_094d_0930			g0939_094d_095f_094d_0930);
+	cls_dyrhyr_half		= (g0926_094d_092f_094d_0930_094d_half	g0939_094d_092f_094d_0930_094d_half);
+	cls_dyyrhyyr_half	= (g0926_094d_095f_094d_0930_094d_half	g0939_094d_095f_094d_0930_094d_half);
 	
-	cls_dyahya_ligs = (cls_dyyahyya, cls_dyahya_half, cls_dyyahyya_half, cls_dyrhyr, cls_dyyrhyyr)
+	cls_dyahya_ligs = (cls_dyyahyya, cls_dyahya_half, cls_dyyahyya_half, cls_dyrhyr, cls_dyyrhyyr, cls_dyrhyr_half, cls_dyyrhyyr_half)
 		{ component { c1 = box(0,-descent,    aw/2,ascent);
 			          c2 = box(aw/2,-descent, aw,ascent) } };
 	
-	g_ya		= (g092f);
-	g_ya_half	= (g092f_094d_half);
-	g_yya		= (g095f);
-	g_yya_half	= (g095f_094d_half);
-	g_ya_ra		= (g092f_094d_0930);
-	g_yya_ra	= (g095f_094d_0930);
+	g_ya			= (g092f);
+	g_ya_half		= (g092f_094d_half);
+	g_yya			= (g095f);
+	g_yya_half		= (g095f_094d_half);
+	g_ya_ra			= (g092f_094d_0930);
+	g_yya_ra		= (g095f_094d_0930);
+	g_ya_ra_half	= (g092f_094d_0930_094d_half);
+	g_yya_ra_half	= (g095f_094d_0930_094d_half);
 
 	cls_ya_noalt 			= (g092f,								g095f);
 	cls_ya_noalt_half		= (g092f_094d_half,						g095f_094d_half);
@@ -1335,17 +1341,19 @@ endif;
 
 if (dyahya)
 	cls_dyahya  >  cls_dyahya_alt;
-	cls_daha_half  g_yya       >  cls_dyyahyya:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_ya_half   >  cls_dyahya_half:(1 2)   {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_yya_half  >  cls_dyyahyya_half:(1 2) {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_ya_ra     >  cls_dyrhyr:(1 2)        {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_yya_ra    >  cls_dyyrhyyr:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya         >  cls_dyyahyya:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_ya_half     >  cls_dyahya_half:(1 2)   {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya_half    >  cls_dyyahyya_half:(1 2) {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_ya_ra       >  cls_dyrhyr:(1 2)        {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya_ra      >  cls_dyyrhyyr:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_ya_ra_half  >  cls_dyrhyr_half:(1 2)   {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya_ra_half >  cls_dyyrhyyr_half:(1 2) {comp {c1.ref = @1; c2.ref = @2}}  _ ;
 endif;
 
 if (rya)
 	g0930 g094d g_zwnj cls_ya_ra_noalt		>  _  _  _  cls_rya_ra_alt_half:(1 2 3 4);
 	///g0930 g094d g_zwnj cls_ya_noalt g094d  	>  _  _  _  cls_rya_alt_half:(1 2 3 4 5) _;  // SC
-	g0930 g094d g_zwnj cls_ya_noalt_half  	>  _  _  _  cls_rya_alt_half:(1 2 3 4);      // JC
+	g0930 g094d g_zwnj cls_ya_noalt_half  	>  _  _  _  cls_rya_alt_half:(1 2 3 4);   // JC
 	g0930 g094d g_zwnj cls_ya_noalt  		>  _  _  _  cls_rya_alt:(1 2 3 4) ;
 endif;
 
