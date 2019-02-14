@@ -3,7 +3,7 @@
     AnnapurnaSIL-WOFF-metadata.xml
 
     This file is part of the Annapurna font family (http://software.sil.org/annapurna/) 
-    and is Copyright (c) 2007-2017 SIL International (http://www.sil.org/), with 
+    and is Copyright (c) 2007-2019 SIL International (http://www.sil.org/), with 
     Reserved Font Names "Annapurna" and "SIL".
 
     This Font Software is licensed under the SIL Open Font License, Version 1.1. 
@@ -55,6 +55,11 @@
             ChangeLog
             ---------
             (This should list both major and minor changes, most recent first.)
+            
+            14 February 2019 (SIL WSTech team)  Annapurna SIL version 1.204
+            - Reworked Graphite code to remove duplicates from substitution input classes.
+            - Fixed Graphite bug involving alternate renderings of the half forms of ya. 
+              Fixed default rendering of dya.
             
             08 December 2017 (SIL NRSI team)  Annapurna SIL version 1.203
             - Matched OpenType with Graphite rendering where "ra halant ra halant" renders 
@@ -207,7 +212,7 @@
         </text>
     </license>
     <copyright>
-        <text lang="en">Copyright (c) 2007-2017 SIL International (http://www.sil.org/)</text>
+        <text lang="en">Copyright (c) 2007-2019 SIL International (http://www.sil.org/)</text>
     </copyright>
     <trademark>
         <text lang="en">Annapurna SIL is a trademark of SIL International</text>
