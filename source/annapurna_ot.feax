@@ -1989,7 +1989,8 @@ lookup LatinPunctuationMark {
 #  Lookups GPOS
 #**********************************
 
-do  for b = [Halant Lower LowerAlt LowerCenter Nukta Ra Upper UpperCenter];
+# do  for b = [Halant Lower LowerAlt LowerCenter Nukta Ra Upper UpperCenter];
+do  for b = [Halant Lower LowerAlt Nukta Ra Upper];
     let lk = "base_"+b+"_base";
     let bc = "@" + b;
     let mc = "@_" + b;
@@ -2024,7 +2025,7 @@ feature abvm {  # Above-Base Mark Positioning
     script DFLT;  # Default
         language dflt;  # Default
             lookup base_Upper_base;
-            lookup base_UpperCenter_base;
+##            lookup base_UpperCenter_base;
 #            lookup AboveConsMarks;
 #            lookup AboveVowelMarks;
 #            lookup AboveSpacingMatraMarks;
@@ -2037,7 +2038,7 @@ feature abvm {  # Above-Base Mark Positioning
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
             lookup base_Upper_base;
-            lookup base_UpperCenter_base;
+##            lookup base_UpperCenter_base;
 #            lookup AboveConsMarks;
 #            lookup AboveVowelMarks;
 #            lookup AboveSpacingMatraMarks;
@@ -2049,7 +2050,7 @@ feature abvm {  # Above-Base Mark Positioning
 #            lookup AboveMarks_RephAdjust;
         language NEP  exclude_dflt;  # Nepali
             lookup base_Upper_base;
-            lookup base_UpperCenter_base;
+##            lookup base_UpperCenter_base;
 #            lookup AboveConsMarks;
 #            lookup AboveVowelMarks;
 #            lookup AboveSpacingMatraMarks;
@@ -2061,7 +2062,7 @@ feature abvm {  # Above-Base Mark Positioning
 #            lookup AboveMarks_RephAdjust;
         language NEW  exclude_dflt;  # Newari
             lookup base_Upper_base;
-            lookup base_UpperCenter_base;
+##            lookup base_UpperCenter_base;
 #            lookup AboveConsMarks;
 #            lookup AboveVowelMarks;
 #            lookup AboveSpacingMatraMarks;
@@ -2074,7 +2075,7 @@ feature abvm {  # Above-Base Mark Positioning
     script deva;  # Devanagari
         language dflt;  # Default
             lookup base_Upper_base;
-            lookup base_UpperCenter_base;
+##            lookup base_UpperCenter_base;
 #            lookup AboveConsMarks;
 #            lookup AboveVowelMarks;
 #            lookup AboveSpacingMatraMarks;
@@ -2160,7 +2161,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-            lookup base_LowerCenter_base;
+##            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2177,7 +2178,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-            lookup base_LowerCenter_base;
+##            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2193,7 +2194,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-            lookup base_LowerCenter_base;
+##            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2209,7 +2210,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-            lookup base_LowerCenter_base;
+##            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2226,7 +2227,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-            lookup base_LowerCenter_base;
+##            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
