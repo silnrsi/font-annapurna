@@ -17,16 +17,16 @@ DESC_SHORT = 'Devanagari Unicode TrueType font with OT and Graphite support'
 getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
 # BUILDLABEL = 'beta'
 
+# Commands to process with target font
+cmds = []
+cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']))
+cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
 
 # set the build and test parameters
 d = designspace('source/AnnapurnaSIL-RB.designspace',
-        target = process('${DS:FILENAME_BASE}.ttf',
-            cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']),
-#            cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'),
-        ),
+        target = process('${DS:FILENAME_BASE}.ttf', *cmds),
         instanceparams = "-W",
         ap = 'source/ap/${DS:FILENAME_BASE}.xml',
-#        classes = 'source/classes.xml',
 
         opentype = fea('source/fea/${DS:FILENAME_BASE}.fea',
             master = 'source/annapurna_ot.feax'
