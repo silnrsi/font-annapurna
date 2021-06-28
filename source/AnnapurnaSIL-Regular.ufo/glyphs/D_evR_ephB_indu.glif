@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevRephBindu" format="1">
+  <advance width="3"/>
+  <outline>
+    <component base="DevRaReph.alt2" xOffset="-232"/>
+    <component base="DevAnusvara" xOffset="-222" yOffset="10"/>
+    <contour>
+      <point x="-470" y="1330" type="move" name="_Upper"/>
+    </contour>
+  </outline>
+</glyph>

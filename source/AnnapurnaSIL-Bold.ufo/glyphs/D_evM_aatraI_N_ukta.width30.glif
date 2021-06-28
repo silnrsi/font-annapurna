@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraINukta.width30" format="1">
+  <advance width="555"/>
+  <outline>
+    <component base="DevMaatraI.width30"/>
+    <component base="DevNukta" xOffset="681" yOffset="-1"/>
+    <contour>
+      <point x="278" y="-426" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="278" y="1356" type="move" name="Upper"/>
+    </contour>
+  </outline>
+</glyph>

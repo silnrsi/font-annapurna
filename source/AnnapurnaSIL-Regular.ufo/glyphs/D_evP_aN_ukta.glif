@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevPaNukta" format="1">
+  <advance width="1167"/>
+  <outline>
+    <component base="DevPa"/>
+    <component base="DevNukta" xOffset="937" yOffset="387"/>
+    <contour>
+      <point x="891" y="-100" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="891" y="-30" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="585" y="-112" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="891" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="585" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

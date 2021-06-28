@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraUUNukta.alt" format="1">
+  <advance width="2"/>
+  <outline>
+    <component base="DevMaatraUU"/>
+    <component base="DevNukta" xOffset="462" yOffset="-572"/>
+    <contour>
+      <point x="-35" y="-60" type="move" name="_Lower"/>
+    </contour>
+  </outline>
+</glyph>

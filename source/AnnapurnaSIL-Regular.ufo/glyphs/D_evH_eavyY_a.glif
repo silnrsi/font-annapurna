@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHeavyYa" format="1">
+  <advance width="1226"/>
+  <unicode hex="097A"/>
+  <outline>
+    <component base="DevYa"/>
+    <contour>
+      <point x="463" y="996" type="line"/>
+      <point x="463" y="868" type="line"/>
+      <point x="865" y="468" type="line"/>
+      <point x="865" y="590" type="line"/>
+    </contour>
+    <contour>
+      <point x="950" y="-100" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="950" y="-30" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="598" y="-112" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="950" y="-140" type="move" name="Nukta"/>
+    </contour>
+    <contour>
+      <point x="950" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="599" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

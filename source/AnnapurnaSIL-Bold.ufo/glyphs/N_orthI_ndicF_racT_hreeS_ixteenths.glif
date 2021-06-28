@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="NorthIndicFracThreeSixteenths" format="1">
+  <advance width="938"/>
+  <unicode hex="A835"/>
+  <outline>
+    <contour>
+      <point x="218" y="927" type="line"/>
+      <point x="864" y="1083" type="line"/>
+      <point x="720" y="1257" type="line"/>
+      <point x="74" y="1101" type="line"/>
+    </contour>
+    <contour>
+      <point x="218" y="527" type="line"/>
+      <point x="864" y="683" type="line"/>
+      <point x="720" y="857" type="line"/>
+      <point x="74" y="701" type="line"/>
+    </contour>
+    <contour>
+      <point x="218" y="127" type="line"/>
+      <point x="864" y="283" type="line"/>
+      <point x="720" y="457" type="line"/>
+      <point x="74" y="301" type="line"/>
+    </contour>
+  </outline>
+</glyph>

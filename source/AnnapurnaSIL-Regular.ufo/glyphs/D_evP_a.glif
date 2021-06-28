@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevPa" format="1">
+  <advance width="1167"/>
+  <unicode hex="092A"/>
+  <outline>
+    <contour>
+      <point x="826" y="845" type="line"/>
+      <point x="811" y="675"/>
+      <point x="706" y="561"/>
+      <point x="532" y="561" type="curve" smooth="yes"/>
+      <point x="442" y="561"/>
+      <point x="342" y="614"/>
+      <point x="342" y="725" type="curve" smooth="yes"/>
+      <point x="342" y="1275" type="line"/>
+      <point x="210" y="1275" type="line"/>
+      <point x="210" y="810" type="line" smooth="yes"/>
+      <point x="210" y="655"/>
+      <point x="444" y="467"/>
+      <point x="568" y="467" type="curve" smooth="yes"/>
+      <point x="700" y="467"/>
+      <point x="766" y="510"/>
+      <point x="829" y="568" type="curve"/>
+    </contour>
+    <contour>
+      <point x="839" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="915" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="1177" y="1320" type="line"/>
+      <point x="268" y="1320" type="line"/>
+      <point x="344" y="1188" type="line"/>
+      <point x="1253" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="822" y="78" type="line"/>
+      <point x="957" y="0" type="line"/>
+      <point x="957" y="1320" type="line"/>
+      <point x="822" y="1320" type="line"/>
+    </contour>
+    <contour>
+      <point x="891" y="-100" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="891" y="-30" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="585" y="-112" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="891" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="585" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

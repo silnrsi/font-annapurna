@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraCandraO" format="1">
+  <advance width="555"/>
+  <unicode hex="0949"/>
+  <outline>
+    <component base="DevMaatraAA"/>
+    <component base="DevMaatraCandraE" xOffset="660"/>
+    <contour>
+      <point x="278" y="-100" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="279" y="1330" type="move" name="Upper"/>
+    </contour>
+  </outline>
+</glyph>

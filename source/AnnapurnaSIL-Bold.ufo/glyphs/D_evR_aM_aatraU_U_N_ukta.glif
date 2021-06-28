@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevRaMaatraUUNukta" format="1">
+  <advance width="868"/>
+  <outline>
+    <component base="DevRa"/>
+    <component base="DevMaatraUUNukta" xOffset="561" yOffset="-9"/>
+    <contour>
+      <point x="484" y="-785" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="525" y="1356" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="527" y="1416" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

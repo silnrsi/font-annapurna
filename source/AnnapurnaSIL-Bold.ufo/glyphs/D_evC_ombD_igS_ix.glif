@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevCombDigSix" format="1">
+  <advance width="1"/>
+  <unicode hex="A8E6"/>
+  <outline>
+    <component base="DevSix" xScale="0.5" yScale="0.5" xOffset="-700" yOffset="1950"/>
+  </outline>
+</glyph>

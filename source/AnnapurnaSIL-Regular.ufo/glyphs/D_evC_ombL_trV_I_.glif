@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevCombLtrVI" format="1">
+  <advance width="1"/>
+  <unicode hex="A8F0"/>
+  <outline>
+    <component base="DevMaatraI.width20" xScale="0.5" yScale="0.5" xOffset="-1075" yOffset="1950"/>
+    <component base="DevWa" xScale="0.5" yScale="0.5" xOffset="-760" yOffset="1950"/>
+  </outline>
+</glyph>

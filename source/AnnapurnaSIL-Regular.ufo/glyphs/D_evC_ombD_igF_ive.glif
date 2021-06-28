@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevCombDigFive" format="1">
+  <advance width="1"/>
+  <unicode hex="A8E5"/>
+  <outline>
+    <component base="DevFive" xScale="0.5" yScale="0.5" xOffset="-700" yOffset="1950"/>
+  </outline>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfCaNukta" format="1">
+  <advance width="1049"/>
+  <outline>
+    <component base="DevHalfCa"/>
+    <component base="DevNukta" xOffset="1110" yOffset="349"/>
+    <contour>
+      <point x="524" y="-112" type="move" name="LowerAlt"/>
+    </contour>
+  </outline>
+</glyph>

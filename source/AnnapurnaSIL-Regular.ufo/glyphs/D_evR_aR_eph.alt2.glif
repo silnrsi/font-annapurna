@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevRaReph.alt2" format="1">
+  <advance width="2"/>
+  <outline>
+    <contour>
+      <point x="-387" y="1658" type="curve" smooth="yes"/>
+      <point x="-387" y="1772"/>
+      <point x="-322" y="1842"/>
+      <point x="-228" y="1842" type="curve" smooth="yes"/>
+      <point x="-187" y="1842"/>
+      <point x="-136" y="1831"/>
+      <point x="-93" y="1801" type="curve"/>
+      <point x="-53" y="1828" type="line"/>
+      <point x="-120" y="1897"/>
+      <point x="-203" y="1930"/>
+      <point x="-278" y="1930" type="curve" smooth="yes"/>
+      <point x="-391" y="1930"/>
+      <point x="-486" y="1856"/>
+      <point x="-486" y="1715" type="curve" smooth="yes"/>
+      <point x="-486" y="1557"/>
+      <point x="-374" y="1398"/>
+      <point x="-267" y="1310" type="curve"/>
+      <point x="-220" y="1310" type="line"/>
+      <point x="-306" y="1390"/>
+      <point x="-387" y="1545"/>
+    </contour>
+    <contour>
+      <point x="-230" y="1330" type="move" name="_Upper"/>
+    </contour>
+  </outline>
+</glyph>

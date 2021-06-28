@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevBhaNuktaR" format="1">
+  <advance width="1334"/>
+  <outline>
+    <component base="DevNukta" xOffset="764" yOffset="500"/>
+    <contour>
+      <point x="989" y="78" type="line"/>
+      <point x="1124" y="0" type="line"/>
+      <point x="1124" y="1320" type="line"/>
+      <point x="989" y="1320" type="line"/>
+    </contour>
+    <contour>
+      <point x="1175" y="1320" type="line"/>
+      <point x="785" y="1320" type="line"/>
+      <point x="861" y="1188" type="line"/>
+      <point x="1251" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="1344" y="1320" type="line"/>
+      <point x="1032" y="1320" type="line"/>
+      <point x="1108" y="1188" type="line"/>
+      <point x="1420" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="658" y="970" type="line"/>
+      <point x="658" y="1171"/>
+      <point x="499" y="1332"/>
+      <point x="360" y="1332" type="curve" smooth="yes"/>
+      <point x="244" y="1332"/>
+      <point x="180" y="1234"/>
+      <point x="180" y="1140" type="curve" smooth="yes"/>
+      <point x="180" y="1020"/>
+      <point x="371" y="871"/>
+      <point x="542" y="849" type="curve"/>
+      <point x="542" y="928" type="line"/>
+      <point x="445" y="931"/>
+      <point x="351" y="978"/>
+      <point x="313" y="1016" type="curve" smooth="yes"/>
+      <point x="305" y="1024"/>
+      <point x="299" y="1036"/>
+      <point x="299" y="1063" type="curve" smooth="yes"/>
+      <point x="299" y="1111"/>
+      <point x="366" y="1227"/>
+      <point x="454" y="1227" type="curve" smooth="yes"/>
+      <point x="473" y="1227"/>
+      <point x="484" y="1226"/>
+      <point x="493" y="1217" type="curve" smooth="yes"/>
+      <point x="506" y="1204"/>
+      <point x="523" y="1160"/>
+      <point x="523" y="1069" type="curve"/>
+      <point x="523" y="536" type="line"/>
+      <point x="1113" y="536" type="line"/>
+      <point x="1113" y="667" type="line"/>
+      <point x="434" y="667" type="line" smooth="yes"/>
+      <point x="353" y="667"/>
+      <point x="324" y="636"/>
+      <point x="324" y="595" type="curve" smooth="yes"/>
+      <point x="324" y="562"/>
+      <point x="340" y="544"/>
+      <point x="355" y="529" type="curve" smooth="yes"/>
+      <point x="520" y="371" type="line" smooth="yes"/>
+      <point x="533" y="359"/>
+      <point x="550" y="350"/>
+      <point x="570" y="350" type="curve" smooth="yes"/>
+      <point x="613" y="350"/>
+      <point x="658" y="392"/>
+      <point x="658" y="448" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="1032" y="619" type="line"/>
+      <point x="434" y="78" type="line"/>
+      <point x="583" y="78" type="line"/>
+      <point x="1032" y="484" type="line"/>
+    </contour>
+    <contour>
+      <point x="1060" y="-100" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="1060" y="-30" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="787" y="-112" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="1059" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="787" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

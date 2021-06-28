@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHeadstroke" format="1">
+  <advance width="1201"/>
+  <unicode hex="A8FB"/>
+  <outline>
+    <component base="BarTop" xOffset="35"/>
+    <component base="BarTop" xOffset="436"/>
+  </outline>
+</glyph>

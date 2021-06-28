@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraAiNukta" format="1">
+  <advance width="2"/>
+  <outline>
+    <component base="DevMaatraAi"/>
+    <component base="DevNukta" xOffset="92" yOffset="-1"/>
+    <contour>
+      <point x="-312" y="1330" type="move" name="_Upper"/>
+    </contour>
+  </outline>
+</glyph>

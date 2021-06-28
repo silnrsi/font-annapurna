@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfDdha" format="1">
+  <advance width="1314"/>
+  <outline>
+    <component base="DevDdha"/>
+    <component base="DevHalant" xOffset="958" yOffset="-3"/>
+    <contour>
+      <point x="657" y="-612" type="move" name="LowerAlt"/>
+    </contour>
+    <contour>
+      <point x="948" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="609" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

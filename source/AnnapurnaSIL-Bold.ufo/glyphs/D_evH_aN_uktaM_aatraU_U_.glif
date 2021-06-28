@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHaNuktaMaatraUU" format="1">
+  <advance width="1134"/>
+  <outline>
+    <component base="DevHa"/>
+    <component base="DevNukta" xOffset="687" yOffset="81"/>
+    <component base="DevMaatraUU" xOffset="893" yOffset="-279"/>
+    <contour>
+      <point x="780" y="-186" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="858" y="-219" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="576" y="-376" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="858" y="1358" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="576" y="1416" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevN.Na" format="1">
+  <advance width="1195"/>
+  <outline>
+    <contour>
+      <point x="831" y="713" type="line"/>
+      <point x="306" y="167" type="line" smooth="yes"/>
+      <point x="272" y="131"/>
+      <point x="259" y="101"/>
+      <point x="259" y="76" type="curve" smooth="yes"/>
+      <point x="259" y="-9"/>
+      <point x="396" y="-46"/>
+      <point x="488" y="-46" type="curve" smooth="yes"/>
+      <point x="536" y="-46"/>
+      <point x="579" y="-27"/>
+      <point x="579" y="22" type="curve" smooth="yes"/>
+      <point x="579" y="39"/>
+      <point x="571" y="59"/>
+      <point x="549" y="81" type="curve" smooth="yes"/>
+      <point x="475" y="151" type="line"/>
+      <point x="926" y="621" type="line"/>
+    </contour>
+    <contour>
+      <point x="848" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="924" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="1205" y="1320" type="line"/>
+      <point x="308" y="1320" type="line"/>
+      <point x="384" y="1188" type="line"/>
+      <point x="1281" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="850" y="78" type="line"/>
+      <point x="985" y="0" type="line"/>
+      <point x="985" y="1320" type="line"/>
+      <point x="850" y="1320" type="line"/>
+    </contour>
+    <contour>
+      <point x="957" y="775" type="line"/>
+      <point x="302" y="775" type="line" smooth="yes"/>
+      <point x="206" y="775"/>
+      <point x="180" y="732"/>
+      <point x="180" y="683" type="curve" smooth="yes"/>
+      <point x="180" y="623"/>
+      <point x="314" y="461"/>
+      <point x="379" y="461" type="curve" smooth="yes"/>
+      <point x="415" y="461"/>
+      <point x="452" y="476"/>
+      <point x="452" y="541" type="curve" smooth="yes"/>
+      <point x="452" y="643" type="line"/>
+      <point x="957" y="643" type="line"/>
+    </contour>
+    <contour>
+      <point x="919" y="-98" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="919" y="-30" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="627" y="-112" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="919" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="627" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

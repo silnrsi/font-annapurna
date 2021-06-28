@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="NorthIndicFracOneEighth" format="1">
+  <advance width="938"/>
+  <unicode hex="A834"/>
+  <outline>
+    <contour>
+      <point x="192" y="957" type="line"/>
+      <point x="838" y="1113" type="line"/>
+      <point x="746" y="1223" type="line"/>
+      <point x="100" y="1067" type="line"/>
+    </contour>
+    <contour>
+      <point x="192" y="557" type="line"/>
+      <point x="838" y="713" type="line"/>
+      <point x="746" y="823" type="line"/>
+      <point x="100" y="667" type="line"/>
+    </contour>
+  </outline>
+</glyph>

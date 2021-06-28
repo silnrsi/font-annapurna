@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVowelINukta" format="1">
+  <advance width="1063"/>
+  <outline>
+    <component base="DevVowelI"/>
+    <component base="DevNukta" xOffset="849" yOffset="-3"/>
+    <contour>
+      <point x="446" y="-411" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="446" y="-399" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="577" y="-427" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="787" y="1356" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="569" y="1416" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

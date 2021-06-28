@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraLLNukta" format="1">
+  <advance width="1"/>
+  <outline>
+    <component base="DevMaatraLL"/>
+    <component base="DevNukta" xOffset="-37" yOffset="-657"/>
+    <contour>
+      <point x="-520" y="-60" type="move" name="_Lower"/>
+    </contour>
+  </outline>
+</glyph>

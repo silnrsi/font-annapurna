@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVowelUE" format="1">
+  <advance width="1681"/>
+  <unicode hex="0976"/>
+  <outline>
+    <component base="DevMaatraUE" xOffset="1292" yOffset="56"/>
+    <component base="DevVowelA"/>
+    <contour>
+      <point x="1405" y="-126" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="1405" y="-56" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="867" y="-517" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="1405" y="-166" type="move" name="Nukta"/>
+    </contour>
+    <contour>
+      <point x="1405" y="1356" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="831" y="1416" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

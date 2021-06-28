@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevAnudatta" format="1">
+  <advance width="2"/>
+  <unicode hex="0952"/>
+  <outline>
+    <contour>
+      <point x="-22" y="-307" type="line"/>
+      <point x="-1072" y="-307" type="line"/>
+      <point x="-1072" y="-122" type="line"/>
+      <point x="-22" y="-122" type="line"/>
+    </contour>
+    <contour>
+      <point x="-547" y="-112" type="move" name="_LowerAlt"/>
+    </contour>
+    <contour>
+      <point x="-547" y="-112" type="move" name="_LowerCenter"/>
+    </contour>
+  </outline>
+</glyph>

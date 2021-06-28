@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraAURephBindu" format="1">
+  <advance width="555"/>
+  <outline>
+    <component base="DevMaatraAA"/>
+    <component base="DevMaatraAi" xOffset="591"/>
+    <component base="DevRaReph.alt2" xOffset="593"/>
+    <component base="DevNukta" xOffset="870" yOffset="1825"/>
+    <contour>
+      <point x="278" y="-126" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="279" y="1356" type="move" name="Upper"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVowelCandraENukta" format="1">
+  <advance width="1097"/>
+  <outline>
+    <component base="DevVowelE"/>
+    <component base="DevMaatraCandraE" xOffset="950"/>
+    <component base="DevNukta" xOffset="963" yOffset="69"/>
+    <contour>
+      <point x="561" y="-354" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="561" y="-339" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="561" y="-347" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="810" y="1356" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="570" y="1416" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHa.halant" format="1">
+  <advance width="1134"/>
+  <outline>
+    <component base="DevHa"/>
+    <component base="DevHalant" xOffset="898" yOffset="-33"/>
+    <contour>
+      <point x="567" y="-612" type="move" name="LowerAlt"/>
+    </contour>
+    <contour>
+      <point x="858" y="1332" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="576" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

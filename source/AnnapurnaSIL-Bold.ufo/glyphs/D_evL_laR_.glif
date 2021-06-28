@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevLlaR" format="1">
+  <advance width="1669"/>
+  <outline>
+    <component base="DevLla"/>
+    <component base="DevRaVattu" xOffset="1512" yOffset="62"/>
+    <contour>
+      <point x="1150" y="-276" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="1150" y="-299" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="806" y="-276" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="1150" y="1356" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="806" y="1416" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

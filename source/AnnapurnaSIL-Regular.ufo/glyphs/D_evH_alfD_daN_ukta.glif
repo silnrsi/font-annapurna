@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfDdaNukta" format="1">
+  <advance width="1357"/>
+  <outline>
+    <component base="DevDda"/>
+    <component base="DevHalant" xOffset="1021" yOffset="-3"/>
+    <component base="DevNukta" xOffset="704" yOffset="69"/>
+    <contour>
+      <point x="678" y="-612" type="move" name="LowerAlt"/>
+    </contour>
+    <contour>
+      <point x="935" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="573" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

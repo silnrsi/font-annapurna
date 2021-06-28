@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevAaCndrbndRaAi" format="1">
+  <advance width="1424"/>
+  <outline>
+    <component base="DevMaatraAA"/>
+    <component base="DevCandrabindu" xOffset="521" yOffset="28"/>
+    <component base="DevMaatraAi.short" xOffset="1374"/>
+    <component base="DevRa" xOffset="555"/>
+    <contour>
+      <point x="820" y="-96" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="938" y="-92" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="681" y="-144" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="938" y="1356" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="681" y="1416" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

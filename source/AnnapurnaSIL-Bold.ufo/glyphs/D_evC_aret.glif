@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevCaret" format="1">
+  <advance width="2"/>
+  <unicode hex="A8FA"/>
+  <outline>
+    <contour>
+      <point x="20" y="1280" type="line"/>
+      <point x="303" y="1503" type="line"/>
+      <point x="183" y="1648" type="line"/>
+      <point x="-53" y="1456" type="line"/>
+      <point x="-229" y="1637" type="line"/>
+      <point x="-283" y="1593" type="line"/>
+    </contour>
+    <contour>
+      <point x="-380" y="38" type="move" name="_Ra"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevJhaNukta.alt" format="1">
+  <advance width="1906"/>
+  <outline>
+    <component base="DevJha.alt"/>
+    <component base="DevNukta" xOffset="1135" yOffset="330"/>
+    <contour>
+      <point x="1099" y="-100" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="1099" y="-30" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="1099" y="-112" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="1099" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="1099" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

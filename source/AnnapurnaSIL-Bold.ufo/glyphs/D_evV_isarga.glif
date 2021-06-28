@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVisarga" format="1">
+  <advance width="686"/>
+  <unicode hex="0903"/>
+  <outline>
+    <contour>
+      <point x="198" y="409" type="curve" smooth="yes"/>
+      <point x="198" y="365"/>
+      <point x="299" y="264"/>
+      <point x="343" y="264" type="curve" smooth="yes"/>
+      <point x="386" y="264"/>
+      <point x="488" y="365"/>
+      <point x="488" y="409" type="curve" smooth="yes"/>
+      <point x="488" y="452"/>
+      <point x="386" y="554"/>
+      <point x="343" y="554" type="curve" smooth="yes"/>
+      <point x="299" y="554"/>
+      <point x="198" y="452"/>
+    </contour>
+    <contour>
+      <point x="198" y="865" type="curve" smooth="yes"/>
+      <point x="198" y="821"/>
+      <point x="299" y="720"/>
+      <point x="343" y="720" type="curve" smooth="yes"/>
+      <point x="386" y="720"/>
+      <point x="488" y="821"/>
+      <point x="488" y="865" type="curve" smooth="yes"/>
+      <point x="488" y="908"/>
+      <point x="386" y="1010"/>
+      <point x="343" y="1010" type="curve" smooth="yes"/>
+      <point x="299" y="1010"/>
+      <point x="198" y="908"/>
+    </contour>
+  </outline>
+</glyph>

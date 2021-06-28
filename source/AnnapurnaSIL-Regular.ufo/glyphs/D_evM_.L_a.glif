@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevM.La" format="1">
+  <advance width="1311"/>
+  <outline>
+    <contour>
+      <point x="798" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="874" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="1321" y="1320" type="line"/>
+      <point x="413" y="1320" type="line"/>
+      <point x="489" y="1188" type="line"/>
+      <point x="1397" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="966" y="78" type="line"/>
+      <point x="1101" y="0" type="line"/>
+      <point x="1101" y="1320" type="line"/>
+      <point x="966" y="1320" type="line"/>
+    </contour>
+    <contour>
+      <point x="334" y="640" type="line"/>
+      <point x="469" y="640" type="line"/>
+      <point x="469" y="1200" type="line"/>
+      <point x="334" y="1200" type="line"/>
+    </contour>
+    <contour>
+      <point x="971" y="699" type="line"/>
+      <point x="316" y="699" type="line" smooth="yes"/>
+      <point x="220" y="699"/>
+      <point x="194" y="656"/>
+      <point x="194" y="607" type="curve" smooth="yes"/>
+      <point x="194" y="547"/>
+      <point x="328" y="385"/>
+      <point x="393" y="385" type="curve" smooth="yes"/>
+      <point x="429" y="385"/>
+      <point x="466" y="400"/>
+      <point x="466" y="465" type="curve" smooth="yes"/>
+      <point x="466" y="567" type="line"/>
+      <point x="971" y="567" type="line"/>
+    </contour>
+    <contour>
+      <point x="966" y="-396" type="line"/>
+      <point x="1101" y="-474" type="line"/>
+      <point x="1101" y="846" type="line"/>
+      <point x="966" y="846" type="line"/>
+    </contour>
+    <contour>
+      <point x="569" y="-418" type="line"/>
+      <point x="416" y="-278"/>
+      <point x="329" y="-106"/>
+      <point x="329" y="26" type="curve" smooth="yes"/>
+      <point x="329" y="162"/>
+      <point x="388" y="205"/>
+      <point x="443" y="205" type="curve" smooth="yes"/>
+      <point x="476" y="205"/>
+      <point x="506" y="196"/>
+      <point x="517" y="190" type="curve" smooth="yes"/>
+      <point x="544" y="176"/>
+      <point x="568" y="120"/>
+      <point x="576" y="51" type="curve"/>
+      <point x="714" y="-16" type="line"/>
+      <point x="683" y="152"/>
+      <point x="539" y="294"/>
+      <point x="357" y="294" type="curve" smooth="yes"/>
+      <point x="262" y="294"/>
+      <point x="180" y="246"/>
+      <point x="180" y="106" type="curve" smooth="yes"/>
+      <point x="180" y="-104"/>
+      <point x="349" y="-305"/>
+      <point x="506" y="-448" type="curve"/>
+    </contour>
+    <contour>
+      <point x="723" y="-14" type="line"/>
+      <point x="721" y="3"/>
+      <point x="720" y="19"/>
+      <point x="720" y="34" type="curve" smooth="yes"/>
+      <point x="720" y="155"/>
+      <point x="775" y="205"/>
+      <point x="834" y="205" type="curve" smooth="yes"/>
+      <point x="867" y="205"/>
+      <point x="897" y="196"/>
+      <point x="908" y="190" type="curve" smooth="yes"/>
+      <point x="925" y="181"/>
+      <point x="966" y="119"/>
+      <point x="966" y="51" type="curve"/>
+      <point x="1101" y="-16" type="line"/>
+      <point x="1070" y="152"/>
+      <point x="930" y="294"/>
+      <point x="748" y="294" type="curve" smooth="yes"/>
+      <point x="622" y="294"/>
+      <point x="571" y="216"/>
+      <point x="571" y="101" type="curve" smooth="yes"/>
+      <point x="571" y="48"/>
+      <point x="582" y="-12"/>
+      <point x="601" y="-76" type="curve"/>
+    </contour>
+    <contour>
+      <point x="1036" y="-568" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="1036" y="-500" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="665" y="-582" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="1036" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="665" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

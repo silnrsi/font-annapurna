@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevNgaR" format="1">
+  <advance width="1396"/>
+  <outline>
+    <component base="DevNga" xOffset="-1"/>
+    <component base="DevRaVattu" xOffset="1214" yOffset="-63"/>
+    <contour>
+      <point x="820" y="-363" type="move" name="Halant"/>
+    </contour>
+    <contour>
+      <point x="937" y="-370" type="move" name="Lower"/>
+    </contour>
+    <contour>
+      <point x="680" y="-418" type="move" name="LowerCenter"/>
+    </contour>
+    <contour>
+      <point x="937" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="680" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>

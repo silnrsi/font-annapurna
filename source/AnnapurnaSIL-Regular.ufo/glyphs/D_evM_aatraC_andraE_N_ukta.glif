@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraCandraENukta" format="1">
+  <advance width="7"/>
+  <outline>
+    <component base="DevMaatraCandraE"/>
+    <component base="DevNukta" xOffset="24"/>
+    <contour>
+      <point x="-381" y="1330" type="move" name="_Upper"/>
+    </contour>
+  </outline>
+</glyph>

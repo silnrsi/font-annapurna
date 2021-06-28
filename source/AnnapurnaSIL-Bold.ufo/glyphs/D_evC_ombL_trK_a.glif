@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevCombLtrKa" format="1">
+  <advance width="1"/>
+  <unicode hex="A8EC"/>
+  <outline>
+    <component base="DevKa" xScale="0.5" yScale="0.5" xOffset="-963" yOffset="1950"/>
+  </outline>
+</glyph>

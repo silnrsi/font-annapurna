@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraAiReph" format="1">
+  <advance width="3"/>
+  <outline>
+    <component base="DevMaatraAi" xOffset="-235"/>
+    <component base="DevRaReph.alt2" xOffset="-233"/>
+    <contour>
+      <point x="-547" y="1330" type="move" name="_Upper"/>
+    </contour>
+  </outline>
+</glyph>

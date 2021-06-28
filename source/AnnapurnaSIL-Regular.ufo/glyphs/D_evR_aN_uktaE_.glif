@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevRaNuktaE" format="1">
+  <advance width="868"/>
+  <outline>
+    <component base="DevMaatraE.short" xOffset="825"/>
+    <component base="DevRa"/>
+    <component base="DevNukta" xOffset="687" yOffset="319"/>
+  </outline>
+</glyph>

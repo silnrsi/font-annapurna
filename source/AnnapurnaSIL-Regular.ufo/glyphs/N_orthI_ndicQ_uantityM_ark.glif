@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="NorthIndicQuantityMark" format="1">
+  <advance width="706"/>
+  <unicode hex="A839"/>
+  <outline>
+    <contour>
+      <point x="-678" y="-613" type="line"/>
+      <point x="-229" y="-613"/>
+      <point x="392" y="-466"/>
+      <point x="392" y="98" type="curve" smooth="yes"/>
+      <point x="392" y="392"/>
+      <point x="216" y="728"/>
+      <point x="216" y="1016" type="curve" smooth="yes"/>
+      <point x="216" y="1273"/>
+      <point x="465" y="1369"/>
+      <point x="788" y="1369" type="curve"/>
+      <point x="722" y="1501" type="line"/>
+      <point x="281" y="1501"/>
+      <point x="100" y="1353"/>
+      <point x="100" y="1085" type="curve" smooth="yes"/>
+      <point x="100" y="797"/>
+      <point x="258" y="463"/>
+      <point x="258" y="175" type="curve" smooth="yes"/>
+      <point x="258" y="-297"/>
+      <point x="-280" y="-481"/>
+      <point x="-753" y="-481" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

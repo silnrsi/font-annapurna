@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraShortEReph" format="1">
+  <advance width="3"/>
+  <outline>
+    <component base="DevMaatraShortE" xOffset="-344"/>
+    <component base="DevRaReph.alt" xOffset="-233"/>
+    <contour>
+      <point x="-575" y="1330" type="move" name="_Upper"/>
+    </contour>
+  </outline>
+</glyph>

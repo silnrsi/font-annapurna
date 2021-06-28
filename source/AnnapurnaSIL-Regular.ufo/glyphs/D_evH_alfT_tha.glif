@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfTtha" format="1">
+  <advance width="1344"/>
+  <outline>
+    <component base="DevTtha"/>
+    <component base="DevHalant" xOffset="980" yOffset="-3"/>
+    <contour>
+      <point x="672" y="-612" type="move" name="LowerAlt"/>
+    </contour>
+    <contour>
+      <point x="874" y="1330" type="move" name="Upper"/>
+    </contour>
+    <contour>
+      <point x="686" y="1390" type="move" name="UpperCenter"/>
+    </contour>
+  </outline>
+</glyph>
