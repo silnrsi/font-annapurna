@@ -36,31 +36,18 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
             make_params = omitAPs
         ),
 
-#        graphite = gdl('source/gdl/${DS:FILENAME_BASE}.gdl',
-#            master = 'source/annapurna_gr_rules.gdl',
-#            params = '-w3521 -w3530 -q -d -D -v5 -e gdlerr-' + '${DS:FILENAME_BASE}' + '.txt', make_params="-m _R",
-#           depends = ['source/annapurna_gr_features.gdl']
-#        ),
+        graphite = gdl('source/gdl/${DS:FILENAME_BASE}.gdl',
+            master = 'source/annapurna_gr_rules.gdh',
+            params = '-q -d -v5 -e gdlerr-${DS:FILENAME_BASE}.txt', 
+            depends = ['source/annapurna_gr_features.gdh']
+        ),
 
+        woff = woff('web/${DS:FILENAME_BASE}.woff', 
+            params = '-v ' + VERSION + ' -m ../source/AnnapurnaSIL-WOFF-metadata.xml'
+        ),
 
-##for ext in ('-Regular', '-Bold') :
-##    fbase = 'AnnapurnaSIL' + ext
-##    font (target = process('AnnapurnaSIL' + ext + '.ttf', name('Annapurna SIL'),
-#            cmd('../tools/FFchangeGlyphNames.py -i ' + psnames + ' ${DEP} ${TGT}'),
-##            cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}')),
-##        source = create('buildsrc/AnnapurnaSIL' + ext + '_src.ttf', cmd('psfufo2ttf ${SRC} ${TGT}', ['source/AnnapurnaSIL' + ext + '.ufo'])),
-##        ap = create('buildsrc/ap/Annapurna' + ext + '.xml', cmd('psfexportanchors -g ${SRC} ${TGT}', [ 'source/AnnapurnaSIL' + ext + '.ufo' ])),
-#        version = TTF_VERSION,
-#        copyright = COPYRIGHT,
-##        opentype = fea ('buildsrc/fea/Annapurna' + ext + '_make.fea',
-##            master = 'source/annapurna_ot.feax'),
-##            make_params="-z 8"),
-##        graphite = gdl ('buildsrc/gdl/AnnapurnaSIL' + ext + '.gdl',
-##            master = 'source/annapurna_gr_rules.gdh',
-##            make_params = ' --package "../tools/perllib/gdl_deva.pm"'),
         script = ['deva', 'dev2'],
         pdf = fret(params="-r -oi"),
-        woff = woff('web/${DS:FILENAME_BASE}.woff', params = '-v ' + VERSION + ' -m ../source/AnnapurnaSIL-WOFF-metadata.xml'),
 	)
 
 def configure(ctx) :

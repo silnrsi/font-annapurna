@@ -1,21 +1,21 @@
 /*******************************************************************
 
 	File: annapurna_main.gdh
-	
+
 	Rules for Devanagari script, included in annapurna-R/B.gdl
-	
-	Author: Sharon Correll 
+
+	Author: Sharon Correll
 
 *******************************************************************/
 
 /*
-    This file is part of the Annapurna font family (http://software.sil.org/annapurna/) 
-    and is Copyright (c) 2007-2021 SIL International (http://www.sil.org/), with 
+    This file is part of the Annapurna font family (http://software.sil.org/annapurna/)
+    and is Copyright (c) 2007-2021 SIL International (http://www.sil.org/), with
     Reserved Font Names "Annapurna" and "SIL".
 
-    This Font Software is licensed under the SIL Open Font License, Version 1.1. 
-    You should have received a copy of the license along with this Font Software. 
-    If this is not the case, go to (http://scripts.sil.org/OFL) for all the details 
+    This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    You should have received a copy of the license along with this Font Software.
+    If this is not the case, go to (http://scripts.sil.org/OFL) for all the details
     including a FAQ.
 */
 
@@ -32,15 +32,16 @@ Bidi = false;
 #define F_CONJ1		4	// dead - first half of conjunct (never on RA)
 						// TODO: figure out if we need to distinguish between F_CONJ1 and F_HALF
 #define F_HALF		5	// dead - half-form, if any (including RA - both reph & rakar)
-#define	F_NOHALANT	6	// functions like half-form in that any explicit halant is removed; following consonant "connects" backwards
+#define F_NOHALANT	6	// functions like half-form in that any explicit halant is removed; following consonant "connects" backwards
 //#define F_VSIGN	7	// vowel sign, vowels only
 
 // Ra forms
 #define raform user2
 #define R_NOMINAL	0
 #define R_REPH		1
-#define R_RAKAR		2
-#define R_EYELASH	3
+#define R_REPH_P	2	// final position is pending
+#define R_RAKAR		3
+#define R_EYELASH	4
 
 #define attached user3  // has attachment been performed on this glyph?
 
@@ -85,226 +86,226 @@ table(glyph) {AttributeOverride = false}
 	//	Underlying (nominal) consonant forms
 
 	cls_consNom = (
-		DevKa	DevKha	DevGa	DevGha	DevNga	DevCa	DevCha	DevJa	DevJha	DevJha
-		DevNya	DevTta	DevTtha	DevDda	DevDdha	DevNna	DevTa	DevTha	DevDa	DevDha
-		DevNa	DevNaNukta	DevPa	DevPha	DevBa	DevBha	DevMa	DevYa	DevRa	DevRaNukta
-		DevLa	DevLla	DevLlaNukta	DevWa	DevSha	DevSsa	DevSa	DevHa	DevKaNukta	DevKhaNukta
-		DevGaNukta	DevJaNukta	DevDdaNukta	DevDdhaNukta	DevPhaNukta	DevYaNukta	DevDdaMarawari
+		g__dev_ka	g__dev_kha	g__dev_ga	g__dev_gha	g__dev_nga	g__dev_ca	g__dev_cha	g__dev_ja	g__dev_jha	g__dev_nya
+		g__dev_tta	g__dev_ttha	g__dev_dda	g__dev_ddha	g__dev_nna	g__dev_ta	g__dev_tha	g__dev_da	g__dev_dha	g__dev_na
+		g__dev_na_nukta	g__dev_pa	g__dev_pha	g__dev_ba	g__dev_bha	g__dev_ma	g__dev_ya	g__dev_ra	g__dev_ra_nukta	g__dev_la
+		g__dev_lla	g__dev_lla_nukta	g__dev_wa	g__dev_sha	g__dev_ssa	g__dev_sa	g__dev_ha	g__dev_ka_nukta	g__dev_kha_nukta	g__dev_ga_nukta
+		g__dev_ja_nukta	g__dev_dda_nukta	g__dev_ddha_nukta	g__dev_pha_nukta	g__dev_ya_nukta	g__dev_dda_marawari
 
 		// In the case of a Type Tuned font where the alternate is in the cmap:
-		DevJha_alt  DevJha_alt2  DevNna_archaic
+		g__dev_jha_alt  g__dev_jha_alt2  g__dev_nna_archaic
 	);
-	
-	g_ra = DevRa;
-	
-	g_rra = DevRaNukta;
-	g_rraEyelash = DevHalfRa;
+
+	g_ra = g__dev_ra;
+
+	g_rra = g__dev_ra_nukta;
+	g_rraEyelash = g__dev_half_ra;
 
 	g_zwj = unicode(0x200D);
 	g_zwnj = unicode(0x200C);
 
 	//	Consonant groups - for handling matra widths
-	
-	cls_fullKa		= (DevKa	DevKaNukta			DevKaR		DevKaNuktaR		DevKaR_alt); 	//	g0915_093c_094d_0930_alt
-	cls_fullKha		= (DevKha	DevKhaNukta			DevKhaR		DevKhaNuktaR);
-	cls_fullGa		= (DevGa	DevGaNukta			DevGaR		DevGaNuktaR);
-	cls_fullGha		= (DevGha	DevGhaNukta		DevGhaR		DevGhaNuktaR);
-	cls_fullNga		= (DevNga	DevNgaNukta		DevNgaR		DevNgaNuktaR);
-	cls_fullCa		= (DevCa	DevCaNukta		DevCaR		DevCaNuktaR);
-	cls_fullCha		= (DevCha	DevChaNukta		DevChaR		DevChaNuktaR);
-	cls_fullJa		= (DevJa	DevJaNukta			DevJhaR		DevJaNuktaR);
-	cls_fullJha		= (DevJha	DevJhaNukta		DevJhaR		DevJhaNuktaR);
+
+	cls_fullKa		= (g__dev_ka	g__dev_ka_nukta			g__dev_ka_r		g__dev_ka_nukta_r		g__dev_ka_r_alt); 	//	g0915_093c_094d_0930_alt
+	cls_fullKha		= (g__dev_kha	g__dev_kha_nukta			g__dev_kha_r		g__dev_kha_nukta_r);
+	cls_fullGa		= (g__dev_ga	g__dev_ga_nukta			g__dev_ga_r		g__dev_ga_nukta_r);
+	cls_fullGha		= (g__dev_gha	g__dev_gha_nukta		g__dev_gha_r		g__dev_gha_nukta_r);
+	cls_fullNga		= (g__dev_nga	g__dev_nga_nukta		g__dev_nga_r		g__dev_nga_nukta_r);
+	cls_fullCa		= (g__dev_ca	g__dev_ca_nukta		g__dev_ca_r		g__dev_ca_nukta_r);
+	cls_fullCha		= (g__dev_cha	g__dev_cha_nukta		g__dev_cha_r		g__dev_cha_nukta_r);
+	cls_fullJa		= (g__dev_ja	g__dev_ja_nukta			g__dev_jha_r		g__dev_ja_nukta_r);
+	cls_fullJha		= (g__dev_jha	g__dev_jha_nukta		g__dev_jha_r		g__dev_jha_nukta_r);
 	cls_fullJha_alt
-				= (DevJha_alt	DevJhaNukta_alt	DevJhaR_alt	DevJhaNuktaR_alt);
+				= (g__dev_jha_alt	g__dev_jha_nukta_alt	g__dev_jha_r_alt	g__dev_jha_nukta_r_alt);
 	cls_fullJha_alt2
-				= (DevJha_alt2 DevJhaNukta_alt2	DevJhaR_alt2	DevJhaNuktaR_alt2);
-	cls_fullNya		= (DevNya	DevNyaNukta		DevNyaR		DevNyaNuktaR);
-	cls_fullTta		= (DevTta	DevTtaNukta		DevTtaR		DevTtaNuktaR);
-	cls_fullTtha	= (DevTtha	DevTthaNukta		DevTthaR		DevTthaNuktaR);
-	cls_fullDda		= (DevDda	DevDdaNukta			DevDdaR		DevDdaNuktaR);
-	cls_fullDdha	= (DevDdha	DevDdhaNukta			DevDdhaR		DevDdhaNuktaR);
-	cls_fullNna		= (DevNna	DevNnaNukta		DevNnaR		DevNnaNuktaR	DevNna_archaic);
-	cls_fullTa		= (DevTa	DevTaNukta		DevTaR		DevTaNuktaR	DevTaR_alt	DevTaNuktaR_alt);
-	cls_fullTha		= (DevTha	DevThaNukta		DevThaR		DevThaNuktaR);
-	cls_fullDa		= (DevDa	DevDaNukta		DevDaR		DevDaNuktaR);
-	cls_fullDha		= (DevDha	DevDhaNukta		DevDhaR		DevDhaNuktaR);
-	cls_fullNa		= (DevNa	DevNaNukta			DevNaR		DevNaNuktaR);
-	cls_fullPa		= (DevPa	DevPaNukta		DevPaR		DevPaNuktaR);
-	cls_fullPha		= (DevPha	DevPhaNukta			DevPhaR		DevPhaNuktaR);
-	cls_fullBa		= (DevBa	DevBaNukta		DevBaR		DevBaNuktaR);
-	cls_fullBha		= (DevBha	DevBhaNukta		DevBhaR		DevBhaNuktaR);
-	cls_fullMa		= (DevMa	DevMaNukta		DevMaR		DevMaNuktaR);
-	cls_fullYa		= (DevYa	DevYaNukta			DevYaR		DevYaNuktaR);
-	cls_fullYa_alt	= (DevYa_alt DevYaNukta_alt		DevYaR_alt	DevYaNuktaR_alt);
-	cls_fullRa		= (DevRa	DevRaNukta);
-	cls_fullLa		= (DevLa	DevLaNukta		DevLaR		DevLaNuktaR);
-	cls_fullLla		= (DevLla	DevLlaNukta			DevLlaR		DevLlaNuktaR);
-	cls_fullWa		= (DevWa	DevWaNukta		DevWaR		DevWaNuktaR);
-	cls_fullSha		= (DevSha	DevShaNukta		DevShaR		DevShaNuktaR	DevShaR_alt	DevShaNuktaR_alt);
-	cls_fullSsa		= (DevSsa	DevSsaNukta		DevSsaR		DevSsaNuktaR);
-	cls_fullSa		= (DevSa	DevSaNukta		DevSaR		DevSaNuktaR);
-	cls_fullHa		= (DevHa	DevHaNukta		DevHaR		DevHaNuktaR);
-	cls_fullGga		= (DevGga	DevGgaNukta		DevGgaR		DevGgaNuktaR);
-	cls_fullJja		= (DevJja	DevJjaNukta		DevJjaR		DevJjaNuktaR);
-	cls_fullDdda	= (DevDdda	DevDddaNukta		DevDddaR		DevDddaNuktaR);
-	cls_fullBba		= (DevBba	DevBbaNukta		DevBbaR		DevBbaNuktaR);
+				= (g__dev_jha_alt2 g__dev_jha_nukta_alt2	g__dev_jha_r_alt2	g__dev_jha_nukta_r_alt2);
+	cls_fullNya		= (g__dev_nya	g__dev_nya_nukta		g__dev_nya_r		g__dev_nya_nukta_r);
+	cls_fullTta		= (g__dev_tta	g__dev_tta_nukta		g__dev_tta_r		g__dev_tta_nukta_r);
+	cls_fullTtha	= (g__dev_ttha	g__dev_ttha_nukta		g__dev_ttha_r		g__dev_ttha_nukta_r);
+	cls_fullDda		= (g__dev_dda	g__dev_dda_nukta			g__dev_dda_r		g__dev_dda_nukta_r);
+	cls_fullDdha	= (g__dev_ddha	g__dev_ddha_nukta			g__dev_ddha_r		g__dev_ddha_nukta_r);
+	cls_fullNna		= (g__dev_nna	g__dev_nna_nukta		g__dev_nna_r		g__dev_nna_nukta_r	g__dev_nna_archaic);
+	cls_fullTa		= (g__dev_ta	g__dev_ta_nukta		g__dev_ta_r		g__dev_ta_nukta_r	g__dev_ta_r_alt	g__dev_ta_nukta_r_alt);
+	cls_fullTha		= (g__dev_tha	g__dev_tha_nukta		g__dev_tha_r		g__dev_tha_nukta_r);
+	cls_fullDa		= (g__dev_da	g__dev_da_nukta		g__dev_da_r		g__dev_da_nukta_r);
+	cls_fullDha		= (g__dev_dha	g__dev_dha_nukta		g__dev_dha_r		g__dev_dha_nukta_r);
+	cls_fullNa		= (g__dev_na	g__dev_na_nukta			g__dev_na_r		g__dev_na_nukta_r);
+	cls_fullPa		= (g__dev_pa	g__dev_pa_nukta		g__dev_pa_r		g__dev_pa_nukta_r);
+	cls_fullPha		= (g__dev_pha	g__dev_pha_nukta			g__dev_pha_r		g__dev_pha_nukta_r);
+	cls_fullBa		= (g__dev_ba	g__dev_ba_nukta		g__dev_ba_r		g__dev_ba_nukta_r);
+	cls_fullBha		= (g__dev_bha	g__dev_bha_nukta		g__dev_bha_r		g__dev_bha_nukta_r);
+	cls_fullMa		= (g__dev_ma	g__dev_ma_nukta		g__dev_ma_r		g__dev_ma_nukta_r);
+	cls_fullYa		= (g__dev_ya	g__dev_ya_nukta			g__dev_ya_r		g__dev_ya_nukta_r);
+	cls_fullYa_alt	= (g__dev_ya_alt g__dev_ya_nukta_alt		g__dev_ya_r_alt	g__dev_ya_nukta_r_alt);
+	cls_fullRa		= (g__dev_ra	g__dev_ra_nukta);
+	cls_fullLa		= (g__dev_la	g__dev_la_nukta		g__dev_la_r		g__dev_la_nukta_r);
+	cls_fullLla		= (g__dev_lla	g__dev_lla_nukta			g__dev_lla_r		g__dev_lla_nukta_r);
+	cls_fullWa		= (g__dev_wa	g__dev_wa_nukta		g__dev_wa_r		g__dev_wa_nukta_r);
+	cls_fullSha		= (g__dev_sha	g__dev_sha_nukta		g__dev_sha_r		g__dev_sha_nukta_r	g__dev_sha_r_alt	g__dev_sha_nukta_r_alt);
+	cls_fullSsa		= (g__dev_ssa	g__dev_ssa_nukta		g__dev_ssa_r		g__dev_ssa_nukta_r);
+	cls_fullSa		= (g__dev_sa	g__dev_sa_nukta		g__dev_sa_r		g__dev_sa_nukta_r);
+	cls_fullHa		= (g__dev_ha	g__dev_ha_nukta		g__dev_ha_r		g__dev_ha_nukta_r);
+	cls_fullGga		= (g__dev_gga	g__dev_gga_nukta		g__dev_gga_r		g__dev_gga_nukta_r);
+	cls_fullJja		= (g__dev_jja	g__dev_jja_nukta		g__dev_jja_r		g__dev_jja_nukta_r);
+	cls_fullDdda	= (g__dev_ddda	g__dev_ddda_nukta		g__dev_ddda_r		g__dev_ddda_nukta_r);
+	cls_fullBba		= (g__dev_bba	g__dev_bba_nukta		g__dev_bba_r		g__dev_bba_nukta_r);
 
 	//	Vowels
-	
-	cls_vowelLeft = (DevMaatraI, DevPrishthamatraE);
-	cls_vowelRight = (DevMaatraOOE, DevMaatraAA, DevMaatraII, DevMaatraCandraO, DevMaatraShortO, DevMaatraO, DevMaatraAU, DevMaatraAW);	// these can have RAs attached
-	
+
+	cls_vowelLeft = (g__dev_maatra_i, g__dev_prishthamatra_e);
+	cls_vowelRight = (g__dev_maatra_o_o_e, g__dev_maatra_a_a, g__dev_maatra_i_i, g__dev_maatra_candra_o, g__dev_maatra_short_o, g__dev_maatra_o, g__dev_maatra_a_u, g__dev_maatra_a_w);	// these can have RAs attached
+
 
 	//	Nukta and nukta forms
 
-	g_nukta = DevNukta;
+	g_nukta = g__dev_nukta;
 	cls_woNukta = (
-		DevKa		DevKha		DevGa		DevGha		DevNga		DevCa		DevCha		DevJa		DevJha
-		DevNya		DevTta		DevTtha		DevDda		DevDdha		DevNna		DevTa		DevTha		DevDa
-		DevDha		DevNa		DevPa		DevPha		DevBa		DevBha		DevMa		DevYa		DevRa
-		DevLa		DevLla		DevWa		DevSha		DevSsa		DevSa		DevHa		DevVowelShortA		DevVowelA
-		DevVowelAA		DevVowelI		DevVowelII		DevVowelU		DevVowelUU		DevVowelR		DevVowelL		DevVowelRR		DevVowelLL
-		DevVowelCandraE		DevVowelShortE		DevVowelE		DevVowelAI		DevVowelCandraO		DevVowelShortO		DevVowelO		DevVowelAU		DevVowelCandraA
-		DevMaatraAA		DevMaatraI		DevMaatraII		DevMaatraU		DevMaatraUU		DevMaatraR		DevMaatraRR		DevMaatraL		DevMaatraLL
-		DevMaatraCandraE		DevMaatraShortE		DevMaatraE		DevMaatraAi		DevMaatraCandraO		DevMaatraShortO		DevMaatraO		DevMaatraAU		DevGga
-		DevJja		DevDdda		DevBba);
-				
+		g__dev_ka		g__dev_kha		g__dev_ga		g__dev_gha		g__dev_nga		g__dev_ca		g__dev_cha		g__dev_ja		g__dev_jha
+		g__dev_nya		g__dev_tta		g__dev_ttha		g__dev_dda		g__dev_ddha		g__dev_nna		g__dev_ta		g__dev_tha		g__dev_da
+		g__dev_dha		g__dev_na		g__dev_pa		g__dev_pha		g__dev_ba		g__dev_bha		g__dev_ma		g__dev_ya		g__dev_ra
+		g__dev_la		g__dev_lla		g__dev_wa		g__dev_sha		g__dev_ssa		g__dev_sa		g__dev_ha		g__dev_vowel_short_a		g__dev_vowel_a
+		g__dev_vowel_a_a		g__dev_vowel_i		g__dev_vowel_i_i		g__dev_vowel_u		g__dev_vowel_u_u		g__dev_vowel_r		g__dev_vowel_l		g__dev_vowel_r_r		g__dev_vowel_l_l
+		g__dev_vowel_candra_e		g__dev_vowel_short_e		g__dev_vowel_e		g__dev_vowel_a_i		g__dev_vowel_candra_o		g__dev_vowel_short_o		g__dev_vowel_o		g__dev_vowel_a_u		g__dev_vowel_candra_a
+		g__dev_maatra_a_a		g__dev_maatra_i		g__dev_maatra_i_i		g__dev_maatra_u		g__dev_maatra_u_u		g__dev_maatra_r		g__dev_maatra_r_r		g__dev_maatra_l		g__dev_maatra_l_l
+		g__dev_maatra_candra_e		g__dev_maatra_short_e		g__dev_maatra_e		g__dev_maatra_ai		g__dev_maatra_candra_o		g__dev_maatra_short_o		g__dev_maatra_o		g__dev_maatra_a_u		g__dev_gga
+		g__dev_jja		g__dev_ddda		g__dev_bba);
+
 	cls_wNukta  = (
-		DevKaNukta		DevKhaNukta		DevGaNukta		DevGhaNukta	DevNgaNukta	DevCaNukta	DevChaNukta	DevJaNukta		DevJhaNukta
-		DevNyaNukta	DevTtaNukta	DevTthaNukta	DevDdaNukta		DevDdhaNukta		DevNnaNukta	DevTaNukta	DevThaNukta	DevDaNukta
-		DevDhaNukta	DevNaNukta		DevPaNukta	DevPhaNukta		DevBaNukta	DevBhaNukta	DevMaNukta	DevYaNukta		DevRaNukta
-		DevLaNukta	DevLlaNukta		DevWaNukta	DevShaNukta	DevSsaNukta	DevSaNukta	DevHaNukta	DevVowelShortANukta	DevVowelANukta
-		DevVowelAANukta	DevVowelINukta	DevVowelIINukta	DevVowelUNukta	DevVowelUUNukta	DevVowelRNukta	DevVowelLNukta	DevVowelRRNukta	DevVowelLLNukta
-		DevVowelCandraENukta	DevVowelShortENukta	DevVowelENukta	DevVowelAINukta	DevVowelCandraONukta	DevVowelShortONukta	DevVowelONukta	DevVowelAUNukta	DevVowelCandraANukta
-		DevMaatraAANukta	DevMaatraINukta	DevMaatraIINukta	DevMaatraUNukta	DevMaatraUUNukta	DevMaatraRNukta	DevMaatraRRNukta	DevMaatraLNukta	DevMaatraLLNukta
-		DevMaatraCandraENukta	DevMaatraShortENukta	DevMaatraENukta	DevMaatraAiNukta	DevMaatraCandraONukta	DevMaatraShortONukta	DevMaatraONukta	DevMaatraAUNukta	DevGgaNukta
-		DevJjaNukta	DevDddaNukta	DevBbaNukta);
+		g__dev_ka_nukta		g__dev_kha_nukta		g__dev_ga_nukta		g__dev_gha_nukta	g__dev_nga_nukta	g__dev_ca_nukta	g__dev_cha_nukta	g__dev_ja_nukta		g__dev_jha_nukta
+		g__dev_nya_nukta	g__dev_tta_nukta	g__dev_ttha_nukta	g__dev_dda_nukta		g__dev_ddha_nukta		g__dev_nna_nukta	g__dev_ta_nukta	g__dev_tha_nukta	g__dev_da_nukta
+		g__dev_dha_nukta	g__dev_na_nukta		g__dev_pa_nukta	g__dev_pha_nukta		g__dev_ba_nukta	g__dev_bha_nukta	g__dev_ma_nukta	g__dev_ya_nukta		g__dev_ra_nukta
+		g__dev_la_nukta	g__dev_lla_nukta		g__dev_wa_nukta	g__dev_sha_nukta	g__dev_ssa_nukta	g__dev_sa_nukta	g__dev_ha_nukta	g__dev_vowel_short_a_nukta	g__dev_vowel_a_nukta
+		g__dev_vowel_a_a_nukta	g__dev_vowel_i_nukta	g__dev_vowel_i_i_nukta	g__dev_vowel_u_nukta	g__dev_vowel_u_u_nukta	g__dev_vowel_r_nukta	g__dev_vowel_l_nukta	g__dev_vowel_r_r_nukta	g__dev_vowel_l_l_nukta
+		g__dev_vowel_candra_e_nukta	g__dev_vowel_short_e_nukta	g__dev_vowel_e_nukta	g__dev_vowel_a_i_nukta	g__dev_vowel_candra_o_nukta	g__dev_vowel_short_o_nukta	g__dev_vowel_o_nukta	g__dev_vowel_a_u_nukta	g__dev_vowel_candra_a_nukta
+		g__dev_maatra_a_a_nukta	g__dev_maatra_i_nukta	g__dev_maatra_i_i_nukta	g__dev_maatra_u_nukta	g__dev_maatra_u_u_nukta	g__dev_maatra_r_nukta	g__dev_maatra_r_r_nukta	g__dev_maatra_l_nukta	g__dev_maatra_l_l_nukta
+		g__dev_maatra_candra_e_nukta	g__dev_maatra_short_e_nukta	g__dev_maatra_e_nukta	g__dev_maatra_ai_nukta	g__dev_maatra_candra_o_nukta	g__dev_maatra_short_o_nukta	g__dev_maatra_o_nukta	g__dev_maatra_a_u_nukta	g__dev_gga_nukta
+		g__dev_jja_nukta	g__dev_ddda_nukta	g__dev_bba_nukta);
 
 
 	//	Akhand
-	
-	g_akhand = DevHalant;
+
+	g_akhand = g__dev_halant;
 
 
 	//	Half forms
-	
+
 	cls_nHalf = (
-		DevKa				DevKaNukta			DevKha				DevKhaNukta			DevGa				DevGaNukta			DevGha
-		DevGhaNukta			DevNga			DevNgaNukta			DevCa			DevCaNukta			DevCha			DevChaNukta
-		DevJa				DevJaNukta			DevJha				DevJhaNukta		DevJha_alt			DevJhaNukta_alt	DevJha_alt2
-		DevJhaNukta_alt2	DevNya				DevNya				DevNyaNukta		DevTta				DevTtaNukta
-		DevTtha				DevTthaNukta		DevDda				DevDdaNukta			DevDdha				DevDdhaNukta			DevNna
-		DevNnaNukta			DevTa			DevTaNukta			DevTaR	 	DevTaNuktaR			DevTha
-		DevThaNukta			DevDa			DevDaNukta			DevDha			DevDhaNukta			DevNa			DevNaNukta
-		DevPa				DevPaNukta		DevPha				DevPhaNukta			DevBa				DevBaNukta
-		DevBha				DevBhaNukta		DevMa				DevMaNukta		DevYa				DevYaNukta			
-		DevYa_alt			DevYaNukta_alt		DevRa				DevRaNukta
-		DevLa				DevLaNukta		DevLla				DevLlaNukta			DevWa				DevWaNukta		DevSha
-		DevSsa				DevSsaNukta		DevSa				DevSaNukta		DevHa				DevHaNukta		DevGga
-		DevGgaNukta			DevJja			DevJjaNukta			DevDdda			DevDddaNukta			DevBba
-		DevBbaNukta			DevNna_archaic	DevK_Ssa		DevK_Ssa_archaic				DevJ_Nya	DevT_Ta);
+		g__dev_ka				g__dev_ka_nukta			g__dev_kha				g__dev_kha_nukta			g__dev_ga				g__dev_ga_nukta			g__dev_gha
+		g__dev_gha_nukta			g__dev_nga			g__dev_nga_nukta			g__dev_ca			g__dev_ca_nukta			g__dev_cha			g__dev_cha_nukta
+		g__dev_ja				g__dev_ja_nukta			g__dev_jha				g__dev_jha_nukta		g__dev_jha_alt			g__dev_jha_nukta_alt	g__dev_jha_alt2
+		g__dev_jha_nukta_alt2		g__dev_nya			g__dev_nya_nukta			g__dev_tta			g__dev_tta_nukta
+		g__dev_ttha				g__dev_ttha_nukta		g__dev_dda				g__dev_dda_nukta			g__dev_ddha				g__dev_ddha_nukta			g__dev_nna
+		g__dev_nna_nukta			g__dev_ta			g__dev_ta_nukta			g__dev_ta_r	 	g__dev_ta_nukta_r			g__dev_tha
+		g__dev_tha_nukta			g__dev_da			g__dev_da_nukta			g__dev_dha			g__dev_dha_nukta			g__dev_na			g__dev_na_nukta
+		g__dev_pa				g__dev_pa_nukta		g__dev_pha				g__dev_pha_nukta			g__dev_ba				g__dev_ba_nukta
+		g__dev_bha				g__dev_bha_nukta		g__dev_ma				g__dev_ma_nukta		g__dev_ya				g__dev_ya_nukta
+		g__dev_ya_alt			g__dev_ya_nukta_alt		g__dev_ra				g__dev_ra_nukta
+		g__dev_la				g__dev_la_nukta		g__dev_lla				g__dev_lla_nukta			g__dev_wa				g__dev_wa_nukta		g__dev_sha
+		g__dev_ssa				g__dev_ssa_nukta		g__dev_sa				g__dev_sa_nukta		g__dev_ha				g__dev_ha_nukta		g__dev_gga
+		g__dev_gga_nukta			g__dev_jja			g__dev_jja_nukta			g__dev_ddda			g__dev_ddda_nukta			g__dev_bba
+		g__dev_bba_nukta			g__dev_nna_archaic	g__dev_k_ssa		g__dev_k_ssa_archaic				g__dev_j_nya	g__dev_t_ta);
 
 	cls_half = (
-		DevHalfKa			DevHalfKaNukta			DevHalfKha			DevHalfKhaNukta			DevHalfGa			DevHalfGaNukta				DevHalfGha
-		DevHalfGhaNukta	DevHalfNga			DevHalfNgaNukta	DevHalfCa			DevHalfCaNukta	DevHalfCha				DevHalfChaNukta
-		DevHalfJa			DevHalfJaNukta			DevHalfJha			DevHalfJhaNukta	DevHalfJha_alt		DevHalfJhaNukta_alt	DevHalfJha_alt2
-		DevHalfJhaNukta_alt2						DevHalfNya			DevHalfNya			DevHalfNyaNukta	DevHalfTta				DevHalfTtaNukta
-		DevHalfTtha			DevHalfTthaNukta	DevHalfDda			DevHalfDdaNukta			DevHalfDdha			DevHalfDdhaNukta				DevHalfNna
-		DevHalfNnaNukta	DevHalfTa			DevHalfTaNukta	DevHalfTaR		DevHalfTaNuktaR				DevHalfTha
-		DevHalfThaNukta	DevHalfDa			DevHalfDaNukta	DevHalfDha			DevHalfDhaNukta	DevHalfNa				DevHalfNaNukta
-		DevHalfPa			DevHalfPaNukta	DevHalfPha			DevHalfPhaNukta			DevHalfBa			DevHalfBaNukta
-		DevHalfBha			DevHalfBhaNukta	DevHalfMa			DevHalfMaNukta	DevHalfYa			DevHalfYaNukta
-		DevHalfYa_alt		DevHalfYaNukta_alt		DevHalfRa			DevHalfRa
-		DevHalfLa			DevHalfLaNukta	DevHalfLla			DevHalfLlaNukta			DevHalfWa			DevHalfWaNukta		DevHalfSha
-		DevHalfSsa			DevHalfSsaNukta	DevHalfSa			DevHalfSaNukta	DevHalfHa			DevHalfHaNukta		DevHalfGga
-		DevHalfGgaNukta	DevHalfJja			DevHalfJjaNukta	DevHalfDdda			DevHalfDddaNukta	DevHalfBba
-		DevHalfBbaNukta	DevHalfNna_archaic	DevHalfK_Ssa	DevHalfK_Ssa_archaic			DevHalfJ_Nya	DevHalfT_Ta);
+		g__dev_half_ka			g__dev_half_ka_nukta			g__dev_half_kha			g__dev_half_kha_nukta			g__dev_half_ga			g__dev_half_ga_nukta				g__dev_half_gha
+		g__dev_half_gha_nukta	g__dev_half_nga			g__dev_half_nga_nukta	g__dev_half_ca			g__dev_half_ca_nukta	g__dev_half_cha				g__dev_half_cha_nukta
+		g__dev_half_ja			g__dev_half_ja_nukta			g__dev_half_jha			g__dev_half_jha_nukta	g__dev_half_jha_alt		g__dev_half_jha_nukta_alt	g__dev_half_jha_alt2
+		g__dev_half_jha_nukta_alt2						g__dev_half_nya			g__dev_half_nya_nukta	g__dev_half_tta			g__dev_half_tta_nukta
+		g__dev_half_ttha			g__dev_half_ttha_nukta	g__dev_half_dda			g__dev_half_dda_nukta			g__dev_half_ddha			g__dev_half_ddha_nukta				g__dev_half_nna
+		g__dev_half_nna_nukta	g__dev_half_ta			g__dev_half_ta_nukta	g__dev_half_ta_r		g__dev_half_ta_nukta_r				g__dev_half_tha
+		g__dev_half_tha_nukta	g__dev_half_da			g__dev_half_da_nukta	g__dev_half_dha			g__dev_half_dha_nukta	g__dev_half_na				g__dev_half_na_nukta
+		g__dev_half_pa			g__dev_half_pa_nukta	g__dev_half_pha			g__dev_half_pha_nukta			g__dev_half_ba			g__dev_half_ba_nukta
+		g__dev_half_bha			g__dev_half_bha_nukta	g__dev_half_ma			g__dev_half_ma_nukta	g__dev_half_ya			g__dev_half_ya_nukta
+		g__dev_half_ya_alt		g__dev_half_ya_nukta_alt		g__dev_half_ra			g__dev_half_ra
+		g__dev_half_la			g__dev_half_la_nukta	g__dev_half_lla			g__dev_half_lla_nukta			g__dev_half_wa			g__dev_half_wa_nukta		g__dev_half_sha
+		g__dev_half_ssa			g__dev_half_ssa_nukta	g__dev_half_sa			g__dev_half_sa_nukta	g__dev_half_ha			g__dev_half_ha_nukta		g__dev_half_gga
+		g__dev_half_gga_nukta	g__dev_half_jja			g__dev_half_jja_nukta	g__dev_half_ddda			g__dev_half_ddda_nukta	g__dev_half_bba
+		g__dev_half_bba_nukta	g__dev_half_nna_archaic	g__dev_half_k_ssa	g__dev_half_k_ssa_archaic			g__dev_half_j_nya	g__dev_half_t_ta);
 
 
 	//	Full conjuncts
-	
+
 	//	The _cpress classes are included for documentation; they are not needed by rules.
-	
-	cls_0915_2ndhalf	= (DevKa				DevTa);
-	cls_0915_conj 		= (DevK_Ka		DevK_Ta);
-//	cls_0915_conj_cpress= (DevK_Ka_alt	DevK_Ta);
-	
-	cls_0919_2ndhalf	= (DevKa				DevKha				DevGa				DevGha				DevNga				DevHa);
-	cls_0919_conj		= (DevNg_Ka		DevNg_Kha		DevNg_Ga		DevNg_Gha		DevNg_Nga		DevNg_Ha);
-//	cls_0919_conj_cpress= (DevNg_Ka_alt	DevNg_Kha_alt	DevNg_Ga_alt	DevNg_Gha_alt	DevNg_Nga_alt	DevNg_Ha_alt);
 
-	cls_091a_2ndhalf	= (DevCa);
-	cls_091a_conj		= (DevC_Ca);
-//	cls_091a_conj_cpress= (DevC_Ca_alt);
-	
-	cls_091f_2ndhalf	= (DevTta				DevTtha);
-	cls_091f_conj		= (DevTt_Tta		DevTt_Ttha);
-//	cls_091f_conj_cpress= (DevTt_Tta_alt	DevTt_Ttha_alt);
-	
-	cls_0920_2ndhalf	= (DevTtha);
-	cls_0920_conj		= (DevTth_Ttha);
-//	cls_0920_conj_cpress= (DevTth_Ttha_alt);
-	
-	cls_0921_2ndhalf	= (DevDda);
-	cls_0921_conj		= (DevDd_Dda);
-//	cls_0921_conj_cpress= (DevDd_Dda_alt);
-	
-	cls_0926_2ndhalf	= (DevDa			DevDha				DevMa				DevYa				DevWa);
-	cls_0926_conj		= (DevD_Da	DevD_Dha	DevD_Ma	DevD_Ya	DevD_Wa);
-	
-	cls_0936_2ndhalf	= (DevCa			DevWa);
-	cls_0936_conj		= (DevSh_Ca	DevSh_Wa);
-	
-	cls_0937_2ndhalf	= (DevTta			DevTtha);
-	cls_0937_conj		= (DevSs_Tta	DevSs_Ttha);
-	
-	cls_0939_2ndhalf	= (DevNa			DevMa				DevYa				DevLa				DevWa);
-	cls_0939_conj		= (DevH_Na	DevH_Ma	DevH_Ya	DevH_La	DevH_Wa);
+	cls_0915_2ndhalf	= (g__dev_ka				g__dev_ta);
+	cls_0915_conj 		= (g__dev_k_ka		g__dev_k_ta);
+//	cls_0915_conj_cpress= (g0915_094d_0915_alt	g0915_094d_0924);
 
-	cls_1sthalf_0924	= (DevHalfTa		DevHalfPa);
-	cls_1sthalf_0924_nom= (DevTa				DevPa);
-	cls_conj_0924		= (DevT_Ta		DevP_Ta);
-	
-	cls_1sthalf_0928	= (DevHalfNa		DevHalfSa	DevHalfHa);
-	cls_1sthalf_0928_nom= (DevNa				DevSa				DevHa);
-	cls_conj_0928		= (DevN_Na		DevS_Na	DevH_Na);
-	
-	cls_1sthalf_0932	= (DevHalfMa		DevHalfLa);
-	cls_1sthalf_0932_nom= (DevMa				DevLa);
-	cls_conj_0932		= (DevM_La		DevL_La);
-//	cls_conj_0932_cpress= (DevM_La_alt	DevL_La_alt);
-	
+	cls_0919_2ndhalf	= (g__dev_ka				g__dev_kha				g__dev_ga				g__dev_gha				g__dev_nga				g__dev_ha);
+	cls_0919_conj		= (g__dev_ng_ka		g__dev_ng_kha		g__dev_ng_ga		g__dev_ng_gha		g__dev_ng_nga		g__dev_ng_ha);
+//	cls_0919_conj_cpress= (g0919_094d_0915_alt	g0919_094d_0916_alt	g0919_094d_0917_alt	g0919_094d_0918_alt	g0919_094d_0919_alt	g0919_094d_0939_alt);
+
+	cls_091a_2ndhalf	= (g__dev_ca);
+	cls_091a_conj		= (g__dev_c_ca);
+//	cls_091a_conj_cpress= (g091a_094d_091a_alt);
+
+	cls_091f_2ndhalf	= (g__dev_tta				g__dev_ttha);
+	cls_091f_conj		= (g__dev_tt_tta		g__dev_tt_ttha);
+//	cls_091f_conj_cpress= (g091f_094d_091f_alt	g091f_094d_0920_alt);
+
+	cls_0920_2ndhalf	= (g__dev_ttha);
+	cls_0920_conj		= (g__dev_tth_ttha);
+//	cls_0920_conj_cpress= (g0920_094d_0920_alt);
+
+	cls_0921_2ndhalf	= (g__dev_dda);
+	cls_0921_conj		= (g__dev_dd_dda);
+//	cls_0921_conj_cpress= (g0921_094d_0921_alt);
+
+	cls_0926_2ndhalf	= (g__dev_da			g__dev_dha			g__dev_ma			g__dev_ya			g__dev_wa);           // g095f
+	cls_0926_conj		= (g__dev_d_da	g__dev_d_dha	g__dev_d_ma	g__dev_d_ya	g__dev_d_wa); // g0926_094d_095f
+
+	cls_0936_2ndhalf	= (g__dev_ca			g__dev_wa);
+	cls_0936_conj		= (g__dev_sh_ca	g__dev_sh_wa);
+
+	cls_0937_2ndhalf	= (g__dev_tta			g__dev_ttha);
+	cls_0937_conj		= (g__dev_ss_tta	g__dev_ss_ttha);
+
+	cls_0939_2ndhalf	= (g__dev_na			g__dev_ma				g__dev_ya				g__dev_la				g__dev_wa);
+	cls_0939_conj		= (g__dev_h_na	g__dev_h_ma	g__dev_h_ya	g__dev_h_la	g__dev_h_wa);
+
+	cls_1sthalf_0924	= (g__dev_half_ta		g__dev_half_pa);
+	cls_1sthalf_0924_nom= (g__dev_ta				g__dev_pa);
+	cls_conj_0924		= (g__dev_t_ta		g__dev_p_ta);
+
+	cls_1sthalf_0928	= (g__dev_half_na		g__dev_half_sa	g__dev_half_ha);
+	cls_1sthalf_0928_nom= (g__dev_na				g__dev_sa				g__dev_ha);
+	cls_conj_0928		= (g__dev_n_na		g__dev_s_na	g__dev_h_na);
+
+	cls_1sthalf_0932	= (g__dev_half_ma		g__dev_half_la);
+	cls_1sthalf_0932_nom= (g__dev_ma				g__dev_la);
+	cls_conj_0932		= (g__dev_m_la		g__dev_l_la);
+//	cls_conj_0932_cpress= (g092e_094d_0932_alt	g0932_094d_0932_alt);
+
 	// Compressed stacked conjuncts
-	
+
 	cStackCompress = (
-	    DevK_Ka_alt, DevNg_Ka_alt, DevNg_Kha_alt, DevNg_Ga_alt, DevNg_Gha_alt, 
-	    DevNg_Nga_alt, DevNg_Ha_alt, DevC_Ca_alt, DevTt_Tta_alt, DevTt_Ttha_alt,
-	    DevTth_Ttha_alt, DevDd_Dda_alt, DevM_La_alt, DevL_La_alt);
+	    g__dev_k_ka_alt, g__dev_ng_ka_alt, g__dev_ng_kha_alt, g__dev_ng_ga_alt, g__dev_ng_gha_alt,
+	    g__dev_ng_nga_alt, g__dev_ng_ha_alt, g__dev_c_ca_alt, g__dev_tt_tta_alt, g__dev_tt_ttha_alt,
+	    g__dev_tth_ttha_alt, g__dev_dd_dda_alt, g__dev_m_la_alt, g__dev_l_la_alt);
 
 	cno_stackCompress = (
-	    DevK_Ka, DevNg_Ka, DevNg_Kha, DevNg_Ga, DevNg_Gha, 
-	    DevNg_Nga, DevNg_Ha, DevC_Ca, DevTt_Tta, DevTt_Ttha, 
-	    DevTth_Ttha, DevDd_Dda, DevM_La, DevL_La);
-	    
-	// Lower matras cause the compression:
-	cls_matraLower = (DevMaatraU  DevMaatraUU  DevMaatraR  DevMaatraRR  DevVowelLL  DevMaatraL
-					DevMaatraUNukta  DevMaatraUUNukta  DevMaatraRNukta  DevMaatraRRNukta  DevVowelLLNukta  DevMaatraLNukta);
+	    g__dev_k_ka, g__dev_ng_ka, g__dev_ng_kha, g__dev_ng_ga, g__dev_ng_gha,
+	    g__dev_ng_nga, g__dev_ng_ha, g__dev_c_ca, g__dev_tt_tta, g__dev_tt_ttha,
+	    g__dev_tth_ttha, g__dev_dd_dda, g__dev_m_la, g__dev_l_la);
 
-	
+	// Lower matras cause the compression:
+	cls_matraLower = (g__dev_maatra_u  g__dev_maatra_u_u  g__dev_maatra_r  g__dev_maatra_r_r  g__dev_vowel_l_l  g__dev_maatra_l
+					g__dev_maatra_u_nukta  g__dev_maatra_u_u_nukta  g__dev_maatra_r_nukta  g__dev_maatra_r_r_nukta  g__dev_vowel_l_l_nukta  g__dev_maatra_l_nukta);
+
+
 	//	Conjunct components
-	
-	cls_conjSideBySide = (DevK_Ta, DevD_Ma, DevD_Ya, DevH_Ma, DevH_Ya)
+
+	cls_conjSideBySide = (g__dev_k_ta, g__dev_d_ma, g__dev_d_ya, g__dev_h_ma, g__dev_h_ya)
 			{ component { c1 = box(0,bb.bottom,  aw/2,bb.top);
 			              c2 = box(aw/2,bb.bottom,  aw,bb.top) } };
-			             
+
 	cStackCompress
 			{ component { c1 = box(0, bb.bottom + bb.height/2,  aw, bb.top + 50m);
 			              c2 = box(0, bb.bottom,  aw, bb.bottom + bb.height/2) } };
 
-	DevHaNuktaMaatraUU
+	g__dev_ha_nukta_maatra_u_u
 			{ component { c1 = box(0, bb.bottom + bb.height/3,  aw, bb.top + 50m);
 			              c2 = box(0, bb.bottom,  aw, bb.bottom + bb.height/3) } };
-			              
+
 	//	All other conjuncts are split horizontally through the middle.
 	//	(Because AttributeOverride is false, the side-by-side ones will retain their values.)
 	cls_conjAll = (cls_0915_conj, cls_0919_conj, cls_091a_conj, cls_091f_conj, cls_0920_conj,
@@ -312,45 +313,45 @@ table(glyph) {AttributeOverride = false}
 		cls_conj_0928, cls_conj_0932)
 			{ component { c1 = box(0, bb.bottom + bb.height/2,  aw, bb.top + 50m);
 			              c2 = box(0, bb.bottom,  aw, bb.bottom + bb.height/2) } };
-	
+
 
 	// Rakar full forms
-	
+
 	cls_woRakar = (
-		DevKa		DevKha		DevGa		DevGha		DevNga		DevCa		DevCha		DevJa		DevJha
-		DevNya		DevTta		DevTtha		DevDda		DevDdha		DevNna		DevTa		DevTha		DevDa
-		DevDha		DevNa		DevPa		DevPha		DevBa		DevBha		DevMa		DevYa		DevLa
-		DevLla		DevWa		DevSha		DevSsa		DevSa		DevHa		DevGga		DevJja		DevDdda
-		DevBba		DevKaNukta		DevKhaNukta		DevGaNukta		DevGhaNukta	DevNgaNukta	DevCaNukta	DevChaNukta	DevJaNukta
-		DevJhaNukta	DevNyaNukta	DevTtaNukta	DevTthaNukta	DevDdaNukta		DevDdhaNukta		DevNnaNukta	DevTaNukta	DevThaNukta
-		DevDaNukta	DevDhaNukta	DevNaNukta		DevPaNukta	DevPhaNukta		DevBaNukta	DevBhaNukta	DevMaNukta	DevYaNukta		DevYaNukta_alt
-		DevYa_alt
-		DevLaNukta	DevLlaNukta		DevWaNukta	DevShaNukta	DevSsaNukta	DevSaNukta	DevHaNukta	DevGgaNukta	DevJjaNukta
-		DevDddaNukta	DevBbaNukta	DevK_Ssa		DevJ_Nya);
+		g__dev_ka		g__dev_kha		g__dev_ga		g__dev_gha		g__dev_nga		g__dev_ca		g__dev_cha		g__dev_ja		g__dev_jha
+		g__dev_nya		g__dev_tta		g__dev_ttha		g__dev_dda		g__dev_ddha		g__dev_nna		g__dev_ta		g__dev_tha		g__dev_da
+		g__dev_dha		g__dev_na		g__dev_pa		g__dev_pha		g__dev_ba		g__dev_bha		g__dev_ma		g__dev_ya		g__dev_la
+		g__dev_lla		g__dev_wa		g__dev_sha		g__dev_ssa		g__dev_sa		g__dev_ha		g__dev_gga		g__dev_jja		g__dev_ddda
+		g__dev_bba		g__dev_ka_nukta		g__dev_kha_nukta		g__dev_ga_nukta		g__dev_gha_nukta	g__dev_nga_nukta	g__dev_ca_nukta	g__dev_cha_nukta	g__dev_ja_nukta
+		g__dev_jha_nukta	g__dev_nya_nukta	g__dev_tta_nukta	g__dev_ttha_nukta	g__dev_dda_nukta		g__dev_ddha_nukta		g__dev_nna_nukta	g__dev_ta_nukta	g__dev_tha_nukta
+		g__dev_da_nukta	g__dev_dha_nukta	g__dev_na_nukta		g__dev_pa_nukta	g__dev_pha_nukta		g__dev_ba_nukta	g__dev_bha_nukta	g__dev_ma_nukta	g__dev_ya_nukta		g__dev_ya_nukta_alt
+		g__dev_ya_alt
+		g__dev_la_nukta	g__dev_lla_nukta		g__dev_wa_nukta	g__dev_sha_nukta	g__dev_ssa_nukta	g__dev_sa_nukta	g__dev_ha_nukta	g__dev_gga_nukta	g__dev_jja_nukta
+		g__dev_ddda_nukta	g__dev_bba_nukta	g__dev_k_ssa		g__dev_j_nya);
 
 	cls_wRakar = (
-		DevKaR		DevKhaR		DevGaR		DevGhaR		DevNgaR		DevCaR		DevChaR		DevJaR		DevJhaR
-		DevNyaR		DevTtaR		DevTthaR		DevDdaR		DevDdhaR		DevNnaR		DevTaR		DevThaR		DevDaR
-		DevDhaR		DevNaR		DevPaR		DevPhaR		DevBaR		DevBhaR		DevMaR		DevYaR		DevLaR
-		DevLlaR		DevWaR		DevShaR		DevSsaR		DevSaR		DevHaR		DevGgaR		DevJjaR		DevDddaR
-		DevBbaR		DevKaNuktaR		DevKhaNuktaR		DevGaNuktaR		DevGhaNuktaR	DevNgaNuktaR	DevCaNuktaR	DevChaNuktaR	DevJaNuktaR
-		DevJhaNuktaR	DevNyaNuktaR	DevTtaNuktaR	DevTthaNuktaR	DevDdaNuktaR		DevDdhaNuktaR		DevNnaNuktaR	DevTaNuktaR	DevThaNuktaR
-		DevDaNuktaR	DevDhaNuktaR	DevNaNuktaR		DevPaNuktaR	DevPhaNuktaR		DevBaNuktaR	DevBhaNuktaR	DevMaNuktaR	DevYaNuktaR	DevYaNuktaR_alt
-		DevYaR_alt
-		DevLaNuktaR	DevLlaNuktaR		DevWaNuktaR	DevShaNuktaR	DevSsaNuktaR	DevSaNuktaR	DevHaNuktaR	DevGgaNuktaR	DevJjaNuktaR
-		DevDddaNuktaR	DevBbaNuktaR	DevK_SsaR		DevJ_NyaR);
-		
+		g__dev_ka_r		g__dev_kha_r		g__dev_ga_r		g__dev_gha_r		g__dev_nga_r		g__dev_ca_r		g__dev_cha_r		g__dev_ja_r		g__dev_jha_r
+		g__dev_nya_r		g__dev_tta_r		g__dev_ttha_r		g__dev_dda_r		g__dev_ddha_r		g__dev_nna_r		g__dev_ta_r		g__dev_tha_r		g__dev_da_r
+		g__dev_dha_r		g__dev_na_r		g__dev_pa_r		g__dev_pha_r		g__dev_ba_r		g__dev_bha_r		g__dev_ma_r		g__dev_ya_r		g__dev_la_r
+		g__dev_lla_r		g__dev_wa_r		g__dev_sha_r		g__dev_ssa_r		g__dev_sa_r		g__dev_ha_r		g__dev_gga_r		g__dev_jja_r		g__dev_ddda_r
+		g__dev_bba_r		g__dev_ka_nukta_r		g__dev_kha_nukta_r		g__dev_ga_nukta_r		g__dev_gha_nukta_r	g__dev_nga_nukta_r	g__dev_ca_nukta_r	g__dev_cha_nukta_r	g__dev_ja_nukta_r
+		g__dev_jha_nukta_r	g__dev_nya_nukta_r	g__dev_tta_nukta_r	g__dev_ttha_nukta_r	g__dev_dda_nukta_r		g__dev_ddha_nukta_r		g__dev_nna_nukta_r	g__dev_ta_nukta_r	g__dev_tha_nukta_r
+		g__dev_da_nukta_r	g__dev_dha_nukta_r	g__dev_na_nukta_r		g__dev_pa_nukta_r	g__dev_pha_nukta_r		g__dev_ba_nukta_r	g__dev_bha_nukta_r	g__dev_ma_nukta_r	g__dev_ya_nukta_r	g__dev_ya_nukta_r_alt
+		g__dev_ya_r_alt
+		g__dev_la_nukta_r	g__dev_lla_nukta_r		g__dev_wa_nukta_r	g__dev_sha_nukta_r	g__dev_ssa_nukta_r	g__dev_sa_nukta_r	g__dev_ha_nukta_r	g__dev_gga_nukta_r	g__dev_jja_nukta_r
+		g__dev_ddda_nukta_r	g__dev_bba_nukta_r	g__dev_k_ssa_r		g__dev_j_nya_r);
+
 	cls_woRakarHalf = (
-		DevKa		DevKha		DevGa		DevGha
-		DevCa		DevJa		DevJha		DevJha_alt	
-		DevNya		DevNna		DevTa		//g0924_alt
-		DevTha		DevDha		DevNa
-		DevNaNukta		DevPa		DevPha		DevBa
-		DevBha		DevMa		DevYa		DevLa
-		DevWa		DevSha		//g0936_alt
-		DevSsa		DevSa		DevKaNukta		DevGaNukta
-		DevJaNukta		DevPhaNukta		DevYaNukta		DevGga
-		DevJja		DevBba);
+		g__dev_ka		g__dev_kha		g__dev_ga		g__dev_gha
+		g__dev_ca		g__dev_ja		g__dev_jha		g__dev_jha_alt
+		g__dev_nya		g__dev_nna		g__dev_ta		//g0924_alt
+		g__dev_tha		g__dev_dha		g__dev_na
+		g__dev_na_nukta		g__dev_pa		g__dev_pha		g__dev_ba
+		g__dev_bha		g__dev_ma		g__dev_ya		g__dev_la
+		g__dev_wa		g__dev_sha		//g0936_alt
+		g__dev_ssa		g__dev_sa		g__dev_ka_nukta		g__dev_ga_nukta
+		g__dev_ja_nukta		g__dev_pha_nukta		g__dev_ya_nukta		g__dev_gga
+		g__dev_jja		g__dev_bba);
 
 	// These form rakar conjuncts with halants:
 	cls_woRakarHalant = cls_woRakar;
@@ -360,251 +361,252 @@ table(glyph) {AttributeOverride = false}
 	gBogus = pseudo(glyphid(1));
 
 	// Rakar half forms
-		
+
 	cls_wRakarHalf = (
-		DevHalfKaR	DevHalfKhaR	DevHalfGaR	DevHalfGhaR
-		DevHalfCaR	DevHalfJaR	DevHalfJhaR	DevHalfJhaR_alt	
-		DevHalfNyaR	DevHalfNnaR	DevHalfTaR	//g0924_094d_0930_094d_half_alt
-		DevHalfThaR	DevHalfDhaR	DevHalfNaR
-		DevHalfNaNuktaR	DevHalfPaR	DevHalfPhaR	DevHalfBaR
-		DevHalfBhaR	DevHalfMaR	DevHalfYaR	DevHalfLaR
-		DevHalfWaR	DevHalfShaR	//g0936_094d_0930_094d_half_alt
-		DevHalfSsaR	DevHalfSaR	DevHalfKaNuktaR	DevHalfGaNuktaR	
-		DevHalfJaNuktaR	DevHalfPhaNuktaR	DevHalfYaNuktaR	DevHalfGgaR
-		DevHalfJjaR	DevHalfBbaR);
+		g__dev_half_ka_r	g__dev_half_kha_r	g__dev_half_ga_r	g__dev_half_gha_r
+		g__dev_half_ca_r	g__dev_half_ja_r	g__dev_half_jha_r	g__dev_half_jha_r_alt
+		g__dev_half_nya_r	g__dev_half_nna_r	g__dev_half_ta_r	//g0924_094d_0930_094d_half_alt
+		g__dev_half_tha_r	g__dev_half_dha_r	g__dev_half_na_r
+		g__dev_half_na_nukta_r	g__dev_half_pa_r	g__dev_half_pha_r	g__dev_half_ba_r
+		g__dev_half_bha_r	g__dev_half_ma_r	g__dev_half_ya_r	g__dev_half_la_r
+		g__dev_half_wa_r	g__dev_half_sha_r	//g0936_094d_0930_094d_half_alt
+		g__dev_half_ssa_r	g__dev_half_sa_r	g__dev_half_ka_nukta_r	g__dev_half_ga_nukta_r
+		g__dev_half_ja_nukta_r	g__dev_half_pha_nukta_r	g__dev_half_ya_nukta_r	g__dev_half_gga_r
+		g__dev_half_jja_r	g__dev_half_bba_r);
 
 	cls_wNuktaWoRakarHalf = (
-		DevKa		DevKha		DevGa		DevGha
-		DevCa
-		DevJa		DevJha		DevJha_alt	
-		DevNya		DevNna		DevTa		//g0924_alt
-		DevTha		DevDha		DevNa
-		DevPa		DevPha		DevBa
-		DevBha		DevMa		DevYa		DevLa
-		DevWa		DevSha		//g0936_alt
-		DevSsa		DevSa		DevGga
-		DevJja		DevBba);
+		g__dev_ka		g__dev_kha		g__dev_ga		g__dev_gha
+		g__dev_ca
+		g__dev_ja		g__dev_jha		g__dev_jha_alt
+		g__dev_nya		g__dev_nna		g__dev_ta		//g0924_alt
+		g__dev_tha		g__dev_dha		g__dev_na
+		g__dev_pa		g__dev_pha		g__dev_ba
+		g__dev_bha		g__dev_ma		g__dev_ya		g__dev_la
+		g__dev_wa		g__dev_sha		//g0936_alt
+		g__dev_ssa		g__dev_sa		g__dev_gga
+		g__dev_jja		g__dev_bba);
 
 	cls_wNuktaWRakarHalf = (
-		DevHalfKaNuktaR		DevHalfKhaNuktaR		DevHalfGaNuktaR		DevHalfGhaNuktaR	
-		DevHalfCaNuktaR
-		DevHalfJaNuktaR		DevHalfJhaNuktaR	DevHalfJhaNuktaR_alt	
-		DevHalfNyaNuktaR	DevHalfNnaNuktaR	DevHalfTaNuktaR	//g0924_093c_094d_0930_094d_half_alt
-		DevHalfThaNuktaR	DevHalfDhaNuktaR	DevHalfNaNuktaR
-		DevHalfPaNuktaR	DevHalfPhaNuktaR		DevHalfBaNuktaR
-		DevHalfBhaNuktaR	DevHalfMaNuktaR	DevHalfYaNuktaR		DevHalfLaNuktaR
-		DevHalfWaNuktaR	DevHalfShaNuktaR	//g0936_093c_094d_0930_094d_half_alt
-		DevHalfSsaNuktaR	DevHalfSaNuktaR	DevHalfGgaNuktaR
-		DevHalfJjaNuktaR	DevHalfBbaNuktaR);
+		g__dev_half_ka_nukta_r		g__dev_half_kha_nukta_r		g__dev_half_ga_nukta_r		g__dev_half_gha_nukta_r
+		g__dev_half_ca_nukta_r
+		g__dev_half_ja_nukta_r		g__dev_half_jha_nukta_r	g__dev_half_jha_nukta_r_alt
+		g__dev_half_nya_nukta_r	g__dev_half_nna_nukta_r	g__dev_half_ta_nukta_r	//g0924_093c_094d_0930_094d_half_alt
+		g__dev_half_tha_nukta_r	g__dev_half_dha_nukta_r	g__dev_half_na_nukta_r
+		g__dev_half_pa_nukta_r	g__dev_half_pha_nukta_r		g__dev_half_ba_nukta_r
+		g__dev_half_bha_nukta_r	g__dev_half_ma_nukta_r	g__dev_half_ya_nukta_r		g__dev_half_la_nukta_r
+		g__dev_half_wa_nukta_r	g__dev_half_sha_nukta_r	//g0936_093c_094d_0930_094d_half_alt
+		g__dev_half_ssa_nukta_r	g__dev_half_sa_nukta_r	g__dev_half_gga_nukta_r
+		g__dev_half_jja_nukta_r	g__dev_half_bba_nukta_r);
 
 	cls_rakarHalf = (cls_wRakarHalf, cls_wNuktaWRakarHalf);
-	
-	cls_yaRakarHalf_pre = ( DevNga	DevCha	DevTta	DevTtha	DevDda	DevDdha	DevDa	DevHa );
-	cls_yaRakarHalf_pre094d = (
-		// These are place holders; they will never be matched - this allows this class to be used
-		// with cls_yaRakarHalf_conj:
-		gBogus	gBogus	gBogus	gBogus	gBogus	gBogus
-		// These will be matched:
-		DevHalfDa		DevHalfHa );
 
+	cls_yaRakarHalf_pre = ( g__dev_nga	g__dev_cha	g__dev_tta	g__dev_ttha	g__dev_dda	g__dev_ddha	g__dev_da	g__dev_ha );
 	cls_yaRakarHalf_conj = (
-		DevHalfNg_YaRa		DevHalfCh_YaRa
-		DevHalfTt_YaRa		DevHalfTth_YaRa
-		DevHalfDd_YaRa		DevHalfDdh_YaRa
-		DevHalfD_YaRa		DevHalfH_YaRa
+		g__dev_half_ng_ya_ra		g__dev_half_ch_ya_ra
+		g__dev_half_tt_ya_ra		g__dev_half_tth_ya_ra
+		g__dev_half_dd_ya_ra		g__dev_half_ddh_ya_ra
+		g__dev_half_d_ya_ra		g__dev_half_h_ya_ra
 	);
 	cls_yyaRakarHalf_conj = (
-		DevHalfNg_YaNuktaRa		DevHalfCh_YaNuktaRa
-		DevHalfTt_YaNuktaRa		DevHalfTth_YaNuktaRa
-		DevHalfDd_YaNuktaRa		DevHalfDdh_YaNuktaRa
-		DevHalfD_YaNuktaRa		DevHalfH_YaNuktaRa
+		g__dev_half_ng_ya_nukta_ra		g__dev_half_ch_ya_nukta_ra
+		g__dev_half_tt_ya_nukta_ra		g__dev_half_tth_ya_nukta_ra
+		g__dev_half_dd_ya_nukta_ra		g__dev_half_ddh_ya_nukta_ra
+		g__dev_half_d_ya_nukta_ra		g__dev_half_h_ya_nukta_ra
 	);
+
+	cls_yaRakarHalf_pre094d = (
+		g__dev_half_da							g__dev_half_ha );
+	cls_yaRakarHalf_conj_subs = (
+		g__dev_half_d_ya_ra		g__dev_half_h_ya_ra	);
+	cls_yyaRakarHalf_conj_subs = (
+		g__dev_half_d_ya_nukta_ra		g__dev_half_h_ya_nukta_ra	);
+
 
 	//	The "rakar" shows up in different forms in these glyphs. The following classes holds glyphs
 	//	that show the rakar looking like a real rakar at the bottom of the glyph. Since they are
 	//	so distinct, we make a real ligature out of them so the rakar can be manipulated.
-	
+
 	//	These first few have the rakars slightly higher.
-	cls_wRakarCaretHigh = (DevLlaR  DevLlaNuktaR)
+	cls_wRakarCaretHigh = (g__dev_lla_r  g__dev_lla_nukta_r)
 		{ comp    { cons  = box(0,-descent+600m,  aw,ascent);
 					rakar = box(0,-descent,  aw,-descent+600m) }};
-	
+
 	cls_wRakarCaret = (
-		DevNgaR		DevChaR		DevJhaR_alt2	DevTtaR
-		DevTthaR		DevDdaR		DevDdhaR			DevLlaR
-		DevLlaNuktaR		DevDdaNuktaR		DevDdhaNuktaR			DevJjaR
+		g__dev_nga_r		g__dev_cha_r		g__dev_jha_r_alt2	g__dev_tta_r
+		g__dev_ttha_r		g__dev_dda_r		g__dev_ddha_r			g__dev_lla_r
+		g__dev_lla_nukta_r		g__dev_dda_nukta_r		g__dev_ddha_nukta_r			g__dev_jja_r
 		// w/ nuktas
-		DevNgaNuktaR	DevChaNuktaR	DevJhaNuktaR_alt2	DevTtaNuktaR
-		DevTthaNuktaR	DevJjaNuktaR
+		g__dev_nga_nukta_r	g__dev_cha_nukta_r	g__dev_jha_nukta_r_alt2	g__dev_tta_nukta_r
+		g__dev_ttha_nukta_r	g__dev_jja_nukta_r
 	)
 		{ comp    { cons  = box(0,-descent+400m,  aw,ascent);
 					rakar = box(0,-descent,  aw,-descent+400m) }};
-					
+
 	cls_woRakarCaret = (
-		DevNga		DevCha		DevJha_alt2		DevTta
-		DevTtha		DevDda		DevDdha			DevLla
-		DevLlaNukta		DevDdaNukta		DevDdhaNukta			DevJja
+		g__dev_nga		g__dev_cha		g__dev_jha_alt2		g__dev_tta
+		g__dev_ttha		g__dev_dda		g__dev_ddha			g__dev_lla
+		g__dev_lla_nukta		g__dev_dda_nukta		g__dev_ddha_nukta			g__dev_jja
 		// w/ nuktas
-		DevNgaNukta		DevChaNukta		DevJhaNukta_alt2	DevTtaNukta
-		DevTthaNukta		DevJjaNukta
+		g__dev_nga_nukta		g__dev_cha_nukta		g__dev_jha_nukta_alt2	g__dev_tta_nukta
+		g__dev_ttha_nukta		g__dev_jja_nukta
 	)
 
 	//	These form a true ligature, where the rakar looks like a little slash buried in the glyph.
 	//	For now we're not defining components for these.
 /****
 	cls_wRakarSlash = (
-		DevKaR	DevKhaR	DevGaR	DevGhaR		DevCaR	DevJhaR	DevJhaR_alt
-		DevNyaR	DevNnaR	DevTaR	DevTaR_alt	DevDdhaR	DevDaR
-		DevDhaR	DevNaR	DevNaNuktaR	DevPaR		DevPhaR	DevBaR	DevBhaR
-		DevMaR	DevYaR	DevYaR_alt	DevLaR	DevWaR	DevShaR	DevShaR_alt
-		DevSsaR	DevSaR	DevHaR	DevKaNuktaR		DevKhaNuktaR	DevGaNuktaR	DevJaNuktaR
-		DevPhaNuktaR	DevYaNuktaR	DevYaNuktaR_alt	DevGgaR	DevJjaR	DevBbaR
+		g0915_094d_0930	g0916_094d_0930	g0917_094d_0930	g0918_094d_0930		g091a_094d_0930	g091d_094d_0930	g091d_094d_0930_alt
+		g091e_094d_0930	g0923_094d_0930	g0924_094d_0930	g0924_094d_0930_alt	g0922_094d_0930	g0926_094d_0930
+		g0927_094d_0930	g0928_094d_0930	g0929_094d_0930	g092a_094d_0930		g092b_094d_0930	g092c_094d_0930	g092d_094d_0930
+		g092e_094d_0930	g092f_094d_0930	g092f_094d_0930_alt	g0932_094d_0930	g0935_094d_0930	g0936_094d_0930	g0936_094d_0930_alt
+		g0937_094d_0930	g0938_094d_0930	g0939_094d_0930	g0958_094d_0930		g0959_094d_0930	g095a_094d_0930	g095b_094d_0930
+		g095e_094d_0930	g095f_094d_0930	g095f_094d_0930_alt	g097b_094d_0930	g097c_094d_0930	g097f_094d_0930
 		// w/ nuktas
-//		g0915_093c_094d_0930_alt	
-		DevGhaNuktaR	DevCaNuktaR	DevJhaNuktaR		DevJhaNuktaR_alt
-		DevNyaNuktaR		DevNnaNuktaR	DevTaNuktaR	DevTaNuktaR_alt	DevThaNuktaR	DevDaNuktaR
-		DevDhaNuktaR		DevPaNuktaR	DevBaNuktaR	DevBhaNuktaR
-		DevMaNuktaR		DevLaNuktaR	DevWaNuktaR	DevShaNuktaR		DevShaNuktaR_alt
-		DevSsaNuktaR		DevSaNuktaR	DevHaNuktaR	DevGgaNuktaR		DevJjaNuktaR	DevBbaNuktaR
+//		g0915_093c_094d_0930_alt
+		g0918_093c_094d_0930	g091a_093c_094d_0930	g091d_093c_094d_0930		g091d_093c_094d_0930_alt
+		g091e_093c_094d_0930		g0923_093c_094d_0930	g0924_093c_094d_0930	g0924_093c_094d_0930_alt	g0925_093c_094d_0930	g0926_093c_094d_0930
+		g0927_093c_094d_0930		g092a_093c_094d_0930	g092c_093c_094d_0930	g092d_093c_094d_0930
+		g092e_093c_094d_0930		g0932_093c_094d_0930	g0935_093c_094d_0930	g0936_093c_094d_0930		g0936_093c_094d_0930_alt
+		g0937_093c_094d_0930		g0938_093c_094d_0930	g0939_093c_094d_0930	g097b_093c_094d_0930		g097c_093c_094d_0930	g097f_093c_094d_0930
 		// conjuncts
-		DevK_SsaR	DevJ_NyaR
+		g0915_094d_0937_094d_0930	g091c_094d_091e_094d_0930
 	);
 ****/
 
 	//	Matras
-	
-	cls_matraI = (DevMaatraI, DevMaatraINukta);
-	cls_matraI_width20 = (DevMaatraI_width20, DevMaatraINukta_width20);
-	cls_matraI_width30 = (DevMaatraI_width30, DevMaatraINukta_width30);
-	cls_matraI_width40 = (DevMaatraI_width40, DevMaatraINukta_width40);
-	
-	cls_matraII = (DevMaatraII, DevMaatraIINukta);
-	cls_matraII_width20 = (DevMaatraII_width20, DevMaatraIINukta_width20);
-	cls_matraII_width30 = (DevMaatraII_width30, DevMaatraIINukta_width30);
-	
-	cls_matraII_all = (cls_matraII, cls_matraII_width20, cls_matraII_width30);
-		
-	// classes to choose correct width of matra
-	
-	consWidth20_matraI = (cls_fullKa, cls_fullGa, cls_fullGha, cls_fullNga, cls_fullTta, cls_fullTtha, 
-		cls_fullDda, cls_fullDdha, cls_fullTa, cls_fullDa, cls_fullNa, cls_fullPa, cls_fullPha, cls_fullBa, 
-		cls_fullBha, cls_fullMa, cls_fullYa, cls_fullWa, cls_fullSsa, cls_fullHa, cls_fullGga, cls_fullDdda, 
-		cls_fullBba, DevK_Ka, DevK_Ta, DevNg_Ka, DevNg_Kha, DevJ_Nya, 
-		DevJ_NyaR, DevT_Ta, DevD_Da, DevD_Wa, DevN_Na, 
-		DevP_Ta, DevM_La, DevL_La, DevSs_Tta, DevSs_Ttha, DevH_Na, 
-		DevH_La, DevH_Wa);
-	
-	consWidth30_matraI = (cls_fullKha, cls_fullCa, cls_fullCha, cls_fullJa, cls_fullJha, cls_fullJha_alt, 
-		cls_fullNya, cls_fullNna, cls_fullTha, cls_fullDha, cls_fullYa_alt, cls_fullLa, cls_fullLla, 
-		cls_fullSha, cls_fullSa, cls_fullJja, DevNna_archaic, DevK_Ssa, DevK_SsaR, 
-		DevK_Ssa_archaic, DevC_Ca, DevD_Dha, DevD_Ma, DevD_Ya, 
-		DevSh_Ca, DevSh_Wa, DevS_Na);
 
-	consWidth40_matraI = (DevH_Ma, DevH_Ya, cls_half);
-	
+	cls_matraI = (g__dev_maatra_i, g__dev_maatra_i_nukta);
+	cls_matraI_width20 = (g__dev_maatra_i_width20, g__dev_maatra_i_nukta_width20);
+	cls_matraI_width30 = (g__dev_maatra_i_width30, g__dev_maatra_i_nukta_width30);
+	cls_matraI_width40 = (g__dev_maatra_i_width40, g__dev_maatra_i_nukta_width40);
+
+	cls_matraII = (g__dev_maatra_i_i, g__dev_maatra_i_i_nukta);
+	cls_matraII_width20 = (g__dev_maatra_i_i_width20, g__dev_maatra_i_i_nukta_width20);
+	cls_matraII_width30 = (g__dev_maatra_i_i_width30, g__dev_maatra_i_i_nukta_width30);
+
+	cls_matraII_all = (cls_matraII, cls_matraII_width20, cls_matraII_width30);
+
+	// classes to choose correct width of matra
+
+	consWidth20_matraI = (cls_fullKa, cls_fullGa, cls_fullGha, cls_fullNga, cls_fullTta, cls_fullTtha,
+		cls_fullDda, cls_fullDdha, cls_fullTa, cls_fullDa, cls_fullNa, cls_fullPa, cls_fullPha, cls_fullBa,
+		cls_fullBha, cls_fullMa, cls_fullYa, cls_fullWa, cls_fullSsa, cls_fullHa, cls_fullGga, cls_fullDdda,
+		cls_fullBba, g__dev_k_ka, g__dev_k_ta, g__dev_ng_ka, g__dev_ng_kha, g__dev_j_nya,
+		g__dev_j_nya_r, g__dev_t_ta, g__dev_d_da, g__dev_d_wa, g__dev_n_na,
+		g__dev_p_ta, g__dev_m_la, g__dev_l_la, g__dev_ss_tta, g__dev_ss_ttha, g__dev_h_na,
+		g__dev_h_la, g__dev_h_wa);
+
+	consWidth30_matraI = (cls_fullKha, cls_fullCa, cls_fullCha, cls_fullJa, cls_fullJha, cls_fullJha_alt,
+		cls_fullNya, cls_fullNna, cls_fullTha, cls_fullDha, cls_fullYa_alt, cls_fullLa, cls_fullLla,
+		cls_fullSha, cls_fullSa, cls_fullJja, g__dev_nna_archaic, g__dev_k_ssa, g__dev_k_ssa_r,
+		g__dev_k_ssa_archaic, g__dev_c_ca, g__dev_d_dha, g__dev_d_ma, g__dev_d_ya,
+		g__dev_sh_ca, g__dev_sh_wa, g__dev_s_na);
+
+	consWidth40_matraI = (g__dev_h_ma, g__dev_h_ya, cls_half);
+
 	// also for conjuncts, based on width of first (top) consonant
 	conjWidth20_matraI = (cls_0915_conj, cls_0919_conj, cls_091f_conj,	// ka, nga, tta,
-		cls_0920_conj, cls_0921_conj, DevT_Ta, cls_0926_conj, 	// ttha, dda, ta, da,
-		DevN_Na, DevP_Ta, DevM_La,				// na, pa, ma,
-		cls_0937_conj, cls_0939_conj, DevH_Na );				// ssa, ha
-		
-	conjWidth30_matraI = (cls_091a_conj, DevL_La, cls_0936_conj, DevS_Na);	// ca, la, sha, sa
-	
-	
+		cls_0920_conj, cls_0921_conj, g__dev_t_ta, cls_0926_conj, 	// ttha, dda, ta, da,
+		g__dev_n_na, g__dev_p_ta, g__dev_m_la,				// na, pa, ma,
+		cls_0937_conj, cls_0939_conj, g__dev_h_na );				// ssa, ha
+
+	conjWidth30_matraI = (cls_091a_conj, g__dev_l_la, cls_0936_conj, g__dev_s_na);	// ca, la, sha, sa
+
+
 	// Would these consonants look better with the larger matra-I? I guess the designer thinks not...
 //	consWidth20_matraI += (cls_fullKa, cls_fullTta, cls_fullTtha, cls_fullTa, cls_fullDa,
 //		cls_fullDa_0928, cls_fullDa_092A, cls_fullDa_092b, cls_fullSsa, cls_fullSa, cls_fullHa);
 
-	consWidth20_matraII = (cls_fullNga, cls_fullCha, cls_fullJha_alt2, cls_fullTtha, cls_fullLla, 
-		DevGlottalStop, DevGlottalStop_alt, DevNg_Ka);
+	consWidth20_matraII = (cls_fullNga, cls_fullCha, cls_fullJha_alt2, cls_fullTtha, cls_fullLla,
+		g__dev_glottal_stop, g__dev_glottal_stop_alt, g__dev_ng_ka);
 
-	consWidth30_matraII = (cls_fullKa, cls_fullJha, cls_fullPha, DevK_Ka, DevK_Ta);
+	consWidth30_matraII = (cls_fullKa, cls_fullJha, cls_fullPha, g__dev_k_ka, g__dev_k_ta);
 
 
 	//	Ligatures below
-	
-	cls_noLigBelow_0939 = (DevMaatraR);
-	cls_ligBelow_0939   = (DevH_Ri);
-	
-	cls_noLigBelow_0930 	= (DevMaatraU			DevMaatraUU);
-	cls_ligBelow_0930   	= (DevR_U		DevR_UU);
-	cls_ligBelow_0930_alt	= (DevRaMaatraU	DevRaMaatraUU);	// currently not used
-	
-	cls_noLigBelow_0931 	= (DevMaatraU			DevMaatraUU);
-	cls_ligBelow_0931   	= (DevRNukta_U		DevRNukta_UU);
-	cls_ligBelow_0931_alt	= (DevRaNuktaMaatraU	DevRaNuktaMaatraUU);	// currently not used
-	
+
+	cls_noLigBelow_0939 = (g__dev_maatra_r);
+	cls_ligBelow_0939   = (g__dev_h_ri);
+
+	cls_noLigBelow_0930 	= (g__dev_maatra_u			g__dev_maatra_u_u);
+	cls_ligBelow_0930   	= (g__dev_r_u		g__dev_r_u_u);
+	cls_ligBelow_0930_alt	= (g__dev_ra_maatra_u	g__dev_ra_maatra_u_u);	// currently not used
+
+	cls_noLigBelow_0931 	= (g__dev_maatra_u			g__dev_maatra_u_u);
+	cls_ligBelow_0931   	= (g__dev_r_nukta_u		g__dev_r_nukta_u_u);
+	cls_ligBelow_0931_alt	= (g__dev_ra_nukta_maatra_u	g__dev_ra_nukta_maatra_u_u);	// currently not used
+
 	// currently not used:
 //	cls_ru_alt_ligs = (
-//		DevRaMaatraU, DevRaNuktaMaatraU, DevRaMaatraUNukta, DevRaNuktaMaatraUNukta, 
-//		DevRaMaatraUU, DevRaNuktaMaatraUU, DevRaMaatraUUNukta, DevRaNuktaMaatraUUNukta)
+//		g0930_0941_alt, g0931_0941_alt, g0930_0941_093c_alt, g0931_0941_093c_alt,
+//		g0930_0942_alt, g0931_0942_alt, g0930_0942_093c_alt, g0931_0942_093c_alt)
 //			{ component { cr = box(0, bb.bottom + 550m, aw, bb.top + 50m);
 //			              cu = box(0, bb.bottom,        aw, bb.bottom + 550m) } };
-		
-//	cls_noLigRephZwjU	= (DevMaatraU			DevMaatraUU);
+
+//	cls_noLigRephZwjU	= (g0941			g0942);
 //	cls_ligRephZwjU		= (g0930_200d_0941	g0930_200d_0942)
 //			{ component { c1 = box(0, bb.top + 50m,      aw, bb.bottom + 550m);
 //                        c2 = box(0, bb.bottom + 550m,  aw, bb.bottom) } };
 
 
 	//	Halant (virama)
-	
-	g_halant = DevHalant;
-	
+
+	g_halant = g__dev_halant;
+
 	//	explicit halant forms: only needed if we have a feature to prefer the halant over the half-form
 	//	for this character
-//	cls_woHalant = (DevHa		 		DevHaNukta);
-//	cls_wHalant  = (DevHa_halant	DevHaNukta_halant);
-	
+//	cls_woHalant = (g0939		 		g0939_093c);
+//	cls_wHalant  = (g0939_094d_halant	g0939_093c_094d_halant);
+
 	//	These forms "look like" they have an explicit halant in them, so they do not have the
 	//	matra-I reorder around them; the I goes after these forms. We are probably being a little
 	//	"smarter" than absolutely necessary.
 	//	Note that the place where we do the reordering is before we've actually substituted the
 	//	halant form, so we test for the nominal form.
-	cls_hasExplicitHalant = (DevNga, DevDdaNukta, DevCha, DevTta, DevTtha, DevDda, DevDdha, DevDa);
-				// add DevHa if we add a feature to use halant form
-	
-	cls_halantExplicit = (DevHa_halant, DevHaNukta_halant,
-		DevHalfNga, DevHalfNgaNukta, DevHalfDdaNukta,
-		DevHalfTta, DevHalfTtaNukta, 
-		DevHalfTtha, DevHalfTthaNukta, 
-		DevHalfDda, DevHalfDdha, DevHalfDdhaNukta,
-		DevHalfDa, DevHalfDaNukta);
-		
+	cls_hasExplicitHalant = (g__dev_nga, g__dev_dda_nukta, g__dev_cha, g__dev_tta, g__dev_ttha, g__dev_dda, g__dev_ddha, g__dev_da);
+				// add g0939 if we add a feature to use halant form
+
+	cls_halantExplicit = (g__dev_ha_halant, g__dev_ha_nukta_halant,
+		g__dev_half_nga, g__dev_half_nga_nukta, g__dev_half_dda_nukta,
+		g__dev_half_tta, g__dev_half_tta_nukta,
+		g__dev_half_ttha, g__dev_half_ttha_nukta,
+		g__dev_half_dda, g__dev_half_ddha, g__dev_half_ddha_nukta,
+		g__dev_half_da, g__dev_half_da_nukta);
+
 	//	Alternate YA form
-	
-	cls_ya		= (DevYa		DevHalfYa			DevYaR		
-				   DevYaNukta		DevHalfYaNukta			DevYaNuktaR);
-	cls_ya_alt	= (DevYa_alt	DevHalfYa_alt		DevYaR_alt
-				   DevYaNukta_alt	DevHalfYaNukta_alt		DevYaNuktaR_alt);
-	
+
+	cls_ya		= (g__dev_ya		g__dev_half_ya			g__dev_ya_r
+				   g__dev_ya_nukta		g__dev_half_ya_nukta			g__dev_ya_nukta_r);
+	cls_ya_alt	= (g__dev_ya_alt	g__dev_half_ya_alt		g__dev_ya_r_alt
+				   g__dev_ya_nukta_alt	g__dev_half_ya_nukta_alt		g__dev_ya_nukta_r_alt);
+
 	//	This glyph causes any explicit halant in the previous consonant to be removed.
 	//	It in essence forms a connection backwards to the previous consonant.
-	cls_openBack = (DevYa, DevYaNukta);
-	
+	cls_openBack = (g__dev_ya, g__dev_ya_nukta);
+
 
 	//	Forms that collide with reph and anusvara:
 	//	break into two pieces so that we can shift the upper Candra form.
-	
+
 	//	0949 (Candra-O)  =>  0945 (Candra-E) + 093E (AA)
 	g0949_top = pseudo(unicode(0x0945))			// Candra-E
-		{UpperM.x = DevMaatraCandraE.UpperM.x; UpperM.y = DevMaatraCandraE.UpperM.y};
+		{UpperM.x = g__dev_maatra_candra_e.UpperM.x; UpperM.y = g__dev_maatra_candra_e.UpperM.y};
 	g0949_bottom = pseudo(unicode(0x093E))		// vowel-sign AA  - also defines HalantS
-		{UpperS.x = DevMaatraAA.UpperS.x; UpperS.y = DevMaatraAA.UpperS.y};
-		 
+		{UpperS.x = g__dev_maatra_a_a.UpperS.x; UpperS.y = g__dev_maatra_a_a.UpperS.y};
+
 	//	0949 (Candra-O) & nukta  =>  0945 (Candra-E)   +   AA-nukta
 	g0949_093c_top = pseudo(unicode(0x0945)) 	// Candra-E - TODO: merge with g0949_top
-		{UpperM.x = DevMaatraCandraE.UpperM.x; UpperM.y = DevMaatraCandraE.UpperM.y};
-	g0949_093c_bottom = pseudo(glyphid(299))	// AA & nukta, DevMaatraAANukta - FIX THIS # FOR A NEW SET OF GLYPHS
-												// glyph ID should = DevMaatraCandraONukta
-		{UpperS.x = DevMaatraAANukta.UpperS.x; UpperS.y = DevMaatraAANukta.UpperS.y};	// also defines HalantS
-	
+		{UpperM.x = g__dev_maatra_candra_e.UpperM.x; UpperM.y = g__dev_maatra_candra_e.UpperM.y};
+	g0949_093c_bottom = pseudo(glyphid(299))	// AA & nukta, g093e_093c - FIX THIS # FOR A NEW SET OF GLYPHS
+												// glyph ID should = g0949_093c
+		{UpperS.x = g__dev_maatra_a_a_nukta.UpperS.x; UpperS.y = g__dev_maatra_a_a_nukta.UpperS.y};	// also defines HalantS
+
 	//	Candra-E  &  nukta  =>  back to its two original pieces
 	g0945_093c_top = pseudo(unicode(0x0945)) 	// Candra-E
-		{UpperM.x = DevMaatraCandraE.UpperM.x; UpperM.y = DevMaatraCandraE.UpperM.y};
+		{UpperM.x = g__dev_maatra_candra_e.UpperM.x; UpperM.y = g__dev_maatra_candra_e.UpperM.y};
 	g0945_093c_bottom = pseudo(unicode(0x093C))	// nukta
-		{NuktaM.x = DevNukta.NuktaM.x; NuktaM.y = DevNukta.NuktaM.y};	// also defines NuktaAltM
-			
+		{NuktaM.x = g__dev_nukta.NuktaM.x; NuktaM.y = g__dev_nukta.NuktaM.y};	// also defines NuktaAltM
+
 	cls_0949_top    = (g0949_top,    g0949_093c_top);
 	cls_0949_bottom = (g0949_bottom, g0949_093c_bottom);
 
@@ -612,101 +614,101 @@ table(glyph) {AttributeOverride = false}
 	cTakesUpperDia += (g0949_bottom, g0949_093c_bottom);
 	cNuktaDia += (g0945_093c_bottom);
 
-	cls_093b = (DevMaatraOOE);
-	cls_0940 = (DevMaatraII, DevMaatraIINukta, DevMaatraII_width20, DevMaatraIINukta_width20, DevMaatraII_width30, DevMaatraIINukta_width30);
-	cls_0949 = (DevMaatraCandraO, DevMaatraCandraONukta);
-	cls_094a = (DevMaatraShortO, DevMaatraShortONukta);
-	cls_094b = (DevMaatraO, DevMaatraONukta);
-	cls_094c = (DevMaatraAU, DevMaatraAUNukta);
-	cls_094f = (DevMaatraAW);
-	
-	cls_0945 = (DevMaatraCandraE, DevMaatraCandraENukta, g0945_093c_top, g0949_top, g0949_093c_top);
-	cls_0946 = (DevMaatraShortE, DevMaatraShortENukta);
-	cls_0947 = (DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt);
-	cls_0948 = (DevMaatraAi, DevMaatraAiNukta);
-	
-	
+	cls_093b = (g__dev_maatra_o_o_e);
+	cls_0940 = (g__dev_maatra_i_i, g__dev_maatra_i_i_nukta, g__dev_maatra_i_i_width20, g__dev_maatra_i_i_nukta_width20, g__dev_maatra_i_i_width30, g__dev_maatra_i_i_nukta_width30);
+	cls_0949 = (g__dev_maatra_candra_o, g__dev_maatra_candra_o_nukta);
+	cls_094a = (g__dev_maatra_short_o, g__dev_maatra_short_o_nukta);
+	cls_094b = (g__dev_maatra_o, g__dev_maatra_o_nukta);
+	cls_094c = (g__dev_maatra_a_u, g__dev_maatra_a_u_nukta);
+	cls_094f = (g__dev_maatra_a_w);
+
+	cls_0945 = (g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta, g0945_093c_top, g0949_top, g0949_093c_top);
+	cls_0946 = (g__dev_maatra_short_e, g__dev_maatra_short_e_nukta);
+	cls_0947 = (g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt);
+	cls_0948 = (g__dev_maatra_ai, g__dev_maatra_ai_nukta);
+
+
 	//	Attachments never happen across these glyphs:
 	cls_noAttach = (g_space, g_zwnj);	// TODO: add punctuation?
-	
-	
-	//	Marks can can interfere with vowels below:
-	cls_lowerMark = (DevAnudatta, DevMaatraUE, DevMaatraUUE);
-	
-	
-	// Small candrabindu:
-	DevCandrabindu_alt {CaM.x = bb.left + (bb.width/2); CaM.y = bb.bottom};
-	DevInvCandrabindu_alt {CaM.x = bb.left + (bb.width/2); CaM.y = bb.bottom};
-	// Anusvara:
-	DevAnusvara {CaM.x = bb.left + (bb.width/2); CaM.y = bb.bottom };
-	
-	cls_candrab = (DevCandrabindu, DevInvCandrabindu);
-	cls_candrab_alt = (DevCandrabindu_alt, DevInvCandrabindu_alt);
-	
-	// Allow candrabindu/anusvara to attach to candra-E and other dependent vowels:
-	DevMaatraOE {CaS.x = UpperM.x; CaS.y = bb.top + 100m};
-	DevMaatraCandraE {CaS.x = UpperM.x - 50m; CaS.y = bb.top};
-	DevMaatraShortE {CaS = point(0m, bb.bottom + 110m)};
-	DevMaatraE {CaS = point(-150m, bb.bottom + 110m)};
-	DevMaatraAi {CaS = point(-130m, bb.bottom + 110m)};
-	
-	DevMaatraCandraENukta		{CaS.x = DevMaatraCandraE.CaS.x; CaS.y = DevMaatraCandraE.CaS.y};
-	DevMaatraShortENukta		{CaS.x = DevMaatraShortE.CaS.x; CaS.y = DevMaatraShortE.CaS.y};
-	DevMaatraENukta		{CaS.x = DevMaatraE.CaS.x; CaS.y = DevMaatraE.CaS.y};
-	DevMaatraENukta_alt	{CaS.x = DevMaatraE.CaS.x; CaS.y = DevMaatraE.CaS.y};
-	DevMaatraAiNukta		{CaS.x = DevMaatraAi.CaS.x; CaS.y = DevMaatraAi.CaS.y};
 
-	g0945_093c_top	{CaS.x = DevMaatraCandraE.CaS.x; CaS.y = DevMaatraCandraE.CaS.y};	// pseudo-glyphs that use DevMaatraCandraE (candra-E)
-	g0949_top		{CaS.x = DevMaatraCandraE.CaS.x; CaS.y = DevMaatraCandraE.CaS.y};
-	g0949_093c_top	{CaS.x = DevMaatraCandraE.CaS.x; CaS.y = DevMaatraCandraE.CaS.y};
-		
+
+	//	Marks can can interfere with vowels below:
+	cls_lowerMark = (g__dev_anudatta, g__dev_maatra_u_e, g__dev_maatra_u_u_e);
+
+
+	// Small candrabindu:
+	g__dev_candrabindu_alt {CaM.x = bb.left + (bb.width/2); CaM.y = bb.bottom};
+	g__dev_inv_candrabindu_alt {CaM.x = bb.left + (bb.width/2); CaM.y = bb.bottom};
+	// Anusvara:
+	g__dev_anusvara {CaM.x = bb.left + (bb.width/2); CaM.y = bb.bottom };
+
+	cls_candrab = (g__dev_candrabindu, g__dev_inv_candrabindu);
+	cls_candrab_alt = (g__dev_candrabindu_alt, g__dev_inv_candrabindu_alt);
+
+	// Allow candrabindu/anusvara to attach to candra-E and other dependent vowels:
+	g__dev_maatra_o_e {CaS.x = UpperM.x; CaS.y = bb.top + 100m};
+	g__dev_maatra_candra_e {CaS.x = UpperM.x - 50m; CaS.y = bb.top};
+	g__dev_maatra_short_e {CaS = point(0m, bb.bottom + 110m)};
+	g__dev_maatra_e {CaS = point(-150m, bb.bottom + 110m)};
+	g__dev_maatra_ai {CaS = point(-130m, bb.bottom + 110m)};
+
+	g__dev_maatra_candra_e_nukta		{CaS.x = g__dev_maatra_candra_e.CaS.x; CaS.y = g__dev_maatra_candra_e.CaS.y};
+	g__dev_maatra_short_e_nukta		{CaS.x = g__dev_maatra_short_e.CaS.x; CaS.y = g__dev_maatra_short_e.CaS.y};
+	g__dev_maatra_e_nukta		{CaS.x = g__dev_maatra_e.CaS.x; CaS.y = g__dev_maatra_e.CaS.y};
+	g__dev_maatra_e_nukta_alt	{CaS.x = g__dev_maatra_e.CaS.x; CaS.y = g__dev_maatra_e.CaS.y};
+	g__dev_maatra_ai_nukta		{CaS.x = g__dev_maatra_e.CaS.x; CaS.y = g__dev_maatra_e.CaS.y};
+
+	g0945_093c_top	{CaS.x = g__dev_maatra_candra_e.CaS.x; CaS.y = g__dev_maatra_candra_e.CaS.y};	// pseudo-glyphs that use g0945 (candra-E)
+	g0949_top		{CaS.x = g__dev_maatra_candra_e.CaS.x; CaS.y = g__dev_maatra_candra_e.CaS.y};
+	g0949_093c_top	{CaS.x = g__dev_maatra_candra_e.CaS.x; CaS.y = g__dev_maatra_candra_e.CaS.y};
+
 	cls_0940 {CaS.x = UpperS.x; CaS.y = UpperS.y + 300m};
 	cls_0949 {CaS.x = UpperS.x - 50m; CaS.y = bb.top};	// looks like 0945
-	cls_094a {CaS.x = 525m; CaS.y = DevMaatraShortE.CaS.y};		// looks like 0946
-	cls_094b {CaS.x = 400m; CaS.y = DevMaatraE.CaS.y};		// looks like 0947
-	cls_094c {CaS.x = 450m; CaS.y = DevMaatraAi.CaS.y};		// looks like 0948
-	
-	cTakesCandra = (cls_0940, cls_0945, cls_0946, cls_0947, cls_0948, cls_0949, cls_094a, cls_094b, cls_094c, DevMaatraOE);
-	cCandra = (DevCandrabindu_alt, DevAnusvara, DevInvCandrabindu_alt);
+	cls_094a {CaS.x = 525m; CaS.y = g__dev_maatra_short_e.CaS.y};		// looks like 0946 (g__dev_maatra_short_e)
+	cls_094b {CaS.x = 400m; CaS.y = g__dev_maatra_e.CaS.y};		// looks like 0947 (g__dev_maatra_e)
+	cls_094c {CaS.x = 450m; CaS.y = g__dev_maatra_e.CaS.y};		// looks like 0948 (g__dev_maatra_e)
+
+	cTakesCa = (cls_0940, cls_0945, cls_0946, cls_0947, cls_0948, cls_0949, cls_094a, cls_094b, cls_094c, g__dev_maatra_o_e);
+// 2021-06-30	cCa = (g__dev_candrabindu_alt, g__dev_anusvara, g__dev_inv_candrabindu_alt);
 
 	// Special case for anusvara attaching to an iikar (the candrabindu is raised higher than we want to do
 	// for the anusvara):
-	DevAnusvara {AnM.x = bb.left + (bb.width/2) - 200m; AnM.y = bb.bottom + 200m };
+	g__dev_anusvara {AnM.x = bb.left + (bb.width/2) - 200m; AnM.y = bb.bottom + 200m };
 	cls_0940 {AnS.x = UpperS.x; AnS.y = UpperS.y + 300m}; // identical to CaS
 	cTakesAn = (cls_0940);
-	cAn = (DevAnusvara);
+	cAn = (g__dev_anusvara);
 
-	
+
 	//	These have special glyphs for superscript reph (with or without candrabindu/anusvara).
 	//	Also, nuktas have to be kept as separate glyphs and attached.
-	cls_vowelRtHigh					= 	(DevMaatraShortO					DevMaatraO					DevMaatraAU
-										 DevMaatraII					DevMaatraII_width20);	// currently no real-life uses of width30
-	
-	cls_vowelRtHigh_0930_094d		=	(DevMaatraShortOReph		DevMaatraOReph			DevMaatraAUReph
-										 DevMaatraIIReph		DevMaatraII_width20Reph)									
+	cls_vowelRtHigh					= 	(g__dev_maatra_short_o					g__dev_maatra_o					g__dev_maatra_a_u
+										 g__dev_maatra_i_i					g__dev_maatra_i_i_width20);	// currently no real-life uses of width30
+
+	cls_vowelRtHigh_0930_094d		=	(g__dev_maatra_short_o_reph		g__dev_maatra_o_reph			g__dev_maatra_a_u_reph
+										 g__dev_maatra_i_i_reph		g__dev_maatra_i_i_width20_reph)
 			{ component { c1 = box(0,bb.bottom,    aw,(2*bb.top)/3);
 			              c2 = box(0,(2*bb.top)/3, aw,bb.top+100m) };
-			  NuktaS = point(275m, -160m) };	
-			              
-	cls_vowelRtHigh_0930_094d_0901	=	(DevMaatraShortORephCandrabindu	DevMaatraORephCandrabindu	DevMaatraAURephCandrabindu
-										 DevMaatraIIRephCandrabindu	DevMaatraII_width20RephCandrabindu)
+			  NuktaS = point(275m, -160m) };
+
+	cls_vowelRtHigh_0930_094d_0901	=	(g__dev_maatra_short_o_reph_candrabindu	g__dev_maatra_o_reph_candrabindu	g__dev_maatra_a_u_reph_candrabindu
+										 g__dev_maatra_i_i_reph_candrabindu	g__dev_maatra_i_i_width20_reph_candrabindu)
 			{ component { c1 = box(0,bb.bottom,       aw,(2*bb.top)/3);
 			              c2 = box(0,(2*bb.top)/3,    aw/2+200m,bb.top);
 			              c3 = box(aw/2,(2*bb.top)/3, aw+300m,bb.top-100m) };
-			  NuktaS = point(275m, -160m) };	
-			              
-	cls_vowelRtHigh_0930_094d_0902	=	(DevMaatraShortORephBindu	DevMaatraORephBindu	DevMaatraAURephBindu
-										 DevMaatraIIRephBindu	DevMaatraII_width20RephBindu)
+			  NuktaS = point(275m, -160m) };
+
+	cls_vowelRtHigh_0930_094d_0902	=	(g__dev_maatra_short_o_reph_bindu	g__dev_maatra_o_reph_bindu	g__dev_maatra_a_u_reph_bindu
+										 g__dev_maatra_i_i_reph_bindu	g__dev_maatra_i_i_width20_reph_bindu)
 			{ component { c1 = box(0,bb.bottom,       aw,(2*bb.top)/3);
 			              c2 = box(0,(2*bb.top)/3,    aw/2+50m,bb.top);
 			              c3 = box(aw/2,(2*bb.top)/3, aw,bb.top-200m) };
-			  NuktaS = point(275m, -160m) };	
-			  
+			  NuktaS = point(275m, -160m) };
+
 	cTakesNuktaDia += (cls_vowelRtHigh_0930_094d, cls_vowelRtHigh_0930_094d_0901, cls_vowelRtHigh_0930_094d_0902);
-	
-	DevRephCandrabindu {component {c1 = box(bb.left,bb.bottom,            bb.left+bb.width/2+100m,bb.top);
+
+	g__dev_reph_candrabindu {component {c1 = box(bb.left,bb.bottom,            bb.left+bb.width/2+100m,bb.top);
 								c2 = box(bb.left+bb.width/2,bb.bottom, bb.right,bb.top-100m)}};
-	DevRephBindu {component {c1 = box(bb.left,bb.bottom,            bb.left+bb.width/2+50m,bb.top);
+	g__dev_reph_bindu {component {c1 = box(bb.left,bb.bottom,            bb.left+bb.width/2+50m,bb.top);
 								c2 = box(bb.left+bb.width/2,bb.bottom, bb.right,bb.top-100m)}};
 
 endtable;
@@ -748,56 +750,60 @@ pass(PASS_MARKSYL)	// 2
 	//	Recognize and mark conjuncts.
 	//	NOTE: These rules must match those below that actually form the conjuncts.
 	//	TODO: figure out if we really need to distinguish between F_CONJ1 and F_HALF.
-	
-	DevKa {form = F_CONJ1}  g_nukta?  g_halant  cls_0915_2ndhalf  /  _  _  _ ^ _;
-	DevNga {form = F_CONJ1}  g_nukta?  g_halant  cls_0919_2ndhalf  /  _  _  _ ^ _;
-	DevCa {form = F_CONJ1}  g_nukta?  g_halant  cls_091a_2ndhalf  /  _  _  _ ^ _;
-	DevTta {form = F_CONJ1}  g_nukta?  g_halant  cls_091f_2ndhalf  /  _  _  _ ^ _;
-	DevTtha {form = F_CONJ1}  g_nukta?  g_halant  cls_0920_2ndhalf  /  _  _  _ ^ _;
-	DevDda {form = F_CONJ1}  g_nukta?  g_halant  cls_0921_2ndhalf  /  _  _  _ ^ _;
-	DevDa {form = F_CONJ1}  g_nukta?  g_halant  cls_0926_2ndhalf  /  _  _  _ ^ _;
-	DevSha {form = F_CONJ1}  g_nukta?  g_halant  cls_0936_2ndhalf  /  _  _  _ ^ _;
-	DevSsa {form = F_CONJ1}  g_nukta?  g_halant  cls_0937_2ndhalf  /  _  _  _ ^ _;
-	DevHa {form = F_CONJ1}  g_nukta?  g_halant  cls_0939_2ndhalf  /  _  _  _ ^ _;
 
-	cls_1sthalf_0924_nom {form = F_CONJ1}  g_nukta?  g_halant  DevTa  /  _  _  _ ^ _;
-	cls_1sthalf_0928_nom {form = F_CONJ1}  g_nukta?  g_halant  DevNa  /  _  _  _ ^ _;
-	cls_1sthalf_0932_nom {form = F_CONJ1}  g_nukta?  g_halant  DevLa  /  _  _  _ ^ _;
-	
+	//	Sept 2017: Note that in many of the rules below, the inclusion of g_halant in the base of the rule
+	//	instead of only in the context is a workaround for a bug in the Graphite engine (which is
+	//	in the process of being fixed).
+
+	g__dev_ka {form = F_CONJ1}  g_nukta?  g_halant  cls_0915_2ndhalf  /  _  _  _ ^ _;
+	g__dev_nga {form = F_CONJ1}  g_nukta?  g_halant  cls_0919_2ndhalf  /  _  _  _ ^ _;
+	g__dev_ca {form = F_CONJ1}  g_nukta?  g_halant  cls_091a_2ndhalf  /  _  _  _ ^ _;
+	g__dev_tta {form = F_CONJ1}  g_nukta?  g_halant  cls_091f_2ndhalf  /  _  _  _ ^ _;
+	g__dev_ttha {form = F_CONJ1}  g_nukta?  g_halant  cls_0920_2ndhalf  /  _  _  _ ^ _;
+	g__dev_dda {form = F_CONJ1}  g_nukta?  g_halant  cls_0921_2ndhalf  /  _  _  _ ^ _;
+	g__dev_da {form = F_CONJ1}  g_nukta?  g_halant  cls_0926_2ndhalf  /  _  _  _ ^ _;
+	g__dev_sha {form = F_CONJ1}  g_nukta?  g_halant  cls_0936_2ndhalf  /  _  _  _ ^ _;
+	g__dev_ssa {form = F_CONJ1}  g_nukta?  g_halant  cls_0937_2ndhalf  /  _  _  _ ^ _;
+	g__dev_ha {form = F_CONJ1}  g_nukta?  g_halant  cls_0939_2ndhalf  /  _  _  _ ^ _;
+
+	cls_1sthalf_0924_nom {form = F_CONJ1}  g_nukta?  g_halant  g__dev_ta  /  _  _  _ ^ _;
+	cls_1sthalf_0928_nom {form = F_CONJ1}  g_nukta?  g_halant  g__dev_na  /  _  _  _ ^ _;
+	cls_1sthalf_0932_nom {form = F_CONJ1}  g_nukta?  g_halant  g__dev_la  /  _  _  _ ^ _;
+
 	//  Rakar conjuncts with halants
-	cls_woRakarHalant {form = F_CONJ1}  g_ra {form = F_HALCONS; raform = R_RAKAR}  /  _=C  g_nukta?  g_halant _=R  g_halant;
+	cls_woRakarHalant {form = F_CONJ1}  g_ra {form = F_HALCONS; raform = R_RAKAR}  g_halant /  _=C  g_nukta?  _=H  _=R  g_halant;
 
 	//	Rakar conjuncts (note that cls_woRakar includes forms with nuktas attached, but this rule
 	//	just won't recognize them).
-	cls_woRakar {form = F_CONJ1}  g_ra  /  _=C  g_nukta?  g_halant ^ _=R;
-	
+	cls_woRakar {form = F_CONJ1}  g_halant  g_ra  /  _=C  g_nukta?  _=H ^ _=R;
+
 	//	Three-way conjuncts:
-	DevKa {form = F_CONJ1}  g_halant  DevSsa {form = F_CONJ1}  g_halant  g_ra  /  _  _  _  _ ^ _;
-	DevJa {form = F_CONJ1}  g_halant  DevNya {form = F_CONJ1}  g_halant  g_ra  /  _  _  _  _ ^ _;
-	
+	g__dev_ka {form = F_CONJ1}  g_halant  g__dev_ssa {form = F_CONJ1}  g_halant  g_ra  /  _  _  _  _ ^ _;
+	g__dev_ja {form = F_CONJ1}  g_halant  g__dev_nya {form = F_CONJ1}  g_halant  g_ra  /  _  _  _  _ ^ _;
+
 	//	ZWNJ forces an explicit halant:
-	cls_consNom {form = F_HALANT}  /  _  g_nukta?  g_halant  g_zwnj ^;
-	
+	cls_consNom {form = F_HALANT}  g_halant  /  _  g_nukta?  _=H  g_zwnj ^;
+
 	//	Exception to the "look-like-halant" rule below: a YA has a form that "connects"
 	//	with the previous consonant, even if it would normally use an explicit halant.
-	cls_hasExplicitHalant {form = F_NOHALANT}  /    _  g_nukta?  g_halant ^ g_zwj?  cls_lowerMark?  cls_openBack;
-	
-	//	These are half-forms that "look like" they have an explicit halant, so make them
+	cls_hasExplicitHalant {form = F_NOHALANT}  g_halant  /    _  g_nukta?  _=H ^ g_zwj?  cls_lowerMark?  cls_openBack;
+
+	//	These produce half-forms that "look like" they have an explicit halant, so make them
 	//	behave that way.
-	cls_hasExplicitHalant {form = F_HALCONS}  /  _  g_nukta?  g_halant ^ g_zwj?  cls_lowerMark?  cls_consNom;
+	cls_hasExplicitHalant {form = F_HALCONS}  g_halant  /  _  g_nukta?  _=H ^ g_zwj?  cls_lowerMark?  cls_consNom;
 
 	//	These have true half-forms:
-	cls_nHalf {form = F_HALF}  /  _  g_nukta?  g_halant ^ g_zwj?  cls_lowerMark?  cls_consNom;
-	
+	cls_nHalf {form = F_HALF}  g_halant  /  _  g_nukta?  _=H ^ g_zwj?  cls_lowerMark?  cls_consNom;
+
 	//	ZWJ forces a half-form:
-	cls_nHalf {form = F_HALF}  /  _  g_nukta?  g_halant  g_zwj ^;
-	
+	cls_nHalf {form = F_HALF}  g_halant  /  _  g_nukta?  _=H  g_zwj ^;
+
 	//	Default to halant form if there is a halant.
-	cls_consNom {form = F_HALANT}  /  _  g_nukta?  g_halant ^;
-	
+	cls_consNom {form = F_HALANT}  g_halant  /  _  g_nukta?  _=H ^;
+
 	//	No halant--just a standard live consonant.
 	cls_consNom {form = F_LIVE}  /  _  g_nukta? ^;
-	
+
 endpass;
 
 
@@ -805,46 +811,71 @@ pass(PASS_RA)	// 3
 
 	//	Deal with behavior of RA. These rules are based roughly on the Devanagari description
 	//	in the Unicode Standard book.
-	
+
+	//	double-ra + ya
+	//	In theory we could get away with a shorter context, but we need a longer one to increase the precedence
+	//	over the "Cons pair" rule below that includes cls_vowelRight.
+	g__dev_ra  g_halant  g__dev_ra  g_halant  _  _
+		> g__dev_ra:R2 {raform = R_EYELASH}  g_halant:H2  _  _  g__dev_ra:R1 {raform = R_REPH}  g_halant:H1
+		/  _=R1  _=H1  _=R2  _=H2  cls_openBack {form == F_LIVE}  cls_vowelRight?  _  _;
+
 	// Special case for two ras + halants
-	DevRa  g_halant  DevRa  g_halant
-		> DevRa:3 {raform = R_NOMINAL}  g_halant:4  DevRa:1 {raform = R_REPH}  g_halant:2
+	g__dev_ra  g_halant  g__dev_ra  g_halant
+		> g__dev_ra:3 {raform = R_NOMINAL}  g_halant:4  g__dev_ra:1 {raform = R_REPH}  g_halant:2
 		/  _  _  _  _  cls_consNom {form == F_LIVE};
-	
+
 	//	If RA+virama is to be applied to a dead consonant, then the mark is positioned after
 	//	the whole cluster (cluster may be conjunct or half-form-plus-base) and it uses the
 	//	reph (superscript) form.
+
+	//	Cons pair (first cons is conjunct or half-form)
 	//	Don't apply this rule if the RA has already been moved (raform == REPH).
 	//	Reprocess the cons-cons sequence in case it also involves a RA.
-	g_ra  g_halant  _  _  >  _  _  @Rd {raform = R_REPH}  @H
-		/  _=Rd {raform != R_REPH} /*dead, !rakar*/  _=H
-			^  cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT}  g_nukta?  g_halant  g_zwj?
+	g_ra  g_halant  _  _  >  _  _  @Rd:Rd {raform = R_REPH}  @H:H
+		/  _=Rd {raform != R_REPH} /* dead, !rakar */  _=H
+			^
+			cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT}  g_nukta?  g_halant  g_zwj?
 			[g_ra { form == F_HALF }  g_halant]? // rakar
 			cls_consNom {form == F_LIVE}  g_nukta?
 			[cls_vowelRight g_nukta?]?
 			_  _;
-		
-	//	Otherwise, if a dead RA precedes a (plain live) consonant or halant form, it is
-	//	replaced by the reph (superscript) form and reordered to be after the last element.
+
+	//	Reph is before half form - move reph after and mark its final position as still pending (R_REPH_P).
+	//	Create a chain in order to continue to move it past any more dead forms.
+	g_ra  g_halant  _  _  >  _  _  @R {raform = R_REPH_P}  @H
+		/  _=R {raform != R_RAKAR && raform != R_REPH} /* dead but movable */  _=H
+			cls_consNom {form == F_HALF}  g_nukta?  g_halant?
+			^  _  _;
+
+	//	Reph is before halant form - move reph after and mark its final position as final (R_REPH).
+	g_ra  g_halant  _  _  >  _  _  @R {raform = R_REPH}  @H
+		/  _=R {raform != R_RAKAR && raform != R_REPH} /* dead but movable */  _=H
+			cls_consNom {F_HALCONS <= form && form <= F_HALANT}  g_nukta?  g_halant?
+			^  _  _;
+
+	//	When we hit a "live" consonant, the reph has found its final place; mark it R_REPH.
 	//	Note that if the RA is *already* marked as a reph, it belongs with the previous syllable,
 	//	not the following one.
 	g_ra  g_halant  _  _  >  _  _  @Rd {raform = R_REPH}  @H
-		/  _=Rd {raform != R_RAKAR && raform != R_REPH} /*- dead*/  _=H
-			cls_consNom {F_LIVE <= form || form <= F_HALANT}  g_nukta?  g_halant?
+		/  _=Rd {raform != R_RAKAR && raform != R_REPH} /* dead */  _=H
+			cls_consNom {F_LIVE == form}  g_nukta?  g_halant?
 			[cls_vowelRight g_nukta?]?
 			_  _ ;
 
+	//	Can't move the reph any further (we hit a vowel, diacritic, space, etc.).
+	g_ra  g_halant  >  @R {raform = R_REPH}  @H  /  _=R {raform == R_REPH_P}  _=H;
+
 	//	According to the Unicode Standard, page 304, two RAs get reordered:
 	g_ra  g_halant  g_ra  >  @R2  @R1 {raform = R_REPH}  @H
-		/  _=R1 /*dead*/  _=H  _=R2 /*live*/;
-		
+		/  _=R1 /*dead*/ {raform == R_NOMINAL}  _=H  _=R2 /*live*/;
+
 	//	This is an odd sequence, but Steve Smith says it's the way fonts seem to work.
 	g_rra  g_ra {raform = R_RAKAR}  /  _ /*dead*/  g_halant  _ {form == F_LIVE};
-	
+
 	//	In comformance with the ISCII standard, the half-consonant RRA is represented as
 	//	eyelash-RA.
 	g_rra  >  @R {raform = R_EYELASH}  /  _=R /*dead*/  g_halant;
-	
+
 	//	If the dead RA precedes ZWJ, use the eyelash-RA.
 	g_ra  >  @R {raform = R_EYELASH}  /  _=R /*dead*/  g_halant  g_zwj ;
 
@@ -856,18 +887,20 @@ pass(PASS_RA)	// 3
 		/  _=Cd /*dead*/  _  _  _=Rd {form == F_HALF}  _ ;
 
 
-	//	When a dead consonant (other than RA--see rule above) precedes a live RA, then the
+	//	When a dead consonant (other than RA) precedes a live RA, then the
 	//	consonant is replaced with its nominal form and RA is given the rakar (subscript) form.
 	//	No reordering happens. Eventually the halant will be deleted, but not yet.
+	g_ra           g_ra  >  @Cd                   @Rl
+		/  _=Cd /*dead*/   g_nukta?  g_halant  _=Rl {form == F_LIVE};
 	cls_consNom    g_ra  >  @Cd {form = F_CONJ1}  @Rl {raform = R_RAKAR}
-		/  _=Cd /*dead*/  g_nukta?  g_halant  _=Rl {form == F_LIVE};
-	
+		/  _=Cd /*dead*/   g_nukta?  g_halant  _=Rl {form == F_LIVE};
+
 	//	Use rakar otherwise. Back up and possibly process the RA further.
 	//	For a rakar conjunct, the deadness of the rakar remains to possibly permit a further
-	//	conjunct. 
+	//	conjunct.
 	cls_consNom  g_ra  >  @Cd /*conj1*/  @Rd {raform = R_RAKAR} // form = F_HALF
 		/  _=Cd /*dead*/  g_nukta?  g_halant ^ _=Rd {form == F_HALF}  g_halant ;
-		
+
 endpass;
 
 pass(PASS_VORDER)	// 4
@@ -909,190 +942,197 @@ pass(PASS_VORDER)	// 4
 	_  _  cls_vowelLeft  g_nukta  >  @V  @N  _  _
 		/	_  _ /* insert here */
 			[ [ cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT && raform != R_REPH}  g_nukta?  g_halant  g_zwj? ]?
-			  cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT && raform != R_REPH}  g_nukta?  g_halant  g_zwj? ]?  
-			cls_consNom /*live*/  g_nukta?  g_zwj? 
+			  cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT && raform != R_REPH}  g_nukta?  g_halant  g_zwj? ]?
+			cls_consNom /*live*/  g_nukta?  g_zwj?
 			_=V  _=N;
 	_  cls_vowelLeft  >  @V  _
 		/	_  /* insert here */
 			[ [ cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT && raform != R_REPH}  g_nukta?  g_halant  g_zwj? ]?
 			  cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT && raform != R_REPH}  g_nukta?  g_halant  g_zwj? ]?
-			cls_consNom /*live*/  g_nukta?  g_zwj? 
+			cls_consNom /*live*/  g_nukta?  g_zwj?
 			_=V;
 
 	//  Rakar half-forms have already been created.
 	_  _  cls_vowelLeft  g_nukta  >  @V  @N  _  _
 		/	_  _ /* insert here */
-			[ cls_rakarHalf  g_zwj? ]?  
-			cls_consNom /*live*/  g_nukta?  g_zwj? 
+			[ cls_rakarHalf  g_zwj? ]?
+			cls_consNom /*live*/  g_nukta?  g_zwj?
 			_=V  _=N;
 	_  cls_vowelLeft  >  @V  _
 		/	_  /* insert here */
 			[ cls_rakarHalf g_zwj? ]?
-			cls_consNom /*live*/  g_nukta?  g_zwj? 
+			cls_consNom /*live*/  g_nukta?  g_zwj?
 			_=V;
 
 	//	Handle the fact that reph has been reordered.
 	_  _  cls_vowelLeft  g_nukta  >  @V  @N  _  _
 		/	_  _ /* insert here */
 			[ cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT}  g_nukta?  g_halant?  g_zwj?  ]?
-			cls_consNom /*live*/  g_nukta?  g_zwj? 
+			cls_consNom /*live*/  g_nukta?  g_zwj?
 			g_ra {raform == R_REPH}  g_halant
 			_=V  _=N;
 	_  cls_vowelLeft  >  @V  _
 		/	_ /* insert here */
 			[ cls_consNom {F_CONJ1 <= form && form <= F_NOHALANT}  g_nukta?   g_halant?  g_zwj?  ]?
-			cls_consNom /*live*/  g_nukta?  g_zwj? 
+			cls_consNom /*live*/  g_nukta?  g_zwj?
 			g_ra {raform == R_REPH}  g_halant
 			_=V;
-		
+
 endpass;
-		
+
 pass(PASS_NUKTA)	// 5
 	//	Combine nuktas.
-	
+
 	// But DON'T do it for high vowels with reph (superscript); they use a special ligature form:
-	cls_vowelRtHigh  g_nukta  g_ra  g_halant  >  @V  @N  DevRaReph:(3 4)  _
+	cls_vowelRtHigh  g_nukta  g_ra  g_halant  >  @V  @N  g__dev_ra_reph:(3 4)  _
 		/ _=V  _=N  _=R {raform == R_REPH}  _=H;
-	
+
 	cls_woNukta  g_nukta  >  cls_wNukta:(1 2)  _ / ^ _  _;	// reprocess for rakar
 
 endpass;
 
 pass(PASS_AHKAND)	// 5
-	//	Akhand
-	DevKa  g_akhand  DevSsa  >  DevK_Ssa:(1 2 3)  _  _;
-	DevJa  g_akhand  DevNya  >  DevJ_Nya:(1 2 3)  _  _;
+	//	Akhand = halant
+	g__dev_ka  g_akhand  g__dev_ssa  >  g__dev_k_ssa:(1 2 3)  _  _;
+	g__dev_ja  g_akhand  g__dev_nya  >  g__dev_j_nya:(1 2 3)  _  _;
+	g__dev_ta  g_akhand  g__dev_ta  >  g__dev_t_ta:(1 2 3)  _  _;
 endpass;
 
 pass(PASS_REPHRAKAR)	// 5
 	//	Reph & Rakar
-	g_ra  g_halant  >  DevRaReph:(1 2)   _  /  _=R {raform == R_REPH}   _=H;
-	
-	g_ra  >  DevRaVattu  /  _=R {raform == R_RAKAR} ;
+	g_ra  g_halant  >  g__dev_ra_reph:(1 2)   _  /  _=R {raform == R_REPH}   _=H;
+
+	g_ra  >  g__dev_ra_vattu  /  _=R {raform == R_RAKAR} ;
 	// Otherwise RA functions as the base consonant of the syllable.
 endpass;
 
 
 pass(PASS_HALFFORMS)	// 6
 	//	Odd exceptional case:
-	g_rra  g_halant  >  g_rra:(1 2)  _  /  _  _  DevRaVattu;
-	
+	g_rra  g_halant  >  g_rra:(1 2)  _  /  _  _  g__dev_ra_vattu;
+
 	//	Use an alternate form of YA when the previous consonant would have an explicit halant.
 	//	DON'T use so-called half form (which will have the explicit halant--we want to remove it).
 	//	Also back up and reprocess the YA (eg, to make a rakar ligature).
-	cls_nHalf  g_halant  cls_ya  >  cls_nHalf:(C1 H)  _  cls_ya_alt 
-		/  _=C1 {form == F_NOHALANT}  _=H  DevRaReph? ^ _=Y;
+	cls_nHalf  g_halant  cls_ya  >  cls_nHalf:(C1 H)  _  cls_ya_alt
+		/  _=C1 {form == F_NOHALANT}  _=H  g__dev_ra_reph? ^ _=Y;
 
 	//	Don't do any combining if a ZWNJ is present.
-	cls_nHalf  g_halant  g_zwnj  /  _  _  DevRaReph? _ ;
+	cls_nHalf  g_halant  g_zwnj  /  _  _  g__dev_ra_reph? _ ;
 
 	// Non-standard behavior for minority languages: eyelash ra with nukta.
-	DevRaNukta  g_halant  >  DevHalfRaNukta:(1 2)  _  /  _ {form == F_HALF || form == F_CONJ1}  _  g_zwj;
+	g__dev_ra_nukta  g_halant  >  g__dev_half_ra_nukta:(1 2)  _  /  _ {form == F_HALF || form == F_CONJ1}  _  g_zwj;
 
-	//	Special case for two ras - don't use eyelash form (generated by half-form rule below).
-	DevRa  DevHalant  DevRaReph;
-	
+	//	Special case for two ras - don't use eyelash form (generated by half-form rule below),
+	//	except when followed by YA.
+	g__dev_ra  g__dev_halant  g__dev_ra_reph  >  g__dev_half_ra:(1 2)  _  @Reph  /  _=Reye {raform == R_EYELASH}  cls_openBack  _=H  _=Reph;
+	g__dev_ra  g__dev_halant  g__dev_ra_reph; // don't change
+
 	//	Create half forms (later we will turn some of them into conjuncts).
 	cls_nHalf  g_halant  >  cls_half:(1 2)  _  /  _ {form == F_HALF || form == F_CONJ1}  _ ;
+
 endpass;
 
 pass(PASS_RAKARFULL)	// 6
 	//	Rakar full forms
 	//	First do the ones that have components defined:
-	
+
 	//	Kludge: First merge consonant and halant together so they can occupy the same component:
 	cls_woRakarCaret  g_halant  >  @C:(C H) {mergedHalant = true}  _
-		/ ^ _=C  _=H  DevRaVattu {raform == R_RAKAR} ;
+		/ ^ _=C  _=H  g__dev_ra_vattu {raform == R_RAKAR} ;
 	//	Then substitute the conjunct:
-	cls_woRakarCaret  DevRaVattu 
-		>  cls_wRakarCaret:(C R) {comp {cons.ref=@C; rakar.ref=@R}}  _ 
-		/  _=C {mergedHalant}  _=R;
-		
+	cls_woRakarCaret  g__dev_ra_vattu
+		>  cls_wRakarCaret:(C R) {comp {cons.ref=@C; rakar.ref=@R}}  _
+		/  _=C {mergedHalant==true}  _=R;
+
 	// No components defined:
-	cls_woRakar  g_halant  DevRaVattu 
+	cls_woRakar  g_halant  g__dev_ra_vattu
 		>  cls_wRakar:(1 2 3)  _  _ ;
-	
+
 	//	If no conjunct, at least just delete the halant.
-	cls_consNom  g_halant  DevRaVattu  >  cls_consNom:(1 2)  _  @3;
-	
+	cls_consNom  g_halant  g__dev_ra_vattu  >  cls_consNom:(1 2)  _  @3;
+
 endpass;
-  
+
 
 table(glyph)
-	cls_narrowIBeforeCandrab = (DevKha, DevKhaNukta, DevGa, DevGaNukta, DevGha, DevGhaNukta,
-		DevNga, DevNgaNukta, DevTta, DevTtaNukta, DevDdaNukta, DevCa, DevCaNukta, DevCha, DevChaNukta,
-		DevJa, DevJaNukta, DevJha, DevJhaNukta, DevNya, DevNyaNukta, DevDda, DevDdaNukta,
-		DevDdha, DevDdhaNukta, DevNna, DevNnaNukta, DevTa, DevTaNukta,
-		DevTha, DevThaNukta, DevDa, DevDaNukta, DevDha, DevDhaNukta, DevNa, DevNaNukta,
-		DevPa, DevPaNukta, DevBa, DevBaNukta, DevBha, DevBhaNukta, DevMa, DevMaNukta, DevYa,
-		DevYaNukta, DevLa, DevLaNukta, DevLla, DevLlaNukta, DevWa, DevWaNukta,
-		DevSha, DevShaNukta, DevSsa, DevSsaNukta, DevSa, DevSaNukta, DevHa, DevHaNukta
-		
+	cls_narrowIBeforeCandrab = (g__dev_kha, g__dev_kha_nukta, g__dev_ga, g__dev_ga_nukta, g__dev_gha, g__dev_gha_nukta,
+		g__dev_nga, g__dev_nga_nukta, g__dev_tta, g__dev_tta_nukta, g__dev_dda_nukta, g__dev_ca, g__dev_ca_nukta, g__dev_cha, g__dev_cha_nukta,
+		g__dev_ja, g__dev_ja_nukta, g__dev_jha, g__dev_jha_nukta, g__dev_nya, g__dev_nya_nukta, g__dev_dda, g__dev_dda_nukta,
+		g__dev_ddha, g__dev_ddha_nukta, g__dev_nna, g__dev_nna_nukta, g__dev_ta, g__dev_ta_nukta,
+		g__dev_tha, g__dev_tha_nukta, g__dev_da, g__dev_da_nukta, g__dev_dha, g__dev_dha_nukta, g__dev_na, g__dev_na_nukta,
+		g__dev_pa, g__dev_pa_nukta, g__dev_ba, g__dev_ba_nukta, g__dev_bha, g__dev_bha_nukta, g__dev_ma, g__dev_ma_nukta, g__dev_ya,
+		g__dev_ya_nukta, g__dev_la, g__dev_la_nukta, g__dev_lla, g__dev_lla_nukta, g__dev_wa, g__dev_wa_nukta,
+		g__dev_sha, g__dev_sha_nukta, g__dev_ssa, g__dev_ssa_nukta, g__dev_sa, g__dev_sa_nukta, g__dev_ha, g__dev_ha_nukta
+
 	);
 	cls_narrowIBeforeAnusv = (
-		DevNga, DevNgaNukta, DevDdaNukta, DevCa, DevCaNukta, DevCha, DevChaNukta, DevJa, DevJaNukta,
-		DevNya, DevNyaNukta, DevDda, DevDdaNukta, DevDdha, DevDdhaNukta,
-		DevNna, DevNnaNukta, DevTha, DevThaNukta, DevMa, DevMaNukta, DevYa, DevYaNukta
+		g__dev_nga, g__dev_nga_nukta, g__dev_dda_nukta, g__dev_ca, g__dev_ca_nukta, g__dev_cha, g__dev_cha_nukta, g__dev_ja, g__dev_ja_nukta,
+		g__dev_nya, g__dev_nya_nukta, g__dev_dda, g__dev_dda_nukta, g__dev_ddha, g__dev_ddha_nukta,
+		g__dev_nna, g__dev_nna_nukta, g__dev_tha, g__dev_tha_nukta, g__dev_ma, g__dev_ma_nukta, g__dev_ya, g__dev_ya_nukta
 	);
-	// These are okay after all: DevGa, DevGaNukta, DevGha, DevGhaNukta, DevBha, DevJha, DevJhaNukta, DevDha, DevDhaNukta, DevBa, DevBaNukta, DevBhaNukta, DevWa, DevWaNukta, DevSha, DevShaNukta
+	// These are okay after all: g0917, g095a, g0918, g0918_093c, g092d, g091d, g091d_093c, g0927, g0927_093c, g092c, g092c_093c, g092d_093c, g0935, g0935_093c, g0936, g0936_093c
 
-	cls_shiftCandrabAfterI = (DevRa, DevRaNukta); // narrow reph forms
+	cls_shiftCandrabAfterI = (g__dev_ra, g__dev_ra_nukta); // narrow reph forms
+
+	// These have a wide right side:
+	////////////////cls_noShiftAnusvBeforeCandraO = (g0915, g0958, g092b, g095e, g0960);
 endtable;
 
 pass(PASS_MARKMATRAI)  // 6
 	//	If the swoop of the matra-I (ikar) is going to collide with a candrabindu or anusvara,
 	//	use a narrower version. Here we just mark it as needing the narrower version, and we
 	//	do the subtitution below.
-	cls_matraI {useNarrow = true}  /  _  cls_narrowIBeforeCandrab  DevNukta?  DevCandrabindu ;
-	cls_matraI {useNarrow = true}  /  _  cls_narrowIBeforeAnusv    DevNukta?  DevAnusvara ;
+	cls_matraI {useNarrow = true}  /  _  cls_narrowIBeforeCandrab  g__dev_nukta?  g__dev_candrabindu ;
+	cls_matraI {useNarrow = true}  /  _  cls_narrowIBeforeAnusv    g__dev_nukta?  g__dev_anusvara ;
 endpass;
 
 pass(PASS_FULLCONJ)	//  7
 
 	//	Full conjuncts
 	//	NOTE: these rules must match those above that recognize conjuncts.
-	
+
 #define SETCOMP {component { c1.reference=@1; c2.reference=@2 }}
 
-//	DevHalfKa  cls_0915_2ndhalf  >  _  cls_0915_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
-//	DevHalfNga  cls_0919_2ndhalf  >  _  cls_0919_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
-//	DevHalfCa  cls_091a_2ndhalf  >  _  cls_091a_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
-//	DevHalfTta  cls_091f_2ndhalf  >  _  cls_091f_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
-//	DevHalfTtha  cls_0920_2ndhalf  >  _  cls_0920_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
-//	DevHalfDda  cls_0921_2ndhalf  >  _  cls_0921_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
-//	cls_1sthalf_0932  DevLa  >  cls_conj_0932_cpress:(1 2) SETCOMP  _  / _  _  cls_matraLower;
+//	g0915_094d_half  cls_0915_2ndhalf  >  _  cls_0915_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
+//	g0919_094d_half  cls_0919_2ndhalf  >  _  cls_0919_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
+//	g091a_094d_half  cls_091a_2ndhalf  >  _  cls_091a_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
+//	g091f_094d_half  cls_091f_2ndhalf  >  _  cls_091f_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
+//	g0920_094d_half  cls_0920_2ndhalf  >  _  cls_0920_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
+//	g0921_094d_half  cls_0921_2ndhalf  >  _  cls_0921_conj_cpress:(1 2) SETCOMP  / _  _  cls_matraLower;
+//	cls_1sthalf_0932  g0932  >  cls_conj_0932_cpress:(1 2) SETCOMP  _  / _  _  cls_matraLower;
 
-	DevHalfKa  cls_0915_2ndhalf  >  _  cls_0915_conj:(1 2) SETCOMP;
-	DevHalfNga  cls_0919_2ndhalf  >  _  cls_0919_conj:(1 2) SETCOMP;
-	DevHalfCa  cls_091a_2ndhalf  >  _  cls_091a_conj:(1 2) SETCOMP;
-	DevHalfTta  cls_091f_2ndhalf  >  _  cls_091f_conj:(1 2) SETCOMP;
-	DevHalfTtha  cls_0920_2ndhalf  >  _  cls_0920_conj:(1 2) SETCOMP;
-	DevHalfDda  cls_0921_2ndhalf  >  _  cls_0921_conj:(1 2) SETCOMP;
-	DevHalfDa  cls_0926_2ndhalf  >  _  cls_0926_conj:(1 2) SETCOMP;
-	DevHalfSha  cls_0936_2ndhalf  >  _  cls_0936_conj:(1 2) SETCOMP;
-	DevHalfSsa  cls_0937_2ndhalf  >  _  cls_0937_conj:(1 2) SETCOMP;
-	DevHalfHa  cls_0939_2ndhalf  >  _  cls_0939_conj:(1 2) SETCOMP;
-	
-	cls_1sthalf_0924  DevTa  >  cls_conj_0924:(1 2) SETCOMP  _;
-	cls_1sthalf_0928  DevNa  >  cls_conj_0928:(1 2) SETCOMP  _;
-	cls_1sthalf_0932  DevLa  >  cls_conj_0932:(1 2) SETCOMP  _;
+	g__dev_half_ka  cls_0915_2ndhalf  >  _  cls_0915_conj:(1 2) SETCOMP;
+	g__dev_half_nga  cls_0919_2ndhalf  >  _  cls_0919_conj:(1 2) SETCOMP;
+	g__dev_half_ca  cls_091a_2ndhalf  >  _  cls_091a_conj:(1 2) SETCOMP;
+	g__dev_half_tta  cls_091f_2ndhalf  >  _  cls_091f_conj:(1 2) SETCOMP;
+	g__dev_half_ttha  cls_0920_2ndhalf  >  _  cls_0920_conj:(1 2) SETCOMP;
+	g__dev_half_dda  cls_0921_2ndhalf  >  _  cls_0921_conj:(1 2) SETCOMP;
+	g__dev_half_da  cls_0926_2ndhalf  >  _  cls_0926_conj:(1 2) SETCOMP;
+	g__dev_half_sha  cls_0936_2ndhalf  >  _  cls_0936_conj:(1 2) SETCOMP;
+	g__dev_half_ssa  cls_0937_2ndhalf  >  _  cls_0937_conj:(1 2) SETCOMP;
+	g__dev_half_ha  cls_0939_2ndhalf  >  _  cls_0939_conj:(1 2) SETCOMP;
+
+	cls_1sthalf_0924  g__dev_ta  >  cls_conj_0924:(1 2) SETCOMP  _;
+	cls_1sthalf_0928  g__dev_na  >  cls_conj_0928:(1 2) SETCOMP  _;
+	cls_1sthalf_0932  g__dev_la  >  cls_conj_0932:(1 2) SETCOMP  _;
 
 	// rakar conjuncts
-	DevHalfKa  DevHalfSsaR  >  DevHalfK_SsaR:(1 2)  _;
-	DevHalfJa  DevHalfNyaR  >  DevHalfJ_NyaR:(1 2)  _;
+	g__dev_half_ka  g__dev_half_ssa_r  >  g__dev_half_k_ssa_r:(1 2)  _;
+	g__dev_half_ja  g__dev_half_nya_r  >  g__dev_half_j_nya_r:(1 2)  _;
 
 	// These forms basically have the effect of removing the halant from the first consonant in the cluster.
-	cls_yaRakarHalf_pre  g_halant  DevHalfYaR  >	cls_yaRakarHalf_conj:(1 2 3)  _  _;
-	cls_yaRakarHalf_pre  g_halant  DevHalfYaNuktaR  >	cls_yyaRakarHalf_conj:(1 2 3)  _  _;
+	cls_yaRakarHalf_pre  g_halant  g__dev_half_ya_r  >	cls_yaRakarHalf_conj:(1 2 3)  _  _;
+	cls_yaRakarHalf_pre  g_halant  g__dev_half_ya_nukta_r  >	cls_yyaRakarHalf_conj:(1 2 3)  _  _;
 
 	// 0926 is different in that it has already been put into a single glyph with halant.
-	cls_yaRakarHalf_pre094d  DevHalfYaR  >  cls_yaRakarHalf_conj:(1 2)  _;
-	cls_yaRakarHalf_pre094d  DevHalfYaNuktaR  >  cls_yyaRakarHalf_conj:(1 2)  _;
+	////cls_yaRakarHalf_pre094d  g092f_094d_0930_094d_half  >  cls_yaRakarHalf_conj_subs:(1 2)  _;
+	////cls_yaRakarHalf_pre094d  g095f_094d_0930_094d_half  >  cls_yyaRakarHalf_conj_subs:(1 2)  _;
 
 	// The form that includes the halant is not necessary except that includes an LowerAlt att pt,
 	// needed for instance for 0952.
-	DevHaR       DevHalant  >  DevHalfHaR:(1 2)  _;
-	DevHaNuktaR  DevHalant  >  DevHalfHaNuktaR:(1 2)  _;
+	g__dev_ha_r       g__dev_halant  >  g__dev_half_ha_r:(1 2)  _;
+	g__dev_ha_nukta_r  g__dev_halant  >  g__dev_half_ha_nukta_r:(1 2)  _;
 
 endpass;
 
@@ -1106,15 +1146,15 @@ pass(PASS_MATRAWIDTH)	// 7
 	cls_matraI  >  @1  /  _ {useNarrow == true}  consWidth20_matraI;
 	cls_matraI  >  cls_matraI_width20  /  _ {useNarrow == true}  consWidth30_matraI;
 	cls_matraI  >  cls_matraI_width30  /  _ {useNarrow == true}  consWidth40_matraI;
-	
+
 	cls_matraI  >  cls_matraI_width40  /  _  cls_rakarHalf;
 	cls_matraI  >  cls_matraI_width20  /  _  consWidth20_matraI;
 	cls_matraI  >  cls_matraI_width30  /  _  consWidth30_matraI;
 	cls_matraI  >  cls_matraI_width40  /  _  consWidth40_matraI;
-		
+
 	cls_matraII  >  cls_matraII_width20  /  consWidth20_matraII  _;
 	cls_matraII  >  cls_matraII_width30  /  consWidth30_matraII  _;
-	
+
 endpass;
 
 pass(PASS_LIGBELOW)		// 8
@@ -1122,19 +1162,19 @@ pass(PASS_LIGBELOW)		// 8
 	//	a different form, but Graphite seems to lose the ligature components. So we use separate original
 	//	rules above.
 	cno_stackCompress  >  cStackCompress  /  _  cls_matraLower;
-	
+
 	//	Ligatures below
-	DevHa  cls_noLigBelow_0939  >  _  cls_ligBelow_0939:(1 2);
-	DevRa  cls_noLigBelow_0930  >  _  cls_ligBelow_0930:(1 2);
-	DevRaNukta  cls_noLigBelow_0931  >  _  cls_ligBelow_0931:(1 2);
-	
+	g__dev_ha  cls_noLigBelow_0939  >  _  cls_ligBelow_0939:(1 2);
+	g__dev_ra  cls_noLigBelow_0930  >  _  cls_ligBelow_0930:(1 2);
+	g__dev_ra_nukta  cls_noLigBelow_0931  >  _  cls_ligBelow_0931:(1 2);
+
 	// This rule produces a warning because the ZWJ does not form a component; that's okay.
 	// No longer needed.
-//	DevRa  g__zero_width_joiner  cls_noLigRephZwjU
+//	g0930  g200d  cls_noLigRephZwjU
 //		>  _  _  cls_ligRephZwjU:(1 2 3) { component { c1.ref = @1; c2.ref = @3 } };
 
 	// Combinations to avoid collisions
-	DevHaNukta  DevMaatraUU  >  DevHaNuktaMaatraUU:(1 2) { component { c1.ref = @1; c2.ref = @2 } }  _;
+	g__dev_ha_nukta  g__dev_maatra_u_u  >  g__dev_ha_nukta_maatra_u_u:(1 2) { component { c1.ref = @1; c2.ref = @2 } }  _;
 endpass;
 
 ///pass(PASS_HALANT) -- do we want a feature to turn these on?	// 8
@@ -1146,114 +1186,118 @@ endpass;
 pass(PASS_FIXUPPERS)	// 8
 	//	Use ligatures for high right vowels with reph (possibly with anusvara or candrabindu),
 	//	to avoid collisions.
-	cls_vowelRtHigh  DevRaReph           >   cls_vowelRtHigh_0930_094d:(V R)
+	cls_vowelRtHigh  g__dev_ra_reph           >   cls_vowelRtHigh_0930_094d:(V R)
 														{component {c1.ref = @V; c2.ref = @R}}
 													_
 		/ _=V  g_nukta?  _=R ;
-	cls_vowelRtHigh  DevRaReph  DevCandrabindu    >   cls_vowelRtHigh_0930_094d_0901:(V R A)
+	cls_vowelRtHigh  g__dev_ra_reph  g__dev_candrabindu    >   cls_vowelRtHigh_0930_094d_0901:(V R A)
 														{component {c1.ref = @V; c2.ref = @R; c3.ref = @A}}
 													_  _
 		/ _=V  g_nukta?  _=R  _=A ;
-	cls_vowelRtHigh  DevRaReph  DevAnusvara    >   cls_vowelRtHigh_0930_094d_0902:(V R C)
+	cls_vowelRtHigh  g__dev_ra_reph  g__dev_anusvara    >   cls_vowelRtHigh_0930_094d_0902:(V R C)
 														{component {c1.ref = @V; c2.ref = @R; c3.ref = @C}}
 													_  _
 		/ _=V  g_nukta?  _=R  _=C ;
-		
+
 	//	Any other case of reph + upper mark:
-	DevRaReph  DevCandrabindu   >   DevRephCandrabindu:(1 2) {component {c1.ref = @1; c2.ref = @2}}  _;
-	DevRaReph  DevAnusvara   >   DevRephBindu:(1 2) {component {c1.ref = @1; c2.ref = @2}}  _;
-	
+	g__dev_ra_reph  g__dev_candrabindu   >   g__dev_reph_candrabindu:(1 2) {component {c1.ref = @1; c2.ref = @2}}  _;
+	g__dev_ra_reph  g__dev_anusvara   >   g__dev_reph_bindu:(1 2) {component {c1.ref = @1; c2.ref = @2}}  _;
+
 	// No special glyph for inverted candrabindu--use a small form and squeeze it in:
-	DevInvCandrabindu  >  DevInvCandrabindu_alt  /  (cls_vowelRtHigh_0930_094d  DevRaReph)  _ ;
-	
+	g__dev_inv_candrabindu  >  g__dev_inv_candrabindu_alt  /  (cls_vowelRtHigh_0930_094d  g__dev_ra_reph)  _ ;
+
 	//	Use small candrabindu whenever there is something else above the baseline.
 	cls_candrab  >  cls_candrab_alt
-			/  (cls_0945  cls_0946  cls_0947  cls_0948  DevMaatraOE)  _;			// dependent vowels
+			/  (cls_0945  cls_0946  cls_0947  cls_0948  g__dev_maatra_o_e)  _;			// dependent vowels
 	cls_candrab  >  cls_candrab_alt
-			/  (cls_0940  cls_0949  cls_094a  cls_094b  cls_094c  DevMaatraOOE  DevMaatraAW)  _;	// tall vowels
-	cls_candrab  >  cls_candrab_alt 
-			/  (DevMaatraOOE DevMaatraAW)  g_nukta  _;
+			/  (cls_0940  cls_0949  cls_094a  cls_094b  cls_094c  g__dev_maatra_o_o_e  g__dev_maatra_a_w)  _;	// tall vowels
 	cls_candrab  >  cls_candrab_alt
-			/  (DevVowelCandraA  DevVowelCandraANukta  DevVowelOE  DevVowelOOE  DevVowelAW  DevVowelUE  DevVowelUUE)  g_nukta?  _;
-	
+			/  (g__dev_maatra_o_o_e g__dev_maatra_a_w)  g_nukta  _;
+	cls_candrab  >  cls_candrab_alt
+			/  (g__dev_vowel_candra_a  g__dev_vowel_candra_a_nukta  g__dev_vowel_o_e  g__dev_vowel_o_o_e  g__dev_vowel_a_w  g__dev_vowel_u_e  g__dev_vowel_u_u_e)  g_nukta?  _;
+
 	//	Now that the conjuncts have been created, use a narrower matra-I where necessary.
 	cls_matraI_width30  >  cls_matraI_width20  /  _  conjWidth20_matraI;
 	cls_matraI_width40  >  cls_matraI_width20  /  _  conjWidth20_matraI;
 	cls_matraI_width40  >  cls_matraI_width30  /  _  conjWidth30_matraI;
-	
+
 	//	No combined form for this vowel, but just use an alternate reph that fits better.
-	DevRaReph  >  DevRaReph_alt  /  DevMaatraAW  g_nukta?  _;
-	
-	
+	g__dev_ra_reph  >  g__dev_ra_reph_alt  /  g__dev_maatra_a_w  g_nukta?  _;
+
+
 endpass;
 
 pass(PASS_FRACTIONS)	// 8
 	//	Fractions
-	DevOne  (g__frac_slash g_slash)  DevFour  >  DevOneQuarter:(1 2 3)  _  _;
-	DevOne  (g__frac_slash g_slash)  DevTwo  >  DevOneHalf:(1 2 3)  _  _;
-	DevThree  (g__frac_slash g_slash)  DevFour  >  DevThreeQuarters:(1 2 3)  _  _;
+	g__dev_one  (g__frac_slash g_slash)  g__dev_four  >  g__dev_one_quarter:(1 2 3)  _  _;
+	g__dev_one  (g__frac_slash g_slash)  g__dev_two  >  g__dev_one_half:(1 2 3)  _  _;
+	g__dev_three  (g__frac_slash g_slash)  g__dev_four  >  g__dev_three_quarters:(1 2 3)  _  _;
 endpass;
 
 //	Classes for features
 table(glyph)
 	c_091d_noalt = (
-		DevJha		DevHalfJha		DevJhaNukta			DevHalfJhaNukta
-		DevJhaR					DevJhaNuktaR);
+		g__dev_jha		g__dev_half_jha		g__dev_jha_nukta			g__dev_half_jha_nukta
+		g__dev_jha_r					g__dev_jha_nukta_r);
 
 	c_091d_alt1 = (
-		DevJha_alt	DevHalfJha_alt	DevJhaNukta_alt		DevHalfJhaNukta_alt
-		DevJhaR_alt				DevJhaNuktaR_alt);
-		
+		g__dev_jha_alt	g__dev_half_jha_alt	g__dev_jha_nukta_alt		g__dev_half_jha_nukta_alt
+		g__dev_jha_r_alt				g__dev_jha_nukta_r_alt);
+
 	c_091d_alt2 = (
-		DevJha_alt2	DevHalfJha_alt2	DevJhaNukta_alt2	DevHalfJhaNukta_alt2
-		DevJhaR_alt2				DevJhaNuktaR_alt2);
-		
+		g__dev_jha_alt2	g__dev_half_jha_alt2	g__dev_jha_nukta_alt2	g__dev_half_jha_nukta_alt2
+		g__dev_jha_r_alt2				g__dev_jha_nukta_r_alt2);
 
-	c_kra_noalt	= (DevKaR		DevKaNuktaR				DevHalfKaR		DevHalfKaNuktaR);
-	c_kra_alt	= (DevKaR_alt	DevKaNuktaR_alt			DevHalfKaR_alt	DevHalfKaNuktaR_alt);
-	
-	c_tra_noalt	= (DevTaR		DevTaNuktaR		DevHalfTaR		DevHalfTaNuktaR);
-	c_tra_alt	= (DevTaR_alt	DevTaNuktaR_alt	DevHalfTaR_alt	DevHalfTaNuktaR_alt);
 
-	c_shra_noalt= (DevShaR		DevShaNuktaR		DevHalfShaR		DevHalfShaNuktaR);
-	c_shra_alt	= (DevShaR_alt	DevShaNuktaR_alt	DevHalfShaR_alt	DevHalfShaNuktaR_alt);
-	
-	c_ukar_noalt= (DevMaatraUNukta			DevMaatraUUNukta);
-	c_ukar_alt	= (DevMaatraUNukta_alt		DevMaatraUUNukta_alt);
-	c_ukar_alt2 = (DevMaatraUNukta_alt2		DevMaatraUUNukta_alt2);
+	c_kra_noalt	= (g__dev_ka_r		g__dev_ka_nukta_r				g__dev_half_ka_r		g__dev_half_ka_nukta_r);
+	c_kra_alt	= (g__dev_ka_r_alt	g__dev_ka_nukta_r_alt			g__dev_half_ka_r_alt	g__dev_half_ka_nukta_r_alt);
 
-	c_ekar_noalt= (DevMaatraENukta);
-	c_ekar_alt	= (DevMaatraENukta_alt);
-	
+	c_tra_noalt	= (g__dev_ta_r		g__dev_ta_nukta_r		g__dev_half_ta_r		g__dev_half_ta_nukta_r);
+	c_tra_alt	= (g__dev_ta_r_alt	g__dev_ta_nukta_r_alt	g__dev_half_ta_r_alt	g__dev_half_ta_nukta_r_alt);
+
+	c_shra_noalt= (g__dev_sha_r		g__dev_sha_nukta_r		g__dev_half_sha_r		g__dev_half_sha_nukta_r);
+	c_shra_alt	= (g__dev_sha_r_alt	g__dev_sha_nukta_r_alt	g__dev_half_sha_r_alt	g__dev_half_sha_nukta_r_alt);
+
+	c_ukar_noalt= (g__dev_maatra_u_nukta			g__dev_maatra_u_u_nukta);
+	c_ukar_alt	= (g__dev_maatra_u_nukta_alt		g__dev_maatra_u_u_nukta_alt);
+	c_ukar_alt2 = (g__dev_maatra_u_nukta_alt2		g__dev_maatra_u_u_nukta_alt2);
+
+	c_ekar_noalt= (g__dev_maatra_e_nukta);
+	c_ekar_alt	= (g__dev_maatra_e_nukta_alt);
+
 	//	Alternate DYA & HYA forms
-	
-	cls_dyahya			= (DevD_Ya				DevH_Ya);
-	cls_dyyahyya		= (DevD_YaNukta				DevH_YaNukta);
-	cls_dyahya_alt		= (DevD_Ya_alt			DevH_Ya_alt);
-	cls_daha_half		= (DevHalfDa				DevHalfHa);
-	cls_dyahya_half		= (DevD_HalfYa	DevH_HalfYa);
-	cls_dyyahyya_half	= (DevD_HalfYaNukta	DevH_HalfYaNukta);
-	cls_dyrhyr			= (DevD_YaRa	DevH_YaRa);
-	cls_dyyrhyyr		= (DevD_YaNuktaRa	DevH_YaNuktaRa);
-	
-	cls_dyahya_ligs = (cls_dyyahyya, cls_dyahya_half, cls_dyyahyya_half, cls_dyrhyr, cls_dyyrhyyr)
+
+	cls_dyahya			= (g__dev_d_ya						g__dev_h_ya);
+	cls_dyyahyya		= (g__dev_d_ya_nukta						g__dev_h_ya_nukta);
+	cls_dyahya_alt		= (g__dev_d_ya_alt					g__dev_h_ya_alt);
+	cls_daha_half		= (g__dev_half_da						g__dev_half_ha);
+	cls_dyahya_half		= (g__dev_d_half_ya			g__dev_h_half_ya);
+	cls_dyyahyya_half	= (g__dev_d_half_ya_nukta			g__dev_h_half_ya_nukta);
+	cls_dyrhyr			= (g__dev_d_ya_ra			g__dev_h_ya_ra);
+	cls_dyyrhyyr		= (g__dev_d_ya_nukta_ra			g__dev_h_ya_nukta_ra);
+	cls_dyrhyr_half		= (g__dev_half_d_ya_ra	g__dev_half_h_ya_ra);
+	cls_dyyrhyyr_half	= (g__dev_half_d_ya_nukta_ra	g__dev_half_h_ya_nukta_ra);
+
+	cls_dyahya_ligs = (cls_dyyahyya, cls_dyahya_half, cls_dyyahyya_half, cls_dyrhyr, cls_dyyrhyyr, cls_dyrhyr_half, cls_dyyrhyyr_half)
 		{ component { c1 = box(0,-descent,    aw/2,ascent);
 			          c2 = box(aw/2,-descent, aw,ascent) } };
-	
-	g_ya		= (DevYa);
-	g_ya_half	= (DevHalfYa);
-	g_yya		= (DevYaNukta);
-	g_yya_half	= (DevHalfYaNukta);
-	g_ya_ra		= (DevYaR);
-	g_yya_ra	= (DevYaNuktaR);
 
-	cls_ya_noalt 			= (DevYa,								DevYaNukta);
-	cls_ya_noalt_half		= (DevHalfYa,						DevHalfYaNukta);
-	cls_ya_ra_noalt 		= (DevYaR,						DevYaNuktaR);
-	cls_rya_alt 			= (DevRa_Ya,			DevRa_YaNukta);
-	cls_rya_alt_half 		= (DevRa_HalfYa,	DevRa_HalfYaNukta);
-	cls_rya_ra_alt_half 	= (DevRa_YaRa,	DevRa_YaNuktaRa);
-	
+	g_ya			= (g__dev_ya);
+	g_ya_half		= (g__dev_half_ya);
+	g_yya			= (g__dev_ya_nukta);
+	g_yya_half		= (g__dev_half_ya_nukta);
+	g_ya_ra			= (g__dev_ya_r);
+	g_yya_ra		= (g__dev_ya_nukta_r);
+	g_ya_ra_half	= (g__dev_half_ya_r);
+	g_yya_ra_half	= (g__dev_half_ya_nukta_r);
+
+	cls_ya_noalt 			= (g__dev_ya,								g__dev_ya_nukta);
+	cls_ya_noalt_half		= (g__dev_half_ya,						g__dev_half_ya_nukta);
+	cls_ya_ra_noalt 		= (g__dev_ya_r,						g__dev_ya_nukta_r);
+	cls_rya_alt 			= (g__dev_ra_ya,			g__dev_ra_ya_nukta);
+	cls_rya_alt_half 		= (g__dev_ra_half_ya,	g__dev_ra_half_ya_nukta);
+	cls_rya_ra_alt_half 	= (g__dev_ra_ya_ra,	g__dev_ra_ya_nukta_ra);
+
 endtable; // glyph
 
 pass(PASS_FEATURES)	// 8
@@ -1297,18 +1341,20 @@ endif;
 
 if (dyahya)
 	cls_dyahya  >  cls_dyahya_alt;
-	cls_daha_half  g_yya       >  cls_dyyahyya:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_ya_half   >  cls_dyahya_half:(1 2)   {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_yya_half  >  cls_dyyahyya_half:(1 2) {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_ya_ra     >  cls_dyrhyr:(1 2)        {comp {c1.ref = @1; c2.ref = @2}}  _ ;
-	cls_daha_half  g_yya_ra    >  cls_dyyrhyyr:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya         >  cls_dyyahyya:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_ya_half     >  cls_dyahya_half:(1 2)   {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya_half    >  cls_dyyahyya_half:(1 2) {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_ya_ra       >  cls_dyrhyr:(1 2)        {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya_ra      >  cls_dyyrhyyr:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_ya_ra_half  >  cls_dyrhyr_half:(1 2)   {comp {c1.ref = @1; c2.ref = @2}}  _ ;
+	cls_daha_half  g_yya_ra_half >  cls_dyyrhyyr_half:(1 2) {comp {c1.ref = @1; c2.ref = @2}}  _ ;
 endif;
 
 if (rya)
-	DevRa DevHalant g_zwnj cls_ya_ra_noalt		>  _  _  _  cls_rya_ra_alt_half:(1 2 3 4);
-	///g0930 DevHalant g_zwnj cls_ya_noalt DevHalant  	>  _  _  _  cls_rya_alt_half:(1 2 3 4 5) _;  // SC
-	DevRa DevHalant g_zwnj cls_ya_noalt_half  	>  _  _  _  cls_rya_alt_half:(1 2 3 4);      // JC
-	DevRa DevHalant g_zwnj cls_ya_noalt  		>  _  _  _  cls_rya_alt:(1 2 3 4) ;
+	g__dev_ra g__dev_halant g_zwnj cls_ya_ra_noalt		>  _  _  _  cls_rya_ra_alt_half:(1 2 3 4);
+	///g0930 g094d g_zwnj cls_ya_noalt g094d  	>  _  _  _  cls_rya_alt_half:(1 2 3 4 5) _;  // SC
+	g__dev_ra g__dev_halant g_zwnj cls_ya_noalt_half  	>  _  _  _  cls_rya_alt_half:(1 2 3 4);   // JC
+	g__dev_ra g__dev_halant g_zwnj cls_ya_noalt  		>  _  _  _  cls_rya_alt:(1 2 3 4) ;
 endif;
 
 if (ukar)
@@ -1327,41 +1373,41 @@ endif;
 
 
 if (digit5)
-	DevFive  >  DevFive_alt;
+	g__dev_five  >  g__dev_five_alt;
 else
-	DevFive_alt  >  DevFive;
+	g__dev_five_alt  >  g__dev_five;
 endif;
 
 if (digit8)
-	DevEight  >  DevEight_alt;
+	g__dev_eight  >  g__dev_eight_alt;
 else
-	DevEight_alt  >  DevEight;
+	g__dev_eight_alt  >  g__dev_eight;
 endif;
 
 if (digit9 == form1)
-	DevNine_alt  >  DevNine;
-	DevNine_alt2 >  DevNine;
+	g__dev_nine_alt  >  g__dev_nine;
+	g__dev_nine_alt2 >  g__dev_nine;
 endif;
 if (digit9 == form2)
-	DevNine      >  DevNine_alt;
-	DevNine_alt2 >  DevNine_alt;
+	g__dev_nine      >  g__dev_nine_alt;
+	g__dev_nine_alt2 >  g__dev_nine_alt;
 endif;
 if (digit9 == form3)
-	DevNine     >  DevNine_alt2;
-	DevNine_alt >  DevNine_alt2;
+	g__dev_nine     >  g__dev_nine_alt2;
+	g__dev_nine_alt >  g__dev_nine_alt2;
 endif;
 
 
 if (visargabar)
-	DevVisarga  >  DevVisarga_alt;
+	g__dev_visarga  >  g__dev_visarga_alt;
 else
-	DevVisarga_alt  >  DevVisarga;
+	g__dev_visarga_alt  >  g__dev_visarga;
 endif;
 
 if (glottalbar) // alternate form has no bar
-	DevGlottalStop  >  DevGlottalStop_alt;
+	g__dev_glottal_stop  >  g__dev_glottal_stop_alt;
 else
-	DevGlottalStop_alt  >  DevGlottalStop;
+	g__dev_glottal_stop_alt  >  g__dev_glottal_stop;
 endif;
 
 
@@ -1380,112 +1426,117 @@ endpass; // PASS_LATINDIAC
 
 // Classes for collision-fixing substitution
 table(glyph)
-	cls_conjunctsYaAlt = (DevNg_Ya   DevCh_Ya   DevTt_Ya   DevTth_Ya   DevDd_Ya
-		DevDdh_Ya   DevNg_YaNukta   DevCh_YaNukta   DevTt_YaNukta   DevTth_YaNukta   DevDd_YaNukta
-		DevDdh_YaNukta   DevNg_YaRa   DevCh_YaRa   DevTt_YaRa
-		DevTth_YaRa   DevDd_YaRa   DevDdh_YaRa   DevNg_YaNuktaRa
-		DevCh_YaNuktaRa   DevTt_YaNuktaRa   DevTth_YaNuktaRa   DevDd_YaNuktaRa
-		DevDdh_YaNuktaRa);
-	
-	cls_consNarrowRightOfStem2 = (cls_fullKha  cls_fullGa cls_fullGha  cls_fullNga  cls_fullCa  cls_fullCha
+	cls_conjunctsYaAlt = (g__dev_ng_ya   g__dev_ch_ya   g__dev_tt_ya   g__dev_tth_ya   g__dev_dd_ya
+		g__dev_ddh_ya   g__dev_ng_ya_nukta   g__dev_ch_ya_nukta   g__dev_tt_ya_nukta   g__dev_tth_ya_nukta   g__dev_dd_ya_nukta
+		g__dev_ddh_ya_nukta   g__dev_ng_ya_ra   g__dev_ch_ya_ra   g__dev_tt_ya_ra
+		g__dev_tth_ya_ra   g__dev_dd_ya_ra   g__dev_ddh_ya_ra   g__dev_ng_ya_nukta_ra
+		g__dev_ch_ya_nukta_ra   g__dev_tt_ya_nukta_ra   g__dev_tth_ya_nukta_ra   g__dev_dd_ya_nukta_ra
+		g__dev_ddh_ya_nukta_ra);
+
+	cls_consNarrowRightOfStem = (cls_fullKha  cls_fullGa cls_fullGha  cls_fullNga  cls_fullCa  cls_fullCha
 		cls_fullJa  cls_fullJha  cls_fullNya  cls_fullTta  cls_fullTtha  cls_fullDda  cls_fullDdha  cls_fullNna
 		cls_fullTa  cls_fullTha  cls_fullDa   cls_fullDha  cls_fullNa    cls_fullPa   cls_fullBa    cls_fullBha
 		cls_fullMa  cls_fullYa   cls_fullRa   cls_fullLa   cls_fullLla   cls_fullWa   cls_fullSha   cls_fullSsa
-		cls_fullSa  cls_fullHa   DevK_Ssa   DevK_SsaR   DevK_Ssa_archaic   DevC_Ca
-		DevJ_Nya   DevJ_NyaR   DevT_Ta   DevD_Da   DevD_Dha
-		DevD_Ma   DevD_Ya  DevD_Wa  DevN_Na   DevP_Ta   DevM_La
-		DevL_La   DevSh_Ca   DevSh_Wa   DevSs_Tta   DevSs_Ttha   DevS_Na
-		DevH_Na   DevH_Ma   DevH_Ya   DevH_La   DevH_Wa   DevH_Ri
+		cls_fullSa  cls_fullHa   g__dev_k_ssa   g__dev_k_ssa_r   g__dev_k_ssa_archaic   g__dev_c_ca
+		g__dev_j_nya   g__dev_j_nya_r   g__dev_t_ta   g__dev_d_da   g__dev_d_dha
+		g__dev_d_ma   g__dev_d_ya  g__dev_d_wa  g__dev_n_na   g__dev_p_ta   g__dev_m_la
+		g__dev_l_la   g__dev_sh_ca   g__dev_sh_wa   g__dev_ss_tta   g__dev_ss_ttha   g__dev_s_na
+		g__dev_h_na   g__dev_h_ma   g__dev_h_ya   g__dev_h_la   g__dev_h_wa   g__dev_h_ri
 		cls_conjunctsYaAlt);
-		
-	cls_matraAndRephComb = (DevMaatraShortEReph   DevMaatraShortERephBindu   DevMaatraShortERephCandrabindu   DevMaatraEReph
-	 	DevMaatraERephBindu   DevMaatraERephCandrabindu   DevMaatraAiReph   DevMaatraAiRephBindu   DevMaatraAiRephCandrabindu
-	 	DevRaReph   DevRaReph_alt   DevRaReph_alt2   DevRephBindu   DevRephCandrabindu);
 
-	cls_matraWOreph = (DevMaatraShortE  DevMaatraE  DevMaatraAi);
-	 	
-	cls_matraSpacingAdj = (DevMaatraCandraO   DevMaatraCandraONukta   DevMaatraShortO   DevMaatraShortONukta   DevMaatraO   DevMaatraONukta   DevMaatraAU   DevMaatraAUNukta);
-	 
-	cls_matraSpacingLeft2 = (DevMaatraIIReph   DevMaatraIIRephBindu   DevMaatraII_width20RephBindu
-	 	DevMaatraIIRephCandrabindu   DevMaatraII_width20RephCandrabindu  DevMaatraShortOReph
-	 	DevMaatraShortORephBindu   DevMaatraShortORephCandrabindu   DevMaatraOReph   DevMaatraORephBindu
-	 	DevMaatraORephCandrabindu   DevMaatraAUReph   DevMaatraAURephBindu   DevMaatraAURephCandrabindu
-		//g094a  DevMaatraShortONukta  DevMaatraO  DevMaatraONukta  DevMaatraAU   DevMaatraAUNukta  -   
+	cls_vowelNarrowRightOfStem = (g__dev_vowel_a  g__dev_vowel_a_a  g__dev_vowel_i  g__dev_vowel_e  g__dev_maatra_a_a)
+
+	cls_vowelHighTop = (g__dev_vowel_short_a  g__dev_vowel_i_i  g__dev_vowel_candra_e  g__dev_vowel_short_e  g__dev_vowel_a_i  g__dev_vowel_candra_o  g__dev_vowel_short_o  g__dev_vowel_o  g__dev_maatra_o_o_e  g__dev_maatra_i_i
+		g__dev_maatra_candra_o  g__dev_maatra_short_o  g__dev_maatra_o  g__dev_maatra_a_w);
+
+	cls_matraAndRephComb = (g__dev_maatra_short_e_reph   g__dev_maatra_short_e_reph_bindu   g__dev_maatra_short_e_reph_candrabindu   g__dev_maatra_e_reph
+	 	g__dev_maatra_e_reph_bindu   g__dev_maatra_e_reph_candrabindu   g__dev_maatra_ai_reph   g__dev_maatra_ai_reph_bindu   g__dev_maatra_ai_reph_candrabindu
+	 	g__dev_ra_reph   g__dev_ra_reph_alt   g__dev_ra_reph_alt2   g__dev_reph_bindu   g__dev_reph_candrabindu);
+
+	cls_matraWOreph = (g__dev_maatra_short_e  g__dev_maatra_e  g__dev_maatra_ai);
+
+	cls_matraSpacingAdj = (g__dev_maatra_candra_o   g__dev_maatra_candra_o_nukta   g__dev_maatra_short_o   g__dev_maatra_short_o_nukta   g__dev_maatra_o   g__dev_maatra_o_nukta   g__dev_maatra_a_u   g__dev_maatra_a_u_nukta);
+
+	cls_matraSpacingLeft2 = (g__dev_maatra_i_i_reph   g__dev_maatra_i_i_reph_bindu   g__dev_maatra_i_i_width20_reph_bindu
+	 	g__dev_maatra_i_i_reph_candrabindu   g__dev_maatra_i_i_width20_reph_candrabindu  g__dev_maatra_short_o_reph
+	 	g__dev_maatra_short_o_reph_bindu   g__dev_maatra_short_o_reph_candrabindu   g__dev_maatra_o_reph   g__dev_maatra_o_reph_bindu
+	 	g__dev_maatra_o_reph_candrabindu   g__dev_maatra_a_u_reph   g__dev_maatra_a_u_reph_bindu   g__dev_maatra_a_u_reph_candrabindu
+		//g094a  g094a_093c  g094b  g094b_093c  g094c   g094c_093c  -
 		);
-	 	
-	cls_vowelMatraCandrabFix = (DevMaatraCandraLongE   DevMaatraOOE   DevMaatraCandraO  DevMaatraCandraONukta   DevMaatraShortO   DevMaatraShortONukta   DevMaatraO   DevMaatraONukta
-	 	DevMaatraAU   DevMaatraAUNukta   DevMaatraCandraE   DevMaatraCandraENukta   DevMaatraShortE   DevMaatraShortENukta   DevMaatraE   DevMaatraENukta   DevMaatraENukta_alt
-	 	DevMaatraAi   DevMaatraAiNukta   DevVowelShortA   DevVowelShortANukta   DevVowelCandraA   DevVowelCandraANukta   DevVowelCandraO   DevVowelCandraONukta   DevVowelShortO   DevVowelShortONukta
-	 	DevVowelO   DevVowelONukta   DevVowelAU   DevVowelAUNukta   DevVowelII   DevVowelIINukta   DevVowelCandraE   DevVowelCandraENukta   DevVowelShortE   DevVowelShortENukta
-	 	DevVowelAI   DevVowelAINukta   cls_matraII_all   DevMaatraOE);
 
-    cls_ra_rra = (DevRa DevRaNukta);
-	cls_ra_0947small = (DevRaE  DevRaNuktaE);
-	cls_ra_0948small = (DevRaAi  DevRaNuktaAi);
+	cls_vowelMatraCandrabFix = (g__dev_maatra_candra_long_e   g__dev_maatra_o_o_e   g__dev_maatra_candra_o  g__dev_maatra_candra_o_nukta   g__dev_maatra_short_o   g__dev_maatra_short_o_nukta   g__dev_maatra_o   g__dev_maatra_o_nukta
+	 	g__dev_maatra_a_u   g__dev_maatra_a_u_nukta   g__dev_maatra_candra_e   g__dev_maatra_candra_e_nukta   g__dev_maatra_short_e   g__dev_maatra_short_e_nukta   g__dev_maatra_e   g__dev_maatra_e_nukta   g__dev_maatra_e_nukta_alt
+	 	g__dev_maatra_ai   g__dev_maatra_ai_nukta   g__dev_vowel_short_a   g__dev_vowel_short_a_nukta   g__dev_vowel_candra_a   g__dev_vowel_candra_a_nukta   g__dev_vowel_candra_o   g__dev_vowel_candra_o_nukta   g__dev_vowel_short_o   g__dev_vowel_short_o_nukta
+	 	g__dev_vowel_o   g__dev_vowel_o_nukta   g__dev_vowel_a_u   g__dev_vowel_a_u_nukta   g__dev_vowel_i_i   g__dev_vowel_i_i_nukta   g__dev_vowel_candra_e   g__dev_vowel_candra_e_nukta   g__dev_vowel_short_e   g__dev_vowel_short_e_nukta
+	 	g__dev_vowel_a_i   g__dev_vowel_a_i_nukta   cls_matraII_all   g__dev_maatra_o_e);
 
-	cls_candrab_collide = (DevCandrabindu  DevMaatraCandraLongE  DevMaatraCandraE  DevMaatraCandraENukta);
+    cls_ra_rra = (g__dev_ra g__dev_ra_nukta);
+	cls_ra_0947small = (g__dev_ra_e  g__dev_ra_nukta_e);
+	cls_ra_0948small = (g__dev_ra_ai  g__dev_ra_nukta_ai);
 
-	cls_reph_collide = (DevRaReph DevRaReph_alt DevRaReph_alt2  DevRephBindu  DevRephCandrabindu);
+	cls_candrab_collide = (g__dev_candrabindu  g__dev_maatra_candra_long_e  g__dev_maatra_candra_e  g__dev_maatra_candra_e_nukta);
+
+	cls_reph_collide = (g__dev_ra_reph g__dev_ra_reph_alt g__dev_ra_reph_alt2  g__dev_reph_bindu  g__dev_reph_candrabindu);
 endtable
 
 pass(PASS_SUB4POS)	// 8
 	//	The candra-O (w & w/o nukta) collides with the reph:
 	//	break it into two glyphs so that we can adjust it.
-	cls_0949    _  >  cls_0949_bottom:1  cls_0949_top$1:1       /  _  _  DevRaReph;
+	cls_0949    _  >  cls_0949_bottom:1  cls_0949_top$1:1       /  _  _  g__dev_ra_reph;
 	//	Same for candra-E + nukta
-	DevMaatraCandraENukta  _  >  g0945_093c_top:2   g0945_093c_bottom:2  /  DevRaReph  _  _  ;
-	
+	g__dev_maatra_candra_e_nukta  _  >  g0945_093c_top:2   g0945_093c_bottom:2  /  g__dev_ra_reph  _  _  ;
+
 	//	The candra-O/E collides with the anusvara: break into two pieces.
-	cls_0949    _  >  cls_0949_bottom:1  g0949_top:1          /  _  _  DevAnusvara=A;
-	DevMaatraCandraENukta  _  >  g0945_093c_top:1   g0945_093c_bottom:1  /  _  _  DevAnusvara=A;
-	
+	cls_0949    _  >  cls_0949_bottom:1  g0949_top:1          /  _  _  g__dev_anusvara=A;
+	g__dev_maatra_candra_e_nukta  _  >  g0945_093c_top:1   g0945_093c_bottom:1  /  _  _  g__dev_anusvara=A;
+
 	// Two matching diacritics in a row should have an intervening dotted circle.
-	DevCandrabindu  _  DevCandrabindu   >   @1  g__dotted_circ:3  @3;
-	DevAnusvara  _  DevAnusvara   >   @1  g__dotted_circ:3  @3;
-	DevNukta  _  DevNukta   >   @1  g__dotted_circ:3  @3;
-	DevMaatraU  _  DevMaatraU   >   @1  g__dotted_circ:3  @3;
-	DevMaatraUU  _  DevMaatraUU   >   @1  g__dotted_circ:3  @3;
-	DevMaatraR  _  DevMaatraR   >   @1  g__dotted_circ:3  @3;
-	DevMaatraRR  _  DevMaatraRR   >   @1  g__dotted_circ:3  @3;
-	DevMaatraCandraE  _  DevMaatraCandraE   >   @1  g__dotted_circ:3  @3;
-	DevMaatraShortE  _  DevMaatraShortE   >   @1  g__dotted_circ:3  @3;
-	DevMaatraE  _  DevMaatraE   >   @1  g__dotted_circ:3  @3;
-	DevMaatraAi  _  DevMaatraAi   >   @1  g__dotted_circ:3  @3;
-	DevHalant  _  DevHalant   >   @1  g__dotted_circ:3  @3;
-	DevUdatta  _  DevUdatta   >   @1  g__dotted_circ:3  @3;
-	DevAnudatta  _  DevAnudatta   >   @1  g__dotted_circ:3  @3;
-	DevGrave  _  DevGrave   >   @1  g__dotted_circ:3  @3;
-	DevAcute  _  DevAcute   >   @1  g__dotted_circ:3  @3;
-	DevMaatraCandraLongE  _  DevMaatraCandraLongE   >   @1  g__dotted_circ:3  @3;
-	DevMaatraUE  _  DevMaatraUE   >   @1  g__dotted_circ:3  @3;
-	DevMaatraUUE  _  DevMaatraUUE   >   @1  g__dotted_circ:3  @3;
+	g__dev_candrabindu  _  g__dev_candrabindu   >   @1  g__dotted_circ:3  @3;
+	g__dev_anusvara  _  g__dev_anusvara   >   @1  g__dotted_circ:3  @3;
+	g__dev_nukta  _  g__dev_nukta   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_u  _  g__dev_maatra_u   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_u_u  _  g__dev_maatra_u_u   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_r  _  g__dev_maatra_r   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_r_r  _  g__dev_maatra_r_r   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_candra_e  _  g__dev_maatra_candra_e   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_short_e  _  g__dev_maatra_short_e   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_e  _  g__dev_maatra_e   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_ai  _  g__dev_maatra_ai   >   @1  g__dotted_circ:3  @3;
+	g__dev_halant  _  g__dev_halant   >   @1  g__dotted_circ:3  @3;
+	g__dev_udatta  _  g__dev_udatta   >   @1  g__dotted_circ:3  @3;
+	g__dev_anudatta  _  g__dev_anudatta   >   @1  g__dotted_circ:3  @3;
+	g__dev_grave  _  g__dev_grave   >   @1  g__dotted_circ:3  @3;
+	g__dev_acute  _  g__dev_acute   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_candra_long_e  _  g__dev_maatra_candra_long_e   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_u_e  _  g__dev_maatra_u_e   >   @1  g__dotted_circ:3  @3;
+	g__dev_maatra_u_u_e  _  g__dev_maatra_u_u_e   >   @1  g__dotted_circ:3  @3;
 
 endpass;
 
 pass(PASS_SUB4POSMORE)
 
 	// Matra I & II collides with preceding candrabindu
-	
-	cls_ra_rra  DevMaatraE  >  cls_ra_0947small:(1 2)  _  / DevMaatraAA  cls_candrab_collide _ _;
-	cls_ra_rra  DevMaatraAi  >  cls_ra_0948small:(1 2)  _  / DevMaatraAA  cls_candrab_collide _ _;
 
-	cls_ra_rra  DevMaatraE  >  cls_ra_0947small:(1 2)  _  /  (cls_vowelMatraCandrabFix cls_matraSpacingAdj)  (DevCandrabindu DevCandrabindu_alt)  DevAnusvara  _  _;
-	cls_ra_rra  DevMaatraAi  >  cls_ra_0948small:(1 2)  _  /  (cls_vowelMatraCandrabFix cls_matraSpacingAdj)  (DevCandrabindu DevCandrabindu_alt)  DevAnusvara  _  _;
+	cls_ra_rra  g__dev_maatra_e  >  cls_ra_0947small:(1 2)  _  / g__dev_maatra_a_a  cls_candrab_collide _ _;
+	cls_ra_rra  g__dev_maatra_ai  >  cls_ra_0948small:(1 2)  _  / g__dev_maatra_a_a  cls_candrab_collide _ _;
 
-	cls_ra_rra  DevMaatraE  >  cls_ra_0947small:(1 2)  _  /  cls_matraSpacingLeft2  _  _;
-	cls_ra_rra  DevMaatraAi  >  cls_ra_0948small:(1 2)  _  /  cls_matraSpacingLeft2  _  _;
+	cls_ra_rra  g__dev_maatra_e  >  cls_ra_0947small:(1 2)  _  /  (cls_vowelMatraCandrabFix cls_matraSpacingAdj)  (g__dev_candrabindu g__dev_candrabindu_alt)  g__dev_anusvara  _  _;
+	cls_ra_rra  g__dev_maatra_ai  >  cls_ra_0948small:(1 2)  _  /  (cls_vowelMatraCandrabFix cls_matraSpacingAdj)  (g__dev_candrabindu g__dev_candrabindu_alt)  g__dev_anusvara  _  _;
 
-	cls_ra_rra  DevMaatraE  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem2  cls_matraAndRephComb  cls_matraWOreph?  _  _;
-	cls_ra_rra  DevMaatraAi  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem2  cls_matraAndRephComb  cls_matraWOreph? _  _;
+	cls_ra_rra  g__dev_maatra_e  >  cls_ra_0947small:(1 2)  _  /  cls_matraSpacingLeft2  _  _;
+	cls_ra_rra  g__dev_maatra_ai  >  cls_ra_0948small:(1 2)  _  /  cls_matraSpacingLeft2  _  _;
 
-	cls_ra_rra  DevMaatraE  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem2 DevCandrabindu  _  _;
-	cls_ra_rra  DevMaatraAi  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem2 DevCandrabindu  _  _;
+	cls_ra_rra  g__dev_maatra_e  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem  cls_matraAndRephComb  cls_matraWOreph?  _  _;
+	cls_ra_rra  g__dev_maatra_ai  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem  cls_matraAndRephComb  cls_matraWOreph? _  _;
 
-	cls_ra_rra  DevMaatraE  >  cls_ra_0947small:(1 2)  _  /  cls_candrab_collide cls_reph_collide  _  _;
-	cls_ra_rra  DevMaatraAi  >  cls_ra_0948small:(1 2)  _  /  cls_candrab_collide cls_reph_collide  _  _;
+	cls_ra_rra  g__dev_maatra_e  >  cls_ra_0947small:(1 2)  _  /  cls_consNarrowRightOfStem  g__dev_candrabindu  _  _;
+	cls_ra_rra  g__dev_maatra_ai  >  cls_ra_0948small:(1 2)  _  /  cls_consNarrowRightOfStem  g__dev_candrabindu  _  _;
 
-	cls_ra_rra  DevMaatraE  >  cls_ra_0947small:(1 2)  _  /  DevMaatraCandraO  _  _;
-	cls_ra_rra  DevMaatraAi  >  cls_ra_0948small:(1 2)  _  /  DevMaatraCandraO  _  _;
+	cls_ra_rra  g__dev_maatra_e  >  cls_ra_0947small:(1 2)  _  /  cls_candrab_collide  cls_reph_collide  _  _;
+	cls_ra_rra  g__dev_maatra_ai  >  cls_ra_0948small:(1 2)  _  /  cls_candrab_collide  cls_reph_collide  _  _;
+
+	cls_ra_rra  g__dev_maatra_e  >  cls_ra_0947small:(1 2)  _  /  g__dev_maatra_candra_o  _  _;
+	cls_ra_rra  g__dev_maatra_ai  >  cls_ra_0948small:(1 2)  _  /  g__dev_maatra_candra_o  _  _;
 endpass;
 
 endtable; // substitution
@@ -1498,66 +1549,66 @@ table(glyph)
 
 	// Redefine these classes to include only diacritics (this is due to an infelicity in the
 	// behavior of makegdl which produces annapurna.gdl):
-	cnUpperDiaX = (DevNukta, DevMaatraU, DevMaatraUNukta, DevMaatraUNukta_alt, DevMaatraUU, DevMaatraUUNukta,
-		DevMaatraUUNukta_alt, DevMaatraR, DevMaatraRNukta, DevMaatraRR, DevMaatraRRNukta,
-		DevHalant, DevAnudatta, DevGrave, DevAcute, DevMaatraCandraLongE, DevMaatraUE, DevMaatraUUE,
-		DevMaatraL, DevMaatraLNukta, DevMaatraLL, DevMaatraLLNukta,
-		DevRaReph); // handle using Reph, not Upper
-	cnUpperCenterDiaX = (DevRaReph, DevNukta, DevMaatraU, DevMaatraUNukta, DevMaatraUNukta_alt, DevMaatraUU, DevMaatraUUNukta,
-		DevMaatraUUNukta_alt, DevMaatraR, DevMaatraRNukta, DevMaatraRR, DevMaatraRRNukta,
-		DevMaatraCandraENukta, DevMaatraShortE, DevMaatraShortENukta, DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt, DevMaatraAi, DevMaatraAiNukta,
-		DevHalant, DevAnudatta, DevMaatraCandraLongE, DevMaatraUE, DevMaatraUUE, DevMaatraL, DevMaatraLNukta, DevMaatraLL, DevMaatraLLNukta,
-		DevCandrabindu, DevAnusvara, DevMaatraCandraE); // these last three don't really use UpperCenter even though it is defined
-	cnLowerDiaX = (DevCandrabindu, DevAnusvara, DevRaReph, DevNukta, DevMaatraU, DevMaatraUU,
-		DevMaatraCandraE, DevMaatraCandraENukta, DevMaatraShortE, DevMaatraShortENukta, DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt, DevMaatraAi, DevMaatraAiNukta,
-		DevHalant, DevUdatta, DevAnudatta, DevGrave, DevAcute, DevMaatraCandraLongE, DevMaatraUE, DevMaatraUUE);
-	cnLowerCenterDiaX = (DevCandrabindu, DevAnusvara, DevRaReph, DevNukta,
-		DevMaatraU, DevMaatraUNukta, DevMaatraUNukta_alt, DevMaatraUU, DevMaatraUUNukta,
-		DevMaatraUUNukta_alt, DevMaatraR, DevMaatraRNukta, DevMaatraRR, DevMaatraRRNukta,
-		DevMaatraCandraE, DevMaatraCandraENukta, DevMaatraShortE, DevMaatraShortENukta, DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt, DevMaatraAi, DevMaatraAiNukta,
-		DevHalant, DevUdatta, DevGrave, DevAcute, DevMaatraCandraLongE,
-		DevMaatraL, DevMaatraLNukta, DevMaatraLL, DevMaatraLLNukta);
-	cnLowerAltDiaX = (DevCandrabindu, DevAnusvara, DevRaReph, DevNukta,		// used for attaching 0952 to half-forms
-		DevMaatraU, DevMaatraUNukta, DevMaatraUNukta_alt, DevMaatraUU, DevMaatraUUNukta,
-		DevMaatraUUNukta_alt, DevMaatraR, DevMaatraRNukta, DevMaatraRR, DevMaatraRRNukta,
-		DevMaatraCandraE, DevMaatraCandraENukta, DevMaatraShortE, DevMaatraShortENukta, DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt, DevMaatraAi, DevMaatraAiNukta,
-		DevHalant, DevUdatta, DevGrave, DevAcute, DevMaatraCandraLongE,
-		DevMaatraL, DevMaatraLNukta, DevMaatraLL, DevMaatraLLNukta);
-	cnNuktaDiaX = (DevCandrabindu, DevAnusvara, DevRaReph,
-		DevMaatraU, DevMaatraUNukta, DevMaatraUNukta_alt, DevMaatraUU, DevMaatraUUNukta,
-		DevMaatraUUNukta_alt, DevMaatraR, DevMaatraRNukta, DevMaatraRR, DevMaatraRRNukta,
-		DevMaatraCandraE, DevMaatraCandraENukta, DevMaatraShortE, DevMaatraShortENukta, DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt, DevMaatraAi, DevMaatraAiNukta,
-		DevHalant, DevUdatta, DevAnudatta, DevGrave, DevAcute, DevMaatraCandraLongE, DevMaatraUE, DevMaatraUUE,
-		DevMaatraL, DevMaatraLNukta, DevMaatraLL, DevMaatraLLNukta);
-	cnHalantDiaX = (DevCandrabindu, DevAnusvara, DevRaReph, DevNukta,
-		DevMaatraU, DevMaatraUNukta, DevMaatraUNukta_alt, DevMaatraUU, DevMaatraUUNukta,
-		DevMaatraUUNukta_alt, DevMaatraR, DevMaatraRNukta, DevMaatraRR, DevMaatraRRNukta,
-		DevMaatraCandraE, DevMaatraCandraENukta, DevMaatraShortE, DevMaatraShortENukta, DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt, DevMaatraAi, DevMaatraAiNukta,
-		DevUdatta, DevAnudatta, DevGrave, DevAcute, DevMaatraCandraLongE, DevMaatraUE, DevMaatraUUE,
-		DevMaatraL, DevMaatraLNukta, DevMaatraLL, DevMaatraLLNukta);
-	
+	cnUpperDiaX = (g__dev_nukta, g__dev_maatra_u, g__dev_maatra_u_nukta, g__dev_maatra_u_nukta_alt, g__dev_maatra_u_u, g__dev_maatra_u_u_nukta,
+		g__dev_maatra_u_u_nukta_alt, g__dev_maatra_r, g__dev_maatra_r_nukta, g__dev_maatra_r_r, g__dev_maatra_r_r_nukta,
+		g__dev_halant, g__dev_anudatta, g__dev_grave, g__dev_acute, g__dev_maatra_candra_long_e, g__dev_maatra_u_e, g__dev_maatra_u_u_e,
+		g__dev_maatra_l, g__dev_maatra_l_nukta, g__dev_maatra_l_l, g__dev_maatra_l_l_nukta,
+		g__dev_ra_reph); // handle using Reph, not Upper
+	cnUpperCenterDiaX = (g__dev_ra_reph, g__dev_nukta, g__dev_maatra_u, g__dev_maatra_u_nukta, g__dev_maatra_u_nukta_alt, g__dev_maatra_u_u, g__dev_maatra_u_u_nukta,
+		g__dev_maatra_u_u_nukta_alt, g__dev_maatra_r, g__dev_maatra_r_nukta, g__dev_maatra_r_r, g__dev_maatra_r_r_nukta,
+		g__dev_maatra_candra_e_nukta, g__dev_maatra_short_e, g__dev_maatra_short_e_nukta, g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt, g__dev_maatra_ai, g__dev_maatra_ai_nukta,
+		g__dev_halant, g__dev_anudatta, g__dev_maatra_candra_long_e, g__dev_maatra_u_e, g__dev_maatra_u_u_e, g__dev_maatra_l, g__dev_maatra_l_nukta, g__dev_maatra_l_l, g__dev_maatra_l_l_nukta,
+		g__dev_candrabindu, g__dev_anusvara, g__dev_maatra_candra_e); // these last three don't really use UpperCenter even though it is defined
+	cnLowerDiaX = (g__dev_candrabindu, g__dev_anusvara, g__dev_ra_reph, g__dev_nukta, g__dev_maatra_u, g__dev_maatra_u_u,
+		g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta, g__dev_maatra_short_e, g__dev_maatra_short_e_nukta, g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt, g__dev_maatra_ai, g__dev_maatra_ai_nukta,
+		g__dev_halant, g__dev_udatta, g__dev_anudatta, g__dev_grave, g__dev_acute, g__dev_maatra_candra_long_e, g__dev_maatra_u_e, g__dev_maatra_u_u_e);
+	cnLowerCenterDiaX = (g__dev_candrabindu, g__dev_anusvara, g__dev_ra_reph, g__dev_nukta,
+		g__dev_maatra_u, g__dev_maatra_u_nukta, g__dev_maatra_u_nukta_alt, g__dev_maatra_u_u, g__dev_maatra_u_u_nukta,
+		g__dev_maatra_u_u_nukta_alt, g__dev_maatra_r, g__dev_maatra_r_nukta, g__dev_maatra_r_r, g__dev_maatra_r_r_nukta,
+		g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta, g__dev_maatra_short_e, g__dev_maatra_short_e_nukta, g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt, g__dev_maatra_ai, g__dev_maatra_ai_nukta,
+		g__dev_halant, g__dev_udatta, g__dev_grave, g__dev_acute, g__dev_maatra_candra_long_e,
+		g__dev_maatra_l, g__dev_maatra_l_nukta, g__dev_maatra_l_l, g__dev_maatra_l_l_nukta);
+	cnLowerAltDiaX = (g__dev_candrabindu, g__dev_anusvara, g__dev_ra_reph, g__dev_nukta,		// used for attaching 0952 to half-forms
+		g__dev_maatra_u, g__dev_maatra_u_nukta, g__dev_maatra_u_nukta_alt, g__dev_maatra_u_u, g__dev_maatra_u_u_nukta,
+		g__dev_maatra_u_u_nukta_alt, g__dev_maatra_r, g__dev_maatra_r_nukta, g__dev_maatra_r_r, g__dev_maatra_r_r_nukta,
+		g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta, g__dev_maatra_short_e, g__dev_maatra_short_e_nukta, g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt, g__dev_maatra_ai, g__dev_maatra_ai_nukta,
+		g__dev_halant, g__dev_udatta, g__dev_grave, g__dev_acute, g__dev_maatra_candra_long_e,
+		g__dev_maatra_l, g__dev_maatra_l_nukta, g__dev_maatra_l_l, g__dev_maatra_l_l_nukta);
+	cnNuktaDiaX = (g__dev_candrabindu, g__dev_anusvara, g__dev_ra_reph,
+		g__dev_maatra_u, g__dev_maatra_u_nukta, g__dev_maatra_u_nukta_alt, g__dev_maatra_u_u, g__dev_maatra_u_u_nukta,
+		g__dev_maatra_u_u_nukta_alt, g__dev_maatra_r, g__dev_maatra_r_nukta, g__dev_maatra_r_r, g__dev_maatra_r_r_nukta,
+		g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta, g__dev_maatra_short_e, g__dev_maatra_short_e_nukta, g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt, g__dev_maatra_ai, g__dev_maatra_ai_nukta,
+		g__dev_halant, g__dev_udatta, g__dev_anudatta, g__dev_grave, g__dev_acute, g__dev_maatra_candra_long_e, g__dev_maatra_u_e, g__dev_maatra_u_u_e,
+		g__dev_maatra_l, g__dev_maatra_l_nukta, g__dev_maatra_l_l, g__dev_maatra_l_l_nukta);
+	cnHalantDiaX = (g__dev_candrabindu, g__dev_anusvara, g__dev_ra_reph, g__dev_nukta,
+		g__dev_maatra_u, g__dev_maatra_u_nukta, g__dev_maatra_u_nukta_alt, g__dev_maatra_u_u, g__dev_maatra_u_u_nukta,
+		g__dev_maatra_u_u_nukta_alt, g__dev_maatra_r, g__dev_maatra_r_nukta, g__dev_maatra_r_r, g__dev_maatra_r_r_nukta,
+		g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta, g__dev_maatra_short_e, g__dev_maatra_short_e_nukta, g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt, g__dev_maatra_ai, g__dev_maatra_ai_nukta,
+		g__dev_udatta, g__dev_anudatta, g__dev_grave, g__dev_acute, g__dev_maatra_candra_long_e, g__dev_maatra_u_e, g__dev_maatra_u_u_e,
+		g__dev_maatra_l, g__dev_maatra_l_nukta, g__dev_maatra_l_l, g__dev_maatra_l_l_nukta);
+
 	//	To handle the fact that both reph and vowel-diacritics need to attach at the same
 	//	place (assumes order is C R V): we include reph in the cnUpperDiaX class (above)
 	//	so that first the V will be attached using the Upper rule. Then we attach
 	//	the reph using the Reph rule, which actually uses the Upper APs. This works
 	//	because in Graphite the longest rule is attached first.
 
-	cRephDia = (DevRaReph);
+	cRephDia = (g__dev_ra_reph);
 	cTakesRephDia = cTakesUpperDia;
 	cnTakesRephDia = cnTakesUpperDia;
-	cnRephDiaX = (DevCandrabindu, DevAnusvara, DevNukta,
-		DevMaatraU, DevMaatraUNukta, DevMaatraUNukta_alt, DevMaatraUU, DevMaatraUUNukta,
-		DevMaatraUUNukta_alt, DevMaatraR, DevMaatraRNukta, DevMaatraRR, DevMaatraRRNukta,
-		DevMaatraCandraE, DevMaatraCandraENukta, DevMaatraShortE, DevMaatraShortENukta, DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt, DevMaatraAi, DevMaatraAiNukta,
-		DevHalant, DevUdatta, DevAnudatta, DevGrave, DevAcute, DevMaatraCandraLongE, DevMaatraUE, DevMaatraUUE,
-		DevMaatraL, DevMaatraLNukta, DevMaatraLL, DevMaatraLLNukta);
+	cnRephDiaX = (g__dev_candrabindu, g__dev_anusvara, g__dev_nukta,
+		g__dev_maatra_u, g__dev_maatra_u_nukta, g__dev_maatra_u_nukta_alt, g__dev_maatra_u_u, g__dev_maatra_u_u_nukta,
+		g__dev_maatra_u_u_nukta_alt, g__dev_maatra_r, g__dev_maatra_r_nukta, g__dev_maatra_r_r, g__dev_maatra_r_r_nukta,
+		g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta, g__dev_maatra_short_e, g__dev_maatra_short_e_nukta, g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt, g__dev_maatra_ai, g__dev_maatra_ai_nukta,
+		g__dev_halant, g__dev_udatta, g__dev_anudatta, g__dev_grave, g__dev_acute, g__dev_maatra_candra_long_e, g__dev_maatra_u_e, g__dev_maatra_u_u_e,
+		g__dev_maatra_l, g__dev_maatra_l_nukta, g__dev_maatra_l_l, g__dev_maatra_l_l_nukta);
 
 	cnRaDiaX = (cUpperDia, cLowerDia, cLowerCenterDia, cLowerAltDia, cHalantDia, cNuktaDia, cRephDia);
-		
+
 	//	The UpperCenter AP shouldn't really be used for anything but the acute and grave accents.
-	cUpperCenterDiaX = (DevGrave, DevAcute);
-	
-	cnCaX = (DevAnusvara);	// kind of bogus, but the way we do positioning, we expect a class like this
+	cUpperCenterDiaX = (g__dev_grave, g__dev_acute);
+
+	cnCaX = (g__dev_anusvara);	// kind of bogus, but the way we do positioning, we expect a class like this
 
 endtable; // glyph
 
@@ -1580,7 +1631,7 @@ pass(PASS_ATTACH)	// 9
 
 //if (select_diac)
 	pos_ruleSD(cTakesAn,			cAn,			AnS,			AnM,			cnCaX);
-	pos_ruleSD(cTakesCandra,			cCandra,			CaS,			CaM,			cnCaX);
+	pos_ruleSD(cTakesCa,			cCa,			CaS,			CaM,			cnCaX);
 	pos_ruleSD(cTakesUpperDia,		cUpperDia,		UpperS,			UpperM, 		cnUpperDiaX);
 	pos_ruleSD(cTakesUpperCenterDia,cUpperCenterDiaX,UpperCenterS,	UpperCenterM,	cnUpperCenterDiaX);
 	pos_ruleSD(cTakesLowerDia,		cLowerDia,		LowerS,			LowerM, 		cnLowerDiaX);
@@ -1593,7 +1644,7 @@ pass(PASS_ATTACH)	// 9
 	pos_ruleSD(cTakesRaDia,			cRaDia,			RaS,			RaM,			cnRaDiaX);
 //else
 //	pos_rule(cTakesAn,				cAn,			AnS,			AnM,			cnCaX);
-//	pos_rule(cTakesCandra,				cCandra,			CaS,			CaM,			cnCaX);
+//	pos_rule(cTakesCa,				cCa,			CaS,			CaM,			cnCaX);
 //	pos_rule(cTakesUpperDia,		cUpperDia,		UpperS,			UpperM, 		cnUpperDiaX);
 //	pos_rule(cTakesUpperCenterDia,	cUpperCenterDiaX,UpperCenterS,	UpperCenterM,	cnUpperCenterDiaX);
 //	pos_rule(cTakesLowerDia,		cLowerDia,		LowerS,			LowerM, 		cnLowerDiaX);
@@ -1601,7 +1652,7 @@ pass(PASS_ATTACH)	// 9
 //	pos_rule(cTakesLowerAltDia,		cLowerAltDia,	LowerAltS,		LowerAltM,		cnLowerAltDiaX);
 //	pos_rule(cTakesHalantDia,		cHalantDia,		HalantS,		HalantM,		cnHalantDiaX);
 	// Don't allow the nukta to be selected independently:
-	pos_rule(cTakesNuktaDia,		cNuktaDia,		NuktaS,			NuktaM,			cnNuktaDiaX);	
+	pos_rule(cTakesNuktaDia,		cNuktaDia,		NuktaS,			NuktaM,			cnNuktaDiaX);
 //	pos_rule(cTakesRephDia,			cRephDia,		UpperS,			UpperM,			cnRephDiaX);
 //endif;
 
@@ -1612,9 +1663,9 @@ endpass;
 table(glyph)
 
 	cls_vowelWWideRt = (cls_fullKa);	// cls_fullTtha, cls_fullRa
-	
+
 	cls_nukta = (g_nukta, g0945_093c_bottom);
-	
+
 endtable;
 
 pass(PASS_ADJUST) // 10
@@ -1622,108 +1673,111 @@ pass(PASS_ADJUST) // 10
 	//	Adjust positions to avoid collisions, etc.
 
 	//	Modifiers above
-	
-	(DevMaatraCandraE, DevMaatraCandraENukta)  DevCandrabindu {shift {x = 700m}};
-	
-	(DevMaatraCandraE, g0945_093c_top, g0949_top, g0949_093c_top)  DevAnusvara {shift {x = 600m; y = -300m}}  /  cls_vowelWWideRt  _  cls_nukta?  _ ;
-	(DevMaatraCandraE, g0945_093c_top, g0949_top, g0949_093c_top) {shift.x = -300m}  DevAnusvara {shift {x = 600m; y = -300m}}  /  _  cls_nukta?  _ ;
-	
-	(DevMaatraShortE, DevMaatraShortENukta)  cls_candrab_alt {shift.x = 70m};
-	(DevMaatraAi, DevMaatraAiNukta)  cls_candrab_alt {shift.x = 80m};
-	(DevMaatraShortO, DevMaatraShortONukta)  cls_candrab_alt {shift.x = 50m};
-	(DevMaatraO, DevMaatraONukta)  cls_candrab_alt {shift.x = 40m};
-	(DevMaatraAU, DevMaatraAUNukta)  cls_candrab_alt {shift.x = 70m};
-	
-	DevMaatraOOE                cls_candrab_alt {shift.y = 250m}  /  _  g_nukta?  _;
-	DevMaatraAW                cls_candrab_alt {shift {x = 230m; y = 200m}}  /  _  g_nukta?  _;
-	
+
+	(g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta)  g__dev_candrabindu {shift {x = 700m}};
+
+	(g__dev_maatra_candra_e, g0945_093c_top, g0949_top, g0949_093c_top)  g__dev_anusvara {shift {x = 600m; y = -300m}}  /  cls_vowelWWideRt  _  cls_nukta?  _ ;
+	(g__dev_maatra_candra_e, g0945_093c_top, g0949_top, g0949_093c_top) {shift.x = -300m}  g__dev_anusvara {shift {x = 600m; y = -300m}}  /  _  cls_nukta?  _ ;
+
+	(g__dev_maatra_short_e, g__dev_maatra_short_e_nukta)  cls_candrab_alt {shift.x = 70m};
+	(g__dev_maatra_ai, g__dev_maatra_ai_nukta)  cls_candrab_alt {shift.x = 80m};
+	(g__dev_maatra_short_o, g__dev_maatra_short_o_nukta)  cls_candrab_alt {shift.x = 50m};
+	(g__dev_maatra_o, g__dev_maatra_o_nukta)  cls_candrab_alt {shift.x = 40m};
+	(g__dev_maatra_a_u, g__dev_maatra_a_u_nukta)  cls_candrab_alt {shift.x = 70m};
+
+	g__dev_maatra_o_o_e                cls_candrab_alt {shift.y = 250m}  /  _  g_nukta?  _;
+	g__dev_maatra_a_w                cls_candrab_alt {shift {x = 230m; y = 200m}}  /  _  g_nukta?  _;
+
 
 	//	Signs above
 
-	DevCandrabindu                DevUdatta {shift {x =-160m; y = 560m}};
-	DevCandrabindu                DevGrave {shift {x =  80m; y = 500m}};
-	DevCandrabindu                DevAcute {shift {          y = 500m}};
-	DevAnusvara                DevUdatta {shift {x =  90m; y = 320m}};
-	DevAnusvara                DevGrave {shift {x = 300m; y = 260m}};
-	DevAnusvara                DevAcute {shift {x = 200m; y = 260m}};
-	(DevMaatraCandraE, DevMaatraCandraENukta)  DevUdatta {shift {x =-130m; y = 250m}};
-	(DevMaatraCandraE, DevMaatraCandraENukta)  DevGrave {shift {          y = 250m}};
-	(DevMaatraCandraE, DevMaatraCandraENukta)  DevAcute {shift {x = 200m; y = 250m}};
-	(DevMaatraShortE, DevMaatraShortENukta)  DevUdatta {shift {          y = 250m}};
-	(DevMaatraShortE, DevMaatraShortENukta)  DevGrave {shift {          y = 250m}};
-	(DevMaatraShortE, DevMaatraShortENukta)  DevAcute {shift {          y = 250m}};
-	(DevMaatraAi, DevMaatraAiNukta)  DevUdatta {shift {          y = 160m}};
-	(DevMaatraAi, DevMaatraAiNukta)  DevGrave {shift {          y = 250m}};
-	(DevMaatraAi, DevMaatraAiNukta)  DevAcute {shift {x = 230m; y = 280m}};
-	DevRaReph      DevGrave {shift {x =-250m; y = 350m}};
-	DevRaReph      DevAcute {shift {x = 100m; y = 500m}};
-	
-	(DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt)  DevUdatta {shift {y = 160m}};
-	(DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt)  DevGrave {shift {y = 160m}};
-	(DevMaatraE, DevMaatraENukta, DevMaatraENukta_alt)  DevAcute {shift {y = 250m}};
-	
-	DevMaatraOE  (DevInvCandrabindu DevCandrabindu) {shift.y = 250m};
+	g__dev_candrabindu                g__dev_udatta {shift {x =-160m; y = 560m}};
+	g__dev_candrabindu                g__dev_grave {shift {x =  80m; y = 500m}};
+	g__dev_candrabindu                g__dev_acute {shift {          y = 500m}};
+	g__dev_anusvara                g__dev_udatta {shift {x =  90m; y = 320m}};
+	g__dev_anusvara                g__dev_grave {shift {x = 300m; y = 260m}};
+	g__dev_anusvara                g__dev_acute {shift {x = 200m; y = 260m}};
+	(g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta)  g__dev_udatta {shift {x =-130m; y = 250m}};
+	(g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta)  g__dev_grave {shift {          y = 250m}};
+	(g__dev_maatra_candra_e, g__dev_maatra_candra_e_nukta)  g__dev_acute {shift {x = 200m; y = 250m}};
+	(g__dev_maatra_short_e, g__dev_maatra_short_e_nukta)  g__dev_udatta {shift {          y = 250m}};
+	(g__dev_maatra_short_e, g__dev_maatra_short_e_nukta)  g__dev_grave {shift {          y = 250m}};
+	(g__dev_maatra_short_e, g__dev_maatra_short_e_nukta)  g__dev_acute {shift {          y = 250m}};
+	(g__dev_maatra_ai, g__dev_maatra_ai_nukta)  g__dev_udatta {shift {          y = 160m}};
+	(g__dev_maatra_ai, g__dev_maatra_ai_nukta)  g__dev_grave {shift {          y = 250m}};
+	(g__dev_maatra_ai, g__dev_maatra_ai_nukta)  g__dev_acute {shift {x = 230m; y = 280m}};
+	g__dev_ra_reph      g__dev_grave {shift {x =-250m; y = 350m}};
+	g__dev_ra_reph      g__dev_acute {shift {x = 100m; y = 500m}};
+
+	(g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt)  g__dev_udatta {shift {y = 160m}};
+	(g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt)  g__dev_grave {shift {y = 160m}};
+	(g__dev_maatra_e, g__dev_maatra_e_nukta, g__dev_maatra_e_nukta_alt)  g__dev_acute {shift {y = 250m}};
+
+	g__dev_maatra_o_e  (g__dev_inv_candrabindu g__dev_candrabindu) {shift.y = 250m};
 
 	//	Signs below
-	
-	(DevMaatraU DevMaatraUU) (DevMaatraUE DevMaatraUUE) {shift.y = -630m}; // not needed because these don't occur together, but oh well
-	
-	DevMaatraU  DevAnudatta {shift.y =-560m};
-	DevMaatraUU  DevAnudatta {shift.y =-600m};	// removed shift.x = 500m
-	DevMaatraR  cls_lowerMark {shift {x = 200m; y =-560m}};
-	DevMaatraRR  cls_lowerMark {shift {          y =-650m}};
-	DevMaatraL  cls_lowerMark {shift {x = 100m; y =-620m}};
-	DevMaatraLL  cls_lowerMark {shift {x = 100m; y =-650m}};
-	
+
+	(g__dev_maatra_u g__dev_maatra_u_u) (g__dev_maatra_u_e g__dev_maatra_u_u_e) {shift.y = -630m}; // not needed because these don't occur together, but oh well
+
+	g__dev_maatra_u  g__dev_anudatta {shift.y =-560m};
+	g__dev_maatra_u_u  g__dev_anudatta {shift.y =-600m};	// removed shift.x = 500m
+	g__dev_maatra_r  cls_lowerMark {shift {x = 200m; y =-560m}};
+	g__dev_maatra_r_r  cls_lowerMark {shift {          y =-650m}};
+	g__dev_maatra_l  cls_lowerMark {shift {x = 100m; y =-620m}};
+	g__dev_maatra_l_l  cls_lowerMark {shift {x = 100m; y =-650m}};
+
 	//	Reph and vowel sign collisions
 	//	Note that the reph has been reordered away from its original position.
-	
-	cls_0949_bottom  cls_0949_top {shift.x = -350m}  DevRaReph {shift.x = 300m};
-	
-//	DevRaReph {shift.x = 300m}  g0945_093c_top {shift.x = -375m}  g0945_093c_bottom {shift.x = 375m}; 
-	DevRaReph {shift.x = 300m}  (cls_0945 DevMaatraCandraLongE) {shift.x = -375m};
-	DevRaReph {shift.x = 100m}  cls_0946;
-	DevRaReph {shift.x =  90m}  cls_0947;
-	DevRaReph {shift.x = 120m}  cls_0948;
-	
-	DevRaReph_alt {shift.x = 200m}  /  DevMaatraAW  g_nukta? _ ;
-	
-	DevRaReph {shift.x = 350m}  /  DevMaatraOOE  _;
-	
+
+	cls_0949_bottom  cls_0949_top {shift.x = -350m}  g__dev_ra_reph {shift.x = 300m};
+
+//	g0930_094d_reph {shift.x = 300m}  g0945_093c_top {shift.x = -375m}  g0945_093c_bottom {shift.x = 375m};
+	g__dev_ra_reph {shift.x = 300m}  (cls_0945 g__dev_maatra_candra_long_e) {shift.x = -375m};
+	g__dev_ra_reph {shift.x = 100m}  cls_0946;
+	g__dev_ra_reph {shift.x =  90m}  cls_0947;
+	g__dev_ra_reph {shift.x = 120m}  cls_0948;
+
+	g__dev_ra_reph_alt {shift.x = 200m}  /  g__dev_maatra_a_w  g_nukta? _ ;
+
+	g__dev_ra_reph {shift.x = 350m}  /  g__dev_maatra_o_o_e  _;
+
 	// swoop of the matra-I (ikar) hits candrabindu with narrow consonant in between
-	cls_matraI  cls_shiftCandrabAfterI  DevCandrabindu {shift.x = 250m; shift.y = 75m};
-	
+	cls_matraI  cls_shiftCandrabAfterI  g__dev_candrabindu {shift.x = 250m; shift.y = 75m};
+
 	//	This vowel does not have the reph combined form like 094a-094c do (cls_vowelRtHigh).
 	//	So shift as best we can.
-	DevMaatraAW  DevRaReph_alt {shift.x = 140m}  /  _  g_nukta?  _;
-	
+	g__dev_maatra_a_w  g__dev_ra_reph_alt {shift.x = 140m}  /  _  g_nukta?  _;
+
+	// Anusvara and vowel-sign ai
+	g__dev_anusvara {shift.x = -175m}  /  (cls_vowelNarrowRightOfStem  cls_consNarrowRightOfStem)  _  (g__dev_ra g__dev_ra_nukta)  g__dev_maatra_ai;
+
 	//	Tall vowels with candrabindu/anusvara
-	
-	cls_candrab_alt {shift{x = -100m; y = 250m}}	/ (DevVowelCandraA DevVowelCandraANukta )  g_nukta?  _;
-	cls_candrab_alt {shift.y = 250m}				/ (DevVowelOE DevVowelOOE)  g_nukta?  _;
-	DevAnusvara {shift.y = 250m}							/ (DevVowelCandraA DevVowelCandraANukta DevVowelOE DevVowelOOE)  g_nukta? _;
-	(cls_candrab_alt DevAnusvara) {shift{x = 300m; y = 50m}}	/  DevVowelAW  g_nukta? ^ _;
-	
+
+	cls_candrab_alt {shift{x = -100m; y = 250m}}	/ (g__dev_vowel_candra_a g__dev_vowel_candra_a_nukta )  g_nukta?  _;
+	cls_candrab_alt {shift.y = 250m}				/ (g__dev_vowel_o_e g__dev_vowel_o_o_e)  g_nukta?  _;
+	g__dev_anusvara {shift.y = 250m}							/ (g__dev_vowel_candra_a g__dev_vowel_candra_a_nukta g__dev_vowel_o_e g__dev_vowel_o_o_e)  g_nukta? _;
+	(cls_candrab_alt g__dev_anusvara) {shift{x = 300m; y = 50m}}	/  g__dev_vowel_a_w  g_nukta? ^ _;
+
 	//	Tall vowel signs with inverted candrabindu--there are no combined forms for these,
 	//	so just shift as best we can.
-	
+
 	cls_candrab_alt {shift.x = 120m}	/  cls_matraII_width30  _;
 	cls_candrab_alt {shift.x = 190m}	/  cls_matraII_width20  _;
 	cls_candrab_alt {shift.x = 220m}	/  cls_matraII_all  _;
-	
+
 	// Reph, and tall vowels signs with attached reph:
-	DevInvCandrabindu_alt {shift {x = 350m; y = -50m}}
-		/ (DevRaReph  DevMaatraIIReph  DevMaatraII_width20Reph  DevMaatraShortOReph  DevMaatraOReph  DevMaatraAUReph) _;
-	DevInvCandrabindu_alt {shift {x = 350m; y = -50m}}
-		/  consWidth30_matraII  DevRaReph  (cls_0946 cls_0947 cls_0948)  _;
-	DevInvCandrabindu_alt {shift {x = 350m; y = -50m}}
-		/  DevRaReph  (cls_0946 cls_0947 cls_0948)  _;
-	
+	g__dev_inv_candrabindu_alt {shift {x = 350m; y = -50m}}
+		/ (g__dev_ra_reph  g__dev_maatra_i_i_reph  g__dev_maatra_i_i_width20_reph  g__dev_maatra_short_o_reph  g__dev_maatra_o_reph  g__dev_maatra_a_u_reph) _;
+	g__dev_inv_candrabindu_alt {shift {x = 350m; y = -50m}}
+		/  consWidth30_matraII  g__dev_ra_reph  (cls_0946 cls_0947 cls_0948)  _;
+	g__dev_inv_candrabindu_alt {shift {x = 350m; y = -50m}}
+		/  g__dev_ra_reph  (cls_0946 cls_0947 cls_0948)  _;
+
 	// RA + nukta with U/UU below.
 	// Note: this rule only applies when the RU/RUU alternate is turned on;
 	// otherwise a special ligature is used.
-	DevRaNukta  (DevMaatraU DevMaatraUNukta DevMaatraUU DevMaatraUUNukta) {shift.y = -80m};
-		
+	g__dev_ra_nukta  (g__dev_maatra_u g__dev_maatra_u_nukta g__dev_maatra_u_u g__dev_maatra_u_u_nukta) {shift.y = -80m};
+
 endpass;
 
 
@@ -1734,52 +1788,52 @@ endtable; // positioning
 // OpenType classes not used by Graphite
 table(glyph)
 	cls_fullCons = (	// cDevFullCForms
-		DevKa	DevKha	DevGa	DevGha	DevNga	DevCa	DevCha	DevJa	DevJha	DevNya	DevTta
-		DevTtha	DevDda	DevDdha	DevNna	DevTa	DevTha	DevDa	DevDha	DevNa	DevPa	DevPha
-		DevBa	DevBha	DevMa	DevYa	DevRa	DevLa	DevLla	DevWa	DevSha	DevSsa	DevSa
-		DevHa	DevGga	DevJja	DevDdda	DevBba	DevGlottalStop);
+		g0915	g0916	g0917	g0918	g0919	g091a	g091b	g091c	g091d	g091e	g091f
+		g0920	g0921	g0922	g0923	g0924	g0925	g0926	g0927	g0928	g092A	g092b
+		g092c	g092d	g092e	g092f	g0930	g0932	g0933	g0935	g0936	g0937	g0938
+		g0939	g097b	g097c	g097e	g097f	g097D);
 	cls_consNoHaNoHalf = (	// cDevFullCForms_noHa_noHalf
-		DevKa	DevKha	DevGa	DevGha	DevCa	DevJa	DevJha	DevNya	DevNna	DevTa	DevTha 
-		DevDha	DevNa	DevPa	DevPha	DevBa	DevBha	DevMa	DevYa	DevRa	DevLa	DevLla
-		DevWa	DevSha	DevSsa	DevSa	DevGga	DevJja	DevBba	DevGlottalStop);
+		g0915	g0916	g0917	g0918	g091a	g091c	g091d	g091e	g0923	g0924	g0925
+		g0927	g0928	g092A	g092b	g092c	g092d	g092e	g092f	g0930	g0932	g0933
+		g0935	g0936	g0937	g0938	g097b	g097c	g097f	g097D);
 	cls_fullConsNukta = (	// cDevFullCNukta
-		DevKaNukta		DevKhaNukta		DevGaNukta		DevGhaNukta	DevNgaNukta	DevCaNukta	DevChaNukta	DevJaNukta 
-		DevJhaNukta	DevNyaNukta DevTtaNukta	DevTthaNukta	DevDdaNukta		DevDdhaNukta		DevNnaNukta DevTaNukta
-		DevThaNukta	DevDaNukta	DevDhaNukta	DevNaNukta		DevPaNukta	DevPhaNukta		DevBaNukta	DevBhaNukta
-		DevMaNukta	DevYaNukta		DevRaNukta		DevLaNukta	DevLlaNukta		DevWaNukta	DevShaNukta	DevSsaNukta
-		DevSaNukta	DevHaNukta	DevGgaNukta	DevJjaNukta	DevDddaNukta	DevBbaNukta);
+		g0958		g0959		g095a		g0918_093c	g0919_093c	g091a_093c	g091b_093c	g095b
+		g091d_093c	g091e_093c g091f_093c	g0920_093c	g095c		g095d		g0923_093c g0924_093c
+		g0925_093c	g0926_093c	g0927_093c	g0929		g092A_093c	g095e		g092c_093c	g092d_093c
+		g092e_093c	g095f		g0931		g0932_093c	g0934		g0935_093c	g0936_093c	g0937_093c
+		g0938_093c	g0939_093c	g097b_093c	g097c_093c	g097e_093c	g097f_093c);
 	cls_fullConsNuktaRakar = (	// cDevFullCNuktaRakar
-		DevKaNuktaR		DevKhaNuktaR		DevGaNuktaR		DevGhaNuktaR
-		DevNgaNuktaR	DevCaNuktaR	DevChaNuktaR	DevJaNuktaR
-		DevJhaNuktaR	DevNyaNuktaR	DevTtaNuktaR	DevTthaNuktaR
-		DevDdaNuktaR		DevDdhaNuktaR		DevNnaNuktaR	DevTaNuktaR
-		DevThaNuktaR	DevDaNuktaR	DevDhaNuktaR	DevNaNuktaR
-		DevPaNuktaR	DevPhaNuktaR		DevBaNuktaR	DevBhaNuktaR
-		DevMaNuktaR	DevYaNuktaR		DevLaNuktaR	DevLlaNuktaR
-		DevWaNuktaR	DevShaNuktaR	DevSsaNuktaR	DevSaNuktaR
-		DevHaNuktaR	DevGgaNuktaR	DevJjaNuktaR	DevDddaNuktaR
-		DevBbaNuktaR);
+		g0958_094d_0930		g0959_094d_0930		g095a_094d_0930		g0918_093c_094d_0930
+		g0919_093c_094d_0930	g091a_093c_094d_0930	g091b_093c_094d_0930	g095b_094d_0930
+		g091d_093c_094d_0930	g091e_093c_094d_0930	g091f_093c_094d_0930	g0920_093c_094d_0930
+		g095c_094d_0930		g095d_094d_0930		g0923_093c_094d_0930	g0924_093c_094d_0930
+		g0925_093c_094d_0930	g0926_093c_094d_0930	g0927_093c_094d_0930	g0929_094d_0930
+		g092A_093c_094d_0930	g095e_094d_0930		g092c_093c_094d_0930	g092d_093c_094d_0930
+		g092e_093c_094d_0930	g095f_094d_0930		g0932_093c_094d_0930	g0934_094d_0930
+		g0935_093c_094d_0930	g0936_093c_094d_0930	g0937_093c_094d_0930	g0938_093c_094d_0930
+		g0939_093c_094d_0930	g097b_093c_094d_0930	g097c_093c_094d_0930	g097e_093c_094d_0930
+		g097f_093c_094d_0930);
 	cls_fullConsNuktaNoHaNoHalf = (	// cDevFullCNukta_noHa_noHalf
-		DevKaNukta		DevKhaNukta		DevGaNukta		DevGhaNukta	DevCaNukta	DevJaNukta		DevJhaNukta	DevNyaNukta 
-		DevNnaNukta	DevTaNukta	DevThaNukta	DevDhaNukta	DevNaNukta		DevPaNukta	DevPhaNukta		DevBaNukta 
-		DevBhaNukta	DevMaNukta	DevYaNukta		DevRaNukta		DevLaNukta	DevLlaNukta		DevWaNukta	DevShaNukta 
-		DevSsaNukta	DevSaNukta	DevGgaNukta	DevJjaNukta	DevBbaNukta);
+		g0958		g0959		g095a		g0918_093c	g091a_093c	g095b		g091d_093c	g091e_093c
+		g0923_093c	g0924_093c	g0925_093c	g0927_093c	g0929		g092A_093c	g095e		g092c_093c
+		g092d_093c	g092e_093c	g095f		g0931		g0932_093c	g0934		g0935_093c	g0936_093c
+		g0937_093c	g0938_093c	g097b_093c	g097c_093c	g097f_093c);
 	cls_fullConsRakar = (	// cDevFullCRakar
-		DevKaR	DevKhaR	DevGaR	DevGhaR	DevNgaR
-		DevCaR	DevChaR	DevJaR	DevJhaR	DevNyaR
-		DevTtaR	DevTthaR	DevDdaR	DevDdhaR	DevNnaR
-		DevTaR	DevThaR	DevDaR	DevDhaR	DevNaR
-		DevPaR	DevPhaR	DevBaR	DevBhaR	DevMaR
-		DevYaR	DevLaR	DevLlaR	DevWaR	DevShaR 
-		DevSsaR	DevSaR	DevHaR	DevGgaR	DevJjaR
-		DevDddaR	DevBbaR);
+		g0915_094d_0930	g0916_094d_0930	g0917_094d_0930	g0918_094d_0930	g0919_094d_0930
+		g091a_094d_0930	g091b_094d_0930	g091c_094d_0930	g091d_094d_0930	g091e_094d_0930
+		g091f_094d_0930	g0920_094d_0930	g0921_094d_0930	g0922_094d_0930	g0923_094d_0930
+		g0924_094d_0930	g0925_094d_0930	g0926_094d_0930	g0927_094d_0930	g0928_094d_0930
+		g092A_094d_0930	g092b_094d_0930	g092c_094d_0930	g092d_094d_0930	g092e_094d_0930
+		g092f_094d_0930	g0932_094d_0930	g0933_094d_0930	g0935_094d_0930	g0936_094d_0930
+		g0937_094d_0930	g0938_094d_0930	g0939_094d_0930	g097b_094d_0930	g097c_094d_0930
+		g097e_094d_0930	g097f_094d_0930);
 	cls_fullVowels = (	// cDevFullVowels
-		DevVowelShortA	DevVowelA	DevVowelAA	DevVowelI	DevVowelII	DevVowelU	DevVowelUU	DevVowelR	DevVowelRR DevVowelL	DevVowelLL	DevVowelCandraE
-		DevVowelShortE	DevVowelE	DevVowelAI	DevVowelCandraO	DevVowelShortO	DevVowelO	DevVowelAU	DevVowelCandraA);
+		g0904	g0905	g0906	g0907	g0908	g0909	g090a	g090b	g0960 g090c	g0961	g090d
+		g090e	g090f	g0910	g0911	g0912	g0913	g0914	g0972);
 	cls_fullVowelsNukta = (	// cDevFullVowelsNukta
-		DevVowelShortANukta	DevVowelANukta	DevVowelAANukta	DevVowelINukta	DevVowelIINukta	DevVowelUNukta	DevVowelUUNukta	DevVowelRNukta
-		DevVowelRRNukta DevVowelLNukta	DevVowelLLNukta	DevVowelCandraENukta	DevVowelShortENukta	DevVowelENukta	DevVowelAINukta	DevVowelCandraONukta
-		DevVowelShortONukta	DevVowelONukta	DevVowelAUNukta	DevVowelCandraANukta);
+		g0904_093c	g0905_093c	g0906_093c	g0907_093c	g0908_093c	g0909_093c	g090a_093c	g090b_093c
+		g0960_093c g090c_093c	g0961_093c	g090d_093c	g090e_093c	g090f_093c	g0910_093c	g0911_093c
+		g0912_093c	g0913_093c	g0914_093c	g0972_093c);
 	// cDevFullVowelsNukta_noE-Ai...
 endtable;
 ********************/
