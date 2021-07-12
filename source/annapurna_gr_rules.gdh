@@ -668,8 +668,8 @@ table(glyph) {AttributeOverride = false}
 	cls_094b {CaS.x = 400m; CaS.y = g__dev_maatra_e.CaS.y};		// looks like 0947 (g__dev_maatra_e)
 	cls_094c {CaS.x = 450m; CaS.y = g__dev_maatra_e.CaS.y};		// looks like 0948 (g__dev_maatra_e)
 
-	cTakesCa = (cls_0940, cls_0945, cls_0946, cls_0947, cls_0948, cls_0949, cls_094a, cls_094b, cls_094c, g__dev_maatra_o_e);
-// 2021-06-30	cCa = (g__dev_candrabindu_alt, g__dev_anusvara, g__dev_inv_candrabindu_alt);
+	cTakesBindu = (cls_0940, cls_0945, cls_0946, cls_0947, cls_0948, cls_0949, cls_094a, cls_094b, cls_094c, g__dev_maatra_o_e);
+	cBindu = (g__dev_candrabindu_alt, g__dev_anusvara, g__dev_inv_candrabindu_alt);
 
 	// Special case for anusvara attaching to an iikar (the candrabindu is raised higher than we want to do
 	// for the anusvara):
@@ -1631,7 +1631,7 @@ pass(PASS_ATTACH)	// 9
 
 //if (select_diac)
 	pos_ruleSD(cTakesAn,			cAn,			AnS,			AnM,			cnCaX);
-	pos_ruleSD(cTakesCa,			cCa,			CaS,			CaM,			cnCaX);
+	pos_ruleSD(cTakesBindu,			cBindu,			CaS,			CaM,			cnCaX);
 	pos_ruleSD(cTakesUpperDia,		cUpperDia,		UpperS,			UpperM, 		cnUpperDiaX);
 	pos_ruleSD(cTakesUpperCenterDia,cUpperCenterDiaX,UpperCenterS,	UpperCenterM,	cnUpperCenterDiaX);
 	pos_ruleSD(cTakesLowerDia,		cLowerDia,		LowerS,			LowerM, 		cnLowerDiaX);
@@ -1644,7 +1644,7 @@ pass(PASS_ATTACH)	// 9
 	pos_ruleSD(cTakesRaDia,			cRaDia,			RaS,			RaM,			cnRaDiaX);
 //else
 //	pos_rule(cTakesAn,				cAn,			AnS,			AnM,			cnCaX);
-//	pos_rule(cTakesCa,				cCa,			CaS,			CaM,			cnCaX);
+//	pos_rule(cTakesBindu,			cBindu,			CaS,			CaM,			cnCaX);
 //	pos_rule(cTakesUpperDia,		cUpperDia,		UpperS,			UpperM, 		cnUpperDiaX);
 //	pos_rule(cTakesUpperCenterDia,	cUpperCenterDiaX,UpperCenterS,	UpperCenterM,	cnUpperCenterDiaX);
 //	pos_rule(cTakesLowerDia,		cLowerDia,		LowerS,			LowerM, 		cnLowerDiaX);
