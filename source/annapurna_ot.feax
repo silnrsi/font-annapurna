@@ -1989,8 +1989,8 @@ lookup LatinPunctuationMark {
 #  Lookups GPOS
 #**********************************
 
-# do  for b = [Halant Lower LowerAlt LowerCenter Nukta Ra Upper UpperCenter];
-do  for b = [Halant Lower LowerAlt Nukta Ra Upper];
+# APs = [Halant Lower LowerAlt LowerCenter Nukta NuktaAlt Ra Upper UpperCenter];
+do  for b = [Halant Lower LowerAlt LowerCenter Nukta Ra Upper];
     let lk = "base_"+b+"_base";
     let bc = "@" + b;
     let mc = "@_" + b;
@@ -2161,7 +2161,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-##            lookup base_LowerCenter_base;
+            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2178,7 +2178,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-##            lookup base_LowerCenter_base;
+            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2194,7 +2194,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-##            lookup base_LowerCenter_base;
+            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2210,7 +2210,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-##            lookup base_LowerCenter_base;
+            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;
@@ -2227,7 +2227,7 @@ feature blwm {  # Below-Base Mark Positioning
             lookup base_Halant_base;
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
-##            lookup base_LowerCenter_base;
+            lookup base_LowerCenter_base;
             lookup base_Nukta_base;
             lookup base_Ra_base; # rakar positioning
 #            lookup BelowConsMarks;

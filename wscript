@@ -18,7 +18,7 @@ getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
 # BUILDLABEL = 'beta'
 
 # APs to ignore when generating OT and GDL classes
-omitAPs = '--omitaps "UpperCenter LowerCenter"'
+# omitAPs = '--omitaps "UpperCenter"'
 
 # Commands to process with target font
 cmds = []
@@ -33,7 +33,7 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
 
         opentype = fea('source/fea/${DS:FILENAME_BASE}.fea',
             master = 'source/annapurna_ot.feax',
-            make_params = omitAPs
+            # make_params = omitAPs
         ),
 
         graphite = gdl('source/gdl/${DS:FILENAME_BASE}.gdl',

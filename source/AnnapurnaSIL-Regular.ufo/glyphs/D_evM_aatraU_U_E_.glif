@@ -36,9 +36,6 @@
       <point x="-1" y="-291" type="curve"/>
     </contour>
     <contour>
-      <point x="-425" y="-60" type="move" name="_Lower"/>
-    </contour>
-    <contour>
       <point x="-425" y="-61" type="move" name="_LowerCenter"/>
     </contour>
   </outline>
