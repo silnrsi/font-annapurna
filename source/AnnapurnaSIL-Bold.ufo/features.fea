@@ -866,7 +866,6 @@ markClass [DevMaatraL DevMaatraLL DevMaatraLLNukta DevMaatraLNukta] <anchor -520
 markClass [DevMaatraR DevMaatraRNukta] <anchor -360 -60> @_Lower;
 markClass [DevMaatraRR DevMaatraRRNukta] <anchor -407 -60> @_Lower;
 markClass [DevMaatraU DevMaatraUNukta DevMaatraUNukta.alt DevMaatraUNukta.alt2] <anchor -390 -60> @_Lower;
-markClass [DevMaatraUE DevMaatraUUE] <anchor -425 -60> @_Lower;
 markClass [DevMaatraUU DevMaatraUUNukta DevMaatraUUNukta.alt DevMaatraUUNukta.alt2] <anchor -35 -60> @_Lower;
 
 # AP: _Nukta
@@ -2500,6 +2499,7 @@ lookup LatinPunctuationMark {
 #**********************************
 #  Lookups GPOS
 #**********************************
+# APs = [Halant Lower LowerAlt LowerCenter Nukta NuktaAlt Ra Upper UpperCenter];
     #**********************************
     #  Features
     #**********************************
@@ -3183,117 +3183,6 @@ lookup LatinPunctuationMark {
         pos base DottedCirc <anchor 533 1080> mark @_Upper;
     } base_Upper_base;
 
-    lookup base_UpperCenter_base {
-        pos base [DevAaCndrbndRaAi DevJaNuktaR DevJaR DevNgAaCndrbndRaAi DevNgAaCndrbndRaAi.001 DevNga DevRaAi DevRaE DevRaNuktaAi DevRaNuktaE] <anchor 681 1416> mark @_UpperCenter;
-        pos base [DevBa DevBaNukta DevBaNuktaR DevBaR] <anchor 638 1416> mark @_UpperCenter;
-        pos base [DevBba DevBbaNukta DevBbaNuktaR DevBbaR DevCa] <anchor 678 1416> mark @_UpperCenter;
-        pos base [DevBha DevBhaNukta DevBhaNuktaR DevBhaR] <anchor 787 1416> mark @_UpperCenter;
-        pos base [DevC.Ca DevC.Ca.alt DevJja DevJjaNukta DevZha] <anchor 679 1416> mark @_UpperCenter;
-        pos base DevCaNukta <anchor 472 1416> mark @_UpperCenter;
-        pos base [DevCaNuktaR DevCaR] <anchor 669 1416> mark @_UpperCenter;
-        pos base [DevCh.Ya DevCh.YaNukta DevCh.YaNuktaRa DevCh.YaRa] <anchor 2295 1416> mark @_UpperCenter;
-        pos base [DevCha DevChaNukta DevChaNuktaR DevChaR DevHalfCha DevHalfChaNukta] <anchor 693 1416> mark @_UpperCenter;
-        pos base DevD.Da <anchor 581 1416> mark @_UpperCenter;
-        pos base DevD.Dha <anchor 785 1416> mark @_UpperCenter;
-        pos base DevD.Ma <anchor 876 1416> mark @_UpperCenter;
-        pos base DevD.Wa <anchor 562 1416> mark @_UpperCenter;
-        pos base DevD.Ya <anchor 758 1416> mark @_UpperCenter;
-        pos base [DevD.Ya.alt DevD.YaNuktaRa DevD.YaRa DevH.Ya.alt DevH.YaNuktaRa DevH.YaRa DevTt.Ya DevTt.YaNukta DevTt.YaNuktaRa DevTt.YaRa] <anchor 1850 1416> mark @_UpperCenter;
-        pos base [DevD.YaNukta DevH.YaNukta] <anchor 1852 1416> mark @_UpperCenter;
-        pos base [DevDa DevDaNukta DevDdda DevDddaNukta DevDddaNuktaR DevDddaR DevHalfDa DevHalfDaNukta DevHalfDdda DevHalfDddaNukta] <anchor 582 1416> mark @_UpperCenter;
-        pos base [DevDaNuktaR DevDaR] <anchor 583 1416> mark @_UpperCenter;
-        pos base [DevDd.Dda DevDd.Dda.alt] <anchor 541 1416> mark @_UpperCenter;
-        pos base [DevDd.Ya DevDd.YaNukta DevDd.YaNuktaRa DevDd.YaRa] <anchor 2080 1416> mark @_UpperCenter;
-        pos base [DevDda DevDdaNukta DevDdaNuktaR DevDdaR DevHalfDda DevHalfDdaNukta] <anchor 573 1416> mark @_UpperCenter;
-        pos base [DevDdaMarawari DevHeavyYa] <anchor 599 1416> mark @_UpperCenter;
-        pos base [DevDdh.Ya DevDdh.YaNukta DevDdh.YaNuktaRa DevDdh.YaRa] <anchor 2035 1416> mark @_UpperCenter;
-        pos base [DevDdha DevDdhaNukta DevDdhaNuktaR DevDdhaR DevHalfDdha DevHalfDdhaNukta] <anchor 609 1416> mark @_UpperCenter;
-        pos base [DevDha DevDhaNukta DevDhaNuktaR DevDhaR] <anchor 799 1416> mark @_UpperCenter;
-        pos base [DevGa DevGaNukta DevGaNuktaR DevGaR] <anchor 595 1416> mark @_UpperCenter;
-        pos base [DevGga DevGgaNukta DevGgaNuktaR DevGgaR] <anchor 633 1416> mark @_UpperCenter;
-        pos base [DevGha DevGhaNukta] <anchor 691 1416> mark @_UpperCenter;
-        pos base [DevGhaNuktaR DevGhaR] <anchor 667 1416> mark @_UpperCenter;
-        pos base DevGlottalStop <anchor 440 1416> mark @_UpperCenter;
-        pos base DevGlottalStop.alt <anchor 592 1416> mark @_UpperCenter;
-        pos base [DevH.La DevH.Na DevH.Ri DevH.Wa DevHa DevHa.halant DevHaNukta DevHaNukta.halant DevHaNuktaMaatraUU DevHaNuktaR DevHaR DevSs.Ttha] <anchor 576 1416> mark @_UpperCenter;
-        pos base DevH.Ma <anchor 906 1416> mark @_UpperCenter;
-        pos base DevH.Ya <anchor 941 1416> mark @_UpperCenter;
-        pos base [DevHalfJha DevHalfJhaNukta DevHalfJhaNuktaR DevHalfJhaR] <anchor 616 1416> mark @_UpperCenter;
-        pos base [DevHalfNga DevHalfNgaNukta DevNgaNukta DevNgaNuktaR DevNgaR] <anchor 680 1416> mark @_UpperCenter;
-        pos base DevHalfNna.archaic <anchor 641 1416> mark @_UpperCenter;
-        pos base [DevHalfTta DevHalfTtaNukta DevTta DevTtaNukta DevTtaNuktaR DevTtaR] <anchor 574 1416> mark @_UpperCenter;
-        pos base [DevHalfTtha DevHalfTthaNukta DevTtha DevTthaNukta DevTthaNuktaR DevTthaR] <anchor 686 1416> mark @_UpperCenter;
-        pos base [DevJ.Nya DevJ.NyaR DevP.Ta] <anchor 628 1416> mark @_UpperCenter;
-        pos base [DevJa DevJaNukta] <anchor 670 1416> mark @_UpperCenter;
-        pos base [DevJha DevJhaNukta DevJhaNuktaR DevJhaR DevVowelLL DevVowelLLNukta] <anchor 783 1416> mark @_UpperCenter;
-        pos base [DevJha.alt DevJhaNukta.alt DevJhaNuktaR.alt DevJhaR.alt] <anchor 1099 1416> mark @_UpperCenter;
-        pos base [DevJha.alt2 DevJhaNukta.alt2 DevJhaNuktaR.alt2 DevJhaR.alt2] <anchor 792 1416> mark @_UpperCenter;
-        pos base [DevJjaNuktaR DevJjaR] <anchor 719 1416> mark @_UpperCenter;
-        pos base [DevK.Ka DevK.Ka.alt] <anchor 832 1416> mark @_UpperCenter;
-        pos base [DevK.Ssa DevK.SsaR] <anchor 893 1416> mark @_UpperCenter;
-        pos base [DevK.Ssa.archaic DevNg.Ka DevNg.Ka.alt] <anchor 772 1416> mark @_UpperCenter;
-        pos base DevK.Ta <anchor 986 1416> mark @_UpperCenter;
-        pos base [DevKa DevKaNukta] <anchor 901 1416> mark @_UpperCenter;
-        pos base [DevKaNuktaR DevKaR] <anchor 910 1416> mark @_UpperCenter;
-        pos base [DevKaNuktaR.alt DevKaR.alt] <anchor 896 1416> mark @_UpperCenter;
-        pos base [DevKha DevKhaNukta DevKhaNuktaR DevKhaR] <anchor 863 1416> mark @_UpperCenter;
-        pos base [DevL.La DevL.La.alt DevM.La DevM.La.alt] <anchor 665 1416> mark @_UpperCenter;
-        pos base [DevLa DevLaNukta DevLaNuktaR DevLaR] <anchor 724 1416> mark @_UpperCenter;
-        pos base [DevLla DevLlaNukta DevLlaNuktaR DevLlaR] <anchor 806 1416> mark @_UpperCenter;
-        pos base [DevMa DevMaNukta DevMaNuktaR DevMaR] <anchor 555 1416> mark @_UpperCenter;
-        pos base DevMaatraAW <anchor 277 1390> mark @_UpperCenter;
-        pos base DevMaatraOOE <anchor 202 1390> mark @_UpperCenter;
-        pos base DevN.Na <anchor 627 1416> mark @_UpperCenter;
-        pos base [DevNa DevNaNukta DevNaNuktaR DevNaR] <anchor 529 1416> mark @_UpperCenter;
-        pos base [DevNg.Ga DevNg.Ga.alt] <anchor 577 1416> mark @_UpperCenter;
-        pos base [DevNg.Gha DevNg.Gha.alt] <anchor 553 1416> mark @_UpperCenter;
-        pos base [DevNg.Ha DevNg.Ha.alt] <anchor 552 1416> mark @_UpperCenter;
-        pos base [DevNg.Kha DevNg.Kha.alt] <anchor 690 1416> mark @_UpperCenter;
-        pos base [DevNg.Nga DevNg.Nga.alt] <anchor 537 1416> mark @_UpperCenter;
-        pos base [DevNg.Ya DevNg.YaNukta DevNg.YaNuktaRa DevNg.YaRa] <anchor 2120 1416> mark @_UpperCenter;
-        pos base [DevNna DevNnaNukta DevNnaNuktaR DevNnaR DevWa DevWaNukta DevWaNuktaR DevWaR] <anchor 687 1416> mark @_UpperCenter;
-        pos base DevNna.archaic <anchor 865 1416> mark @_UpperCenter;
-        pos base [DevNya DevNyaNukta DevNyaNuktaR DevNyaR] <anchor 656 1416> mark @_UpperCenter;
-        pos base [DevPa DevPaNukta DevPaNuktaR DevPaR] <anchor 585 1416> mark @_UpperCenter;
-        pos base [DevPha DevPhaNukta DevPhaR] <anchor 836 1416> mark @_UpperCenter;
-        pos base DevPhaNuktaR <anchor 835 1416> mark @_UpperCenter;
-        pos base [DevR.U DevR.UNukta DevRNukta.U DevRNukta.UNukta] <anchor 523 1416> mark @_UpperCenter;
-        pos base [DevR.UU DevR.UUNukta DevRNukta.UU DevRNukta.UUNukta] <anchor 790 1416> mark @_UpperCenter;
-        pos base [DevRa DevRaMaatraU DevRaMaatraUNukta DevRaMaatraUU DevRaMaatraUUNukta DevRaNukta DevRaNuktaMaatraU DevRaNuktaMaatraUNukta DevRaNuktaMaatraUU DevRaNuktaMaatraUUNukta] <anchor 527 1416> mark @_UpperCenter;
-        pos base [DevRa.Ya DevRa.YaNukta DevRa.YaNuktaRa DevRa.YaRa] <anchor 1588 1416> mark @_UpperCenter;
-        pos base DevS.Na <anchor 725 1416> mark @_UpperCenter;
-        pos base [DevSa DevSaNukta] <anchor 702 1416> mark @_UpperCenter;
-        pos base [DevSaNuktaR DevSaR] <anchor 752 1416> mark @_UpperCenter;
-        pos base DevSh.Ca <anchor 708 1416> mark @_UpperCenter;
-        pos base [DevSh.Wa DevYa.alt DevYaNukta.alt DevYaNuktaR.alt DevYaR.alt] <anchor 720 1416> mark @_UpperCenter;
-        pos base [DevSha DevShaNukta DevShaNuktaR.alt DevShaR.alt] <anchor 685 1416> mark @_UpperCenter;
-        pos base [DevShaNuktaR DevShaR] <anchor 605 1416> mark @_UpperCenter;
-        pos base DevSs.Tta <anchor 593 1416> mark @_UpperCenter;
-        pos base [DevSsa DevSsaNukta DevSsaNuktaR DevSsaR] <anchor 615 1416> mark @_UpperCenter;
-        pos base DevT.Ta <anchor 630 1416> mark @_UpperCenter;
-        pos base [DevTa DevTaNukta DevTaNuktaR.alt DevTaR.alt] <anchor 603 1416> mark @_UpperCenter;
-        pos base [DevTaNuktaR DevTaR] <anchor 563 1416> mark @_UpperCenter;
-        pos base [DevTha DevThaNukta DevThaNuktaR DevThaR] <anchor 757 1416> mark @_UpperCenter;
-        pos base [DevTt.Tta DevTt.Tta.alt] <anchor 481 1416> mark @_UpperCenter;
-        pos base [DevTt.Ttha DevTt.Ttha.alt] <anchor 490 1416> mark @_UpperCenter;
-        pos base [DevTth.Ttha DevTth.Ttha.alt] <anchor 494 1416> mark @_UpperCenter;
-        pos base [DevTth.Ya DevTth.YaNukta DevTth.YaNuktaRa DevTth.YaRa] <anchor 2065 1416> mark @_UpperCenter;
-        pos base [DevVowelA DevVowelAW DevVowelOE DevVowelOOE DevVowelShortA DevVowelUE DevVowelUUE] <anchor 831 1416> mark @_UpperCenter;
-        pos base [DevVowelA.archaic DevVowelAA.archaic DevVowelO.archaic] <anchor 695 1416> mark @_UpperCenter;
-        pos base [DevVowelAA DevVowelAANukta DevVowelAU DevVowelAUNukta DevVowelCandraO DevVowelCandraONukta DevVowelO DevVowelONukta DevVowelShortO DevVowelShortONukta] <anchor 821 1416> mark @_UpperCenter;
-        pos base [DevVowelAI DevVowelAINukta DevVowelCandraE DevVowelCandraENukta DevVowelE DevVowelENukta DevVowelShortE DevVowelShortENukta] <anchor 570 1416> mark @_UpperCenter;
-        pos base [DevVowelANukta DevVowelCandraA DevVowelCandraANukta] <anchor 651 1416> mark @_UpperCenter;
-        pos base DevVowelAU.archaic <anchor 930 1416> mark @_UpperCenter;
-        pos base [DevVowelI DevVowelII DevVowelIIBindu DevVowelIICandrabindu DevVowelIINukta DevVowelINukta] <anchor 569 1416> mark @_UpperCenter;
-        pos base [DevVowelL DevVowelLNukta] <anchor 753 1416> mark @_UpperCenter;
-        pos base [DevVowelR DevVowelRNukta DevVowelRR DevVowelRRNukta] <anchor 891 1416> mark @_UpperCenter;
-        pos base DevVowelShortANukta <anchor 871 1416> mark @_UpperCenter;
-        pos base [DevVowelU DevVowelUNukta] <anchor 504 1416> mark @_UpperCenter;
-        pos base [DevVowelUU DevVowelUUNukta] <anchor 700 1416> mark @_UpperCenter;
-        pos base [DevYa DevYaNukta DevYaNuktaR DevYaR] <anchor 571 1416> mark @_UpperCenter;
-        pos base DottedCirc <anchor 533 1100> mark @_UpperCenter;
-    } base_UpperCenter_base;
-
 
 feature abvm {
     # Above-Base Mark Positioning
@@ -3302,7 +3191,7 @@ feature abvm {
     language dflt;
     # Default
     lookup base_Upper_base;
-    lookup base_UpperCenter_base;
+    ##            lookup base_UpperCenter_base;
     #            lookup AboveConsMarks;
     #            lookup AboveVowelMarks;
     #            lookup AboveSpacingMatraMarks;
@@ -3317,7 +3206,7 @@ feature abvm {
     language dflt;
     # Default
     lookup base_Upper_base;
-    lookup base_UpperCenter_base;
+    ##            lookup base_UpperCenter_base;
     #            lookup AboveConsMarks;
     #            lookup AboveVowelMarks;
     #            lookup AboveSpacingMatraMarks;
@@ -3330,7 +3219,7 @@ feature abvm {
     language NEP exclude_dflt;
     # Nepali
     lookup base_Upper_base;
-    lookup base_UpperCenter_base;
+    ##            lookup base_UpperCenter_base;
     #            lookup AboveConsMarks;
     #            lookup AboveVowelMarks;
     #            lookup AboveSpacingMatraMarks;
@@ -3343,7 +3232,7 @@ feature abvm {
     language NEW exclude_dflt;
     # Newari
     lookup base_Upper_base;
-    lookup base_UpperCenter_base;
+    ##            lookup base_UpperCenter_base;
     #            lookup AboveConsMarks;
     #            lookup AboveVowelMarks;
     #            lookup AboveSpacingMatraMarks;
@@ -3358,7 +3247,7 @@ feature abvm {
     language dflt;
     # Default
     lookup base_Upper_base;
-    lookup base_UpperCenter_base;
+    ##            lookup base_UpperCenter_base;
     #            lookup AboveConsMarks;
     #            lookup AboveVowelMarks;
     #            lookup AboveSpacingMatraMarks;
