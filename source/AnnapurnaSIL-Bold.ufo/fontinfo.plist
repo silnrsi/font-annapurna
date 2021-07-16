@@ -13,7 +13,7 @@
   <key>familyName</key>
   <string>Annapurna SIL</string>
   <key>openTypeHeadCreated</key>
-  <string>2021/06/25 18:09:22</string>
+  <string>2021/07/16 18:35:07</string>
   <key>openTypeHheaAscender</key>
   <integer>1939</integer>
   <key>openTypeHheaDescender</key>
@@ -245,7 +245,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.</string>
   <key>styleName</key>
   <string>Bold</string>
   <key>trademark</key>
-  <string>Annapurna SIL Bold is a trademark of SIL International Inc.</string>
+  <string>Annapurna SIL is a trademark of SIL International Inc.</string>
   <key>unitsPerEm</key>
   <integer>2048</integer>
   <key>versionMajor</key>

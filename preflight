@@ -27,9 +27,8 @@ echo "Updating production names in Regular (and Bold for now)..."
 psfsetpsnames -q -p checkfix=none -p backup=False -i source/glyph_data.csv source/*-Regular.ufo  &
 psfsetpsnames -q -p checkfix=none -p backup=False -i source/glyph_data.csv source/*-Bold.ufo     &
 
-# No designspace setup yet
-# echo "Syncing glyph orders, psnames, and other metadata to other UFOs..."
-# psfsyncmasters -q source/*-RB.designspace
+echo "Syncing glyph orders, psnames, and other metadata to other UFOs..."
+psfsyncmasters -q source/*-RB.designspace
 
 echo "Building internal fea..."
 psfmakefea -q -o source/AnnapurnaSIL-Regular.ufo/features.fea -l source/logs/AnnapurnaSIL-Regular-psfmakefea.log -i source/annapurna_ot.feax source/*-Regular.ufo  &
