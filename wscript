@@ -3,7 +3,6 @@
 
 # override the default folders
 DOCDIR = ['documentation', 'web']  # add 'web' to default
-STANDARDS = 'tests/reference'
 
 # set package name
 APPNAME = 'AnnapurnaSIL'
