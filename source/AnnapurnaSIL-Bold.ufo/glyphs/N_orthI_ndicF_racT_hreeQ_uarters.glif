@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="NorthIndicFracThreeQuarters" format="2">
+  <advance width="1005"/>
+  <unicode hex="A832"/>
+  <outline>
+    <contour>
+      <point x="74" y="1344" type="line"/>
+      <point x="74" y="84" type="line"/>
+      <point x="261" y="-25" type="line"/>
+      <point x="261" y="1236" type="line"/>
+    </contour>
+    <contour>
+      <point x="409" y="1344" type="line"/>
+      <point x="409" y="84" type="line"/>
+      <point x="596" y="-25" type="line"/>
+      <point x="596" y="1236" type="line"/>
+    </contour>
+    <contour>
+      <point x="744" y="1344" type="line"/>
+      <point x="744" y="84" type="line"/>
+      <point x="931" y="-25" type="line"/>
+      <point x="931" y="1236" type="line"/>
+    </contour>
+  </outline>
+</glyph>

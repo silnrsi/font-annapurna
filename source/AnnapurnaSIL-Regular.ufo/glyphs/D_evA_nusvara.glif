@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevAnusvara" format="2">
+  <advance width="2"/>
+  <unicode hex="0902"/>
+  <anchor x="-165" y="1310" name="_Upper"/>
+  <anchor x="-165" y="1390" name="_UpperCenter"/>
+  <outline>
+    <contour>
+      <point x="-266" y="1555" type="curve" smooth="yes"/>
+      <point x="-266" y="1519"/>
+      <point x="-201" y="1454"/>
+      <point x="-165" y="1454" type="curve" smooth="yes"/>
+      <point x="-130" y="1454"/>
+      <point x="-64" y="1519"/>
+      <point x="-64" y="1555" type="curve" smooth="yes"/>
+      <point x="-64" y="1590"/>
+      <point x="-130" y="1656"/>
+      <point x="-165" y="1656" type="curve" smooth="yes"/>
+      <point x="-201" y="1656"/>
+      <point x="-266" y="1590"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHeavyYa" format="2">
+  <advance width="1226"/>
+  <unicode hex="097A"/>
+  <anchor x="950" y="-126" name="Halant"/>
+  <anchor x="950" y="-56" name="Lower"/>
+  <anchor x="598" y="-138" name="LowerCenter"/>
+  <anchor x="950" y="-156" name="Nukta"/>
+  <anchor x="950" y="1356" name="Upper"/>
+  <anchor x="599" y="1416" name="UpperCenter"/>
+  <outline>
+    <component base="DevYa"/>
+    <contour>
+      <point x="463" y="996" type="line"/>
+      <point x="463" y="868" type="line"/>
+      <point x="865" y="468" type="line"/>
+      <point x="865" y="590" type="line"/>
+    </contour>
+  </outline>
+</glyph>

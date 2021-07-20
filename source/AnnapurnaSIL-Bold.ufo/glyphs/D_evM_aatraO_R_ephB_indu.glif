@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraORephBindu" format="2">
+  <advance width="555"/>
+  <anchor x="278" y="-126" name="Halant"/>
+  <anchor x="279" y="1356" name="Upper"/>
+  <outline>
+    <component base="DevMaatraAA"/>
+    <component base="DevMaatraE" xOffset="576"/>
+    <component base="DevRaReph.alt2" xOffset="544"/>
+    <component base="DevNukta" xOffset="821" yOffset="1825"/>
+  </outline>
+</glyph>

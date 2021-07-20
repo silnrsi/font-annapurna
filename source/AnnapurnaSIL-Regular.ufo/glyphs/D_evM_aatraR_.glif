@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraR" format="2">
+  <advance width="2"/>
+  <unicode hex="0943"/>
+  <anchor x="-360" y="-60" name="_Lower"/>
+  <outline>
+    <contour>
+      <point x="-273" y="-70" type="line"/>
+      <point x="-448" y="-101"/>
+      <point x="-596" y="-149"/>
+      <point x="-596" y="-273" type="curve" smooth="yes"/>
+      <point x="-596" y="-413"/>
+      <point x="-441" y="-533"/>
+      <point x="-281" y="-533" type="curve" smooth="yes"/>
+      <point x="-184" y="-533"/>
+      <point x="-109" y="-517"/>
+      <point x="-40" y="-486" type="curve"/>
+      <point x="-113" y="-393" type="line"/>
+      <point x="-203" y="-429"/>
+      <point x="-261" y="-446"/>
+      <point x="-344" y="-446" type="curve" smooth="yes"/>
+      <point x="-397" y="-446"/>
+      <point x="-415" y="-439"/>
+      <point x="-428" y="-430" type="curve" smooth="yes"/>
+      <point x="-441" y="-421"/>
+      <point x="-465" y="-371"/>
+      <point x="-465" y="-331" type="curve" smooth="yes"/>
+      <point x="-465" y="-236"/>
+      <point x="-344" y="-197"/>
+      <point x="-147" y="-161" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

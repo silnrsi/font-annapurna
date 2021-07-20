@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevTwo" format="2">
+  <advance width="1216"/>
+  <unicode hex="0968"/>
+  <outline>
+    <contour>
+      <point x="540" y="1317" type="curve" smooth="yes"/>
+      <point x="386" y="1317"/>
+      <point x="262" y="1271"/>
+      <point x="175" y="1209" type="curve"/>
+      <point x="291" y="1098" type="line"/>
+      <point x="424" y="1166"/>
+      <point x="515" y="1199"/>
+      <point x="631" y="1199" type="curve" smooth="yes"/>
+      <point x="777" y="1199"/>
+      <point x="884" y="1148"/>
+      <point x="884" y="957" type="curve" smooth="yes"/>
+      <point x="884" y="696"/>
+      <point x="637" y="518"/>
+      <point x="404" y="518" type="curve"/>
+      <point x="513" y="477" type="line"/>
+      <point x="694" y="320"/>
+      <point x="1040" y="-49"/>
+      <point x="1040" y="-49" type="curve"/>
+      <point x="1040" y="-49"/>
+      <point x="1113" y="44"/>
+      <point x="1113" y="41" type="curve"/>
+      <point x="1113" y="39"/>
+      <point x="805" y="326"/>
+      <point x="584" y="517" type="curve" smooth="yes"/>
+      <point x="489" y="599"/>
+      <point x="426" y="667"/>
+      <point x="390" y="667" type="curve" smooth="yes"/>
+      <point x="319" y="667"/>
+      <point x="302" y="607"/>
+      <point x="302" y="541" type="curve" smooth="yes"/>
+      <point x="302" y="387"/>
+      <point x="375" y="368"/>
+      <point x="473" y="368" type="curve" smooth="yes"/>
+      <point x="607" y="368"/>
+      <point x="985" y="484"/>
+      <point x="985" y="854" type="curve" smooth="yes"/>
+      <point x="985" y="1152"/>
+      <point x="756" y="1317"/>
+    </contour>
+  </outline>
+</glyph>

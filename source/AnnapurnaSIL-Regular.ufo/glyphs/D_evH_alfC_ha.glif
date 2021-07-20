@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfCha" format="2">
+  <advance width="1573"/>
+  <anchor x="786" y="-612" name="LowerAlt"/>
+  <anchor x="1100" y="1330" name="Upper"/>
+  <anchor x="693" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevCha"/>
+    <component base="DevHalant" xOffset="1134" yOffset="-3"/>
+  </outline>
+</glyph>

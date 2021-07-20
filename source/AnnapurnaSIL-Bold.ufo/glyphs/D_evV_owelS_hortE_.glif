@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVowelShortE" format="2">
+  <advance width="1097"/>
+  <unicode hex="090E"/>
+  <anchor x="561" y="-147" name="Halant"/>
+  <anchor x="561" y="-69" name="Lower"/>
+  <anchor x="561" y="-136" name="LowerCenter"/>
+  <anchor x="810" y="1356" name="Upper"/>
+  <anchor x="570" y="1416" name="UpperCenter"/>
+  <outline>
+    <component base="DevVowelE"/>
+    <component base="DevMaatraShortE" xOffset="1039"/>
+  </outline>
+</glyph>

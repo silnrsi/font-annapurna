@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevTtaNukta" format="2">
+  <advance width="1127"/>
+  <anchor x="630" y="-370" name="Halant"/>
+  <anchor x="850" y="-340" name="Lower"/>
+  <anchor x="574" y="-412" name="LowerCenter"/>
+  <anchor x="850" y="1330" name="Upper"/>
+  <anchor x="574" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevTta"/>
+    <component base="DevNukta" xOffset="1047" yOffset="7"/>
+  </outline>
+</glyph>

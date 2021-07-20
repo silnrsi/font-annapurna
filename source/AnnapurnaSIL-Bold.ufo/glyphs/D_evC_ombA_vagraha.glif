@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevCombAvagraha" format="2">
+  <advance width="1"/>
+  <unicode hex="A8F1"/>
+  <outline>
+    <component base="DevAvagraha" xScale="0.5" yScale="0.5" xOffset="-620" yOffset="1950"/>
+  </outline>
+</glyph>

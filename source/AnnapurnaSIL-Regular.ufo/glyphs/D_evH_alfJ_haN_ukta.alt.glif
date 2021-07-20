@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfJhaNukta.alt" format="2">
+  <advance width="1515"/>
+  <anchor x="757" y="-112" name="LowerAlt"/>
+  <outline>
+    <component base="DevHalfJha.alt"/>
+    <component base="DevNukta" xOffset="1135" yOffset="330"/>
+  </outline>
+</glyph>

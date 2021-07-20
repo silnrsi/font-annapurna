@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfT.Ta" format="2">
+  <advance width="910"/>
+  <anchor x="455" y="-112" name="LowerAlt"/>
+  <outline>
+    <contour>
+      <point x="830" y="887" type="line"/>
+      <point x="100" y="887" type="line"/>
+      <point x="176" y="755" type="line"/>
+      <point x="906" y="755" type="line"/>
+    </contour>
+    <contour>
+      <point x="760" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="836" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="934" y="1320" type="line"/>
+      <point x="103" y="1320" type="line"/>
+      <point x="179" y="1188" type="line"/>
+      <point x="1010" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="940" y="887" type="line"/>
+      <point x="574" y="887" type="line" smooth="yes"/>
+      <point x="424" y="887"/>
+      <point x="293" y="792"/>
+      <point x="293" y="622" type="curve" smooth="yes"/>
+      <point x="293" y="417"/>
+      <point x="488" y="206"/>
+      <point x="619" y="33" type="curve"/>
+      <point x="677" y="75" type="line"/>
+      <point x="527" y="255"/>
+      <point x="431" y="387"/>
+      <point x="431" y="534" type="curve" smooth="yes"/>
+      <point x="431" y="691"/>
+      <point x="502" y="755"/>
+      <point x="663" y="755" type="curve" smooth="yes"/>
+      <point x="940" y="755" type="line"/>
+    </contour>
+  </outline>
+</glyph>

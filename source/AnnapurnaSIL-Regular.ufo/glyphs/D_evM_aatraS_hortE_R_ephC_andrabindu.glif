@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraShortERephCandrabindu" format="2">
+  <advance width="3"/>
+  <anchor x="-575" y="1330" name="_Upper"/>
+  <outline>
+    <component base="DevMaatraShortE" xOffset="-344"/>
+    <component base="DevRaReph.alt" xOffset="-234"/>
+    <component base="DevCandrabindu.alt" xOffset="126"/>
+  </outline>
+</glyph>

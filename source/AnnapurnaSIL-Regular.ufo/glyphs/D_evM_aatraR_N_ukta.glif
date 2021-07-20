@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraRNukta" format="2">
+  <advance width="2"/>
+  <anchor x="-360" y="-60" name="_Lower"/>
+  <outline>
+    <component base="DevMaatraR"/>
+    <component base="DevNukta" xOffset="95" yOffset="-593"/>
+  </outline>
+</glyph>

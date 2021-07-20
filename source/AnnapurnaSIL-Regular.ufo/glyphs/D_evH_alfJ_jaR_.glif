@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfJjaR" format="2">
+  <advance width="1170"/>
+  <anchor x="550" y="-112" name="LowerAlt"/>
+  <outline>
+    <contour>
+      <point x="461" y="934" type="line"/>
+      <point x="439" y="879" type="line"/>
+      <point x="507" y="848"/>
+      <point x="743" y="705"/>
+      <point x="743" y="531" type="curve" smooth="yes"/>
+      <point x="743" y="428"/>
+      <point x="692" y="384"/>
+      <point x="600" y="384" type="curve" smooth="yes"/>
+      <point x="465" y="384"/>
+      <point x="304" y="511"/>
+      <point x="175" y="831" type="curve"/>
+      <point x="100" y="779" type="line"/>
+      <point x="193" y="571"/>
+      <point x="397" y="247"/>
+      <point x="650" y="247" type="curve" smooth="yes"/>
+      <point x="747" y="247"/>
+      <point x="880" y="302"/>
+      <point x="880" y="444" type="curve" smooth="yes"/>
+      <point x="880" y="663"/>
+      <point x="638" y="838"/>
+      <point x="494" y="925" type="curve"/>
+      <point x="594" y="799" type="line"/>
+      <point x="1200" y="799" type="line"/>
+      <point x="1200" y="934" type="line"/>
+    </contour>
+    <contour>
+      <point x="754" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="830" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="1180" y="1320" type="line"/>
+      <point x="178" y="1320" type="line"/>
+      <point x="254" y="1188" type="line"/>
+      <point x="1256" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="1200" y="132" type="line"/>
+      <point x="80" y="132" type="line"/>
+      <point x="156" y="0" type="line"/>
+      <point x="1200" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="1200" y="529" type="line"/>
+      <point x="834" y="199" type="line"/>
+      <point x="983" y="199" type="line"/>
+      <point x="1200" y="394" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevRaMaatraUNukta" format="2">
+  <advance width="868"/>
+  <anchor x="434" y="-780" name="LowerCenter"/>
+  <anchor x="525" y="1356" name="Upper"/>
+  <anchor x="527" y="1416" name="UpperCenter"/>
+  <outline>
+    <component base="DevRa"/>
+    <component base="DevMaatraUNukta" xOffset="916" yOffset="-9"/>
+  </outline>
+</glyph>

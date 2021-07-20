@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="NorthIndicFracOneSixteenth" format="2">
+  <advance width="938"/>
+  <unicode hex="A833"/>
+  <outline>
+    <contour>
+      <point x="192" y="957" type="line"/>
+      <point x="838" y="1113" type="line"/>
+      <point x="746" y="1223" type="line"/>
+      <point x="100" y="1067" type="line"/>
+    </contour>
+  </outline>
+</glyph>

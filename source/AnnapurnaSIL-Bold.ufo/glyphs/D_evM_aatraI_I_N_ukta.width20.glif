@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraIINukta.width20" format="2">
+  <advance width="555"/>
+  <anchor x="285" y="-426" name="Halant"/>
+  <anchor x="286" y="1356" name="Upper"/>
+  <outline>
+    <component base="DevMaatraII.width20"/>
+    <component base="DevNukta" xOffset="683" yOffset="-1"/>
+  </outline>
+</glyph>

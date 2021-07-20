@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraAU" format="2">
+  <advance width="555"/>
+  <unicode hex="094C"/>
+  <anchor x="278" y="-126" name="Halant"/>
+  <anchor x="279" y="1356" name="Upper"/>
+  <outline>
+    <component base="DevMaatraAA"/>
+    <component base="DevMaatraAi" xOffset="591"/>
+  </outline>
+</glyph>

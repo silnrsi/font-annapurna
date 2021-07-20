@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVowelONukta" format="2">
+  <advance width="2211"/>
+  <anchor x="1936" y="-426" name="Halant"/>
+  <anchor x="1936" y="-399" name="Lower"/>
+  <anchor x="818" y="-138" name="LowerCenter"/>
+  <anchor x="1936" y="1356" name="Upper"/>
+  <anchor x="821" y="1416" name="UpperCenter"/>
+  <outline>
+    <component base="DevVowelAA"/>
+    <component base="DevNukta" xOffset="2339" yOffset="-1"/>
+    <component base="DevMaatraE" xOffset="2234"/>
+  </outline>
+</glyph>

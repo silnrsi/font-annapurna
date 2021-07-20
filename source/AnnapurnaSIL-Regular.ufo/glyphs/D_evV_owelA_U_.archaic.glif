@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVowelAU.archaic" format="2">
+  <advance width="1690"/>
+  <anchor x="1413" y="-100" name="Halant"/>
+  <anchor x="1413" y="-30" name="Lower"/>
+  <anchor x="850" y="-112" name="LowerCenter"/>
+  <anchor x="1413" y="-140" name="Nukta"/>
+  <anchor x="1413" y="1330" name="Upper"/>
+  <anchor x="930" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevVowelAA.archaic"/>
+    <component base="DevMaatraAi" xOffset="1725"/>
+  </outline>
+</glyph>

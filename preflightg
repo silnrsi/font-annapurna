@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "-----Updating UFOs from Glyphs file..."
+psfglyphs2ufo source/AnnapurnaSIL-RB.glyphs source
+
+# Continue with normal preflight
+./preflight

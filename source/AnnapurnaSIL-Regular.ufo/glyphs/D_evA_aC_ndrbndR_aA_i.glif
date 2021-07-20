@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevAaCndrbndRaAi" format="2">
+  <advance width="1423"/>
+  <outline>
+    <component base="DevMaatraAA"/>
+    <component base="DevCandrabindu" xOffset="706" yOffset="60"/>
+    <component base="DevRa" xOffset="555"/>
+    <component base="DevMaatraAi.short" xOffset="1380"/>
+  </outline>
+</glyph>

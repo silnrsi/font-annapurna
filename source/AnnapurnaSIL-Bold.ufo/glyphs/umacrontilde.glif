@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="umacrontilde" format="2">
+  <advance width="1143"/>
+  <outline>
+    <component base="umacron" yOffset="40"/>
+    <component base="tildenosp" xOffset="1111" yOffset="373"/>
+  </outline>
+</glyph>

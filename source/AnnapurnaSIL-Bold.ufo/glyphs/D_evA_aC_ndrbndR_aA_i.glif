@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevAaCndrbndRaAi" format="2">
+  <advance width="1424"/>
+  <anchor x="820" y="-96" name="Halant"/>
+  <anchor x="938" y="-92" name="Lower"/>
+  <anchor x="681" y="-144" name="LowerCenter"/>
+  <anchor x="938" y="1356" name="Upper"/>
+  <anchor x="681" y="1416" name="UpperCenter"/>
+  <outline>
+    <component base="DevMaatraAA"/>
+    <component base="DevCandrabindu" xOffset="521" yOffset="28"/>
+    <component base="DevMaatraAi.short" xOffset="1374"/>
+    <component base="DevRa" xOffset="555"/>
+  </outline>
+</glyph>

@@ -1,0 +1,34 @@
+#!/bin/sh
+# Script for calling multiple routines on a project, typically prior to committing to a repository.
+# Use this to update UFO after any edits other than with FontForge and prior to commit.
+
+# Stop on any errors
+set -e
+
+# Skipping this for now
+# echo "Updating glyph orders in Regular..."
+# psfsetglyphorder -q -p checkfix=none -p backup=False --header DesignerOrder,DesignerOrder --field public.glyphOrder,com.schriftgestaltung.glyphOrder -i source/glyph_data.csv source/*-Regular.ufo
+
+echo "Updating production names in Regular and normalizing..."
+psfsetpsnames -q -p checkfix=none -p backup=False -i source/glyph_data.csv source/AnnapurnaSIL-Regular.ufo
+
+# Check and normalize -- assumes no other steps de-normalize
+echo "Normalizing Regular UFO..."
+psfnormalize -p checkfix=fix source/AnnapurnaSIL-Regular.ufo
+wait
+
+echo "-----Update version number..."
+psfsetversion source/AnnapurnaSIL-Regular.ufo "1.901" -l source/logs/setversionR.log
+
+echo "Syncing glyph orders, psnames, and other metadata to other UFOs..."
+psfsyncmasters -q source/AnnapurnaSIL-RB.designspace
+
+echo "Updating woff metadata xml file..."
+psfmakewoffmetadata -q -n AnnapurnaSIL -i org.sil.fonts -o source/AnnapurnaSIL-WOFF-metadata.xml source/AnnapurnaSIL-Regular.ufo -l source/logs/makewoff.log
+
+echo "Building internal fea..."
+psfmakefea -q -o source/AnnapurnaSIL-Regular.ufo/features.fea -l source/logs/AnnapurnaSIL-Regular-psfmakefea.log -i source/annapurna_ot.feax source/*-Regular.ufo  &
+psfmakefea -q -o source/AnnapurnaSIL-Bold.ufo/features.fea    -l source/logs/AnnapurnaSIL-Bold-psfmakefea.log    -i source/annapurna_ot.feax source/*-Bold.ufo     &
+wait
+
+echo "preflight completed!"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevSpacingCandrabindu" format="2">
+  <advance width="1124"/>
+  <unicode hex="A8F2"/>
+  <outline>
+    <contour>
+      <point x="420" y="1406" type="curve" smooth="yes"/>
+      <point x="420" y="1370"/>
+      <point x="485" y="1305"/>
+      <point x="521" y="1305" type="curve" smooth="yes"/>
+      <point x="556" y="1305"/>
+      <point x="622" y="1370"/>
+      <point x="622" y="1406" type="curve" smooth="yes"/>
+      <point x="622" y="1441"/>
+      <point x="556" y="1507"/>
+      <point x="521" y="1507" type="curve" smooth="yes"/>
+      <point x="485" y="1507"/>
+      <point x="420" y="1441"/>
+    </contour>
+    <contour>
+      <point x="180" y="1254" type="line"/>
+      <point x="243" y="1168"/>
+      <point x="431" y="999"/>
+      <point x="573" y="999" type="curve" smooth="yes"/>
+      <point x="765" y="999"/>
+      <point x="881" y="1073"/>
+      <point x="944" y="1233" type="curve"/>
+      <point x="808" y="1319" type="line"/>
+      <point x="747" y="1177"/>
+      <point x="648" y="1108"/>
+      <point x="524" y="1108" type="curve" smooth="yes"/>
+      <point x="391" y="1108"/>
+      <point x="289" y="1206"/>
+      <point x="218" y="1294" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

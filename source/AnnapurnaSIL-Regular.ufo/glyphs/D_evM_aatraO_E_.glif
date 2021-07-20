@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraOE" format="2">
+  <advance width="1"/>
+  <unicode hex="093A"/>
+  <anchor x="-426" y="1330" name="_Upper"/>
+  <outline>
+    <contour>
+      <point x="-494" y="1292" type="line"/>
+      <point x="-359" y="1292" type="line"/>
+      <point x="-359" y="1595" type="line"/>
+      <point x="-494" y="1595" type="line"/>
+    </contour>
+  </outline>
+</glyph>

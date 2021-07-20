@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevYaNukta" format="2">
+  <advance width="1226"/>
+  <unicode hex="095F"/>
+  <anchor x="951" y="-126" name="Halant"/>
+  <anchor x="951" y="-69" name="Lower"/>
+  <anchor x="571" y="-138" name="LowerCenter"/>
+  <anchor x="952" y="1356" name="Upper"/>
+  <anchor x="571" y="1416" name="UpperCenter"/>
+  <outline>
+    <component base="DevYa"/>
+    <component base="DevNukta" xOffset="868" yOffset="367"/>
+  </outline>
+</glyph>

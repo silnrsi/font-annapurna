@@ -1,9 +1,9 @@
 /*
 AnnapurnaSIL-webfont-example.css
 AnnapurnaSIL
-14 February 2019
+10 February 2017
 This file is part of Annapurna SIL font family (http://software.sil.org/annapurna)
-and is Copyright (c) 2007-2019 SIL International (http://www.sil.org/),
+and is Copyright (c) 2017-2021 SIL International (http://www.sil.org/),
 with Reserved Font Names "Annapurna" and "SIL". This Font Software is licensed
 under the SIL Open Font License, Version 1.1. You should have received a copy
 of the license along with this Font Software. If this is not the case, go to
@@ -17,7 +17,7 @@ of the license along with this Font Software. If this is not the case, go to
   src: url(AnnapurnaSIL-Regular.woff);
 }
 
-/* set body to use Annapurna SIL in .woff format */
+/* set body to use Annapurna SIL in .ttf format */
 body {
   font-family: AnnapurnaSILW, sans-serif;
     /* fall back to sans-serif so that it's really obvious if the fonts don't load */

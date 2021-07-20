@@ -1,51 +1,53 @@
-#!/usr/bin/python
-# encoding: utf-8
-# this is a smith configuration file
-# please adjust this template to your needs
+#!/usr/bin/python3
+# this is a smith configuration file for the Annapurna font project
 
-# set the default output folders
-out = "results"
-DOCDIR = ["documentation", "web"]
-OUTDIR = "installers"
-ZIPDIR = "releases"
-TESTDIR = "tests"
-TESTRESULTSDIR = 'tests'
+# override the default folders
+DOCDIR = ['documentation', 'web']  # add 'web' to default
 STANDARDS = 'tests/reference'
 
-# set the version control system
-VCS = 'git'
-
-# set the font name, version, licensing and description
+# set package name
 APPNAME = 'AnnapurnaSIL'
-VERSION = '1.205'
-TTF_VERSION = '1.205'
-#BUILDLABEL = "alpha1"
-COPYRIGHT = 'Copyright (c) 2007-2019 SIL International(http://www.sil.org) with Reserved Font Names Annapurna and SIL"'
-LICENSE = "OFL.txt"
+
+# set the font family name
+FAMILY = APPNAME
 
 DESC_SHORT = 'Devanagari Unicode TrueType font with OT and Graphite support'
 
-# packaging
-DESC_NAME = 'Annapurna SIL'
-DEBPKG = 'fonts-sil-annapurna'
+# Get version info from Regular UFO; must be first function call:
+getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
+# BUILDLABEL = 'beta'
 
+# APs to ignore when generating OT and GDL classes
+# omitAPs = '--omitaps "UpperCenter"'
+
+# Commands to process with target font
+cmds = []
+cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']))
+cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
 
 # set the build and test parameters
-for ext in ('-Regular', '-Bold') :
-	fbase = 'AnnapurnaSIL' + ext
-	font (target = process('AnnapurnaSIL' + ext + '.ttf', name('Annapurna SIL'),
-                   cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}')),
-		source = 'source/AnnapurnaSIL' + ext + '_source.ttf',
-		version = TTF_VERSION,
-		copyright = COPYRIGHT,
-		script = ['deva', 'dev2'],
-		opentype = volt ('source/VOLT_AnnapurnaSIL' + ext + '.vtp', no_make = (1)),
-		graphite = gdl ('AnnapurnaSIL' + ext + '.gdl',
-                        params = '-e gdlerr' + ext + '.txt',
-			master = 'source/annapurna_rules.gdh'),
-		ap = 'source/AnnapurnaSIL' + ext + '_anchors.xml',
-		pdf = fret(),
-		woff = woff('web/AnnapurnaSIL' + ext + '.woff', params = '-v ' + VERSION + ' -m ../source/AnnapurnaSIL-WOFF-metadata.xml'),
+d = designspace('source/AnnapurnaSIL-RB.designspace',
+        target = process('${DS:FILENAME_BASE}.ttf', *cmds),
+        # instanceparams = "-W",
+        ap = 'source/ap/${DS:FILENAME_BASE}.xml',
+
+        opentype = fea('source/fea/${DS:FILENAME_BASE}.fea',
+            master = 'source/annapurna_ot.feax',
+            # make_params = omitAPs
+        ),
+
+        graphite = gdl('source/gdl/${DS:FILENAME_BASE}.gdl',
+            master = 'source/annapurna_gr_rules.gdh',
+            params = '-q -d -v5 -e gdlerr-${DS:FILENAME_BASE}.txt', 
+            depends = ['source/annapurna_gr_features.gdh']
+        ),
+
+        woff = woff('web/${DS:FILENAME_BASE}.woff', 
+            params = '-v ' + VERSION + ' -m ../source/AnnapurnaSIL-WOFF-metadata.xml'
+        ),
+
+        script = ['deva', 'dev2'],
+        pdf = fret(params="-r -oi"),
 	)
 
 def configure(ctx) :

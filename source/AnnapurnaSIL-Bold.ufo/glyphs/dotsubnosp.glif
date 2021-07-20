@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotsubnosp" format="2">
+  <unicode hex="0323"/>
+  <outline>
+    <contour>
+      <point x="-412" y="-252" type="curve" smooth="yes"/>
+      <point x="-412" y="-176"/>
+      <point x="-468" y="-117"/>
+      <point x="-538" y="-117" type="curve" smooth="yes"/>
+      <point x="-612" y="-117"/>
+      <point x="-663" y="-178"/>
+      <point x="-663" y="-252" type="curve" smooth="yes"/>
+      <point x="-663" y="-323"/>
+      <point x="-610" y="-377"/>
+      <point x="-538" y="-377" type="curve" smooth="yes"/>
+      <point x="-466" y="-377"/>
+      <point x="-412" y="-319"/>
+    </contour>
+  </outline>
+</glyph>

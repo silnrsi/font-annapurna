@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevZha" format="2">
+  <advance width="1422"/>
+  <unicode hex="0979"/>
+  <anchor x="1145" y="-100" name="Halant"/>
+  <anchor x="1145" y="-200" name="Lower"/>
+  <anchor x="618" y="-352" name="LowerCenter"/>
+  <anchor x="1145" y="-140" name="Nukta"/>
+  <anchor x="1145" y="1330" name="Upper"/>
+  <anchor x="679" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevJa"/>
+    <component base="DevNukta" xOffset="821" yOffset="312"/>
+    <component base="DevNukta" xOffset="1021" yOffset="102"/>
+    <component base="DevNukta" xOffset="1221" yOffset="312"/>
+  </outline>
+</glyph>

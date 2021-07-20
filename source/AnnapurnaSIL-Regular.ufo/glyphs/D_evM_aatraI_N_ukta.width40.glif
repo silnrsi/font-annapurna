@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevMaatraINukta.width40" format="2">
+  <advance width="555"/>
+  <anchor x="278" y="-100" name="Halant"/>
+  <anchor x="278" y="1330" name="Upper"/>
+  <outline>
+    <component base="DevNukta" xOffset="681"/>
+    <contour>
+      <point x="565" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="641" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="210" y="78" type="line"/>
+      <point x="345" y="0" type="line"/>
+      <point x="345" y="1320" type="line"/>
+      <point x="210" y="1320" type="line"/>
+    </contour>
+    <contour>
+      <point x="382" y="1208" type="line"/>
+      <point x="309" y="1328"/>
+      <point x="263" y="1436"/>
+      <point x="263" y="1524" type="curve" smooth="yes"/>
+      <point x="263" y="1660"/>
+      <point x="372" y="1746"/>
+      <point x="660" y="1746" type="curve" smooth="yes"/>
+      <point x="1053" y="1746"/>
+      <point x="1668" y="1561"/>
+      <point x="2074" y="1285" type="curve"/>
+      <point x="2115" y="1321" type="line"/>
+      <point x="1705" y="1627"/>
+      <point x="1010" y="1831"/>
+      <point x="561" y="1831" type="curve" smooth="yes"/>
+      <point x="240" y="1831"/>
+      <point x="109" y="1739"/>
+      <point x="109" y="1592" type="curve" smooth="yes"/>
+      <point x="109" y="1498"/>
+      <point x="162" y="1382"/>
+      <point x="253" y="1252" type="curve"/>
+    </contour>
+  </outline>
+</glyph>
