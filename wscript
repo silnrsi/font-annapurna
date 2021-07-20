@@ -28,7 +28,7 @@ cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
 # set the build and test parameters
 d = designspace('source/AnnapurnaSIL-RB.designspace',
         target = process('${DS:FILENAME_BASE}.ttf', *cmds),
-        instanceparams = "-W",
+        # instanceparams = "-W",
         ap = 'source/ap/${DS:FILENAME_BASE}.xml',
 
         opentype = fea('source/fea/${DS:FILENAME_BASE}.fea',

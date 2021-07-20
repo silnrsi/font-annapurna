@@ -16,7 +16,7 @@
         </axis>
     </axes>
     <sources>
-        <source familyname="Annapurna SIL" filename="AnnapurnaSIL-Regular.ufo" name="AnnapurnaSIL Regular" stylename="Regular">
+        <source familyname="Annapurna SIL" filename="AnnapurnaSIL-Regular.ufo" name="Annapurna SIL Regular" stylename="Regular">
             <lib copy="1" />
             <groups copy="1" />
             <features copy="1" />
@@ -27,7 +27,7 @@
                 <dimension name="custom" xvalue="0.000000" />
             </location>
         </source>
-        <source familyname="Annapurna SIL" filename="AnnapurnaSIL-Bold.ufo" name="AnnapurnaSIL Bold" stylename="Bold">
+        <source familyname="Annapurna SIL" filename="AnnapurnaSIL-Bold.ufo" name="Annapurna SIL Bold" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="700" />
                 <dimension name="width" xvalue="100" />
