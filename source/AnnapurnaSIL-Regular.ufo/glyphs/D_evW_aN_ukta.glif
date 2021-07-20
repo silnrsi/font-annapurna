@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevWaNukta" format="1">
+<glyph name="DevWaNukta" format="2">
   <advance width="1331"/>
+  <anchor x="1054" y="-100" name="Halant"/>
+  <anchor x="1054" y="-30" name="Lower"/>
+  <anchor x="688" y="-112" name="LowerCenter"/>
+  <anchor x="1054" y="1330" name="Upper"/>
+  <anchor x="687" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevWa"/>
     <component base="DevNukta" xOffset="964" yOffset="312"/>
-    <contour>
-      <point x="1054" y="-100" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1054" y="-30" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="688" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1054" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="687" y="1390" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

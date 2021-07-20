@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfTta" format="1">
+<glyph name="DevHalfTta" format="2">
   <advance width="1127"/>
+  <anchor x="563" y="-638" name="LowerAlt"/>
+  <anchor x="850" y="1356" name="Upper"/>
+  <anchor x="574" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevTta"/>
     <component base="DevHalant" xOffset="870" yOffset="7"/>
-    <contour>
-      <point x="563" y="-638" type="move" name="LowerAlt"/>
-    </contour>
-    <contour>
-      <point x="850" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="574" y="1416" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

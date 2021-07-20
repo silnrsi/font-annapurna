@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfGaNukta" format="1">
+<glyph name="DevHalfGaNukta" format="2">
   <advance width="690"/>
+  <anchor x="345" y="-138" name="LowerAlt"/>
   <outline>
     <component base="DevHalfGa"/>
     <component base="DevNukta" xOffset="806" yOffset="393"/>
-    <contour>
-      <point x="345" y="-138" type="move" name="LowerAlt"/>
-    </contour>
   </outline>
 </glyph>

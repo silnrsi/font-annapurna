@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfJha" format="1">
+<glyph name="DevHalfJha" format="2">
   <advance width="1111"/>
+  <anchor x="555" y="-112" name="LowerAlt"/>
+  <anchor x="787" y="1330" name="Upper"/>
+  <anchor x="616" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="1146" y="685" type="line"/>
@@ -81,15 +84,6 @@
       <point x="361" y="878"/>
       <point x="469" y="878" type="curve" smooth="yes"/>
       <point x="853" y="878" type="line"/>
-    </contour>
-    <contour>
-      <point x="555" y="-112" type="move" name="LowerAlt"/>
-    </contour>
-    <contour>
-      <point x="787" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="616" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

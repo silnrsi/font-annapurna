@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfBa" format="1">
+<glyph name="DevHalfBa" format="2">
   <advance width="1011"/>
+  <anchor x="469" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="180" y="649" type="curve" smooth="yes"/>
@@ -53,9 +54,6 @@
       <point x="-5" y="1320" type="line"/>
       <point x="71" y="1188" type="line"/>
       <point x="1097" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="469" y="-112" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

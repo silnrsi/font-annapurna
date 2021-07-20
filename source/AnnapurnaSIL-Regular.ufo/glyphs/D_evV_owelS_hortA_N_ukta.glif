@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevVowelShortANukta" format="1">
+<glyph name="DevVowelShortANukta" format="2">
   <advance width="1681"/>
+  <anchor x="1405" y="-400" name="Halant"/>
+  <anchor x="1405" y="-360" name="Lower"/>
+  <anchor x="868" y="-112" name="LowerCenter"/>
+  <anchor x="1405" y="1330" name="Upper"/>
+  <anchor x="871" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevNukta" xOffset="1808"/>
     <component base="DevMaatraShortE" xOffset="1636"/>
@@ -81,21 +86,6 @@
       <point x="978" y="697"/>
       <point x="846" y="787"/>
       <point x="791" y="836" type="curve"/>
-    </contour>
-    <contour>
-      <point x="1405" y="-400" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1405" y="-360" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="868" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1405" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="871" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

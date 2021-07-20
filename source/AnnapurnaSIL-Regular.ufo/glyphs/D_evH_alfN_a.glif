@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfNa" format="1">
+<glyph name="DevHalfNa" format="2">
   <advance width="768"/>
+  <anchor x="384" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="778" y="1320" type="line"/>
@@ -22,9 +23,6 @@
       <point x="392" y="541" type="curve" smooth="yes"/>
       <point x="392" y="643" type="line"/>
       <point x="798" y="643" type="line"/>
-    </contour>
-    <contour>
-      <point x="384" y="-112" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

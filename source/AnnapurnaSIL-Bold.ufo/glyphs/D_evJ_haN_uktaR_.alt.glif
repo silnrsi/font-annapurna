@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevJhaNuktaR.alt" format="1">
+<glyph name="DevJhaNuktaR.alt" format="2">
   <advance width="1906"/>
+  <anchor x="1099" y="-126" name="Halant"/>
+  <anchor x="1099" y="-69" name="Lower"/>
+  <anchor x="1099" y="-138" name="LowerCenter"/>
+  <anchor x="1099" y="1356" name="Upper"/>
+  <anchor x="1099" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevNukta" xOffset="770" yOffset="490"/>
     <contour>
@@ -95,21 +100,6 @@
       <point x="904" y="1346" type="line"/>
       <point x="1011" y="1161" type="line"/>
       <point x="2017" y="1161" type="line"/>
-    </contour>
-    <contour>
-      <point x="1099" y="-126" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1099" y="-69" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="1099" y="-138" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1099" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="1099" y="1416" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

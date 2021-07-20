@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfPhaR" format="1">
+<glyph name="DevHalfPhaR" format="2">
   <advance width="1176"/>
+  <anchor x="569" y="-138" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="841" y="769" type="line"/>
@@ -70,9 +71,6 @@
       <point x="238" y="76" type="line"/>
       <point x="507" y="76" type="line"/>
       <point x="838" y="380" type="line"/>
-    </contour>
-    <contour>
-      <point x="569" y="-138" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

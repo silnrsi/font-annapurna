@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevJ.NyaR" format="1">
+<glyph name="DevJ.NyaR" format="2">
   <advance width="1271"/>
+  <anchor x="994" y="-98" name="Halant"/>
+  <anchor x="994" y="-130" name="Lower"/>
+  <anchor x="628" y="-280" name="LowerCenter"/>
+  <anchor x="994" y="1330" name="Upper"/>
+  <anchor x="628" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="956" y="977" type="line"/>
@@ -57,21 +62,6 @@
       <point x="666" y="99" type="line"/>
       <point x="815" y="99" type="line"/>
       <point x="983" y="251" type="line"/>
-    </contour>
-    <contour>
-      <point x="994" y="-98" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="994" y="-130" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="628" y="-280" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="994" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="628" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

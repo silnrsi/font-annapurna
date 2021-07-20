@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevJjaNukta" format="1">
+<glyph name="DevJjaNukta" format="2">
   <advance width="1422"/>
+  <anchor x="1143" y="-126" name="Halant"/>
+  <anchor x="1143" y="-69" name="Lower"/>
+  <anchor x="678" y="-138" name="LowerCenter"/>
+  <anchor x="1143" y="1356" name="Upper"/>
+  <anchor x="679" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevJja"/>
     <component base="DevNukta" xOffset="533" yOffset="602"/>
-    <contour>
-      <point x="1143" y="-126" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1143" y="-69" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="678" y="-138" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1143" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="679" y="1416" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

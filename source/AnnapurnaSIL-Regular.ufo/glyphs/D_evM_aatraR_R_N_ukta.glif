@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraRRNukta" format="1">
+<glyph name="DevMaatraRRNukta" format="2">
   <advance width="1"/>
+  <anchor x="-407" y="-60" name="_Lower"/>
   <outline>
     <component base="DevMaatraRR"/>
     <component base="DevNukta" xOffset="-45" yOffset="-656"/>
-    <contour>
-      <point x="-407" y="-60" type="move" name="_Lower"/>
-    </contour>
   </outline>
 </glyph>

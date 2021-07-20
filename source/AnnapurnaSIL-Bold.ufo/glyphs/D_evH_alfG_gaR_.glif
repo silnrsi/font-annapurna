@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfGgaR" format="1">
+<glyph name="DevHalfGgaR" format="2">
   <advance width="800"/>
+  <anchor x="352" y="-138" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="830" y="158" type="line"/>
@@ -38,9 +39,6 @@
       <point x="478" y="262" type="line"/>
       <point x="767" y="262" type="line"/>
       <point x="830" y="320" type="line"/>
-    </contour>
-    <contour>
-      <point x="352" y="-138" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

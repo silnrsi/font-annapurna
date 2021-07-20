@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfMa" format="1">
+<glyph name="DevHalfMa" format="2">
   <advance width="762"/>
+  <anchor x="381" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="767" y="1320" type="line"/>
@@ -34,9 +35,6 @@
       <point x="372" y="435" type="curve" smooth="yes"/>
       <point x="372" y="537" type="line"/>
       <point x="792" y="537" type="line"/>
-    </contour>
-    <contour>
-      <point x="381" y="-112" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

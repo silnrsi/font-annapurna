@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevYaR.alt" format="1">
+<glyph name="DevYaR.alt" format="2">
   <advance width="1474"/>
+  <anchor x="1195" y="-126" name="Halant"/>
+  <anchor x="1195" y="-69" name="Lower"/>
+  <anchor x="721" y="-138" name="LowerCenter"/>
+  <anchor x="1196" y="1356" name="Upper"/>
+  <anchor x="720" y="1416" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="779" y="1346" type="line"/>
@@ -59,21 +64,6 @@
       <point x="590" y="1041"/>
       <point x="412" y="1041" type="curve" smooth="yes"/>
       <point x="59" y="1041" type="line"/>
-    </contour>
-    <contour>
-      <point x="1195" y="-126" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1195" y="-69" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="721" y="-138" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1196" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="720" y="1416" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

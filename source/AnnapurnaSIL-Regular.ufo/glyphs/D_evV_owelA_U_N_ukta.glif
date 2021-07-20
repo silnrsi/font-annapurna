@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevVowelAUNukta" format="1">
+<glyph name="DevVowelAUNukta" format="2">
   <advance width="2211"/>
+  <anchor x="1936" y="-400" name="Halant"/>
+  <anchor x="1936" y="-360" name="Lower"/>
+  <anchor x="818" y="-112" name="LowerCenter"/>
+  <anchor x="1936" y="1330" name="Upper"/>
+  <anchor x="821" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevVowelAA"/>
     <component base="DevNukta" xOffset="2339"/>
     <component base="DevMaatraAi" xOffset="2241"/>
-    <contour>
-      <point x="1936" y="-400" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1936" y="-360" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="818" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1936" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="821" y="1390" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

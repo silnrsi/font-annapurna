@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraUNukta" format="1">
+<glyph name="DevMaatraUNukta" format="2">
+  <anchor x="-390" y="-60" name="_Lower"/>
   <outline>
     <contour>
       <point x="-419" y="-40" type="curve" smooth="yes"/>
@@ -42,9 +43,6 @@
       <point x="-679" y="-208" type="curve" smooth="yes"/>
       <point x="-716" y="-208"/>
       <point x="-800" y="-293"/>
-    </contour>
-    <contour>
-      <point x="-390" y="-60" type="move" name="_Lower"/>
     </contour>
   </outline>
 </glyph>

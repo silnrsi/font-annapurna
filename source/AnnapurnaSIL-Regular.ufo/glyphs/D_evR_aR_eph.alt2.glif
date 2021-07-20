@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevRaReph.alt2" format="1">
+<glyph name="DevRaReph.alt2" format="2">
   <advance width="2"/>
+  <anchor x="-230" y="1330" name="_Upper"/>
   <outline>
     <contour>
       <point x="-387" y="1658" type="curve" smooth="yes"/>
@@ -23,9 +24,6 @@
       <point x="-220" y="1310" type="line"/>
       <point x="-306" y="1390"/>
       <point x="-387" y="1545"/>
-    </contour>
-    <contour>
-      <point x="-230" y="1330" type="move" name="_Upper"/>
     </contour>
   </outline>
 </glyph>

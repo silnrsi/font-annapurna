@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevVowelShortE" format="1">
+<glyph name="DevVowelShortE" format="2">
   <advance width="1097"/>
   <unicode hex="090E"/>
+  <anchor x="561" y="-121" name="Halant"/>
+  <anchor x="561" y="-30" name="Lower"/>
+  <anchor x="561" y="-110" name="LowerCenter"/>
+  <anchor x="810" y="1330" name="Upper"/>
+  <anchor x="570" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevVowelE"/>
     <component base="DevMaatraShortE" xOffset="1040"/>
-    <contour>
-      <point x="561" y="-121" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="561" y="-30" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="561" y="-110" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="810" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="570" y="1390" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

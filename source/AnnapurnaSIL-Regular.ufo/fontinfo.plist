@@ -13,7 +13,7 @@
   <key>familyName</key>
   <string>Annapurna SIL</string>
   <key>openTypeHeadCreated</key>
-  <string>2021/06/25 18:09:22</string>
+  <string>2021/07/20 12:56:43</string>
   <key>openTypeHheaAscender</key>
   <integer>1939</integer>
   <key>openTypeHheaDescender</key>
@@ -161,8 +161,6 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <integer>984</integer>
   <key>postscriptBlueValues</key>
   <array>
-    <integer>0</integer>
-    <integer>0</integer>
     <integer>1319</integer>
     <integer>1351</integer>
   </array>

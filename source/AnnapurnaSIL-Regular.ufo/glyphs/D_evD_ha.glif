@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevDha" format="1">
+<glyph name="DevDha" format="2">
   <advance width="1493"/>
   <unicode hex="0927"/>
+  <anchor x="1220" y="-100" name="Halant"/>
+  <anchor x="1219" y="-30" name="Lower"/>
+  <anchor x="799" y="-112" name="LowerCenter"/>
+  <anchor x="1219" y="1330" name="Upper"/>
+  <anchor x="799" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="1155" y="809" type="line"/>
@@ -85,21 +90,6 @@
       <point x="1283" y="0" type="line"/>
       <point x="1283" y="1320" type="line"/>
       <point x="1148" y="1320" type="line"/>
-    </contour>
-    <contour>
-      <point x="1220" y="-100" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1219" y="-30" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="799" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1219" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="799" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

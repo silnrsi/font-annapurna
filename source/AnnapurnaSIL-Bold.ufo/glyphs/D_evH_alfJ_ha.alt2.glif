@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfJha.alt2" format="1">
+<glyph name="DevHalfJha.alt2" format="2">
   <advance width="1350"/>
+  <anchor x="639" y="-138" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="912" y="1346" type="line"/>
@@ -69,9 +70,6 @@
       <point x="1207" y="616"/>
       <point x="1133" y="516"/>
       <point x="1066" y="433" type="curve"/>
-    </contour>
-    <contour>
-      <point x="639" y="-138" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

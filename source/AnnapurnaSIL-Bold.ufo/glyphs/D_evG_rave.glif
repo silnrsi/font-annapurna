@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevGrave" format="1">
+<glyph name="DevGrave" format="2">
   <advance width="2"/>
   <unicode hex="0953"/>
+  <anchor x="-380" y="1390" name="_UpperCenter"/>
   <outline>
     <contour>
       <point x="-479" y="1762" type="line"/>
       <point x="-811" y="1762" type="line"/>
       <point x="-420" y="1408" type="line"/>
       <point x="-193" y="1408" type="line"/>
-    </contour>
-    <contour>
-      <point x="-380" y="1390" type="move" name="_UpperCenter"/>
     </contour>
   </outline>
 </glyph>

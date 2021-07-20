@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfHa" format="1">
+<glyph name="DevHalfHa" format="2">
   <advance width="1134"/>
+  <anchor x="567" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="789" y="1220" type="line"/>
@@ -54,9 +55,6 @@
       <point x="968" y="-62" type="line"/>
       <point x="718" y="-25"/>
       <point x="482" y="59"/>
-    </contour>
-    <contour>
-      <point x="567" y="-112" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

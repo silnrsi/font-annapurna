@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraCandraE" format="1">
+<glyph name="DevMaatraCandraE" format="2">
   <advance width="7"/>
   <unicode hex="0945"/>
+  <anchor x="-381" y="1330" name="_Upper"/>
+  <anchor x="-375" y="1330" name="_UpperCenter"/>
   <outline>
     <contour>
       <point x="-803" y="1717" type="line"/>
@@ -18,12 +20,6 @@
       <point x="-548" y="1566"/>
       <point x="-681" y="1649"/>
       <point x="-759" y="1763" type="curve"/>
-    </contour>
-    <contour>
-      <point x="-381" y="1330" type="move" name="_Upper"/>
-    </contour>
-    <contour>
-      <point x="-375" y="1330" type="move" name="_UpperCenter"/>
     </contour>
   </outline>
 </glyph>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevDddaR" format="1">
+<glyph name="DevDddaR" format="2">
   <advance width="1357"/>
+  <anchor x="940" y="-550" name="Halant"/>
+  <anchor x="940" y="-570" name="Lower"/>
+  <anchor x="582" y="-600" name="LowerCenter"/>
+  <anchor x="940" y="1330" name="Upper"/>
+  <anchor x="582" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevRaVattu" xOffset="1221" yOffset="-268"/>
     <contour>
@@ -73,21 +78,6 @@
       <point x="237" y="-40" type="line"/>
       <point x="313" y="-172" type="line"/>
       <point x="1243" y="-172" type="line"/>
-    </contour>
-    <contour>
-      <point x="940" y="-550" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="940" y="-570" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="582" y="-600" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="940" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="582" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

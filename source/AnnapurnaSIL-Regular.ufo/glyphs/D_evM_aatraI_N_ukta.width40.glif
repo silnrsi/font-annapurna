@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraINukta.width40" format="1">
+<glyph name="DevMaatraINukta.width40" format="2">
   <advance width="555"/>
+  <anchor x="278" y="-100" name="Halant"/>
+  <anchor x="278" y="1330" name="Upper"/>
   <outline>
     <component base="DevNukta" xOffset="681"/>
     <contour>
@@ -36,12 +38,6 @@
       <point x="109" y="1498"/>
       <point x="162" y="1382"/>
       <point x="253" y="1252" type="curve"/>
-    </contour>
-    <contour>
-      <point x="278" y="-100" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="278" y="1330" type="move" name="Upper"/>
     </contour>
   </outline>
 </glyph>

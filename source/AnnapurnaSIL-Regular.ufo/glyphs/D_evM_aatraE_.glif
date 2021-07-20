@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraE" format="1">
+<glyph name="DevMaatraE" format="2">
   <advance width="2"/>
   <unicode hex="0947"/>
+  <anchor x="-1060" y="1600" name="NuktaAlt"/>
+  <anchor x="-297" y="1330" name="_Upper"/>
   <outline>
     <contour>
       <point x="-264" y="1308" type="line"/>
@@ -18,12 +20,6 @@
       <point x="-694" y="1726"/>
       <point x="-493" y="1525"/>
       <point x="-311" y="1308" type="curve"/>
-    </contour>
-    <contour>
-      <point x="-1060" y="1600" type="move" name="NuktaAlt"/>
-    </contour>
-    <contour>
-      <point x="-297" y="1330" type="move" name="_Upper"/>
     </contour>
   </outline>
 </glyph>

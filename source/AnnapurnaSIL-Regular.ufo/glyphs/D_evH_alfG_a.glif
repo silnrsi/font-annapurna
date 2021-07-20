@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfGa" format="1">
+<glyph name="DevHalfGa" format="2">
   <advance width="690"/>
+  <anchor x="345" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="345" y="1234" type="line"/>
@@ -28,9 +29,6 @@
       <point x="-86" y="1320" type="line"/>
       <point x="-10" y="1188" type="line"/>
       <point x="776" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="345" y="-112" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

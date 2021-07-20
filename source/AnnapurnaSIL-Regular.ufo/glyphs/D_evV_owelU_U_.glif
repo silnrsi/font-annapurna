@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevVowelUU" format="1">
+<glyph name="DevVowelUU" format="2">
   <advance width="1560"/>
   <unicode hex="090A"/>
+  <anchor x="610" y="-100" name="Halant"/>
+  <anchor x="610" y="-30" name="Lower"/>
+  <anchor x="610" y="-112" name="LowerCenter"/>
+  <anchor x="700" y="1330" name="Upper"/>
+  <anchor x="700" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="648" y="1188" type="line"/>
@@ -77,21 +82,6 @@
       <point x="568" y="1320" type="line"/>
       <point x="644" y="1188" type="line"/>
       <point x="1646" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="610" y="-100" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="610" y="-30" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="610" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="700" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="700" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

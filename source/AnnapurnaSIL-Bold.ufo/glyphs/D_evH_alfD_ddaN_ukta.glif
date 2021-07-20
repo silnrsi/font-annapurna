@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfDddaNukta" format="1">
+<glyph name="DevHalfDddaNukta" format="2">
   <advance width="1357"/>
+  <anchor x="678" y="-638" name="LowerAlt"/>
+  <anchor x="940" y="1356" name="Upper"/>
+  <anchor x="582" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevDdda"/>
     <component base="DevHalant" xOffset="1130" yOffset="-173"/>
     <component base="DevNukta" xOffset="524" yOffset="459"/>
-    <contour>
-      <point x="678" y="-638" type="move" name="LowerAlt"/>
-    </contour>
-    <contour>
-      <point x="940" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="582" y="1416" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevNgAaCndrbndRaAi.001" format="1">
+<glyph name="DevNgAaCndrbndRaAi.001" format="2">
   <advance width="2819"/>
+  <anchor x="820" y="-96" name="Halant"/>
+  <anchor x="938" y="-92" name="Lower"/>
+  <anchor x="681" y="-144" name="LowerCenter"/>
+  <anchor x="938" y="1356" name="Upper"/>
+  <anchor x="681" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevNga"/>
     <component base="DevMaatraAA" xOffset="1396"/>
     <component base="DevCandrabindu" xOffset="1917" yOffset="28"/>
     <component base="DevMaatraE.short" xOffset="2770"/>
     <component base="DevRa" xOffset="1951"/>
-    <contour>
-      <point x="820" y="-96" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="938" y="-92" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="681" y="-144" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="938" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="681" y="1416" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

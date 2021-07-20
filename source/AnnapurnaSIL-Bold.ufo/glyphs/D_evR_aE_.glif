@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevRaE" format="1">
+<glyph name="DevRaE" format="2">
   <advance width="868"/>
+  <anchor x="820" y="-96" name="Halant"/>
+  <anchor x="938" y="-92" name="Lower"/>
+  <anchor x="681" y="-144" name="LowerCenter"/>
+  <anchor x="938" y="1356" name="Upper"/>
+  <anchor x="681" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevMaatraE.short" xOffset="819"/>
     <component base="DevRa"/>
-    <contour>
-      <point x="820" y="-96" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="938" y="-92" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="681" y="-144" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="938" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="681" y="1416" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

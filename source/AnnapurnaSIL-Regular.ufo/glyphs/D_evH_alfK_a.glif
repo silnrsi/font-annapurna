@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfKa" format="1">
+<glyph name="DevHalfKa" format="2">
   <advance width="1218"/>
+  <anchor x="609" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="837" y="1320" type="line"/>
@@ -67,9 +68,6 @@
       <point x="505" y="846" type="curve" smooth="yes"/>
       <point x="654" y="846"/>
       <point x="772" y="755"/>
-    </contour>
-    <contour>
-      <point x="609" y="-112" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

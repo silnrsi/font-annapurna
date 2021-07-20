@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfTaR" format="1">
+<glyph name="DevHalfTaR" format="2">
   <advance width="932"/>
+  <anchor x="434" y="-138" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="247" y="266" type="line"/>
@@ -36,9 +37,6 @@
       <point x="808" y="676"/>
       <point x="957" y="617" type="curve"/>
       <point x="962" y="630" type="line"/>
-    </contour>
-    <contour>
-      <point x="434" y="-138" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

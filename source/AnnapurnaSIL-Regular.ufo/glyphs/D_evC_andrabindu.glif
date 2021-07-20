@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevCandrabindu" format="1">
+<glyph name="DevCandrabindu" format="2">
   <advance width="2"/>
   <unicode hex="0901"/>
+  <anchor x="-427" y="1270" name="_Upper"/>
+  <anchor x="-427" y="1330" name="_UpperCenter"/>
   <outline>
     <contour>
       <point x="-529" y="1806" type="curve" smooth="yes"/>
@@ -32,12 +34,6 @@
       <point x="-558" y="1508"/>
       <point x="-660" y="1606"/>
       <point x="-731" y="1694" type="curve"/>
-    </contour>
-    <contour>
-      <point x="-427" y="1270" type="move" name="_Upper"/>
-    </contour>
-    <contour>
-      <point x="-427" y="1330" type="move" name="_UpperCenter"/>
     </contour>
   </outline>
 </glyph>

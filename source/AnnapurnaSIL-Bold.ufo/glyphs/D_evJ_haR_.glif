@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevJhaR" format="1">
+<glyph name="DevJhaR" format="2">
   <advance width="1490"/>
+  <anchor x="1214" y="-126" name="Halant"/>
+  <anchor x="1214" y="-69" name="Lower"/>
+  <anchor x="783" y="-238" name="LowerCenter"/>
+  <anchor x="1215" y="1356" name="Upper"/>
+  <anchor x="783" y="1416" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="858" y="1346" type="line"/>
@@ -97,21 +102,6 @@
       <point x="373" y="856"/>
       <point x="455" y="856" type="curve" smooth="yes"/>
       <point x="801" y="856" type="line"/>
-    </contour>
-    <contour>
-      <point x="1214" y="-126" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1214" y="-69" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="783" y="-238" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1215" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="783" y="1416" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

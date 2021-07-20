@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraOE" format="1">
+<glyph name="DevMaatraOE" format="2">
   <advance width="1"/>
   <unicode hex="093A"/>
+  <anchor x="-426" y="1330" name="_Upper"/>
   <outline>
     <contour>
       <point x="-519" y="1703" type="line"/>
       <point x="-519" y="1291" type="line"/>
       <point x="-333" y="1291" type="line"/>
       <point x="-333" y="1703" type="line"/>
-    </contour>
-    <contour>
-      <point x="-426" y="1330" type="move" name="_Upper"/>
     </contour>
   </outline>
 </glyph>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfHaNuktaR" format="1">
+<glyph name="DevHalfHaNuktaR" format="2">
   <advance width="1234"/>
+  <anchor x="567" y="-611" name="LowerAlt"/>
   <outline>
     <component base="DevHalant" xOffset="998" yOffset="-133"/>
     <component base="DevNukta" xOffset="694" yOffset="109"/>
@@ -72,9 +73,6 @@
       <point x="243" y="1320" type="line"/>
       <point x="319" y="1188" type="line"/>
       <point x="1319" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="567" y="-611" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

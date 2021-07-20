@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevD.Ma" format="1">
+<glyph name="DevD.Ma" format="2">
   <advance width="1667"/>
+  <anchor x="1391" y="-124" name="Halant"/>
+  <anchor x="1391" y="-69" name="Lower"/>
+  <anchor x="876" y="-138" name="LowerCenter"/>
+  <anchor x="1391" y="1356" name="Upper"/>
+  <anchor x="876" y="1416" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="692" y="404" type="line"/>
@@ -68,21 +73,6 @@
       <point x="1483" y="-25" type="line"/>
       <point x="1483" y="1346" type="line"/>
       <point x="1295" y="1346" type="line"/>
-    </contour>
-    <contour>
-      <point x="1391" y="-124" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1391" y="-69" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="876" y="-138" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1391" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="876" y="1416" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

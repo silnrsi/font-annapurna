@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraAiRephCandrabindu" format="1">
+<glyph name="DevMaatraAiRephCandrabindu" format="2">
   <advance width="3"/>
+  <anchor x="-547" y="1330" name="_Upper"/>
   <outline>
     <component base="DevMaatraAi" xOffset="-235"/>
     <component base="DevCandrabindu.alt" xOffset="126"/>
@@ -25,9 +26,6 @@
       <point x="-417" y="1284" type="line"/>
       <point x="-507" y="1369"/>
       <point x="-604" y="1537"/>
-    </contour>
-    <contour>
-      <point x="-547" y="1330" type="move" name="_Upper"/>
     </contour>
   </outline>
 </glyph>

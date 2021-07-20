@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraIIReph" format="1">
+<glyph name="DevMaatraIIReph" format="2">
   <advance width="555"/>
+  <anchor x="285" y="-126" name="Halant"/>
+  <anchor x="286" y="1356" name="Upper"/>
   <outline>
     <component base="DevRaReph.alt2" xOffset="594"/>
     <contour>
@@ -42,12 +44,6 @@
       <point x="-438" y="1511"/>
       <point x="-395" y="1412"/>
       <point x="-339" y="1316" type="curve"/>
-    </contour>
-    <contour>
-      <point x="285" y="-126" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="286" y="1356" type="move" name="Upper"/>
     </contour>
   </outline>
 </glyph>

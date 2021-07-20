@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevInvCandrabindu" format="1">
+<glyph name="DevInvCandrabindu" format="2">
   <advance width="2"/>
   <unicode hex="0900"/>
+  <anchor x="-347" y="1270" name="_Upper"/>
+  <anchor x="-347" y="1330" name="_UpperCenter"/>
   <outline>
     <component base="DevNukta" xOffset="55" yOffset="1802"/>
     <contour>
@@ -19,12 +21,6 @@
       <point x="-244" y="1800"/>
       <point x="-167" y="1744"/>
       <point x="-51" y="1599" type="curve"/>
-    </contour>
-    <contour>
-      <point x="-347" y="1270" type="move" name="_Upper"/>
-    </contour>
-    <contour>
-      <point x="-347" y="1330" type="move" name="_UpperCenter"/>
     </contour>
   </outline>
 </glyph>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevNg.Kha" format="1">
+<glyph name="DevNg.Kha" format="2">
   <advance width="1264"/>
+  <anchor x="910" y="-598" name="Halant"/>
+  <anchor x="910" y="-530" name="Lower"/>
+  <anchor x="690" y="-612" name="LowerCenter"/>
+  <anchor x="846" y="1330" name="Upper"/>
+  <anchor x="690" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="292" y="641" type="line"/>
@@ -138,21 +143,6 @@
       <point x="957" y="-494" type="line"/>
       <point x="957" y="430" type="line"/>
       <point x="863" y="430" type="line"/>
-    </contour>
-    <contour>
-      <point x="910" y="-598" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="910" y="-530" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="690" y="-612" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="846" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="690" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

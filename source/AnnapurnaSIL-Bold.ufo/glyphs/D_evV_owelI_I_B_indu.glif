@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevVowelIIBindu" format="1">
+<glyph name="DevVowelIIBindu" format="2">
   <advance width="1063"/>
+  <anchor x="446" y="-244" name="Halant"/>
+  <anchor x="446" y="-179" name="Lower"/>
+  <anchor x="577" y="-253" name="LowerCenter"/>
+  <anchor x="787" y="1356" name="Upper"/>
+  <anchor x="569" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevRaReph.alt2" xOffset="1015"/>
     <component base="DevAnusvara" xOffset="1072"/>
@@ -71,21 +76,6 @@
       <point x="403" y="852"/>
       <point x="489" y="852" type="curve" smooth="yes"/>
       <point x="879" y="852" type="line"/>
-    </contour>
-    <contour>
-      <point x="446" y="-244" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="446" y="-179" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="577" y="-253" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="787" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="569" y="1416" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

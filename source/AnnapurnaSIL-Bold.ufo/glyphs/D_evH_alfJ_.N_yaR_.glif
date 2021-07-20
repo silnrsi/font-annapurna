@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevHalfJ.NyaR" format="1">
+<glyph name="DevHalfJ.NyaR" format="2">
   <advance width="970"/>
+  <anchor x="450" y="-138" name="LowerAlt"/>
   <outline>
     <contour>
       <point x="719" y="1346" type="line"/>
@@ -52,9 +53,6 @@
       <point x="622" y="161" type="line"/>
       <point x="801" y="161" type="line"/>
       <point x="1000" y="345" type="line"/>
-    </contour>
-    <contour>
-      <point x="450" y="-138" type="move" name="LowerAlt"/>
     </contour>
   </outline>
 </glyph>

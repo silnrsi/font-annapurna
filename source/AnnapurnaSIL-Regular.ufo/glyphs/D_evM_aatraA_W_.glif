@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevMaatraAW" format="1">
+<glyph name="DevMaatraAW" format="2">
   <advance width="555"/>
   <unicode hex="094F"/>
+  <anchor x="277" y="-100" name="Halant"/>
+  <anchor x="277" y="-30" name="Lower"/>
+  <anchor x="277" y="-112" name="LowerCenter"/>
+  <anchor x="277" y="-140" name="Nukta"/>
+  <anchor x="277" y="1330" name="Upper"/>
+  <anchor x="277" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevMaatraAA"/>
     <contour>
@@ -63,24 +69,6 @@
       <point x="43" y="1872"/>
       <point x="49" y="1893"/>
       <point x="60" y="1916" type="curve"/>
-    </contour>
-    <contour>
-      <point x="277" y="-100" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="277" y="-30" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="277" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="277" y="-140" type="move" name="Nukta"/>
-    </contour>
-    <contour>
-      <point x="277" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="277" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

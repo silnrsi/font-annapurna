@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevNga" format="1">
+<glyph name="DevNga" format="2">
   <advance width="1396"/>
   <unicode hex="0919"/>
+  <anchor x="820" y="-70" name="Halant"/>
+  <anchor x="938" y="-53" name="Lower"/>
+  <anchor x="681" y="-118" name="LowerCenter"/>
+  <anchor x="938" y="1330" name="Upper"/>
+  <anchor x="681" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="783" y="1320" type="line"/>
@@ -75,21 +80,6 @@
       <point x="1225" y="842" type="curve" smooth="yes"/>
       <point x="1181" y="842"/>
       <point x="1102" y="762"/>
-    </contour>
-    <contour>
-      <point x="820" y="-70" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="938" y="-53" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="681" y="-118" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="938" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="681" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

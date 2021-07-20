@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevJja" format="1">
+<glyph name="DevJja" format="2">
   <advance width="1422"/>
   <unicode hex="097C"/>
+  <anchor x="1143" y="-100" name="Halant"/>
+  <anchor x="1143" y="-30" name="Lower"/>
+  <anchor x="678" y="-112" name="LowerCenter"/>
+  <anchor x="1143" y="1330" name="Upper"/>
+  <anchor x="679" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="461" y="934" type="line"/>
@@ -58,21 +63,6 @@
       <point x="236" y="132" type="line"/>
       <point x="312" y="0" type="line"/>
       <point x="1212" y="0" type="line"/>
-    </contour>
-    <contour>
-      <point x="1143" y="-100" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1143" y="-30" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="678" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1143" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="679" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

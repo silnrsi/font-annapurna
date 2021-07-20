@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevK.Ta" format="1">
+<glyph name="DevK.Ta" format="2">
   <advance width="1836"/>
+  <anchor x="1031" y="-124" name="Halant"/>
+  <anchor x="1031" y="-69" name="Lower"/>
+  <anchor x="1031" y="-138" name="LowerCenter"/>
+  <anchor x="1031" y="1356" name="Upper"/>
+  <anchor x="986" y="1416" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="754" y="1346" type="line"/>
@@ -75,21 +80,6 @@
       <point x="1185" y="984"/>
       <point x="1100" y="919"/>
       <point x="1040" y="847" type="curve"/>
-    </contour>
-    <contour>
-      <point x="1031" y="-124" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="1031" y="-69" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="1031" y="-138" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="1031" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="986" y="1416" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

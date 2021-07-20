@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevVowelCandraENukta" format="1">
+<glyph name="DevVowelCandraENukta" format="2">
   <advance width="1097"/>
+  <anchor x="561" y="-328" name="Halant"/>
+  <anchor x="561" y="-300" name="Lower"/>
+  <anchor x="561" y="-321" name="LowerCenter"/>
+  <anchor x="810" y="1330" name="Upper"/>
+  <anchor x="570" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevVowelE"/>
     <component base="DevMaatraCandraE" xOffset="950"/>
     <component base="DevNukta" xOffset="963" yOffset="69"/>
-    <contour>
-      <point x="561" y="-328" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="561" y="-300" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="561" y="-321" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="810" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="570" y="1390" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevNg.Ka.alt" format="1">
+<glyph name="DevNg.Ka.alt" format="2">
   <advance width="1455"/>
+  <anchor x="779" y="-338" name="Halant"/>
+  <anchor x="779" y="-270" name="Lower"/>
+  <anchor x="779" y="-347" name="LowerCenter"/>
+  <anchor x="928" y="1330" name="Upper"/>
+  <anchor x="772" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevNukta" xOffset="1544" yOffset="1178"/>
     <contour>
@@ -126,21 +131,6 @@
       <point x="934" y="385"/>
       <point x="835" y="306"/>
       <point x="804" y="261" type="curve"/>
-    </contour>
-    <contour>
-      <point x="779" y="-338" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="779" y="-270" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="779" y="-347" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="928" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="772" y="1390" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

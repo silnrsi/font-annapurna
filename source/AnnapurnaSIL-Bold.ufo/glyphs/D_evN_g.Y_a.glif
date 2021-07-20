@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevNg.Ya" format="1">
+<glyph name="DevNg.Ya" format="2">
   <advance width="2871"/>
+  <anchor x="2595" y="-126" name="Halant"/>
+  <anchor x="2595" y="-69" name="Lower"/>
+  <anchor x="2120" y="-138" name="LowerCenter"/>
+  <anchor x="2595" y="1356" name="Upper"/>
+  <anchor x="2120" y="1416" name="UpperCenter"/>
   <outline>
     <contour>
       <point x="776" y="1346" type="line"/>
@@ -129,21 +134,6 @@
       <point x="2686" y="-25" type="line"/>
       <point x="2686" y="1346" type="line"/>
       <point x="2499" y="1346" type="line"/>
-    </contour>
-    <contour>
-      <point x="2595" y="-126" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="2595" y="-69" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="2120" y="-138" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="2595" y="1356" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="2120" y="1416" type="move" name="UpperCenter"/>
     </contour>
   </outline>
 </glyph>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DevH.YaNukta" format="1">
+<glyph name="DevH.YaNukta" format="2">
   <advance width="2603"/>
+  <anchor x="2327" y="-100" name="Halant"/>
+  <anchor x="2327" y="-30" name="Lower"/>
+  <anchor x="1852" y="-112" name="LowerCenter"/>
+  <anchor x="2327" y="1330" name="Upper"/>
+  <anchor x="1852" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevNukta" xOffset="2269" yOffset="310"/>
     <contour>
@@ -117,21 +122,6 @@
       <point x="718" y="-25"/>
       <point x="482" y="59"/>
     </contour>
-    <contour>
-      <point x="2327" y="-100" type="move" name="Halant"/>
-    </contour>
-    <contour>
-      <point x="2327" y="-30" type="move" name="Lower"/>
-    </contour>
-    <contour>
-      <point x="1852" y="-112" type="move" name="LowerCenter"/>
-    </contour>
-    <contour>
-      <point x="2327" y="1330" type="move" name="Upper"/>
-    </contour>
-    <contour>
-      <point x="1852" y="1390" type="move" name="UpperCenter"/>
-    </contour>
   </outline>
   <lib>
     <dict>
@@ -141,7 +131,7 @@
           <key>angle</key>
           <real>129.61</real>
           <key>isGlobal</key>
-          <false/>
+          <integer>0</integer>
           <key>magnetic</key>
           <integer>5</integer>
           <key>x</key>
