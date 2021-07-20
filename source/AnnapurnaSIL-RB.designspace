@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="400.0" maximum="700.0" minimum="300.0" name="weight" tag="wght">
+        <axis default="400.0" maximum="700.0" minimum="400.0" name="weight" tag="wght">
             <map input="400.0" output="400.0" />
             <map input="700.0" output="700.0" />
             <labelname xml:lang="en">Weight</labelname>
@@ -16,7 +16,7 @@
         </axis>
     </axes>
     <sources>
-        <source familyname="AnnapurnaSIL" filename="AnnapurnaSIL-Regular.ufo" name="AnnapurnaSIL Regular" stylename="Regular">
+        <source familyname="Annapurna SIL" filename="AnnapurnaSIL-Regular.ufo" name="AnnapurnaSIL Regular" stylename="Regular">
             <lib copy="1" />
             <groups copy="1" />
             <features copy="1" />
@@ -27,7 +27,7 @@
                 <dimension name="custom" xvalue="0.000000" />
             </location>
         </source>
-        <source familyname="AnnapurnaSIL" filename="AnnapurnaSIL-Bold.ufo" name="AnnapurnaSIL Bold" stylename="Bold">
+        <source familyname="Annapurna SIL" filename="AnnapurnaSIL-Bold.ufo" name="AnnapurnaSIL Bold" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="700" />
                 <dimension name="width" xvalue="100" />
@@ -36,13 +36,12 @@
         </source>
     </sources>
     <instances>
-        <instance       familyname="AnnapurnaSIL" 
-                              name="AnnapurnaSIL Regular" 
-                stylemapfamilyname="AnnapurnaSIL" 
+        <instance       familyname="Annapurna SIL" 
+                              name="Annapurna SIL Regular" 
+                stylemapfamilyname="Annapurna SIL" 
                          stylename="Regular" 
                  stylemapstylename="regular"
-                postscriptfontname="AnnapurnaSIL-Regular" 
-                filename="instances/AnnapurnaSIL-Regular.ufo">
+                filename="AnnapurnaSIL-Regular.ufo">
             <location>
                 <dimension name="weight" xvalue="400.000000" />
                 <dimension name="width" xvalue="100.000000" />
@@ -51,13 +50,12 @@
             <info />
             <kerning />
         </instance>
-        <instance       familyname="AnnapurnaSIL"
-                              name="AnnapurnaSIL Bold"
-                stylemapfamilyname="AnnapurnaSIL"
+        <instance       familyname="Annapurna SIL"
+                              name="Annapurna SIL Bold"
+                stylemapfamilyname="Annapurna SIL"
                          stylename="Bold"
                  stylemapstylename="bold"
-                postscriptfontname="AnnapurnaSIL-Bold"
-                filename="instances/AnnapurnaSIL-Bold.ufo">
+                filename="AnnapurnaSIL-Bold.ufo">
             <location>
                 <dimension name="weight" xvalue="700" />
                 <dimension name="width" xvalue="100" />
@@ -66,22 +64,5 @@
             <info/>
             <kerning/>
         </instance>
-        <!--
-        <instance       familyname="AnnapurnaSIL Black"
-                              name="AnnapurnaSIL Black Regular"
-                stylemapfamilyname="AnnapurnaSIL Black"
-                         stylename="Regular"
-                 stylemapstylename="regular"
-                postscriptfontname="AnnapurnaSILBlack-Regular"
-                filename="instances/AnnapurnaSILBlack-Regular.ufo">
-            <location>
-                <dimension name="weight" xvalue="800" />
-                <dimension name="width" xvalue="100" />
-                <dimension name="custom" xvalue="0" />
-            </location>
-            <info/>
-            <kerning/>
-        </instance>
-        -->
     </instances>
 </designspace>
