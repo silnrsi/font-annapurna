@@ -68,23 +68,4 @@
       <point x="1003" y="878" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.guides</key>
-      <array>
-        <dict>
-          <key>angle</key>
-          <real>129.61</real>
-          <key>isGlobal</key>
-          <integer>0</integer>
-          <key>magnetic</key>
-          <integer>5</integer>
-          <key>x</key>
-          <integer>844</integer>
-          <key>y</key>
-          <integer>0</integer>
-        </dict>
-      </array>
-    </dict>
-  </lib>
 </glyph>
