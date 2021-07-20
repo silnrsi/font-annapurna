@@ -1,0 +1,21 @@
+#!/bin/sh
+# Update UFO after editing with FontForge and prior to commit
+
+# Stop on any errors
+set -e
+
+echo "-----Fixing FontForge debris and normalizing UFOs..."
+psffixffglifs source/AnnapurnaSIL-Regular.ufo -p checkfix=fix     &
+psffixffglifs source/AnnapurnaSIL-Bold.ufo -p checkfix=fix        &
+wait
+
+echo "-----Updating production names in Regular..."
+psfsetpsnames -q -i source/glyph_data.csv source/AnnapurnaSIL-Regular.ufo -p backup=False -x
+
+echo "-----Updating glyph orders in Regular..."
+psfsetglyphorder -q --header sort_final -i source/glyph_data.csv source/AnnapurnaSIL-Regular.ufo -p backup=False -x
+
+echo "-----Syncing glyph orders, psnames, and other metadata to other UFOs..."
+psfsyncmasters -q source/AnnapurnaSIL-RB.designspace 
+
+echo "-----preflightff completed!"
