@@ -3,10 +3,10 @@
   <unicode hex="0323"/>
   <outline>
     <contour>
-      <point x="-378" y="-223" type="curve" smooth="yes"/>
+      <point x="-378" y="-223" type="curve"/>
       <point x="-378" y="-252"/>
       <point x="-388" y="-276"/>
-      <point x="-409" y="-296" type="curve" smooth="yes"/>
+      <point x="-409" y="-296" type="curve"/>
       <point x="-428" y="-316"/>
       <point x="-453" y="-326"/>
       <point x="-482" y="-326" type="curve" smooth="yes"/>
@@ -24,7 +24,7 @@
       <point x="-482" y="-118" type="curve" smooth="yes"/>
       <point x="-453" y="-118"/>
       <point x="-428" y="-127"/>
-      <point x="-409" y="-148" type="curve" smooth="yes"/>
+      <point x="-409" y="-148" type="curve"/>
       <point x="-389" y="-168"/>
       <point x="-379" y="-192"/>
     </contour>
