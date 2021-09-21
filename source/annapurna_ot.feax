@@ -1622,26 +1622,6 @@ lookup StyleSet05ShraAlt {
     sub DevShaNuktaR by DevShaNuktaR.alt ;
 } StyleSet05ShraAlt;
 
-lookup StyleSet14AltYa {
-  lookupflag 0 ;
-    sub DevD.Ya by DevD.Ya.alt ;
-#    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
-#    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
-#    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
-#    sub DevHalfDa DevYaR by DevD.YaRa ;
-#    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa ;
-#    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
-#    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa ;
-    sub DevH.Ya by DevH.Ya.alt ;
-#    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
-#    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
-#    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
-#    sub DevHalfHa DevYaR by DevH.YaRa ;
-#    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa ;
-#    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
-#    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa ;
-} StyleSet14AltYa;
-
 lookup StyleSet06UmatraNuktaAlt {
   lookupflag 0 ;
     sub DevMaatraUNukta by DevMaatraUNukta.alt ;
@@ -1682,6 +1662,26 @@ lookup StyleSet13GlottalNoBar {
   lookupflag 0 ;
     sub DevGlottalStop by DevGlottalStop.alt ;
 } StyleSet13GlottalNoBar;
+
+lookup StyleSet14AltYa {
+  lookupflag 0 ;
+    sub DevDa DevYa by DevD.Ya.alt ;
+    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
+    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
+    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
+    sub DevHalfDa DevYaR by DevD.YaRa ;
+    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa ;
+    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
+    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa ;
+    sub DevHa DevYa by DevH.Ya.alt ;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
+    sub DevHalfHa DevYaR by DevH.YaRa ;
+    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa ;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa ;
+} StyleSet14AltYa;
 
 lookup StyleSet15ArchaicForms {
   lookupflag 0 ;
@@ -1816,18 +1816,22 @@ lookup TTStyleSet13GlottalNoBar {
 
 lookup TTStyleSet14AltYa {
   lookupflag 0 ;
-    sub DevD.Ya by DevD.Ya.alt ;
-#    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
-#    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
-#    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
-#    sub DevHalfDa DevYaR by DevD.YaRa ;
-#    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
-    sub DevH.Ya by DevH.Ya.alt ;
-#    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
-#    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
-#    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
-#    sub DevHalfHa DevYaR by DevH.YaRa ;
-#    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevDa DevYa by DevD.Ya.alt ;
+    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
+    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
+    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
+    sub DevHalfDa DevYaR by DevD.YaRa ;
+    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa ;
+    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
+    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa ;
+    sub DevHa DevYa by DevH.Ya.alt ;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
+    sub DevHalfHa DevYaR by DevH.YaRa ;
+    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa ;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa ;
 } TTStyleSet14AltYa;
 
 lookup TTStyleSet15ArchaicForms {
