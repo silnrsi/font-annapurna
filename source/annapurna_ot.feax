@@ -2277,38 +2277,38 @@ feature cjct {  # Conjunct Forms
 feature dist {  
     script DFLT;  # Default
         language dflt;  # Default
-#            lookup CandrabinduAdjust;
-#            lookup CandrabinduRaAdjust;
+            lookup CandrabinduAdjust;
+            lookup CandrabinduRaAdjust;
             lookup AboveRephAdjust;
             lookup AboveModifiersAdjust;
 #            lookup AboveSignsAdjust;
 #            lookup AboveMarksRephAdjust;
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
-#            lookup CandrabinduAdjust;
-#            lookup CandrabinduRaAdjust;
+            lookup CandrabinduAdjust;
+            lookup CandrabinduRaAdjust;
             lookup AboveRephAdjust;
             lookup AboveModifiersAdjust;
 #            lookup AboveSignsAdjust;
 #            lookup AboveMarksRephAdjust;
         language NEP  exclude_dflt;  # Nepali
-#            lookup CandrabinduAdjust;
-#            lookup CandrabinduRaAdjust;
+            lookup CandrabinduAdjust;
+            lookup CandrabinduRaAdjust;
             lookup AboveRephAdjust;
             lookup AboveModifiersAdjust;
 #            lookup AboveSignsAdjust;
 #            lookup AboveMarksRephAdjust;
         language NEW  exclude_dflt;  # Newari
-#            lookup CandrabinduAdjust;
-#            lookup CandrabinduRaAdjust;
+            lookup CandrabinduAdjust;
+            lookup CandrabinduRaAdjust;
             lookup AboveRephAdjust;
             lookup AboveModifiersAdjust;
 #            lookup AboveSignsAdjust;
 #            lookup AboveMarksRephAdjust;
     script deva;  # Devanagari
         language dflt;  # Default
-#            lookup CandrabinduAdjust;
-#            lookup CandrabinduRaAdjust;
+            lookup CandrabinduAdjust;
+            lookup CandrabinduRaAdjust;
             lookup AboveRephAdjust;
             lookup AboveModifiersAdjust;
 #            lookup AboveSignsAdjust;

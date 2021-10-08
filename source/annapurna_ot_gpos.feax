@@ -1,31 +1,15 @@
 
-#lookup CandrabinduAdjust_target {
-#  lookupflag MarkAttachmentType @cDevCandrabinduAdjust ;
-#    #  subrule of type ADJUST_PAIR
-#    pos @cDevConsNarrowRightofStem1 DevCandrabindu <-125 0 0 0>;
-#} CandrabinduAdjust_target ;
+lookup CandrabinduAdjust {
+  lookupflag MarkAttachmentType @cDevCandrabinduAdjust ;
+    pos @cDevConsNarrowRightofStem1 DevCandrabindu' <-125 0 0 0> @cDevConsNarrowLeftofStem2 [ @cDevMatra0946 @cDevMatra0947 @cDevMatra0948 ] ;
+    pos @cDevConsNarrowRightofStem1 DevCandrabindu' <-125 0 0 0> DevRa @cDevMatra0945 ;
+    pos @cDevConsNarrowRightofStem1 DevCandrabindu' <-125 0 0 0> @cDevMatra_i_variants ;
+} CandrabinduAdjust;
 
-#lookup CandrabinduAdjust {
-#  lookupflag MarkAttachmentType @cDevCandrabinduAdjust ;
-#    pos @cDevConsNarrowRightofStem1' lookup CandrabinduAdjust_target DevCandrabindu'  @cDevConsNarrowLeftofStem2 @cDevMatra0946 ;
-#    pos @cDevConsNarrowRightofStem1' lookup CandrabinduAdjust_target DevCandrabindu'  @cDevConsNarrowLeftofStem2 @cDevMatra0947 ;
-#    pos @cDevConsNarrowRightofStem1' lookup CandrabinduAdjust_target DevCandrabindu'  @cDevConsNarrowLeftofStem1 @cDevMatra0948 ;
-#    pos @cDevConsNarrowRightofStem1' lookup CandrabinduAdjust_target DevCandrabindu'  DevRa @cDevMatra0945 ;
-#    pos @cDevConsNarrowRightofStem1' lookup CandrabinduAdjust_target DevCandrabindu'  @cDevMatra_i_variants ;
-#} CandrabinduAdjust;
-
-#lookup CandrabinduRaAdjust_target {
-#  lookupflag MarkAttachmentType @cDevCandrabinduAdjust ;
-#    #  subrule of type ADJUST_PAIR
-#    pos @cDevConsNarrowRightofStem1 DevCandrabindu <-450 0 0 0>;
-#} CandrabinduRaAdjust_target ;
-
-#lookup CandrabinduRaAdjust {
-#  lookupflag MarkAttachmentType @cDevCandrabinduAdjust ;
-#    pos [ @cDevConsNarrowRightofStem1 @cDev0919fullNga @cDev091BfullCha @cDev0920fullTtha @cDev0921fullDda @cDev0922fullDdha @cDev0933fullLla DevMaatraAA ]' lookup CandrabinduRaAdjust_target DevCandrabindu'  DevRa @cDevMatra0946 ;
-#    pos [ @cDevConsNarrowRightofStem1 @cDev0919fullNga @cDev091BfullCha @cDev0920fullTtha @cDev0921fullDda @cDev0922fullDdha @cDev0933fullLla DevMaatraAA ]' lookup CandrabinduRaAdjust_target DevCandrabindu'  DevRa @cDevMatra0947 ;
-#    pos [ @cDevConsNarrowRightofStem1 @cDev0919fullNga @cDev091BfullCha @cDev0920fullTtha @cDev0921fullDda @cDev0922fullDdha @cDev0933fullLla DevMaatraAA ]' lookup CandrabinduRaAdjust_target DevCandrabindu'  DevRa @cDevMatra0948 ;
-#} CandrabinduRaAdjust;
+lookup CandrabinduRaAdjust {
+  lookupflag MarkAttachmentType @cDevCandrabinduAdjust ;
+    pos [ @cDevConsNarrowRightofStem2 DevMaatraAA ] DevCandrabindu' <-450 0 0 0> DevRa [ @cDevMatra0946 @cDevMatra0947 @cDevMatra0948 ] ;
+} CandrabinduRaAdjust;
 
 lookup AboveRephAdjust {
   lookupflag 0 ;
