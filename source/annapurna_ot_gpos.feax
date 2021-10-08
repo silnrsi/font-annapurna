@@ -252,11 +252,45 @@ lookup AboveModifiersAdjust {
     pos DevVowelShortONukta DevInvCandrabindu.alt' <350 0 0 0>;
 } AboveModifiersAdjust;
 
-#lookup AboveSignsAdjust {
-#  lookupflag 0 ;
-#    #  subrule of type ADJUST_PAIR
-#    pos DevCandrabindu DevUdatta <350 140 0 0>;
-#} AboveSignsAdjust;
+lookup AboveSignsAdjust {
+  lookupflag 0 ;
+    pos DevCandrabindu DevUdatta <350 140 0 0>;
+    pos DevCandrabindu DevGrave <-550 170 0 0>;
+    pos DevCandrabindu DevAcute <-420 170 0 0>;
+    pos DevAnusvara DevUdatta <300 140 0 0>;
+    pos DevAnusvara <0 15 0 0> DevGrave <-135 170 0 0>;
+    pos DevAnusvara DevAcute <170 170 0 0>;
+    pos DevMaatraCandraE DevUdatta <-130 200 0 0>;
+    pos DevMaatraCandraE DevGrave <-90 170 0 0>;
+    pos DevMaatraCandraE DevAcute <140 175 0 0>;
+    pos DevMaatraCandraENukta DevUdatta <-130 200 0 0>;
+    pos DevMaatraCandraENukta DevGrave <-90 170 0 0>;
+    pos DevMaatraCandraENukta DevAcute <140 175 0 0>;
+    pos DevMaatraShortE DevUdatta <120 150 0 0>;
+    pos DevMaatraShortE DevGrave <180 175 0 0>;
+    pos DevMaatraShortE DevAcute <-600 170 0 0>;
+    pos DevMaatraShortENukta DevUdatta <120 150 0 0>;
+    pos DevMaatraShortENukta DevGrave <180 175 0 0>;
+    pos DevMaatraShortENukta DevAcute <-600 170 0 0>;
+    pos DevMaatraE DevUdatta <0 160 0 0>;
+    pos DevMaatraE DevGrave <60 170 0 0>;
+    pos DevMaatraE DevAcute <-795 170 0 0>;
+    pos DevMaatraENukta DevUdatta <0 160 0 0>;
+    pos DevMaatraENukta DevGrave <60 170 0 0>;
+    pos DevMaatraENukta DevAcute <-795 170 0 0>;
+    pos DevMaatraENukta.alt DevUdatta <0 160 0 0>;
+    pos DevMaatraENukta.alt DevGrave <60 170 0 0>;
+    pos DevMaatraENukta.alt DevAcute <-795 170 0 0>;
+    pos DevMaatraAi DevUdatta <0 160 0 0>;
+    pos DevMaatraAi DevGrave <100 170 0 0>;
+    pos DevMaatraAi DevAcute <-740 170 0 0>;
+    pos DevMaatraAiNukta DevUdatta <0 160 0 0>;
+    pos DevMaatraAiNukta DevGrave <100 170 0 0>;
+    pos DevMaatraAiNukta DevAcute <-740 170 0 0>;
+    pos DevRaReph DevUdatta <-350 150 0 0>;
+    pos DevRaReph DevGrave <-265 170 0 0>;
+    pos DevRaReph DevAcute <-260 170 0 0>;
+} AboveSignsAdjust;
 
 #lookup AboveMarksRephAdjust_target {
 #  lookupflag IgnoreBaseGlyphs ;
