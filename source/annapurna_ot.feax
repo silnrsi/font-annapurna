@@ -2030,69 +2030,46 @@ feature abvm {  # Above-Base Mark Positioning
     script DFLT;  # Default
         language dflt;  # Default
             lookup base_Upper_base;
-##            lookup base_UpperCenter_base;
-#            lookup AboveConsMarks;
-#            lookup AboveVowelMarks;
-#            lookup AboveSpacingMatraMarks;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
-            lookup AboveRephAdjust;
-            lookup AboveModifiersAdjust;
-            lookup AboveSignsAdjust;
-#            lookup AboveMarks_RephAdjust;
+#            lookup AboveRephAdjust;
+#            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
             lookup base_Upper_base;
-###            lookup GPOS_LOOKUP_00005;
-###            lookup GPOS_LOOKUP_00006;
-###            lookup GPOS_LOOKUP_00007;
-##            lookup base_UpperCenter_base;
-#            lookup AboveConsMarks;
-#            lookup AboveVowelMarks;
-#            lookup AboveSpacingMatraMarks;
-#            lookup CandrabinduAdjust; # GPOS_LOOKUP_00003
-#            lookup CandrabinduRaAdjust; # GPOS_LOOKUP_00005
-            lookup AboveRephAdjust;
-            lookup AboveModifiersAdjust;
-            lookup AboveSignsAdjust;
-#            lookup AboveMarks_RephAdjust; # GPOS_LOOKUP_00008
+#            lookup CandrabinduAdjust;
+#            lookup CandrabinduRaAdjust;
+#            lookup AboveRephAdjust;
+#            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
         language NEP  exclude_dflt;  # Nepali
             lookup base_Upper_base;
-##            lookup base_UpperCenter_base;
-#            lookup AboveConsMarks;
-#            lookup AboveVowelMarks;
-#            lookup AboveSpacingMatraMarks;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
-            lookup AboveRephAdjust;
-            lookup AboveModifiersAdjust;
-            lookup AboveSignsAdjust;
-#            lookup AboveMarks_RephAdjust;
+#            lookup AboveRephAdjust;
+#            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
         language NEW  exclude_dflt;  # Newari
             lookup base_Upper_base;
-##            lookup base_UpperCenter_base;
-#            lookup AboveConsMarks;
-#            lookup AboveVowelMarks;
-#            lookup AboveSpacingMatraMarks;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
-            lookup AboveRephAdjust;
-            lookup AboveModifiersAdjust;
-            lookup AboveSignsAdjust;
-#            lookup AboveMarks_RephAdjust;
+#            lookup AboveRephAdjust;
+#            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
     script deva;  # Devanagari
         language dflt;  # Default
             lookup base_Upper_base;
-##            lookup base_UpperCenter_base;
-#            lookup AboveConsMarks;
-#            lookup AboveVowelMarks;
-#            lookup AboveSpacingMatraMarks;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
-            lookup AboveRephAdjust;
-            lookup AboveModifiersAdjust;
-            lookup AboveSignsAdjust;
-#            lookup AboveMarks_RephAdjust;
+#            lookup AboveRephAdjust;
+#            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
 } abvm ;
 
 feature abvs {  # Above-Base Substitutions
@@ -2166,90 +2143,57 @@ feature blwf {  # Below-Base Forms
 feature blwm {  # Below-Base Mark Positioning
     script DFLT;  # Default
         language dflt;  # Default
-            lookup base_Halant_base;
+            lookup base_Halant_base; # halant positioning
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
             lookup base_LowerCenter_base;
-            lookup base_Nukta_base;
+            lookup base_Nukta_base; # nukta positioning
             lookup base_Ra_base; # rakar positioning
-#            lookup BelowConsMarks;
-#            lookup BelowVowelMarks;
-#            lookup BelowHalfFormMarks;
             lookup BelowMatraAdjust;
             lookup BelowSignsAdjust;
             lookup BelowHalantAdjust;
-#            lookup HalantPositioning;
-#            lookup NuktaPositioning;
-#            lookup RakarPositioning;
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
-            lookup base_Halant_base;
+            lookup base_Halant_base; # halant positioning
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
             lookup base_LowerCenter_base;
-            lookup base_Nukta_base;
+            lookup base_Nukta_base; # nukta positioning
             lookup base_Ra_base; # rakar positioning
-###            lookup GPOS_LOOKUP_00012;
-###            lookup GPOS_LOOKUP_00013;
-###            lookup GPOS_LOOKUP_00014;
-#            lookup BelowConsMarks;
-#            lookup BelowVowelMarks;
-#            lookup BelowHalfFormMarks;
             lookup BelowMatraAdjust;
             lookup BelowSignsAdjust;
             lookup BelowHalantAdjust;
-#            lookup HalantPositioning;
-#            lookup NuktaPositioning;
-#            lookup RakarPositioning;
         language NEP  exclude_dflt;  # Nepali
-            lookup base_Halant_base;
+            lookup base_Halant_base; # halant positioning
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
             lookup base_LowerCenter_base;
-            lookup base_Nukta_base;
+            lookup base_Nukta_base; # nukta positioning
             lookup base_Ra_base; # rakar positioning
-#            lookup BelowConsMarks;
-#            lookup BelowVowelMarks;
-#            lookup BelowHalfFormMarks;
             lookup BelowMatraAdjust;
             lookup BelowSignsAdjust;
             lookup BelowHalantAdjust;
-#            lookup HalantPositioning;
-#            lookup NuktaPositioning;
-#            lookup RakarPositioning;
         language NEW  exclude_dflt;  # Newari
-            lookup base_Halant_base;
+            lookup base_Halant_base; # halant positioning
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
             lookup base_LowerCenter_base;
-            lookup base_Nukta_base;
+            lookup base_Nukta_base; # nukta positioning
             lookup base_Ra_base; # rakar positioning
-#            lookup BelowConsMarks;
-#            lookup BelowVowelMarks;
-#            lookup BelowHalfFormMarks;
             lookup BelowMatraAdjust;
             lookup BelowSignsAdjust;
             lookup BelowHalantAdjust;
-#            lookup HalantPositioning;
-#            lookup NuktaPositioning;
-#            lookup RakarPositioning;
     script deva;  # Devanagari
         language dflt;  # Default
-            lookup base_Halant_base;
+            lookup base_Halant_base; # halant positioning
             lookup base_Lower_base;
             lookup base_LowerAlt_base;
             lookup base_LowerCenter_base;
-            lookup base_Nukta_base;
+            lookup base_Nukta_base; # nukta positioning
             lookup base_Ra_base; # rakar positioning
-#            lookup BelowConsMarks;
-#            lookup BelowVowelMarks;
-#            lookup BelowHalfFormMarks;
             lookup BelowMatraAdjust;
             lookup BelowSignsAdjust;
             lookup BelowHalantAdjust;
-#            lookup HalantPositioning;
-#            lookup NuktaPositioning;
-#            lookup RakarPositioning;
 } blwm ;
 
 feature blws {  # Below-Base Substitutions
@@ -2329,6 +2273,47 @@ feature cjct {  # Conjunct Forms
             lookup dev2_Conjuncts_NoPrebase_Ya;
             lookup both_Conjuncts_NoPrebase_YaRaHalf;
 } cjct ;
+
+feature dist {  
+    script DFLT;  # Default
+        language dflt;  # Default
+#            lookup CandrabinduAdjust;
+#            lookup CandrabinduRaAdjust;
+            lookup AboveRephAdjust;
+            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
+    script dev2;  # Devanagari v.2 
+        language dflt;  # Default
+#            lookup CandrabinduAdjust;
+#            lookup CandrabinduRaAdjust;
+            lookup AboveRephAdjust;
+            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
+        language NEP  exclude_dflt;  # Nepali
+#            lookup CandrabinduAdjust;
+#            lookup CandrabinduRaAdjust;
+            lookup AboveRephAdjust;
+            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
+        language NEW  exclude_dflt;  # Newari
+#            lookup CandrabinduAdjust;
+#            lookup CandrabinduRaAdjust;
+            lookup AboveRephAdjust;
+            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
+    script deva;  # Devanagari
+        language dflt;  # Default
+#            lookup CandrabinduAdjust;
+#            lookup CandrabinduRaAdjust;
+            lookup AboveRephAdjust;
+            lookup AboveModifiersAdjust;
+#            lookup AboveSignsAdjust;
+#            lookup AboveMarksRephAdjust;
+} dist ;
 
 feature frac {  # Fractions
     script DFLT;  # Default

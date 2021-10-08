@@ -3,6 +3,7 @@
 
 # override the default folders
 DOCDIR = ['documentation', 'web']  # add 'web' to default
+# STANDARDS = 'references/v1901'
 
 # set package name
 APPNAME = 'AnnapurnaSIL'
@@ -29,6 +30,7 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
         target = process('${DS:FILENAME_BASE}.ttf', *cmds),
         # instanceparams = "-W",
         ap = 'source/ap/${DS:FILENAME_BASE}.xml',
+        # classes = 'source/annapurna_classes.xml',
 
         opentype = fea('source/fea/${DS:FILENAME_BASE}.fea',
             master = 'source/annapurna_ot.feax',
