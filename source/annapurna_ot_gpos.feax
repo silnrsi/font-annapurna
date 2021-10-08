@@ -292,34 +292,23 @@ lookup AboveSignsAdjust {
     pos DevRaReph DevAcute <-260 170 0 0>;
 } AboveSignsAdjust;
 
-#lookup AboveMarksRephAdjust_target {
-#  lookupflag IgnoreBaseGlyphs ;
-#    #  subrule of type ADJUST_SINGLE
-#    pos DevMaatraCandraE <300 0 0 0>;
-#    pos DevMaatraCandraENukta <300 0 0 0>;
-#} AboveMarksRephAdjust_target ;
-
-#lookup AboveMarksRephAdjust {
-#  lookupflag IgnoreBaseGlyphs ;
-#    pos [ DevMaatraCandraE DevMaatraCandraENukta ]' lookup AboveMarksRephAdjust_target DevRaReph ;
-#} AboveMarksRephAdjust;
-
+lookup AboveMarksRephAdjust {
+  lookupflag IgnoreBaseGlyphs ;
+    pos [ DevMaatraCandraE DevMaatraCandraENukta ]' <300 0 0 0> DevRaReph ;
+} AboveMarksRephAdjust;
 
 lookup BelowMatraAdjust {
   lookupflag 0 ;
-    #  subrule of type ADJUST_PAIR
     pos DevNgaNukta @cDevMatra0942 <0 -70 0 0>;
 } BelowMatraAdjust;
 
 lookup BelowSignsAdjust {
   lookupflag 0 ;
-    #  subrule of type ADJUST_PAIR
     pos DevMaatraU DevAnudatta <0 -560 0 0>;
 } BelowSignsAdjust;
 
 lookup BelowHalantAdjust {
   lookupflag 0 ;
-    #  subrule of type ADJUST_PAIR
     pos DevAnudatta DevHalant <0 -250 0 0>;
 } BelowHalantAdjust;
 
