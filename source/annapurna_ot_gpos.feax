@@ -299,7 +299,12 @@ lookup AboveMarksRephAdjust {
 
 lookup BelowMatraAdjust {
   lookupflag 0 ;
-    pos DevNgaNukta @cDevMatra0942 <0 -70 0 0>;
+    pos [DevNgaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta] [@cDevMatra0942 @cDevMatra0962_0963]' <0 -70 0 0>;
+    pos [DevChaNukta] [@cDevMatra0942 @cDevMatra0962_0963]' <0 -40 0 0>;
+    pos [DevDdhaNukta DevHaNukta] @cDevMatra0942' <0 -100 0 0>;
+    pos [DevDdhaNukta DevHaNukta] @cDevMatra0962_0963' <0 -50 0 0>;
+    pos [DevLlaNukta] @cDevMatra0942' <0 -50 0 0>;
+    pos [DevLlaNukta] @cDevMatra0962_0963' <0 -100 0 0>;
 } BelowMatraAdjust;
 
 lookup BelowSignsAdjust {
