@@ -309,7 +309,20 @@ lookup BelowMatraAdjust {
 
 lookup BelowSignsAdjust {
   lookupflag 0 ;
-    pos DevMaatraU DevAnudatta <0 -560 0 0>;
+    pos DevMaatraU DevAnudatta' <0 -560 0 0>;
+    pos DevMaatraUNukta DevAnudatta' <0 -660 0 0>;
+    pos DevMaatraUU DevAnudatta' <500 -600 0 0>;
+    pos DevMaatraUUNukta DevAnudatta' <500 -650 0 0>;
+    pos DevMaatraR DevAnudatta' <200 -560 0 0>;
+    pos DevMaatraRNukta DevAnudatta' <200 -860 0 0>;
+    pos DevMaatraRR DevAnudatta' <0 -650 0 0>;
+    pos DevMaatraRRNukta DevAnudatta' <0 -930 0 0>;
+    pos DevMaatraL DevAnudatta' <100 -620 0 0>;
+    pos DevMaatraLNukta DevAnudatta' <100 -930 0 0>;
+    pos DevMaatraLL DevAnudatta' <100 -650 0 0>;
+    pos DevMaatraLLNukta DevAnudatta' <100 -930 0 0>;
+    pos DevMaatraUE DevAnudatta' <100 -350 0 0>;
+    pos DevMaatraUUE DevAnudatta' <100 -600 0 0>;
 } BelowSignsAdjust;
 
 lookup BelowHalantAdjust {
