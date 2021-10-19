@@ -2,7 +2,6 @@
 <glyph name="DevCandrabindu.alt" format="2">
   <advance width="2"/>
   <anchor x="-427" y="1270" name="_Upper"/>
-  <anchor x="-427" y="1330" name="_UpperCenter"/>
   <outline>
     <contour>
       <point x="-518" y="1668" type="curve" smooth="yes"/>

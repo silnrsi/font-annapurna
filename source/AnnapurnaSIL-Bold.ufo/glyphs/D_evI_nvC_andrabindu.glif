@@ -3,7 +3,6 @@
   <advance width="2"/>
   <unicode hex="0900"/>
   <anchor x="-347" y="1270" name="_Upper"/>
-  <anchor x="-347" y="1330" name="_UpperCenter"/>
   <outline>
     <component base="DevNukta" xOffset="55" yOffset="1802"/>
     <contour>

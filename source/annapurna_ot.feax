@@ -1989,22 +1989,8 @@ lookup LatinPunctuationMark {
 } LatinPunctuationMark;
 
 
-#**********************************
-#  Lookups GPOS
-#  APs = [Halant Lower LowerAlt LowerCenter Nukta NuktaAlt Ra Upper UpperCenter];
-#**********************************
-
-do  for b = [Halant Lower LowerAlt LowerCenter Nukta Ra Upper];
-    let lk = "base_"+b+"_base";
-    let bc = "@" + b;
-    let mc = "@_" + b;
-    {
-lookup $lk {
-    pos base $bc mark $mc;
-} $lk;
-    }
-
 include (../source/annapurna_ot_gpos.feax)
+
 
 #**********************************
 #  Features
@@ -2030,6 +2016,7 @@ feature abvm {  # Above-Base Mark Positioning
     script DFLT;  # Default
         language dflt;  # Default
             lookup base_Upper_base;
+            lookup base_UpperCenter_base;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
 #            lookup AboveRephAdjust;
@@ -2039,6 +2026,7 @@ feature abvm {  # Above-Base Mark Positioning
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
             lookup base_Upper_base;
+            lookup base_UpperCenter_base;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
 #            lookup AboveRephAdjust;
@@ -2047,6 +2035,7 @@ feature abvm {  # Above-Base Mark Positioning
 #            lookup AboveMarksRephAdjust;
         language NEP  exclude_dflt;  # Nepali
             lookup base_Upper_base;
+            lookup base_UpperCenter_base;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
 #            lookup AboveRephAdjust;
@@ -2055,6 +2044,7 @@ feature abvm {  # Above-Base Mark Positioning
 #            lookup AboveMarksRephAdjust;
         language NEW  exclude_dflt;  # Newari
             lookup base_Upper_base;
+            lookup base_UpperCenter_base;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
 #            lookup AboveRephAdjust;
@@ -2064,6 +2054,7 @@ feature abvm {  # Above-Base Mark Positioning
     script deva;  # Devanagari
         language dflt;  # Default
             lookup base_Upper_base;
+            lookup base_UpperCenter_base;
 #            lookup CandrabinduAdjust;
 #            lookup CandrabinduRaAdjust;
 #            lookup AboveRephAdjust;
