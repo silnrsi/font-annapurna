@@ -1075,6 +1075,8 @@
   </array>
   <key>public.postscriptNames</key>
   <dict>
+    <key>.Scratch</key>
+    <string>Scratch</string>
     <key>CombCedilla</key>
     <string>uni0327</string>
     <key>CombOverline</key>

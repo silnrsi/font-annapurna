@@ -43,11 +43,6 @@
 
 # AP: _UpperCenter
 markClass [DevAcute DevGrave] <anchor -380 1390> @_UpperCenter;
-markClass DevAnusvara <anchor -165 1390> @_UpperCenter;
-markClass [DevCandrabindu DevCandrabindu.alt DevInvCandrabindu.alt] <anchor -427 1330> @_UpperCenter;
-markClass DevInvCandrabindu <anchor -347 1330> @_UpperCenter;
-markClass DevMaatraCandraE <anchor -375 1330> @_UpperCenter;
-markClass DevMaatraCandraLongE <anchor -396 1330> @_UpperCenter;
 
 # AP: _LowerAlt
 markClass DevAnudatta <anchor -547 -112> @_LowerAlt;
@@ -2130,26 +2125,6 @@ lookup StyleSet05ShraAlt {
     sub DevShaNuktaR by DevShaNuktaR.alt;
 } StyleSet05ShraAlt;
 
-lookup StyleSet14AltYa {
-    lookupflag 0;
-    sub DevD.Ya by DevD.Ya.alt;
-    #    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
-    #    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
-    #    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
-    #    sub DevHalfDa DevYaR by DevD.YaRa ;
-    #    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa ;
-    #    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
-    #    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa ;
-    sub DevH.Ya by DevH.Ya.alt;
-    #    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
-    #    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
-    #    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
-    #    sub DevHalfHa DevYaR by DevH.YaRa ;
-    #    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa ;
-    #    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
-    #    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa ;
-} StyleSet14AltYa;
-
 lookup StyleSet06UmatraNuktaAlt {
     lookupflag 0;
     sub DevMaatraUNukta by DevMaatraUNukta.alt;
@@ -2190,6 +2165,26 @@ lookup StyleSet13GlottalNoBar {
     lookupflag 0;
     sub DevGlottalStop by DevGlottalStop.alt;
 } StyleSet13GlottalNoBar;
+
+lookup StyleSet14AltYa {
+    lookupflag 0;
+    sub DevDa DevYa by DevD.Ya.alt;
+    sub DevHalfDa DevHalfYa by DevD.HalfYa;
+    sub DevHalfDa DevYaNukta by DevD.YaNukta;
+    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta;
+    sub DevHalfDa DevYaR by DevD.YaRa;
+    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa;
+    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa;
+    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa;
+    sub DevHa DevYa by DevH.Ya.alt;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta;
+    sub DevHalfHa DevYaR by DevH.YaRa;
+    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa;
+    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa;
+} StyleSet14AltYa;
 
 lookup StyleSet15ArchaicForms {
     lookupflag 0;
@@ -2324,18 +2319,22 @@ lookup TTStyleSet13GlottalNoBar {
 
 lookup TTStyleSet14AltYa {
     lookupflag 0;
-    sub DevD.Ya by DevD.Ya.alt;
-    #    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
-    #    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
-    #    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
-    #    sub DevHalfDa DevYaR by DevD.YaRa ;
-    #    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
-    sub DevH.Ya by DevH.Ya.alt;
-    #    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
-    #    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
-    #    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
-    #    sub DevHalfHa DevYaR by DevH.YaRa ;
-    #    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevDa DevYa by DevD.Ya.alt;
+    sub DevHalfDa DevHalfYa by DevD.HalfYa;
+    sub DevHalfDa DevYaNukta by DevD.YaNukta;
+    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta;
+    sub DevHalfDa DevYaR by DevD.YaRa;
+    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa;
+    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa;
+    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa;
+    sub DevHa DevYa by DevH.Ya.alt;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta;
+    sub DevHalfHa DevYaR by DevH.YaRa;
+    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa;
+    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa;
 } TTStyleSet14AltYa;
 
 lookup TTStyleSet15ArchaicForms {
@@ -2494,26 +2493,8 @@ lookup LatinPunctuationMark {
 
 #**********************************
 #  Lookups GPOS
+#  APs = [Halant Lower LowerAlt LowerCenter Nukta NuktaAlt Ra Upper UpperCenter];
 #**********************************
-# APs = [Halant Lower LowerAlt LowerCenter Nukta NuktaAlt Ra Upper UpperCenter];
-    #**********************************
-    #  Features
-    #**********************************
-    #feature aalt {  # Access All Alternates
-    #    script DFLT;  # Default
-    #        language dflt;  # Default
-    #            lookup AllAlternates;
-    #    script dev2;  # Devanagari v.2 
-    #        language dflt;  # Default
-    #            lookup AllAlternates;
-    #        language NEP  exclude_dflt;  # Nepali
-    #            lookup AllAlternates;
-    #        language NEW  exclude_dflt;  # Newari
-    #            lookup AllAlternates;
-    #    script deva;  # Devanagari
-    #        language dflt;  # Default
-    #            lookup AllAlternates;
-    #} aalt ;
     lookup base_Halant_base {
         pos base [DevBa DevBaNukta DevBaNuktaR DevBaR] <anchor 1029 -100> mark @_Halant;
         pos base [DevBba DevBbaNukta DevBbaNuktaR DevBbaR] <anchor 1055 -100> mark @_Halant;
@@ -3175,7 +3156,467 @@ lookup LatinPunctuationMark {
         pos base DottedCirc <anchor 533 1080> mark @_Upper;
     } base_Upper_base;
 
+    lookup base_UpperCenter_base {
+        pos base [DevBa DevBaNukta DevBaNuktaR DevBaR] <anchor 638 1390> mark @_UpperCenter;
+        pos base [DevBba DevBbaNukta DevBbaNuktaR DevBbaR DevCa] <anchor 678 1390> mark @_UpperCenter;
+        pos base [DevBha DevBhaNukta DevBhaNuktaR DevBhaR] <anchor 787 1390> mark @_UpperCenter;
+        pos base [DevC.Ca DevC.Ca.alt DevJja DevJjaNukta DevZha] <anchor 679 1390> mark @_UpperCenter;
+        pos base DevCaNukta <anchor 472 1390> mark @_UpperCenter;
+        pos base [DevCaNuktaR DevCaR] <anchor 669 1390> mark @_UpperCenter;
+        pos base [DevCh.Ya DevCh.YaNukta DevCh.YaNuktaRa DevCh.YaRa] <anchor 2295 1390> mark @_UpperCenter;
+        pos base [DevCha DevChaNukta DevChaNuktaR DevChaR DevHalfCha DevHalfChaNukta] <anchor 693 1390> mark @_UpperCenter;
+        pos base DevD.Da <anchor 581 1390> mark @_UpperCenter;
+        pos base DevD.Dha <anchor 785 1390> mark @_UpperCenter;
+        pos base DevD.Ma <anchor 876 1390> mark @_UpperCenter;
+        pos base DevD.Wa <anchor 562 1390> mark @_UpperCenter;
+        pos base DevD.Ya <anchor 758 1390> mark @_UpperCenter;
+        pos base [DevD.Ya.alt DevD.YaNuktaRa DevD.YaRa DevH.Ya.alt DevH.YaNuktaRa DevH.YaRa DevTt.Ya DevTt.YaNukta DevTt.YaNuktaRa DevTt.YaRa] <anchor 1850 1390> mark @_UpperCenter;
+        pos base [DevD.YaNukta DevH.YaNukta] <anchor 1852 1390> mark @_UpperCenter;
+        pos base [DevDa DevDaNukta DevDdda DevDddaNukta DevDddaNuktaR DevDddaR DevHalfDa DevHalfDaNukta DevHalfDdda DevHalfDddaNukta] <anchor 582 1390> mark @_UpperCenter;
+        pos base [DevDaNuktaR DevDaR] <anchor 583 1390> mark @_UpperCenter;
+        pos base [DevDd.Dda DevDd.Dda.alt] <anchor 541 1390> mark @_UpperCenter;
+        pos base [DevDd.Ya DevDd.YaNukta DevDd.YaNuktaRa DevDd.YaRa] <anchor 2080 1390> mark @_UpperCenter;
+        pos base [DevDda DevDdaNukta DevDdaNuktaR DevDdaR DevHalfDda DevHalfDdaNukta] <anchor 573 1390> mark @_UpperCenter;
+        pos base [DevDdaMarawari DevGa DevGaNukta DevGaNuktaR DevGaR] <anchor 595 1390> mark @_UpperCenter;
+        pos base [DevDdh.Ya DevDdh.YaNukta DevDdh.YaNuktaRa DevDdh.YaRa] <anchor 2035 1390> mark @_UpperCenter;
+        pos base [DevDdha DevDdhaNukta DevDdhaNuktaR DevDdhaR DevHalfDdha DevHalfDdhaNukta] <anchor 609 1390> mark @_UpperCenter;
+        pos base [DevDha DevDhaNukta DevDhaNuktaR DevDhaR] <anchor 799 1390> mark @_UpperCenter;
+        pos base [DevGga DevGgaNukta DevGgaNuktaR DevGgaR] <anchor 633 1390> mark @_UpperCenter;
+        pos base [DevGha DevGhaNukta] <anchor 691 1390> mark @_UpperCenter;
+        pos base [DevGhaNuktaR DevGhaR] <anchor 667 1390> mark @_UpperCenter;
+        pos base DevGlottalStop <anchor 440 1390> mark @_UpperCenter;
+        pos base DevGlottalStop.alt <anchor 592 1390> mark @_UpperCenter;
+        pos base [DevH.La DevH.Na DevH.Ri DevH.Wa DevHa DevHa.halant DevHaNukta DevHaNukta.halant DevHaNuktaMaatraUU DevHaNuktaR DevHaR DevSs.Ttha] <anchor 576 1390> mark @_UpperCenter;
+        pos base DevH.Ma <anchor 906 1390> mark @_UpperCenter;
+        pos base DevH.Ya <anchor 941 1390> mark @_UpperCenter;
+        pos base [DevHalfJha DevHalfJhaNukta DevHalfJhaNuktaR DevHalfJhaR] <anchor 616 1390> mark @_UpperCenter;
+        pos base [DevHalfNga DevHalfNgaNukta DevNgaNukta DevNgaNuktaR DevNgaR] <anchor 680 1390> mark @_UpperCenter;
+        pos base DevHalfNna.archaic <anchor 641 1390> mark @_UpperCenter;
+        pos base [DevHalfTta DevHalfTtaNukta DevTta DevTtaNukta DevTtaNuktaR DevTtaR] <anchor 574 1390> mark @_UpperCenter;
+        pos base [DevHalfTtha DevHalfTthaNukta DevTtha DevTthaNukta DevTthaNuktaR DevTthaR] <anchor 686 1390> mark @_UpperCenter;
+        pos base DevHeavyYa <anchor 599 1390> mark @_UpperCenter;
+        pos base [DevJ.Nya DevJ.NyaR DevP.Ta] <anchor 628 1390> mark @_UpperCenter;
+        pos base [DevJa DevJaNukta] <anchor 670 1390> mark @_UpperCenter;
+        pos base [DevJaNuktaR DevJaR DevNga] <anchor 681 1390> mark @_UpperCenter;
+        pos base [DevJha DevJhaNukta DevJhaNuktaR DevJhaR DevVowelLL DevVowelLLNukta] <anchor 783 1390> mark @_UpperCenter;
+        pos base [DevJha.alt DevJhaNukta.alt DevJhaNuktaR.alt DevJhaR.alt] <anchor 1099 1390> mark @_UpperCenter;
+        pos base [DevJha.alt2 DevJhaNukta.alt2 DevJhaNuktaR.alt2 DevJhaR.alt2] <anchor 792 1390> mark @_UpperCenter;
+        pos base [DevJjaNuktaR DevJjaR] <anchor 719 1390> mark @_UpperCenter;
+        pos base [DevK.Ka DevK.Ka.alt] <anchor 832 1390> mark @_UpperCenter;
+        pos base [DevK.Ssa DevK.SsaR] <anchor 893 1390> mark @_UpperCenter;
+        pos base [DevK.Ssa.archaic DevNg.Ka DevNg.Ka.alt] <anchor 772 1390> mark @_UpperCenter;
+        pos base DevK.Ta <anchor 986 1390> mark @_UpperCenter;
+        pos base [DevKa DevKaNukta] <anchor 901 1390> mark @_UpperCenter;
+        pos base [DevKaNuktaR DevKaR] <anchor 910 1390> mark @_UpperCenter;
+        pos base [DevKaNuktaR.alt DevKaR.alt] <anchor 896 1390> mark @_UpperCenter;
+        pos base [DevKha DevKhaNukta DevKhaNuktaR DevKhaR] <anchor 863 1390> mark @_UpperCenter;
+        pos base [DevL.La DevL.La.alt DevM.La DevM.La.alt] <anchor 665 1390> mark @_UpperCenter;
+        pos base [DevLa DevLaNukta DevLaNuktaR DevLaR] <anchor 724 1390> mark @_UpperCenter;
+        pos base [DevLla DevLlaNukta DevLlaNuktaR DevLlaR] <anchor 806 1390> mark @_UpperCenter;
+        pos base [DevMa DevMaNukta DevMaNuktaR DevMaR] <anchor 555 1390> mark @_UpperCenter;
+        pos base DevMaatraAW <anchor 277 1390> mark @_UpperCenter;
+        pos base DevMaatraOOE <anchor 202 1390> mark @_UpperCenter;
+        pos base DevN.Na <anchor 627 1390> mark @_UpperCenter;
+        pos base [DevNa DevNaNukta DevNaNuktaR DevNaR] <anchor 529 1390> mark @_UpperCenter;
+        pos base [DevNg.Ga DevNg.Ga.alt] <anchor 577 1390> mark @_UpperCenter;
+        pos base [DevNg.Gha DevNg.Gha.alt] <anchor 553 1390> mark @_UpperCenter;
+        pos base [DevNg.Ha DevNg.Ha.alt] <anchor 552 1390> mark @_UpperCenter;
+        pos base [DevNg.Kha DevNg.Kha.alt] <anchor 690 1390> mark @_UpperCenter;
+        pos base [DevNg.Nga DevNg.Nga.alt] <anchor 537 1390> mark @_UpperCenter;
+        pos base [DevNg.Ya DevNg.YaNukta DevNg.YaNuktaRa DevNg.YaRa] <anchor 2120 1390> mark @_UpperCenter;
+        pos base [DevNna DevNnaNukta DevNnaNuktaR DevNnaR DevWa DevWaNukta DevWaNuktaR DevWaR] <anchor 687 1390> mark @_UpperCenter;
+        pos base DevNna.archaic <anchor 865 1390> mark @_UpperCenter;
+        pos base [DevNya DevNyaNukta DevNyaNuktaR DevNyaR] <anchor 656 1390> mark @_UpperCenter;
+        pos base [DevPa DevPaNukta DevPaNuktaR DevPaR] <anchor 585 1390> mark @_UpperCenter;
+        pos base [DevPha DevPhaNukta DevPhaNuktaR DevPhaR] <anchor 836 1390> mark @_UpperCenter;
+        pos base [DevR.U DevR.UNukta DevRNukta.U DevRNukta.UNukta] <anchor 523 1390> mark @_UpperCenter;
+        pos base [DevR.UU DevR.UUNukta DevRNukta.UU DevRNukta.UUNukta] <anchor 790 1390> mark @_UpperCenter;
+        pos base [DevRa DevRaMaatraU DevRaMaatraUNukta DevRaMaatraUU DevRaMaatraUUNukta DevRaNukta DevRaNuktaMaatraU DevRaNuktaMaatraUNukta DevRaNuktaMaatraUU DevRaNuktaMaatraUUNukta] <anchor 527 1390> mark @_UpperCenter;
+        pos base DevRa.Ya <anchor 1588 1390> mark @_UpperCenter;
+        pos base [DevRa.YaNukta DevRa.YaNuktaRa DevRa.YaRa] <anchor 1574 1390> mark @_UpperCenter;
+        pos base DevS.Na <anchor 725 1390> mark @_UpperCenter;
+        pos base [DevSa DevSaNukta] <anchor 702 1390> mark @_UpperCenter;
+        pos base [DevSaNuktaR DevSaR] <anchor 752 1390> mark @_UpperCenter;
+        pos base DevSh.Ca <anchor 708 1390> mark @_UpperCenter;
+        pos base [DevSh.Wa DevYa.alt DevYaNukta.alt DevYaNuktaR.alt DevYaR.alt] <anchor 720 1390> mark @_UpperCenter;
+        pos base [DevSha DevShaNukta DevShaNuktaR.alt DevShaR.alt] <anchor 685 1390> mark @_UpperCenter;
+        pos base [DevShaNuktaR DevShaR] <anchor 605 1390> mark @_UpperCenter;
+        pos base DevSs.Tta <anchor 593 1390> mark @_UpperCenter;
+        pos base [DevSsa DevSsaNukta DevSsaNuktaR DevSsaR] <anchor 615 1390> mark @_UpperCenter;
+        pos base DevT.Ta <anchor 630 1390> mark @_UpperCenter;
+        pos base [DevTa DevTaNukta DevTaNuktaR.alt DevTaR.alt] <anchor 603 1390> mark @_UpperCenter;
+        pos base [DevTaNuktaR DevTaR] <anchor 563 1390> mark @_UpperCenter;
+        pos base [DevTha DevThaNukta DevThaNuktaR DevThaR] <anchor 757 1390> mark @_UpperCenter;
+        pos base [DevTt.Tta DevTt.Tta.alt] <anchor 481 1390> mark @_UpperCenter;
+        pos base [DevTt.Ttha DevTt.Ttha.alt] <anchor 490 1390> mark @_UpperCenter;
+        pos base [DevTth.Ttha DevTth.Ttha.alt] <anchor 494 1390> mark @_UpperCenter;
+        pos base [DevTth.Ya DevTth.YaNukta DevTth.YaNuktaRa DevTth.YaRa] <anchor 2065 1390> mark @_UpperCenter;
+        pos base [DevVowelA DevVowelAW DevVowelOE DevVowelOOE DevVowelShortA DevVowelUE DevVowelUUE] <anchor 831 1390> mark @_UpperCenter;
+        pos base [DevVowelA.archaic DevVowelAA.archaic DevVowelO.archaic] <anchor 695 1390> mark @_UpperCenter;
+        pos base [DevVowelAA DevVowelAANukta DevVowelAU DevVowelAUNukta DevVowelCandraO DevVowelCandraONukta DevVowelO DevVowelONukta DevVowelShortO DevVowelShortONukta] <anchor 821 1390> mark @_UpperCenter;
+        pos base [DevVowelAI DevVowelAINukta DevVowelCandraE DevVowelCandraENukta DevVowelE DevVowelENukta DevVowelShortE DevVowelShortENukta] <anchor 570 1390> mark @_UpperCenter;
+        pos base [DevVowelANukta DevVowelCandraA DevVowelCandraANukta] <anchor 651 1390> mark @_UpperCenter;
+        pos base DevVowelAU.archaic <anchor 930 1390> mark @_UpperCenter;
+        pos base [DevVowelI DevVowelII DevVowelIIBindu DevVowelIICandrabindu DevVowelIINukta DevVowelINukta] <anchor 569 1390> mark @_UpperCenter;
+        pos base [DevVowelL DevVowelLNukta] <anchor 753 1390> mark @_UpperCenter;
+        pos base [DevVowelR DevVowelRNukta DevVowelRR DevVowelRRNukta] <anchor 891 1390> mark @_UpperCenter;
+        pos base DevVowelShortANukta <anchor 871 1390> mark @_UpperCenter;
+        pos base [DevVowelU DevVowelUNukta] <anchor 504 1390> mark @_UpperCenter;
+        pos base [DevVowelUU DevVowelUUNukta] <anchor 700 1390> mark @_UpperCenter;
+        pos base [DevYa DevYaNukta DevYaNuktaR DevYaR] <anchor 571 1390> mark @_UpperCenter;
+        pos base DottedCirc <anchor 533 1100> mark @_UpperCenter;
+    } base_UpperCenter_base;
 
+
+lookup CandrabinduAdjust {
+    lookupflag MarkAttachmentType @cDevCandrabinduAdjust;
+    pos @cDevConsNarrowRightofStem1 DevCandrabindu' <-125 0 0 0> @cDevConsNarrowLeftofStem2 [@cDevMatra0946 @cDevMatra0947 @cDevMatra0948];
+    pos @cDevConsNarrowRightofStem1 DevCandrabindu' <-125 0 0 0> DevRa @cDevMatra0945;
+    pos @cDevConsNarrowRightofStem1 DevCandrabindu' <-125 0 0 0> @cDevMatra_i_variants;
+} CandrabinduAdjust;
+
+lookup CandrabinduRaAdjust {
+    lookupflag MarkAttachmentType @cDevCandrabinduAdjust;
+    pos [@cDevConsNarrowRightofStem2 DevMaatraAA] DevCandrabindu' <-450 0 0 0> DevRa [@cDevMatra0946 @cDevMatra0947 @cDevMatra0948];
+} CandrabinduRaAdjust;
+
+lookup AboveRephAdjust {
+    lookupflag 0;
+    pos [DevMaatraII DevMaatraIINukta DevMaatraE DevMaatraENukta DevMaatraENukta.alt] DevRaReph' <60 0 0 0>;
+    pos [DevMaatraCandraO DevMaatraCandraONukta] DevRaReph' <-400 0 0 0>;
+    pos [DevMaatraShortE DevMaatraShortENukta] DevRaReph' <150 -50 0 0>;
+    pos [DevMaatraAi DevMaatraAiNukta] DevRaReph' <140 -30 0 0>;
+} AboveRephAdjust;
+
+lookup AboveModifiersAdjust {
+    lookupflag 0;
+    pos DevMaatraAi DevAnusvara' <200 0 0 0>;
+    pos DevMaatraAi DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraAi DevCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraAi DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraAi DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraAiNukta DevAnusvara' <200 0 0 0>;
+    pos DevMaatraAiNukta DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraAiNukta DevCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraAiNukta DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraAiNukta DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraAU DevAnusvara' <220 0 0 0>;
+    pos DevMaatraAU DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraAU DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraAU DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraAU DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraAUNukta DevAnusvara' <220 0 0 0>;
+    pos DevMaatraAUNukta DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraAUNukta DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraAUNukta DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraAUNukta DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraCandraE DevAnusvara' <500 0 0 0>;
+    pos DevMaatraCandraE DevCandrabindu.alt' <0 250 0 0>;
+    pos DevMaatraCandraE DevInvCandrabindu.alt' <0 250 0 0>;
+    pos DevMaatraCandraE' <0 15 0 0> DevCandrabindu' <700 0 0 0>;
+    pos DevMaatraCandraE' <0 15 0 0> DevInvCandrabindu' <700 0 0 0>;
+    pos DevMaatraCandraENukta DevAnusvara' <500 0 0 0>;
+    pos DevMaatraCandraENukta DevCandrabindu.alt' <0 250 0 0>;
+    pos DevMaatraCandraENukta DevInvCandrabindu.alt' <0 250 0 0>;
+    pos DevMaatraCandraENukta' <0 15 0 0> DevCandrabindu' <700 0 0 0>;
+    pos DevMaatraCandraENukta' <0 15 0 0> DevInvCandrabindu' <700 0 0 0>;
+    pos DevMaatraCandraLongE DevAnusvara' <500 0 0 0>;
+    pos DevMaatraCandraLongE DevCandrabindu' <775 0 0 0>;
+    pos DevMaatraCandraLongE DevCandrabindu.alt' <650 150 0 0>;
+    pos DevMaatraCandraLongE DevInvCandrabindu' <775 0 0 0>;
+    pos DevMaatraCandraLongE DevInvCandrabindu.alt' <650 150 0 0>;
+    pos DevMaatraCandraO DevAnusvara' <500 0 0 0>;
+    pos DevMaatraCandraO DevCandrabindu' <775 0 0 0>;
+    pos DevMaatraCandraO DevCandrabindu.alt' <50 200 0 0>;
+    pos DevMaatraCandraO DevInvCandrabindu' <775 0 0 0>;
+    pos DevMaatraCandraO DevInvCandrabindu.alt' <50 200 0 0>;
+    pos DevMaatraCandraONukta DevAnusvara' <500 0 0 0>;
+    pos DevMaatraCandraONukta DevCandrabindu' <775 0 0 0>;
+    pos DevMaatraCandraONukta DevCandrabindu.alt' <50 200 0 0>;
+    pos DevMaatraCandraONukta DevInvCandrabindu' <775 0 0 0>;
+    pos DevMaatraCandraONukta DevInvCandrabindu.alt' <50 200 0 0>;
+    pos DevMaatraE DevAnusvara' <200 0 0 0>;
+    pos DevMaatraE DevCandrabindu' <220 0 0 0>;
+    pos DevMaatraE DevCandrabindu.alt' <250 0 0 0>;
+    pos DevMaatraE DevInvCandrabindu' <220 0 0 0>;
+    pos DevMaatraE DevInvCandrabindu.alt' <250 0 0 0>;
+    pos DevMaatraENukta DevAnusvara' <200 0 0 0>;
+    pos DevMaatraENukta DevCandrabindu' <220 0 0 0>;
+    pos DevMaatraENukta DevCandrabindu.alt' <250 0 0 0>;
+    pos DevMaatraENukta DevInvCandrabindu' <220 0 0 0>;
+    pos DevMaatraENukta DevInvCandrabindu.alt' <250 0 0 0>;
+    pos DevMaatraENukta.alt DevAnusvara' <200 0 0 0>;
+    pos DevMaatraENukta.alt DevCandrabindu' <220 0 0 0>;
+    pos DevMaatraENukta.alt DevCandrabindu.alt' <250 0 0 0>;
+    pos DevMaatraENukta.alt DevInvCandrabindu' <220 0 0 0>;
+    pos DevMaatraENukta.alt DevInvCandrabindu.alt' <250 0 0 0>;
+    pos DevMaatraII DevAnusvara' <200 0 0 0>;
+    pos DevMaatraII DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraII DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraII DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraII DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraII.width20 DevAnusvara' <200 0 0 0>;
+    pos DevMaatraII.width20 DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraII.width20 DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraII.width20 DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraII.width20 DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraII.width30 DevAnusvara' <200 0 0 0>;
+    pos DevMaatraII.width30 DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraII.width30 DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraII.width30 DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraII.width30 DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraIINukta DevAnusvara' <200 0 0 0>;
+    pos DevMaatraIINukta DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraIINukta DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraIINukta DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraIINukta DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraIINukta.width20 DevAnusvara' <200 0 0 0>;
+    pos DevMaatraIINukta.width20 DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraIINukta.width20 DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraIINukta.width20 DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraIINukta.width20 DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraIINukta.width30 DevAnusvara' <200 0 0 0>;
+    pos DevMaatraIINukta.width30 DevCandrabindu' <250 0 0 0>;
+    pos DevMaatraIINukta.width30 DevCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraIINukta.width30 DevInvCandrabindu' <250 0 0 0>;
+    pos DevMaatraIINukta.width30 DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevMaatraO DevAnusvara' <200 0 0 0>;
+    pos DevMaatraO DevCandrabindu' <220 0 0 0>;
+    pos DevMaatraO DevCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraO DevInvCandrabindu' <220 0 0 0>;
+    pos DevMaatraO DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraOE DevCandrabindu' <400 0 0 0>;
+    pos DevMaatraOE DevCandrabindu.alt' <300 50 0 0>;
+    pos DevMaatraOE DevInvCandrabindu' <400 0 0 0>;
+    pos DevMaatraOE DevInvCandrabindu.alt' <300 50 0 0>;
+    pos DevMaatraONukta DevAnusvara' <200 0 0 0>;
+    pos DevMaatraONukta DevCandrabindu' <220 0 0 0>;
+    pos DevMaatraONukta DevCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraONukta DevInvCandrabindu' <220 0 0 0>;
+    pos DevMaatraONukta DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevMaatraOOE DevAnusvara' <200 0 0 0>;
+    pos DevMaatraOOE DevCandrabindu' <400 0 0 0>;
+    pos DevMaatraOOE DevCandrabindu.alt' <300 100 0 0>;
+    pos DevMaatraOOE DevInvCandrabindu' <400 0 0 0>;
+    pos DevMaatraOOE DevInvCandrabindu.alt' <300 100 0 0>;
+    pos DevMaatraShortE DevAnusvara' <250 0 0 0>;
+    pos DevMaatraShortE DevCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortE DevCandrabindu.alt' <400 0 0 0>;
+    pos DevMaatraShortE DevInvCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortE DevInvCandrabindu.alt' <400 0 0 0>;
+    pos DevMaatraShortENukta DevAnusvara' <250 0 0 0>;
+    pos DevMaatraShortENukta DevCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortENukta DevCandrabindu.alt' <400 0 0 0>;
+    pos DevMaatraShortENukta DevInvCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortENukta DevInvCandrabindu.alt' <400 0 0 0>;
+    pos DevMaatraShortO DevAnusvara' <150 0 0 0>;
+    pos DevMaatraShortO DevCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortO DevCandrabindu.alt' <400 0 0 0>;
+    pos DevMaatraShortO DevInvCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortO DevInvCandrabindu.alt' <400 0 0 0>;
+    pos DevMaatraShortONukta DevAnusvara' <150 0 0 0>;
+    pos DevMaatraShortONukta DevCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortONukta DevCandrabindu.alt' <400 0 0 0>;
+    pos DevMaatraShortONukta DevInvCandrabindu' <300 0 0 0>;
+    pos DevMaatraShortONukta DevInvCandrabindu.alt' <400 0 0 0>;
+    pos DevVowelAI DevAnusvara' <200 0 0 0>;
+    pos DevVowelAI DevCandrabindu' <220 0 0 0>;
+    pos DevVowelAI DevCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelAI DevInvCandrabindu' <220 0 0 0>;
+    pos DevVowelAI DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelAINukta DevAnusvara' <200 0 0 0>;
+    pos DevVowelAINukta DevCandrabindu' <220 0 0 0>;
+    pos DevVowelAINukta DevCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelAINukta DevInvCandrabindu' <220 0 0 0>;
+    pos DevVowelAINukta DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelAU DevAnusvara' <250 0 0 0>;
+    pos DevVowelAU DevCandrabindu' <250 0 0 0>;
+    pos DevVowelAU DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelAU DevInvCandrabindu' <250 0 0 0>;
+    pos DevVowelAU DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelAUNukta DevAnusvara' <250 0 0 0>;
+    pos DevVowelAUNukta DevCandrabindu' <250 0 0 0>;
+    pos DevVowelAUNukta DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelAUNukta DevInvCandrabindu' <250 0 0 0>;
+    pos DevVowelAUNukta DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelCandraA DevAnusvara' <500 0 0 0>;
+    pos DevVowelCandraA DevCandrabindu' <825 0 0 0>;
+    pos DevVowelCandraA DevCandrabindu.alt' <50 250 0 0>;
+    pos DevVowelCandraA DevInvCandrabindu' <825 0 0 0>;
+    pos DevVowelCandraA DevInvCandrabindu.alt' <50 250 0 0>;
+    pos DevVowelCandraANukta DevAnusvara' <500 0 0 0>;
+    pos DevVowelCandraANukta DevCandrabindu' <825 0 0 0>;
+    pos DevVowelCandraANukta DevCandrabindu.alt' <50 250 0 0>;
+    pos DevVowelCandraANukta DevInvCandrabindu' <825 0 0 0>;
+    pos DevVowelCandraANukta DevInvCandrabindu.alt' <50 250 0 0>;
+    pos DevVowelCandraE DevAnusvara' <250 0 0 0>;
+    pos DevVowelCandraE DevCandrabindu' <575 0 0 0>;
+    pos DevVowelCandraE DevCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelCandraE DevInvCandrabindu' <575 0 0 0>;
+    pos DevVowelCandraE DevInvCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelCandraENukta DevAnusvara' <250 0 0 0>;
+    pos DevVowelCandraENukta DevCandrabindu' <575 0 0 0>;
+    pos DevVowelCandraENukta DevCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelCandraENukta DevInvCandrabindu' <575 0 0 0>;
+    pos DevVowelCandraENukta DevInvCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelCandraO DevAnusvara' <500 0 0 0>;
+    pos DevVowelCandraO DevCandrabindu' <775 0 0 0>;
+    pos DevVowelCandraO DevCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelCandraO DevInvCandrabindu' <775 0 0 0>;
+    pos DevVowelCandraO DevInvCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelCandraONukta DevAnusvara' <500 0 0 0>;
+    pos DevVowelCandraONukta DevCandrabindu' <775 0 0 0>;
+    pos DevVowelCandraONukta DevCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelCandraONukta DevInvCandrabindu' <775 0 0 0>;
+    pos DevVowelCandraONukta DevInvCandrabindu.alt' <0 250 0 0>;
+    pos DevVowelII DevAnusvara' <120 0 0 0>;
+    pos DevVowelII DevCandrabindu' <360 -50 0 0>;
+    pos DevVowelII DevCandrabindu.alt' <340 -40 0 0>;
+    pos DevVowelII DevInvCandrabindu' <360 -50 0 0>;
+    pos DevVowelII DevInvCandrabindu.alt' <340 -40 0 0>;
+    pos DevVowelIINukta DevAnusvara' <120 0 0 0>;
+    pos DevVowelIINukta DevCandrabindu' <360 -50 0 0>;
+    pos DevVowelIINukta DevCandrabindu.alt' <340 -40 0 0>;
+    pos DevVowelIINukta DevInvCandrabindu' <360 -50 0 0>;
+    pos DevVowelIINukta DevInvCandrabindu.alt' <340 -40 0 0>;
+    pos DevVowelO DevAnusvara' <250 0 0 0>;
+    pos DevVowelO DevCandrabindu' <220 0 0 0>;
+    pos DevVowelO DevCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelO DevInvCandrabindu' <220 0 0 0>;
+    pos DevVowelO DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelONukta DevAnusvara' <250 0 0 0>;
+    pos DevVowelONukta DevCandrabindu' <220 0 0 0>;
+    pos DevVowelONukta DevCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelONukta DevInvCandrabindu' <220 0 0 0>;
+    pos DevVowelONukta DevInvCandrabindu.alt' <300 0 0 0>;
+    pos DevVowelShortA DevAnusvara' <250 0 0 0>;
+    pos DevVowelShortA DevCandrabindu' <300 0 0 0>;
+    pos DevVowelShortA DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortA DevInvCandrabindu' <300 0 0 0>;
+    pos DevVowelShortA DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortANukta DevAnusvara' <250 0 0 0>;
+    pos DevVowelShortANukta DevCandrabindu' <300 0 0 0>;
+    pos DevVowelShortANukta DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortANukta DevInvCandrabindu' <300 0 0 0>;
+    pos DevVowelShortANukta DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortE DevAnusvara' <250 0 0 0>;
+    pos DevVowelShortE DevCandrabindu' <300 0 0 0>;
+    pos DevVowelShortE DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortE DevInvCandrabindu' <300 0 0 0>;
+    pos DevVowelShortE DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortENukta DevAnusvara' <250 0 0 0>;
+    pos DevVowelShortENukta DevCandrabindu' <300 0 0 0>;
+    pos DevVowelShortENukta DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortENukta DevInvCandrabindu' <300 0 0 0>;
+    pos DevVowelShortENukta DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortO DevAnusvara' <250 0 0 0>;
+    pos DevVowelShortO DevCandrabindu' <300 0 0 0>;
+    pos DevVowelShortO DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortO DevInvCandrabindu' <300 0 0 0>;
+    pos DevVowelShortO DevInvCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortONukta DevAnusvara' <250 0 0 0>;
+    pos DevVowelShortONukta DevCandrabindu' <300 0 0 0>;
+    pos DevVowelShortONukta DevCandrabindu.alt' <350 0 0 0>;
+    pos DevVowelShortONukta DevInvCandrabindu' <300 0 0 0>;
+    pos DevVowelShortONukta DevInvCandrabindu.alt' <350 0 0 0>;
+} AboveModifiersAdjust;
+
+lookup AboveSignsAdjust {
+    lookupflag 0;
+    pos DevCandrabindu DevUdatta' <350 140 0 0>;
+    pos DevCandrabindu DevGrave' <-550 170 0 0>;
+    pos DevCandrabindu DevAcute' <-420 170 0 0>;
+    pos DevAnusvara DevUdatta' <300 140 0 0>;
+    pos DevAnusvara' <0 15 0 0> DevGrave' <-135 170 0 0>;
+    pos DevAnusvara DevAcute' <170 170 0 0>;
+    pos DevMaatraCandraE DevUdatta' <-130 200 0 0>;
+    pos DevMaatraCandraE DevGrave' <-90 170 0 0>;
+    pos DevMaatraCandraE DevAcute' <140 175 0 0>;
+    pos DevMaatraCandraENukta DevUdatta' <-130 200 0 0>;
+    pos DevMaatraCandraENukta DevGrave' <-90 170 0 0>;
+    pos DevMaatraCandraENukta DevAcute' <140 175 0 0>;
+    pos DevMaatraShortE DevUdatta' <120 150 0 0>;
+    pos DevMaatraShortE DevGrave' <180 175 0 0>;
+    pos DevMaatraShortE DevAcute' <-600 170 0 0>;
+    pos DevMaatraShortENukta DevUdatta' <120 150 0 0>;
+    pos DevMaatraShortENukta DevGrave' <180 175 0 0>;
+    pos DevMaatraShortENukta DevAcute' <-600 170 0 0>;
+    pos DevMaatraE DevUdatta' <0 160 0 0>;
+    pos DevMaatraE DevGrave' <60 170 0 0>;
+    pos DevMaatraE DevAcute' <-795 170 0 0>;
+    pos DevMaatraENukta DevUdatta' <0 160 0 0>;
+    pos DevMaatraENukta DevGrave' <60 170 0 0>;
+    pos DevMaatraENukta DevAcute' <-795 170 0 0>;
+    pos DevMaatraENukta.alt DevUdatta' <0 160 0 0>;
+    pos DevMaatraENukta.alt DevGrave' <60 170 0 0>;
+    pos DevMaatraENukta.alt DevAcute' <-795 170 0 0>;
+    pos DevMaatraAi DevUdatta' <0 160 0 0>;
+    pos DevMaatraAi DevGrave' <100 170 0 0>;
+    pos DevMaatraAi DevAcute' <-740 170 0 0>;
+    pos DevMaatraAiNukta DevUdatta' <0 160 0 0>;
+    pos DevMaatraAiNukta DevGrave' <100 170 0 0>;
+    pos DevMaatraAiNukta DevAcute' <-740 170 0 0>;
+    pos DevRaReph DevUdatta' <-350 150 0 0>;
+    pos DevRaReph DevGrave' <-265 170 0 0>;
+    pos DevRaReph DevAcute' <-260 170 0 0>;
+} AboveSignsAdjust;
+
+lookup AboveMarksRephAdjust {
+    lookupflag IgnoreBaseGlyphs;
+    pos [DevMaatraCandraE DevMaatraCandraENukta]' <300 0 0 0> DevRaReph;
+} AboveMarksRephAdjust;
+
+lookup BelowMatraAdjust {
+    lookupflag 0;
+    pos [DevNgaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta] [@cDevMatra0942 @cDevMatra0962_0963]' <0 -70 0 0>;
+    pos [DevChaNukta] [@cDevMatra0942 @cDevMatra0962_0963]' <0 -40 0 0>;
+    pos [DevDdhaNukta DevHaNukta] @cDevMatra0942' <0 -100 0 0>;
+    pos [DevDdhaNukta DevHaNukta] @cDevMatra0962_0963' <0 -50 0 0>;
+    pos [DevLlaNukta] @cDevMatra0942' <0 -50 0 0>;
+    pos [DevLlaNukta] @cDevMatra0962_0963' <0 -100 0 0>;
+} BelowMatraAdjust;
+
+lookup BelowSignsAdjust {
+    lookupflag 0;
+    pos DevMaatraU DevAnudatta' <0 -560 0 0>;
+    pos DevMaatraUNukta DevAnudatta' <0 -660 0 0>;
+    pos DevMaatraUU DevAnudatta' <500 -600 0 0>;
+    pos DevMaatraUUNukta DevAnudatta' <500 -650 0 0>;
+    pos DevMaatraR DevAnudatta' <200 -560 0 0>;
+    pos DevMaatraRNukta DevAnudatta' <200 -860 0 0>;
+    pos DevMaatraRR DevAnudatta' <0 -650 0 0>;
+    pos DevMaatraRRNukta DevAnudatta' <0 -930 0 0>;
+    pos DevMaatraL DevAnudatta' <100 -620 0 0>;
+    pos DevMaatraLNukta DevAnudatta' <100 -930 0 0>;
+    pos DevMaatraLL DevAnudatta' <100 -650 0 0>;
+    pos DevMaatraLLNukta DevAnudatta' <100 -930 0 0>;
+    pos DevMaatraUE DevAnudatta' <100 -350 0 0>;
+    pos DevMaatraUUE DevAnudatta' <100 -600 0 0>;
+} BelowSignsAdjust;
+
+lookup BelowHalantAdjust {
+    lookupflag 0;
+    pos DevAnudatta DevHalant <0 -250 0 0>;
+} BelowHalantAdjust;
+
+#**********************************
+#  Features
+#**********************************
+#feature aalt {  # Access All Alternates
+#    script DFLT;  # Default
+#        language dflt;  # Default
+#            lookup AllAlternates;
+#    script dev2;  # Devanagari v.2 
+#        language dflt;  # Default
+#            lookup AllAlternates;
+#        language NEP  exclude_dflt;  # Nepali
+#            lookup AllAlternates;
+#        language NEW  exclude_dflt;  # Newari
+#            lookup AllAlternates;
+#    script deva;  # Devanagari
+#        language dflt;  # Default
+#            lookup AllAlternates;
+#} aalt ;
 feature abvm {
     # Above-Base Mark Positioning
     script DFLT;
@@ -3183,72 +3624,57 @@ feature abvm {
     language dflt;
     # Default
     lookup base_Upper_base;
-    ##            lookup base_UpperCenter_base;
-    #            lookup AboveConsMarks;
-    #            lookup AboveVowelMarks;
-    #            lookup AboveSpacingMatraMarks;
+    lookup base_UpperCenter_base;
     #            lookup CandrabinduAdjust;
     #            lookup CandrabinduRaAdjust;
     #            lookup AboveRephAdjust;
     #            lookup AboveModifiersAdjust;
     #            lookup AboveSignsAdjust;
-    #            lookup AboveMarks_RephAdjust;
+    #            lookup AboveMarksRephAdjust;
     script dev2;
     # Devanagari v.2 
     language dflt;
     # Default
     lookup base_Upper_base;
-    ##            lookup base_UpperCenter_base;
-    #            lookup AboveConsMarks;
-    #            lookup AboveVowelMarks;
-    #            lookup AboveSpacingMatraMarks;
+    lookup base_UpperCenter_base;
     #            lookup CandrabinduAdjust;
     #            lookup CandrabinduRaAdjust;
     #            lookup AboveRephAdjust;
     #            lookup AboveModifiersAdjust;
     #            lookup AboveSignsAdjust;
-    #            lookup AboveMarks_RephAdjust;
+    #            lookup AboveMarksRephAdjust;
     language NEP exclude_dflt;
     # Nepali
     lookup base_Upper_base;
-    ##            lookup base_UpperCenter_base;
-    #            lookup AboveConsMarks;
-    #            lookup AboveVowelMarks;
-    #            lookup AboveSpacingMatraMarks;
+    lookup base_UpperCenter_base;
     #            lookup CandrabinduAdjust;
     #            lookup CandrabinduRaAdjust;
     #            lookup AboveRephAdjust;
     #            lookup AboveModifiersAdjust;
     #            lookup AboveSignsAdjust;
-    #            lookup AboveMarks_RephAdjust;
+    #            lookup AboveMarksRephAdjust;
     language NEW exclude_dflt;
     # Newari
     lookup base_Upper_base;
-    ##            lookup base_UpperCenter_base;
-    #            lookup AboveConsMarks;
-    #            lookup AboveVowelMarks;
-    #            lookup AboveSpacingMatraMarks;
+    lookup base_UpperCenter_base;
     #            lookup CandrabinduAdjust;
     #            lookup CandrabinduRaAdjust;
     #            lookup AboveRephAdjust;
     #            lookup AboveModifiersAdjust;
     #            lookup AboveSignsAdjust;
-    #            lookup AboveMarks_RephAdjust;
+    #            lookup AboveMarksRephAdjust;
     script deva;
     # Devanagari
     language dflt;
     # Default
     lookup base_Upper_base;
-    ##            lookup base_UpperCenter_base;
-    #            lookup AboveConsMarks;
-    #            lookup AboveVowelMarks;
-    #            lookup AboveSpacingMatraMarks;
+    lookup base_UpperCenter_base;
     #            lookup CandrabinduAdjust;
     #            lookup CandrabinduRaAdjust;
     #            lookup AboveRephAdjust;
     #            lookup AboveModifiersAdjust;
     #            lookup AboveSignsAdjust;
-    #            lookup AboveMarks_RephAdjust;
+    #            lookup AboveMarksRephAdjust;
 } abvm;
 
 feature abvs {
@@ -3353,97 +3779,77 @@ feature blwm {
     language dflt;
     # Default
     lookup base_Halant_base;
+    # halant positioning
     lookup base_Lower_base;
     lookup base_LowerAlt_base;
     lookup base_LowerCenter_base;
     lookup base_Nukta_base;
+    # nukta positioning
     lookup base_Ra_base;
     # rakar positioning
-    #            lookup BelowConsMarks;
-    #            lookup BelowVowelMarks;
-    #            lookup BelowHalfFormMarks;
-    #            lookup BelowMatraAdjust;
-    #            lookup BelowSignsAdjust;
-    #            lookup BelowHalantAdjust;
-    #            lookup HalantPositioning;
-    #            lookup NuktaPositioning;
-    #            lookup RakarPositioning;
+    lookup BelowMatraAdjust;
+    lookup BelowSignsAdjust;
+    lookup BelowHalantAdjust;
     script dev2;
     # Devanagari v.2 
     language dflt;
     # Default
     lookup base_Halant_base;
+    # halant positioning
     lookup base_Lower_base;
     lookup base_LowerAlt_base;
     lookup base_LowerCenter_base;
     lookup base_Nukta_base;
+    # nukta positioning
     lookup base_Ra_base;
     # rakar positioning
-    #            lookup BelowConsMarks;
-    #            lookup BelowVowelMarks;
-    #            lookup BelowHalfFormMarks;
-    #            lookup BelowMatraAdjust;
-    #            lookup BelowSignsAdjust;
-    #            lookup BelowHalantAdjust;
-    #            lookup HalantPositioning;
-    #            lookup NuktaPositioning;
-    #            lookup RakarPositioning;
+    lookup BelowMatraAdjust;
+    lookup BelowSignsAdjust;
+    lookup BelowHalantAdjust;
     language NEP exclude_dflt;
     # Nepali
     lookup base_Halant_base;
+    # halant positioning
     lookup base_Lower_base;
     lookup base_LowerAlt_base;
     lookup base_LowerCenter_base;
     lookup base_Nukta_base;
+    # nukta positioning
     lookup base_Ra_base;
     # rakar positioning
-    #            lookup BelowConsMarks;
-    #            lookup BelowVowelMarks;
-    #            lookup BelowHalfFormMarks;
-    #            lookup BelowMatraAdjust;
-    #            lookup BelowSignsAdjust;
-    #            lookup BelowHalantAdjust;
-    #            lookup HalantPositioning;
-    #            lookup NuktaPositioning;
-    #            lookup RakarPositioning;
+    lookup BelowMatraAdjust;
+    lookup BelowSignsAdjust;
+    lookup BelowHalantAdjust;
     language NEW exclude_dflt;
     # Newari
     lookup base_Halant_base;
+    # halant positioning
     lookup base_Lower_base;
     lookup base_LowerAlt_base;
     lookup base_LowerCenter_base;
     lookup base_Nukta_base;
+    # nukta positioning
     lookup base_Ra_base;
     # rakar positioning
-    #            lookup BelowConsMarks;
-    #            lookup BelowVowelMarks;
-    #            lookup BelowHalfFormMarks;
-    #            lookup BelowMatraAdjust;
-    #            lookup BelowSignsAdjust;
-    #            lookup BelowHalantAdjust;
-    #            lookup HalantPositioning;
-    #            lookup NuktaPositioning;
-    #            lookup RakarPositioning;
+    lookup BelowMatraAdjust;
+    lookup BelowSignsAdjust;
+    lookup BelowHalantAdjust;
     script deva;
     # Devanagari
     language dflt;
     # Default
     lookup base_Halant_base;
+    # halant positioning
     lookup base_Lower_base;
     lookup base_LowerAlt_base;
     lookup base_LowerCenter_base;
     lookup base_Nukta_base;
+    # nukta positioning
     lookup base_Ra_base;
     # rakar positioning
-    #            lookup BelowConsMarks;
-    #            lookup BelowVowelMarks;
-    #            lookup BelowHalfFormMarks;
-    #            lookup BelowMatraAdjust;
-    #            lookup BelowSignsAdjust;
-    #            lookup BelowHalantAdjust;
-    #            lookup HalantPositioning;
-    #            lookup NuktaPositioning;
-    #            lookup RakarPositioning;
+    lookup BelowMatraAdjust;
+    lookup BelowSignsAdjust;
+    lookup BelowHalantAdjust;
 } blwm;
 
 feature blws {
@@ -3559,6 +3965,55 @@ feature cjct {
     lookup dev2_Conjuncts_NoPrebase_Ya;
     lookup both_Conjuncts_NoPrebase_YaRaHalf;
 } cjct;
+
+feature dist {
+    script DFLT;
+    # Default
+    language dflt;
+    # Default
+    lookup CandrabinduAdjust;
+    lookup CandrabinduRaAdjust;
+    lookup AboveRephAdjust;
+    lookup AboveModifiersAdjust;
+    lookup AboveSignsAdjust;
+    lookup AboveMarksRephAdjust;
+    script dev2;
+    # Devanagari v.2 
+    language dflt;
+    # Default
+    lookup CandrabinduAdjust;
+    lookup CandrabinduRaAdjust;
+    lookup AboveRephAdjust;
+    lookup AboveModifiersAdjust;
+    lookup AboveSignsAdjust;
+    lookup AboveMarksRephAdjust;
+    language NEP exclude_dflt;
+    # Nepali
+    lookup CandrabinduAdjust;
+    lookup CandrabinduRaAdjust;
+    lookup AboveRephAdjust;
+    lookup AboveModifiersAdjust;
+    lookup AboveSignsAdjust;
+    lookup AboveMarksRephAdjust;
+    language NEW exclude_dflt;
+    # Newari
+    lookup CandrabinduAdjust;
+    lookup CandrabinduRaAdjust;
+    lookup AboveRephAdjust;
+    lookup AboveModifiersAdjust;
+    lookup AboveSignsAdjust;
+    lookup AboveMarksRephAdjust;
+    script deva;
+    # Devanagari
+    language dflt;
+    # Default
+    lookup CandrabinduAdjust;
+    lookup CandrabinduRaAdjust;
+    lookup AboveRephAdjust;
+    lookup AboveModifiersAdjust;
+    lookup AboveSignsAdjust;
+    lookup AboveMarksRephAdjust;
+} dist;
 
 feature frac {
     # Fractions
