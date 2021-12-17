@@ -1,0 +1,14 @@
+# Composites definition file for AnnapurnaSIL
+# Used by psfbuildcomp from SIL's pysilfont to build composite glyphs
+# Run command from root of font-annapurna: psfbuildcomp -i source/annapurna_composites.txt source/AnnapurnaSIL-Regular.ufo
+# Run command from root of font-annapurna: psfbuildcomp -i source/annapurna_composites.txt source/AnnapurnaSIL-Bold.ufo
+
+# 2021-12-16 create composites for Nga stacked conjunct + openYa (alternate Ya)
+# Follows naming of similar existing glyph composites
+# Archived for future reference
+#DevNgNga.Ya          = DevNg.Nga & DevYa.alt
+#DevNgNga.HalfYa      = DevNg.Nga & DevHalfYa.alt
+#DevNgNga.YaNukta     = DevNg.Nga & DevYaNukta.alt
+#DevNgNga.HalfYaNukta = DevNg.Nga & DevHalfYaNukta.alt
+#DevNgNga.YaRa        = DevNg.Nga & DevYaR.alt
+#DevNgNga.YaNuktaRa   = DevNg.Nga & DevYaNuktaR.alt

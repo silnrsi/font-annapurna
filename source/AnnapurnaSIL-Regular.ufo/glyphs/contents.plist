@@ -1024,6 +1024,18 @@
   <string>D_evN_gA_aC_ndrbndR_aA_i.glif</string>
   <key>DevNgAaCndrbndRaAi.001</key>
   <string>D_evN_gA_aC_ndrbndR_aA_i.001.glif</string>
+  <key>DevNgNga.HalfYa</key>
+  <string>D_evN_gN_ga.H_alfY_a.glif</string>
+  <key>DevNgNga.HalfYaNukta</key>
+  <string>D_evN_gN_ga.H_alfY_aN_ukta.glif</string>
+  <key>DevNgNga.Ya</key>
+  <string>D_evN_gN_ga.Y_a.glif</string>
+  <key>DevNgNga.YaNukta</key>
+  <string>D_evN_gN_ga.Y_aN_ukta.glif</string>
+  <key>DevNgNga.YaNuktaRa</key>
+  <string>D_evN_gN_ga.Y_aN_uktaR_a.glif</string>
+  <key>DevNgNga.YaRa</key>
+  <string>D_evN_gN_ga.Y_aR_a.glif</string>
   <key>DevNga</key>
   <string>D_evN_ga.glif</string>
   <key>DevNgaNukta</key>

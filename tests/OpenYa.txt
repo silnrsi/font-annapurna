@@ -12,3 +12,7 @@ ZWJ
 ङ्‍य छ्‍य ट्‍य ठ्‍य ड्‍य ढ्‍य द्‍य र्‍‍य ह्‍य
 ZWNJ
 ङ्‌य छ्‌य ट्‌य ठ्‌य ड्‌य ढ्‌य द्‌य र्‌‌य ह्‌य
+
+Show the alternate Ya with double Nga stacked conjunct (added for v 2.0)
+ङ्ङ्य ङ्ङ्य ङ्ङ्य   च्यिङ्ङ्यी़
+

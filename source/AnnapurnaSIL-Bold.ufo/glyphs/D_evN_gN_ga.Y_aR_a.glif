@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevNgNga.YaRa" format="2">
+  <advance width="2626"/>
+  <anchor x="2347" y="-126" name="Halant"/>
+  <anchor x="2347" y="-69" name="Lower"/>
+  <anchor x="1873" y="-138" name="LowerCenter"/>
+  <anchor x="2348" y="1356" name="Upper"/>
+  <anchor x="1872" y="1416" name="UpperCenter"/>
+  <outline>
+    <component base="DevNg.Nga"/>
+    <component base="DevYaR.alt" xOffset="1152"/>
+  </outline>
+</glyph>
