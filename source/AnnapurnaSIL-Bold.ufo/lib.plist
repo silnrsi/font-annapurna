@@ -2045,6 +2045,18 @@
     <string>uni0919094D092F094D0930</string>
     <key>DevNgAaCndrbndRaAi</key>
     <string>uni0919093E090109300948</string>
+    <key>DevNgNga.HalfYa</key>
+    <string>uni0919094D0919094D092F094D.half</string>
+    <key>DevNgNga.HalfYaNukta</key>
+    <string>uni0919094D0919094D095F094D.half</string>
+    <key>DevNgNga.Ya</key>
+    <string>uni0919094D0919094D092F</string>
+    <key>DevNgNga.YaNukta</key>
+    <string>uni0919094D0919094D095F</string>
+    <key>DevNgNga.YaNuktaRa</key>
+    <string>uni0919094D0919094D095F094D0930</string>
+    <key>DevNgNga.YaRa</key>
+    <string>uni0919094D0919094D092F094D0930</string>
     <key>DevNga</key>
     <string>uni0919</string>
     <key>DevNgaNukta</key>
