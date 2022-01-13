@@ -183,6 +183,12 @@ archaic {
 	bool
 }
 
+rudot {
+	id = "cv16";	// 
+	name.1033 = string("Ra Ukar with Nukta ligatures");
+	bool
+}
+
 endtable;	// feature
 
 

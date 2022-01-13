@@ -1297,6 +1297,10 @@ table(glyph)
 	cls_rya_alt 			= (g__dev_ra_ya,			g__dev_ra_ya_nukta);
 	cls_rya_alt_half 		= (g__dev_ra_half_ya,	g__dev_ra_half_ya_nukta);
 	cls_rya_ra_alt_half 	= (g__dev_ra_ya_ra,	g__dev_ra_ya_nukta_ra);
+    
+    // ra ukar dot ligatures
+    c_rudot_stack  = (g__dev_ra_maatra_u_nukta, g__dev_ra_nukta_maatra_u_nukta, g__dev_ra_maatra_u_u_nukta, g__dev_ra_nukta_maatra_u_u_nukta);
+    c_rudot_lig    = (g__dev_r_u_nukta,         g__dev_r_nukta_u_nukta,         g__dev_r_u_u_nukta,         g__dev_r_nukta_u_u_nukta);
 
 endtable; // glyph
 
@@ -1415,6 +1419,18 @@ if (archaic)
 	cno_archaic  >  carchaic;
 else
 	carchaic  >  cno_archaic;
+endif;
+
+
+if (rudot)
+//  c_rudot_stack  >  c_rudot_lig;
+    g__dev_ra       g__dev_maatra_u_nukta    >  g__dev_r_u_nukta:(1 2) _;
+    g__dev_ra_nukta g__dev_maatra_u_nukta    >  g__dev_r_nukta_u_nukta:(1 2) _;
+    g__dev_ra       g__dev_maatra_u_u_nukta  >  g__dev_r_u_u_nukta:(1 2) _;
+    g__dev_ra_nukta g__dev_maatra_u_u_nukta  >  g__dev_r_nukta_u_u_nukta:(1 2) _;
+else
+    c_rudot_lig  >  c_rudot_stack;
+
 endif;
 
 endpass; // PASS_FEATURES
