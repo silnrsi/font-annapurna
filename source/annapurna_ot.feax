@@ -1583,6 +1583,32 @@ lookup dev2_NoHalfHalantForms {
     sub DevDddaNukta DevHalant by DevHalfDddaNukta ;
 } dev2_NoHalfHalantForms;
 
+# When certain characters are followed by virama+ya (094D+092F) it displays as the full form of the first 
+# character followed by "open-ya". With older technology, we had to do this using ligatures (which are in 
+# "lookup dev2_Conjuncts_NoPrebase_Ya" above). We received a request that this should also happen when the 
+# first character has a nukta on it. We can do this now (using feax) in the contexual lookups following 
+# this comment.
+
+@cDevCNoStemNuktaHalantForms = [DevHalfNgaNukta DevHalfChaNukta DevHalfTtaNukta DevHalfTthaNukta DevHalfDdaNukta DevHalfDdhaNukta DevHalfRa];
+@cDevCNoStemNuktaForms = [DevNgaNukta DevChaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta DevRaNukta];
+@cDevYaForms = [DevYa DevHalfYa DevYaNukta DevHalfYaNukta DevYaR DevYaNuktaR]; 
+@cDevYaAltForms = [DevYa.alt DevHalfYa.alt DevYaNukta.alt DevHalfYaNukta.alt DevYaR.alt DevYaNuktaR.alt]; 
+
+lookup noHalf_subst {
+  lookupflag 0;
+    sub @cDevCNoStemNuktaHalantForms by @cDevCNoStemNuktaForms;
+} noHalf_subst;
+
+lookup altYA_subst {
+  lookupflag 0;
+    sub @cDevYaForms by @cDevYaAltForms;
+} altYA_subst;
+
+lookup altYA_context {
+  lookupflag 0;
+    sub @cDevCNoStemNuktaHalantForms' lookup noHalf_subst @cDevYaForms' lookup altYA_subst;
+} altYA_context;
+
 lookup HalantForm {
   lookupflag 0 ;
     sub DevHa DevHalant by DevHa.halant ;
@@ -2239,12 +2265,15 @@ feature calt {  # Contextual Alternates
         language dflt;  # Default
             lookup Stacking_Conjuncts_u_uu;
             lookup u_uu_Stacking_Conjuncts;
+            lookup altYA_context;
         language NEP  exclude_dflt;  # Nepali
             lookup Stacking_Conjuncts_u_uu;
             lookup u_uu_Stacking_Conjuncts;
+            lookup altYA_context;
         language NEW  exclude_dflt;  # Newari
             lookup Stacking_Conjuncts_u_uu;
             lookup u_uu_Stacking_Conjuncts;
+            lookup altYA_context;
     script latn;  # Latin
         language dflt;  # Default
             lookup LatinPunctuationMark;
