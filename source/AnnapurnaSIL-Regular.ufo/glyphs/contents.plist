@@ -134,6 +134,8 @@
   <string>D_evC_h.Y_aR_a.glif</string>
   <key>DevCha</key>
   <string>D_evC_ha.glif</string>
+  <key>DevCha.alt</key>
+  <string>D_evC_ha.alt.glif</string>
   <key>DevChaNukta</key>
   <string>D_evC_haN_ukta.glif</string>
   <key>DevChaNuktaR</key>
@@ -394,6 +396,8 @@
   <string>D_evH_alfC_h.Y_aR_a.glif</string>
   <key>DevHalfCha</key>
   <string>D_evH_alfC_ha.glif</string>
+  <key>DevHalfCha.alt</key>
+  <string>D_evH_alfC_ha.alt.glif</string>
   <key>DevHalfChaNukta</key>
   <string>D_evH_alfC_haN_ukta.glif</string>
   <key>DevHalfD.YaNuktaRa</key>
@@ -696,6 +700,10 @@
   <string>D_evH_alfY_aR_.glif</string>
   <key>DevHeadstroke</key>
   <string>D_evH_eadstroke.glif</string>
+  <key>DevHeadstroke.discrete</key>
+  <string>D_evH_eadstroke.discrete.glif</string>
+  <key>DevHeadstroke.filler</key>
+  <string>D_evH_eadstroke.filler.glif</string>
   <key>DevHeavyYa</key>
   <string>D_evH_eavyY_a.glif</string>
   <key>DevHighSpacingDot</key>
@@ -716,6 +724,10 @@
   <string>D_evJ_aN_uktaR_.glif</string>
   <key>DevJaR</key>
   <string>D_evJ_aR_.glif</string>
+  <key>DevJainOm</key>
+  <string>D_evJ_ainO_m.glif</string>
+  <key>DevJainOm.alt</key>
+  <string>D_evJ_ainO_m.alt.glif</string>
   <key>DevJha</key>
   <string>D_evJ_ha.glif</string>
   <key>DevJha.alt</key>
@@ -828,6 +840,8 @@
   <string>D_evM_aatraA_U_R_ephC_andrabindu.glif</string>
   <key>DevMaatraAW</key>
   <string>D_evM_aatraA_W_.glif</string>
+  <key>DevMaatraAY</key>
+  <string>D_evM_aatraA_Y_.glif</string>
   <key>DevMaatraAi</key>
   <string>D_evM_aatraA_i.glif</string>
   <key>DevMaatraAi.short</key>
@@ -1198,6 +1212,8 @@
   <string>D_evS_haR_.glif</string>
   <key>DevShaR.alt</key>
   <string>D_evS_haR_.alt.glif</string>
+  <key>DevSignSiddham</key>
+  <string>D_evS_ignS_iddham.glif</string>
   <key>DevSix</key>
   <string>D_evS_ix.glif</string>
   <key>DevSpacingCandrabindu</key>
@@ -1324,6 +1340,8 @@
   <string>D_evV_owelA_U_N_ukta.glif</string>
   <key>DevVowelAW</key>
   <string>D_evV_owelA_W_.glif</string>
+  <key>DevVowelAY</key>
+  <string>D_evV_owelA_Y_.glif</string>
   <key>DevVowelCandraA</key>
   <string>D_evV_owelC_andraA_.glif</string>
   <key>DevVowelCandraANukta</key>

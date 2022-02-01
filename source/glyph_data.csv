@@ -1012,3 +1012,12 @@ HookLeft,HookLeft
 LaCurves,LaCurves
 .Scratch,Scratch
 FractionBar,FractionBar
+DevHeadstroke.discrete,uniA8FB.discrete
+DevHeadstroke.filler ,uniA8FB.filler
+DevCha.alt,uni091B.alt
+DevHalfCha.alt,uni091B094D.half.alt
+DevVowelAY,uniA8FE
+DevMaatraAY,uniA8FF
+DevSignSiddham,uniA8FC
+DevJainOm,uniA8FD
+DevJainOm.alt,uniA8FD.alt

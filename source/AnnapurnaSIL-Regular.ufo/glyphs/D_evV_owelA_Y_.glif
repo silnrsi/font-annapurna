@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevVowelAY" format="2">
+  <advance width="1097"/>
+  <unicode hex="A8FE"/>
+  <anchor x="561" y="-53" name="Halant"/>
+  <anchor x="561" y="-30" name="Lower"/>
+  <anchor x="561" y="-62" name="LowerCenter"/>
+  <anchor x="810" y="1330" name="Upper"/>
+  <anchor x="570" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevVowelE"/>
+  </outline>
+</glyph>

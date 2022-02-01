@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevHalfCha.alt" format="2">
+  <advance width="1573"/>
+  <anchor x="905" y="-70" name="Halant"/>
+  <anchor x="1100" y="-30" name="Lower"/>
+  <anchor x="694" y="-112" name="LowerCenter"/>
+  <anchor x="1100" y="1330" name="Upper"/>
+  <anchor x="693" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevCha"/>
+  </outline>
+</glyph>

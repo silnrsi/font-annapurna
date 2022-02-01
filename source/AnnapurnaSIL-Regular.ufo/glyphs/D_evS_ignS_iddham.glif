@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevSignSiddham" format="2">
+  <advance width="1973"/>
+  <unicode hex="A8FC"/>
+  <outline>
+    <component base="DevOm"/>
+  </outline>
+</glyph>

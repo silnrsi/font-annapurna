@@ -1157,6 +1157,8 @@
     <string>uni091B094D092F094D0930</string>
     <key>DevCha</key>
     <string>uni091B</string>
+    <key>DevCha.alt</key>
+    <string>uni091B.alt</string>
     <key>DevChaNukta</key>
     <string>uni091B093C</string>
     <key>DevChaNuktaR</key>
@@ -1417,6 +1419,8 @@
     <string>uni091B094D092F094D0930094D.half</string>
     <key>DevHalfCha</key>
     <string>uni091B094D.half</string>
+    <key>DevHalfCha.alt</key>
+    <string>uni091B094D.half.alt</string>
     <key>DevHalfChaNukta</key>
     <string>uni091B093C094D.half</string>
     <key>DevHalfD.YaNuktaRa</key>
@@ -1719,6 +1723,10 @@
     <string>uni092F094D0930094D.half</string>
     <key>DevHeadstroke</key>
     <string>uniA8FB</string>
+    <key>DevHeadstroke.discrete</key>
+    <string>uniA8FB.discrete</string>
+    <key>DevHeadstroke.filler </key>
+    <string>uniA8FB.filler</string>
     <key>DevHeavyYa</key>
     <string>uni097A</string>
     <key>DevHighSpacingDot</key>
@@ -1739,6 +1747,10 @@
     <string>uni095B094D0930</string>
     <key>DevJaR</key>
     <string>uni091C094D0930</string>
+    <key>DevJainOm</key>
+    <string>uniA8FD</string>
+    <key>DevJainOm.alt</key>
+    <string>uniA8FD.alt</string>
     <key>DevJha</key>
     <string>uni091D</string>
     <key>DevJha.alt</key>
@@ -1851,6 +1863,8 @@
     <string>uni094C0930094D0901</string>
     <key>DevMaatraAW</key>
     <string>uni094F</string>
+    <key>DevMaatraAY</key>
+    <string>uniA8FF</string>
     <key>DevMaatraAi</key>
     <string>uni0948</string>
     <key>DevMaatraAi.short</key>
@@ -2219,6 +2233,8 @@
     <string>uni0936094D0930</string>
     <key>DevShaR.alt</key>
     <string>uni0936094D0930.alt</string>
+    <key>DevSignSiddham</key>
+    <string>uniA8FC</string>
     <key>DevSix</key>
     <string>uni096C</string>
     <key>DevSpacingCandrabindu</key>
@@ -2345,6 +2361,8 @@
     <string>uni0914093C</string>
     <key>DevVowelAW</key>
     <string>uni0975</string>
+    <key>DevVowelAY</key>
+    <string>uniA8FE</string>
     <key>DevVowelCandraA</key>
     <string>uni0972</string>
     <key>DevVowelCandraANukta</key>
