@@ -11,8 +11,7 @@
   <string>3112</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
-    <string>/DevVowelAA/DevHeadstroke.discrete/space/DevVowelL/space/DevMaatraAA/space/DevHeadstroke.filler/space/space/space/DevVowelE/space/DevJhaR/space/DevHeadstroke/space/BarTop/space/BarTopShort</string>
-    <string>/DevHeadstroke.filler</string>
+    <string>/DevCha/DevHalfCha/DevCha.alt/DevVowelE/DevVowelUU/DevDdaMarawari/space/DevHalfCha.alt</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
