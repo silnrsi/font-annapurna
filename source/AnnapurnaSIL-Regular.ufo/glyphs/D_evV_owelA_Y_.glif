@@ -5,9 +5,9 @@
   <anchor x="561" y="-53" name="Halant"/>
   <anchor x="561" y="-30" name="Lower"/>
   <anchor x="561" y="-62" name="LowerCenter"/>
-  <anchor x="810" y="1330" name="Upper"/>
-  <anchor x="570" y="1390" name="UpperCenter"/>
+  <anchor x="820" y="1330" name="Upper"/>
   <outline>
     <component base="DevVowelE"/>
+    <component base="DevMaatraAY" xOffset="1099"/>
   </outline>
 </glyph>

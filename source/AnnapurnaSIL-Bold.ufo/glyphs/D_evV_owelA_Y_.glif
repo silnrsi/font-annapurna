@@ -6,8 +6,8 @@
   <anchor x="561" y="-69" name="Lower"/>
   <anchor x="561" y="-88" name="LowerCenter"/>
   <anchor x="810" y="1356" name="Upper"/>
-  <anchor x="570" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevVowelE"/>
+    <component base="DevMaatraAY" xOffset="1085"/>
   </outline>
 </glyph>
