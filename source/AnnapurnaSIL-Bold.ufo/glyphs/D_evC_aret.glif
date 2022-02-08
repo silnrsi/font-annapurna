@@ -2,7 +2,6 @@
 <glyph name="DevCaret" format="2">
   <advance width="2"/>
   <unicode hex="A8FA"/>
-  <anchor x="-380" y="38" name="_Ra"/>
   <outline>
     <contour>
       <point x="20" y="1280" type="line"/>
