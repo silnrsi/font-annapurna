@@ -11,7 +11,8 @@
   <string>3112</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
-    <string>/DevMaatraAY/space/DevVowelAW/space/space/DevVowelAY/space/DevMaatraAW/space/space/DevMaatraAi</string>
+    <string>/DevMaatraAY/space/DevVowelAW/space/space/DevVowelAY/space/DevMaatraAA/DevMaatraAW/space/space/DevMaatraAi</string>
+    <string>/DevNa/space/DevJainOm/DevVowelU/DevVowelR/DevHalfGha/DevHalfCa/DevCha/space/DevJainOm.alt/space/DevMaatraI/DevSignSiddham/space</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
