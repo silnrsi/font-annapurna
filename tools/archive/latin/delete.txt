@@ -1,0 +1,9 @@
+CombBreve
+CombCaron
+CombOgonek
+GrCapDelta
+GrCapOmega
+GrCapPi
+HyphenMinus
+LtnCapEsh
+MiddleDot

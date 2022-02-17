@@ -48,6 +48,20 @@
   <string>Regular</string>
   <key>com.schriftgestaltung.widthValue</key>
   <integer>100</integer>
+  <key>org.sil.lcg.transforms</key>
+  <dict>
+    <key>latin</key>
+    <dict>
+      <key>scaleX</key>
+      <real>0.9</real>
+      <key>scaleY</key>
+      <real>0.9</real>
+      <key>shiftX</key>
+      <integer>0</integer>
+      <key>shiftY</key>
+      <integer>40</integer>
+    </dict>
+  </dict>
   <key>public.glyphOrder</key>
   <array>
     <string>.notdef</string>
@@ -2490,12 +2504,46 @@
     <string>uniA836</string>
     <key>NorthIndicRupeeMark</key>
     <string>uniA838</string>
+    <key>Ohm</key>
+    <string>Omega</string>
     <key>RegisteredSgn</key>
     <string>registered</string>
     <key>RupeeSgn</key>
     <string>uni20A8</string>
     <key>ThinSpace</key>
     <string>uni2009</string>
+    <key>VS1</key>
+    <string>uniFE00</string>
+    <key>VS10</key>
+    <string>uniFE09</string>
+    <key>VS11</key>
+    <string>uniFE0A</string>
+    <key>VS12</key>
+    <string>uniFE0B</string>
+    <key>VS13</key>
+    <string>uniFE0C</string>
+    <key>VS14</key>
+    <string>uniFE0D</string>
+    <key>VS15</key>
+    <string>uniFE0E</string>
+    <key>VS16</key>
+    <string>uniFE0F</string>
+    <key>VS2</key>
+    <string>uniFE01</string>
+    <key>VS3</key>
+    <string>uniFE02</string>
+    <key>VS4</key>
+    <string>uniFE03</string>
+    <key>VS5</key>
+    <string>uniFE04</string>
+    <key>VS6</key>
+    <string>uniFE05</string>
+    <key>VS7</key>
+    <string>uniFE06</string>
+    <key>VS8</key>
+    <string>uniFE07</string>
+    <key>VS9</key>
+    <string>uniFE08</string>
     <key>ZeroWidthJoiner</key>
     <string>uni200D</string>
     <key>ZeroWidthNonJoiner</key>
@@ -2510,16 +2558,22 @@
     <string>uni02BC</string>
     <key>ascript</key>
     <string>uni0251</string>
+    <key>bulletoperator</key>
+    <string>uni2219</string>
     <key>candrabinducomb</key>
     <string>uni0310</string>
     <key>ccurl</key>
     <string>uni0255</string>
+    <key>cgj</key>
+    <string>uni034F</string>
     <key>circumflexnosp</key>
     <string>uni0302</string>
     <key>cturn</key>
     <string>uni0254</string>
     <key>dieresisnosp</key>
     <string>uni0308</string>
+    <key>divisionslash</key>
+    <string>uni2215</string>
     <key>dotnosp</key>
     <string>uni0307</string>
     <key>dotsubnosp</key>
@@ -2530,14 +2584,30 @@
     <string>uni2078</string>
     <key>emacrontilde</key>
     <string>e_uni0304_uni0303</string>
+    <key>emquad</key>
+    <string>uni2001</string>
+    <key>emspace</key>
+    <string>uni2003</string>
+    <key>enquad</key>
+    <string>uni2000</string>
+    <key>enspace</key>
+    <string>uni2002</string>
     <key>epsilonlatin</key>
     <string>uni025B</string>
     <key>etilde</key>
     <string>uni1EBD</string>
     <key>euro</key>
     <string>Euro</string>
+    <key>fi</key>
+    <string>uniFB01</string>
+    <key>figurespace</key>
+    <string>uni2007</string>
     <key>fivesuperior</key>
     <string>uni2075</string>
+    <key>fl</key>
+    <string>uniFB02</string>
+    <key>fourperemspace</key>
+    <string>uni2005</string>
     <key>foursuperior</key>
     <string>uni2074</string>
     <key>glottalstop</key>
@@ -2548,18 +2618,30 @@
     <string>gravecomb</string>
     <key>haceknosp</key>
     <string>uni030C</string>
+    <key>hairspace</key>
+    <string>uni200A</string>
+    <key>horizontalbar</key>
+    <string>uni2015</string>
     <key>hsuper</key>
     <string>uni02B0</string>
+    <key>hyphenationpoint</key>
+    <string>uni2027</string>
+    <key>hyphentwo</key>
+    <string>uni2010</string>
     <key>imacrontilde</key>
     <string>i_uni0304_uni0303</string>
     <key>length</key>
     <string>uni02D0</string>
+    <key>lineseparator</key>
+    <string>uni2028</string>
     <key>macronnosp</key>
     <string>uni0304</string>
     <key>mcandrabindu</key>
     <string>m_uni0310</string>
     <key>modifiermacron</key>
     <string>uni02C9</string>
+    <key>nbhyphen</key>
+    <string>uni2011</string>
     <key>nbspace</key>
     <string>uni00A0</string>
     <key>ninesuperior</key>
@@ -2568,20 +2650,34 @@
     <string>uni0272</string>
     <key>nrthook</key>
     <string>uni0273</string>
+    <key>objectReplacementCharacter</key>
+    <string>uniFFFC</string>
     <key>omacrontilde</key>
     <string>o_uni0304_uni0303</string>
+    <key>openbox</key>
+    <string>uni2423</string>
+    <key>paragraphseparator</key>
+    <string>uni2029</string>
+    <key>punctuationspace</key>
+    <string>uni2008</string>
+    <key>replacementCharacter</key>
+    <string>uniFFFD</string>
     <key>ringsubnosp</key>
     <string>uni0325</string>
     <key>schwa</key>
     <string>uni0259</string>
     <key>sevensuperior</key>
     <string>uni2077</string>
+    <key>sixperemspace</key>
+    <string>uni2006</string>
     <key>sixsuperior</key>
     <string>uni2076</string>
     <key>softhyphen</key>
     <string>uni00AD</string>
     <key>srthook</key>
     <string>uni0282</string>
+    <key>threeperemspace</key>
+    <string>uni2004</string>
     <key>tildenosp</key>
     <string>tildecomb</string>
     <key>trthook</key>
@@ -2592,10 +2688,14 @@
     <string>uni028A</string>
     <key>vturn</key>
     <string>uni028C</string>
+    <key>wj</key>
+    <string>uni2060</string>
     <key>zcurl</key>
     <string>uni0291</string>
     <key>zerosuperior</key>
     <string>uni2070</string>
+    <key>zwnbsp</key>
+    <string>uniFEFF</string>
   </dict>
 </dict>
 </plist>

@@ -1,0 +1,2 @@
+# hyphen = uni00AD | 002D
+divisionslash = slash | 2215
