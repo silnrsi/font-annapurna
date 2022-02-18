@@ -5,15 +5,15 @@
   <outline>
     <contour>
       <point x="960" y="1174" type="line"/>
-      <point x="355" y="71" type="line"/>
-      <point x="355" y="10" type="line"/>
-      <point x="160" y="10" type="line"/>
-      <point x="769" y="1120" type="line"/>
-      <point x="201" y="1120" type="line"/>
-      <point x="171" y="953" type="line"/>
-      <point x="77" y="953" type="line"/>
-      <point x="77" y="1277" type="line"/>
       <point x="960" y="1277" type="line"/>
+      <point x="77" y="1277" type="line"/>
+      <point x="77" y="953" type="line"/>
+      <point x="171" y="953" type="line"/>
+      <point x="201" y="1120" type="line"/>
+      <point x="769" y="1120" type="line"/>
+      <point x="160" y="10" type="line"/>
+      <point x="355" y="10" type="line"/>
+      <point x="355" y="71" type="line"/>
     </contour>
   </outline>
 </glyph>

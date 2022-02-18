@@ -5,23 +5,23 @@
   <outline>
     <contour>
       <point x="1307" y="687" type="line"/>
-      <point x="822" y="687" type="line"/>
-      <point x="822" y="377" type="line"/>
-      <point x="715" y="377" type="line"/>
-      <point x="715" y="687" type="line"/>
-      <point x="229" y="687" type="line"/>
-      <point x="229" y="792" type="line"/>
-      <point x="715" y="792" type="line"/>
-      <point x="715" y="1102" type="line"/>
-      <point x="822" y="1102" type="line"/>
-      <point x="822" y="792" type="line"/>
       <point x="1307" y="792" type="line"/>
+      <point x="822" y="792" type="line"/>
+      <point x="822" y="1102" type="line"/>
+      <point x="715" y="1102" type="line"/>
+      <point x="715" y="792" type="line"/>
+      <point x="229" y="792" type="line"/>
+      <point x="229" y="687" type="line"/>
+      <point x="715" y="687" type="line"/>
+      <point x="715" y="377" type="line"/>
+      <point x="822" y="377" type="line"/>
+      <point x="822" y="687" type="line"/>
     </contour>
     <contour>
       <point x="1307" y="77" type="line"/>
-      <point x="229" y="77" type="line"/>
-      <point x="229" y="182" type="line"/>
       <point x="1307" y="182" type="line"/>
+      <point x="229" y="182" type="line"/>
+      <point x="229" y="77" type="line"/>
     </contour>
   </outline>
 </glyph>

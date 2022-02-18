@@ -9,11 +9,6 @@
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
   <string>3112</string>
-  <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
-  <array>
-    <string>/DevNa/space/DevJainOm/DevJainOm.alt/DevVowelU/DevVowelR/DevHalfGha/DevHalfCa/DevMaatraI/DevCha/DevSignSiddham/space</string>
-    <string>/DevCa</string>
-  </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesLastChange</key>
