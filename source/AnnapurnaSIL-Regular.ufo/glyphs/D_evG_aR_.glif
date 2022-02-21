@@ -9,9 +9,7 @@
   <outline>
     <contour>
       <point x="345" y="1234" type="line"/>
-      <point x="345" y="1234"/>
-      <point x="344" y="752"/>
-      <point x="344" y="752" type="curve"/>
+      <point x="344" y="752" type="line"/>
       <point x="245" y="752" type="line" smooth="yes"/>
       <point x="184" y="752"/>
       <point x="160" y="733"/>

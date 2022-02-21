@@ -80,8 +80,8 @@
       <point x="670" y="705"/>
       <point x="651" y="707" type="curve"/>
       <point x="651" y="1016" type="line"/>
-      <point x="670" y="1016"/>
-      <point x="689" y="1016"/>
+      <point x="665" y="1016"/>
+      <point x="681" y="1016"/>
       <point x="689" y="1016" type="curve"/>
       <point x="807" y="1016"/>
       <point x="872" y="967"/>
