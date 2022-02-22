@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="NarrowNoBreakSpace" format="2">
-  <advance width="400"/>
+  <advance width="410"/>
   <unicode hex="202F"/>
   <outline/>
 </glyph>
