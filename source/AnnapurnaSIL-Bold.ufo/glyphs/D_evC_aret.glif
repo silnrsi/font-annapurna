@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevCaret" format="2">
-  <advance width="2"/>
   <unicode hex="A8FA"/>
   <outline>
     <contour>
-      <point x="20" y="1280" type="line"/>
-      <point x="303" y="1503" type="line"/>
-      <point x="183" y="1648" type="line"/>
-      <point x="-53" y="1456" type="line"/>
-      <point x="-229" y="1637" type="line"/>
-      <point x="-283" y="1593" type="line"/>
+      <point x="0" y="1280" type="line"/>
+      <point x="283" y="1503" type="line"/>
+      <point x="163" y="1648" type="line"/>
+      <point x="-73" y="1456" type="line"/>
+      <point x="-249" y="1637" type="line"/>
+      <point x="-303" y="1593" type="line"/>
     </contour>
   </outline>
 </glyph>
