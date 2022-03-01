@@ -1,106 +1,4 @@
 
-
-#**********************************
-#  Glyphs
-#**********************************
-
-@GDEF_bases = [ DevVowelShortA DevVowelShortANukta DevVowelA DevVowelA.archaic DevVowelANukta DevVowelAA DevVowelAA.archaic DevVowelAANukta DevVowelI DevVowelINukta  
-    DevVowelII DevVowelIICandrabindu DevVowelIIBindu DevVowelIINukta DevVowelU DevVowelUNukta DevVowelUU DevVowelUUNukta DevVowelR DevVowelRNukta DevVowelL DevVowelLNukta  
-    DevVowelCandraE DevVowelCandraENukta DevVowelShortE DevVowelShortENukta DevVowelE DevVowelENukta DevVowelAI DevVowelAINukta DevVowelCandraO DevVowelCandraONukta DevVowelShortO DevVowelShortONukta DevVowelO  
-    DevVowelO.archaic DevVowelONukta DevVowelAU DevVowelAU.archaic DevVowelAUNukta DevKa DevHalfKa DevK.Ka DevK.Ka.alt  
-    DevK.Ta DevKaR DevKaR.alt DevHalfKaR DevHalfKaR.alt DevK.Ssa  
-    DevK.Ssa.archaic DevHalfK.Ssa DevHalfK.Ssa.archaic DevK.SsaR  
-    DevHalfK.SsaR DevKha DevHalfKha DevKhaR DevHalfKhaR DevGa DevHalfGa  
-    DevGaR DevHalfGaR DevGha DevGhaNukta DevHalfGhaNukta DevGhaNuktaR  
-    DevHalfGhaNuktaR DevHalfGha DevGhaR DevHalfGhaR DevNga DevNgaNukta DevHalfNgaNukta  
-    DevNgaNuktaR DevNgAaCndrbndRaAi DevHalfNga DevNg.Ka DevNg.Ka.alt DevNg.Kha  
-    DevNg.Kha.alt DevNg.Ga DevNg.Ga.alt DevNg.Gha DevNg.Gha.alt DevNg.Nga DevNg.Nga.alt  
-    DevNg.Ya DevNg.YaRa DevNgaR DevNg.Ha DevNg.Ha.alt DevNg.YaNukta  
-    DevNg.YaNuktaRa DevCa DevCaNukta DevHalfCaNukta DevCaNuktaR DevHalfCaNuktaR  
-    DevHalfCa DevC.Ca DevC.Ca.alt DevCaR DevHalfCaR DevCha DevChaNukta  
-    DevHalfChaNukta DevChaNuktaR DevHalfCha DevCh.Ya DevCh.YaRa DevChaR  
-    DevCh.YaNukta DevCh.YaNuktaRa DevJa DevHalfJa DevJ.Nya DevHalfJ.Nya  
-    DevJ.NyaR DevHalfJ.NyaR DevJaR DevHalfJaR DevJha DevJha.alt  
-    DevJha.alt2 DevJhaNukta DevJhaNukta.alt DevJhaNukta.alt2 DevHalfJhaNukta DevHalfJhaNukta.alt  
-    DevHalfJhaNukta.alt2 DevJhaNuktaR DevJhaNuktaR.alt DevJhaNuktaR.alt2 DevHalfJhaNuktaR  
-    DevHalfJhaNuktaR.alt DevHalfJha DevHalfJha.alt DevHalfJha.alt2 DevJhaR  
-    DevJhaR.alt DevJhaR.alt2 DevHalfJhaR DevHalfJhaR.alt DevNya DevNyaNukta  
-    DevHalfNyaNukta DevNyaNuktaR DevHalfNyaNuktaR DevHalfNya DevNyaR DevHalfNyaR  
-    DevTta DevTtaNukta DevHalfTtaNukta DevTtaNuktaR DevHalfTta DevTt.Tta DevTt.Tta.alt  
-    DevTt.Ttha DevTt.Ttha.alt DevTt.Ya DevTt.YaRa DevTtaR DevTt.YaNukta  
-    DevTt.YaNuktaRa DevTtha DevTthaNukta DevHalfTthaNukta DevTthaNuktaR DevHalfTtha DevTth.Ttha  
-    DevTth.Ttha.alt DevTth.Ya DevTth.YaRa DevTthaR DevTth.YaNukta DevTth.YaNuktaRa DevDda  
-    DevHalfDda DevDd.Dda DevDd.Dda.alt DevDd.Ya DevDd.YaRa DevDdaR DevDd.YaNukta  
-    DevDd.YaNuktaRa DevDdha DevHalfDdha DevDdh.Ya DevDdh.YaRa DevDdhaR DevDdh.YaNukta  
-    DevDdh.YaNuktaRa DevNna DevNna.archaic DevNnaNukta DevHalfNnaNukta DevNnaNuktaR  
-    DevHalfNnaNuktaR DevHalfNna DevHalfNna.archaic DevNnaR DevHalfNnaR DevTa  
-    DevTaNukta DevHalfTaNukta DevTaNuktaR DevTaNuktaR.alt DevHalfTaNuktaR  
-    DevHalfTaNuktaR.alt DevHalfTa DevT.Ta DevHalfT.Ta DevTaR DevTaR.alt  
-    DevHalfTaR DevHalfTaR.alt DevTha DevThaNukta DevHalfThaNukta DevThaNuktaR  
-    DevHalfThaNuktaR DevHalfTha DevThaR DevHalfThaR DevDa DevDaNukta DevHalfDaNukta  
-    DevDaNuktaR DevHalfDa DevD.Da DevD.Dha DevD.Ma DevD.Ya DevD.Ya.alt  
-    DevD.YaRa DevDaR DevD.Wa DevD.YaNukta DevD.YaNuktaRa DevDha DevDhaNukta  
-    DevHalfDhaNukta DevDhaNuktaR DevHalfDhaNuktaR DevHalfDha DevDhaR DevHalfDhaR  
-    DevNa DevHalfNa DevN.Na DevNaR DevHalfNaR DevNaNukta DevHalfNaNukta DevNaNuktaR  
-    DevHalfNaNuktaR DevPa DevPaNukta DevHalfPaNukta DevPaNuktaR DevHalfPaNuktaR  
-    DevHalfPa DevP.Ta DevPaR DevHalfPaR DevPha DevHalfPha DevPhaR  
-    DevHalfPhaR DevBa DevBaNukta DevHalfBaNukta DevBaNuktaR DevHalfBaNuktaR  
-    DevHalfBa DevBaR DevHalfBaR DevBha DevBhaNukta DevHalfBhaNukta DevBhaNuktaR  
-    DevHalfBhaNuktaR DevHalfBha DevBhaR DevHalfBhaR DevMa DevMaNukta DevHalfMaNukta  
-    DevMaNuktaR DevHalfMaNuktaR DevHalfMa DevMaR DevHalfMaR DevM.La  
-    DevM.La.alt DevYa DevYa.alt DevHalfYa DevHalfYa.alt DevYaR DevYaR.alt  
-    DevHalfYaR DevRa DevRaNuktaE DevRaNuktaAi DevR.U DevRaMaatraU DevR.UNukta  
-    DevRaMaatraUNukta DevR.UU DevRaMaatraUU DevR.UUNukta DevRaMaatraUUNukta DevRaE DevRaAi DevHalfRa  
-    DevRa.Ya DevRa.HalfYa DevRa.YaRa DevRa.YaNukta  
-    DevRa.HalfYaNukta DevRa.YaNuktaRa DevRaNukta DevRNukta.U DevRaNuktaMaatraU DevRNukta.UNukta  
-    DevRaNuktaMaatraUNukta DevRNukta.UU DevRaNuktaMaatraUU DevRNukta.UUNukta DevRaNuktaMaatraUUNukta DevHalfRaNukta DevLa DevLaNukta  
-    DevHalfLaNukta DevLaNuktaR DevHalfLaNuktaR DevHalfLa DevLaR DevHalfLaR  
-    DevL.La DevL.La.alt DevLla DevHalfLla DevLlaR DevLlaNukta DevHalfLlaNukta DevLlaNuktaR DevWa  
-    DevWaNukta DevHalfWaNukta DevWaNuktaR DevHalfWaNuktaR DevHalfWa DevWaR  
-    DevHalfWaR DevSha DevShaNukta DevHalfShaNukta DevShaNuktaR DevShaNuktaR.alt  
-    DevHalfShaNuktaR DevHalfShaNuktaR.alt DevHalfSha DevSh.Ca DevShaR  
-    DevShaR.alt DevHalfShaR DevHalfShaR.alt DevSh.Wa DevSsa DevSsaNukta  
-    DevHalfSsaNukta DevSsaNuktaR DevHalfSsaNuktaR DevHalfSsa DevSs.Tta DevSs.Ttha  
-    DevSsaR DevHalfSsaR DevSa DevSaNukta DevHalfSaNukta DevSaNuktaR  
-    DevHalfSaNuktaR DevHalfSa DevS.Na DevSaR DevHalfSaR DevHa DevHaNukta  
-    DevHaNuktaMaatraUU DevHaNukta.halant DevHalfHaNukta DevHaNuktaR DevHalfHaNuktaR DevH.Ri  
-    DevHa.halant DevHalfHa DevH.Na DevH.Ma DevH.Ya DevH.Ya.alt DevH.YaRa  
-    DevHaR DevHalfHaR DevH.La DevH.Wa DevH.YaNukta DevH.YaNuktaRa DevMaatraOOE  
-    DevMaatraAA DevMaatraAANukta DevMaatraI DevMaatraI.width20 DevMaatraI.width30 DevMaatraI.width40 DevMaatraINukta DevMaatraINukta.width20 DevMaatraINukta.width30  
-    DevMaatraINukta.width40 DevMaatraII DevMaatraII.width20 DevMaatraII.width30 DevMaatraIIReph DevMaatraII.width20Reph DevMaatraIIRephCandrabindu  
-    DevMaatraII.width20RephCandrabindu DevMaatraIIRephBindu DevMaatraII.width20RephBindu DevMaatraIINukta DevMaatraIINukta.width20 DevMaatraIINukta.width30  
-    DevMaatraCandraO DevMaatraCandraONukta DevMaatraShortO DevMaatraShortOReph DevMaatraShortORephCandrabindu DevMaatraShortORephBindu DevMaatraShortONukta DevMaatraO DevMaatraOReph  
-    DevMaatraORephCandrabindu DevMaatraORephBindu DevMaatraONukta DevMaatraAU DevMaatraAUReph DevMaatraAURephCandrabindu DevMaatraAURephBindu DevMaatraAUNukta  
-    DevMaatraAW DevKaNukta DevHalfKaNukta DevKaNuktaR DevKaNuktaR.alt DevHalfKaNuktaR DevHalfKaNuktaR.alt  
-    DevKhaNukta DevHalfKhaNukta DevKhaNuktaR DevHalfKhaNuktaR DevGaNukta DevHalfGaNukta DevGaNuktaR  
-    DevHalfGaNuktaR DevJaNukta DevHalfJaNukta DevJaNuktaR DevHalfJaNuktaR DevDdaNukta DevHalfDdaNukta  
-    DevDdaNuktaR DevDdhaNukta DevHalfDdhaNukta DevDdhaNuktaR DevPhaNukta DevHalfPhaNukta DevPhaNuktaR DevHalfPhaNuktaR  
-    DevYaNukta DevYaNukta.alt DevHalfYaNukta DevHalfYaNukta.alt DevYaNuktaR DevYaNuktaR.alt DevHalfYaNuktaR DevVowelRR  
-    DevVowelRRNukta DevVowelLL DevVowelLLNukta DevVowelCandraA DevVowelCandraANukta DevVowelOE DevVowelOOE DevVowelAW DevVowelUE DevVowelUUE DevDdaMarawari DevZha DevHeavyYa DevGga  
-    DevGgaNukta DevHalfGgaNukta DevGgaNuktaR DevHalfGgaNuktaR DevHalfGga DevGgaR  
-    DevHalfGgaR DevJja DevJjaNukta DevHalfJjaNukta DevJjaNuktaR DevHalfJjaNuktaR  
-    DevHalfJja DevJjaR DevHalfJjaR DevGlottalStop DevGlottalStop.alt DevDdda DevDddaNukta DevHalfDddaNukta  
-    DevDddaNuktaR DevHalfDdda DevDddaR DevBba DevBbaNukta DevHalfBbaNukta DevBbaNuktaR  
-    DevHalfBbaNuktaR DevHalfBba DevBbaR DevHalfBbaR DottedCirc ] ; 
-
-@GDEF_marks = [ DevInvCandrabindu DevInvCandrabindu.alt DevCandrabindu DevCandrabindu.alt DevAnusvara DevRaReph DevRaReph.alt DevRaReph.alt2  
-    DevRephCandrabindu DevRephBindu DevMaatraOE DevNukta DevMaatraU DevMaatraUNukta DevMaatraUNukta.alt DevMaatraUNukta.alt2 DevMaatraUU DevMaatraUUNukta  
-    DevMaatraUUNukta.alt DevMaatraUUNukta.alt2 DevMaatraR DevMaatraRNukta DevMaatraRR DevMaatraRRNukta DevMaatraCandraE DevMaatraCandraENukta DevMaatraShortE DevMaatraShortEReph  
-    DevMaatraShortERephCandrabindu DevMaatraShortERephBindu DevMaatraShortENukta DevMaatraE DevMaatraE.short DevMaatraEReph DevMaatraERephCandrabindu  
-    DevMaatraERephBindu DevMaatraENukta DevMaatraENukta.alt DevMaatraAi DevMaatraAi.short DevMaatraAiReph DevMaatraAiRephCandrabindu DevMaatraAiRephBindu  
-    DevMaatraAiNukta DevHalant DevRaVattu DevRaVattu.alt DevUdatta DevAnudatta DevGrave DevAcute DevMaatraCandraLongE DevMaatraUE DevMaatraUUE DevMaatraL  
-    DevMaatraLNukta DevMaatraLL DevMaatraLLNukta ] ; 
-
-table GDEF {
-GlyphClassDef
-    @GDEF_bases, # base glyphs
-    ,     # no ligature glyphs
-    @GDEF_marks, # mark glyphs
-    ;     # no component glyphs
- } GDEF;
-
-
-
 #**********************************
 #  Glyph classes
 #**********************************
@@ -488,6 +386,19 @@ languagesystem dev2 NEP  ;
 languagesystem dev2 NEW  ;
 languagesystem deva dflt ;
 languagesystem latn dflt ;
+
+
+#**********************************
+#  GDEF
+#**********************************
+
+table GDEF {
+GlyphClassDef
+    @GDEF_bases, # base glyphs
+    ,     # no ligature glyphs
+    @GDEF_marks, # mark glyphs
+    ;     # no component glyphs
+ } GDEF;
 
 
 #**********************************
