@@ -1639,6 +1639,26 @@ lookup StyleSet14AltYa {
     sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa ;
 } StyleSet14AltYa;
 
+@cDevDa_HaNuktaHalantForms = [DevHalfDaNukta DevHalfHaNukta];
+@cDevDa_HaNuktaForms = [DevDaNukta DevHaNukta];
+# @cDevYaForms = [DevYa DevHalfYa DevYaNukta DevHalfYaNukta DevYaR DevYaNuktaR]; 
+# @cDevYaAltForms = [DevYa.alt DevHalfYa.alt DevYaNukta.alt DevHalfYaNukta.alt DevYaR.alt DevYaNuktaR.alt]; 
+
+lookup ss14noHalf_subst {
+  lookupflag 0;
+    sub @cDevDa_HaNuktaHalantForms by @cDevDa_HaNuktaForms;
+} ss14noHalf_subst;
+
+lookup ss14altYA_subst {
+  lookupflag 0;
+    sub @cDevYaForms by @cDevYaAltForms;
+} ss14altYA_subst;
+
+ lookup StyleSet14altYA_context {
+  lookupflag 0;
+    sub @cDevDa_HaNuktaHalantForms' lookup ss14noHalf_subst @cDevYaForms' lookup ss14altYA_subst;
+} StyleSet14altYA_context;
+
 lookup StyleSet15ArchaicForms {
   lookupflag 0 ;
     sub DevVowelA by DevVowelA.archaic ;
@@ -2693,13 +2713,17 @@ feature ss14 {  # Stylistic Set 14
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet14AltYa;
+            lookup StyleSet14altYA_context;
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
             lookup StyleSet14AltYa;
+            lookup StyleSet14altYA_context;
         language NEP  exclude_dflt;  # Nepali
             lookup StyleSet14AltYa;
+            lookup StyleSet14altYA_context;
         language NEW  exclude_dflt;  # Newari
             lookup StyleSet14AltYa;
+            lookup StyleSet14altYA_context;
 } ss14 ;
 
 feature ss15 {  # Stylistic Set 15 
