@@ -1,0 +1,1572 @@
+
+#**********************************
+#  Lookups GSUB
+#**********************************
+
+lookup locl_NEP {
+  lookupflag 0 ;
+    sub DevJha by DevJha.alt ;
+    sub DevFive by DevFive.alt ;
+    sub DevEight by DevEight.alt ;
+    sub DevNine by DevNine.alt ;
+} locl_NEP;
+
+lookup locl_NEW {
+  lookupflag 0 ;
+    sub DevJha by DevJha.alt2 ;
+    sub DevFive by DevFive.alt ;
+    sub DevEight by DevEight.alt ;
+    sub DevNine by DevNine.alt2 ;
+} locl_NEW;
+
+lookup TTUkarNuktaBelow {
+  lookupflag 0 ;
+    sub DevMaatraU DevNukta by DevMaatraUNukta.alt ;
+    sub DevMaatraUU DevNukta by DevMaatraUUNukta.alt ;
+} TTUkarNuktaBelow;
+
+lookup TTEkarNuktaHigh {
+  lookupflag 0 ;
+    sub DevMaatraE DevNukta by DevMaatraENukta.alt ;
+} TTEkarNuktaHigh;
+
+lookup Nukta {
+  lookupflag 0 ;
+    sub DevKa DevNukta by DevKaNukta ;
+    sub DevKha DevNukta by DevKhaNukta ;
+    sub DevGa DevNukta by DevGaNukta ;
+    sub DevGha DevNukta by DevGhaNukta ;
+    sub DevNga DevNukta by DevNgaNukta ;
+    sub DevCa DevNukta by DevCaNukta ;
+    sub DevCha DevNukta by DevChaNukta ;
+    sub DevJa DevNukta by DevJaNukta ;
+    sub DevJha DevNukta by DevJhaNukta ;
+    sub DevJha.alt DevNukta by DevJhaNukta.alt ;
+    sub DevJha.alt2 DevNukta by DevJhaNukta.alt2 ;
+    sub DevNya DevNukta by DevNyaNukta ;
+    sub DevTta DevNukta by DevTtaNukta ;
+    sub DevTtha DevNukta by DevTthaNukta ;
+    sub DevDda DevNukta by DevDdaNukta ;
+    sub DevDdha DevNukta by DevDdhaNukta ;
+    sub DevNna DevNukta by DevNnaNukta ;
+    sub DevTa DevNukta by DevTaNukta ;
+    sub DevTha DevNukta by DevThaNukta ;
+    sub DevDa DevNukta by DevDaNukta ;
+    sub DevDha DevNukta by DevDhaNukta ;
+    sub DevNa DevNukta by DevNaNukta ;
+    sub DevPa DevNukta by DevPaNukta ;
+    sub DevPha DevNukta by DevPhaNukta ;
+    sub DevBa DevNukta by DevBaNukta ;
+    sub DevBha DevNukta by DevBhaNukta ;
+    sub DevMa DevNukta by DevMaNukta ;
+    sub DevYa DevNukta by DevYaNukta ;
+    sub DevRa DevNukta by DevRaNukta ;
+    sub DevLa DevNukta by DevLaNukta ;
+    sub DevLla DevNukta by DevLlaNukta ;
+    sub DevWa DevNukta by DevWaNukta ;
+    sub DevSha DevNukta by DevShaNukta ;
+    sub DevSsa DevNukta by DevSsaNukta ;
+    sub DevSa DevNukta by DevSaNukta ;
+    sub DevHa DevNukta by DevHaNukta ;
+    sub DevVowelShortA DevNukta by DevVowelShortANukta ;
+    sub DevVowelA DevNukta by DevVowelANukta ;
+    sub DevVowelAA DevNukta by DevVowelAANukta ;
+    sub DevVowelI DevNukta by DevVowelINukta ;
+    sub DevVowelII DevNukta by DevVowelIINukta ;
+    sub DevVowelU DevNukta by DevVowelUNukta ;
+    sub DevVowelUU DevNukta by DevVowelUUNukta ;
+    sub DevVowelR DevNukta by DevVowelRNukta ;
+    sub DevVowelRR DevNukta by DevVowelRRNukta ;
+    sub DevVowelL DevNukta by DevVowelLNukta ;
+    sub DevVowelLL DevNukta by DevVowelLLNukta ;
+    sub DevVowelCandraE DevNukta by DevVowelCandraENukta ;
+    sub DevVowelShortE DevNukta by DevVowelShortENukta ;
+    sub DevVowelE DevNukta by DevVowelENukta ;
+    sub DevVowelAI DevNukta by DevVowelAINukta ;
+    sub DevVowelCandraO DevNukta by DevVowelCandraONukta ;
+    sub DevVowelShortO DevNukta by DevVowelShortONukta ;
+    sub DevVowelO DevNukta by DevVowelONukta ;
+    sub DevVowelAU DevNukta by DevVowelAUNukta ;
+    sub DevVowelCandraA DevNukta by DevVowelCandraANukta ;
+    sub DevMaatraAA DevNukta by DevMaatraAANukta ;
+    sub DevMaatraI DevNukta by DevMaatraINukta ;
+    sub DevMaatraII DevNukta by DevMaatraIINukta ;
+    sub DevMaatraU DevNukta by DevMaatraUNukta ;
+    sub DevMaatraUU DevNukta by DevMaatraUUNukta ;
+    sub DevMaatraR DevNukta by DevMaatraRNukta ;
+    sub DevMaatraRR DevNukta by DevMaatraRRNukta ;
+    sub DevMaatraL DevNukta by DevMaatraLNukta ;
+    sub DevMaatraLL DevNukta by DevMaatraLLNukta ;
+    sub DevMaatraCandraE DevNukta by DevMaatraCandraENukta ;
+    sub DevMaatraShortE DevNukta by DevMaatraShortENukta ;
+    sub DevMaatraE DevNukta by DevMaatraENukta ;
+    sub DevMaatraAi DevNukta by DevMaatraAiNukta ;
+    sub DevMaatraCandraO DevNukta by DevMaatraCandraONukta ;
+    sub DevMaatraShortO DevNukta by DevMaatraShortONukta ;
+    sub DevMaatraO DevNukta by DevMaatraONukta ;
+    sub DevMaatraAU DevNukta by DevMaatraAUNukta ;
+    sub DevGga DevNukta by DevGgaNukta ;
+    sub DevJja DevNukta by DevJjaNukta ;
+    sub DevDdda DevNukta by DevDddaNukta ;
+    sub DevBba DevNukta by DevBbaNukta ;
+} Nukta;
+
+lookup MatraNukta_ccmp {
+  lookupflag 0 ;
+    sub DevR.U DevNukta by DevR.UNukta ;
+    sub DevRNukta.U DevNukta by DevRNukta.UNukta ;
+    sub DevR.UU DevNukta by DevR.UUNukta ;
+    sub DevRNukta.UU DevNukta by DevRNukta.UUNukta ;
+    sub DevMaatraU DevNukta by DevMaatraUNukta ;
+    sub DevMaatraUU DevNukta by DevMaatraUUNukta ;
+    sub DevMaatraR DevNukta by DevMaatraRNukta ;
+    sub DevMaatraRR DevNukta by DevMaatraRRNukta ;
+    sub DevMaatraL DevNukta by DevMaatraLNukta ;
+    sub DevMaatraLL DevNukta by DevMaatraLLNukta ;
+    sub DevMaatraCandraE DevNukta by DevMaatraCandraENukta ;
+    sub DevMaatraShortE DevNukta by DevMaatraShortENukta ;
+    sub DevMaatraE DevNukta by DevMaatraENukta ;
+    sub DevMaatraAi DevNukta by DevMaatraAiNukta ;
+    sub DevMaatraCandraO DevNukta by DevMaatraCandraONukta ;
+    sub DevMaatraShortO DevNukta by DevMaatraShortONukta ;
+    sub DevMaatraO DevNukta by DevMaatraONukta ;
+} MatraNukta_ccmp;
+
+lookup TTarchaicKSSA {
+  lookupflag 0 ;
+    sub DevKa DevHalant DevSsa by DevK.Ssa.archaic ;
+} TTarchaicKSSA;
+
+lookup TTRaOpenYa {
+  lookupflag 0 ;
+    sub DevRa DevHalant DevYa by DevRa.Ya ;
+    sub DevRa DevHalant DevHalfYa by DevRa.HalfYa ;
+    sub DevRa DevHalant DevYaNukta by DevRa.YaNukta ;
+    sub DevRa DevHalant DevHalfYaNukta by DevRa.HalfYaNukta ;
+    sub DevRa DevHalant DevYaR by DevRa.YaRa ;
+    sub DevRa DevHalant DevYaNuktaR by DevRa.YaNuktaRa ;
+} TTRaOpenYa;
+
+lookup Akhand {
+  lookupflag 0 ;
+    sub DevKa DevHalant DevSsa by DevK.Ssa ;
+    sub DevJa DevHalant DevNya by DevJ.Nya ;
+} Akhand;
+
+lookup akhnEyelashRa_target {
+  lookupflag 0 ;
+    sub DevRa DevHalant by DevHalfRa ;
+    sub DevRaNukta DevHalant by DevHalfRaNukta ;
+} akhnEyelashRa_target ;
+
+lookup akhnEyelashRa {
+  lookupflag 0 ;
+    sub [ DevRa DevRaNukta ]' lookup akhnEyelashRa_target DevHalant' ZeroWidthJoiner ;
+} akhnEyelashRa;
+
+lookup Reph {
+  lookupflag 0 ;
+    sub DevRa DevHalant by DevRaReph ;
+} Reph;
+
+lookup TTdev2_KraAlt {
+  lookupflag 0 ;
+    sub DevKa DevHalant DevRa by DevKaR.alt ;
+    sub DevKaNukta DevHalant DevRa by DevKaNuktaR.alt ;
+} TTdev2_KraAlt;
+
+lookup TTdev2_TraAlt {
+  lookupflag 0 ;
+    sub DevTa DevHalant DevRa by DevTaR.alt ;
+    sub DevTaNukta DevHalant DevRa by DevTaNuktaR.alt ;
+} TTdev2_TraAlt;
+
+lookup TTdev2_ShraAlt {
+  lookupflag 0 ;
+    sub DevSha DevHalant DevRa by DevShaR.alt ;
+    sub DevShaNukta DevHalant DevRa by DevShaNuktaR.alt ;
+} TTdev2_ShraAlt;
+
+lookup dev2_ConsRakarFullForms {
+  lookupflag 0 ;
+    sub DevKa DevHalant DevRa by DevKaR ;
+    sub DevKha DevHalant DevRa by DevKhaR ;
+    sub DevGa DevHalant DevRa by DevGaR ;
+    sub DevGha DevHalant DevRa by DevGhaR ;
+    sub DevNga DevHalant DevRa by DevNgaR ;
+    sub DevCa DevHalant DevRa by DevCaR ;
+    sub DevCha DevHalant DevRa by DevChaR ;
+    sub DevJa DevHalant DevRa by DevJaR ;
+    sub DevJha DevHalant DevRa by DevJhaR ;
+    sub DevJha.alt DevHalant DevRa by DevJhaR.alt ;
+    sub DevJha.alt2 DevHalant DevRa by DevJhaR.alt2 ;
+    sub DevNya DevHalant DevRa by DevNyaR ;
+    sub DevTta DevHalant DevRa by DevTtaR ;
+    sub DevTtha DevHalant DevRa by DevTthaR ;
+    sub DevDda DevHalant DevRa by DevDdaR ;
+    sub DevDdha DevHalant DevRa by DevDdhaR ;
+    sub DevNna DevHalant DevRa by DevNnaR ;
+    sub DevTa DevHalant DevRa by DevTaR ;
+    sub DevTha DevHalant DevRa by DevThaR ;
+    sub DevDa DevHalant DevRa by DevDaR ;
+    sub DevDha DevHalant DevRa by DevDhaR ;
+    sub DevNa DevHalant DevRa by DevNaR ;
+    sub DevPa DevHalant DevRa by DevPaR ;
+    sub DevPha DevHalant DevRa by DevPhaR ;
+    sub DevBa DevHalant DevRa by DevBaR ;
+    sub DevBha DevHalant DevRa by DevBhaR ;
+    sub DevMa DevHalant DevRa by DevMaR ;
+    sub DevYa DevHalant DevRa by DevYaR ;
+    sub DevLa DevHalant DevRa by DevLaR ;
+    sub DevLla DevHalant DevRa by DevLlaR ;
+    sub DevWa DevHalant DevRa by DevWaR ;
+    sub DevSha DevHalant DevRa by DevShaR ;
+    sub DevSsa DevHalant DevRa by DevSsaR ;
+    sub DevSa DevHalant DevRa by DevSaR ;
+    sub DevHa DevHalant DevRa by DevHaR ;
+    sub DevGga DevHalant DevRa by DevGgaR ;
+    sub DevJja DevHalant DevRa by DevJjaR ;
+    sub DevDdda DevHalant DevRa by DevDddaR ;
+    sub DevBba DevHalant DevRa by DevBbaR ;
+    sub DevKaNukta DevHalant DevRa by DevKaNuktaR ;
+    sub DevKhaNukta DevHalant DevRa by DevKhaNuktaR ;
+    sub DevGaNukta DevHalant DevRa by DevGaNuktaR ;
+    sub DevGhaNukta DevHalant DevRa by DevGhaNuktaR ;
+    sub DevNgaNukta DevHalant DevRa by DevNgaNuktaR ;
+    sub DevCaNukta DevHalant DevRa by DevCaNuktaR ;
+    sub DevChaNukta DevHalant DevRa by DevChaNuktaR ;
+    sub DevJaNukta DevHalant DevRa by DevJaNuktaR ;
+    sub DevJhaNukta DevHalant DevRa by DevJhaNuktaR ;
+    sub DevJhaNukta.alt DevHalant DevRa by DevJhaNuktaR.alt ;
+    sub DevJhaNukta.alt2 DevHalant DevRa by DevJhaNuktaR.alt2 ;
+    sub DevNyaNukta DevHalant DevRa by DevNyaNuktaR ;
+    sub DevTtaNukta DevHalant DevRa by DevTtaNuktaR ;
+    sub DevTthaNukta DevHalant DevRa by DevTthaNuktaR ;
+    sub DevDdaNukta DevHalant DevRa by DevDdaNuktaR ;
+    sub DevDdhaNukta DevHalant DevRa by DevDdhaNuktaR ;
+    sub DevNnaNukta DevHalant DevRa by DevNnaNuktaR ;
+    sub DevTaNukta DevHalant DevRa by DevTaNuktaR ;
+    sub DevThaNukta DevHalant DevRa by DevThaNuktaR ;
+    sub DevDaNukta DevHalant DevRa by DevDaNuktaR ;
+    sub DevDhaNukta DevHalant DevRa by DevDhaNuktaR ;
+    sub DevNaNukta DevHalant DevRa by DevNaNuktaR ;
+    sub DevPaNukta DevHalant DevRa by DevPaNuktaR ;
+    sub DevPhaNukta DevHalant DevRa by DevPhaNuktaR ;
+    sub DevBaNukta DevHalant DevRa by DevBaNuktaR ;
+    sub DevBhaNukta DevHalant DevRa by DevBhaNuktaR ;
+    sub DevMaNukta DevHalant DevRa by DevMaNuktaR ;
+    sub DevYaNukta DevHalant DevRa by DevYaNuktaR ;
+    sub DevLaNukta DevHalant DevRa by DevLaNuktaR ;
+    sub DevLlaNukta DevHalant DevRa by DevLlaNuktaR ;
+    sub DevWaNukta DevHalant DevRa by DevWaNuktaR ;
+    sub DevShaNukta DevHalant DevRa by DevShaNuktaR ;
+    sub DevSsaNukta DevHalant DevRa by DevSsaNuktaR ;
+    sub DevSaNukta DevHalant DevRa by DevSaNuktaR ;
+    sub DevHaNukta DevHalant DevRa by DevHaNuktaR ;
+    sub DevGgaNukta DevHalant DevRa by DevGgaNuktaR ;
+    sub DevJjaNukta DevHalant DevRa by DevJjaNuktaR ;
+    sub DevDddaNukta DevHalant DevRa by DevDddaNuktaR ;
+    sub DevBbaNukta DevHalant DevRa by DevBbaNuktaR ;
+    sub DevK.Ssa DevHalant DevRa by DevK.SsaR ;
+    sub DevJ.Nya DevHalant DevRa by DevJ.NyaR ;
+} dev2_ConsRakarFullForms;
+
+lookup deva_Rakar {
+  lookupflag 0 ;
+    sub DevRa DevHalant by DevRaVattu ;
+} deva_Rakar;
+
+lookup dev2_Rakar_target {
+  lookupflag 0 ;
+    sub DevHalant DevRa by DevRaVattu ;
+} dev2_Rakar_target ;
+
+lookup dev2_Rakar {
+  lookupflag 0 ;
+    ignore sub @cDevFullRakarForms DevHalant' DevRa' ;
+} dev2_Rakar;
+
+lookup both_HalfForms_RAexceptions_target {
+  lookupflag 0 ;
+    sub DevRa DevHalant by DevHalfRa ;
+    sub DevRaNukta DevHalant by DevHalfRa ;
+} both_HalfForms_RAexceptions_target ;
+
+lookup both_HalfForms_RAexceptions {
+  lookupflag 0 ;
+    ignore sub [ DevRa ] DevHalant [ DevRa DevRaNukta ]'  DevHalant' ;
+} both_HalfForms_RAexceptions;
+
+lookup deva_HalfForms {
+  lookupflag 0 ;
+    sub DevKa DevHalant by DevHalfKa ;
+    sub DevKaNukta DevHalant by DevHalfKaNukta ;
+    sub DevKha DevHalant by DevHalfKha ;
+    sub DevKhaNukta DevHalant by DevHalfKhaNukta ;
+    sub DevGa DevHalant by DevHalfGa ;
+    sub DevGaNukta DevHalant by DevHalfGaNukta ;
+    sub DevGha DevHalant by DevHalfGha ;
+    sub DevGhaNukta DevHalant by DevHalfGhaNukta ;
+    sub DevNga DevHalant by DevHalfNga ;
+    sub DevNgaNukta DevHalant by DevHalfNgaNukta ;
+    sub DevCa DevHalant by DevHalfCa ;
+    sub DevCaNukta DevHalant by DevHalfCaNukta ;
+    sub DevCha DevHalant by DevHalfCha ;
+    sub DevChaNukta DevHalant by DevHalfChaNukta ;
+    sub DevJa DevHalant by DevHalfJa ;
+    sub DevJaNukta DevHalant by DevHalfJaNukta ;
+    sub DevJha DevHalant by DevHalfJha ;
+    sub DevJhaNukta DevHalant by DevHalfJhaNukta ;
+    sub DevJha.alt DevHalant by DevHalfJha.alt ;
+    sub DevJhaNukta.alt DevHalant by DevHalfJhaNukta.alt ;
+    sub DevJha.alt2 DevHalant by DevHalfJha.alt2 ;
+    sub DevJhaNukta.alt2 DevHalant by DevHalfJhaNukta.alt2 ;
+    sub DevNya DevHalant by DevHalfNya ;
+    sub DevNyaNukta DevHalant by DevHalfNyaNukta ;
+    sub DevTta DevHalant by DevHalfTta ;
+    sub DevTtaNukta DevHalant by DevHalfTtaNukta ;
+    sub DevTtha DevHalant by DevHalfTtha ;
+    sub DevTthaNukta DevHalant by DevHalfTthaNukta ;
+    sub DevDda DevHalant by DevHalfDda ;
+    sub DevDdaNukta DevHalant by DevHalfDdaNukta ;
+    sub DevDdha DevHalant by DevHalfDdha ;
+    sub DevDdhaNukta DevHalant by DevHalfDdhaNukta ;
+    sub DevNna DevHalant by DevHalfNna ;
+    sub DevNnaNukta DevHalant by DevHalfNnaNukta ;
+    sub DevTa DevHalant by DevHalfTa ;
+    sub DevTaNukta DevHalant by DevHalfTaNukta ;
+    sub DevTaR DevHalant by DevHalfTaR ;
+    sub DevTaNuktaR DevHalant by DevHalfTaNuktaR ;
+    sub DevTha DevHalant by DevHalfTha ;
+    sub DevThaNukta DevHalant by DevHalfThaNukta ;
+    sub DevDa DevHalant by DevHalfDa ;
+    sub DevDaNukta DevHalant by DevHalfDaNukta ;
+    sub DevDha DevHalant by DevHalfDha ;
+    sub DevDhaNukta DevHalant by DevHalfDhaNukta ;
+    sub DevNa DevHalant by DevHalfNa ;
+    sub DevNaNukta DevHalant by DevHalfNaNukta ;
+    sub DevPa DevHalant by DevHalfPa ;
+    sub DevPaNukta DevHalant by DevHalfPaNukta ;
+    sub DevPha DevHalant by DevHalfPha ;
+    sub DevPhaNukta DevHalant by DevHalfPhaNukta ;
+    sub DevBa DevHalant by DevHalfBa ;
+    sub DevBaNukta DevHalant by DevHalfBaNukta ;
+    sub DevBha DevHalant by DevHalfBha ;
+    sub DevBhaNukta DevHalant by DevHalfBhaNukta ;
+    sub DevMa DevHalant by DevHalfMa ;
+    sub DevMaNukta DevHalant by DevHalfMaNukta ;
+    sub DevYa DevHalant by DevHalfYa ;
+    sub DevYaNukta DevHalant by DevHalfYaNukta ;
+    sub DevYa.alt DevHalant by DevHalfYa.alt ;
+    sub DevYaNukta.alt DevHalant by DevHalfYaNukta.alt ;
+    sub DevLa DevHalant by DevHalfLa ;
+    sub DevLaNukta DevHalant by DevHalfLaNukta ;
+    sub DevLla DevHalant by DevHalfLla ;
+    sub DevLlaNukta DevHalant by DevHalfLlaNukta ;
+    sub DevWa DevHalant by DevHalfWa ;
+    sub DevWaNukta DevHalant by DevHalfWaNukta ;
+    sub DevSha DevHalant by DevHalfSha ;
+    sub DevShaNukta DevHalant by DevHalfShaNukta ;
+    sub DevSsa DevHalant by DevHalfSsa ;
+    sub DevSsaNukta DevHalant by DevHalfSsaNukta ;
+    sub DevSa DevHalant by DevHalfSa ;
+    sub DevSaNukta DevHalant by DevHalfSaNukta ;
+    sub DevHa DevHalant by DevHalfHa ;
+    sub DevHaNukta DevHalant by DevHalfHaNukta ;
+    sub DevGga DevHalant by DevHalfGga ;
+    sub DevGgaNukta DevHalant by DevHalfGgaNukta ;
+    sub DevJja DevHalant by DevHalfJja ;
+    sub DevJjaNukta DevHalant by DevHalfJjaNukta ;
+    sub DevDdda DevHalant by DevHalfDdda ;
+    sub DevDddaNukta DevHalant by DevHalfDddaNukta ;
+    sub DevBba DevHalant by DevHalfBba ;
+    sub DevBbaNukta DevHalant by DevHalfBbaNukta ;
+    sub DevNna.archaic DevHalant by DevHalfNna.archaic ;
+} deva_HalfForms;
+
+lookup deva_HalfConjunctForms {
+  lookupflag 0 ;
+    sub DevK.Ssa DevHalant by DevHalfK.Ssa ;
+    sub DevK.Ssa.archaic DevHalant by DevHalfK.Ssa.archaic ;
+    sub DevJ.Nya DevHalant by DevHalfJ.Nya ;
+} deva_HalfConjunctForms;
+
+lookup dev2_HalfPrebaseForms {
+  lookupflag 0 ;
+    sub DevKa DevHalant by DevHalfKa ;
+    sub DevKaNukta DevHalant by DevHalfKaNukta ;
+    sub DevKha DevHalant by DevHalfKha ;
+    sub DevKhaNukta DevHalant by DevHalfKhaNukta ;
+    sub DevGa DevHalant by DevHalfGa ;
+    sub DevGaNukta DevHalant by DevHalfGaNukta ;
+    sub DevGha DevHalant by DevHalfGha ;
+    sub DevGhaNukta DevHalant by DevHalfGhaNukta ;
+    sub DevCa DevHalant by DevHalfCa ;
+    sub DevCaNukta DevHalant by DevHalfCaNukta ;
+    sub DevJa DevHalant by DevHalfJa ;
+    sub DevJaNukta DevHalant by DevHalfJaNukta ;
+    sub DevJha DevHalant by DevHalfJha ;
+    sub DevJhaNukta DevHalant by DevHalfJhaNukta ;
+    sub DevJha.alt DevHalant by DevHalfJha.alt ;
+    sub DevJhaNukta.alt DevHalant by DevHalfJhaNukta.alt ;
+    sub DevJha.alt2 DevHalant by DevHalfJha.alt2 ;
+    sub DevJhaNukta.alt2 DevHalant by DevHalfJhaNukta.alt2 ;
+    sub DevNya DevHalant by DevHalfNya ;
+    sub DevNyaNukta DevHalant by DevHalfNyaNukta ;
+    sub DevNna DevHalant by DevHalfNna ;
+    sub DevNnaNukta DevHalant by DevHalfNnaNukta ;
+    sub DevTa DevHalant by DevHalfTa ;
+    sub DevTaNukta DevHalant by DevHalfTaNukta ;
+    sub DevTaR DevHalant by DevHalfTaR ;
+    sub DevTaNuktaR DevHalant by DevHalfTaNuktaR ;
+    sub DevTha DevHalant by DevHalfTha ;
+    sub DevThaNukta DevHalant by DevHalfThaNukta ;
+    sub DevDha DevHalant by DevHalfDha ;
+    sub DevDhaNukta DevHalant by DevHalfDhaNukta ;
+    sub DevNa DevHalant by DevHalfNa ;
+    sub DevNaNukta DevHalant by DevHalfNaNukta ;
+    sub DevPa DevHalant by DevHalfPa ;
+    sub DevPaNukta DevHalant by DevHalfPaNukta ;
+    sub DevPha DevHalant by DevHalfPha ;
+    sub DevPhaNukta DevHalant by DevHalfPhaNukta ;
+    sub DevBa DevHalant by DevHalfBa ;
+    sub DevBaNukta DevHalant by DevHalfBaNukta ;
+    sub DevBha DevHalant by DevHalfBha ;
+    sub DevBhaNukta DevHalant by DevHalfBhaNukta ;
+    sub DevMa DevHalant by DevHalfMa ;
+    sub DevMaNukta DevHalant by DevHalfMaNukta ;
+    sub DevYa DevHalant by DevHalfYa ;
+    sub DevYaNukta DevHalant by DevHalfYaNukta ;
+    sub DevYa.alt DevHalant by DevHalfYa.alt ;
+    sub DevYaNukta.alt DevHalant by DevHalfYaNukta.alt ;
+    sub DevLa DevHalant by DevHalfLa ;
+    sub DevLaNukta DevHalant by DevHalfLaNukta ;
+    sub DevLla DevHalant by DevHalfLla ;
+    sub DevLlaNukta DevHalant by DevHalfLlaNukta ;
+    sub DevWa DevHalant by DevHalfWa ;
+    sub DevWaNukta DevHalant by DevHalfWaNukta ;
+    sub DevSha DevHalant by DevHalfSha ;
+    sub DevShaNukta DevHalant by DevHalfShaNukta ;
+    sub DevSsa DevHalant by DevHalfSsa ;
+    sub DevSsaNukta DevHalant by DevHalfSsaNukta ;
+    sub DevSa DevHalant by DevHalfSa ;
+    sub DevSaNukta DevHalant by DevHalfSaNukta ;
+    sub DevHa DevHalant by DevHalfHa ;
+    sub DevHaNukta DevHalant by DevHalfHaNukta ;
+    sub DevGga DevHalant by DevHalfGga ;
+    sub DevGgaNukta DevHalant by DevHalfGgaNukta ;
+    sub DevJja DevHalant by DevHalfJja ;
+    sub DevJjaNukta DevHalant by DevHalfJjaNukta ;
+    sub DevBba DevHalant by DevHalfBba ;
+    sub DevBbaNukta DevHalant by DevHalfBbaNukta ;
+    sub DevNna.archaic DevHalant by DevHalfNna.archaic ;
+} dev2_HalfPrebaseForms;
+
+lookup dev2_HalfPrebaseConjunct {
+  lookupflag 0 ;
+    sub DevK.Ssa DevHalant by DevHalfK.Ssa ;
+    sub DevK.Ssa.archaic DevHalant by DevHalfK.Ssa.archaic ;
+    sub DevJ.Nya DevHalant by DevHalfJ.Nya ;
+} dev2_HalfPrebaseConjunct;
+
+lookup TTdev2_HopenYA {
+  lookupflag 0 ;
+    sub DevHalfHa DevYaR by DevH.YaRa ;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevHalfHa DevYa by DevH.Ya.alt ;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
+} TTdev2_HopenYA;
+
+lookup TTdeva_KraAlt {
+  lookupflag 0 ;
+    sub DevKa DevRaVattu by DevKaR.alt ;
+    sub DevKaNukta DevRaVattu by DevKaNuktaR.alt ;
+} TTdeva_KraAlt;
+
+lookup TTdeva_TraAlt {
+  lookupflag 0 ;
+    sub DevTa DevRaVattu by DevTaR.alt ;
+    sub DevTaNukta DevRaVattu by DevTaNuktaR.alt ;
+} TTdeva_TraAlt;
+
+lookup TTdeva_ShraAlt {
+  lookupflag 0 ;
+    sub DevSha DevRaVattu by DevShaR.alt ;
+    sub DevShaNukta DevRaVattu by DevShaNuktaR.alt ;
+} TTdeva_ShraAlt;
+
+lookup TTdeva_DopenYA {
+  lookupflag 0 ;
+    sub DevHalfDa DevYaR by DevD.YaRa ;
+    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
+    sub DevHalfDa DevYa by DevD.Ya.alt ;
+    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
+    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
+    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
+} TTdeva_DopenYA;
+
+lookup TTdeva_HopenYA {
+  lookupflag 0 ;
+    sub DevHalfHa DevYaR by DevH.YaRa ;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevHalfHa DevYa by DevH.Ya.alt ;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
+} TTdeva_HopenYA;
+
+lookup deva_ConsRakarFullForms {
+  lookupflag 0 ;
+    sub DevKa DevRaVattu by DevKaR ;
+    sub DevKha DevRaVattu by DevKhaR ;
+    sub DevGa DevRaVattu by DevGaR ;
+    sub DevGha DevRaVattu by DevGhaR ;
+    sub DevNga DevRaVattu by DevNgaR ;
+    sub DevCa DevRaVattu by DevCaR ;
+    sub DevCha DevRaVattu by DevChaR ;
+    sub DevJa DevRaVattu by DevJaR ;
+    sub DevJha DevRaVattu by DevJhaR ;
+    sub DevJha.alt DevRaVattu by DevJhaR.alt ;
+    sub DevJha.alt2 DevRaVattu by DevJhaR.alt2 ;
+    sub DevNya DevRaVattu by DevNyaR ;
+    sub DevTta DevRaVattu by DevTtaR ;
+    sub DevTtha DevRaVattu by DevTthaR ;
+    sub DevDda DevRaVattu by DevDdaR ;
+    sub DevDdha DevRaVattu by DevDdhaR ;
+    sub DevNna DevRaVattu by DevNnaR ;
+    sub DevTa DevRaVattu by DevTaR ;
+    sub DevTha DevRaVattu by DevThaR ;
+    sub DevDa DevRaVattu by DevDaR ;
+    sub DevDha DevRaVattu by DevDhaR ;
+    sub DevNa DevRaVattu by DevNaR ;
+    sub DevPa DevRaVattu by DevPaR ;
+    sub DevPha DevRaVattu by DevPhaR ;
+    sub DevBa DevRaVattu by DevBaR ;
+    sub DevBha DevRaVattu by DevBhaR ;
+    sub DevMa DevRaVattu by DevMaR ;
+    sub DevYa DevRaVattu by DevYaR ;
+    sub DevLa DevRaVattu by DevLaR ;
+    sub DevLla DevRaVattu by DevLlaR ;
+    sub DevWa DevRaVattu by DevWaR ;
+    sub DevSha DevRaVattu by DevShaR ;
+    sub DevSsa DevRaVattu by DevSsaR ;
+    sub DevSa DevRaVattu by DevSaR ;
+    sub DevHa DevRaVattu by DevHaR ;
+    sub DevGga DevRaVattu by DevGgaR ;
+    sub DevJja DevRaVattu by DevJjaR ;
+    sub DevDdda DevRaVattu by DevDddaR ;
+    sub DevBba DevRaVattu by DevBbaR ;
+    sub DevKaNukta DevRaVattu by DevKaNuktaR ;
+    sub DevKhaNukta DevRaVattu by DevKhaNuktaR ;
+    sub DevGaNukta DevRaVattu by DevGaNuktaR ;
+    sub DevGhaNukta DevRaVattu by DevGhaNuktaR ;
+    sub DevNgaNukta DevRaVattu by DevNgaNuktaR ;
+    sub DevCaNukta DevRaVattu by DevCaNuktaR ;
+    sub DevChaNukta DevRaVattu by DevChaNuktaR ;
+    sub DevJaNukta DevRaVattu by DevJaNuktaR ;
+    sub DevJhaNukta DevRaVattu by DevJhaNuktaR ;
+    sub DevJhaNukta.alt DevRaVattu by DevJhaNuktaR.alt ;
+    sub DevJhaNukta.alt2 DevRaVattu by DevJhaNuktaR.alt2 ;
+    sub DevNyaNukta DevRaVattu by DevNyaNuktaR ;
+    sub DevTtaNukta DevRaVattu by DevTtaNuktaR ;
+    sub DevTthaNukta DevRaVattu by DevTthaNuktaR ;
+    sub DevDdaNukta DevRaVattu by DevDdaNuktaR ;
+    sub DevDdhaNukta DevRaVattu by DevDdhaNuktaR ;
+    sub DevNnaNukta DevRaVattu by DevNnaNuktaR ;
+    sub DevTaNukta DevRaVattu by DevTaNuktaR ;
+    sub DevThaNukta DevRaVattu by DevThaNuktaR ;
+    sub DevDaNukta DevRaVattu by DevDaNuktaR ;
+    sub DevDhaNukta DevRaVattu by DevDhaNuktaR ;
+    sub DevNaNukta DevRaVattu by DevNaNuktaR ;
+    sub DevPaNukta DevRaVattu by DevPaNuktaR ;
+    sub DevPhaNukta DevRaVattu by DevPhaNuktaR ;
+    sub DevBaNukta DevRaVattu by DevBaNuktaR ;
+    sub DevBhaNukta DevRaVattu by DevBhaNuktaR ;
+    sub DevMaNukta DevRaVattu by DevMaNuktaR ;
+    sub DevYaNukta DevRaVattu by DevYaNuktaR ;
+    sub DevLaNukta DevRaVattu by DevLaNuktaR ;
+    sub DevLlaNukta DevRaVattu by DevLlaNuktaR ;
+    sub DevWaNukta DevRaVattu by DevWaNuktaR ;
+    sub DevShaNukta DevRaVattu by DevShaNuktaR ;
+    sub DevSsaNukta DevRaVattu by DevSsaNuktaR ;
+    sub DevSaNukta DevRaVattu by DevSaNuktaR ;
+    sub DevHaNukta DevRaVattu by DevHaNuktaR ;
+    sub DevGgaNukta DevRaVattu by DevGgaNuktaR ;
+    sub DevJjaNukta DevRaVattu by DevJjaNuktaR ;
+    sub DevDddaNukta DevRaVattu by DevDddaNuktaR ;
+    sub DevBbaNukta DevRaVattu by DevBbaNuktaR ;
+    sub DevK.Ssa DevRaVattu by DevK.SsaR ;
+    sub DevJ.Nya DevRaVattu by DevJ.NyaR ;
+} deva_ConsRakarFullForms;
+
+lookup dev2_Conjuncts_NoPrebase {
+  lookupflag 0 ;
+    sub DevNga DevHalant DevKa by DevNg.Ka ;
+    sub DevNga DevHalant DevKha by DevNg.Kha ;
+    sub DevNga DevHalant DevGa by DevNg.Ga ;
+    sub DevNga DevHalant DevGha by DevNg.Gha ;
+    sub DevNga DevHalant DevNga by DevNg.Nga ;
+    sub DevNga DevHalant DevHa by DevNg.Ha ;
+    sub DevTta DevHalant DevTta by DevTt.Tta ;
+    sub DevTta DevHalant DevTtha by DevTt.Ttha ;
+    sub DevTtha DevHalant DevTtha by DevTth.Ttha ;
+    sub DevDda DevHalant DevDda by DevDd.Dda ;
+    sub DevDa DevHalant DevDa by DevD.Da ;
+    sub DevDa DevHalant DevDha by DevD.Dha ;
+    sub DevDa DevHalant DevMa by DevD.Ma ;
+    sub DevDa DevHalant DevWa by DevD.Wa ;
+} dev2_Conjuncts_NoPrebase;
+
+# *TypeTuner lookup only* to create variant fonts
+# These lookups include the DevDa DevHalant sequence to create ligatures 
+# to render the OpenYa (DevYa.alt plus Rakar and Nukta variants) 
+# See: "lookup dev2_Conjuncts_NoPrebase_Ya" for standard sequences
+lookup TTdev2_Conjuncts_NoPrebase_Ya {
+  lookupflag 0 ;
+    sub DevNg.Nga DevHalant DevYaR by DevNgNga.YaRa ;
+    sub DevNga DevHalant DevYaR by DevNg.YaRa ;
+    sub DevCha DevHalant DevYaR by DevCh.YaRa ;
+    sub DevTta DevHalant DevYaR by DevTt.YaRa ;
+    sub DevTtha DevHalant DevYaR by DevTth.YaRa ;
+    sub DevDda DevHalant DevYaR by DevDd.YaRa ;
+    sub DevDdha DevHalant DevYaR by DevDdh.YaRa ;
+    sub DevDa DevHalant DevYaR by DevD.YaRa ; # TypeTuner now enables the OpenYa (DevYa.alt)
+    sub DevNg.Nga DevHalant DevYaNuktaR by DevNgNga.YaNuktaRa ;
+    sub DevNga DevHalant DevYaNuktaR by DevNg.YaNuktaRa ;
+    sub DevCha DevHalant DevYaNuktaR by DevCh.YaNuktaRa ;
+    sub DevTta DevHalant DevYaNuktaR by DevTt.YaNuktaRa ;
+    sub DevTtha DevHalant DevYaNuktaR by DevTth.YaNuktaRa ;
+    sub DevDda DevHalant DevYaNuktaR by DevDd.YaNuktaRa ;
+    sub DevDdha DevHalant DevYaNuktaR by DevDdh.YaNuktaRa ;
+    sub DevDa DevHalant DevYaNuktaR by DevD.YaNuktaRa ; # TypeTuner now enables the OpenYa (DevYa.alt)
+    sub DevNg.Nga DevHalant DevYa by DevNgNga.Ya ;
+    sub DevNga DevHalant DevYa by DevNg.Ya ;
+    sub DevCha DevHalant DevYa by DevCh.Ya ;
+    sub DevTta DevHalant DevYa by DevTt.Ya ;
+    sub DevTtha DevHalant DevYa by DevTth.Ya ;
+    sub DevDda DevHalant DevYa by DevDd.Ya ;
+    sub DevDdha DevHalant DevYa by DevDdh.Ya ;
+    sub DevDa DevHalant DevYa by DevD.Ya.alt ; # TypeTuner now enables the OpenYa (DevYa.alt) in place of special conjunct
+    sub DevNg.Nga DevHalant DevYaNukta by DevNgNga.YaNukta ;
+    sub DevNga DevHalant DevYaNukta by DevNg.YaNukta ;
+    sub DevCha DevHalant DevYaNukta by DevCh.YaNukta ;
+    sub DevTta DevHalant DevYaNukta by DevTt.YaNukta ;
+    sub DevTtha DevHalant DevYaNukta by DevTth.YaNukta ;
+    sub DevDda DevHalant DevYaNukta by DevDd.YaNukta ;
+    sub DevDdha DevHalant DevYaNukta by DevDdh.YaNukta ;
+    sub DevDa DevHalant DevYaNukta by DevD.YaNukta ; # TypeTuner now enables the OpenYa (DevYa.alt)
+    sub DevNg.Nga DevHalant DevHalfYa by DevNgNga.HalfYa ;
+    sub DevNga DevHalant DevHalfYa by DevNg.HalfYa ;
+    sub DevCha DevHalant DevHalfYa by DevCh.HalfYa ;
+    sub DevTta DevHalant DevHalfYa by DevTt.HalfYa ;
+    sub DevTtha DevHalant DevHalfYa by DevTth.HalfYa ;
+    sub DevDda DevHalant DevHalfYa by DevDd.HalfYa ;
+    sub DevDdha DevHalant DevHalfYa by DevDdh.HalfYa ;
+    sub DevDa DevHalant DevHalfYa by DevD.HalfYa ; # TypeTuner now enables the OpenYa (DevYa.alt)
+    sub DevNg.Nga DevHalant DevHalfYaNukta by DevNgNga.HalfYaNukta ;
+    sub DevNga DevHalant DevHalfYaNukta by DevNg.HalfYaNukta ;
+    sub DevCha DevHalant DevHalfYaNukta by DevCh.HalfYaNukta ;
+    sub DevTta DevHalant DevHalfYaNukta by DevTt.HalfYaNukta ;
+    sub DevTtha DevHalant DevHalfYaNukta by DevTth.HalfYaNukta ;
+    sub DevDda DevHalant DevHalfYaNukta by DevDd.HalfYaNukta ;
+    sub DevDdha DevHalant DevHalfYaNukta by DevDdh.HalfYaNukta ;
+    sub DevDa DevHalant DevHalfYaNukta by DevD.HalfYaNukta ; # TypeTuner now enables the OpenYa (DevYa.alt)
+} TTdev2_Conjuncts_NoPrebase_Ya;
+
+# Lookups to create ligatures to render the OpenYa (DevYa.alt plus Rakar and Nukta variants) 
+# when preceded by non-half-form characters (e.g. the DevNga and DevHalant cluster) 
+# which is the standard rendering in Annapurna - with the exception of DevD.Ya
+lookup dev2_Conjuncts_NoPrebase_Ya {
+  lookupflag 0 ;
+    sub DevNg.Nga DevHalant DevYaR by DevNgNga.YaRa ;
+    sub DevNga DevHalant DevYaR by DevNg.YaRa ;
+    sub DevCha DevHalant DevYaR by DevCh.YaRa ;
+    sub DevTta DevHalant DevYaR by DevTt.YaRa ;
+    sub DevTtha DevHalant DevYaR by DevTth.YaRa ;
+    sub DevDda DevHalant DevYaR by DevDd.YaRa ;
+    sub DevDdha DevHalant DevYaR by DevDdh.YaRa ;
+    sub DevNg.Nga DevHalant DevYaNuktaR by DevNgNga.YaNuktaRa ;
+    sub DevNga DevHalant DevYaNuktaR by DevNg.YaNuktaRa ;
+    sub DevCha DevHalant DevYaNuktaR by DevCh.YaNuktaRa ;
+    sub DevTta DevHalant DevYaNuktaR by DevTt.YaNuktaRa ;
+    sub DevTtha DevHalant DevYaNuktaR by DevTth.YaNuktaRa ;
+    sub DevDda DevHalant DevYaNuktaR by DevDd.YaNuktaRa ;
+    sub DevDdha DevHalant DevYaNuktaR by DevDdh.YaNuktaRa ;
+    sub DevNg.Nga DevHalant DevYa by DevNgNga.Ya ;
+    sub DevNga DevHalant DevYa by DevNg.Ya ;
+    sub DevCha DevHalant DevYa by DevCh.Ya ;
+    sub DevTta DevHalant DevYa by DevTt.Ya ;
+    sub DevTtha DevHalant DevYa by DevTth.Ya ;
+    sub DevDda DevHalant DevYa by DevDd.Ya ;
+    sub DevDdha DevHalant DevYa by DevDdh.Ya ;
+    sub DevDa DevHalant DevYa by DevD.Ya ; # special conjunct - exception to OpenYa
+    sub DevNg.Nga DevHalant DevYaNukta by DevNgNga.YaNukta ;
+    sub DevNga DevHalant DevYaNukta by DevNg.YaNukta ;
+    sub DevCha DevHalant DevYaNukta by DevCh.YaNukta ;
+    sub DevTta DevHalant DevYaNukta by DevTt.YaNukta ;
+    sub DevTtha DevHalant DevYaNukta by DevTth.YaNukta ;
+    sub DevDda DevHalant DevYaNukta by DevDd.YaNukta ;
+    sub DevDdha DevHalant DevYaNukta by DevDdh.YaNukta ;
+    sub DevNg.Nga DevHalant DevHalfYa by DevNgNga.HalfYa ;
+    sub DevNga DevHalant DevHalfYa by DevNg.HalfYa ;
+    sub DevCha DevHalant DevHalfYa by DevCh.HalfYa ;
+    sub DevTta DevHalant DevHalfYa by DevTt.HalfYa ;
+    sub DevTtha DevHalant DevHalfYa by DevTth.HalfYa ;
+    sub DevDda DevHalant DevHalfYa by DevDd.HalfYa ;
+    sub DevDdha DevHalant DevHalfYa by DevDdh.HalfYa ;
+    sub DevNg.Nga DevHalant DevHalfYaNukta by DevNgNga.HalfYaNukta ;
+    sub DevNga DevHalant DevHalfYaNukta by DevNg.HalfYaNukta ;
+    sub DevCha DevHalant DevHalfYaNukta by DevCh.HalfYaNukta ;
+    sub DevTta DevHalant DevHalfYaNukta by DevTt.HalfYaNukta ;
+    sub DevTtha DevHalant DevHalfYaNukta by DevTth.HalfYaNukta ;
+    sub DevDda DevHalant DevHalfYaNukta by DevDd.HalfYaNukta ;
+    sub DevDdha DevHalant DevHalfYaNukta by DevDdh.HalfYaNukta ;
+} dev2_Conjuncts_NoPrebase_Ya;
+
+lookup deva_ConjunctsFull {
+  lookupflag 0 ;
+    sub DevHalfKa DevKa by DevK.Ka ;
+    sub DevHalfKa DevTa by DevK.Ta ;
+    sub DevHalfNga DevKa by DevNg.Ka ;
+    sub DevHalfNga DevKha by DevNg.Kha ;
+    sub DevHalfNga DevGa by DevNg.Ga ;
+    sub DevHalfNga DevGha by DevNg.Gha ;
+    sub DevHalfNga DevNga by DevNg.Nga ;
+    sub DevHalfNga DevHa by DevNg.Ha ;
+    sub DevHalfCa DevCa by DevC.Ca ;
+    sub DevHalfTta DevTta by DevTt.Tta ;
+    sub DevHalfTta DevTtha by DevTt.Ttha ;
+    sub DevHalfTtha DevTtha by DevTth.Ttha ;
+    sub DevHalfDda DevDda by DevDd.Dda ;
+    sub DevHalfTa DevTa by DevT.Ta ;
+    sub DevHalfDa DevDa by DevD.Da ;
+    sub DevHalfDa DevDha by DevD.Dha ;
+    sub DevHalfDa DevMa by DevD.Ma ;
+    sub DevHalfDa DevYa by DevD.Ya ;
+    sub DevHalfDa DevWa by DevD.Wa ;
+    sub DevHalfNa DevNa by DevN.Na ;
+    sub DevHalfPa DevTa by DevP.Ta ;
+    sub DevHalfMa DevLa by DevM.La ;
+    sub DevHalfLa DevLa by DevL.La ;
+    sub DevHalfSha DevCa by DevSh.Ca ;
+    sub DevHalfSha DevWa by DevSh.Wa ;
+    sub DevHalfSsa DevTta by DevSs.Tta ;
+    sub DevHalfSsa DevTtha by DevSs.Ttha ;
+    sub DevHalfSa DevNa by DevS.Na ;
+    sub DevHalfHa DevNa by DevH.Na ;
+    sub DevHalfHa DevMa by DevH.Ma ;
+    sub DevHalfHa DevYa by DevH.Ya ;
+    sub DevHalfHa DevLa by DevH.La ;
+    sub DevHalfHa DevWa by DevH.Wa ;
+    sub DevHalfNga DevYaR by DevNg.YaRa ;
+    sub DevHalfCha DevYaR by DevCh.YaRa ;
+    sub DevHalfTta DevYaR by DevTt.YaRa ;
+    sub DevHalfTtha DevYaR by DevTth.YaRa ;
+    sub DevHalfDda DevYaR by DevDd.YaRa ;
+    sub DevHalfDdha DevYaR by DevDdh.YaRa ;
+    sub DevHalfNga DevYaNuktaR by DevNg.YaNuktaRa ;
+    sub DevHalfCha DevYaNuktaR by DevCh.YaNuktaRa ;
+    sub DevHalfTta DevYaNuktaR by DevTt.YaNuktaRa ;
+    sub DevHalfTtha DevYaNuktaR by DevTth.YaNuktaRa ;
+    sub DevHalfDda DevYaNuktaR by DevDd.YaNuktaRa ;
+    sub DevHalfDdha DevYaNuktaR by DevDdh.YaNuktaRa ;
+    sub DevHalfNga DevYa by DevNg.Ya ;
+    sub DevHalfCha DevYa by DevCh.Ya ;
+    sub DevHalfTta DevYa by DevTt.Ya ;
+    sub DevHalfTtha DevYa by DevTth.Ya ;
+    sub DevHalfDda DevYa by DevDd.Ya ;
+    sub DevHalfDdha DevYa by DevDdh.Ya ;
+    sub DevHalfNga DevYaNukta by DevNg.YaNukta ;
+    sub DevHalfCha DevYaNukta by DevCh.YaNukta ;
+    sub DevHalfTta DevYaNukta by DevTt.YaNukta ;
+    sub DevHalfTtha DevYaNukta by DevTth.YaNukta ;
+    sub DevHalfDda DevYaNukta by DevDd.YaNukta ;
+    sub DevHalfDdha DevYaNukta by DevDdh.YaNukta ;
+    sub DevHalfNga DevHalfYa by DevNg.HalfYa ;
+    sub DevHalfCha DevHalfYa by DevCh.HalfYa ;
+    sub DevHalfTta DevHalfYa by DevTt.HalfYa ;
+    sub DevHalfTtha DevHalfYa by DevTth.HalfYa ;
+    sub DevHalfDda DevHalfYa by DevDd.HalfYa ;
+    sub DevHalfDdha DevHalfYa by DevDdh.HalfYa ;
+    sub DevHalfNga DevHalfYaNukta by DevNg.HalfYaNukta ;
+    sub DevHalfCha DevHalfYaNukta by DevCh.HalfYaNukta ;
+    sub DevHalfTta DevHalfYaNukta by DevTt.HalfYaNukta ;
+    sub DevHalfTtha DevHalfYaNukta by DevTth.HalfYaNukta ;
+    sub DevHalfDda DevHalfYaNukta by DevDd.HalfYaNukta ;
+    sub DevHalfDdha DevHalfYaNukta by DevDdh.HalfYaNukta ;
+} deva_ConjunctsFull;
+
+lookup ConsRakarHalfForms {
+  lookupflag 0 ;
+    sub DevKaR DevHalant by DevHalfKaR ;
+    sub DevKaNuktaR DevHalant by DevHalfKaNuktaR ;
+    sub DevKaR.alt DevHalant by DevHalfKaR.alt ;
+    sub DevKaNuktaR.alt DevHalant by DevHalfKaNuktaR.alt ;
+    sub DevKhaR DevHalant by DevHalfKhaR ;
+    sub DevKhaNuktaR DevHalant by DevHalfKhaNuktaR ;
+    sub DevGaR DevHalant by DevHalfGaR ;
+    sub DevGaNuktaR DevHalant by DevHalfGaNuktaR ;
+    sub DevGhaR DevHalant by DevHalfGhaR ;
+    sub DevGhaNuktaR DevHalant by DevHalfGhaNuktaR ;
+    sub DevCaR DevHalant by DevHalfCaR ;
+    sub DevCaNuktaR DevHalant by DevHalfCaNuktaR ;
+    sub DevJaR DevHalant by DevHalfJaR ;
+    sub DevJaNuktaR DevHalant by DevHalfJaNuktaR ;
+    sub DevJhaR DevHalant by DevHalfJhaR ;
+    sub DevJhaNuktaR DevHalant by DevHalfJhaNuktaR ;
+    sub DevJhaR.alt DevHalant by DevHalfJhaR.alt ;
+    sub DevJhaNuktaR.alt DevHalant by DevHalfJhaNuktaR.alt ;
+    sub DevNyaR DevHalant by DevHalfNyaR ;
+    sub DevNyaNuktaR DevHalant by DevHalfNyaNuktaR ;
+    sub DevNnaR DevHalant by DevHalfNnaR ;
+    sub DevNnaNuktaR DevHalant by DevHalfNnaNuktaR ;
+    sub DevTaR DevHalant by DevHalfTaR ;
+    sub DevTaNuktaR DevHalant by DevHalfTaNuktaR ;
+    sub DevTaR.alt DevHalant by DevHalfTaR.alt ;
+    sub DevTaNuktaR.alt DevHalant by DevHalfTaNuktaR.alt ;
+    sub DevThaR DevHalant by DevHalfThaR ;
+    sub DevThaNuktaR DevHalant by DevHalfThaNuktaR ;
+    sub DevDhaR DevHalant by DevHalfDhaR ;
+    sub DevDhaNuktaR DevHalant by DevHalfDhaNuktaR ;
+    sub DevNaR DevHalant by DevHalfNaR ;
+    sub DevNaNuktaR DevHalant by DevHalfNaNuktaR ;
+    sub DevPaR DevHalant by DevHalfPaR ;
+    sub DevPaNuktaR DevHalant by DevHalfPaNuktaR ;
+    sub DevPhaR DevHalant by DevHalfPhaR ;
+    sub DevPhaNuktaR DevHalant by DevHalfPhaNuktaR ;
+    sub DevBaR DevHalant by DevHalfBaR ;
+    sub DevBaNuktaR DevHalant by DevHalfBaNuktaR ;
+    sub DevBhaR DevHalant by DevHalfBhaR ;
+    sub DevBhaNuktaR DevHalant by DevHalfBhaNuktaR ;
+    sub DevMaR DevHalant by DevHalfMaR ;
+    sub DevMaNuktaR DevHalant by DevHalfMaNuktaR ;
+    sub DevYaR DevHalant by DevHalfYaR ;
+    sub DevYaNuktaR DevHalant by DevHalfYaNuktaR ;
+    sub DevLaR DevHalant by DevHalfLaR ;
+    sub DevLaNuktaR DevHalant by DevHalfLaNuktaR ;
+    sub DevWaR DevHalant by DevHalfWaR ;
+    sub DevWaNuktaR DevHalant by DevHalfWaNuktaR ;
+    sub DevShaR DevHalant by DevHalfShaR ;
+    sub DevShaNuktaR DevHalant by DevHalfShaNuktaR ;
+    sub DevShaR.alt DevHalant by DevHalfShaR.alt ;
+    sub DevShaNuktaR.alt DevHalant by DevHalfShaNuktaR.alt ;
+    sub DevSsaR DevHalant by DevHalfSsaR ;
+    sub DevSsaNuktaR DevHalant by DevHalfSsaNuktaR ;
+    sub DevSaR DevHalant by DevHalfSaR ;
+    sub DevSaNuktaR DevHalant by DevHalfSaNuktaR ;
+    sub DevHalfHaR DevHalant by DevHalfHaR ;
+    sub DevHalfHaNuktaR DevHalant by DevHalfHaNuktaR ;
+    sub DevGgaR DevHalant by DevHalfGgaR ;
+    sub DevGgaNuktaR DevHalant by DevHalfGgaNuktaR ;
+    sub DevJjaR DevHalant by DevHalfJjaR ;
+    sub DevJjaNuktaR DevHalant by DevHalfJjaNuktaR ;
+    sub DevBbaR DevHalant by DevHalfBbaR ;
+    sub DevBbaNuktaR DevHalant by DevHalfBbaNuktaR ;
+    sub DevK.SsaR DevHalant by DevHalfK.SsaR ;
+    sub DevJ.NyaR DevHalant by DevHalfJ.NyaR ;
+    sub DevNg.YaRa DevHalant by DevHalfNg.YaRa ;
+    sub DevCh.YaRa DevHalant by DevHalfCh.YaRa ;
+    sub DevTt.YaRa DevHalant by DevHalfTt.YaRa ;
+    sub DevTth.YaRa DevHalant by DevHalfTth.YaRa ;
+    sub DevDd.YaRa DevHalant by DevHalfDd.YaRa ;
+    sub DevDdh.YaRa DevHalant by DevHalfDdh.YaRa ;
+    sub DevD.YaRa DevHalant by DevHalfD.YaRa ;
+    sub DevH.YaRa DevHalant by DevHalfH.YaRa ;
+    sub DevNg.YaNuktaRa DevHalant by DevHalfNg.YaNuktaRa ;
+    sub DevCh.YaNuktaRa DevHalant by DevHalfCh.YaNuktaRa ;
+    sub DevTt.YaNuktaRa DevHalant by DevHalfTt.YaNuktaRa ;
+    sub DevTth.YaNuktaRa DevHalant by DevHalfTth.YaNuktaRa ;
+    sub DevDd.YaNuktaRa DevHalant by DevHalfDd.YaNuktaRa ;
+    sub DevDdh.YaNuktaRa DevHalant by DevHalfDdh.YaNuktaRa ;
+    sub DevD.YaNuktaRa DevHalant by DevHalfD.YaNuktaRa ;
+    sub DevH.YaNuktaRa DevHalant by DevHalfH.YaNuktaRa ;
+} ConsRakarHalfForms;
+
+lookup both_Conjuncts_NoPrebase_YaRaHalf {
+  lookupflag 0 ;
+    sub DevNga DevHalant DevHalfYaR by DevHalfNg.YaRa ;
+    sub DevCha DevHalant DevHalfYaR by DevHalfCh.YaRa ;
+    sub DevTta DevHalant DevHalfYaR by DevHalfTt.YaRa ;
+    sub DevTtha DevHalant DevHalfYaR by DevHalfTth.YaRa ;
+    sub DevDda DevHalant DevHalfYaR by DevHalfDd.YaRa ;
+    sub DevDdha DevHalant DevHalfYaR by DevHalfDdh.YaRa ;
+    sub DevNga DevHalant DevHalfYaNuktaR by DevHalfNg.YaNuktaRa ;
+    sub DevCha DevHalant DevHalfYaNuktaR by DevHalfCh.YaNuktaRa ;
+    sub DevTta DevHalant DevHalfYaNuktaR by DevHalfTt.YaNuktaRa ;
+    sub DevTtha DevHalant DevHalfYaNuktaR by DevHalfTth.YaNuktaRa ;
+    sub DevDda DevHalant DevHalfYaNuktaR by DevHalfDd.YaNuktaRa ;
+    sub DevDdha DevHalant DevHalfYaNuktaR by DevHalfDdh.YaNuktaRa ;
+} both_Conjuncts_NoPrebase_YaRaHalf;
+
+lookup dev2_Conjuncts_Prebase {
+  lookupflag 0 ;
+    sub DevHalfKa DevKa by DevK.Ka ;
+    sub DevHalfKa DevTa by DevK.Ta ;
+    sub DevHalfCa DevCa by DevC.Ca ;
+    sub DevHalfTa DevTa by DevT.Ta ;
+    sub DevHalfNa DevNa by DevN.Na ;
+    sub DevHalfPa DevTa by DevP.Ta ;
+    sub DevHalfMa DevLa by DevM.La ;
+    sub DevHalfLa DevLa by DevL.La ;
+    sub DevHalfSha DevCa by DevSh.Ca ;
+    sub DevHalfSha DevWa by DevSh.Wa ;
+    sub DevHalfSsa DevTta by DevSs.Tta ;
+    sub DevHalfSsa DevTtha by DevSs.Ttha ;
+    sub DevHalfSa DevNa by DevS.Na ;
+    sub DevHalfHa DevNa by DevH.Na ;
+    sub DevHalfHa DevMa by DevH.Ma ;
+    sub DevHalfHa DevYa by DevH.Ya ;
+    sub DevHalfHa DevLa by DevH.La ;
+    sub DevHalfHa DevWa by DevH.Wa ;
+} dev2_Conjuncts_Prebase;
+
+lookup ConjunctsHalf {
+  lookupflag 0 ;
+    sub DevHalfTa DevHalfTa by DevHalfT.Ta ;
+} ConjunctsHalf;
+
+lookup Matra_i_20_target {
+  lookupflag 0 ;
+    sub DevMaatraI by DevMaatraI.width20 ;
+    sub DevMaatraINukta by DevMaatraINukta.width20 ;
+} Matra_i_20_target ;
+
+lookup Matra_i_20 {
+  lookupflag 0 ;
+    sub [ DevMaatraI DevMaatraINukta ]' lookup Matra_i_20_target @cDevMatra_i_width20 ;
+} Matra_i_20;
+
+lookup Matra_i_30_target {
+  lookupflag 0 ;
+    sub DevMaatraI by DevMaatraI.width30 ;
+    sub DevMaatraINukta by DevMaatraINukta.width30 ;
+} Matra_i_30_target ;
+
+lookup Matra_i_30 {
+  lookupflag 0 ;
+    sub [ DevMaatraI DevMaatraINukta ]' lookup Matra_i_30_target @cDevMatra_i_width30 ;
+} Matra_i_30;
+
+lookup Matra_i_40_target {
+  lookupflag 0 ;
+    sub DevMaatraI by DevMaatraI.width40 ;
+    sub DevMaatraINukta by DevMaatraINukta.width40 ;
+} Matra_i_40_target ;
+
+lookup Matra_i_40 {
+  lookupflag 0 ;
+    sub [ DevMaatraI DevMaatraINukta ]' lookup Matra_i_40_target @cDevMatra_i_width40 ;
+} Matra_i_40;
+
+lookup Ng_AA_Candrabindu_Ra_Ai {
+  lookupflag 0 ;
+    sub DevNga DevMaatraAA DevCandrabindu DevRa DevMaatraAi by DevNgAaCndrbndRaAi ;
+} Ng_AA_Candrabindu_Ra_Ai;
+
+lookup Liga_AA_Candrabindu_Ra_Ai_target {
+  lookupflag 0 ;
+    sub DevRa DevMaatraAi by DevRaAi ;
+    sub DevRaNukta DevMaatraAi by DevRaNuktaAi ;
+    sub DevRa DevMaatraE by DevRaE ;
+    sub DevRaNukta DevMaatraE by DevRaNuktaE ;
+} Liga_AA_Candrabindu_Ra_Ai_target ;
+
+lookup Liga_AA_Candrabindu_Ra_Ai {
+  lookupflag 0 ;
+    sub DevMaatraAA [ DevCandrabindu DevMaatraCandraLongE DevMaatraCandraE DevMaatraCandraENukta ] [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+    sub @cDevVowelMatra_CandrabinduAlt [ DevCandrabindu DevAnusvara ] [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+    sub @cDevMatraSpacingAdj [ DevCandrabindu DevAnusvara ] [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+    sub @cDevMatraSpacingLeft2 [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+    sub @cDevConsNarrowRightofStem2 @cDevMatraAndRephComb [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+    sub @cDevConsNarrowRightofStem2 DevCandrabindu [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+    sub [ DevMaatraCandraLongE DevMaatraCandraE DevMaatraCandraENukta ] [ DevRaReph DevRaReph.alt DevRaReph.alt2 DevRephBindu DevRephCandrabindu ] [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+    sub DevMaatraCandraO [ DevRa DevRaNukta ]' lookup Liga_AA_Candrabindu_Ra_Ai_target [ DevMaatraAi DevMaatraE ]'  ;
+} Liga_AA_Candrabindu_Ra_Ai;
+
+lookup MatraRephLigatures {
+  lookupflag 0 ;
+    sub DevMaatraShortO DevRaReph by DevMaatraShortOReph ;
+    sub DevMaatraO DevRaReph by DevMaatraOReph ;
+    sub DevMaatraAU DevRaReph by DevMaatraAUReph ;
+    sub DevMaatraII DevRaReph by DevMaatraIIReph ;
+    sub DevMaatraII.width20 DevRaReph by DevMaatraII.width20Reph ;
+    sub DevMaatraShortE DevRaReph by DevMaatraShortEReph ;
+    sub DevMaatraE DevRaReph by DevMaatraEReph ;
+    sub DevMaatraAi DevRaReph by DevMaatraAiReph ;
+} MatraRephLigatures;
+
+lookup MatraRephMarkLigatures {
+  lookupflag 0 ;
+    sub DevMaatraShortOReph DevCandrabindu by DevMaatraShortORephCandrabindu ;
+    sub DevMaatraShortOReph DevAnusvara by DevMaatraShortORephBindu ;
+    sub DevMaatraOReph DevCandrabindu by DevMaatraORephCandrabindu ;
+    sub DevMaatraOReph DevAnusvara by DevMaatraORephBindu ;
+    sub DevMaatraAUReph DevCandrabindu by DevMaatraAURephCandrabindu ;
+    sub DevMaatraAUReph DevAnusvara by DevMaatraAURephBindu ;
+    sub DevMaatraIIReph DevCandrabindu by DevMaatraIIRephCandrabindu ;
+    sub DevMaatraIIReph DevAnusvara by DevMaatraIIRephBindu ;
+    sub DevMaatraII.width20Reph DevCandrabindu by DevMaatraII.width20RephCandrabindu ;
+    sub DevMaatraII.width20Reph DevAnusvara by DevMaatraII.width20RephBindu ;
+    sub DevMaatraShortEReph DevCandrabindu by DevMaatraShortERephCandrabindu ;
+    sub DevMaatraShortEReph DevAnusvara by DevMaatraShortERephBindu ;
+    sub DevMaatraEReph DevCandrabindu by DevMaatraERephCandrabindu ;
+    sub DevMaatraEReph DevAnusvara by DevMaatraERephBindu ;
+    sub DevMaatraAiReph DevCandrabindu by DevMaatraAiRephCandrabindu ;
+    sub DevMaatraAiReph DevAnusvara by DevMaatraAiRephBindu ;
+} MatraRephMarkLigatures;
+
+lookup RephMarkLigatures {
+  lookupflag 0 ;
+    sub DevRaReph DevAnusvara by DevRephBindu ;
+    sub DevRaReph DevCandrabindu by DevRephCandrabindu ;
+} RephMarkLigatures;
+
+lookup VowelMarkLigatures {
+  lookupflag 0 ;
+    sub DevVowelII DevAnusvara by DevVowelIIBindu ;
+    sub DevVowelII DevCandrabindu by DevVowelIICandrabindu ;
+} VowelMarkLigatures;
+
+lookup ConsMatraLigatures {
+  lookupflag 0 ;
+    sub DevHa DevMaatraR by DevH.Ri ;
+    sub DevRa DevMaatraU by DevR.U ;
+    sub DevRaNukta DevMaatraU by DevRNukta.U ;
+    sub DevRa DevMaatraUU by DevR.UU ;
+    sub DevRaNukta DevMaatraUU by DevRNukta.UU ;
+    sub DevHaNukta DevMaatraUU by DevHaNuktaMaatraUU ;
+} ConsMatraLigatures;
+
+lookup CandrabinduAlt_target {
+  lookupflag 0 ;
+    sub DevCandrabindu by DevCandrabindu.alt ;
+    sub DevInvCandrabindu by DevInvCandrabindu.alt ;
+} CandrabinduAlt_target ;
+
+lookup CandrabinduAlt {
+  lookupflag 0 ;
+    sub @cDevVowelMatra_CandrabinduAlt [ DevCandrabindu DevInvCandrabindu ]' lookup CandrabinduAlt_target ;
+} CandrabinduAlt;
+
+lookup Matra_ii_20_target {
+  lookupflag 0 ;
+    sub DevMaatraII by DevMaatraII.width20 ;
+    sub DevMaatraIINukta by DevMaatraIINukta.width20 ;
+} Matra_ii_20_target ;
+
+lookup Matra_ii_20 {
+  lookupflag 0 ;
+    sub @cDevMatra_ii_width20 [ DevMaatraII DevMaatraIINukta ]' lookup Matra_ii_20_target ;
+} Matra_ii_20;
+
+lookup Matra_ii_30_target {
+  lookupflag 0 ;
+    sub DevMaatraII by DevMaatraII.width30 ;
+    sub DevMaatraIINukta by DevMaatraIINukta.width30 ;
+} Matra_ii_30_target ;
+
+lookup Matra_ii_30 {
+  lookupflag 0 ;
+    sub @cDevMatra_ii_width30 [ DevMaatraII DevMaatraIINukta ]' lookup Matra_ii_30_target ;
+} Matra_ii_30;
+
+lookup dev2_NoHalfHalantForms {
+  lookupflag 0 ;
+    sub DevNga DevHalant by DevHalfNga ;
+    sub DevNgaNukta DevHalant by DevHalfNgaNukta ;
+    sub DevCha DevHalant by DevHalfCha ;
+    sub DevChaNukta DevHalant by DevHalfChaNukta ;
+    sub DevTta DevHalant by DevHalfTta ;
+    sub DevTtaNukta DevHalant by DevHalfTtaNukta ;
+    sub DevTtha DevHalant by DevHalfTtha ;
+    sub DevTthaNukta DevHalant by DevHalfTthaNukta ;
+    sub DevDda DevHalant by DevHalfDda ;
+    sub DevDdaNukta DevHalant by DevHalfDdaNukta ;
+    sub DevDdha DevHalant by DevHalfDdha ;
+    sub DevDdhaNukta DevHalant by DevHalfDdhaNukta ;
+    sub DevDa DevHalant by DevHalfDa ;
+    sub DevDaNukta DevHalant by DevHalfDaNukta ;
+    sub DevDdda DevHalant by DevHalfDdda ;
+    sub DevDddaNukta DevHalant by DevHalfDddaNukta ;
+} dev2_NoHalfHalantForms;
+
+# When certain characters are followed by virama+ya (094D+092F) it displays as the full form of the first 
+# character followed by "open-ya". With older technology, we had to do this using ligatures (which are in 
+# "lookup dev2_Conjuncts_NoPrebase_Ya" above). We received a request that this should also happen when the 
+# first character has a nukta on it. We can do this now (using feax) in the contexual lookups following 
+# this comment.
+
+@cDevCNoStemNuktaHalantForms = [DevHalfNgaNukta DevHalfChaNukta DevHalfTtaNukta DevHalfTthaNukta DevHalfDdaNukta DevHalfDdhaNukta DevHalfRa];
+@cDevCNoStemNuktaForms = [DevNgaNukta DevChaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta DevRaNukta];
+@cDevYaForms = [DevYa DevHalfYa DevYaNukta DevHalfYaNukta DevYaR DevYaNuktaR]; 
+@cDevYaAltForms = [DevYa.alt DevHalfYa.alt DevYaNukta.alt DevHalfYaNukta.alt DevYaR.alt DevYaNuktaR.alt]; 
+
+lookup noHalf_subst {
+  lookupflag 0;
+    sub @cDevCNoStemNuktaHalantForms by @cDevCNoStemNuktaForms;
+} noHalf_subst;
+
+lookup altYA_subst {
+  lookupflag 0;
+    sub @cDevYaForms by @cDevYaAltForms;
+} altYA_subst;
+
+lookup altYA_context {
+  lookupflag 0;
+    sub @cDevCNoStemNuktaHalantForms' lookup noHalf_subst @cDevYaForms' lookup altYA_subst;
+} altYA_context;
+
+lookup HalantForm {
+  lookupflag 0 ;
+    sub DevHa DevHalant by DevHa.halant ;
+    sub DevHaNukta DevHalant by DevHaNukta.halant ;
+} HalantForm;
+
+lookup DevFractions {
+  lookupflag 0 ;
+    sub DevOne FracSlash DevFour by DevOneQuarter ;
+    sub DevOne FracSlash DevTwo by DevOneHalf ;
+    sub DevThree FracSlash DevFour by DevThreeQuarters ;
+    sub DevOne slash DevFour by DevOneQuarter ;
+    sub DevOne slash DevTwo by DevOneHalf ;
+    sub DevThree slash DevFour by DevThreeQuarters ;
+} DevFractions;
+
+lookup StyleSet01JhaAlt {
+  lookupflag 0 ;
+    sub DevJha by DevJha.alt ;
+    sub DevHalfJha by DevHalfJha.alt ;
+    sub DevJhaNukta by DevJhaNukta.alt ;
+    sub DevHalfJhaNukta by DevHalfJhaNukta.alt ;
+    sub DevJhaR by DevJhaR.alt ;
+    sub DevJhaNuktaR by DevJhaNuktaR.alt ;
+} StyleSet01JhaAlt;
+
+lookup StyleSet02JhaAlt2 {
+  lookupflag 0 ;
+    sub DevJha by DevJha.alt2 ;
+    sub DevHalfJha by DevHalfJha.alt2 ;
+    sub DevJhaNukta by DevJhaNukta.alt2 ;
+    sub DevHalfJhaNukta by DevHalfJhaNukta.alt2 ;
+    sub DevJhaR by DevJhaR.alt2 ;
+    sub DevJhaNuktaR by DevJhaNuktaR.alt2 ;
+} StyleSet02JhaAlt2;
+
+lookup StyleSet03KraAlt {
+  lookupflag 0 ;
+    sub DevKaR by DevKaR.alt ;
+    sub DevHalfKaR by DevHalfKaR.alt ;
+    sub DevKaNuktaR by DevKaNuktaR.alt ;
+    sub DevHalfKaNuktaR by DevHalfKaNuktaR.alt ;
+} StyleSet03KraAlt;
+
+lookup StyleSet04TraAlt {
+  lookupflag 0 ;
+    sub DevTaR by DevTaR.alt ;
+    sub DevHalfTaR by DevHalfTaR.alt ;
+    sub DevTaNuktaR by DevTaNuktaR.alt ;
+    sub DevHalfTaNuktaR by DevHalfTaNuktaR.alt ;
+} StyleSet04TraAlt;
+
+lookup StyleSet05ShraAlt {
+  lookupflag 0 ;
+    sub DevShaR by DevShaR.alt ;
+    sub DevShaNuktaR by DevShaNuktaR.alt ;
+} StyleSet05ShraAlt;
+
+lookup StyleSet06UmatraNuktaAlt {
+  lookupflag 0 ;
+    sub DevMaatraUNukta by DevMaatraUNukta.alt ;
+    sub DevMaatraUUNukta by DevMaatraUUNukta.alt ;
+} StyleSet06UmatraNuktaAlt;
+
+lookup StyleSet07EmatraNuktaAlt {
+  lookupflag 0 ;
+    sub DevMaatraENukta by DevMaatraENukta.alt ;
+} StyleSet07EmatraNuktaAlt;
+
+lookup StyleSet08DigitFiveAlt {
+  lookupflag 0 ;
+    sub DevFive by DevFive.alt ;
+} StyleSet08DigitFiveAlt;
+
+lookup StyleSet09DigitEightAlt {
+  lookupflag 0 ;
+    sub DevEight by DevEight.alt ;
+} StyleSet09DigitEightAlt;
+
+lookup StyleSet10DigitNineAlt {
+  lookupflag 0 ;
+    sub DevNine by DevNine.alt ;
+} StyleSet10DigitNineAlt;
+
+lookup StyleSet11DigitNineAlt2 {
+  lookupflag 0 ;
+    sub DevNine by DevNine.alt2 ;
+} StyleSet11DigitNineAlt2;
+
+lookup StyleSet12VisargaWithBar {
+  lookupflag 0 ;
+    sub DevVisarga by DevVisarga.alt ;
+} StyleSet12VisargaWithBar;
+
+lookup StyleSet13GlottalNoBar {
+  lookupflag 0 ;
+    sub DevGlottalStop by DevGlottalStop.alt ;
+} StyleSet13GlottalNoBar;
+
+lookup StyleSet14AltYa {
+  lookupflag 0 ;
+    sub DevDa DevYa by DevD.Ya.alt ;
+    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
+    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
+    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
+    sub DevHalfDa DevYaR by DevD.YaRa ;
+    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa ;
+    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
+    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa ;
+    sub DevHa DevYa by DevH.Ya.alt ;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
+    sub DevHalfHa DevYaR by DevH.YaRa ;
+    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa ;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa ;
+} StyleSet14AltYa;
+
+@cDevDa_HaNuktaHalantForms = [DevHalfDaNukta DevHalfHaNukta];
+@cDevDa_HaNuktaForms = [DevDaNukta DevHaNukta];
+# @cDevYaForms = [DevYa DevHalfYa DevYaNukta DevHalfYaNukta DevYaR DevYaNuktaR]; 
+# @cDevYaAltForms = [DevYa.alt DevHalfYa.alt DevYaNukta.alt DevHalfYaNukta.alt DevYaR.alt DevYaNuktaR.alt]; 
+
+lookup ss14noHalf_subst {
+  lookupflag 0;
+    sub @cDevDa_HaNuktaHalantForms by @cDevDa_HaNuktaForms;
+} ss14noHalf_subst;
+
+lookup ss14altYA_subst {
+  lookupflag 0;
+    sub @cDevYaForms by @cDevYaAltForms;
+} ss14altYA_subst;
+
+ lookup StyleSet14altYA_context {
+  lookupflag 0;
+    sub @cDevDa_HaNuktaHalantForms' lookup ss14noHalf_subst @cDevYaForms' lookup ss14altYA_subst;
+} StyleSet14altYA_context;
+
+lookup StyleSet15ArchaicForms {
+  lookupflag 0 ;
+    sub DevVowelA by DevVowelA.archaic ;
+    sub DevVowelAA by DevVowelAA.archaic ;
+    sub DevVowelO by DevVowelO.archaic ;
+    sub DevVowelAU by DevVowelAU.archaic ;
+    sub DevNna by DevNna.archaic ;
+    sub DevHalfNna by DevHalfNna.archaic ;
+    sub DevK.Ssa by DevK.Ssa.archaic ;
+    sub DevHalfK.Ssa by DevHalfK.Ssa.archaic ;
+} StyleSet15ArchaicForms;
+
+lookup CharVar16AltRaUkarNukta {
+  lookupflag 0 ;
+    sub DevRa      DevMaatraUNukta  by DevR.UNukta ;
+    sub DevRaNukta DevMaatraUNukta  by DevRNukta.UNukta ;
+    sub DevRa      DevMaatraUUNukta by DevR.UUNukta ;
+    sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta ;
+} CharVar16AltRaUkarNukta;
+
+lookup VariantRaOpenYa {
+  lookupflag 0 ;
+    sub DevRa DevHalant ZeroWidthNonJoiner DevYa by DevRa.Ya ;
+    sub DevRa DevHalant ZeroWidthNonJoiner DevHalfYa by DevRa.HalfYa ;
+    sub DevRa DevHalant ZeroWidthNonJoiner DevYaNukta by DevRa.YaNukta ;
+    sub DevRa DevHalant ZeroWidthNonJoiner DevHalfYaNukta by DevRa.HalfYaNukta ;
+    sub DevRa DevHalant ZeroWidthNonJoiner DevYaR by DevRa.YaRa ;
+    sub DevRa DevHalant ZeroWidthNonJoiner DevYaNuktaR by DevRa.YaNuktaRa ;
+} VariantRaOpenYa;
+
+lookup TTNEP_StyleSet01JhaStd {
+  lookupflag 0 ;
+    sub DevJha.alt by DevJha ;
+    sub DevHalfJha.alt by DevHalfJha ;
+    sub DevJhaNukta.alt by DevJhaNukta ;
+    sub DevHalfJhaNukta.alt by DevHalfJhaNukta ;
+    sub DevJhaR.alt by DevJhaR ;
+    sub DevJhaNuktaR.alt by DevJhaNuktaR ;
+} TTNEP_StyleSet01JhaStd;
+
+lookup TTNEP_StyleSet02JhaAlt2 {
+  lookupflag 0 ;
+    sub DevJha.alt by DevJha.alt2 ;
+    sub DevHalfJha.alt by DevHalfJha.alt2 ;
+    sub DevJhaNukta.alt by DevJhaNukta.alt2 ;
+    sub DevHalfJhaNukta.alt by DevHalfJhaNukta.alt2 ;
+    sub DevJhaR.alt by DevJhaR.alt2 ;
+    sub DevJhaNuktaR.alt by DevJhaNuktaR.alt2 ;
+} TTNEP_StyleSet02JhaAlt2;
+
+lookup TTNEW_StyleSet01JhaAlt {
+  lookupflag 0 ;
+    sub DevJha.alt2 by DevJha.alt ;
+    sub DevHalfJha.alt2 by DevHalfJha.alt ;
+    sub DevJhaNukta.alt2 by DevJhaNukta.alt ;
+    sub DevHalfJhaNukta.alt2 by DevHalfJhaNukta.alt ;
+    sub DevJhaR.alt2 by DevJhaR.alt ;
+    sub DevJhaNuktaR.alt2 by DevJhaNuktaR.alt ;
+} TTNEW_StyleSet01JhaAlt;
+
+lookup TTNEW_StyleSet02JhaStd {
+  lookupflag 0 ;
+    sub DevJha.alt2 by DevJha ;
+    sub DevHalfJha.alt2 by DevHalfJha ;
+    sub DevJhaNukta.alt2 by DevJhaNukta ;
+    sub DevHalfJhaNukta.alt2 by DevHalfJhaNukta ;
+    sub DevJhaR.alt2 by DevJhaR ;
+    sub DevJhaNuktaR.alt2 by DevJhaNuktaR ;
+} TTNEW_StyleSet02JhaStd;
+
+lookup TTStyleSet03KraAlt {
+  lookupflag 0 ;
+    sub DevKaR.alt by DevKaR ;
+    sub DevKaNuktaR.alt by DevKaNuktaR ;
+} TTStyleSet03KraAlt;
+
+lookup TTStyleSet04TraAlt {
+  lookupflag 0 ;
+    sub DevTaR.alt by DevTaR ;
+    sub DevTaNuktaR.alt by DevTaNuktaR ;
+} TTStyleSet04TraAlt;
+
+lookup TTStyleSet05ShraAlt {
+  lookupflag 0 ;
+    sub DevShaR.alt by DevShaR ;
+    sub DevShaNuktaR.alt by DevShaNuktaR ;
+} TTStyleSet05ShraAlt;
+
+lookup TTStyleSet06UmatraNuktaAlt {
+  lookupflag 0 ;
+    sub DevMaatraUNukta.alt by DevMaatraUNukta ;
+    sub DevMaatraUUNukta.alt by DevMaatraUUNukta ;
+} TTStyleSet06UmatraNuktaAlt;
+
+lookup TTStyleSet07EmatraNuktaAlt {
+  lookupflag 0 ;
+    sub DevMaatraENukta.alt by DevMaatraENukta ;
+} TTStyleSet07EmatraNuktaAlt;
+
+lookup TTStyleSet08DigitFiveAlt {
+  lookupflag 0 ;
+    sub DevFive.alt by DevFive ;
+} TTStyleSet08DigitFiveAlt;
+
+lookup TTStyleSet09DigitEightAlt {
+  lookupflag 0 ;
+    sub DevEight.alt by DevEight ;
+} TTStyleSet09DigitEightAlt;
+
+lookup TTNEP_StyleSet10DigitNineStd {
+  lookupflag 0 ;
+    sub DevNine.alt by DevNine ;
+} TTNEP_StyleSet10DigitNineStd;
+
+lookup TTNEP_StyleSet11DigitNineAlt2 {
+  lookupflag 0 ;
+    sub DevNine.alt by DevNine.alt2 ;
+} TTNEP_StyleSet11DigitNineAlt2;
+
+lookup TTNEW_StyleSet10DigitNineAlt {
+  lookupflag 0 ;
+    sub DevNine.alt2 by DevNine.alt ;
+} TTNEW_StyleSet10DigitNineAlt;
+
+lookup TTNEW_StyleSet11DigitNineStd {
+  lookupflag 0 ;
+    sub DevNine.alt2 by DevNine ;
+} TTNEW_StyleSet11DigitNineStd;
+
+lookup TTStyleSet12VisargaWithBar {
+  lookupflag 0 ;
+    sub DevVisarga.alt by DevVisarga ;
+} TTStyleSet12VisargaWithBar;
+
+lookup TTStyleSet13GlottalNoBar {
+  lookupflag 0 ;
+    sub DevGlottalStop.alt by DevGlottalStop ;
+} TTStyleSet13GlottalNoBar;
+
+lookup TTStyleSet14AltYa {
+  lookupflag 0 ;
+    sub DevDa DevYa by DevD.Ya.alt ;
+    sub DevHalfDa DevHalfYa by DevD.HalfYa ;
+    sub DevHalfDa DevYaNukta by DevD.YaNukta ;
+    sub DevHalfDa DevHalfYaNukta by DevD.HalfYaNukta ;
+    sub DevHalfDa DevYaR by DevD.YaRa ;
+    sub DevHalfDa DevHalfYaR by DevHalfD.YaRa ;
+    sub DevHalfDa DevYaNuktaR by DevD.YaNuktaRa ;
+    sub DevHalfDa DevHalfYaNuktaR by DevHalfD.YaNuktaRa ;
+    sub DevHa DevYa by DevH.Ya.alt ;
+    sub DevHalfHa DevHalfYa by DevH.HalfYa ;
+    sub DevHalfHa DevYaNukta by DevH.YaNukta ;
+    sub DevHalfHa DevHalfYaNukta by DevH.HalfYaNukta ;
+    sub DevHalfHa DevYaR by DevH.YaRa ;
+    sub DevHalfHa DevHalfYaR by DevHalfH.YaRa ;
+    sub DevHalfHa DevYaNuktaR by DevH.YaNuktaRa ;
+    sub DevHalfHa DevHalfYaNuktaR by DevHalfH.YaNuktaRa ;
+} TTStyleSet14AltYa;
+
+lookup TTStyleSet15ArchaicForms {
+  lookupflag 0 ;
+    sub DevVowelA by DevVowelA.archaic ;
+    sub DevVowelAA by DevVowelAA.archaic ;
+    sub DevVowelO by DevVowelO.archaic ;
+    sub DevVowelAU by DevVowelAU.archaic ;
+    sub DevNna by DevNna.archaic ;
+    sub DevHalfNna by DevHalfNna.archaic ;
+    sub DevK.Ssa by DevK.Ssa.archaic ;
+    sub DevHalfK.Ssa by DevHalfK.Ssa.archaic ;
+} TTStyleSet15ArchaicForms;
+
+lookup Stacking_Conjuncts_u_uu_target {
+  lookupflag 0 ;
+    sub @cDevConjunctsStackingTall by @cDevConjunctsStackingAlt ;
+} Stacking_Conjuncts_u_uu_target ;
+
+lookup Stacking_Conjuncts_u_uu {
+  lookupflag 0 ;
+    sub @cDevConjunctsStackingTall' lookup Stacking_Conjuncts_u_uu_target @cDevMatraBelow ;
+} Stacking_Conjuncts_u_uu;
+
+lookup u_uu_Stacking_Conjuncts_target {
+  lookupflag 0 ;
+    sub DevMaatraUNukta.alt by DevMaatraUNukta.alt2 ;
+    sub DevMaatraUUNukta.alt by DevMaatraUUNukta.alt2 ;
+} u_uu_Stacking_Conjuncts_target ;
+
+lookup u_uu_Stacking_Conjuncts {
+  lookupflag 0 ;
+    sub @cDevConjunctsStackingAlt [ DevMaatraUNukta.alt DevMaatraUUNukta.alt ]' lookup u_uu_Stacking_Conjuncts_target ;
+} u_uu_Stacking_Conjuncts;
+
+lookup AllAlternates {
+  lookupflag 0 ;
+    sub DevCandrabindu from [ DevCandrabindu.alt ] ;
+    sub DevVisarga from [ DevVisarga.alt ] ;
+    sub DevVowelA from [ DevVowelA.archaic ] ;
+    sub DevVowelAA from [ DevVowelAA.archaic ] ;
+    sub DevVowelO from [ DevVowelO.archaic ] ;
+    sub DevVowelAU from [ DevVowelAU.archaic ] ;
+    sub DevKaR from [ DevKaR.alt ] ;
+    sub DevK.Ssa from [ DevK.Ssa.archaic ] ;
+    sub DevHalfK.Ssa from [ DevHalfK.Ssa.archaic ] ;
+    sub DevJha from [ DevJha.alt DevJha.alt2 ] ;
+    sub DevJhaNukta from [ DevJhaNukta.alt DevJhaNukta.alt2 ] ;
+    sub DevHalfJhaNukta from [ DevHalfJhaNukta.alt DevHalfJhaNukta.alt2 ] ;
+    sub DevJhaNuktaR from [ DevJhaNuktaR.alt DevJhaNuktaR.alt2 ] ;
+    sub DevHalfJha from [ DevHalfJha.alt DevHalfJha.alt2 ] ;
+    sub DevJhaR from [ DevJhaR.alt DevJhaR.alt2 ] ;
+    sub DevNna from [ DevNna.archaic ] ;
+    sub DevHalfNna from [ DevHalfNna.archaic ] ;
+    sub DevTaR from [ DevTaR.alt ] ;
+    sub DevShaR from [ DevShaR.alt ] ;
+    sub DevMaatraUNukta from [ DevMaatraUNukta.alt ] ;
+    sub DevMaatraUUNukta from [ DevMaatraUUNukta.alt ] ;
+    sub DevMaatraENukta from [ DevMaatraENukta.alt ] ;
+    sub DevKaNuktaR from [ DevKaNuktaR.alt ] ;
+    sub DevFive from [ DevFive.alt ] ;
+    sub DevEight from [ DevEight.alt ] ;
+    sub DevNine from [ DevNine.alt DevNine.alt2 ] ;
+    sub DevGlottalStop from [ DevGlottalStop.alt ] ;
+} AllAlternates;
+
+lookup LatinDiacsUnenc {
+  lookupflag 0 ;
+    sub a macronnosp tildenosp by amacrontilde ;
+    sub e macronnosp tildenosp by emacrontilde ;
+    sub i macronnosp tildenosp by imacrontilde ;
+    sub o macronnosp tildenosp by omacrontilde ;
+    sub u macronnosp tildenosp by umacrontilde ;
+    sub m candrabinducomb by mcandrabindu ;
+} LatinDiacsUnenc;
+
+lookup LatinDiacsEnc {
+  lookupflag 0 ;
+    sub A gravenosp by Agrave ;
+    sub A acutenosp by Aacute ;
+    sub A circumflexnosp by Acircumflex ;
+    sub A tildenosp by Atilde ;
+    sub A dieresisnosp by Adieresis ;
+    sub A CombRingAbv by Aring ;
+    sub C CombCedilla by Ccedilla ;
+    sub E gravenosp by Egrave ;
+    sub E acutenosp by Eacute ;
+    sub E circumflexnosp by Ecircumflex ;
+    sub E dieresisnosp by Edieresis ;
+    sub I gravenosp by Igrave ;
+    sub I acutenosp by Iacute ;
+    sub I circumflexnosp by Icircumflex ;
+    sub I dieresisnosp by Idieresis ;
+    sub N tildenosp by Ntilde ;
+    sub O gravenosp by Ograve ;
+    sub O acutenosp by Oacute ;
+    sub O circumflexnosp by Ocircumflex ;
+    sub O tildenosp by Otilde ;
+    sub O dieresisnosp by Odieresis ;
+    sub U gravenosp by Ugrave ;
+    sub U acutenosp by Uacute ;
+    sub U circumflexnosp by Ucircumflex ;
+    sub U dieresisnosp by Udieresis ;
+    sub Y acutenosp by Yacute ;
+    sub a gravenosp by agrave ;
+    sub a acutenosp by aacute ;
+    sub a circumflexnosp by acircumflex ;
+    sub a tildenosp by atilde ;
+    sub a dieresisnosp by adieresis ;
+    sub a CombRingAbv by aring ;
+    sub c CombCedilla by ccedilla ;
+    sub e gravenosp by egrave ;
+    sub e acutenosp by eacute ;
+    sub e circumflexnosp by ecircumflex ;
+    sub e dieresisnosp by edieresis ;
+    sub i gravenosp by igrave ;
+    sub i acutenosp by iacute ;
+    sub i circumflexnosp by icircumflex ;
+    sub i dieresisnosp by idieresis ;
+    sub n tildenosp by ntilde ;
+    sub o gravenosp by ograve ;
+    sub o acutenosp by oacute ;
+    sub o circumflexnosp by ocircumflex ;
+    sub o tildenosp by otilde ;
+    sub o dieresisnosp by odieresis ;
+    sub u gravenosp by ugrave ;
+    sub u acutenosp by uacute ;
+    sub u circumflexnosp by ucircumflex ;
+    sub u dieresisnosp by udieresis ;
+    sub y acutenosp by yacute ;
+    sub y dieresisnosp by ydieresis ;
+    sub a macronnosp by amacron ;
+    sub e macronnosp by emacron ;
+    sub i tildenosp by itilde ;
+    sub i macronnosp by imacron ;
+    sub o macronnosp by omacron ;
+    sub S haceknosp by Scaron ;
+    sub s haceknosp by scaron ;
+    sub u tildenosp by utilde ;
+    sub u macronnosp by umacron ;
+    sub Y dieresisnosp by Ydieresis ;
+    sub Z haceknosp by LtnCapZCaron ;
+    sub z haceknosp by LtnSmZCaron ;
+} LatinDiacsEnc;
+
+lookup LatinPunctuationMark_target {
+  lookupflag 0 ;
+    sub exclam by exclam.alt ;
+    sub question by question.alt ;
+} LatinPunctuationMark_target ;
+
+lookup LatinPunctuationMark {
+  lookupflag 0 ;
+    sub @cLtnAllChars [ exclam question ]' lookup LatinPunctuationMark_target ;
+} LatinPunctuationMark;
+
