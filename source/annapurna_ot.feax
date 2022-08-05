@@ -970,6 +970,7 @@ feature cv16 {  # Character Variant 16
 } cv16 ;
 
 feature ss01 {  # Stylistic Set 1 
+    featureNames { name 3 1 0x409 "Jha alternate 1" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet01JhaAlt;
@@ -983,6 +984,7 @@ feature ss01 {  # Stylistic Set 1
 } ss01 ;
 
 feature ss02 {  # Stylistic Set 2 
+    featureNames { name 3 1 0x409 "Jha alternate 2" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet02JhaAlt2;
@@ -996,6 +998,7 @@ feature ss02 {  # Stylistic Set 2
 } ss02 ;
 
 feature ss03 {  # Stylistic Set 3 
+    featureNames { name 3 1 0x409 "Kra alternate" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet03KraAlt;
@@ -1009,6 +1012,7 @@ feature ss03 {  # Stylistic Set 3
 } ss03 ;
 
 feature ss04 {  # Stylistic Set 4 
+    featureNames { name 3 1 0x409 "Tra alternate" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet04TraAlt;
@@ -1022,6 +1026,7 @@ feature ss04 {  # Stylistic Set 4
 } ss04 ;
 
 feature ss05 {  # Stylistic Set 5 
+    featureNames { name 3 1 0x409 "Shra alternate" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet05ShraAlt;
@@ -1035,6 +1040,7 @@ feature ss05 {  # Stylistic Set 5
 } ss05 ;
 
 feature ss06 {  # Stylistic Set 6 
+    featureNames { name 3 1 0x409 "Ukar nukta position" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet06UmatraNuktaAlt;
@@ -1048,6 +1054,7 @@ feature ss06 {  # Stylistic Set 6
 } ss06 ;
 
 feature ss07 {  # Stylistic Set 7 
+    featureNames { name 3 1 0x409 "Ekar nukta position" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet07EmatraNuktaAlt;
@@ -1061,6 +1068,7 @@ feature ss07 {  # Stylistic Set 7
 } ss07 ;
 
 feature ss08 {  # Stylistic Set 8 
+    featureNames { name 3 1 0x409 "Digit five alternate" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet08DigitFiveAlt;
@@ -1074,6 +1082,7 @@ feature ss08 {  # Stylistic Set 8
 } ss08 ;
 
 feature ss09 {  # Stylistic Set 9 
+    featureNames { name 3 1 0x409 "Digit eight alternate" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet09DigitEightAlt;
@@ -1087,6 +1096,7 @@ feature ss09 {  # Stylistic Set 9
 } ss09 ;
 
 feature ss10 {  # Stylistic Set 10 
+    featureNames { name 3 1 0x409 "Digit nine alternate 1" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet10DigitNineAlt;
@@ -1100,6 +1110,7 @@ feature ss10 {  # Stylistic Set 10
 } ss10 ;
 
 feature ss11 {  # Stylistic Set 11 
+    featureNames { name 3 1 0x409 "Digit nine alternate 2" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet11DigitNineAlt2;
@@ -1113,6 +1124,7 @@ feature ss11 {  # Stylistic Set 11
 } ss11 ;
 
 feature ss12 {  # Stylistic Set 12 
+    featureNames { name 3 1 0x409 "Visarga with connecting bar" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet12VisargaWithBar;
@@ -1126,6 +1138,7 @@ feature ss12 {  # Stylistic Set 12
 } ss12 ;
 
 feature ss13 {  # Stylistic Set 13 
+    featureNames { name 3 1 0x409 "Glottal stop - no connecting bar" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet13GlottalNoBar;
@@ -1139,6 +1152,7 @@ feature ss13 {  # Stylistic Set 13
 } ss13 ;
 
 feature ss14 {  # Stylistic Set 14 
+    featureNames { name 3 1 0x409 "Dya and hya alternates" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet14AltYa;
@@ -1156,6 +1170,7 @@ feature ss14 {  # Stylistic Set 14
 } ss14 ;
 
 feature ss15 {  # Stylistic Set 15 
+    featureNames { name 3 1 0x409 "Archaic forms" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup StyleSet15ArchaicForms;
@@ -1169,11 +1184,11 @@ feature ss15 {  # Stylistic Set 15
 } ss15 ;
 
 feature ss16 {  # Stylistic Set 16 
+    featureNames { name 3 1 0x409 "Ra Ukar with Nukta ligatures" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup CharVar16AltRaUkarNukta;
     script dev2;  # Devanagari v.2 
-      featureNames { name 3 1 0x409 "Ra Ukar with Nukta ligatures" ; };
         language dflt;  # Default
             lookup CharVar16AltRaUkarNukta;
         language NEP  exclude_dflt;  # Nepali
