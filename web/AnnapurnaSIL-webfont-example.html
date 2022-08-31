@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en-us">
 <!--
 Annapurna-webfont-example.html
 AnnapurnaSIL
@@ -10,24 +11,820 @@ of the license along with this Font Software. If this is not the case, go to
 (http://scripts.sil.org/OFL) for all the details including a FAQ.
 -->
 <head>
-	<link rel="stylesheet" href="AnnapurnaSIL-webfont-example.css" type="text/css">
-	<meta charset="utf-8">
-	<meta name="description" content="An example of using Annapurna on your web page via WOFF">
-	<meta name="author" content="NRSI, SIL International: scripts.sil.org">
-
+    <meta charset="utf-8">
+    <title>Annapurna - Webfont Test</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="AnnapurnaSIL-webfont-example.css">
 </head>
 <body>
-<div style="font-size: 110%;">
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Annapurna - Webfont Test</h1>
+        <p>This is a test of the font family based on the local path references. The page demonstrates how to use the WOFF version of Annapurna for web pages, using local copies of the .woff files in this archive. For more information on this technique - and how to use the normal TrueType version as a web font - see <a href="https://software.sil.org/fonts/webfonts/">Using SIL Fonts on Web Pages</a>.</p>
+		<p>The body of this document is styled using an external stylesheet, with Annapurna set as the default font, and loaded directly as a WOFF file using the @font-face rule. To see specifically how these techniques are specified in the CSS and HTML, view the source to this page and the accompanying CSS file.</p>
+    </header>
+    <h2 id="scripts-udhr-26">Example text (UDHR 26)</h2>
+    <table>
+    <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Script/Style/Weight</th>
+    <th>Sample</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Devanagari (Hindi) Regular 400</td>
+    <td><span class="lpr" style="font-weight: 400">१० दिसम्बर १९४८ को यूनाइटेड नेशन्स की जनरल असेम्बली ने मानव अधिकारों की सार्वभौम घोषणा को स्वीकृत और घोषित किया । इसका पूर्ण पाठ आगे के पृष्ठों में दिया गया है । इस ऐतिहासिक कार्य के बाद ही असेम्बली ने सभी सदस्य देशों से अपील की कि वे इस घोषणा का प्रचार करें और देशों अथवा प्रदेशों की राजनैतिक स्थिति पर आधारित भेदभाव का विचार किए बिना, विशेषतः स्कूलों और अन्य शिक्षा संस्थाओं में इसके प्रचार, प्रदर्शन, पठन और व्याख्या का प्रबन्ध करें ।  </span></td>
+    </tr>
+    <tr class="even">
+    <td>Devanagari (Hindi) Bold 700</td>
+    <td><span class="lpr" style="font-weight: 700">१० दिसम्बर १९४८ को यूनाइटेड नेशन्स की जनरल असेम्बली ने मानव अधिकारों की सार्वभौम घोषणा को स्वीकृत और घोषित किया । इसका पूर्ण पाठ आगे के पृष्ठों में दिया गया है । इस ऐतिहासिक कार्य के बाद ही असेम्बली ने सभी सदस्य देशों से अपील की कि वे इस घोषणा का प्रचार करें और देशों अथवा प्रदेशों की राजनैतिक स्थिति पर आधारित भेदभाव का विचार किए बिना, विशेषतः स्कूलों और अन्य शिक्षा संस्थाओं में इसके प्रचार, प्रदर्शन, पठन और व्याख्या का प्रबन्ध करें ।  </span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="default-behavior">Default behavior</h2>
+	<p>Many font features in Annapurna SIL are common to both OpenType and Graphite rendering engines to render the 	proper shaping of Devanagari characters. Others features (listed below) are used to create a more pleasing look. These features are always “on”.</p>
+    <h3 id="common-standard-features">Latin punctuation</h3>
+    <p>The Latin characters in Annapurna SIL are derived from the Charis SIL font. However, the exclamation and question marks were redrawn to fit the style of the Annapurna Devanagari glyphs and are used by default. But they will switch to the Charis style punctuation when preceded by a Latin character. This is accomplished by use of the Contextual Alternates OpenType feature.</p>
+    <table>
+    <colgroup>
+    <col style="width: 20%" />
+    <col style="width: 79%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Default Devangari style</td>
+    <td><span class="lpr">test क्र! test क्र?</span></td>
+    </tr>
+    <tr class="even">
+    <td>Contextual Alternate 'calt'</td>
+    <td><span class="lpr">test kra! test kra?</span></td>
+    </tr>
+    <tr class="odd">
+    <td>Contextual Alternate 'calt'</td>
+    <td><span class="lpr">नमस्ते! Namaste!</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="common-standard-features">Stacking conjunct compression</h3>
+    <p>If there is a matra below a stacking conjunct, this feature compresses the conjunct which raises the matra above the descender height line. Otherwise, they could clash with matras or signs above the bar on the following line. <em>In the test sequence below, note the first conjunct (without a matra) is normal height.</em></p>
+    <table>
+    <colgroup>
+    <col style="width: 20%" />
+    <col style="width: 79%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Contextual Alternate 'calt'</td>
+    <td><span class="lpr">क्क क्कु क्कू क्कु़ क्कू़ </span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="common-standard-features">Fractions</h3>
+    <p> Note: The Ligature feature is included in the font since some OpenType applications use it instead of the Fractions feature.</p>
+    <table>
+    <colgroup>
+    <col style="width: 20%" />
+    <col style="width: 79%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>No ligature (using ZWNJ)</td>
+    <td><span class="lpr">१⁄‌२ १⁄‌४ ३⁄‌४</span></td>
+    </tr>
+    <tr class="even">
+    <td>Fractions 'frac'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;frac&quot; 1">१⁄२ १⁄४ ३⁄४</span></td>
+    </tr>
+    <tr class="odd">
+    <td>Ligature 'liga'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;liga&quot; 1">१⁄२ १⁄४ ३⁄४</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="language-specific-features-complete">Language-specific features</h2>
+    <table>
+    <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 83%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Language</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span></td>
+    </tr>
+    <tr class="even">
+    <td>Nepali ('nep')</td>
+    <td><span class="lpr" lang="nep">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp; ५ ८ ९</span></td>
+    </tr>
+    <tr class="odd">
+    <td>Newari ('new')</td>
+    <td><span class="lpr" lang="new">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp; ५ ८ ९</span></td>
+    </tr>
+    </tbody>
+    </table>
 	
-<h1>Using Annapurna webfonts</h1>
-
-<p>The page demonstrates how to use the WOFF version of Annapurna for web pages, using local copies of the .woff files in this archive. For more information on this technique - and how to use the normal TrueType version as a web font - see <a href="http://scripts.sil.org/using_web_fonts">Using SIL Fonts on Web Pages</a>.</p>
-
-<p>The body of this document is styled using an external stylesheet, with Annapurna set as the default font, and loaded directly as a WOFF file using the @font-face rule. If you're seeing a serif font here and the Annapurna SIL typeface in the next paragraph, then it is working. Otherwise the text will be in a sans-serif font or your browser default. This technique should work in Firefox 3.6+, Chrome 6+, IE 9+, and in development versions of Safari.</p>
-
-<p>Devanagari sample text (taken from <a href="http://unicode.org/udhr/d/udhr_hin.txt">Universal Declaration of Human Rights - Hindi</a>): १० दिसम्बर १९४८ को यूनाइटेड नेशन्स की जनरल असेम्बली ने मानव अधिकारों की सार्वभौम घोषणा को स्वीकृत और घोषित किया । इसका पूर्ण पाठ आगे के पृष्ठों में दिया गया है । इस ऐतिहासिक कार्य के बाद ही असेम्बली ने सभी सदस्य देशों से अपील की कि वे इस घोषणा का प्रचार करें और देशों अथवा प्रदेशों की राजनैतिक स्थिति पर आधारित भेदभाव का विचार किए बिना, विशेषतः स्कूलों और अन्य शिक्षा संस्थाओं में इसके प्रचार, प्रदर्शन, पठन और व्याख्या का प्रबन्ध करें ।  </p>
-
-<p>To see specifically how these techniques are specified in the CSS and HTML view the source to this page and the accompanying CSS file.</p>
+    <h2 id="user-selectable-features-partial">User-selectable features</h2>
+    <h3 id="stylistic-sets">Stylistic Sets</h3>
+    <h4 id="variant-features">Jha alternates</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss01'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss01&quot; 1">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    </tr>
+    <tr class="odd">
+    <td>'ss02'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss02&quot; 1">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Kra alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">क्र क़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss03'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss03&quot; 1">क्र क़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Tra alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">त्र त़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss04'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss04&quot; 1">त्र त़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Shra alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">श्र श़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss05'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss05&quot; 1">श्र श़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Ukar nukta position</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">कु़ कू़ क्कु़ क्कू़</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss06'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss06&quot; 1">कु़ कू़ क्कु़ क्कू़</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Ekar nukta position</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">के़</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss07'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss07&quot; 1">के़</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Digit five alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">५</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss08'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss08&quot; 1">५</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Digit eight alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">८</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss09'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss09&quot; 1">८</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Digit nine alternates</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">९</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss10'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss10&quot; 1">९</span></td>
+    </tr>
+    <tr class="odd">
+    <td>'ss11'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss11&quot; 1">९</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Visarga with connecting bar</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">&nbsp;ः</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss12'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss12&quot; 1">&nbsp;ः</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Glottal stop - no connecting bar</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">ॽ</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss13'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss13&quot; 1">ॽ</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Dya and Hya alternates</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss14'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss14&quot; 1">द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Archaic forms</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss15'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss15&quot; 1">अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Ra Ukar with Nukta ligatures</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">रु़ ऱु़</span></td>
+    </tr>
+    <tr class="even">
+    <td>'ss16'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss16&quot; 1">रु़ ऱु़</span></td>
+    </tr>
+    </tbody>
+    </table>
 	
+    <h3 id="character-variants">Character Variants</h3>
+    <h4 id="variant-features">Jha alternates</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv01'=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv01&quot; 1">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    </tr>
+    <tr class="odd">
+    <td>'cv01'=2</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv01&quot; 2">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Kra alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">क्र क़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv03'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv03&quot; 1">क्र क़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Tra alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">त्र त़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv04'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv04&quot; 1">त्र त़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Shra alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">श्र श़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv05'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv05&quot; 1">श्र श़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Ukar nukta position</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">कु़ कू़ क्कु़ क्कू़</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv06'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv06&quot; 1">कु़ कू़ क्कु़ क्कू़</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Ekar nukta position</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">के़</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv07'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv07&quot; 1">के़</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Digit five alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">५</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv08'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv08&quot; 1">५</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Digit eight alternate</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">८</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv09'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv09&quot; 1">८</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Digit nine alternates</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">९</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv10'=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv10&quot; 1">९</span></td>
+    </tr>
+    <tr class="odd">
+    <td>'cv10'=2</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv10&quot; 2">९</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Visarga with connecting bar</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">&nbsp;ः</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv12'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv12&quot; 1">&nbsp;ः</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Glottal stop - no connecting bar</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">ॽ</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv13'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv13&quot; 1">ॽ</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Dya and Hya alternates</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv14'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv14&quot; 1">द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Archaic forms</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv15'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv15&quot; 1">अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="variant-features">Ra Ukar with Nukta ligatures</h4>
+    <table>
+    <colgroup>
+    <col style="width: 3%" />
+    <col style="width: 96%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Test sequences</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="lpr">रु़ ऱु़</span></td>
+    </tr>
+    <tr class="even">
+    <td>'cv16'</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;cv16&quot; 1">रु़ ऱु़</span></td>
+    </tr>
+    </tbody>
+    </table>
+	
+    <h2 id="character-support">Character support</h2>
+    <p>(to be added)</p>
+    <footer class="footer">
+        <p>This test is copyright © 2022 SIL International.</p>
+    </footer>
+</article>
+</div>
 </body>
 </html>

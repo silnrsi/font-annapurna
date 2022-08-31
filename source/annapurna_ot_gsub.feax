@@ -1134,6 +1134,16 @@ lookup DevFractions {
     sub DevThree slash DevFour by DevThreeQuarters ;
 } DevFractions;
 
+lookup CharVar01JhaAlternates {  # cv01
+  lookupflag 0 ;
+    sub DevJha          from [ DevJha.alt          DevJha.alt2 ] ;
+    sub DevHalfJha      from [ DevHalfJha.alt      DevHalfJha.alt2 ] ;
+    sub DevJhaNukta     from [ DevJhaNukta.alt     DevJhaNukta.alt2 ] ;
+    sub DevHalfJhaNukta from [ DevHalfJhaNukta.alt DevHalfJhaNukta.alt2 ] ;
+    sub DevJhaR         from [ DevJhaR.alt         DevJhaR.alt2 ] ;
+    sub DevJhaNuktaR    from [ DevJhaNuktaR.alt    DevJhaNuktaR.alt2 ] ;
+} CharVar01JhaAlternates;
+
 lookup StyleSet01JhaAlt {
   lookupflag 0 ;
     sub DevJha by DevJha.alt ;
@@ -1196,6 +1206,11 @@ lookup StyleSet09DigitEightAlt {
   lookupflag 0 ;
     sub DevEight by DevEight.alt ;
 } StyleSet09DigitEightAlt;
+
+lookup CharVar10DigitNineAlt {  # cv10
+  lookupflag 0 ;
+    sub DevNine from [ DevNine.alt DevNine.alt2 ] ;
+} CharVar10DigitNineAlt;
 
 lookup StyleSet10DigitNineAlt {
   lookupflag 0 ;
