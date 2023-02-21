@@ -29,9 +29,9 @@
         </source>
         <source familyname="Annapurna SIL" filename="AnnapurnaSIL-Bold.ufo" name="Annapurna SIL Bold" stylename="Bold">
             <location>
-                <dimension name="weight" xvalue="700" />
-                <dimension name="width" xvalue="100" />
-                <dimension name="custom" xvalue="0" />
+                <dimension name="weight" xvalue="700.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
             </location>
         </source>
     </sources>
@@ -57,9 +57,9 @@
                  stylemapstylename="bold"
                 filename="AnnapurnaSIL-Bold.ufo">
             <location>
-                <dimension name="weight" xvalue="700" />
-                <dimension name="width" xvalue="100" />
-                <dimension name="custom" xvalue="0" />
+                <dimension name="weight" xvalue="700.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
             </location>
             <info/>
             <kerning/>
