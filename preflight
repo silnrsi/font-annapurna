@@ -10,7 +10,7 @@ set -e
 # psfsetglyphorder -q -p checkfix=none -p backup=False --header DesignerOrder,DesignerOrder --field public.glyphOrder,com.schriftgestaltung.glyphOrder -i source/glyph_data.csv source/*-Regular.ufo
 
 echo "-----Update version number..."
-psfsetversion source/AnnapurnaSIL-Regular.ufo "1.951" -l source/logs/setversionR.log
+psfsetversion source/AnnapurnaSIL-Regular.ufo "1.952" -l source/logs/setversionR.log
 
 echo "Updating production names in Regular and normalizing..."
 psfsetpsnames -q -p checkfix=none -p backup=False -i source/glyph_data.csv source/AnnapurnaSIL-Regular.ufo

@@ -2147,6 +2147,17 @@ lookup DevFractions {
     sub DevThree slash DevFour by DevThreeQuarters;
 } DevFractions;
 
+lookup CharVar01JhaAlternates {
+    # cv01
+    lookupflag 0;
+    sub DevJha from [DevJha.alt DevJha.alt2];
+    sub DevHalfJha from [DevHalfJha.alt DevHalfJha.alt2];
+    sub DevJhaNukta from [DevJhaNukta.alt DevJhaNukta.alt2];
+    sub DevHalfJhaNukta from [DevHalfJhaNukta.alt DevHalfJhaNukta.alt2];
+    sub DevJhaR from [DevJhaR.alt DevJhaR.alt2];
+    sub DevJhaNuktaR from [DevJhaNuktaR.alt DevJhaNuktaR.alt2];
+} CharVar01JhaAlternates;
+
 lookup StyleSet01JhaAlt {
     lookupflag 0;
     sub DevJha by DevJha.alt;
@@ -2209,6 +2220,12 @@ lookup StyleSet09DigitEightAlt {
     lookupflag 0;
     sub DevEight by DevEight.alt;
 } StyleSet09DigitEightAlt;
+
+lookup CharVar10DigitNineAlt {
+    # cv10
+    lookupflag 0;
+    sub DevNine from [DevNine.alt DevNine.alt2];
+} CharVar10DigitNineAlt;
 
 lookup StyleSet10DigitNineAlt {
     lookupflag 0;
@@ -4071,6 +4088,424 @@ feature cjct {
     lookup both_Conjuncts_NoPrebase_YaRaHalf;
 } cjct;
 
+feature cv01 {
+    # Character Variant 01 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Jha alternates";
+        };
+
+                ParamUILabelNameID {
+            name "Jha alternate Nepali";
+        };
+
+                ParamUILabelNameID {
+            name "Jha alternate Newari";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup CharVar01JhaAlternates;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup CharVar01JhaAlternates;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv01;
+
+# feature cv02 not used (for ss02 equivalent use cv01=2) 
+feature cv03 {
+    # Character Variant 03 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Kra alternate";
+        };
+
+                ParamUILabelNameID {
+            name "Kra alternate";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet03KraAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet03KraAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv03;
+
+feature cv04 {
+    # Character Variant 04 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Tra alternate";
+        };
+
+                ParamUILabelNameID {
+            name "Tra alternate";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet04TraAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet04TraAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv04;
+
+feature cv05 {
+    # Character Variant 05 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Shra alternate";
+        };
+
+                ParamUILabelNameID {
+            name "Shra alternate";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet05ShraAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet05ShraAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv05;
+
+feature cv06 {
+    # Character Variant 06 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Ukar nukta position";
+        };
+
+                ParamUILabelNameID {
+            name "Ukar nukta position";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet06UmatraNuktaAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet06UmatraNuktaAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv06;
+
+feature cv07 {
+    # Character Variant 07 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Ekar nukta position";
+        };
+
+                ParamUILabelNameID {
+            name "Ekar nukta position";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet07EmatraNuktaAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet07EmatraNuktaAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv07;
+
+feature cv08 {
+    # Character Variant 08 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Digit five alternate";
+        };
+
+                ParamUILabelNameID {
+            name "Digit five alternate";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet08DigitFiveAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet08DigitFiveAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv08;
+
+feature cv09 {
+    # Character Variant 09 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Digit eight alternate";
+        };
+
+                ParamUILabelNameID {
+            name "Digit eight alternate";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet09DigitEightAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet09DigitEightAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv09;
+
+feature cv10 {
+    # Character Variant 10 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Digit nine alternates";
+        };
+
+                ParamUILabelNameID {
+            name "Digit nine alternate 1";
+        };
+
+                ParamUILabelNameID {
+            name "Digit nine alternate 2";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup CharVar10DigitNineAlt;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup CharVar10DigitNineAlt;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv10;
+
+# feature cv11 not used (for ss11 equivalent use cv10=2) 
+feature cv12 {
+    # Character Variant 12 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Visarga with connecting bar";
+        };
+
+                ParamUILabelNameID {
+            name "Visarga with connecting bar";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet12VisargaWithBar;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet12VisargaWithBar;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv12;
+
+feature cv13 {
+    # Character Variant 13 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Glottal stop - no connecting bar";
+        };
+
+                ParamUILabelNameID {
+            name "Glottal stop - no connecting bar";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet13GlottalNoBar;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet13GlottalNoBar;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv13;
+
+feature cv14 {
+    # Character Variant 14 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Dya and hya alternates";
+        };
+
+                ParamUILabelNameID {
+            name "Dya and hya alternates";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet14AltYa;
+    lookup StyleSet14altYA_context;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet14AltYa;
+    lookup StyleSet14altYA_context;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv14;
+
+feature cv15 {
+    # Character Variant 15 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Archaic forms";
+        };
+
+                ParamUILabelNameID {
+            name "Archaic forms";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup StyleSet15ArchaicForms;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup StyleSet15ArchaicForms;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv15;
+
+feature cv16 {
+    # Character Variant 16 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Ra Ukar with Nukta ligatures";
+        };
+
+                ParamUILabelNameID {
+            name "Ra Ukar with Nukta ligatures";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup CharVar16AltRaUkarNukta;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup CharVar16AltRaUkarNukta;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv16;
+
 feature dist {
     script DFLT;
     # Default
@@ -4447,39 +4882,12 @@ feature rphf {
     lookup Reph;
 } rphf;
 
-feature cv16 {
-    # Character Variant 16 
-    script DFLT;
-    # Default
-    language dflt;
-    # Default
-    lookup CharVar16AltRaUkarNukta;
-    script dev2;
-    # Devanagari v.2 
-        cvParameters {
-                FeatUILabelNameID {
-            name "Ra Ukar with Nukta ligatures";
-        };
-
-                ParamUILabelNameID {
-            name "Ra Ukar with Nukta ligatures";
-        };
-
-    };
-
-    language dflt;
-    # Default
-    lookup CharVar16AltRaUkarNukta;
-    language NEP exclude_dflt;
-    # Nepali
-    lookup CharVar16AltRaUkarNukta;
-    language NEW exclude_dflt;
-    # Newari
-    lookup CharVar16AltRaUkarNukta;
-} cv16;
-
 feature ss01 {
     # Stylistic Set 1 
+        featureNames {
+        name "Jha alternate 1";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4500,6 +4908,10 @@ feature ss01 {
 
 feature ss02 {
     # Stylistic Set 2 
+        featureNames {
+        name "Jha alternate 2";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4520,6 +4932,10 @@ feature ss02 {
 
 feature ss03 {
     # Stylistic Set 3 
+        featureNames {
+        name "Kra alternate";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4540,6 +4956,10 @@ feature ss03 {
 
 feature ss04 {
     # Stylistic Set 4 
+        featureNames {
+        name "Tra alternate";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4560,6 +4980,10 @@ feature ss04 {
 
 feature ss05 {
     # Stylistic Set 5 
+        featureNames {
+        name "Shra alternate";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4580,6 +5004,10 @@ feature ss05 {
 
 feature ss06 {
     # Stylistic Set 6 
+        featureNames {
+        name "Ukar nukta position";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4600,6 +5028,10 @@ feature ss06 {
 
 feature ss07 {
     # Stylistic Set 7 
+        featureNames {
+        name "Ekar nukta position";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4620,6 +5052,10 @@ feature ss07 {
 
 feature ss08 {
     # Stylistic Set 8 
+        featureNames {
+        name "Digit five alternate";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4640,6 +5076,10 @@ feature ss08 {
 
 feature ss09 {
     # Stylistic Set 9 
+        featureNames {
+        name "Digit eight alternate";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4660,6 +5100,10 @@ feature ss09 {
 
 feature ss10 {
     # Stylistic Set 10 
+        featureNames {
+        name "Digit nine alternate 1";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4680,6 +5124,10 @@ feature ss10 {
 
 feature ss11 {
     # Stylistic Set 11 
+        featureNames {
+        name "Digit nine alternate 2";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4700,6 +5148,10 @@ feature ss11 {
 
 feature ss12 {
     # Stylistic Set 12 
+        featureNames {
+        name "Visarga with connecting bar";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4720,6 +5172,10 @@ feature ss12 {
 
 feature ss13 {
     # Stylistic Set 13 
+        featureNames {
+        name "Glottal stop - no connecting bar";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4740,6 +5196,10 @@ feature ss13 {
 
 feature ss14 {
     # Stylistic Set 14 
+        featureNames {
+        name "Dya and hya alternates";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4764,6 +5224,10 @@ feature ss14 {
 
 feature ss15 {
     # Stylistic Set 15 
+        featureNames {
+        name "Archaic forms";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4784,6 +5248,10 @@ feature ss15 {
 
 feature ss16 {
     # Stylistic Set 16 
+        featureNames {
+        name "Ra Ukar with Nukta ligatures";
+    };
+
     script DFLT;
     # Default
     language dflt;
@@ -4791,10 +5259,6 @@ feature ss16 {
     lookup CharVar16AltRaUkarNukta;
     script dev2;
     # Devanagari v.2 
-        featureNames {
-        name "Ra Ukar with Nukta ligatures";
-    };
-
     language dflt;
     # Default
     lookup CharVar16AltRaUkarNukta;

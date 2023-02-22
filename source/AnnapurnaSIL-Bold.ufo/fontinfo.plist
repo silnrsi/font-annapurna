@@ -7,13 +7,13 @@
   <key>capHeight</key>
   <integer>1434</integer>
   <key>copyright</key>
-  <string>Copyright (c) 2007-2022 by SIL International</string>
+  <string>Copyright (c) 2007-2023 by SIL International</string>
   <key>descender</key>
   <integer>-984</integer>
   <key>familyName</key>
   <string>Annapurna SIL</string>
   <key>openTypeHeadCreated</key>
-  <string>2022/02/23 14:03:44</string>
+  <string>2023/02/22 10:48:44</string>
   <key>openTypeHheaAscender</key>
   <integer>1939</integer>
   <key>openTypeHheaDescender</key>
@@ -23,11 +23,11 @@
   <key>openTypeNameDescription</key>
   <string>Annapurna SIL is a high-quality font family that supports the many diverse languages that use the Devanagari script.</string>
   <key>openTypeNameDesigner</key>
-  <string>Peter Martin</string>
+  <string>Peter Martin, Annie Olsen</string>
   <key>openTypeNameDesignerURL</key>
   <string>http://scripts.sil.org</string>
   <key>openTypeNameLicense</key>
-  <string>Copyright (c) 2007-2022, SIL International (http://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
+  <string>Copyright (c) 2007-2023, SIL International (http://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
 
@@ -81,9 +81,9 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNamePreferredSubfamilyName</key>
   <string>Bold</string>
   <key>openTypeNameUniqueID</key>
-  <string>SIL International: Annapurna SIL Bold: 2022</string>
+  <string>SIL International: Annapurna SIL Bold: 2023</string>
   <key>openTypeNameVersion</key>
-  <string>Version 1.951</string>
+  <string>Version 1.952</string>
   <key>openTypeOS2CodePageRanges</key>
   <array>
     <integer>0</integer>
@@ -204,7 +204,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>versionMajor</key>
   <integer>1</integer>
   <key>versionMinor</key>
-  <integer>951</integer>
+  <integer>952</integer>
   <key>xHeight</key>
   <integer>1024</integer>
 </dict>
