@@ -899,6 +899,48 @@ feature cv16 {  # Character Variant 16
       language NEW;   # Newari
 } cv16 ;
 
+feature cv17 {  # Character Variant 17 
+    cvParameters {
+      FeatUILabelNameID  { name 3 1 0x0409 "Cha alternates" ; };
+      ParamUILabelNameID { name 3 1 0x0409 "Cha with tail, halfCha no stem" ; };
+    } ;
+    script DFLT;  # Default
+        language dflt;  # Default
+            lookup StyleSet17AltCha;
+    script dev2;  # Devanagari v.2 
+        language dflt;  # Default
+            lookup StyleSet17AltCha;
+} cv17 ;
+
+feature cv21 {  # Character Variant 21 
+    cvParameters {
+      FeatUILabelNameID  { name 3 1 0x0409 "Headstroke alternates" ; };
+      ParamUILabelNameID { name 3 1 0x0409 "Discrete headstroke" ; };
+      ParamUILabelNameID { name 3 1 0x0409 "Headstroke filler" ; };
+    } ;
+    script DFLT;  # Default
+        lookup CharVar21AltHeadstroke;
+      language dflt;  # Default
+    script dev2;  # Devanagari v.2
+        lookup CharVar21AltHeadstroke;
+      language dflt;  # Default
+      language NEP;   # Nepali
+      language NEW;   # Newari
+} cv21 ;
+
+feature cv22 {  # Character Variant 22 
+    cvParameters {
+      FeatUILabelNameID  { name 3 1 0x0409 "JainOm alternate" ; };
+      ParamUILabelNameID { name 3 1 0x0409 "JainOm alternate" ; };
+    } ;
+    script DFLT;  # Default
+        lookup CharVar22AltJainOm;
+      language dflt;  # Default
+    script dev2;  # Devanagari v.2
+        lookup CharVar22AltJainOm;
+      language dflt;  # Default
+} cv22 ;
+
 feature dist {  
     script DFLT;  # Default
         language dflt;  # Default
@@ -1398,7 +1440,18 @@ feature ss16 {  # Stylistic Set 16
             lookup CharVar16AltRaUkarNukta;
 } ss16 ;
 
+feature ss17 {  # Stylistic Set 17 
+    featureNames { name 3 1 0x409 "Cha with tail, halfCha no stem" ; };
+    script DFLT;  # Default
+        language dflt;  # Default
+            lookup StyleSet17AltCha;
+    script dev2;  # Devanagari v.2 
+        language dflt;  # Default
+            lookup StyleSet17AltCha;
+} ss17 ;
+
 feature ss20 {  # Stylistic Set 20 
+    featureNames { name 3 1 0x409 "VariantRaOpenYa" ; };
     script DFLT;  # Default
         language dflt;  # Default
             lookup VariantRaOpenYa;
