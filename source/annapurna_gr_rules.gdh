@@ -505,10 +505,13 @@ table(glyph) {AttributeOverride = false}
 	consWidth40_matraI = (g__dev_h_ma, g__dev_h_ya, cls_half);
 
 	// also for conjuncts, based on width of first (top) consonant
-	conjWidth20_matraI = (cls_0915_conj, cls_0919_conj, cls_091f_conj,	// ka, nga, tta,
-		cls_0920_conj, cls_0921_conj, g__dev_t_ta, cls_0926_conj, 	// ttha, dda, ta, da,
+	conjWidth00_matraI = (g__dev_ng_ga, g__dev_ng_gha, g__dev_ng_nga, g__dev_ng_ha, // nga (added 2023-04)
+		cls_091f_conj, cls_0920_conj, cls_0921_conj ); // tta, ttha, dda (added 2023-04)
+
+	conjWidth20_matraI = (cls_0915_conj, g__dev_ng_ka, g__dev_ng_kha,  // ka, nga (mod 2023-04)
+		g__dev_t_ta, cls_0926_conj, 	// ta, da,
 		g__dev_n_na, g__dev_p_ta, g__dev_m_la,				// na, pa, ma,
-		cls_0937_conj, cls_0939_conj, g__dev_h_na );				// ssa, ha
+		cls_0937_conj, cls_0939_conj, g__dev_h_na );		// ssa, ha
 
 	conjWidth30_matraI = (cls_091a_conj, g__dev_l_la, cls_0936_conj, g__dev_s_na);	// ca, la, sha, sa
 
@@ -1064,12 +1067,21 @@ table(glyph)
 		g__dev_pa, g__dev_pa_nukta, g__dev_ba, g__dev_ba_nukta, g__dev_bha, g__dev_bha_nukta, g__dev_ma, g__dev_ma_nukta, g__dev_ya,
 		g__dev_ya_nukta, g__dev_la, g__dev_la_nukta, g__dev_lla, g__dev_lla_nukta, g__dev_wa, g__dev_wa_nukta,
 		g__dev_sha, g__dev_sha_nukta, g__dev_ssa, g__dev_ssa_nukta, g__dev_sa, g__dev_sa_nukta, g__dev_ha, g__dev_ha_nukta
+		
+		// include stacked conjuncts 2023-03-19
+		g__dev_ng_ga g__dev_ng_gha g__dev_ng_nga g__dev_ng_ha  // ng
+		g__dev_tt_tta g__dev_tt_ttha g__dev_tth_ttha g__dev_dd_dda   // tt, tth, dd
 
 	);
 	cls_narrowIBeforeAnusv = (
 		g__dev_nga, g__dev_nga_nukta, g__dev_dda_nukta, g__dev_ca, g__dev_ca_nukta, g__dev_cha, g__dev_cha_nukta, g__dev_ja, g__dev_ja_nukta,
 		g__dev_nya, g__dev_nya_nukta, g__dev_dda, g__dev_dda_nukta, g__dev_ddha, g__dev_ddha_nukta,
 		g__dev_nna, g__dev_nna_nukta, g__dev_tha, g__dev_tha_nukta, g__dev_ma, g__dev_ma_nukta, g__dev_ya, g__dev_ya_nukta
+		
+		// include stacked conjuncts 2023-03-19
+		g__dev_ng_ga g__dev_ng_gha g__dev_ng_nga g__dev_ng_ha  // ng
+		g__dev_tt_tta g__dev_tt_ttha g__dev_tth_ttha g__dev_dd_dda   // tt, tth, dd
+
 	);
 	// These are okay after all: g0917, g095a, g0918, g0918_093c, g092d, g091d, g091d_093c, g0927, g0927_093c, g092c, g092c_093c, g092d_093c, g0935, g0935_093c, g0936, g0936_093c
 
@@ -1217,6 +1229,8 @@ pass(PASS_FIXUPPERS)	// 8
 			/  (g__dev_vowel_candra_a  g__dev_vowel_candra_a_nukta  g__dev_vowel_o_e  g__dev_vowel_o_o_e  g__dev_vowel_a_w  g__dev_vowel_u_e  g__dev_vowel_u_u_e)  g_nukta?  _;
 
 	//	Now that the conjuncts have been created, use a narrower matra-I where necessary.
+	cls_matraI_width30  >  cls_matraI          /  _  conjWidth00_matraI;
+	cls_matraI_width40  >  cls_matraI          /  _  conjWidth00_matraI;
 	cls_matraI_width30  >  cls_matraI_width20  /  _  conjWidth20_matraI;
 	cls_matraI_width40  >  cls_matraI_width20  /  _  conjWidth20_matraI;
 	cls_matraI_width40  >  cls_matraI_width30  /  _  conjWidth30_matraI;
