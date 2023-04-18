@@ -509,9 +509,9 @@ table(glyph) {AttributeOverride = false}
 		cls_091f_conj, cls_0920_conj, cls_0921_conj ); // tta, ttha, dda (added 2023-04)
 
 	conjWidth20_matraI = (cls_0915_conj, g__dev_ng_ka, g__dev_ng_kha,  // ka, nga (mod 2023-04)
-		g__dev_t_ta, cls_0926_conj, 	// ta, da,
-		g__dev_n_na, g__dev_p_ta, g__dev_m_la,				// na, pa, ma,
-		cls_0937_conj, cls_0939_conj, g__dev_h_na );		// ssa, ha
+		g__dev_t_ta,  cls_0926_conj,                         // ta, da
+		g__dev_n_na, g__dev_p_ta, g__dev_m_la, g__dev_l_la,	 // na, pa, ma, la (mod 2023-04)
+		cls_0937_conj, cls_0939_conj, g__dev_h_na );		 // ssa, ha
 
 	conjWidth30_matraI = (cls_091a_conj, g__dev_l_la, cls_0936_conj, g__dev_s_na);	// ca, la, sha, sa
 
@@ -1071,6 +1071,7 @@ table(glyph)
 		// include stacked conjuncts 2023-03-19
 		g__dev_ng_ga g__dev_ng_gha g__dev_ng_nga g__dev_ng_ha  // ng
 		g__dev_tt_tta g__dev_tt_ttha g__dev_tth_ttha g__dev_dd_dda   // tt, tth, dd
+		g__dev_d_da   // d
 
 	);
 	cls_narrowIBeforeAnusv = (
@@ -1081,6 +1082,7 @@ table(glyph)
 		// include stacked conjuncts 2023-03-19
 		g__dev_ng_ga g__dev_ng_gha g__dev_ng_nga g__dev_ng_ha  // ng
 		g__dev_tt_tta g__dev_tt_ttha g__dev_tth_ttha g__dev_dd_dda   // tt, tth, dd
+		g__dev_d_da   // d
 
 	);
 	// These are okay after all: g0917, g095a, g0918, g0918_093c, g092d, g091d, g091d_093c, g0927, g0927_093c, g092c, g092c_093c, g092d_093c, g0935, g0935_093c, g0936, g0936_093c
