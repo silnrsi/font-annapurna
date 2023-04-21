@@ -2303,6 +2303,22 @@ lookup CharVar16AltRaUkarNukta {
     sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta;
 } CharVar16AltRaUkarNukta;
 
+lookup StyleSet17AltCha {
+    lookupflag 0;
+    sub DevCha by DevCha.alt;
+    sub DevHalfCha by DevHalfCha.alt;
+} StyleSet17AltCha;
+
+lookup CharVar21AltHeadstroke {
+    lookupflag 0;
+    sub DevHeadstroke from [DevHeadstroke.discrete DevHeadstroke.filler];
+} CharVar21AltHeadstroke;
+
+lookup CharVar22AltJainOm {
+    lookupflag 0;
+    sub DevJainOm by DevJainOm.alt;
+} CharVar22AltJainOm;
+
 lookup VariantRaOpenYa {
     lookupflag 0;
     sub DevRa DevHalant ZeroWidthNonJoiner DevYa by DevRa.Ya;
@@ -4500,6 +4516,89 @@ feature cv16 {
     # Newari
 } cv16;
 
+feature cv17 {
+    # Character Variant 17 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Cha alternates";
+        };
+
+                ParamUILabelNameID {
+            name "Cha with tail, halfCha no stem";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    language dflt;
+    # Default
+    lookup StyleSet17AltCha;
+    script dev2;
+    # Devanagari v.2 
+    language dflt;
+    # Default
+    lookup StyleSet17AltCha;
+} cv17;
+
+feature cv21 {
+    # Character Variant 21 
+        cvParameters {
+                FeatUILabelNameID {
+            name "Headstroke alternates";
+        };
+
+                ParamUILabelNameID {
+            name "Discrete headstroke";
+        };
+
+                ParamUILabelNameID {
+            name "Headstroke filler";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup CharVar21AltHeadstroke;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup CharVar21AltHeadstroke;
+    language dflt;
+    # Default
+    language NEP;
+    # Nepali
+    language NEW;
+    # Newari
+} cv21;
+
+feature cv22 {
+    # Character Variant 22 
+        cvParameters {
+                FeatUILabelNameID {
+            name "JainOm alternate";
+        };
+
+                ParamUILabelNameID {
+            name "JainOm alternate";
+        };
+
+    };
+
+    script DFLT;
+    # Default
+    lookup CharVar22AltJainOm;
+    language dflt;
+    # Default
+    script dev2;
+    # Devanagari v.2
+    lookup CharVar22AltJainOm;
+    language dflt;
+    # Default
+} cv22;
+
 feature dist {
     script DFLT;
     # Default
@@ -5264,8 +5363,30 @@ feature ss16 {
     lookup CharVar16AltRaUkarNukta;
 } ss16;
 
+feature ss17 {
+    # Stylistic Set 17 
+        featureNames {
+        name "Cha with tail, halfCha no stem";
+    };
+
+    script DFLT;
+    # Default
+    language dflt;
+    # Default
+    lookup StyleSet17AltCha;
+    script dev2;
+    # Devanagari v.2 
+    language dflt;
+    # Default
+    lookup StyleSet17AltCha;
+} ss17;
+
 feature ss20 {
     # Stylistic Set 20 
+        featureNames {
+        name "VariantRaOpenYa";
+    };
+
     script DFLT;
     # Default
     language dflt;
