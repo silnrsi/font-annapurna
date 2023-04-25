@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevCombLtrA" format="2">
-  <advance width="1"/>
   <unicode hex="A8EA"/>
+  <anchor x="-480" y="1850" name="_C"/>
   <outline>
     <component base="DevVowelA" xScale="0.5" yScale="0.5" xOffset="-934" yOffset="1950"/>
   </outline>

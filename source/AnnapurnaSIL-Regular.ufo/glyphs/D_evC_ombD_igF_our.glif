@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevCombDigFour" format="2">
-  <advance width="1"/>
   <unicode hex="A8E4"/>
+  <anchor x="-380" y="1850" name="_C"/>
   <outline>
     <component base="DevFour" xScale="0.5" yScale="0.5" xOffset="-700" yOffset="1950"/>
   </outline>

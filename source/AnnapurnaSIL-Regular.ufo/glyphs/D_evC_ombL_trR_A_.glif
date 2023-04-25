@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevCombLtrRA" format="2">
-  <advance width="1"/>
   <unicode hex="A8EF"/>
+  <anchor x="-380" y="1850" name="_C"/>
   <outline>
     <component base="DevRa" xScale="0.5" yScale="0.5" xOffset="-583" yOffset="1950"/>
   </outline>
