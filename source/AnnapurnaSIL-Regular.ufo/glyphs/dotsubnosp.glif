@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dotsubnosp" format="2">
   <unicode hex="0323"/>
+  <anchor x="-482" y="50" name="_L"/>
   <outline>
     <contour>
       <point x="-378" y="-223" type="curve" smooth="yes"/>

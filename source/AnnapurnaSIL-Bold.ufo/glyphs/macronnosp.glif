@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="macronnosp" format="2">
   <unicode hex="0304"/>
+  <anchor x="-500" y="900" name="_U"/>
   <outline>
     <contour>
       <point x="-225" y="1120" type="line"/>

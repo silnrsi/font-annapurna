@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CombRingAbv" format="2">
   <unicode hex="030A"/>
+  <anchor x="-531" y="900" name="_U"/>
   <outline>
     <contour>
       <point x="-305" y="1287" type="curve" smooth="yes"/>

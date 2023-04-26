@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tildenosp" format="2">
   <unicode hex="0303"/>
+  <anchor x="-480" y="900" name="_U"/>
   <outline>
     <contour>
       <point x="-161" y="1321" type="curve"/>

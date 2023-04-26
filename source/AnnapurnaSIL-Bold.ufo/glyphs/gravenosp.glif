@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gravenosp" format="2">
   <unicode hex="0300"/>
+  <anchor x="-500" y="900" name="_U"/>
   <outline>
     <contour>
       <point x="-357" y="1055" type="line"/>

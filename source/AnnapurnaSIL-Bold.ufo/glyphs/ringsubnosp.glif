@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ringsubnosp" format="2">
   <unicode hex="0325"/>
+  <anchor x="-528" y="50" name="_L"/>
   <outline>
     <contour>
       <point x="-539" y="-73" type="curve" smooth="yes"/>

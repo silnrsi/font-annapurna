@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CombCedilla" format="2">
   <unicode hex="0327"/>
+  <anchor x="-532" y="50" name="_L"/>
   <outline>
     <contour>
       <point x="-320" y="-199" type="curve" smooth="yes"/>

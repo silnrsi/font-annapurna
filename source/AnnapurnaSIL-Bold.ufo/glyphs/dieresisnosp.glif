@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dieresisnosp" format="2">
   <unicode hex="0308"/>
+  <anchor x="-510" y="900" name="_U"/>
   <outline>
     <contour>
       <point x="-217" y="1245" type="curve" smooth="yes"/>
