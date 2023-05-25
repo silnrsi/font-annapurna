@@ -1,0 +1,16 @@
+/*
+This file is from the SIL Fontdocs project (https://github.com/silnrsi/fontdocs).
+Copyright (c) 2021-2023 SIL International (http://www.sil.org/). This Font Software is
+released under the MIT license (http://opensource.org/licenses/MIT).
+*/
+@font-face {
+    font-family: AnnapurnaSIL-R;
+    src: url("../../../results/AnnapurnaSIL-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: AnnapurnaSIL-B;
+    src: url("../../../results/AnnapurnaSIL-Bold.ttf") format("truetype");
+}
+
+.annapurna-R { font-family: AnnapurnaSIL-R; }
+.annapurna-B { font-family: AnnapurnaSIL-B; }
