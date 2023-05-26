@@ -106,7 +106,7 @@ Newari style | <span class='annapurna-R normal' style='font-feature-settings: "c
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>&nbsp;ः</span> | `cv12=0`
-With bar | <span class='annapurna-R normal' style='font-feature-settings: "cv11" 1'>&nbsp;ः</span> | `cv12=1`
+With bar | <span class='annapurna-R normal' style='font-feature-settings: "cv12" 1'>&nbsp;ः</span> | `cv12=1`
 
 #### Glottal stop - no connecting bar
 
@@ -133,7 +133,7 @@ Open Ya | <span class='annapurna-R normal' style='font-feature-settings: "cv14" 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard      | <span class='annapurna-R normal'>अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span> | `cv15=0`
-Archaic forms | <span class='annapurna-R normal' style='font-feature-settings: "cv15" 1'>अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span> | `cv15=1`
+Archaic form | <span class='annapurna-R normal' style='font-feature-settings: "cv15" 1'>अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span> | `cv15=1`
 
 #### Ra Ukar with Nukta ligatures
 
@@ -161,7 +161,7 @@ Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>ꣻ</span> | `cv21=0`
 Discrete | <span class='annapurna-R normal' style='font-feature-settings: "cv21" 1'>ꣻ</span> | `cv21=1`
-Filler   | <span class='annapurna-R normal' style='font-feature-settings: "cv21" 2'>ꣻ</span> | `cv21=2`
+Filler (zero width)| <span class='annapurna-R normal' style='font-feature-settings: "cv21" 2'>ꣻ</span> | `cv21=2`
 
 #### JainOm alternate
 

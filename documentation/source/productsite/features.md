@@ -18,9 +18,9 @@ This page uses web fonts (WOFF2) to demonstrate font features and should display
 
 Feature    | Sample                       | Feature setting
 :--------- | :--------------------------- |  :-------
-Standard   | <span class='annapurna-R normal'>झ झ् झ़ झ़् झ्र झ़्र</span> | `cv01=0`
-Nepal style| <span class='annapurna-cv01-1-R normal'>झ झ् झ़ झ़् झ्र झ़्र</span> | `cv01=1`
-Newar style| <span class='annapurna-cv01-2-R normal'>झ झ् झ़ झ़् झ्र झ़्र</span> | `cv01=2`
+Standard    | <span class='annapurna-R normal'>झ झ् झ़ झ़् झ्र झ़्र</span> | `cv01=0`
+Nepali style| <span class='annapurna-cv01-1-R normal'>झ झ् झ़ झ़् झ्र झ़्र</span> | `cv01=1`
+Newari style| <span class='annapurna-cv01-2-R normal'>झ झ् झ़ झ़् झ्र झ़्र</span> | `cv01=2`
 
 #### Kra alternate
 
@@ -56,7 +56,7 @@ Sha style | <span class='annapurna-cv05-1-R normal'>श्र श़्र</span
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- |  :-------
 Standard | <span class='annapurna-R normal'>कु़ कू़ क्कु़ क्कू़</span> | `cv06=0`
--  | <span class='annapurna-cv06-1-R normal'>कु़ कू़ क्कु़ क्कू़</span> | `cv06=1`
+Outside  | <span class='annapurna-cv06-1-R normal'>कु़ कू़ क्कु़ क्कू़</span> | `cv06=1`
 
 #### Ekar nukta position
 
@@ -73,8 +73,8 @@ Above bar| <span class='annapurna-cv07-1-R normal'>के़</span> | `cv07=1`
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard   | <span class='annapurna-R normal'>५</span> | `cv08=0`
-Nepal style| <span class='annapurna-cv08-1-R normal'>५</span> | `cv08=1`
+Standard    | <span class='annapurna-R normal'>५</span> | `cv08=0`
+Nepali style| <span class='annapurna-cv08-1-R normal'>५</span> | `cv08=1`
 
 #### Digit eight alternate
 
@@ -82,8 +82,8 @@ Nepal style| <span class='annapurna-cv08-1-R normal'>५</span> | `cv08=1`
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard    | <span class='annapurna-R normal'>८</span> | `cv09=0`
-Nepal style | <span class='annapurna-cv09-1-R normal'>८</span> | `cv09=1`
+Standard     | <span class='annapurna-R normal'>८</span> | `cv09=0`
+Nepali style | <span class='annapurna-cv09-1-R normal'>८</span> | `cv09=1`
 
 #### Digit nine alternates
 
@@ -91,9 +91,9 @@ Nepal style | <span class='annapurna-cv09-1-R normal'>८</span> | `cv09=1`
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard    | <span class='annapurna-R normal'>९</span> | `cv10=0`
-Nepal style | <span class='annapurna-cv10-1-R normal'>९</span> | `cv10=1`
-Newar style | <span class='annapurna-cv10-2-R normal'>९</span> | `cv10=2`
+Standard     | <span class='annapurna-R normal'>९</span> | `cv10=0`
+Nepali style | <span class='annapurna-cv10-1-R normal'>९</span> | `cv10=1`
+Newari style | <span class='annapurna-cv10-2-R normal'>९</span> | `cv10=2`
 
 #### Visarga with connecting bar
 
@@ -102,7 +102,7 @@ Newar style | <span class='annapurna-cv10-2-R normal'>९</span> | `cv10=2`
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>&nbsp;ः</span> | `cv12=0`
-With bar | <span class='annapurna-cv11-1-R normal'>&nbsp;ः</span> | `cv12=1`
+With bar | <span class='annapurna-cv12-1-R normal'>&nbsp;ः</span> | `cv12=1`
 
 #### Glottal stop - no connecting bar
 
@@ -115,7 +115,7 @@ No bar   | <span class='annapurna-cv13-1-R normal'>ॽ</span> | `cv13=1`
 
 #### Dya and Hya alternates
 
-<span class='affects'>Affects: U+0926 U+0939 U+092F</span>
+<span class='affects'>Affects: U+0926 U+0939 U+094D U+092F</span>
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
@@ -129,7 +129,7 @@ Open Ya | <span class='annapurna-cv14-1-R normal'>द्य द्य्&zwj; �
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard      | <span class='annapurna-R normal'>अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span> | `cv15=0`
-Archaic forms | <span class='annapurna-cv15-1-R normal'>अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span> | `cv15=1`
+Archaic form | <span class='annapurna-cv15-1-R normal'>अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span> | `cv15=1`
 
 #### Ra Ukar with Nukta ligatures
 
@@ -157,7 +157,7 @@ Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>ꣻ</span> | `cv21=0`
 Discrete | <span class='annapurna-cv21-1-R normal'>ꣻ</span> | `cv21=1`
-Filler   | <span class='annapurna-cv21-2-R normal'>ꣻ</span> | `cv21=2`
+Filler (zero width)| <span class='annapurna-cv21-2-R normal'>ꣻ</span> | `cv21=2`
 
 #### JainOm alternate
 
@@ -184,7 +184,7 @@ Extended bar| <span class='annapurna-cv22-1-R normal'>ꣽ</span> | `cv22=1`
 [font id='annapurna-cv09-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv09 1']
 [font id='annapurna-cv10-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv10 1']
 [font id='annapurna-cv10-2' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv10 2']
-[font id='annapurna-cv11-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv11 1']
+[font id='annapurna-cv12-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv12 1']
 [font id='annapurna-cv13-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv13 1']
 [font id='annapurna-cv14-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv14 1']
 [font id='annapurna-cv15-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv15 1']
