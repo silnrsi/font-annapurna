@@ -1,7 +1,7 @@
 # Convert a UFO into a ttf file without OpenType tables
 # using minimal processing (compared to fontmake)
 
-# Copyright (c) 2017, SIL International (http://www.sil.org)
+# Copyright (c) 2017, SIL International (https://www.sil.org)
 #
 # This script is released under the terms of the MIT License.
 # For details, see the full text of the license in the file LICENSE.

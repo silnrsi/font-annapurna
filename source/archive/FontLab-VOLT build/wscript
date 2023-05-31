@@ -20,7 +20,7 @@ APPNAME = 'AnnapurnaSIL'
 VERSION = '1.202'
 TTF_VERSION = '1.202'
 #BUILDLABEL = "alpha1"
-COPYRIGHT = 'Copyright (c) 2018 SIL International(http://www.sil.org) with Reserved Font Names Annapurna and SIL"'
+COPYRIGHT = 'Copyright (c) 2018 SIL International(https://www.sil.org) with Reserved Font Names Annapurna and SIL"'
 LICENSE = "OFL.txt"
 
 DESC_SHORT = 'Devanagari Unicode TrueType font with OT and Graphite support'

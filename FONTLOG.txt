@@ -147,12 +147,12 @@ be sure to add your name (N), email (E), web-address (W) and description
 (D). This list is sorted by last name in alphabetical order.)
 
 N: Jonathan Coblentz, Sharon Correll, Peter Martin
-E: fonts@sil.org
-W: http://scripts.sil.org/
+E: https://software.sil.org/annapurna/about/contact/
+W: https://software.sil.org/annapurna/
 D: SIL font designers and engineers
 
 The Annapurna SIL project is maintained by SIL International.
 
 For more information please visit the Annapurna SIL page on SIL International's 
-software website: http://software.sil.org/annapurna.
+software website: https://software.sil.org/annapurna.
 

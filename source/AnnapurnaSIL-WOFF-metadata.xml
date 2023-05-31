@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata version="1.0">
   <uniqueid id="org.sil.fonts.AnnapurnaSIL.1.954" />
-  <vendor name="SIL International" url="http://www.sil.org" />
+  <vendor name="SIL International" url="https://www.sil.org" />
   <credits>
     <credit
       name="Jonathan Coblentz, Sharon Correll, Peter Martin"
-      url="http://scripts.sil.org/"
+      url="https://scripts.sil.org/"
       role="SIL font designers and engineers"
     />
   </credits>
@@ -89,11 +89,11 @@
       - First version released under the SIL Open Font License
     </text>
   </description>
-  <license url="http://scripts.sil.org/OFL" id="org.sil.ofl.1.1">
+  <license url="https://scripts.sil.org/OFL" id="org.sil.ofl.1.1">
     <text lang="en">
-      Copyright (c) 2007-2023, SIL International (http://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
+      Copyright (c) 2007-2023, SIL International (https://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
       
-      This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+      This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: https://scripts.sil.org/OFL
       
       
       -----------------------------------------------------------

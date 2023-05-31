@@ -5,7 +5,7 @@ fontversion: 2.000
 
 Many questions can be answered by consulting the following FAQ pages. Here are a few sample questions answered in each FAQ:
 
-- [SIL fonts in general](http://software.sil.org/fonts/faq)
+- [SIL fonts in general](https://software.sil.org/fonts/faq)
     - *How can I type...?*
     - *How can I use font features?*
     - *Will you add support for character...?*
