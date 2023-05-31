@@ -40,7 +40,7 @@ sub make_name
 
 =head1 AUTHOR
 
-Bob Hallissy L<https://scripts.sil.org/>.
+Bob Hallissy L<https://software.sil.org/wstech/>.
 (see CONTRIBUTORS for other authors).
 
 =head1 LICENSING
