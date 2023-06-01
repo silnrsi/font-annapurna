@@ -8,6 +8,16 @@ This page uses web fonts (WOFF2) to demonstrate font features and should display
 *If this document is not displaying correctly a PDF version is also provided in the documentation/pdf folder of the release package.*
 
 
+## Language-specific features
+
+<span class='affects'>Affects: U+091D U+096B U+096E U+096F</span>
+
+Language      | Test sequences               | Language tag
+:------------ | :--------------------------- |  :-------
+Default       | <span class='annapurna-R normal'>झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | 
+Nepali ('nep')| <span class='annapurna-R normal' lang="nep">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | `NEP `
+Newari ('new')| <span class='annapurna-R normal' lang="new">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | `NEW `
+
 ## User-selected feature list
 
 ### Character variants
