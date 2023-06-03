@@ -52,7 +52,8 @@
 table(feature)
 
 jha {
-	id = "jhav";		// 2001, jha variants
+	id = "cv01";
+    id.hidden = "jhav";		// 2001, jha variants
 	name.1033 = string("Jha alternates");
 	default = 0;
 	settings {
@@ -72,37 +73,29 @@ jha {
 }
 
 kra {
-	id = "krav";		// 2002, kra variant
+	id = "cv03";
+    id.hidden = "krav";		// 2002, kra variant
 	name.1033 = string("Kra alternate");
 	bool
 }
 
 tra {
-	id = "trav";		//  2003, tra variant
+	id = "cv04";
+    id.hidden = "trav";		//  2003, tra variant
 	name.1033 = string("Tra alternate");
 	bool
 }
 
 shra {
-	id = "shra";	// 2004
+	id = "cv05";
+    id.hidden = "shra";	// 2004
 	name.1033 = string("Shra alternate");
 	bool
 }
 
-dyahya {
-	id = "dyah";	// 2013
-	name.1033 = string("Dya and hya alternates");
-	bool
-}
-
-rya {
-	id = "ryav";
-	name.1033 = string("Rya alternate");
-	bool
-}
-
 ukar {
-	id = "ukar";	// 2005
+	id = "cv06";
+    id.hidden = "ukar";	// 2005
 	name.1033 = string("Ukar nukta position");
 	default = 0;
 	settings {
@@ -118,7 +111,8 @@ ukar {
 }
 
 ekar {
-	id = "ekar";	// 2006
+	id = "cv07";
+    id.hidden = "ekar";	// 2006
 	name.1033 = string("Ekar nukta position");
 	default = 0;
 	settings {
@@ -134,19 +128,22 @@ ekar {
 }
 
 digit5 {
-	id = "dig5";	// 2007
+	id = "cv08";
+    id.hidden = "dig5";	// 2007
 	name.1033 = string("Digit five alternate");
 	bool
 }
 
 digit8 {
-	id = "dig8";	// 2008
+	id = "cv09";
+    id.hidden = "dig8";	// 2008
 	name.1033 = string("Digit eight alternate");
 	bool
 }
 
 digit9 {
-	id = "dig9";	// 2009
+	id = "cv10";
+    id.hidden = "dig9";	// 2009
 	name.1033 = string("Digit nine alternate");
 	default = 0;
 	settings {
@@ -166,26 +163,43 @@ digit9 {
 }
 
 visargabar {
-	id = "vbar";	// 2010
+	id = "cv12";
+    id.hidden = "vbar";	// 2010
 	name.1033 = string("Visarga connecting bar");
 	bool
 }
 
 glottalbar {
-	id = "gbar";	// 2011
+	id = "cv13";
+    id.hidden = "gbar";	// 2011
 	name.1033 = string("Limbu glottal stop connecting bar");
 	boolWDefTrue
 }
 
+dyahya {
+	id = "cv14";
+    id.hidden = "dyah";	// 2013
+	name.1033 = string("Dya and hya alternates");
+	bool
+}
+
 archaic {
-	id = "arch";	// 2012
+	id = "cv15";
+    id.hidden = "arch";	// 2012
 	name.1033 = string("Archaic forms");
 	bool
 }
 
 rudot {
-	id = "cv16";	// 
+	id = "cv16";
+    id.hidden = "ss16";	// 
 	name.1033 = string("Ra Ukar with Nukta ligatures");
+	bool
+}
+
+rya {
+	id = "ryav";
+	name.1033 = string("Rya alternate");
 	bool
 }
 
@@ -202,6 +216,8 @@ table(language)
 newar {
 	languages = ( "new" );	// Newar
 	jha = newar;
+	digit5 = true;
+	digit8 = true;
 	digit9 = form3;
 };
 

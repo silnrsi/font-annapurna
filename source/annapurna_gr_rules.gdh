@@ -1322,44 +1322,101 @@ endtable; // glyph
 
 pass(PASS_FEATURES)	// 8
 
-if (jha == india)
+if (jha == india) // cv01
 	c_091d_alt1  >  c_091d_noalt;
 	c_091d_alt2  >  c_091d_noalt;
 endif;
 
-if (jha == nepal)
+if (jha == nepal) // cv01=1
 	c_091d_noalt  >  c_091d_alt1;
 	c_091d_alt2   >  c_091d_alt1;
 endif;
 
-if (jha == newar)
+if (jha == newar) // cv01=2
 	c_091d_noalt  >  c_091d_alt2;
 	c_091d_alt1   >  c_091d_alt2;
 endif;
 
 
-if (kra)
+if (kra) // cv03
 	c_kra_noalt  >  c_kra_alt;
 else
 	c_kra_alt  >  c_kra_noalt;
 endif;
 
 
-if (tra)
+if (tra) // cv04
 	c_tra_noalt  >  c_tra_alt;
 else
 	c_tra_alt  >  c_tra_noalt;
 endif;
 
 
-if (shra)
+if (shra) // cv05
 	c_shra_noalt  >  c_shra_alt;
 else
 	c_shra_alt  >  c_shra_noalt;
 endif;
 
 
-if (dyahya)
+if (ukar) // cv06
+	c_ukar_noalt  >  c_ukar_alt2  /  cStackCompress _ ;
+	c_ukar_noalt  >  c_ukar_alt;
+else
+	c_ukar_alt   >  c_ukar_noalt;
+	c_ukar_alt2  >  c_ukar_noalt;
+endif;
+
+
+if (ekar) // cv07
+	c_ekar_noalt  >  c_ekar_alt;
+else
+	c_ekar_alt  >  c_ekar_noalt;
+endif;
+
+
+if (digit5) // cv08
+	g__dev_five  >  g__dev_five_alt;
+else
+	g__dev_five_alt  >  g__dev_five;
+endif;
+
+
+if (digit8) // cv09
+	g__dev_eight  >  g__dev_eight_alt;
+else
+	g__dev_eight_alt  >  g__dev_eight;
+endif;
+
+
+if (digit9 == form1) // cv10
+	g__dev_nine_alt  >  g__dev_nine;
+	g__dev_nine_alt2 >  g__dev_nine;
+endif;
+if (digit9 == form2) // cv10=1
+	g__dev_nine      >  g__dev_nine_alt;
+	g__dev_nine_alt2 >  g__dev_nine_alt;
+endif;
+if (digit9 == form3) // cv10=2
+	g__dev_nine     >  g__dev_nine_alt2;
+	g__dev_nine_alt >  g__dev_nine_alt2;
+endif;
+
+
+if (visargabar) // cv12
+	g__dev_visarga  >  g__dev_visarga_alt;
+else
+	g__dev_visarga_alt  >  g__dev_visarga;
+endif;
+
+if (glottalbar) // cv13 - alternate form has no bar
+	g__dev_glottal_stop  >  g__dev_glottal_stop_alt;
+else
+	g__dev_glottal_stop_alt  >  g__dev_glottal_stop;
+endif;
+
+
+if (dyahya) // cv14
 	cls_dyahya  >  cls_dyahya_alt;
 	cls_daha_half  g_yya         >  cls_dyyahyya:(1 2)      {comp {c1.ref = @1; c2.ref = @2}}  _ ;
 	cls_daha_half  g_ya_half     >  cls_dyahya_half:(1 2)   {comp {c1.ref = @1; c2.ref = @2}}  _ ;
@@ -1370,75 +1427,15 @@ if (dyahya)
 	cls_daha_half  g_yya_ra_half >  cls_dyyrhyyr_half:(1 2) {comp {c1.ref = @1; c2.ref = @2}}  _ ;
 endif;
 
-if (rya)
-	g__dev_ra g__dev_halant g_zwnj cls_ya_ra_noalt		>  _  _  _  cls_rya_ra_alt_half:(1 2 3 4);
-	///g0930 g094d g_zwnj cls_ya_noalt g094d  	>  _  _  _  cls_rya_alt_half:(1 2 3 4 5) _;  // SC
-	g__dev_ra g__dev_halant g_zwnj cls_ya_noalt_half  	>  _  _  _  cls_rya_alt_half:(1 2 3 4);   // JC
-	g__dev_ra g__dev_halant g_zwnj cls_ya_noalt  		>  _  _  _  cls_rya_alt:(1 2 3 4) ;
-endif;
 
-if (ukar)
-	c_ukar_noalt  >  c_ukar_alt2  /  cStackCompress _ ;
-	c_ukar_noalt  >  c_ukar_alt;
-else
-	c_ukar_alt   >  c_ukar_noalt;
-	c_ukar_alt2  >  c_ukar_noalt;
-endif;
-
-if (ekar)
-	c_ekar_noalt  >  c_ekar_alt;
-else
-	c_ekar_alt  >  c_ekar_noalt;
-endif;
-
-
-if (digit5)
-	g__dev_five  >  g__dev_five_alt;
-else
-	g__dev_five_alt  >  g__dev_five;
-endif;
-
-if (digit8)
-	g__dev_eight  >  g__dev_eight_alt;
-else
-	g__dev_eight_alt  >  g__dev_eight;
-endif;
-
-if (digit9 == form1)
-	g__dev_nine_alt  >  g__dev_nine;
-	g__dev_nine_alt2 >  g__dev_nine;
-endif;
-if (digit9 == form2)
-	g__dev_nine      >  g__dev_nine_alt;
-	g__dev_nine_alt2 >  g__dev_nine_alt;
-endif;
-if (digit9 == form3)
-	g__dev_nine     >  g__dev_nine_alt2;
-	g__dev_nine_alt >  g__dev_nine_alt2;
-endif;
-
-
-if (visargabar)
-	g__dev_visarga  >  g__dev_visarga_alt;
-else
-	g__dev_visarga_alt  >  g__dev_visarga;
-endif;
-
-if (glottalbar) // alternate form has no bar
-	g__dev_glottal_stop  >  g__dev_glottal_stop_alt;
-else
-	g__dev_glottal_stop_alt  >  g__dev_glottal_stop;
-endif;
-
-
-if (archaic)
+if (archaic) // cv15
 	cno_archaic  >  carchaic;
 else
 	carchaic  >  cno_archaic;
 endif;
 
 
-if (rudot)
+if (rudot) // cv16
 //  c_rudot_stack  >  c_rudot_lig;
     g__dev_ra       g__dev_maatra_u_nukta    >  g__dev_r_u_nukta:(1 2) _;
     g__dev_ra_nukta g__dev_maatra_u_nukta    >  g__dev_r_nukta_u_nukta:(1 2) _;
@@ -1446,7 +1443,14 @@ if (rudot)
     g__dev_ra_nukta g__dev_maatra_u_u_nukta  >  g__dev_r_nukta_u_u_nukta:(1 2) _;
 else
     c_rudot_lig  >  c_rudot_stack;
+endif;
 
+
+if (rya) // special case
+	g__dev_ra g__dev_halant g_zwnj cls_ya_ra_noalt		>  _  _  _  cls_rya_ra_alt_half:(1 2 3 4);
+	///g0930 g094d g_zwnj cls_ya_noalt g094d  	>  _  _  _  cls_rya_alt_half:(1 2 3 4 5) _;  // SC
+	g__dev_ra g__dev_halant g_zwnj cls_ya_noalt_half  	>  _  _  _  cls_rya_alt_half:(1 2 3 4);   // JC
+	g__dev_ra g__dev_halant g_zwnj cls_ya_noalt  		>  _  _  _  cls_rya_alt:(1 2 3 4) ;
 endif;
 
 endpass; // PASS_FEATURES
