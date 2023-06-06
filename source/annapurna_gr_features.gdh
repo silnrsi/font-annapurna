@@ -197,6 +197,13 @@ rudot {
 	bool
 }
 
+cha {
+	id = "cv17";
+    id.hidden = "ss17";	//
+	name.1033 = string("Cha alternate");
+	bool
+}
+
 rya {
 	id = "ryav";
 	name.1033 = string("Rya alternate");

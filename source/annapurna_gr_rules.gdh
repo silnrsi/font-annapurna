@@ -203,7 +203,8 @@ table(glyph) {AttributeOverride = false}
 		g__dev_la				g__dev_la_nukta		g__dev_lla				g__dev_lla_nukta			g__dev_wa				g__dev_wa_nukta		g__dev_sha
 		g__dev_ssa				g__dev_ssa_nukta		g__dev_sa				g__dev_sa_nukta		g__dev_ha				g__dev_ha_nukta		g__dev_gga
 		g__dev_gga_nukta			g__dev_jja			g__dev_jja_nukta			g__dev_ddda			g__dev_ddda_nukta			g__dev_bba
-		g__dev_bba_nukta			g__dev_nna_archaic	g__dev_k_ssa		g__dev_k_ssa_archaic				g__dev_j_nya	g__dev_t_ta);
+		g__dev_bba_nukta			g__dev_nna_archaic	g__dev_k_ssa		g__dev_k_ssa_archaic				g__dev_j_nya	g__dev_t_ta
+		g__dev_cha_alt);
 
 	cls_half = (
 		g__dev_half_ka			g__dev_half_ka_nukta			g__dev_half_kha			g__dev_half_kha_nukta			g__dev_half_ga			g__dev_half_ga_nukta				g__dev_half_gha
@@ -219,7 +220,8 @@ table(glyph) {AttributeOverride = false}
 		g__dev_half_la			g__dev_half_la_nukta	g__dev_half_lla			g__dev_half_lla_nukta			g__dev_half_wa			g__dev_half_wa_nukta		g__dev_half_sha
 		g__dev_half_ssa			g__dev_half_ssa_nukta	g__dev_half_sa			g__dev_half_sa_nukta	g__dev_half_ha			g__dev_half_ha_nukta		g__dev_half_gga
 		g__dev_half_gga_nukta	g__dev_half_jja			g__dev_half_jja_nukta	g__dev_half_ddda			g__dev_half_ddda_nukta	g__dev_half_bba
-		g__dev_half_bba_nukta	g__dev_half_nna_archaic	g__dev_half_k_ssa	g__dev_half_k_ssa_archaic			g__dev_half_j_nya	g__dev_half_t_ta);
+		g__dev_half_bba_nukta	g__dev_half_nna_archaic	g__dev_half_k_ssa	g__dev_half_k_ssa_archaic			g__dev_half_j_nya	g__dev_half_t_ta
+		g__dev_half_cha_alt);
 
 
 	//	Full conjuncts
@@ -1033,6 +1035,9 @@ pass(PASS_HALFFORMS)	// 6
 
 	//	Create half forms (later we will turn some of them into conjuncts).
 	cls_nHalf  g_halant  >  cls_half:(1 2)  _  /  _ {form == F_HALF || form == F_CONJ1}  _ ;
+	
+	//  Composite glyphs with visible halant
+	g__dev_cha  g_halant  >  g__dev_half_cha:(1 2)  _  /  _  _ ;
 
 endpass;
 
@@ -1445,6 +1450,13 @@ else
     c_rudot_lig  >  c_rudot_stack;
 endif;
 
+if (cha) // cv17
+    g__dev_cha       >  g__dev_cha_alt;
+    g__dev_half_cha  >  g__dev_half_cha_alt;
+else
+    g__dev_cha_alt       >  g__dev_cha;
+    g__dev_half_cha_alt  >  g__dev_half_cha;
+endif;
 
 if (rya) // special case
 	g__dev_ra g__dev_halant g_zwnj cls_ya_ra_noalt		>  _  _  _  cls_rya_ra_alt_half:(1 2 3 4);
