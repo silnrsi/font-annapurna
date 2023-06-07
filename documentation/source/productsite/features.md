@@ -12,11 +12,11 @@ This page uses web fonts (WOFF2) to demonstrate font features and should display
 
 <span class='affects'>Affects: U+091D U+096B U+096E U+096F</span>
 
-Language      | Test sequences               | Language tag
+Language      | Test sequences               | OpenType/Graphite tag
 :------------ | :--------------------------- |  :-------
-Default       | <span class='annapurna-R normal'>झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | 
-Nepali ('nep')| <span class='annapurna-R normal' lang="nep">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | `NEP `
-Newari ('new')| <span class='annapurna-R normal' lang="new">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | `NEW `
+Default       | <span class='annapurna-R normal'>झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | `none`
+Nepali        | <span class='annapurna-R normal' lang="ne">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span>  | `NEP  / ne`
+Newari        | <span class='annapurna-R normal' lang="new">झ झ् झ़ झ़् झ्र झ़्र  &nbsp;&nbsp;  ५ ८ ९</span> | `NEW  / new`
 
 ## User-selected feature list
 

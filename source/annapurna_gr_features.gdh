@@ -220,20 +220,21 @@ endtable;	// feature
 
 table(language)
 
-newar {
-	languages = ( "new" );	// Newar
-	jha = newar;
-	digit5 = true;
-	digit8 = true;
-	digit9 = form3;
-};
-
 nepali {
-	languages = ( "nep" );	// Nepali
+	languages = ( "ne", "nep" );	// Nepali
 	jha = nepal;
 	digit5 = true;
 	digit8 = true;
 	digit9 = form2;
+};
+
+
+newari {
+	languages = ( "new" );	// Newari
+	jha = newar;
+	digit5 = true;
+	digit8 = true;
+	digit9 = form3;
 };
 
 
