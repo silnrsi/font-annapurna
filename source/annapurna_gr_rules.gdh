@@ -1450,6 +1450,7 @@ else
     c_rudot_lig  >  c_rudot_stack;
 endif;
 
+
 if (cha) // cv17
     g__dev_cha       >  g__dev_cha_alt;
     g__dev_half_cha  >  g__dev_half_cha_alt;
@@ -1457,6 +1458,27 @@ else
     g__dev_cha_alt       >  g__dev_cha;
     g__dev_half_cha_alt  >  g__dev_half_cha;
 endif;
+ 
+if (headstroke == standard) // cv21
+	g__dev_headstroke_filler   >  g__dev_headstroke;
+	g__dev_headstroke_discrete >  g__dev_headstroke;
+endif;
+if (headstroke == discrete) // cv21=1
+	g__dev_headstroke          >  g__dev_headstroke_discrete;
+	g__dev_headstroke_filler   >  g__dev_headstroke_discrete;
+endif;
+if (headstroke == filler)  // cv21=2
+	g__dev_headstroke          >  g__dev_headstroke_filler;
+	g__dev_headstroke_discrete >  g__dev_headstroke_filler;
+endif;
+
+
+if (jainom) // cv22
+    g__dev_jain_om      >  g__dev_jain_om_alt;
+else
+    g__dev_jain_om_alt  >  g__dev_jain_om;
+endif;
+
 
 if (rya) // special case
 	g__dev_ra g__dev_halant g_zwnj cls_ya_ra_noalt		>  _  _  _  cls_rya_ra_alt_half:(1 2 3 4);

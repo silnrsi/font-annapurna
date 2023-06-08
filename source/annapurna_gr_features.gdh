@@ -204,6 +204,33 @@ cha {
 	bool
 }
 
+headstroke {
+	id = "cv21";
+	name.1033 = string("Headstroke alternates");
+	default = 0;
+	settings {
+		standard {
+			value = 0;
+			name.1033 = string("Standard");
+		}
+		discrete {
+			value = 1;
+			name.1033 = string("Discrete");
+		}
+		filler {
+			value = 2;
+			name.1033 = string("Filler (zero width)");
+		}
+	}
+}
+
+jainom {
+	id = "cv22";
+    id.hidden = "ss22";	//
+	name.1033 = string("Jain Om alternate");
+	bool
+}
+
 rya {
 	id = "ryav";
 	name.1033 = string("Rya alternate");
