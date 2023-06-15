@@ -353,10 +353,10 @@
     DevVowelCandraANukta DevVowelCandraO DevVowelCandraONukta DevVowelShortO DevVowelShortONukta DevVowelO DevVowelONukta DevVowelAU DevVowelAUNukta DevVowelII DevVowelIINukta DevVowelCandraE  
     DevVowelCandraENukta DevVowelShortE DevVowelShortENukta DevVowelAI DevVowelAINukta @cDevMatra_ii_variants DevMaatraOE  ] ; 
 
-@cLtnAllChars = [ exclam.alt quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma  
-    hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question.alt at A B C  
-    D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i  
-    j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde nbspace exclamdown cent sterling currency yen brokenbar  
+@cLtnAllChars = [ exclam exclam.alt quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma  
+    hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question question.alt at 
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave 
+    a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde nbspace exclamdown cent sterling currency yen brokenbar  
     section dieresis copyright ordfeminine guillemotleft logicalnot RegisteredSgn macron degree plusminus twosuperior threesuperior  
     acute mu paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown  
     Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex  

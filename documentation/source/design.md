@@ -58,7 +58,7 @@ U+20B9        | <span class='annapurna-R normal'> &#x20B9; </span>
 
 Unicode range | Unicode characters                       
 :-------------| :---------------------------
-U+A830..U+0839| <span class='annapurna-R normal'>	꠰	꠱	꠲	꠳	꠴	꠵	꠶	꠷	꠸	꠹ </span>
+U+A830..U+A839| <span class='annapurna-R normal'>	꠰	꠱	꠲	꠳	꠴	꠵	꠶	꠷	꠸	꠹ </span>
 
 <p> For a complete list of Latin, punctuation and other Unicode characters included in Annapurna, see [Character Set Support](charset.md). <br> 
 *Note: Inclusion of basic Latin repertoire is provided as a convenience but is not intended for extensive Latin script use.* </p>
