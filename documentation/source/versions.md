@@ -19,7 +19,7 @@ Annapurna SIL is also available through the [TypeTuner Web](https://scripts.sil.
 
 ## Previous versions
 
-Previous versions remain available from our [Previous Versions archive](https://software.sil.org/annapurna/download/previous-versions).
+Previous versions remain available from our [Annapurna SIL download page](https://software.sil.org/annapurna/download/).
 
 ## Change history
 
