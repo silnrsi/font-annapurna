@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="_BarTopShortExt" format="2">
+  <advance width="244"/>
+  <outline>
+    <contour>
+      <point x="274" y="1346" type="line"/>
+      <point x="-136" y="1346" type="line"/>
+      <point x="-30" y="1162" type="line"/>
+      <point x="380" y="1162" type="line"/>
+    </contour>
+  </outline>
+</glyph>

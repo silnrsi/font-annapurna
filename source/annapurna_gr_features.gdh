@@ -217,8 +217,12 @@ headstroke {
 			value = 1;
 			name.1033 = string("Discrete");
 		}
-		filler {
+		extend {
 			value = 2;
+			name.1033 = string("Extended (has width)");
+		}
+		filler {
+			value = 3;
 			name.1033 = string("Filler (zero width)");
 		}
 	}

@@ -704,6 +704,8 @@
   <string>D_evH_eadstroke.glif</string>
   <key>DevHeadstroke.discrete</key>
   <string>D_evH_eadstroke.discrete.glif</string>
+  <key>DevHeadstroke.extend</key>
+  <string>D_evH_eadstroke.extend.glif</string>
   <key>DevHeadstroke.filler</key>
   <string>D_evH_eadstroke.filler.glif</string>
   <key>DevHeavyYa</key>
@@ -1152,8 +1154,12 @@
   <string>D_evR_aE_.glif</string>
   <key>DevRaMaatraU</key>
   <string>D_evR_aM_aatraU_.glif</string>
+  <key>DevRaMaatraU.wide</key>
+  <string>D_evR_aM_aatraU_.wide.glif</string>
   <key>DevRaMaatraUNukta</key>
   <string>D_evR_aM_aatraU_N_ukta.glif</string>
+  <key>DevRaMaatraUNukta.wide</key>
+  <string>D_evR_aM_aatraU_N_ukta.wide.glif</string>
   <key>DevRaMaatraUU</key>
   <string>D_evR_aM_aatraU_U_.glif</string>
   <key>DevRaMaatraUUNukta</key>
@@ -1166,8 +1172,12 @@
   <string>D_evR_aN_uktaE_.glif</string>
   <key>DevRaNuktaMaatraU</key>
   <string>D_evR_aN_uktaM_aatraU_.glif</string>
+  <key>DevRaNuktaMaatraU.wide</key>
+  <string>D_evR_aN_uktaM_aatraU_.wide.glif</string>
   <key>DevRaNuktaMaatraUNukta</key>
   <string>D_evR_aN_uktaM_aatraU_N_ukta.glif</string>
+  <key>DevRaNuktaMaatraUNukta.wide</key>
+  <string>D_evR_aN_uktaM_aatraU_N_ukta.wide.glif</string>
   <key>DevRaNuktaMaatraUU</key>
   <string>D_evR_aN_uktaM_aatraU_U_.glif</string>
   <key>DevRaNuktaMaatraUUNukta</key>
@@ -1660,6 +1670,8 @@
   <string>Z_eroW_idthN_onJ_oiner.glif</string>
   <key>ZeroWidthSpace</key>
   <string>Z_eroW_idthS_pace.glif</string>
+  <key>_BarTopShortExt</key>
+  <string>_B_arT_opS_hortE_xt.glif</string>
   <key>a</key>
   <string>a.glif</string>
   <key>aacute</key>

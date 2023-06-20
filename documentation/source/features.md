@@ -171,7 +171,8 @@ Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>ꣻ</span> | `cv21=0`
 Discrete | <span class='annapurna-R normal' style='font-feature-settings: "cv21" 1'>ꣻ</span> | `cv21=1`
-Filler (zero width)| <span class='annapurna-R normal' style='font-feature-settings: "cv21" 2'>ꣻ</span> | `cv21=2`
+Extended (has width)| <span class='annapurna-R normal' style='font-feature-settings: "cv21" 2'>ꣻ</span> | `cv21=2`
+Filler  (zero width)| <span class='annapurna-R normal' style='font-feature-settings: "cv21" 3'>ꣻ</span> | `cv21=3`
 
 #### JainOm alternate
 

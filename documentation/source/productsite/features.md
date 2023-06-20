@@ -167,7 +167,8 @@ Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>ꣻ</span> | `cv21=0`
 Discrete | <span class='annapurna-cv21-1-R normal'>ꣻ</span> | `cv21=1`
-Filler (zero width)| <span class='annapurna-cv21-2-R normal'>ꣻ</span> | `cv21=2`
+Extended (has width)| <span class='annapurna-cv21-2-R normal'>ꣻ</span> | `cv21=2`
+Filler  (zero width)| <span class='annapurna-cv21-3-R normal'>ꣻ</span> | `cv21=3`
 
 #### JainOm alternate
 
@@ -236,4 +237,5 @@ Mixed styles     | <span class='annapurna-R normal'>नमस्ते! Namaste!
 [font id='annapurna-cv17-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv17 1']
 [font id='annapurna-cv21-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv21 1']
 [font id='annapurna-cv21-2' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv21 2']
+[font id='annapurna-cv21-3' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv21 3']
 [font id='annapurna-cv22-1' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%' feats='cv22 1']

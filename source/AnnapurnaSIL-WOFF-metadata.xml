@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata version="1.0">
-  <uniqueid id="org.sil.fonts.AnnapurnaSIL.1.954" />
+  <uniqueid id="org.sil.fonts.AnnapurnaSIL.1.955" />
   <vendor name="SIL International" url="https://www.sil.org" />
   <credits>
     <credit
       name="Jonathan Coblentz, Sharon Correll, Peter Martin"
-      url="https://software.sil.org/wstech/"
+      url="https://software.sil.org/annapurna/"
       role="SIL font designers and engineers"
     />
   </credits>

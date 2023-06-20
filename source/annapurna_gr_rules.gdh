@@ -1462,14 +1462,22 @@ endif;
  
 if (headstroke == standard) // cv21
     g__dev_headstroke_filler   >  g__dev_headstroke;
+    g__dev_headstroke_extend   >  g__dev_headstroke;
     g__dev_headstroke_discrete >  g__dev_headstroke;
 endif;
 if (headstroke == discrete) // cv21=1
     g__dev_headstroke          >  g__dev_headstroke_discrete;
+    g__dev_headstroke_extend   >  g__dev_headstroke_discrete;
     g__dev_headstroke_filler   >  g__dev_headstroke_discrete;
 endif;
-if (headstroke == filler)  // cv21=2
+if (headstroke == extend)  // cv21=2
+    g__dev_headstroke          >  g__dev_headstroke_extend;
+    g__dev_headstroke_filler   >  g__dev_headstroke_extend;
+    g__dev_headstroke_discrete >  g__dev_headstroke_extend;
+endif;
+if (headstroke == filler)  // cv21=3
     g__dev_headstroke          >  g__dev_headstroke_filler;
+    g__dev_headstroke_extend   >  g__dev_headstroke_filler;
     g__dev_headstroke_discrete >  g__dev_headstroke_filler;
 endif;
 
