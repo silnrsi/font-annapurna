@@ -602,17 +602,22 @@ feature blwm {  # Below-Base Mark Positioning
 
 feature blws {  # Below-Base Substitutions
     script DFLT;  # Default
-        language dflt;  # Default
+        language dflt;  # Default;
+            lookup RUstackLigatures;
             lookup ConsMatraLigatures;
     script dev2;  # Devanagari v.2 
-        language dflt;  # Default
+        language dflt;  # Default;
+            lookup RUstackLigatures;
             lookup ConsMatraLigatures;
-        language NEP  exclude_dflt;  # Nepali
+        language NEP  exclude_dflt;  # Nepali;
+            lookup RUstackLigatures;
             lookup ConsMatraLigatures;
-        language NEW  exclude_dflt;  # Newari
+        language NEW  exclude_dflt;  # Newari;
+            lookup RUstackLigatures;
             lookup ConsMatraLigatures;
     script deva;  # Devanagari
-        language dflt;  # Default
+        language dflt;  # Default;
+            lookup RUstackLigatures;
             lookup ConsMatraLigatures;
 } blws ;
 
@@ -916,7 +921,8 @@ feature cv21 {  # Character Variant 21
     cvParameters {
       FeatUILabelNameID  { name 3 1 0x0409 "Headstroke alternates" ; };
       ParamUILabelNameID { name 3 1 0x0409 "Discrete headstroke" ; };
-      ParamUILabelNameID { name 3 1 0x0409 "Headstroke filler" ; };
+      ParamUILabelNameID { name 3 1 0x0409 "Short headstroke" ; };
+      ParamUILabelNameID { name 3 1 0x0409 "Filler headstroke" ; };
     } ;
     script DFLT;  # Default
         lookup CharVar21AltHeadstroke;

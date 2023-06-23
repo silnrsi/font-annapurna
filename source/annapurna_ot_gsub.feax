@@ -1029,6 +1029,14 @@ lookup VowelMarkLigatures {
     sub DevVowelII DevCandrabindu by DevVowelIICandrabindu ;
 } VowelMarkLigatures;
 
+lookup RUstackLigatures {
+  lookupflag 0 ;
+    sub DevRa      [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraU      by DevRaMaatraU ;
+    sub DevRa      [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraUNukta by DevRaMaatraUNukta ;
+    sub DevRaNukta [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraU      by DevRaNuktaMaatraU ;
+    sub DevRaNukta [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraUNukta by DevRaNuktaMaatraUNukta ;
+} RUstackLigatures;
+
 lookup ConsMatraLigatures {
   lookupflag 0 ;
     sub DevHa DevMaatraR by DevH.Ri ;

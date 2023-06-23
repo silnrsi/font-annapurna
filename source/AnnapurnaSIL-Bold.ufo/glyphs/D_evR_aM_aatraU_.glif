@@ -6,6 +6,6 @@
   <anchor x="527" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevRa"/>
-    <component base="DevMaatraU" xOffset="986" yOffset="-9"/>
+    <component base="DevMaatraU" xOffset="1136" yOffset="-9"/>
   </outline>
 </glyph>

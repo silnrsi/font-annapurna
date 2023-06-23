@@ -7,6 +7,6 @@
   <outline>
     <component base="DevRa"/>
     <component base="DevNukta" xOffset="687" yOffset="349"/>
-    <component base="DevMaatraU" xOffset="916" yOffset="30"/>
+    <component base="DevMaatraU" xOffset="1136" yOffset="30"/>
   </outline>
 </glyph>
