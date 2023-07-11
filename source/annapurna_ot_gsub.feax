@@ -1308,7 +1308,7 @@ lookup StyleSet17AltCha {
 
 lookup CharVar21AltHeadstroke {
   lookupflag 0 ;
-    sub DevHeadstroke from [ DevHeadstroke.discrete DevHeadstroke.extend DevHeadstroke.filler ] ;
+    sub DevHeadstroke from [ DevHeadstroke.discrete DevHeadstroke.narrow DevHeadstroke.filler ] ;
 } CharVar21AltHeadstroke;
 
 lookup CharVar22AltJainOm {

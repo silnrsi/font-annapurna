@@ -167,7 +167,7 @@ Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>ꣻ</span> | `cv21=0`
 Discrete | <span class='annapurna-cv21-1-R normal'>ꣻ</span> | `cv21=1`
-Extended (has width)| <span class='annapurna-cv21-2-R normal'>ꣻ</span> | `cv21=2`
+Narrow   | <span class='annapurna-cv21-2-R normal'>ꣻ</span> | `cv21=2`
 Filler  (zero width)| <span class='annapurna-cv21-3-R normal'>ꣻ</span> | `cv21=3`
 
 #### JainOm alternate

@@ -217,9 +217,9 @@ headstroke {
 			value = 1;
 			name.1033 = string("Discrete");
 		}
-		extend {
+		narrow {
 			value = 2;
-			name.1033 = string("Extended (has width)");
+			name.1033 = string("Narrow");
 		}
 		filler {
 			value = 3;

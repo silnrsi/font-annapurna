@@ -875,7 +875,7 @@ feature cv21 {  # Character Variant 21
     cvParameters {
       FeatUILabelNameID  { name 3 1 0x0409 "Headstroke alternates" ; };
       ParamUILabelNameID { name 3 1 0x0409 "Discrete headstroke" ; };
-      ParamUILabelNameID { name 3 1 0x0409 "Short headstroke" ; };
+      ParamUILabelNameID { name 3 1 0x0409 "Narrow headstroke" ; };
       ParamUILabelNameID { name 3 1 0x0409 "Filler headstroke" ; };
     } ;
     script dev2;  # Devanagari v.2

@@ -13,10 +13,3 @@
 #DevNgNga.YaRa        = DevNg.Nga & DevYaR.alt
 #DevNgNga.YaNuktaRa   = DevNg.Nga & DevYaNuktaR.alt
 
-# 2023-06-20 create composites for a wider DevRaMaatraU
-# Follows naming of similar existing glyph composites
-# Archived for future reference
-# DevRaMaatraU.wide           = DevHeadstroke.extend & DevRaMaatraU
-# DevRaMaatraUNukta.wide      = DevHeadstroke.extend & DevRaMaatraUNukta
-# DevRaNuktaMaatraU.wide      = DevHeadstroke.extend & DevRaNuktaMaatraU
-# DevRaNuktaMaatraUNukta.wide = DevHeadstroke.extend & DevRaNuktaMaatraUNukta
