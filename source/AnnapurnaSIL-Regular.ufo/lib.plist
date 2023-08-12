@@ -333,11 +333,11 @@
     <string>DevVowelShortA</string>
     <string>DevVowelShortANukta</string>
     <string>DevVowelA</string>
-    <string>DevVowelA.archaic</string>
     <string>DevVowelANukta</string>
+    <string>DevVowelA.archaic</string>
     <string>DevVowelAA</string>
-    <string>DevVowelAA.archaic</string>
     <string>DevVowelAANukta</string>
+    <string>DevVowelAA.archaic</string>
     <string>DevVowelI</string>
     <string>DevVowelINukta</string>
     <string>DevVowelII</string>
@@ -365,11 +365,11 @@
     <string>DevVowelShortO</string>
     <string>DevVowelShortONukta</string>
     <string>DevVowelO</string>
-    <string>DevVowelO.archaic</string>
     <string>DevVowelONukta</string>
+    <string>DevVowelO.archaic</string>
     <string>DevVowelAU</string>
-    <string>DevVowelAU.archaic</string>
     <string>DevVowelAUNukta</string>
+    <string>DevVowelAU.archaic</string>
     <string>DevKa</string>
     <string>DevHalfKa</string>
     <string>DevK.Ka</string>
@@ -380,8 +380,8 @@
     <string>DevHalfKaR</string>
     <string>DevHalfKaR.alt</string>
     <string>DevK.Ssa</string>
-    <string>DevK.Ssa.archaic</string>
     <string>DevHalfK.Ssa</string>
+    <string>DevK.Ssa.archaic</string>
     <string>DevHalfK.Ssa.archaic</string>
     <string>DevK.SsaR</string>
     <string>DevHalfK.SsaR</string>
@@ -557,15 +557,15 @@
     <string>DevDdh.YaNuktaRa</string>
     <string>DevHalfDdh.YaNuktaRa</string>
     <string>DevNna</string>
-    <string>DevNna.archaic</string>
+    <string>DevHalfNna</string>
     <string>DevNnaNukta</string>
     <string>DevHalfNnaNukta</string>
-    <string>DevNnaNuktaR</string>
-    <string>DevHalfNnaNuktaR</string>
-    <string>DevHalfNna</string>
-    <string>DevHalfNna.archaic</string>
     <string>DevNnaR</string>
     <string>DevHalfNnaR</string>
+    <string>DevNnaNuktaR</string>
+    <string>DevHalfNnaNuktaR</string>
+    <string>DevNna.archaic</string>
+    <string>DevHalfNna.archaic</string>
     <string>DevTa</string>
     <string>DevTaNukta</string>
     <string>DevHalfTaNukta</string>
