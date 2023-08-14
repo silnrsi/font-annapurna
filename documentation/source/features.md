@@ -169,10 +169,10 @@ With tail or no stem| <span class='annapurna-R normal' style='font-feature-setti
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard | <span class='annapurna-R normal'>ꣻ</span> | `cv21=0`
-Discrete | <span class='annapurna-R normal' style='font-feature-settings: "cv21" 1'>ꣻ</span> | `cv21=1`
-Narrow   | <span class='annapurna-R normal' style='font-feature-settings: "cv21" 2'>ꣻ</span> | `cv21=2`
-Filler  (zero width)| <span class='annapurna-R normal' style='font-feature-settings: "cv21" 3'>ꣻ</span> | `cv21=3`
+Standard | <span class='annapurna-R normal'>ꣻ &nbsp;&nbsp;  कꣻम</span> | `cv21=0`
+Discrete | <span class='annapurna-R normal' style='font-feature-settings: "cv21" 1'>ꣻ &nbsp;&nbsp;  कꣻम</span> | `cv21=1`
+Narrow   | <span class='annapurna-R normal' style='font-feature-settings: "cv21" 2'>ꣻ  &nbsp;&nbsp;&nbsp;&nbsp;  कꣻम </span> | `cv21=2`
+Filler  (zero advance width)| <span class='annapurna-R normal' style='font-feature-settings: "cv21" 3'>ꣻ  &nbsp;&nbsp;&nbsp;&nbsp;  कꣻम </span> | `cv21=3`
 
 #### JainOm alternate
 

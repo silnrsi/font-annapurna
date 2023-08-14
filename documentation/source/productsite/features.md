@@ -165,10 +165,10 @@ With tail or no stem| <span class='annapurna-cv17-1-ss17-1-R normal'>छ छ्<
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard | <span class='annapurna-R normal'>ꣻ</span> | `cv21=0`
-Discrete | <span class='annapurna-cv21-1-R normal'>ꣻ</span> | `cv21=1`
-Narrow   | <span class='annapurna-cv21-2-R normal'>ꣻ</span> | `cv21=2`
-Filler  (zero width)| <span class='annapurna-cv21-3-R normal'>ꣻ</span> | `cv21=3`
+Standard | <span class='annapurna-R normal'>ꣻ &nbsp;&nbsp;  कꣻम</span> | `cv21=0`
+Discrete | <span class='annapurna-cv21-1-R normal'>ꣻ &nbsp;&nbsp;  कꣻम</span> | `cv21=1`
+Narrow   | <span class='annapurna-cv21-2-R normal'>ꣻ  &nbsp;&nbsp;&nbsp;&nbsp;  कꣻम </span> | `cv21=2`
+Filler  (zero advance width)| <span class='annapurna-cv21-3-R normal'>ꣻ  &nbsp;&nbsp;&nbsp;&nbsp;  कꣻम </span> | `cv21=3`
 
 #### JainOm alternate
 
