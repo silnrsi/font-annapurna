@@ -1031,10 +1031,10 @@ lookup VowelMarkLigatures {
 
 lookup RUstackLigatures {
   lookupflag 0 ;
-    sub DevRa      [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraU      by DevRaMaatraU ;
-    sub DevRa      [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraUNukta by DevRaMaatraUNukta ;
-    sub DevRaNukta [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraU      by DevRaNuktaMaatraU ;
-    sub DevRaNukta [ ZeroWidthNonJoiner ZeroWidthJoiner ] DevMaatraUNukta by DevRaNuktaMaatraUNukta ;
+    sub DevRa      ZeroWidthJoiner DevMaatraU      by DevRaMaatraU ;
+    sub DevRa      ZeroWidthJoiner DevMaatraUNukta by DevRaMaatraUNukta ;
+    sub DevRaNukta ZeroWidthJoiner DevMaatraU      by DevRaNuktaMaatraU ;
+    sub DevRaNukta ZeroWidthJoiner DevMaatraUNukta by DevRaNuktaMaatraUNukta ;
 } RUstackLigatures;
 
 lookup ConsMatraLigatures {

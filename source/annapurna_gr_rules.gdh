@@ -536,11 +536,14 @@ table(glyph) {AttributeOverride = false}
 
     cls_noLigBelow_0930     = (g__dev_maatra_u            g__dev_maatra_u_u);
     cls_ligBelow_0930       = (g__dev_r_u        g__dev_r_u_u);
-    cls_ligBelow_0930_alt    = (g__dev_ra_maatra_u    g__dev_ra_maatra_u_u);    // currently not used
 
     cls_noLigBelow_0931     = (g__dev_maatra_u            g__dev_maatra_u_u);
     cls_ligBelow_0931       = (g__dev_r_nukta_u        g__dev_r_nukta_u_u);
-    cls_ligBelow_0931_alt    = (g__dev_ra_nukta_maatra_u    g__dev_ra_nukta_maatra_u_u);    // currently not used
+	
+	// composite ligature alternates
+    cls_maatra_u_comb      = (g__dev_maatra_u  g__dev_maatra_u_nukta  g__dev_maatra_u_u  g__dev_maatra_u_u_nukta);
+    cls_ligBelow_0930_alt  = (g__dev_ra_maatra_u  g__dev_ra_maatra_u_nukta  g__dev_ra_maatra_u_u  g__dev_ra_maatra_u_u_nukta);
+    cls_ligBelow_0931_alt  = (g__dev_ra_nukta_maatra_u  g__dev_ra_nukta_maatra_u_nukta  g__dev_ra_nukta_maatra_u_u  g__dev_ra_nukta_maatra_u_u_nukta);
 
     // currently not used:
 //    cls_ru_alt_ligs = (
@@ -1183,7 +1186,11 @@ pass(PASS_LIGBELOW)        // 8
     //    rules above.
     cno_stackCompress  >  cStackCompress  /  _  cls_matraLower;
 
-    //    Ligatures below
+    //    Ligatures below	
+	//    First, allow for alternate (composite) ligature using ZWJ	
+    g__dev_ra        g_zwj  cls_maatra_u_comb  >  _ _  cls_ligBelow_0930_alt:(1 2 3);
+    g__dev_ra_nukta  g_zwj  cls_maatra_u_comb  >  _ _  cls_ligBelow_0931_alt:(1 2 3);
+	
     g__dev_ha  cls_noLigBelow_0939  >  _  cls_ligBelow_0939:(1 2);
     g__dev_ra  cls_noLigBelow_0930  >  _  cls_ligBelow_0930:(1 2);
     g__dev_ra_nukta  cls_noLigBelow_0931  >  _  cls_ligBelow_0931:(1 2);
