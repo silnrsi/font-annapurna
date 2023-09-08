@@ -153,16 +153,16 @@ lookup Akhand {
     sub DevJa DevHalant DevNya by DevJ.Nya ;
 } Akhand;
 
-lookup akhnEyelashRa_target {
+lookup EyelashRa_target {
   lookupflag 0 ;
     sub DevRa DevHalant by DevHalfRa ;
     sub DevRaNukta DevHalant by DevHalfRaNukta ;
-} akhnEyelashRa_target ;
+} EyelashRa_target ;
 
-lookup akhnEyelashRa {
+lookup EyelashRa {
   lookupflag 0 ;
-    sub [ DevRa DevRaNukta ]' lookup akhnEyelashRa_target DevHalant' ZeroWidthJoiner ;
-} akhnEyelashRa;
+    sub [ DevRa DevRaNukta ]' lookup EyelashRa_target DevHalant' ZeroWidthJoiner ;
+} EyelashRa;
 
 lookup Reph {
   lookupflag 0 ;
@@ -1106,8 +1106,8 @@ lookup dev2_NoHalfHalantForms {
 # first character has a nukta on it. We can do this now (using feax) in the contexual lookups following 
 # this comment.
 
-@cDevCNoStemNuktaHalantForms = [DevHalfNgaNukta DevHalfChaNukta DevHalfTtaNukta DevHalfTthaNukta DevHalfDdaNukta DevHalfDdhaNukta DevHalfRa];
-@cDevCNoStemNuktaForms = [DevNgaNukta DevChaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta DevRaNukta];
+@cDevCNoStemNuktaHalantForms = [DevHalfNgaNukta DevHalfChaNukta DevHalfTtaNukta DevHalfTthaNukta DevHalfDdaNukta DevHalfDdhaNukta]; 
+@cDevCNoStemNuktaForms = [DevNgaNukta DevChaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta]; 
 @cDevYaForms = [DevYa DevHalfYa DevYaNukta DevHalfYaNukta DevYaR DevYaNuktaR]; 
 @cDevYaAltForms = [DevYa.alt DevHalfYa.alt DevYaNukta.alt DevHalfYaNukta.alt DevYaR.alt DevYaNuktaR.alt]; 
 
