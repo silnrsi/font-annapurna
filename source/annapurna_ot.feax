@@ -949,30 +949,25 @@ feature half {  # Half Forms
     script DFLT;  # Default
         language dflt;  # Default
             lookup EyelashRa;
-            lookup both_HalfForms_RAexceptions;
             lookup dev2_HalfPrebaseForms;
             lookup dev2_HalfPrebaseConjunct;
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
             lookup EyelashRa;
-            lookup both_HalfForms_RAexceptions;
             lookup dev2_HalfPrebaseForms;
             lookup dev2_HalfPrebaseConjunct;
             lookup ConsRakarHalfForms;
         language NEP  exclude_dflt;  # Nepali
             lookup EyelashRa;
-            lookup both_HalfForms_RAexceptions;
             lookup dev2_HalfPrebaseForms;
             lookup dev2_HalfPrebaseConjunct;
         language NEW  exclude_dflt;  # Newari
             lookup EyelashRa;
-            lookup both_HalfForms_RAexceptions;
             lookup dev2_HalfPrebaseForms;
             lookup dev2_HalfPrebaseConjunct;
     script deva;  # Devanagari
         language dflt;  # Default
             lookup EyelashRa;
-            lookup both_HalfForms_RAexceptions;
             lookup deva_HalfForms;
             lookup deva_HalfConjunctForms;
             lookup ConsRakarHalfForms;

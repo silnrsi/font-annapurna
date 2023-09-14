@@ -1187,16 +1187,17 @@ lookup Akhand {
     sub DevJa DevHalant DevNya by DevJ.Nya;
 } Akhand;
 
-lookup akhnEyelashRa_target {
+lookup EyelashRa_target {
     lookupflag 0;
     sub DevRa DevHalant by DevHalfRa;
     sub DevRaNukta DevHalant by DevHalfRaNukta;
-} akhnEyelashRa_target;
+} EyelashRa_target;
 
-lookup akhnEyelashRa {
+lookup EyelashRa {
     lookupflag 0;
-    sub [DevRa DevRaNukta]' lookup akhnEyelashRa_target DevHalant' ZeroWidthJoiner;
-} akhnEyelashRa;
+    sub [DevRa DevRaNukta]' lookup EyelashRa_target DevHalant' ZeroWidthJoiner;
+    sub [DevRa DevRaNukta]' lookup EyelashRa_target DevHalant' DevYa;
+} EyelashRa;
 
 lookup Reph {
     lookupflag 0;
@@ -1320,17 +1321,6 @@ lookup dev2_Rakar {
     ignore sub @cDevFullRakarForms DevHalant' DevRa';
 } dev2_Rakar;
 
-lookup both_HalfForms_RAexceptions_target {
-    lookupflag 0;
-    sub DevRa DevHalant by DevHalfRa;
-    sub DevRaNukta DevHalant by DevHalfRa;
-} both_HalfForms_RAexceptions_target;
-
-lookup both_HalfForms_RAexceptions {
-    lookupflag 0;
-    ignore sub [DevRa] DevHalant [DevRa DevRaNukta]' DevHalant';
-} both_HalfForms_RAexceptions;
-
 lookup deva_HalfForms {
     lookupflag 0;
     sub DevKa DevHalant by DevHalfKa;
@@ -1393,6 +1383,8 @@ lookup deva_HalfForms {
     sub DevYaNukta DevHalant by DevHalfYaNukta;
     sub DevYa.alt DevHalant by DevHalfYa.alt;
     sub DevYaNukta.alt DevHalant by DevHalfYaNukta.alt;
+    sub DevRaNukta DevHalant by DevHalfRa;
+    # RRA half form exception (eyelash no nukta form, use ZWJ to get eyelash with nukta)
     sub DevLa DevHalant by DevHalfLa;
     sub DevLaNukta DevHalant by DevHalfLaNukta;
     sub DevLla DevHalant by DevHalfLla;
@@ -1473,6 +1465,8 @@ lookup dev2_HalfPrebaseForms {
     sub DevYaNukta DevHalant by DevHalfYaNukta;
     sub DevYa.alt DevHalant by DevHalfYa.alt;
     sub DevYaNukta.alt DevHalant by DevHalfYaNukta.alt;
+    sub DevRaNukta DevHalant by DevHalfRa;
+    # RRA half form exception (eyelash no nukta form, use ZWJ to get eyelash with nukta)
     sub DevLa DevHalant by DevHalfLa;
     sub DevLaNukta DevHalant by DevHalfLaNukta;
     sub DevLla DevHalant by DevHalfLla;
@@ -2072,10 +2066,10 @@ lookup VowelMarkLigatures {
 
 lookup RUstackLigatures {
     lookupflag 0;
-    sub DevRa [ZeroWidthNonJoiner ZeroWidthJoiner] DevMaatraU by DevRaMaatraU;
-    sub DevRa [ZeroWidthNonJoiner ZeroWidthJoiner] DevMaatraUNukta by DevRaMaatraUNukta;
-    sub DevRaNukta [ZeroWidthNonJoiner ZeroWidthJoiner] DevMaatraU by DevRaNuktaMaatraU;
-    sub DevRaNukta [ZeroWidthNonJoiner ZeroWidthJoiner] DevMaatraUNukta by DevRaNuktaMaatraUNukta;
+    sub DevRa ZeroWidthJoiner DevMaatraU by DevRaMaatraU;
+    sub DevRa ZeroWidthJoiner DevMaatraUNukta by DevRaMaatraUNukta;
+    sub DevRaNukta ZeroWidthJoiner DevMaatraU by DevRaNuktaMaatraU;
+    sub DevRaNukta ZeroWidthJoiner DevMaatraUNukta by DevRaNuktaMaatraUNukta;
 } RUstackLigatures;
 
 lookup ConsMatraLigatures {
@@ -2146,8 +2140,8 @@ lookup dev2_NoHalfHalantForms {
 # "lookup dev2_Conjuncts_NoPrebase_Ya" above). We received a request that this should also happen when the 
 # first character has a nukta on it. We can do this now (using feax) in the contexual lookups following 
 # this comment.
-@cDevCNoStemNuktaHalantForms = [DevHalfNgaNukta DevHalfChaNukta DevHalfTtaNukta DevHalfTthaNukta DevHalfDdaNukta DevHalfDdhaNukta DevHalfRa];
-@cDevCNoStemNuktaForms = [DevNgaNukta DevChaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta DevRaNukta];
+@cDevCNoStemNuktaHalantForms = [DevHalfNgaNukta DevHalfChaNukta DevHalfTtaNukta DevHalfTthaNukta DevHalfDdaNukta DevHalfDdhaNukta];
+@cDevCNoStemNuktaForms = [DevNgaNukta DevChaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta];
 @cDevYaForms = [DevYa DevHalfYa DevYaNukta DevHalfYaNukta DevYaR DevYaNuktaR];
 @cDevYaAltForms = [DevYa.alt DevHalfYa.alt DevYaNukta.alt DevHalfYaNukta.alt DevYaR.alt DevYaNuktaR.alt];
 lookup noHalf_subst {
@@ -3894,21 +3888,17 @@ feature akhn {
     language dflt;
     # Default
     lookup Akhand;
-    lookup akhnEyelashRa;
     script dev2;
     # Devanagari v.2 
     language dflt;
     # Default
     lookup Akhand;
-    lookup akhnEyelashRa;
     language NEP exclude_dflt;
     # Nepali
     lookup Akhand;
-    lookup akhnEyelashRa;
     language NEW exclude_dflt;
     # Newari
     lookup Akhand;
-    lookup akhnEyelashRa;
     script deva;
     # Devanagari
     language dflt;
@@ -4462,32 +4452,32 @@ feature half {
     # Default
     language dflt;
     # Default
-    lookup both_HalfForms_RAexceptions;
+    lookup EyelashRa;
     lookup dev2_HalfPrebaseForms;
     lookup dev2_HalfPrebaseConjunct;
     script dev2;
     # Devanagari v.2 
     language dflt;
     # Default
-    lookup both_HalfForms_RAexceptions;
+    lookup EyelashRa;
     lookup dev2_HalfPrebaseForms;
     lookup dev2_HalfPrebaseConjunct;
     lookup ConsRakarHalfForms;
     language NEP exclude_dflt;
     # Nepali
-    lookup both_HalfForms_RAexceptions;
+    lookup EyelashRa;
     lookup dev2_HalfPrebaseForms;
     lookup dev2_HalfPrebaseConjunct;
     language NEW exclude_dflt;
     # Newari
-    lookup both_HalfForms_RAexceptions;
+    lookup EyelashRa;
     lookup dev2_HalfPrebaseForms;
     lookup dev2_HalfPrebaseConjunct;
     script deva;
     # Devanagari
     language dflt;
     # Default
-    lookup both_HalfForms_RAexceptions;
+    lookup EyelashRa;
     lookup deva_HalfForms;
     lookup deva_HalfConjunctForms;
     lookup ConsRakarHalfForms;

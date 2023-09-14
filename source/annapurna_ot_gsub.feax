@@ -161,7 +161,8 @@ lookup EyelashRa_target {
 
 lookup EyelashRa {
   lookupflag 0 ;
-    sub [ DevRa DevRaNukta ]' lookup EyelashRa_target DevHalant' ZeroWidthJoiner ;
+    sub [DevRa DevRaNukta]' lookup EyelashRa_target DevHalant' ZeroWidthJoiner ;
+    sub [DevRa DevRaNukta]' lookup EyelashRa_target DevHalant' DevYa ;
 } EyelashRa;
 
 lookup Reph {
@@ -286,17 +287,6 @@ lookup dev2_Rakar {
     ignore sub @cDevFullRakarForms DevHalant' DevRa' ;
 } dev2_Rakar;
 
-lookup both_HalfForms_RAexceptions_target {
-  lookupflag 0 ;
-    sub DevRa DevHalant by DevHalfRa ;
-    sub DevRaNukta DevHalant by DevHalfRa ;
-} both_HalfForms_RAexceptions_target ;
-
-lookup both_HalfForms_RAexceptions {
-  lookupflag 0 ;
-    ignore sub [ DevRa ] DevHalant [ DevRa DevRaNukta ]'  DevHalant' ;
-} both_HalfForms_RAexceptions;
-
 lookup deva_HalfForms {
   lookupflag 0 ;
     sub DevKa DevHalant by DevHalfKa ;
@@ -359,6 +349,7 @@ lookup deva_HalfForms {
     sub DevYaNukta DevHalant by DevHalfYaNukta ;
     sub DevYa.alt DevHalant by DevHalfYa.alt ;
     sub DevYaNukta.alt DevHalant by DevHalfYaNukta.alt ;
+    sub DevRaNukta DevHalant by DevHalfRa ;  # RRA half form exception (eyelash no nukta form, use ZWJ to get eyelash with nukta)
     sub DevLa DevHalant by DevHalfLa ;
     sub DevLaNukta DevHalant by DevHalfLaNukta ;
     sub DevLla DevHalant by DevHalfLla ;
@@ -439,6 +430,7 @@ lookup dev2_HalfPrebaseForms {
     sub DevYaNukta DevHalant by DevHalfYaNukta ;
     sub DevYa.alt DevHalant by DevHalfYa.alt ;
     sub DevYaNukta.alt DevHalant by DevHalfYaNukta.alt ;
+    sub DevRaNukta DevHalant by DevHalfRa ;  # RRA half form exception (eyelash no nukta form, use ZWJ to get eyelash with nukta)
     sub DevLa DevHalant by DevHalfLa ;
     sub DevLaNukta DevHalant by DevHalfLaNukta ;
     sub DevLla DevHalant by DevHalfLla ;
