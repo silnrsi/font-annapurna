@@ -155,6 +155,16 @@ table(glyph) {AttributeOverride = false}
 
     cls_vowelLeft = (g__dev_maatra_i, g__dev_prishthamatra_e);
     cls_vowelRight = (g__dev_maatra_o_o_e, g__dev_maatra_a_a, g__dev_maatra_i_i, g__dev_maatra_candra_o, g__dev_maatra_short_o, g__dev_maatra_o, g__dev_maatra_a_u, g__dev_maatra_a_w);    // these can have RAs attached
+    cls_vowelFull = (
+        g__dev_vowel_short_a, g__dev_vowel_short_a_nukta, g__dev_vowel_a, g__dev_vowel_a_nukta, g__dev_vowel_a_archaic, 
+		g__dev_vowel_a_a, g__dev_vowel_a_a_nukta, g__dev_vowel_a_a_archaic, 
+		g__dev_vowel_i, g__dev_vowel_i_nukta, g__dev_vowel_i_i, g__dev_vowel_i_i_candrabindu, g__dev_vowel_i_i_bindu, g__dev_vowel_i_i_nukta, 
+		g__dev_vowel_u, g__dev_vowel_u_nukta, g__dev_vowel_u_u, g__dev_vowel_u_u_nukta, 
+		g__dev_vowel_r, g__dev_vowel_r_nukta, g__dev_vowel_l, g__dev_vowel_l_nukta, 
+		g__dev_vowel_candra_e, g__dev_vowel_candra_e_nukta, g__dev_vowel_short_e, g__dev_vowel_short_e_nukta, g__dev_vowel_e, g__dev_vowel_e_nukta, 
+		g__dev_vowel_a_i, g__dev_vowel_a_i_nukta, 
+		g__dev_vowel_candra_o, g__dev_vowel_candra_o_nukta, g__dev_vowel_short_o, g__dev_vowel_short_o_nukta, g__dev_vowel_o, g__dev_vowel_o_nukta, g__dev_vowel_o_archaic, 
+		g__dev_vowel_a_u, g__dev_vowel_a_u_nukta, g__dev_vowel_a_u_archaic);
 
 
     //    Nukta and nukta forms
@@ -916,6 +926,12 @@ pass(PASS_VORDER)    // 4
 
     //    Reorder I vowel (i-kaar, matra-I) and 094E.
     //    TODO: possibly add yet another consonant in the chain.
+
+
+    //    Rare case - reorder ikar before full vowel and possible cons or half-cons 
+    cls_nHalf g_halant  g_zwj  cls_vowelFull  cls_vowelLeft  > @5 @1 @2 @3 @4; // reorder before a forced halfCons (by use of ZWJ) 
+    cls_nHalf cls_vowelFull  cls_vowelLeft  > @3 @1 @2;                        // reorder before fullCons 
+    cls_vowelFull  cls_vowelLeft  > @2 @1 ;                                    // only reorders before a fullVowel
 
 
     //    Matra-I does not reorder before explicit halants - redundant.

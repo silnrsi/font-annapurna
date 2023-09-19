@@ -1,0 +1,9 @@
+Annapurna v 2.000
+reorder halfCons+fullVowel+ikar
+ब्‍अि
+reorder fullCons+fullVowel+ikar
+बअि
+reorder fullVowel+ikar
+अि
+reorder Cons+halant+fullVowel+ikar
+ब्अि
