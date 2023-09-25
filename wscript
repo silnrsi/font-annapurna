@@ -24,7 +24,6 @@ getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
 cmds = []
 cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']))
 cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
-cmds.append(cmd('gftools fix-font ${DEP} -o ${TGT}'))
 
 # set the build and test parameters
 d = designspace('source/AnnapurnaSIL-RB.designspace',
@@ -54,4 +53,3 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
 
 def configure(ctx) :
     ctx.find_program('ttfautohint')
-    ctx.find_program('gftools')
