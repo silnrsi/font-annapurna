@@ -409,21 +409,9 @@ include (../source/annapurna_ot_gpos.feax)
 #  Features
 #**********************************
 
-#feature aalt {  # Access All Alternates
-#    script DFLT;  # Default
-#        language dflt;  # Default
-#            lookup AllAlternates;
-#    script dev2;  # Devanagari v.2 
-#        language dflt;  # Default
-#            lookup AllAlternates;
-#        language NEP  exclude_dflt;  # Nepali
-#            lookup AllAlternates;
-#        language NEW  exclude_dflt;  # Newari
-#            lookup AllAlternates;
-#    script deva;  # Devanagari
-#        language dflt;  # Default
-#            lookup AllAlternates;
-#} aalt ;
+feature aalt {  # Access All Alternates
+            lookup AllAlternates;
+} aalt ;
 
 feature abvm {  # Above-Base Mark Positioning
     script DFLT;  # Default

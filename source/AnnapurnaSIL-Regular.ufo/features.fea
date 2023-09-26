@@ -2539,6 +2539,10 @@ lookup AllAlternates {
     sub DevNna from [DevNna.archaic];
     sub DevHalfNna from [DevHalfNna.archaic];
     sub DevTaR from [DevTaR.alt];
+    sub DevR.UU from [DevRaMaatraUU];
+    sub DevR.UUNukta from [DevRaMaatraUUNukta];
+    sub DevRNukta.UU from [DevRaNuktaMaatraUU];
+    sub DevRNukta.UUNukta from [DevRaNuktaMaatraUUNukta];
     sub DevShaR from [DevShaR.alt];
     sub DevMaatraUNukta from [DevMaatraUNukta.alt];
     sub DevMaatraUUNukta from [DevMaatraUUNukta.alt];
@@ -3759,21 +3763,11 @@ lookup BelowHalantAdjust {
 #**********************************
 #  Features
 #**********************************
-#feature aalt {  # Access All Alternates
-#    script DFLT;  # Default
-#        language dflt;  # Default
-#            lookup AllAlternates;
-#    script dev2;  # Devanagari v.2 
-#        language dflt;  # Default
-#            lookup AllAlternates;
-#        language NEP  exclude_dflt;  # Nepali
-#            lookup AllAlternates;
-#        language NEW  exclude_dflt;  # Newari
-#            lookup AllAlternates;
-#    script deva;  # Devanagari
-#        language dflt;  # Default
-#            lookup AllAlternates;
-#} aalt ;
+feature aalt {
+    # Access All Alternates
+    lookup AllAlternates;
+} aalt;
+
 feature abvm {
     # Above-Base Mark Positioning
     script DFLT;

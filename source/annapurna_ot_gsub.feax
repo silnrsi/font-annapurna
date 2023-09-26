@@ -1500,6 +1500,10 @@ lookup AllAlternates {
     sub DevNna from [ DevNna.archaic ] ;
     sub DevHalfNna from [ DevHalfNna.archaic ] ;
     sub DevTaR from [ DevTaR.alt ] ;
+    sub DevR.UU from [ DevRaMaatraUU ] ;
+    sub DevR.UUNukta from [ DevRaMaatraUUNukta ] ;
+    sub DevRNukta.UU from [ DevRaNuktaMaatraUU ] ;
+    sub DevRNukta.UUNukta from [ DevRaNuktaMaatraUUNukta ] ;
     sub DevShaR from [ DevShaR.alt ] ;
     sub DevMaatraUNukta from [ DevMaatraUNukta.alt ] ;
     sub DevMaatraUUNukta from [ DevMaatraUUNukta.alt ] ;
