@@ -2772,5 +2772,11 @@
     <key>zwnbsp</key>
     <string>uniFEFF</string>
   </dict>
+  <key>public.skipExportGlyphs</key>
+  <array>
+    <string>DevRaVattu.alt</string>
+    <string>DevAaCndrbndRaAi</string>
+    <string>DevNgAaCndrbndRaAi.001</string>
+  </array>
 </dict>
 </plist>
