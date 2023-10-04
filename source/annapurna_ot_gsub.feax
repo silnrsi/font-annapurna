@@ -285,6 +285,7 @@ lookup dev2_Rakar_target {
 lookup dev2_Rakar {
   lookupflag 0 ;
     ignore sub @cDevFullRakarForms DevHalant' DevRa' ;
+    sub DevHalant' lookup dev2_Rakar_target DevRa' ;
 } dev2_Rakar;
 
 lookup deva_HalfForms {
@@ -1284,13 +1285,13 @@ lookup StyleSet15ArchaicForms {
     sub DevHalfK.Ssa by DevHalfK.Ssa.archaic ;
 } StyleSet15ArchaicForms;
 
-lookup CharVar16AltRaUkarNukta {
+lookup StyleSet16AltRaUkarNukta {
   lookupflag 0 ;
     sub DevRa      DevMaatraUNukta  by DevR.UNukta ;
     sub DevRaNukta DevMaatraUNukta  by DevRNukta.UNukta ;
     sub DevRa      DevMaatraUUNukta by DevR.UUNukta ;
     sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta ;
-} CharVar16AltRaUkarNukta;
+} StyleSet16AltRaUkarNukta;
 
 lookup StyleSet17AltCha {
   lookupflag 0 ;

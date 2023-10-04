@@ -3,7 +3,8 @@
 
 # override the default folders
 DOCDIR = ['documentation', 'web']  # add 'web' to default
-# STANDARDS = 'references/v1901'
+# STANDARDS = 'references/dev_build'
+STANDARDS = 'references/v1204'
 
 # set package name
 APPNAME = 'AnnapurnaSIL'
@@ -47,7 +48,7 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
             params = '-v ' + VERSION + ' -m ../source/AnnapurnaSIL-WOFF-metadata.xml'
         ),
 
-        script = ['deva', 'dev2'],
+        script = ['dev2'],
         pdf = fret(params="-r -oi"),
 	)
 
