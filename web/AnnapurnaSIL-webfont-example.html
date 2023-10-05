@@ -23,7 +23,7 @@ of the license along with this Font Software. If this is not the case, go to
     <header>
         <h1 class="title">Annapurna - Webfont Test</h1>
         <p>This is a test of the font family based on the local path references. The page demonstrates how to use the WOFF version of Annapurna for web pages, using local copies of the .woff files in this archive. For more information on this technique - and how to use the normal TrueType version as a web font - see <a href="https://software.sil.org/fonts/webfonts/">Using SIL Fonts on Web Pages</a>.</p>
-		<p>The body of this document is styled using an external stylesheet, with Annapurna set as the default font, and loaded directly as a WOFF file using the @font-face rule. To see specifically how these techniques are specified in the CSS and HTML, view the source to this page and the accompanying CSS file.</p>
+        <p>The body of this document is styled using an external stylesheet, with Annapurna set as the default font, and loaded directly as a WOFF file using the @font-face rule. To see specifically how these techniques are specified in the CSS and HTML, view the source to this page and the accompanying CSS file.</p>
     </header>
     <h2 id="scripts-udhr-26">Example text (UDHR 26)</h2>
     <table>
@@ -49,7 +49,7 @@ of the license along with this Font Software. If this is not the case, go to
     </tbody>
     </table>
     <h2 id="default-behavior">Default behavior</h2>
-	<p>Many font features in Annapurna SIL are common to both OpenType and Graphite rendering engines to render the 	proper shaping of Devanagari characters. Others features (listed below) are used to create a more pleasing look. These features are always “on”.</p>
+    <p>Many font features in Annapurna SIL are common to both OpenType and Graphite rendering engines to render the 	proper shaping of Devanagari characters. Others features (listed below) are used to create a more pleasing look. These features are always “on”.</p>
     <h3 id="common-standard-features">Latin punctuation</h3>
     <p>The Latin characters in Annapurna SIL are derived from the Charis SIL font. However, the exclamation and question marks were redrawn to fit the style of the Annapurna Devanagari glyphs and are used by default. But they will switch to the Charis style punctuation when preceded by a Latin character. This is accomplished by use of the Contextual Alternates OpenType feature.</p>
     <table>
@@ -153,14 +153,15 @@ of the license along with this Font Software. If this is not the case, go to
     </tr>
     </tbody>
     </table>
-	
+    
     <h2 id="user-selectable-features-partial">User-selectable features</h2>
-    <h3 id="character-variants">Character Variants</h3>
+    <h3 id="character-variants">Stylistic Sets (OpenType) or Character Variants (Graphite)</h3>
+    <p> Note: The Stylistic Sets feature has a range of 1 through 20. The Character Variants feature has a range of 1 through 99.</p>
     <h4 id="variant-features">Jha alternates</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -174,20 +175,20 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">झ झ् झ़ झ़् झ्र झ़्र </span></td>
     </tr>
     <tr class="even">
-    <td>'cv01=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv01&quot; 1">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    <td>ss01=1 or cv01=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss01&quot; 1, &quot;cv01&quot; 1">झ झ् झ़ झ़् झ्र झ़्र </span></td>
     </tr>
     <tr class="odd">
-    <td>'cv01=2'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv01&quot; 2">झ झ् झ़ झ़् झ्र झ़्र </span></td>
+    <td>ss02=1 or cv01=2</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss02&quot; 1, &quot;cv01&quot; 2">झ झ् झ़ झ़् झ्र झ़्र </span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Kra alternate</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -201,16 +202,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">क्र क़्र</span></td>
     </tr>
     <tr class="even">
-    <td>'cv03=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv03&quot; 1">क्र क़्र</span></td>
+    <td>ss03=1 or cv03=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss03&quot; 1, &quot;cv03&quot; 1">क्र क़्र</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Tra alternate</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -224,16 +225,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">त्र त़्र</span></td>
     </tr>
     <tr class="even">
-    <td>'cv04=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv04&quot; 1">त्र त़्र</span></td>
+    <td>ss04=1 or cv04=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss04&quot; 1, &quot;cv04&quot; 1">त्र त़्र</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Shra alternate</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -247,16 +248,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">श्र श़्र</span></td>
     </tr>
     <tr class="even">
-    <td>'cv05=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv05&quot; 1">श्र श़्र</span></td>
+    <td>ss05=1 or cv05=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss05&quot; 1, &quot;cv05&quot; 1">श्र श़्र</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Ukar nukta position</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -270,16 +271,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">कु़ कू़ क्कु़ क्कू़</span></td>
     </tr>
     <tr class="even">
-    <td>'cv06=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv06&quot; 1">कु़ कू़ क्कु़ क्कू़</span></td>
+    <td>ss06=1 or cv06=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss06&quot; 1, &quot;cv06&quot; 1">कु़ कू़ क्कु़ क्कू़</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Ekar nukta position</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -293,16 +294,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">के़</span></td>
     </tr>
     <tr class="even">
-    <td>'cv07=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv07&quot; 1">के़</span></td>
+    <td>ss07=1 or cv07=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss07&quot; 1, &quot;cv07&quot; 1">के़</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Digit five alternate</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -316,16 +317,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">५</span></td>
     </tr>
     <tr class="even">
-    <td>'cv08=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv08&quot; 1">५</span></td>
+    <td>ss08=1 or cv08=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss08&quot; 1, &quot;cv08&quot; 1">५</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Digit eight alternate</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -339,16 +340,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">८</span></td>
     </tr>
     <tr class="even">
-    <td>'cv09=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv09&quot; 1">८</span></td>
+    <td>ss09=1 or cv09=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss09&quot; 1, &quot;cv09&quot; 1">८</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Digit nine alternates</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -362,20 +363,20 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">९</span></td>
     </tr>
     <tr class="even">
-    <td>'cv10=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv10&quot; 1">९</span></td>
+    <td>ss10=1 or cv10=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss10&quot; 1, &quot;cv10&quot; 1">९</span></td>
     </tr>
     <tr class="odd">
-    <td>'cv10=2'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv10&quot; 2">९</span></td>
+    <td>ss11=1 or cv10=2</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss11&quot; 1, &quot;cv10&quot; 2">९</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Visarga with connecting bar</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -389,16 +390,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">&nbsp;ः</span></td>
     </tr>
     <tr class="even">
-    <td>'cv12=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv12&quot; 1">&nbsp;ः</span></td>
+    <td>ss12=1 or cv12=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss12&quot; 1, &quot;cv12&quot; 1">&nbsp;ः</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Glottal stop - no connecting bar</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -412,16 +413,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">ॽ</span></td>
     </tr>
     <tr class="even">
-    <td>'cv13=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv13&quot; 1">ॽ</span></td>
+    <td>ss13=1 or cv13=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss13&quot; 1, &quot;cv13&quot; 1">ॽ</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Dya and Hya alternates</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -435,16 +436,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span></td>
     </tr>
     <tr class="even">
-    <td>'cv14=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv14&quot; 1">द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span></td>
+    <td>ss14=1 or cv14=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss14&quot; 1, &quot;cv14&quot; 1">द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Archaic forms</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -458,16 +459,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span></td>
     </tr>
     <tr class="even">
-    <td>'cv15=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv15&quot; 1">अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span></td>
+    <td>ss15=1 or cv15=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss15&quot; 1, &quot;cv15&quot; 1">अ आ ओ औ ण ण्&zwj; क्ष क्ष्&zwj;</span></td>
     </tr>
     </tbody>
     </table>
     <h4 id="variant-features">Ra Ukar with Nukta ligatures</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -481,17 +482,17 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">रु़ ऱु़</span></td>
     </tr>
     <tr class="even">
-    <td>'cv16=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv16&quot; 1">रु़ ऱु़</span></td>
+    <td>ss16=1 or cv16=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss16&quot; 1, &quot;cv16&quot; 1">रु़ ऱु़</span></td>
     </tr>
     </tbody>
     </table>
-	
-	<h4 id="variant-features">Cha alternate</h4>
+    
+    <h4 id="variant-features">Cha alternate</h4>
     <table>
     <colgroup>
-    <col style="width: 3%" />
-    <col style="width: 96%" />
+    <col style="width: 20%" />
+    <col style="width: 79%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -505,13 +506,16 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">छ छ् </span></td>
     </tr>
     <tr class="even">
-    <td>'cv17=1'</td>
-    <td><span class="lpr" style="font-feature-settings: &quot;cv17&quot; 1">छ छ् </span></td>
+    <td>ss17=1 or cv17=1</td>
+    <td><span class="lpr" style="font-feature-settings: &quot;ss17&quot; 1, &quot;cv17&quot; 1">छ छ् </span></td>
     </tr>
     </tbody>
     </table>
-	
-	<h4 id="variant-features">Headstroke alternates</h4>
+    
+    <br>
+    <h3 id="character-variants">Additional Character Variants</h3>
+    
+    <h4 id="variant-features">Headstroke alternates</h4>
     <table>
     <colgroup>
     <col style="width: 3%" />
@@ -529,21 +533,21 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">ꣻ  &nbsp;&nbsp;  कꣻम</span></td>
     </tr>
     <tr class="even">
-    <td>'cv21=1'</td>
+    <td>cv21=1</td>
     <td><span class="lpr" style="font-feature-settings: &quot;cv21&quot; 1">ꣻ &nbsp;&nbsp;  कꣻम (discrete)</span></td>
     </tr>
     <tr class="odd">
-    <td>'cv21=2'</td>
+    <td>cv21=2</td>
     <td><span class="lpr" style="font-feature-settings: &quot;cv21&quot; 2">ꣻ  &nbsp;&nbsp;&nbsp;&nbsp;  कꣻम (narrow)</span></td>
     </tr>
     <tr class="even">
-    <td>'cv21=3'</td>
+    <td>cv21=3</td>
     <td><span class="lpr" style="font-feature-settings: &quot;cv21&quot; 3">ꣻ  &nbsp;&nbsp;&nbsp;&nbsp;  कꣻम (filler - zero advance width)</span></td>
     </tr>
     </tbody>
     </table>
-	
-	<h4 id="variant-features">JainOm alternate</h4>
+    
+    <h4 id="variant-features">JainOm alternate</h4>
     <table>
     <colgroup>
     <col style="width: 3%" />
@@ -561,14 +565,12 @@ of the license along with this Font Software. If this is not the case, go to
     <td><span class="lpr">ꣽ</span></td>
     </tr>
     <tr class="even">
-    <td>'cv22=1'</td>
+    <td>cv22=1</td>
     <td><span class="lpr" style="font-feature-settings: &quot;cv22&quot; 1">ꣽ</span></td>
     </tr>
     </tbody>
     </table>
-	
-    <h2 id="character-support">Character support</h2>
-    <p>(to be added)</p>
+    
     <footer class="footer">
         <p>This test is copyright © 2023 SIL International.</p>
     </footer>
