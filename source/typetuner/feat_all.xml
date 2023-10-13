@@ -304,6 +304,15 @@
 			<cmd name="gr_feat" args="{gr_arch} 1" />
 		</value>
 	</feature>
+	<feature name="Cha variant" value="No tail" tag="Cha">
+		<value name="No tail" tag="NoTail">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="With tail" tag="WithTail"> 
+			<cmd name="encode" args="091B uni091B.alt" />
+			<cmd name="gr_feat" args="{gr_cv17} 1" />
+		</value>
+	</feature>
 	<feature name="No Stylistic Sets" value="False" tag="noSS">
 		<value name="False" tag="False">
 			<cmd name="null" args="null" />
