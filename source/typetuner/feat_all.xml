@@ -1,0 +1,648 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<all_features version="1.0">
+	<feature name="Region" value="Default" tag="Region">
+		<value name="Default" tag="Def">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Nepal" tag="Nepal">
+			<cmd name="encode" args="091D uni091D.alt" />
+			<cmd name="encode" args="096B uni096B.alt" />
+			<cmd name="encode" args="096E uni096E.alt" />
+			<cmd name="encode" args="096F uni096F.alt" />
+			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="lookup_del" args="GSUB {ss08_DFLT_dflt} {StyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss08_DFLT_dflt} {TTStyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss08_dev2_dflt} {StyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss08_dev2_dflt} {TTStyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss09_DFLT_dflt} {StyleSet09DigitEightAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss09_DFLT_dflt} {TTStyleSet09DigitEightAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss09_dev2_dflt} {StyleSet09DigitEightAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss09_dev2_dflt} {TTStyleSet09DigitEightAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="gr_feat" args="{gr_jhav} 1" />
+			<cmd name="gr_feat" args="{gr_dig5} 1" />
+			<cmd name="gr_feat" args="{gr_dig8} 1" />
+			<cmd name="gr_feat" args="{gr_dig9} 1" />
+		</value>
+		<value name="Newar" tag="Newar">
+			<cmd name="encode" args="091D uni091D.alt2" />
+			<cmd name="encode" args="096B uni096B.alt" />
+			<cmd name="encode" args="096E uni096E.alt" />
+			<cmd name="encode" args="096F uni096F.alt2" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss08_DFLT_dflt} {TTStyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss08_DFLT_dflt} {StyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss08_dev2_dflt} {TTStyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss08_dev2_dflt} {StyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss09_DFLT_dflt} {TTStyleSet09DigitEightAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss09_DFLT_dflt} {StyleSet09DigitEightAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss09_dev2_dflt} {TTStyleSet09DigitEightAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss09_dev2_dflt} {StyleSet09DigitEightAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="gr_feat" args="{gr_jhav} 2" />
+			<cmd name="gr_feat" args="{gr_dig5} 1" />
+			<cmd name="gr_feat" args="{gr_dig8} 1" />
+			<cmd name="gr_feat" args="{gr_dig9} 2" />
+		</value>
+	</feature>
+	<feature name="Jha variants" value="Jha standard style" tag="Jha">
+		<value name="Jha standard style" tag="Std">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Jha Nepal style" tag="NEP"> 
+			<cmd name="encode" args="091D uni091D.alt" />
+			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="gr_feat" args="{gr_jhav} 1" />
+		</value>
+		<value name="Jha Newar style" tag="NEW">
+			<cmd name="encode" args="091D uni091D.alt2" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
+			<cmd name="gr_feat" args="{gr_jhav} 2" />
+		</value>
+	</feature>
+	<feature name="Kra variant" value="Closed" tag="Kra">
+		<value name="Closed" tag="False">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Open" tag="True">
+			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2-KraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2-KraAlt}" />
+			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva-KraAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss03_DFLT_dflt} {StyleSet03KraAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss03_DFLT_dflt} {TTStyleSet03KraAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss03_dev2_dflt} {StyleSet03KraAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss03_dev2_dflt} {TTStyleSet03KraAlt}" />
+			<cmd name="gr_feat" args="{gr_krav} 1" />
+		</value>
+	</feature>
+	<feature name="Tra variant" value="False" tag="Tra">
+		<value name="False" tag="False">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="True" tag="True">
+			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2-TraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2-TraAlt}" />
+			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva-TraAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss04_DFLT_dflt} {StyleSet04TraAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss04_DFLT_dflt} {TTStyleSet04TraAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss04_dev2_dflt} {StyleSet04TraAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss04_dev2_dflt} {TTStyleSet04TraAlt}" />
+			<cmd name="gr_feat" args="{gr_trav} 1" />
+		</value>
+	</feature>
+	<feature name="Shra variant" value="False" tag="Shra">
+		<value name="False" tag="False">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="True" tag="True">
+			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2-ShraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2-ShraAlt}" />
+			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva-ShraAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss05_DFLT_dflt} {StyleSet05ShraAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss05_DFLT_dflt} {TTStyleSet05ShraAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss05_dev2_dflt} {StyleSet05ShraAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss05_dev2_dflt} {TTStyleSet05ShraAlt}" />
+			<cmd name="gr_feat" args="{gr_shra} 1" />
+		</value>
+	</feature>
+	<feature name="Da and Ha with openYa" value="False" tag="OpenYa">
+		<value name="False" tag="False">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="True" tag="True">
+			<cmd name="lookup_del" args="GSUB {cjct_DFLT_dflt} {dev2-Conjuncts_NoPre-base+Ya}" />
+			<cmd name="lookup_add" args="GSUB {cjct_DFLT_dflt} {TTdev2-Conjuncts_NoPre-base+Ya}" />
+			<cmd name="lookup_del" args="GSUB {cjct_dev2_dflt} {dev2-Conjuncts_NoPre-base+Ya}" />
+			<cmd name="lookup_add" args="GSUB {cjct_dev2_dflt} {TTdev2-Conjuncts_NoPre-base+Ya}" />
+			<cmd name="lookup_add" args="GSUB {pres_deva_dflt} {TTdeva-DopenYA}" />
+			<cmd name="lookup_add" args="GSUB {cjct_DFLT_dflt} {TTdev2-HopenYA}" />
+			<cmd name="lookup_add" args="GSUB {cjct_dev2_dflt} {TTdev2-HopenYA}" />
+			<cmd name="lookup_add" args="GSUB {pres_deva_dflt} {TTdeva-HopenYA}" />
+			<cmd name="lookup_del" args="GSUB {ss14_DFLT_dflt} {StyleSet14AltYa}" />
+			<cmd name="lookup_add" args="GSUB {ss14_DFLT_dflt} {TTStyleSet14AltYa}" />
+			<cmd name="lookup_del" args="GSUB {ss14_dev2_dflt} {StyleSet14AltYa}" />
+			<cmd name="lookup_add" args="GSUB {ss14_dev2_dflt} {TTStyleSet14AltYa}" />
+			<cmd name="gr_feat" args="{gr_dyah} 1" />
+		</value>
+	</feature>
+	<feature name="Ukar Nukta position" value="Inside" tag="UkarNukta">
+		<value name="Inside" tag="In">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Below" tag="Below">
+			<cmd name="lookup_add" args="GSUB {nukt_DFLT_dflt} {TT-UkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {TT-UkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {nukt_dev2_dflt} {TT-UkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_dev2_dflt} {TT-UkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {nukt_deva_dflt} {TT-UkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_deva_dflt} {TT-UkarNuktaBelow}" />
+			<cmd name="lookup_del" args="GSUB {ss06_DFLT_dflt} {StyleSet06UmatraNuktaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss06_DFLT_dflt} {TTStyleSet06UmatraNuktaAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss06_dev2_dflt} {StyleSet06UmatraNuktaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss06_dev2_dflt} {TTStyleSet06UmatraNuktaAlt}" />
+			<cmd name="gr_feat" args="{gr_ukar} 1" />
+			</value>
+	</feature>
+	<feature name="Ekar Nukta position" value="Low" tag="EkarNukta">
+		<value name="Low" tag="Low">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="High" tag="High">
+			<cmd name="lookup_add" args="GSUB {nukt_DFLT_dflt} {TT-EkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {TT-EkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {nukt_dev2_dflt} {TT-EkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_dev2_dflt} {TT-EkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {nukt_deva_dflt} {TT-EkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_deva_dflt} {TT-EkarNuktaHigh}" />
+			<cmd name="lookup_del" args="GSUB {ss07_DFLT_dflt} {StyleSet07EmatraNuktaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss07_DFLT_dflt} {TTStyleSet07EmatraNuktaAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss07_dev2_dflt} {StyleSet07EmatraNuktaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss07_dev2_dflt} {TTStyleSet07EmatraNuktaAlt}" />
+			<cmd name="gr_feat" args="{gr_ekar} 1" />
+			</value>
+	</feature>
+	<feature name="Digit five variant" value="Digit five standard style" tag="Dig5">
+		<value name="Digit five standard style" tag="Std">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Digit five Nepal style" tag="NEP"> 
+			<cmd name="encode" args="096B uni096B.alt" />
+			<cmd name="lookup_del" args="GSUB {ss08_DFLT_dflt} {StyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss08_DFLT_dflt} {TTStyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss08_dev2_dflt} {StyleSet08DigitFiveAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss08_dev2_dflt} {TTStyleSet08DigitFiveAlt}" />
+			<cmd name="gr_feat" args="{gr_dig5} 1" />
+		</value>
+	</feature>
+	<feature name="Digit eight variant" value="Digit eight standard style" tag="Dig8">
+		<value name="Digit eight standard style" tag="Std">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Digit eight Nepal style" tag="NEP"> 
+			<cmd name="encode" args="096E uni096E.alt" />
+			<cmd name="lookup_del" args="GSUB {ss09_DFLT_dflt} {StyleSet09DigitEightAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss09_DFLT_dflt} {TTStyleSet09DigitEightAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss09_dev2_dflt} {StyleSet09DigitEightAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss09_dev2_dflt} {TTStyleSet09DigitEightAlt}" />
+			<cmd name="gr_feat" args="{gr_dig8} 1" />
+		</value>
+	</feature>
+	<feature name="Digit nine variants" value="Digit nine standard style" tag="Dig9">
+		<value name="Digit nine standard style" tag="Std">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Digit nine Nepal style" tag="NEP"> 
+			<cmd name="encode" args="096F uni096F.alt" />
+			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="gr_feat" args="{gr_dig9} 1" />
+		</value>
+		<value name="Digit nine Newar style" tag="NEW">
+			<cmd name="encode" args="096F uni096F.alt2" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
+			<cmd name="gr_feat" args="{gr_dig9} 2" />
+		</value>
+	</feature>
+	<feature name="Visarga connecting line (shiro-rekha) variant" value="No connecting line" tag="Visarga">
+		<value name="No connecting line" tag="NoLine">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="With connecting line" tag="Line"> 
+			<cmd name="encode" args="0903 uni0903.alt" />
+			<cmd name="lookup_del" args="GSUB {ss12_DFLT_dflt} {StyleSet12VisargaWithBar}" />
+			<cmd name="lookup_add" args="GSUB {ss12_DFLT_dflt} {TTStyleSet12VisargaWithBar}" />
+			<cmd name="lookup_del" args="GSUB {ss12_dev2_dflt} {StyleSet12VisargaWithBar}" />
+			<cmd name="lookup_add" args="GSUB {ss12_dev2_dflt} {TTStyleSet12VisargaWithBar}" />
+			<cmd name="gr_feat" args="{gr_vbar} 1" />
+		</value>
+	</feature>
+	<feature name="Limbu glottal stop connecting line (shiro-rekha) variant" value="With connecting line" tag="GlottalStop">
+		<value name="With connecting line" tag="Line">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="No connecting line" tag="NoLine"> 
+			<cmd name="encode" args="097D uni097D.alt" />
+			<cmd name="lookup_del" args="GSUB {ss13_DFLT_dflt} {StyleSet13GlottalNoBar}" />
+			<cmd name="lookup_add" args="GSUB {ss13_DFLT_dflt} {TTStyleSet13GlottalNoBar}" />
+			<cmd name="lookup_del" args="GSUB {ss13_dev2_dflt} {StyleSet13GlottalNoBar}" />
+			<cmd name="lookup_add" args="GSUB {ss13_dev2_dflt} {TTStyleSet13GlottalNoBar}" />
+			<cmd name="gr_feat" args="{gr_gbar} 1" />
+		</value>
+	</feature>
+	<feature name="Archaic forms" value="False" tag="Archaic">
+		<value name="False" tag="False">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="True" tag="True"> 
+			<cmd name="encode" args="0905 uni0905.archaic" />
+			<cmd name="encode" args="0906 uni0906.archaic" />
+			<cmd name="encode" args="0913 uni0913.archaic" />
+			<cmd name="encode" args="0914 uni0914.archaic" />
+			<cmd name="encode" args="0923 uni0923.archaic" />
+			<cmd name="lookup_add" args="GSUB {akhn_DFLT_dflt} {TT-archaicKSSA}" />
+			<cmd name="lookup_add" args="GSUB {akhn_dev2_dflt} {TT-archaicKSSA}" />
+			<cmd name="lookup_add" args="GSUB {akhn_deva_dflt} {TT-archaicKSSA}" />
+			<cmd name="lookup_del" args="GSUB {ss15_DFLT_dflt} {StyleSet15ArchaicForms}" />
+			<cmd name="lookup_add" args="GSUB {ss15_DFLT_dflt} {TTStyleSet15ArchaicForms}" />
+			<cmd name="lookup_del" args="GSUB {ss15_dev2_dflt} {StyleSet15ArchaicForms}" />
+			<cmd name="lookup_add" args="GSUB {ss15_dev2_dflt} {TTStyleSet15ArchaicForms}" />
+			<cmd name="gr_feat" args="{gr_arch} 1" />
+		</value>
+	</feature>
+	<feature name="No Stylistic Sets" value="False" tag="noSS">
+		<value name="False" tag="False">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="True" tag="True"> 
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss01_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss01_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss01_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss01_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss02_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss02_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss02_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss02_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss03_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss03_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss03_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss03_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss04_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss04_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss04_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss04_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss05_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss05_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss05_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss05_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss06_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss06_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss06_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss06_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss07_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss07_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss07_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss07_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss08_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss08_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss08_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss08_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss09_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss09_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss09_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss09_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss10_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss10_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss10_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss10_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss11_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss11_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss11_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss11_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss12_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss12_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss12_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss12_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss13_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss13_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss13_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss13_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss14_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss14_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss14_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss14_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss15_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss15_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEP_} {ss15_dev2_NEP_}" />
+			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss15_dev2_NEW_}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss20_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss20_dev2_dflt}" />
+		</value>
+	</feature>
+		<aliases><alias name="AboveMarksRephAdjust" value="37" />
+		<alias name="AboveModifiersAdjust" value="17" />
+		<alias name="AboveRephAdjust" value="12" />
+		<alias name="AboveSignsAdjust" value="29" />
+		<alias name="Akhand" value="8" />
+		<alias name="AllAlternates" value="113" />
+		<alias name="BelowHalantAdjust" value="58" />
+		<alias name="BelowMatraAdjust" value="39" />
+		<alias name="BelowSignsAdjust" value="44" />
+		<alias name="CandrabinduAdjust" value="8" />
+		<alias name="CandrabinduAlt" value="54" />
+		<alias name="CandrabinduAlt_target" value="53" />
+		<alias name="CandrabinduRaAdjust" value="10" />
+		<alias name="CharVar01JhaAlternates" value="65" />
+		<alias name="CharVar10DigitNineAlt" value="75" />
+		<alias name="CharVar21AltHeadstroke" value="87" />
+		<alias name="CharVar22AltJainOm" value="88" />
+		<alias name="ConjunctsHalf" value="37" />
+		<alias name="ConsMatraLigatures" value="52" />
+		<alias name="ConsRakarHalfForms" value="34" />
+		<alias name="DevFractions" value="64" />
+		<alias name="EyelashRa" value="10" />
+		<alias name="EyelashRa_target" value="9" />
+		<alias name="HalantForm" value="63" />
+		<alias name="LatinDiacsEnc" value="115" />
+		<alias name="LatinDiacsUnenc" value="114" />
+		<alias name="LatinPunctuationMark" value="117" />
+		<alias name="LatinPunctuationMark_target" value="116" />
+		<alias name="Liga_AA_Candrabindu_Ra_Ai" value="46" />
+		<alias name="Liga_AA_Candrabindu_Ra_Ai_target" value="45" />
+		<alias name="MatraNukta_ccmp" value="5" />
+		<alias name="MatraRephLigatures" value="47" />
+		<alias name="MatraRephMarkLigatures" value="48" />
+		<alias name="Matra_i_20" value="39" />
+		<alias name="Matra_i_20_target" value="38" />
+		<alias name="Matra_i_30" value="41" />
+		<alias name="Matra_i_30_target" value="40" />
+		<alias name="Matra_i_40" value="43" />
+		<alias name="Matra_i_40_target" value="42" />
+		<alias name="Matra_ii_20" value="56" />
+		<alias name="Matra_ii_20_target" value="55" />
+		<alias name="Matra_ii_30" value="58" />
+		<alias name="Matra_ii_30_target" value="57" />
+		<alias name="Ng_AA_Candrabindu_Ra_Ai" value="44" />
+		<alias name="Nukta" value="4" />
+		<alias name="RUstackLigatures" value="51" />
+		<alias name="Reph" value="11" />
+		<alias name="RephMarkLigatures" value="49" />
+		<alias name="Stacking_Conjuncts_u_uu" value="110" />
+		<alias name="Stacking_Conjuncts_u_uu_target" value="109" />
+		<alias name="StyleSet01JhaAlt" value="66" />
+		<alias name="StyleSet02JhaAlt2" value="67" />
+		<alias name="StyleSet03KraAlt" value="68" />
+		<alias name="StyleSet04TraAlt" value="69" />
+		<alias name="StyleSet05ShraAlt" value="70" />
+		<alias name="StyleSet06UmatraNuktaAlt" value="71" />
+		<alias name="StyleSet07EmatraNuktaAlt" value="72" />
+		<alias name="StyleSet08DigitFiveAlt" value="73" />
+		<alias name="StyleSet09DigitEightAlt" value="74" />
+		<alias name="StyleSet10DigitNineAlt" value="76" />
+		<alias name="StyleSet11DigitNineAlt2" value="77" />
+		<alias name="StyleSet12VisargaWithBar" value="78" />
+		<alias name="StyleSet13GlottalNoBar" value="79" />
+		<alias name="StyleSet14AltYa" value="80" />
+		<alias name="StyleSet14altYA_context" value="83" />
+		<alias name="StyleSet15ArchaicForms" value="84" />
+		<alias name="StyleSet16AltRaUkarNukta" value="85" />
+		<alias name="StyleSet17AltCha" value="86" />
+		<alias name="TTEkarNuktaHigh" value="3" />
+		<alias name="TTNEP_StyleSet01JhaStd" value="90" />
+		<alias name="TTNEP_StyleSet02JhaAlt2" value="91" />
+		<alias name="TTNEP_StyleSet10DigitNineStd" value="101" />
+		<alias name="TTNEP_StyleSet11DigitNineAlt2" value="102" />
+		<alias name="TTNEW_StyleSet01JhaAlt" value="92" />
+		<alias name="TTNEW_StyleSet02JhaStd" value="93" />
+		<alias name="TTNEW_StyleSet10DigitNineAlt" value="103" />
+		<alias name="TTNEW_StyleSet11DigitNineStd" value="104" />
+		<alias name="TTRaOpenYa" value="7" />
+		<alias name="TTStyleSet03KraAlt" value="94" />
+		<alias name="TTStyleSet04TraAlt" value="95" />
+		<alias name="TTStyleSet05ShraAlt" value="96" />
+		<alias name="TTStyleSet06UmatraNuktaAlt" value="97" />
+		<alias name="TTStyleSet07EmatraNuktaAlt" value="98" />
+		<alias name="TTStyleSet08DigitFiveAlt" value="99" />
+		<alias name="TTStyleSet09DigitEightAlt" value="100" />
+		<alias name="TTStyleSet12VisargaWithBar" value="105" />
+		<alias name="TTStyleSet13GlottalNoBar" value="106" />
+		<alias name="TTStyleSet14AltYa" value="107" />
+		<alias name="TTStyleSet15ArchaicForms" value="108" />
+		<alias name="TTUkarNuktaBelow" value="2" />
+		<alias name="TTarchaicKSSA" value="6" />
+		<alias name="TTdev2_Conjuncts_NoPrebase_Ya" value="31" />
+		<alias name="TTdev2_HopenYA" value="23" />
+		<alias name="TTdev2_KraAlt" value="12" />
+		<alias name="TTdev2_ShraAlt" value="14" />
+		<alias name="TTdev2_TraAlt" value="13" />
+		<alias name="TTdeva_DopenYA" value="27" />
+		<alias name="TTdeva_HopenYA" value="28" />
+		<alias name="TTdeva_KraAlt" value="24" />
+		<alias name="TTdeva_ShraAlt" value="26" />
+		<alias name="TTdeva_TraAlt" value="25" />
+		<alias name="VariantRaOpenYa" value="89" />
+		<alias name="VowelMarkLigatures" value="50" />
+		<alias name="altYA_context" value="62" />
+		<alias name="altYA_subst" value="61" />
+		<alias name="base_Halant_base" value="0" />
+		<alias name="base_LowerAlt_base" value="2" />
+		<alias name="base_LowerCenter_base" value="3" />
+		<alias name="base_Lower_base" value="1" />
+		<alias name="base_Nukta_base" value="4" />
+		<alias name="base_Ra_base" value="5" />
+		<alias name="base_UpperCenter_base" value="7" />
+		<alias name="base_Upper_base" value="6" />
+		<alias name="both_Conjuncts_NoPrebase_YaRaHalf" value="35" />
+		<alias name="dev2_Conjuncts_NoPrebase" value="30" />
+		<alias name="dev2_Conjuncts_NoPrebase_Ya" value="32" />
+		<alias name="dev2_Conjuncts_Prebase" value="36" />
+		<alias name="dev2_ConsRakarFullForms" value="15" />
+		<alias name="dev2_HalfPrebaseConjunct" value="22" />
+		<alias name="dev2_HalfPrebaseForms" value="21" />
+		<alias name="dev2_NoHalfHalantForms" value="59" />
+		<alias name="dev2_Rakar" value="18" />
+		<alias name="dev2_Rakar_target" value="17" />
+		<alias name="deva_ConjunctsFull" value="33" />
+		<alias name="deva_ConsRakarFullForms" value="29" />
+		<alias name="deva_HalfConjunctForms" value="20" />
+		<alias name="deva_HalfForms" value="19" />
+		<alias name="deva_Rakar" value="16" />
+		<alias name="locl_NEP" value="0" />
+		<alias name="locl_NEW" value="1" />
+		<alias name="noHalf_subst" value="60" />
+		<alias name="ss14altYA_subst" value="82" />
+		<alias name="ss14noHalf_subst" value="81" />
+		<alias name="u_uu_Stacking_Conjuncts" value="112" />
+		<alias name="u_uu_Stacking_Conjuncts_target" value="111" />
+		<alias name="aalt_DFLT_dflt" value="aalt" />
+		<alias name="aalt_dev2_dflt" value="aalt" />
+		<alias name="aalt_deva_dflt" value="aalt" />
+		<alias name="aalt_latn_dflt" value="aalt" />
+		<alias name="abvs_DFLT_dflt" value="abvs" />
+		<alias name="abvs_dev2_dflt" value="abvs" />
+		<alias name="abvs_deva_dflt" value="abvs _0" />
+		<alias name="akhn_DFLT_dflt" value="akhn" />
+		<alias name="akhn_dev2_dflt" value="akhn" />
+		<alias name="akhn_deva_dflt" value="akhn" />
+		<alias name="blwf_DFLT_dflt" value="blwf" />
+		<alias name="blwf_dev2_dflt" value="blwf" />
+		<alias name="blwf_deva_dflt" value="blwf _0" />
+		<alias name="blws_DFLT_dflt" value="blws" />
+		<alias name="blws_dev2_dflt" value="blws" />
+		<alias name="blws_deva_dflt" value="blws" />
+		<alias name="calt_DFLT_dflt" value="calt _0" />
+		<alias name="calt_dev2_dflt" value="calt" />
+		<alias name="calt_latn_dflt" value="calt _1" />
+		<alias name="ccmp_DFLT_dflt" value="ccmp" />
+		<alias name="ccmp_dev2_dflt" value="ccmp" />
+		<alias name="ccmp_deva_dflt" value="ccmp _0" />
+		<alias name="ccmp_latn_dflt" value="ccmp _1" />
+		<alias name="cjct_DFLT_dflt" value="cjct" />
+		<alias name="cjct_dev2_dflt" value="cjct" />
+		<alias name="cv21_dev2_dflt" value="cv21" />
+		<alias name="cv22_dev2_dflt" value="cv22" />
+		<alias name="frac_DFLT_dflt" value="frac" />
+		<alias name="frac_dev2_dflt" value="frac" />
+		<alias name="half_DFLT_dflt" value="half" />
+		<alias name="half_dev2_dflt" value="half _0" />
+		<alias name="half_deva_dflt" value="half _1" />
+		<alias name="haln_DFLT_dflt" value="haln" />
+		<alias name="haln_dev2_dflt" value="haln" />
+		<alias name="haln_deva_dflt" value="haln _0" />
+		<alias name="liga_DFLT_dflt" value="liga" />
+		<alias name="liga_dev2_dflt" value="liga" />
+		<alias name="liga_deva_dflt" value="liga" />
+		<alias name="nukt_DFLT_dflt" value="nukt" />
+		<alias name="nukt_dev2_dflt" value="nukt" />
+		<alias name="nukt_deva_dflt" value="nukt" />
+		<alias name="pres_DFLT_dflt" value="pres" />
+		<alias name="pres_dev2_dflt" value="pres" />
+		<alias name="pres_deva_dflt" value="pres _0" />
+		<alias name="psts_DFLT_dflt" value="psts" />
+		<alias name="psts_dev2_dflt" value="psts" />
+		<alias name="psts_deva_dflt" value="psts _0" />
+		<alias name="rclt_DFLT_dflt" value="rclt" />
+		<alias name="rclt_dev2_dflt" value="rclt" />
+		<alias name="rkrf_DFLT_dflt" value="rkrf" />
+		<alias name="rkrf_dev2_dflt" value="rkrf _0" />
+		<alias name="rlig_DFLT_dflt" value="rlig" />
+		<alias name="rlig_dev2_dflt" value="rlig" />
+		<alias name="rlig_deva_dflt" value="rlig" />
+		<alias name="rphf_DFLT_dflt" value="rphf" />
+		<alias name="rphf_dev2_dflt" value="rphf" />
+		<alias name="rphf_deva_dflt" value="rphf" />
+		<alias name="ss01_DFLT_dflt" value="ss01" />
+		<alias name="ss01_dev2_dflt" value="ss01" />
+		<alias name="ss02_DFLT_dflt" value="ss02" />
+		<alias name="ss02_dev2_dflt" value="ss02" />
+		<alias name="ss03_DFLT_dflt" value="ss03" />
+		<alias name="ss03_dev2_dflt" value="ss03" />
+		<alias name="ss04_DFLT_dflt" value="ss04" />
+		<alias name="ss04_dev2_dflt" value="ss04" />
+		<alias name="ss05_DFLT_dflt" value="ss05" />
+		<alias name="ss05_dev2_dflt" value="ss05" />
+		<alias name="ss06_DFLT_dflt" value="ss06" />
+		<alias name="ss06_dev2_dflt" value="ss06" />
+		<alias name="ss07_DFLT_dflt" value="ss07" />
+		<alias name="ss07_dev2_dflt" value="ss07" />
+		<alias name="ss08_DFLT_dflt" value="ss08" />
+		<alias name="ss08_dev2_dflt" value="ss08" />
+		<alias name="ss09_DFLT_dflt" value="ss09" />
+		<alias name="ss09_dev2_dflt" value="ss09" />
+		<alias name="ss10_DFLT_dflt" value="ss10" />
+		<alias name="ss10_dev2_dflt" value="ss10" />
+		<alias name="ss11_DFLT_dflt" value="ss11" />
+		<alias name="ss11_dev2_dflt" value="ss11" />
+		<alias name="ss12_DFLT_dflt" value="ss12" />
+		<alias name="ss12_dev2_dflt" value="ss12" />
+		<alias name="ss13_DFLT_dflt" value="ss13" />
+		<alias name="ss13_dev2_dflt" value="ss13" />
+		<alias name="ss14_DFLT_dflt" value="ss14" />
+		<alias name="ss14_dev2_dflt" value="ss14" />
+		<alias name="ss15_DFLT_dflt" value="ss15" />
+		<alias name="ss15_dev2_dflt" value="ss15" />
+		<alias name="ss16_DFLT_dflt" value="ss16" />
+		<alias name="ss16_dev2_dflt" value="ss16" />
+		<alias name="ss17_DFLT_dflt" value="ss17" />
+		<alias name="ss17_dev2_dflt" value="ss17" />
+		<alias name="vatu_deva_dflt" value="vatu" />
+		<alias name="abvm_DFLT_dflt" value="abvm" />
+		<alias name="abvm_dev2_dflt" value="abvm" />
+		<alias name="abvm_deva_dflt" value="abvm" />
+		<alias name="blwm_DFLT_dflt" value="blwm" />
+		<alias name="blwm_dev2_dflt" value="blwm" />
+		<alias name="blwm_deva_dflt" value="blwm" />
+		<alias name="dist_DFLT_dflt" value="dist" />
+		<alias name="dist_dev2_dflt" value="dist" />
+		<alias name="dist_deva_dflt" value="dist" />
+		<alias name="gr_arch" value="1634886504" />
+		<alias name="gr_cv01" value="1668689969" />
+		<alias name="gr_cv03" value="1668689971" />
+		<alias name="gr_cv04" value="1668689972" />
+		<alias name="gr_cv05" value="1668689973" />
+		<alias name="gr_cv06" value="1668689974" />
+		<alias name="gr_cv07" value="1668689975" />
+		<alias name="gr_cv08" value="1668689976" />
+		<alias name="gr_cv09" value="1668689977" />
+		<alias name="gr_cv10" value="1668690224" />
+		<alias name="gr_cv12" value="1668690226" />
+		<alias name="gr_cv13" value="1668690227" />
+		<alias name="gr_cv14" value="1668690228" />
+		<alias name="gr_cv15" value="1668690229" />
+		<alias name="gr_cv16" value="1668690230" />
+		<alias name="gr_cv17" value="1668690231" />
+		<alias name="gr_cv21" value="1668690481" />
+		<alias name="gr_cv22" value="1668690482" />
+		<alias name="gr_dig5" value="1684629301" />
+		<alias name="gr_dig8" value="1684629304" />
+		<alias name="gr_dig9" value="1684629305" />
+		<alias name="gr_dyah" value="1685676392" />
+		<alias name="gr_ekar" value="1701536114" />
+		<alias name="gr_gbar" value="1734500722" />
+		<alias name="gr_jhav" value="1785225590" />
+		<alias name="gr_krav" value="1802658166" />
+		<alias name="gr_ryav" value="1920557430" />
+		<alias name="gr_shra" value="1936224865" />
+		<alias name="gr_ss16" value="1936929078" />
+		<alias name="gr_ss17" value="1936929079" />
+		<alias name="gr_ss22" value="1936929330" />
+		<alias name="gr_trav" value="1953653110" />
+		<alias name="gr_ukar" value="1969971570" />
+		<alias name="gr_vbar" value="1986158962" />
+		</aliases>
+
+</all_features>

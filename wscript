@@ -25,6 +25,7 @@ getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
 cmds = []
 cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']))
 cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
+cmds.append(cmd('${TYPETUNER} -o ${TGT} add ${SRC} ${DEP}', "source/typetuner/feat_all.xml"))
 
 # set the build and test parameters
 d = designspace('source/AnnapurnaSIL-RB.designspace',
@@ -35,6 +36,7 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
 
         opentype = fea('source/fea/${DS:FILENAME_BASE}.fea',
             master = 'source/annapurna_ot.feax',
+            mapfile = 'source/typetuner/${DS:FILENAME_BASE}.map', 
             # make_params = omitAPs
         ),
 
@@ -44,13 +46,16 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
             depends = ['source/annapurna_gr_features.gdh']
         ),
 
+        typetuner = typetuner('source/typetuner/feat_all.xml'),
+
         woff = woff('web/${DS:FILENAME_BASE}.woff', 
             params = '-v ' + VERSION + ' -m ../source/AnnapurnaSIL-WOFF-metadata.xml'
         ),
 
         script = ['dev2'],
         pdf = fret(params="-r -oi"),
-	)
+    )
 
 def configure(ctx) :
     ctx.find_program('ttfautohint')
+    ctx.find_program('typetuner')
