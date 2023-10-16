@@ -10,13 +10,13 @@
 			<cmd name="encode" args="096E uni096E.alt" />
 			<cmd name="encode" args="096F uni096F.alt" />
 			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEP_StyleSet01JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEP_StyleSet01JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEP_StyleSet02JhaAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEP_StyleSet02JhaAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss08_DFLT_dflt} {StyleSet08DigitFiveAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss08_DFLT_dflt} {TTStyleSet08DigitFiveAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss08_dev2_dflt} {StyleSet08DigitFiveAlt}" />
@@ -26,13 +26,13 @@
 			<cmd name="lookup_del" args="GSUB {ss09_dev2_dflt} {StyleSet09DigitEightAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss09_dev2_dflt} {TTStyleSet09DigitEightAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEP_StyleSet10DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEP_StyleSet10DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
 			<cmd name="gr_feat" args="{gr_jhav} 1" />
 			<cmd name="gr_feat" args="{gr_dig5} 1" />
 			<cmd name="gr_feat" args="{gr_dig8} 1" />
@@ -43,13 +43,13 @@
 			<cmd name="encode" args="096B uni096B.alt" />
 			<cmd name="encode" args="096E uni096E.alt" />
 			<cmd name="encode" args="096F uni096F.alt2" />
-			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEW_StyleSet01JhaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEW_StyleSet01JhaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEW_StyleSet02JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEW_StyleSet02JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
 			<cmd name="lookup_add" args="GSUB {ss08_DFLT_dflt} {TTStyleSet08DigitFiveAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss08_DFLT_dflt} {StyleSet08DigitFiveAlt}" />
@@ -59,13 +59,13 @@
 			<cmd name="lookup_del" args="GSUB {ss09_DFLT_dflt} {StyleSet09DigitEightAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss09_dev2_dflt} {TTStyleSet09DigitEightAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss09_dev2_dflt} {StyleSet09DigitEightAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEW_StyleSet10DigitNineAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEW_StyleSet10DigitNineAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEW_StyleSet11DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW_StyleSet11DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
 			<cmd name="gr_feat" args="{gr_jhav} 2" />
 			<cmd name="gr_feat" args="{gr_dig5} 1" />
@@ -80,24 +80,24 @@
 		<value name="Jha Nepal style" tag="NEP"> 
 			<cmd name="encode" args="091D uni091D.alt" />
 			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEP_StyleSet01JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEP-StyleSet01JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEP_StyleSet01JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEP_StyleSet02JhaAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEP-StyleSet02JhaAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEP_StyleSet02JhaAlt2}" />
 			<cmd name="gr_feat" args="{gr_jhav} 1" />
 		</value>
 		<value name="Jha Newar style" tag="NEW">
 			<cmd name="encode" args="091D uni091D.alt2" />
-			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_DFLT_dflt} {TTNEW_StyleSet01JhaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss01_DFLT_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEW-StyleSet01JhaAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss01_dev2_dflt} {TTNEW_StyleSet01JhaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss01_dev2_dflt} {StyleSet01JhaAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEW_StyleSet02JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEW-StyleSet02JhaStd}" />
+			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEW_StyleSet02JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
 			<cmd name="gr_feat" args="{gr_jhav} 2" />
 		</value>
@@ -107,9 +107,9 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="Open" tag="True">
-			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2-KraAlt}" />
-			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2-KraAlt}" />
-			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva-KraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2_KraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2_KraAlt}" />
+			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva_KraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss03_DFLT_dflt} {StyleSet03KraAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss03_DFLT_dflt} {TTStyleSet03KraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss03_dev2_dflt} {StyleSet03KraAlt}" />
@@ -122,9 +122,9 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="True" tag="True">
-			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2-TraAlt}" />
-			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2-TraAlt}" />
-			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva-TraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2_TraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2_TraAlt}" />
+			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva_TraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss04_DFLT_dflt} {StyleSet04TraAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss04_DFLT_dflt} {TTStyleSet04TraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss04_dev2_dflt} {StyleSet04TraAlt}" />
@@ -137,9 +137,9 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="True" tag="True">
-			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2-ShraAlt}" />
-			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2-ShraAlt}" />
-			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva-ShraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_DFLT_dflt} {TTdev2_ShraAlt}" />
+			<cmd name="lookup_add" args="GSUB {rkrf_dev2_dflt} {TTdev2_ShraAlt}" />
+			<cmd name="lookup_add" args="GSUB {vatu_deva_dflt} {TTdeva_ShraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss05_DFLT_dflt} {StyleSet05ShraAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss05_DFLT_dflt} {TTStyleSet05ShraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss05_dev2_dflt} {StyleSet05ShraAlt}" />
@@ -152,14 +152,14 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="True" tag="True">
-			<cmd name="lookup_del" args="GSUB {cjct_DFLT_dflt} {dev2-Conjuncts_NoPre-base+Ya}" />
-			<cmd name="lookup_add" args="GSUB {cjct_DFLT_dflt} {TTdev2-Conjuncts_NoPre-base+Ya}" />
-			<cmd name="lookup_del" args="GSUB {cjct_dev2_dflt} {dev2-Conjuncts_NoPre-base+Ya}" />
-			<cmd name="lookup_add" args="GSUB {cjct_dev2_dflt} {TTdev2-Conjuncts_NoPre-base+Ya}" />
-			<cmd name="lookup_add" args="GSUB {pres_deva_dflt} {TTdeva-DopenYA}" />
-			<cmd name="lookup_add" args="GSUB {cjct_DFLT_dflt} {TTdev2-HopenYA}" />
-			<cmd name="lookup_add" args="GSUB {cjct_dev2_dflt} {TTdev2-HopenYA}" />
-			<cmd name="lookup_add" args="GSUB {pres_deva_dflt} {TTdeva-HopenYA}" />
+			<cmd name="lookup_del" args="GSUB {cjct_DFLT_dflt} {dev2_Conjuncts_NoPrebase_Ya}" />
+			<cmd name="lookup_add" args="GSUB {cjct_DFLT_dflt} {TTdev2_Conjuncts_NoPrebase_Ya}" />
+			<cmd name="lookup_del" args="GSUB {cjct_dev2_dflt} {dev2_Conjuncts_NoPrebase_Ya}" />
+			<cmd name="lookup_add" args="GSUB {cjct_dev2_dflt} {TTdev2_Conjuncts_NoPrebase_Ya}" />
+			<cmd name="lookup_add" args="GSUB {pres_deva_dflt} {TTdeva_DopenYA}" />
+			<cmd name="lookup_add" args="GSUB {cjct_DFLT_dflt} {TTdev2_HopenYA}" />
+			<cmd name="lookup_add" args="GSUB {cjct_dev2_dflt} {TTdev2_HopenYA}" />
+			<cmd name="lookup_add" args="GSUB {pres_deva_dflt} {TTdeva_HopenYA}" />
 			<cmd name="lookup_del" args="GSUB {ss14_DFLT_dflt} {StyleSet14AltYa}" />
 			<cmd name="lookup_add" args="GSUB {ss14_DFLT_dflt} {TTStyleSet14AltYa}" />
 			<cmd name="lookup_del" args="GSUB {ss14_dev2_dflt} {StyleSet14AltYa}" />
@@ -172,12 +172,12 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="Below" tag="Below">
-			<cmd name="lookup_add" args="GSUB {nukt_DFLT_dflt} {TT-UkarNuktaBelow}" />
-			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {TT-UkarNuktaBelow}" />
-			<cmd name="lookup_add" args="GSUB {nukt_dev2_dflt} {TT-UkarNuktaBelow}" />
-			<cmd name="lookup_add" args="GSUB {ccmp_dev2_dflt} {TT-UkarNuktaBelow}" />
-			<cmd name="lookup_add" args="GSUB {nukt_deva_dflt} {TT-UkarNuktaBelow}" />
-			<cmd name="lookup_add" args="GSUB {ccmp_deva_dflt} {TT-UkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {nukt_DFLT_dflt} {TTUkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {TTUkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {nukt_dev2_dflt} {TTUkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_dev2_dflt} {TTUkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {nukt_deva_dflt} {TTUkarNuktaBelow}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_deva_dflt} {TTUkarNuktaBelow}" />
 			<cmd name="lookup_del" args="GSUB {ss06_DFLT_dflt} {StyleSet06UmatraNuktaAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss06_DFLT_dflt} {TTStyleSet06UmatraNuktaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss06_dev2_dflt} {StyleSet06UmatraNuktaAlt}" />
@@ -190,12 +190,12 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="High" tag="High">
-			<cmd name="lookup_add" args="GSUB {nukt_DFLT_dflt} {TT-EkarNuktaHigh}" />
-			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {TT-EkarNuktaHigh}" />
-			<cmd name="lookup_add" args="GSUB {nukt_dev2_dflt} {TT-EkarNuktaHigh}" />
-			<cmd name="lookup_add" args="GSUB {ccmp_dev2_dflt} {TT-EkarNuktaHigh}" />
-			<cmd name="lookup_add" args="GSUB {nukt_deva_dflt} {TT-EkarNuktaHigh}" />
-			<cmd name="lookup_add" args="GSUB {ccmp_deva_dflt} {TT-EkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {nukt_DFLT_dflt} {TTEkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {TTEkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {nukt_dev2_dflt} {TTEkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_dev2_dflt} {TTEkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {nukt_deva_dflt} {TTEkarNuktaHigh}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_deva_dflt} {TTEkarNuktaHigh}" />
 			<cmd name="lookup_del" args="GSUB {ss07_DFLT_dflt} {StyleSet07EmatraNuktaAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss07_DFLT_dflt} {TTStyleSet07EmatraNuktaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss07_dev2_dflt} {StyleSet07EmatraNuktaAlt}" />
@@ -236,24 +236,24 @@
 		<value name="Digit nine Nepal style" tag="NEP"> 
 			<cmd name="encode" args="096F uni096F.alt" />
 			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEP_StyleSet10DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEP-StyleSet10DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEP_StyleSet10DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP-StyleSet11DigitNineAlt2}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
 			<cmd name="gr_feat" args="{gr_dig9} 1" />
 		</value>
 		<value name="Digit nine Newar style" tag="NEW">
 			<cmd name="encode" args="096F uni096F.alt2" />
-			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_DFLT_dflt} {TTNEW_StyleSet10DigitNineAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss10_DFLT_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEW-StyleSet10DigitNineAlt}" />
+			<cmd name="lookup_add" args="GSUB {ss10_dev2_dflt} {TTNEW_StyleSet10DigitNineAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss10_dev2_dflt} {StyleSet10DigitNineAlt}" />
-			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEW_StyleSet11DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW-StyleSet11DigitNineStd}" />
+			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW_StyleSet11DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
 			<cmd name="gr_feat" args="{gr_dig9} 2" />
 		</value>
@@ -294,9 +294,9 @@
 			<cmd name="encode" args="0913 uni0913.archaic" />
 			<cmd name="encode" args="0914 uni0914.archaic" />
 			<cmd name="encode" args="0923 uni0923.archaic" />
-			<cmd name="lookup_add" args="GSUB {akhn_DFLT_dflt} {TT-archaicKSSA}" />
-			<cmd name="lookup_add" args="GSUB {akhn_dev2_dflt} {TT-archaicKSSA}" />
-			<cmd name="lookup_add" args="GSUB {akhn_deva_dflt} {TT-archaicKSSA}" />
+			<cmd name="lookup_add" args="GSUB {akhn_DFLT_dflt} {TTarchaicKSSA}" />
+			<cmd name="lookup_add" args="GSUB {akhn_dev2_dflt} {TTarchaicKSSA}" />
+			<cmd name="lookup_add" args="GSUB {akhn_deva_dflt} {TTarchaicKSSA}" />
 			<cmd name="lookup_del" args="GSUB {ss15_DFLT_dflt} {StyleSet15ArchaicForms}" />
 			<cmd name="lookup_add" args="GSUB {ss15_DFLT_dflt} {TTStyleSet15ArchaicForms}" />
 			<cmd name="lookup_del" args="GSUB {ss15_dev2_dflt} {StyleSet15ArchaicForms}" />
