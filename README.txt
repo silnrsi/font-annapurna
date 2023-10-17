@@ -25,8 +25,8 @@ TIPS
 As this font is distributed at no cost, we are unable to provide a 
 commercial level of personal technical support. The font has, however, 
 been through some testing on various platforms to be sure it works in most
-situations. In particular, it has been tested and shown to work on Windows 
-XP, Windows Vista, Windows 7, Windows 8 and Windows 10.
+situations. In particular, it has been tested and shown to work on 
+Windows 10 and 11.
 
 If you do find a problem, please do report it through the website: 
 https://software.sil.org/annapurna/support/. 
@@ -67,9 +67,10 @@ adequate level of support for Graphite or OpenType.
 INSTALLATION AND CONFIGURATION
 ==============================
 
-If you are not sure how to install the fonts, please see:
-https://scripts.sil.org/DecompressUtil for instructions on font installations on
-various operating systems.
+Install the fonts by decompressing the .zip archive and installing the fonts 
+using the standard font installation process for .ttf (TrueType/OpenType) fonts 
+for your platform. For additional tips on font installation, see the help page 
+at https://software.sil.org/fonts/installation.
 
 
 CONTACT
