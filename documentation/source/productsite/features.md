@@ -147,8 +147,8 @@ Archaic form | <span class='annapurna-cv15-1-ss15-1-R normal'>अ आ ओ औ �
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard | <span class='annapurna-R normal'>रु़ ऱु़</span> | `cv16=0 or ss16=0`
-Ligature form| <span class='annapurna-cv16-1-ss16-1-R normal'>रु़ ऱु़</span> | `cv16=1 or ss16=1`
+Standard | <span class='annapurna-R normal'>रु़ ऱु़ &nbsp;&nbsp; रू़ ऱू़</span> | `cv16=0 or ss16=0`
+Ligature form| <span class='annapurna-cv16-1-ss16-1-R normal'>रु़ ऱु़ &nbsp;&nbsp; रू़ ऱू़</span> | `cv16=1 or ss16=1`
 
 #### Cha alternate
 
@@ -177,7 +177,7 @@ Filler  (zero advance width)| <span class='annapurna-cv21-3-R normal'>ꣻ  &nbsp
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>ꣽ</span> | `cv22=0`
-Extended bar| <span class='annapurna-cv22-1-R normal'>ꣽ</span> | `cv22=1`
+Extended headstroke | <span class='annapurna-cv22-1-R normal'>ꣽ</span> | `cv22=1`
 
 ## Default behavior
 

@@ -151,8 +151,8 @@ Archaic form | <span class='annapurna-R normal' style='font-feature-settings: "c
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard | <span class='annapurna-R normal'>रु़ ऱु़</span> | `cv16=0 or ss16=0`
-Ligature form| <span class='annapurna-R normal' style='font-feature-settings: "cv16" 1, "ss16" 1'>रु़ ऱु़</span> | `cv16=1 or ss16=1`
+Standard | <span class='annapurna-R normal'>रु़ ऱु़ &nbsp;&nbsp; रू़ ऱू़</span> | `cv16=0 or ss16=0`
+Ligature form| <span class='annapurna-R normal' style='font-feature-settings: "cv16" 1, "ss16" 1'>रु़ ऱु़ &nbsp;&nbsp; रू़ ऱू़</span> | `cv16=1 or ss16=1`
 
 #### Cha alternate
 
@@ -181,7 +181,7 @@ Filler  (zero advance width)| <span class='annapurna-R normal' style='font-featu
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
 Standard | <span class='annapurna-R normal'>ꣽ</span> | `cv22=0`
-Extended bar| <span class='annapurna-R normal' style='font-feature-settings: "cv22" 1'>ꣽ</span> | `cv22=1`
+Extended headstroke | <span class='annapurna-R normal' style='font-feature-settings: "cv22" 1'>ꣽ</span> | `cv22=1`
 
 ## Default behavior
 
