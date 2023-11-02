@@ -305,6 +305,7 @@
     <string>tildenosp</string>
     <string>macronnosp</string>
     <string>CombOverline</string>
+    <string>brevenosp</string>
     <string>dotnosp</string>
     <string>dieresisnosp</string>
     <string>CombRingAbv</string>
@@ -2635,6 +2636,8 @@
     <string>uni02BC</string>
     <key>ascript</key>
     <string>uni0251</string>
+    <key>brevenosp</key>
+    <string>uni0306</string>
     <key>bulletoperator</key>
     <string>uni2219</string>
     <key>candrabinducomb</key>
