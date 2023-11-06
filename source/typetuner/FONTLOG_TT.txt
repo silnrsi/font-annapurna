@@ -200,7 +200,7 @@ some glyphs widths have changed and linespacing has been adjusted.***
 - Graphite feature IDs are now all four-character tags per CSS requirements
 - Minor bug fixes
 
-1### 2 July 2011 (SIL NRSI team)  Annapurna SIL version 1.001
+### 12 July 2011 (SIL NRSI team)  Annapurna SIL version 1.001
 - Added ligature glyphs and smart code support for minority languages
   * 0930 with 0941 and 093C
   * 0931 with 0941

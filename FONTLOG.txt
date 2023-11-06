@@ -155,6 +155,8 @@ some glyphs widths have changed and linespacing has been adjusted.***
 - Fixed Ra+ukar collision with preceding ukar
 - Fixed ikar-anusvara collision on conjuncts
 - Fixed misoriented contours and duplicated knots
+- Added UFO key and value data to set head table flag bits 0 and 1
+- Revised content and format of the documentation
 
 ### 22 February 2019 (SIL WSTech team)  Annapurna SIL version 1.204
 - Reworked Graphite code to remove duplicates from substitution input classes.
@@ -193,7 +195,7 @@ some glyphs widths have changed and linespacing has been adjusted.***
 - Graphite feature IDs are now all four-character tags per CSS requirements
 - Minor bug fixes
 
-1### 2 July 2011 (SIL NRSI team)  Annapurna SIL version 1.001
+### 12 July 2011 (SIL NRSI team)  Annapurna SIL version 1.001
 - Added ligature glyphs and smart code support for minority languages
   * 0930 with 0941 and 093C
   * 0931 with 0941
