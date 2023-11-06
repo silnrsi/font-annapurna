@@ -1055,9 +1055,6 @@ pass(PASS_HALFFORMS)    // 6
 
     //    Create half forms (later we will turn some of them into conjuncts).
     cls_nHalf  g_halant  >  cls_half:(1 2)  _  /  _ {form == F_HALF || form == F_CONJ1}  _ ;
-    
-    //  Composite glyphs with visible halant
-    g__dev_cha  g_halant  >  g__dev_half_cha:(1 2)  _  /  _  _ ;
 
 endpass;
 
@@ -1476,8 +1473,8 @@ endif;
 
 
 if (cha) // cv17
-    g__dev_cha       >  g__dev_cha_alt;
-    g__dev_half_cha  >  g__dev_half_cha_alt;
+    g__dev_cha           >  g__dev_cha_alt;
+    g__dev_cha g_halant  >  g__dev_half_cha_alt:(1 2) _;
 else
     g__dev_cha_alt       >  g__dev_cha;
     g__dev_half_cha_alt  >  g__dev_half_cha;
