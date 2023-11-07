@@ -89,7 +89,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNameUniqueID</key>
   <string>SIL International: Annapurna SIL Regular: 2023</string>
   <key>openTypeNameVersion</key>
-  <string>Version 1.995</string>
+  <string>Version 1.996</string>
   <key>openTypeOS2CodePageRanges</key>
   <array>
     <integer>0</integer>
@@ -216,7 +216,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>versionMajor</key>
   <integer>1</integer>
   <key>versionMinor</key>
-  <integer>995</integer>
+  <integer>996</integer>
   <key>woffMetadataCredits</key>
   <dict>
     <key>credits</key>
