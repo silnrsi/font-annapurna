@@ -1426,7 +1426,6 @@ lookup dev2_HalfPrebaseForms {
     sub DevGhaNukta DevHalant by DevHalfGhaNukta;
     sub DevCa DevHalant by DevHalfCa;
     sub DevCaNukta DevHalant by DevHalfCaNukta;
-    sub DevCha.alt DevHalant by DevHalfCha.alt;
     sub DevJa DevHalant by DevHalfJa;
     sub DevJaNukta DevHalant by DevHalfJaNukta;
     sub DevJha DevHalant by DevHalfJha;
@@ -2118,6 +2117,7 @@ lookup dev2_NoHalfHalantForms {
     sub DevNga DevHalant by DevHalfNga;
     sub DevNgaNukta DevHalant by DevHalfNgaNukta;
     sub DevCha DevHalant by DevHalfCha;
+    sub DevCha.alt DevHalant by DevHalfCha.alt;
     sub DevChaNukta DevHalant by DevHalfChaNukta;
     sub DevTta DevHalant by DevHalfTta;
     sub DevTtaNukta DevHalant by DevHalfTtaNukta;
