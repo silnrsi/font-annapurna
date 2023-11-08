@@ -260,7 +260,7 @@ SIL.
 ChangeLog
 (This should list both major and minor changes, most recent first.)
 
-07 October 2023 (SIL WSTech team)  Annapurna SIL version 2.000
+08 October 2023 (SIL WSTech team)  Annapurna SIL version 2.000
 
 ***Note that this is a major upgrade that may cause document reflow as
 some glyphs widths have changed and linespacing has been adjusted.***
