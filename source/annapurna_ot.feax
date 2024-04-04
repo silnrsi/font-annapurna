@@ -409,6 +409,10 @@ include (../source/annapurna_ot_gpos.feax)
 #  Features
 #**********************************
 
+feature BUZZ {  # Harfbuzz only feature
+            lookup BUZZ_reorder_ikar;
+} BUZZ ;
+
 feature aalt {  # Access All Alternates
             lookup AllAlternates;
 } aalt ;

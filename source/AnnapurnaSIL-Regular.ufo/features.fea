@@ -2173,6 +2173,188 @@ lookup DevFractions {
     sub DevThree slash DevFour by DevThreeQuarters;
 } DevFractions;
 
+# ------------------------------- Harfbuzz only -------------------------------
+# 
+# reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel
+# fixes rendering in a very unusual sequence (an implosive) in a lesser known language
+# test case: U+092C U+094D U+200D U+0905 U+093F
+# 2024-04-03 Currently in harfbuzz rendering, ikar only reorders before the independent vowel.
+# reorder so that ikar precedes a half form
+lookup _reorder_ikar_subst1 {
+    sub DevHalfKa by DevMaatraI DevHalfKa;
+    sub DevHalfKha by DevMaatraI DevHalfKha;
+    sub DevHalfGa by DevMaatraI DevHalfGa;
+    sub DevHalfGha by DevMaatraI DevHalfGha;
+    sub DevHalfNga by DevMaatraI DevHalfNga;
+    sub DevHalfCa by DevMaatraI DevHalfCa;
+    sub DevHalfCha by DevMaatraI DevHalfCha;
+    sub DevHalfJa by DevMaatraI DevHalfJa;
+    sub DevHalfJha by DevMaatraI DevHalfJha;
+    sub DevHalfNya by DevMaatraI DevHalfNya;
+    sub DevHalfTta by DevMaatraI DevHalfTta;
+    sub DevHalfTtha by DevMaatraI DevHalfTtha;
+    sub DevHalfDda by DevMaatraI DevHalfDda;
+    sub DevHalfDdha by DevMaatraI DevHalfDdha;
+    sub DevHalfNna by DevMaatraI DevHalfNna;
+    sub DevHalfTa by DevMaatraI DevHalfTa;
+    sub DevHalfTha by DevMaatraI DevHalfTha;
+    sub DevHalfDa by DevMaatraI DevHalfDa;
+    sub DevHalfDha by DevMaatraI DevHalfDha;
+    sub DevHalfNa by DevMaatraI DevHalfNa;
+    sub DevHalfPa by DevMaatraI DevHalfPa;
+    sub DevHalfPha by DevMaatraI DevHalfPha;
+    sub DevHalfBa by DevMaatraI DevHalfBa;
+    sub DevHalfBha by DevMaatraI DevHalfBha;
+    sub DevHalfMa by DevMaatraI DevHalfMa;
+    sub DevHalfYa by DevMaatraI DevHalfYa;
+    sub DevHalfRa by DevMaatraI DevHalfRa;
+    sub DevHalfLa by DevMaatraI DevHalfLa;
+    sub DevHalfLla by DevMaatraI DevHalfLla;
+    sub DevHalfWa by DevMaatraI DevHalfWa;
+    sub DevHalfSha by DevMaatraI DevHalfSha;
+    sub DevHalfSsa by DevMaatraI DevHalfSsa;
+    sub DevHalfSa by DevMaatraI DevHalfSa;
+    sub DevHalfHa by DevMaatraI DevHalfHa;
+    sub DevHalfGga by DevMaatraI DevHalfGga;
+    sub DevHalfJja by DevMaatraI DevHalfJja;
+    sub DevHalfDdda by DevMaatraI DevHalfDdda;
+    sub DevHalfBba by DevMaatraI DevHalfBba;
+    sub DevHalfKaNukta by DevMaatraI DevHalfKaNukta;
+    sub DevHalfKhaNukta by DevMaatraI DevHalfKhaNukta;
+    sub DevHalfGaNukta by DevMaatraI DevHalfGaNukta;
+    sub DevHalfGhaNukta by DevMaatraI DevHalfGhaNukta;
+    sub DevHalfNgaNukta by DevMaatraI DevHalfNgaNukta;
+    sub DevHalfCaNukta by DevMaatraI DevHalfCaNukta;
+    sub DevHalfChaNukta by DevMaatraI DevHalfChaNukta;
+    sub DevHalfJaNukta by DevMaatraI DevHalfJaNukta;
+    sub DevHalfJhaNukta by DevMaatraI DevHalfJhaNukta;
+    sub DevHalfNyaNukta by DevMaatraI DevHalfNyaNukta;
+    sub DevHalfTtaNukta by DevMaatraI DevHalfTtaNukta;
+    sub DevHalfTthaNukta by DevMaatraI DevHalfTthaNukta;
+    sub DevHalfDdaNukta by DevMaatraI DevHalfDdaNukta;
+    sub DevHalfDdhaNukta by DevMaatraI DevHalfDdhaNukta;
+    sub DevHalfNnaNukta by DevMaatraI DevHalfNnaNukta;
+    sub DevHalfTaNukta by DevMaatraI DevHalfTaNukta;
+    sub DevHalfThaNukta by DevMaatraI DevHalfThaNukta;
+    sub DevHalfDaNukta by DevMaatraI DevHalfDaNukta;
+    sub DevHalfDhaNukta by DevMaatraI DevHalfDhaNukta;
+    sub DevHalfNaNukta by DevMaatraI DevHalfNaNukta;
+    sub DevHalfPaNukta by DevMaatraI DevHalfPaNukta;
+    sub DevHalfPhaNukta by DevMaatraI DevHalfPhaNukta;
+    sub DevHalfBaNukta by DevMaatraI DevHalfBaNukta;
+    sub DevHalfBhaNukta by DevMaatraI DevHalfBhaNukta;
+    sub DevHalfMaNukta by DevMaatraI DevHalfMaNukta;
+    sub DevHalfYaNukta by DevMaatraI DevHalfYaNukta;
+    sub DevHalfRaNukta by DevMaatraI DevHalfRaNukta;
+    sub DevHalfLaNukta by DevMaatraI DevHalfLaNukta;
+    sub DevHalfLlaNukta by DevMaatraI DevHalfLlaNukta;
+    sub DevHalfWaNukta by DevMaatraI DevHalfWaNukta;
+    sub DevHalfShaNukta by DevMaatraI DevHalfShaNukta;
+    sub DevHalfSsaNukta by DevMaatraI DevHalfSsaNukta;
+    sub DevHalfSaNukta by DevMaatraI DevHalfSaNukta;
+    sub DevHalfHaNukta by DevMaatraI DevHalfHaNukta;
+    sub DevHalfGgaNukta by DevMaatraI DevHalfGgaNukta;
+    sub DevHalfJjaNukta by DevMaatraI DevHalfJjaNukta;
+    sub DevHalfDddaNukta by DevMaatraI DevHalfDddaNukta;
+    sub DevHalfBbaNukta by DevMaatraI DevHalfBbaNukta;
+    sub DevHalfJha.alt by DevMaatraI DevHalfJha.alt;
+    sub DevHalfJhaNukta.alt by DevMaatraI DevHalfJhaNukta.alt;
+    sub DevHalfJha.alt2 by DevMaatraI DevHalfJha.alt2;
+    sub DevHalfJhaNukta.alt2 by DevMaatraI DevHalfJhaNukta.alt2;
+    sub DevHalfNna.archaic by DevMaatraI DevHalfNna.archaic;
+} _reorder_ikar_subst1;
+
+lookup _reorder_ikar_subst2 {
+    sub DevHalfKa DevMaatraI by DevHalfKa;
+    sub DevHalfKha DevMaatraI by DevHalfKha;
+    sub DevHalfGa DevMaatraI by DevHalfGa;
+    sub DevHalfGha DevMaatraI by DevHalfGha;
+    sub DevHalfNga DevMaatraI by DevHalfNga;
+    sub DevHalfCa DevMaatraI by DevHalfCa;
+    sub DevHalfCha DevMaatraI by DevHalfCha;
+    sub DevHalfJa DevMaatraI by DevHalfJa;
+    sub DevHalfJha DevMaatraI by DevHalfJha;
+    sub DevHalfNya DevMaatraI by DevHalfNya;
+    sub DevHalfTta DevMaatraI by DevHalfTta;
+    sub DevHalfTtha DevMaatraI by DevHalfTtha;
+    sub DevHalfDda DevMaatraI by DevHalfDda;
+    sub DevHalfDdha DevMaatraI by DevHalfDdha;
+    sub DevHalfNna DevMaatraI by DevHalfNna;
+    sub DevHalfTa DevMaatraI by DevHalfTa;
+    sub DevHalfTha DevMaatraI by DevHalfTha;
+    sub DevHalfDa DevMaatraI by DevHalfDa;
+    sub DevHalfDha DevMaatraI by DevHalfDha;
+    sub DevHalfNa DevMaatraI by DevHalfNa;
+    sub DevHalfPa DevMaatraI by DevHalfPa;
+    sub DevHalfPha DevMaatraI by DevHalfPha;
+    sub DevHalfBa DevMaatraI by DevHalfBa;
+    sub DevHalfBha DevMaatraI by DevHalfBha;
+    sub DevHalfMa DevMaatraI by DevHalfMa;
+    sub DevHalfYa DevMaatraI by DevHalfYa;
+    sub DevHalfRa DevMaatraI by DevHalfRa;
+    sub DevHalfLa DevMaatraI by DevHalfLa;
+    sub DevHalfLla DevMaatraI by DevHalfLla;
+    sub DevHalfWa DevMaatraI by DevHalfWa;
+    sub DevHalfSha DevMaatraI by DevHalfSha;
+    sub DevHalfSsa DevMaatraI by DevHalfSsa;
+    sub DevHalfSa DevMaatraI by DevHalfSa;
+    sub DevHalfHa DevMaatraI by DevHalfHa;
+    sub DevHalfGga DevMaatraI by DevHalfGga;
+    sub DevHalfJja DevMaatraI by DevHalfJja;
+    sub DevHalfDdda DevMaatraI by DevHalfDdda;
+    sub DevHalfBba DevMaatraI by DevHalfBba;
+    sub DevHalfKaNukta DevMaatraI by DevHalfKaNukta;
+    sub DevHalfKhaNukta DevMaatraI by DevHalfKhaNukta;
+    sub DevHalfGaNukta DevMaatraI by DevHalfGaNukta;
+    sub DevHalfGhaNukta DevMaatraI by DevHalfGhaNukta;
+    sub DevHalfNgaNukta DevMaatraI by DevHalfNgaNukta;
+    sub DevHalfCaNukta DevMaatraI by DevHalfCaNukta;
+    sub DevHalfChaNukta DevMaatraI by DevHalfChaNukta;
+    sub DevHalfJaNukta DevMaatraI by DevHalfJaNukta;
+    sub DevHalfJhaNukta DevMaatraI by DevHalfJhaNukta;
+    sub DevHalfNyaNukta DevMaatraI by DevHalfNyaNukta;
+    sub DevHalfTtaNukta DevMaatraI by DevHalfTtaNukta;
+    sub DevHalfTthaNukta DevMaatraI by DevHalfTthaNukta;
+    sub DevHalfDdaNukta DevMaatraI by DevHalfDdaNukta;
+    sub DevHalfDdhaNukta DevMaatraI by DevHalfDdhaNukta;
+    sub DevHalfNnaNukta DevMaatraI by DevHalfNnaNukta;
+    sub DevHalfTaNukta DevMaatraI by DevHalfTaNukta;
+    sub DevHalfThaNukta DevMaatraI by DevHalfThaNukta;
+    sub DevHalfDaNukta DevMaatraI by DevHalfDaNukta;
+    sub DevHalfDhaNukta DevMaatraI by DevHalfDhaNukta;
+    sub DevHalfNaNukta DevMaatraI by DevHalfNaNukta;
+    sub DevHalfPaNukta DevMaatraI by DevHalfPaNukta;
+    sub DevHalfPhaNukta DevMaatraI by DevHalfPhaNukta;
+    sub DevHalfBaNukta DevMaatraI by DevHalfBaNukta;
+    sub DevHalfBhaNukta DevMaatraI by DevHalfBhaNukta;
+    sub DevHalfMaNukta DevMaatraI by DevHalfMaNukta;
+    sub DevHalfYaNukta DevMaatraI by DevHalfYaNukta;
+    sub DevHalfRaNukta DevMaatraI by DevHalfRaNukta;
+    sub DevHalfLaNukta DevMaatraI by DevHalfLaNukta;
+    sub DevHalfLlaNukta DevMaatraI by DevHalfLlaNukta;
+    sub DevHalfWaNukta DevMaatraI by DevHalfWaNukta;
+    sub DevHalfShaNukta DevMaatraI by DevHalfShaNukta;
+    sub DevHalfSsaNukta DevMaatraI by DevHalfSsaNukta;
+    sub DevHalfSaNukta DevMaatraI by DevHalfSaNukta;
+    sub DevHalfHaNukta DevMaatraI by DevHalfHaNukta;
+    sub DevHalfGgaNukta DevMaatraI by DevHalfGgaNukta;
+    sub DevHalfJjaNukta DevMaatraI by DevHalfJjaNukta;
+    sub DevHalfDddaNukta DevMaatraI by DevHalfDddaNukta;
+    sub DevHalfBbaNukta DevMaatraI by DevHalfBbaNukta;
+    sub DevHalfJha.alt DevMaatraI by DevHalfJha.alt;
+    sub DevHalfJhaNukta.alt DevMaatraI by DevHalfJhaNukta.alt;
+    sub DevHalfJha.alt2 DevMaatraI by DevHalfJha.alt2;
+    sub DevHalfJhaNukta.alt2 DevMaatraI by DevHalfJhaNukta.alt2;
+    sub DevHalfNna.archaic DevMaatraI by DevHalfNna.archaic;
+} _reorder_ikar_subst2;
+
+lookup BUZZ_reorder_ikar {
+    # reorder so that ikar precedes a half form in context with a vowel
+    sub @cDevHalfCForms' lookup _reorder_ikar_subst1 DevMaatraI' lookup _reorder_ikar_subst2 @cDevFullVowels;
+} BUZZ_reorder_ikar;
+
+# 
+# ------------------------------- Harfbuzz only -------------------------------
 lookup CharVar01JhaAlternates {
     # cv01
     lookupflag 0;
@@ -3764,6 +3946,11 @@ lookup BelowHalantAdjust {
 #**********************************
 #  Features
 #**********************************
+feature BUZZ {
+    # Harfbuzz only feature
+    lookup BUZZ_reorder_ikar;
+} BUZZ;
+
 feature aalt {
     # Access All Alternates
     lookup AllAlternates;

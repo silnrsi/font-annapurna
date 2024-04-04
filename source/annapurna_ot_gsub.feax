@@ -1136,6 +1136,29 @@ lookup DevFractions {
     sub DevThree slash DevFour by DevThreeQuarters ;
 } DevFractions;
 
+# ------------------------------- Harfbuzz only -------------------------------
+# 
+# reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel
+# fixes rendering in a very unusual sequence (an implosive) in a lesser known language
+# test case: U+092C U+094D U+200D U+0905 U+093F
+# 2024-04-03 Currently in harfbuzz rendering, ikar only reorders before the independent vowel.
+
+# reorder so that ikar precedes a half form
+lookup _reorder_ikar_subst1 {
+    sub @cDevHalfCForms by DevMaatraI @cDevHalfCForms;
+} _reorder_ikar_subst1;
+
+lookup _reorder_ikar_subst2 {
+    sub @cDevHalfCForms DevMaatraI by @cDevHalfCForms;
+} _reorder_ikar_subst2;
+
+lookup BUZZ_reorder_ikar {
+    # reorder so that ikar precedes a half form in context with a vowel
+    sub @cDevHalfCForms' lookup _reorder_ikar_subst1 DevMaatraI' lookup _reorder_ikar_subst2 @cDevFullVowels;
+} BUZZ_reorder_ikar;
+# 
+# ------------------------------- Harfbuzz only -------------------------------
+
 lookup CharVar01JhaAlternates {  # cv01
   lookupflag 0 ;
     sub DevJha          from [ DevJha.alt          DevJha.alt2 ] ;
