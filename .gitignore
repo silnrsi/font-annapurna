@@ -94,6 +94,9 @@ $RECYCLE.BIN/
 .sass-cache/
 .jekyll-metadata
 
+# Do Not Commit files prefixed with dnc_
+dnc_*
+
 # Byte-compiled / optimized files
 *.py[co]
 *$py.class

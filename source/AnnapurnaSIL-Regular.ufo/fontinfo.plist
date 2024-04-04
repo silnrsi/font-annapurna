@@ -7,13 +7,13 @@
   <key>capHeight</key>
   <integer>1434</integer>
   <key>copyright</key>
-  <string>Copyright (c) 2007-2023 by SIL International</string>
+  <string>Copyright (c) 2007-2024 by SIL International</string>
   <key>descender</key>
   <integer>-984</integer>
   <key>familyName</key>
   <string>Annapurna SIL</string>
   <key>openTypeHeadCreated</key>
-  <string>2023/11/06 15:55:43</string>
+  <string>2024/04/03 17:07:07</string>
   <key>openTypeHeadFlags</key>
   <array>
     <integer>0</integer>
@@ -33,7 +33,7 @@
   <key>openTypeNameDesignerURL</key>
   <string>https://software.sil.org/wstech/</string>
   <key>openTypeNameLicense</key>
-  <string>Copyright (c) 2007-2023, SIL International (https://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
+  <string>Copyright (c) 2007-2024, SIL International (https://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: https://scripts.sil.org/OFL
 
@@ -87,7 +87,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNamePreferredSubfamilyName</key>
   <string>Regular</string>
   <key>openTypeNameUniqueID</key>
-  <string>SIL International: Annapurna SIL Regular: 2023</string>
+  <string>SIL International: Annapurna SIL Regular: 2024</string>
   <key>openTypeNameVersion</key>
   <string>Version 2.001</string>
   <key>openTypeOS2CodePageRanges</key>
