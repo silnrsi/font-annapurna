@@ -17,6 +17,7 @@ DESC_SHORT = 'Devanagari Unicode TrueType font with OT and Graphite support'
 # Get version info from Regular UFO; must be first function call:
 getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
 # BUILDLABEL = 'beta'
+devver = getversion()
 
 # APs to ignore when generating OT and GDL classes
 # omitAPs = '--omitaps "UpperCenter"'
@@ -55,6 +56,18 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
         script = ['dev2'],
         pdf = fret(params="-r -oi"),
     )
+
+# Make Nepal TypeTuned package
+npackage = package(appname="AnnapurnaSILNepalBeta", version=devver)
+# npackage = package(appname="AnnapurnaSILNepal", version="2.100") # use only for release versions
+for f in d.fonts:
+    font(target = process('nepal/'+f.target.replace('AnnapurnaSIL', 'AnnapurnaSILNepalBeta'),
+                        # cmd('ttfremap -r -c ${SRC} ${DEP} ${TGT}', ['source/nepal_remap.txt']),
+                        cmd('${TYPETUNER} -o ${TGT} applyset ${SRC} ${DEP}', ['source/typetuner/feat_setNepal.xml']), 
+                        name('Annapurna SIL Nepal beta')),
+            opentype = internal(),
+            source = f.target,
+            package = npackage)
 
 def configure(ctx) :
     ctx.find_program('ttfautohint')

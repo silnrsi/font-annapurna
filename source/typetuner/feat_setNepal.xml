@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE features_set SYSTEM "feat_set.dtd">
+<features_set version="1.0">
+	<feature name="Region" value="Nepal">
+		<value name="Default"/>
+		<value name="Nepal"/>
+		<value name="Newar"/>
+	</feature>
+	<feature name="Jha variants" value="Jha standard style">
+		<value name="Jha standard style"/>
+		<value name="Jha Nepal style"/>
+		<value name="Jha Newar style"/>
+	</feature>
+	<feature name="Kra variant" value="Closed">
+		<value name="Closed"/>
+		<value name="Open"/>
+	</feature>
+	<feature name="Tra variant" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Shra variant" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Da and Ha with openYa" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Ukar Nukta position" value="Inside">
+		<value name="Inside"/>
+		<value name="Below"/>
+	</feature>
+	<feature name="Ekar Nukta position" value="Low">
+		<value name="Low"/>
+		<value name="High"/>
+	</feature>
+	<feature name="Digit five variant" value="Digit five standard style">
+		<value name="Digit five standard style"/>
+		<value name="Digit five Nepal style"/>
+	</feature>
+	<feature name="Digit eight variant" value="Digit eight standard style">
+		<value name="Digit eight standard style"/>
+		<value name="Digit eight Nepal style"/>
+	</feature>
+	<feature name="Digit nine variants" value="Digit nine standard style">
+		<value name="Digit nine standard style"/>
+		<value name="Digit nine Nepal style"/>
+		<value name="Digit nine Newar style"/>
+	</feature>
+	<feature name="Visarga connecting line (shiro-rekha) variant" value="No connecting line">
+		<value name="No connecting line"/>
+		<value name="With connecting line"/>
+	</feature>
+	<feature name="Limbu glottal stop connecting line (shiro-rekha) variant" value="With connecting line">
+		<value name="With connecting line"/>
+		<value name="No connecting line"/>
+	</feature>
+	<feature name="Archaic forms" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Cha variant" value="No tail">
+		<value name="No tail"/>
+		<value name="With tail"/>
+	</feature>
+	<feature name="No Stylistic Sets" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+</features_set>
