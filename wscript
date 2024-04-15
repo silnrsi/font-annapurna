@@ -61,7 +61,7 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
 npackage = package(appname="AnnapurnaSILNepalBeta", version=devver)
 # npackage = package(appname="AnnapurnaSILNepal", version="2.100") # use only for release versions
 for f in d.fonts:
-    font(target = process('nepal/'+f.target.replace('AnnapurnaSIL', 'AnnapurnaSILNepalBeta'),
+    font(target = process(f.target.replace('AnnapurnaSIL', 'AnnapurnaSILNepalBeta'),
                         # cmd('ttfremap -r -c ${SRC} ${DEP} ${TGT}', ['source/nepal_remap.txt']),
                         cmd('${TYPETUNER} -o ${TGT} applyset ${SRC} ${DEP}', ['source/typetuner/feat_setNepal.xml']), 
                         name('Annapurna SIL Nepal beta')),
