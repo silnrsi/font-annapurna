@@ -60,6 +60,10 @@
 		<value name="False"/>
 		<value name="True"/>
 	</feature>
+	<feature name="RaUkarNukta ligature" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
 	<feature name="Cha variant" value="No tail">
 		<value name="No tail"/>
 		<value name="With tail"/>

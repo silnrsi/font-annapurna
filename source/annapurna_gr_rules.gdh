@@ -929,8 +929,7 @@ pass(PASS_VORDER)    // 4
 
 
     //    Rare case - reorder ikar before full vowel and possible cons or half-cons 
-    cls_nHalf g_halant  g_zwj  cls_vowelFull  cls_vowelLeft  > @5 @1 @2 @3 @4; // reorder before a forced halfCons (by use of ZWJ) 
-    cls_nHalf cls_vowelFull  cls_vowelLeft  > @3 @1 @2;                        // reorder before fullCons 
+    cls_nHalf g_halant  g_zwj  cls_vowelFull  cls_vowelLeft  > @5 @1 @2 @3 @4; // reorder before a forced halfCons (by use of ZWJ)
     cls_vowelFull  cls_vowelLeft  > @2 @1 ;                                    // only reorders before a fullVowel
 
 

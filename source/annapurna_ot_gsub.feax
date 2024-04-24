@@ -1317,6 +1317,14 @@ lookup StyleSet16AltRaUkarNukta {
     sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta ;
 } StyleSet16AltRaUkarNukta;
 
+lookup TTRaUkarNuktaLig {
+  lookupflag 0 ;
+    sub DevRa      DevMaatraUNukta  by DevR.UNukta ;
+    sub DevRaNukta DevMaatraUNukta  by DevRNukta.UNukta ;
+    sub DevRa      DevMaatraUUNukta by DevR.UUNukta ;
+    sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta ;
+} TTRaUkarNuktaLig;
+
 lookup StyleSet17AltCha {
   lookupflag 0 ;
     sub DevCha by DevCha.alt ;
