@@ -582,18 +582,22 @@ feature blws {  # Below-Base Substitutions
 feature calt {  # Contextual Alternates
     script DFLT;  # Default
         language dflt;  # Default
+            lookup StyleSet17AltCha_context;
             lookup Stacking_Conjuncts_u_uu;
             lookup u_uu_Stacking_Conjuncts;
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
+            lookup StyleSet17AltCha_context;
             lookup Stacking_Conjuncts_u_uu;
             lookup u_uu_Stacking_Conjuncts;
             lookup altYA_context;
         language NEP  exclude_dflt;  # Nepali
+            lookup StyleSet17AltCha_context;
             lookup Stacking_Conjuncts_u_uu;
             lookup u_uu_Stacking_Conjuncts;
             lookup altYA_context;
         language NEW  exclude_dflt;  # Newari
+            lookup StyleSet17AltCha_context;
             lookup Stacking_Conjuncts_u_uu;
             lookup u_uu_Stacking_Conjuncts;
             lookup altYA_context;

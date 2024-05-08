@@ -451,6 +451,7 @@
     <string>DevHalfChaNukta</string>
     <string>DevChaNuktaR</string>
     <string>DevHalfCha</string>
+    <string>DevHalfCha.halant</string>
     <string>DevHalfCha.alt</string>
     <string>DevCh.Ya</string>
     <string>DevCh.HalfYa</string>
@@ -1496,6 +1497,8 @@
     <string>uni091B094D.half</string>
     <key>DevHalfCha.alt</key>
     <string>uni091B094D.half.alt</string>
+    <key>DevHalfCha.halant</key>
+    <string>uni091B094D.half.halant</string>
     <key>DevHalfChaNukta</key>
     <string>uni091B093C094D.half</string>
     <key>DevHalfD.YaNuktaRa</key>

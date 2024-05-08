@@ -1078,7 +1078,6 @@ lookup dev2_NoHalfHalantForms {
     sub DevNga DevHalant by DevHalfNga ;
     sub DevNgaNukta DevHalant by DevHalfNgaNukta ;
     sub DevCha DevHalant by DevHalfCha ;
-    sub DevCha.alt DevHalant by DevHalfCha.alt ;
     sub DevChaNukta DevHalant by DevHalfChaNukta ;
     sub DevTta DevHalant by DevHalfTta ;
     sub DevTtaNukta DevHalant by DevHalfTtaNukta ;
@@ -1328,8 +1327,18 @@ lookup TTRaUkarNuktaLig {
 lookup StyleSet17AltCha {
   lookupflag 0 ;
     sub DevCha by DevCha.alt ;
-    sub DevHalfCha by DevHalfCha.alt ;
+    sub DevHalfCha by DevHalfCha.halant ;
 } StyleSet17AltCha;
+
+# The DevCha only has a halant form as a dead consonant.
+# The DevCha variant has a halant form as well as a "stemless" half-consonant form,
+# so the variant needs additional processing (in the following lookup).
+lookup StyleSet17AltCha_context {
+  lookupflag 0 ;
+    ignore sub DevHalfCha.halant' ZeroWidthNonJoiner ;
+    sub DevHalfCha.halant' ZeroWidthJoiner    @cDevFullCForms  by DevHalfCha.alt ;
+    sub DevHalfCha.halant'                    @cDevFullCForms  by DevHalfCha.alt ;
+} StyleSet17AltCha_context;
 
 lookup CharVar21AltHeadstroke {
   lookupflag 0 ;

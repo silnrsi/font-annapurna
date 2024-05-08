@@ -13,3 +13,5 @@
 #DevNgNga.YaRa        = DevNg.Nga & DevYaR.alt
 #DevNgNga.YaNuktaRa   = DevNg.Nga & DevYaNuktaR.alt
 
+# 2024-05-01 create composite DevCha.alt + DevHalant
+# DevHalfCha.halant  =  DevCha.alt & DevHalant

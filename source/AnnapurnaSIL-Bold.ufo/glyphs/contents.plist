@@ -400,6 +400,8 @@
   <string>D_evH_alfC_ha.glif</string>
   <key>DevHalfCha.alt</key>
   <string>D_evH_alfC_ha.alt.glif</string>
+  <key>DevHalfCha.halant</key>
+  <string>D_evH_alfC_ha.halant.glif</string>
   <key>DevHalfChaNukta</key>
   <string>D_evH_alfC_haN_ukta.glif</string>
   <key>DevHalfD.YaNuktaRa</key>
