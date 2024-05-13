@@ -1338,6 +1338,7 @@ lookup StyleSet17AltCha_context {
     ignore sub DevHalfCha.halant' ZeroWidthNonJoiner ;
     sub DevHalfCha.halant' ZeroWidthJoiner    @cDevFullCForms  by DevHalfCha.alt ;
     sub DevHalfCha.halant'                    @cDevFullCForms  by DevHalfCha.alt ;
+    sub DevHalfCha.halant' ZeroWidthJoiner                     by DevHalfCha.alt ;
 } StyleSet17AltCha_context;
 
 lookup CharVar21AltHeadstroke {

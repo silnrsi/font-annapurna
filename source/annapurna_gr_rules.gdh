@@ -1473,7 +1473,8 @@ endif;
 
 if (cha) // cv17
     g__dev_cha           >  g__dev_cha_alt;
-    g__dev_cha g_halant  >  g__dev_half_cha_alt:(1 2) _;
+    g__dev_cha g_halant  >  g__dev_half_cha_alt:(1 2) _ / _ _ g_zwj? cls_nHalf;
+    g__dev_half_cha      >  g__dev_half_cha_alt         / _ g_zwj;
 else
     g__dev_cha_alt       >  g__dev_cha;
     g__dev_half_cha_alt  >  g__dev_half_cha;
