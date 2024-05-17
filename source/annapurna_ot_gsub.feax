@@ -920,6 +920,53 @@ lookup ConjunctsHalf {
     sub DevHalfTa DevHalfTa by DevHalfT.Ta ;
 } ConjunctsHalf;
 
+lookup dev2_NoHalfHalantForms {
+  lookupflag 0 ;
+    sub DevNga DevHalant by DevHalfNga ;
+    sub DevNgaNukta DevHalant by DevHalfNgaNukta ;
+    sub DevCha DevHalant by DevHalfCha ;
+    sub DevChaNukta DevHalant by DevHalfChaNukta ;
+    sub DevTta DevHalant by DevHalfTta ;
+    sub DevTtaNukta DevHalant by DevHalfTtaNukta ;
+    sub DevTtha DevHalant by DevHalfTtha ;
+    sub DevTthaNukta DevHalant by DevHalfTthaNukta ;
+    sub DevDda DevHalant ZeroWidthJoiner by DevHalfDdaZWJ ;
+    sub DevDda DevHalant by DevHalfDda ;
+    sub DevDdaNukta DevHalant by DevHalfDdaNukta ;
+    sub DevDdha DevHalant by DevHalfDdha ;
+    sub DevDdhaNukta DevHalant by DevHalfDdhaNukta ;
+    sub DevDa DevHalant by DevHalfDa ;
+    sub DevDaNukta DevHalant by DevHalfDaNukta ;
+    sub DevDdda DevHalant by DevHalfDdda ;
+    sub DevDddaNukta DevHalant by DevHalfDddaNukta ;
+} dev2_NoHalfHalantForms;
+
+# ------------------------------- Harfbuzz only -------------------------------
+# 
+# reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel
+# fixes rendering in a very unusual sequence (an implosive) in a lesser known language
+# test case: U+092C U+094D U+200D U+0905 U+093F
+# 2024-04-03 Currently in harfbuzz rendering, ikar only reorders before the independent vowel.
+
+# Named glyph class for Wambule
+@cWmeHalfCForms = [ DevHalfDdaZWJ DevHalfBa ];
+
+# reorder so that ikar precedes a half form
+lookup _reorder_ikar_subst1 {
+    sub @cWmeHalfCForms by DevMaatraI @cWmeHalfCForms;
+} _reorder_ikar_subst1;
+
+lookup _reorder_ikar_subst2 {
+    sub @cWmeHalfCForms DevMaatraI by @cWmeHalfCForms;
+} _reorder_ikar_subst2;
+
+lookup wme_reorder_ikar {
+    # reorder so that ikar precedes a half form in context with a vowel
+    sub @cWmeHalfCForms' lookup _reorder_ikar_subst1 DevMaatraI' lookup _reorder_ikar_subst2 DevVowelA;
+} wme_reorder_ikar;
+# 
+# ------------------------------- Harfbuzz only -------------------------------
+
 lookup Matra_i_20_target {
   lookupflag 0 ;
     sub DevMaatraI by DevMaatraI.width20 ;
@@ -1073,27 +1120,6 @@ lookup Matra_ii_30 {
     sub @cDevMatra_ii_width30 [ DevMaatraII DevMaatraIINukta ]' lookup Matra_ii_30_target ;
 } Matra_ii_30;
 
-lookup dev2_NoHalfHalantForms {
-  lookupflag 0 ;
-    sub DevNga DevHalant by DevHalfNga ;
-    sub DevNgaNukta DevHalant by DevHalfNgaNukta ;
-    sub DevCha DevHalant by DevHalfCha ;
-    sub DevChaNukta DevHalant by DevHalfChaNukta ;
-    sub DevTta DevHalant by DevHalfTta ;
-    sub DevTtaNukta DevHalant by DevHalfTtaNukta ;
-    sub DevTtha DevHalant by DevHalfTtha ;
-    sub DevTthaNukta DevHalant by DevHalfTthaNukta ;
-    sub DevDda DevHalant ZeroWidthJoiner by DevHalfDdaZWJ ;
-    sub DevDda DevHalant by DevHalfDda ;
-    sub DevDdaNukta DevHalant by DevHalfDdaNukta ;
-    sub DevDdha DevHalant by DevHalfDdha ;
-    sub DevDdhaNukta DevHalant by DevHalfDdhaNukta ;
-    sub DevDa DevHalant by DevHalfDa ;
-    sub DevDaNukta DevHalant by DevHalfDaNukta ;
-    sub DevDdda DevHalant by DevHalfDdda ;
-    sub DevDddaNukta DevHalant by DevHalfDddaNukta ;
-} dev2_NoHalfHalantForms;
-
 # When certain characters are followed by virama+ya (094D+092F) it displays as the full form of the first 
 # character followed by "open-ya". With older technology, we had to do this using ligatures (which are in 
 # "lookup dev2_Conjuncts_NoPrebase_Ya" above). We received a request that this should also happen when the 
@@ -1135,32 +1161,6 @@ lookup DevFractions {
     sub DevOne slash DevTwo by DevOneHalf ;
     sub DevThree slash DevFour by DevThreeQuarters ;
 } DevFractions;
-
-# ------------------------------- Harfbuzz only -------------------------------
-# 
-# reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel
-# fixes rendering in a very unusual sequence (an implosive) in a lesser known language
-# test case: U+092C U+094D U+200D U+0905 U+093F
-# 2024-04-03 Currently in harfbuzz rendering, ikar only reorders before the independent vowel.
-
-# Named glyph class for Wambule
-@cWmeHalfCForms = [ DevHalfDdaZWJ DevHalfBa ];
-
-# reorder so that ikar precedes a half form
-lookup _reorder_ikar_subst1 {
-    sub @cWmeHalfCForms by DevMaatraI @cWmeHalfCForms;
-} _reorder_ikar_subst1;
-
-lookup _reorder_ikar_subst2 {
-    sub @cWmeHalfCForms DevMaatraI by @cWmeHalfCForms;
-} _reorder_ikar_subst2;
-
-lookup wme_reorder_ikar {
-    # reorder so that ikar precedes a half form in context with a vowel
-    sub @cWmeHalfCForms' lookup _reorder_ikar_subst1 DevMaatraI' lookup _reorder_ikar_subst2 DevVowelA;
-} wme_reorder_ikar;
-# 
-# ------------------------------- Harfbuzz only -------------------------------
 
 lookup CharVar01JhaAlternates {  # cv01
   lookupflag 0 ;

@@ -335,7 +335,7 @@
     DevK.Ssa.archaic DevC.Ca DevD.Dha DevD.Ma DevD.Ya DevSh.Ca DevSh.Wa  
     DevS.Na  ] ; 
 
-@cDevMatra_i_width40 = [ DevH.Ma DevH.Ya @cDevHalfCForms @cDevHalfConjuncts @cDevHalfCRakarForms  
+@cDevMatra_i_width40 = [ DevHalfDdaZWJ DevH.Ma DevH.Ya @cDevHalfCForms @cDevHalfConjuncts @cDevHalfCRakarForms  
     @cDevConjunctsYaAlt @cDevConjunctsYaAltHalf  ] ; 
 
 @cDevMatra_ii_variants = [ DevMaatraII DevMaatraIINukta DevMaatraII.width20 DevMaatraII.width30 DevMaatraIINukta.width20 DevMaatraIINukta.width30  ] ; 
