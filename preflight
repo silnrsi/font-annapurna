@@ -6,7 +6,7 @@
 set -e
 
 echo "-----Update version number..."
-psfsetversion source/AnnapurnaSIL-Regular.ufo "2.005" -l source/logs/setversionR.log
+psfsetversion source/AnnapurnaSIL-Regular.ufo "2.050" -l source/logs/setversionR.log
 
 echo "-----Normalizing Regular UFO..."
 echo "-----Updating production names in Regular..."

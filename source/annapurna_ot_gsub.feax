@@ -941,12 +941,19 @@ lookup dev2_NoHalfHalantForms {
     sub DevDddaNukta DevHalant by DevHalfDddaNukta ;
 } dev2_NoHalfHalantForms;
 
-# ------------------------------- Harfbuzz only -------------------------------
+# ------------------------------- Special case -------------------------------
 # 
-# reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel
-# fixes rendering in a very unusual sequence (an implosive) in a lesser known language
+# Reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel
+# Fixes rendering in an unusual sequence (an implosive) in the Wambule language
+# consisting of a DDA or BA half-form (using ZWJ) plus a full vowel A.
 # test case: U+092C U+094D U+200D U+0905 U+093F
-# 2024-04-03 Currently in harfbuzz rendering, ikar only reorders before the independent vowel.
+# Citation: *A Grammar of Wambule* by Opgenort, Jean Robert;
+# Citation: *A Wambule Rai – Nepali Dictionary* Compiled and edited by Abi Nath Rai 
+#            and published by Wambule Rai Society (WAMRAS) in 2000
+# In 2007 Unicode encoded these implosives as Sindhi implosives U+097E and U+097F, however, 
+# the language community still uses the old half-form+vowelA sequence in their writing.
+# Until the language community is made aware of the encoded implosives and they
+# make a change, we want to have special code for their implosive sequence.
 
 # Named glyph class for Wambule
 @cWmeHalfCForms = [ DevHalfDdaZWJ DevHalfBa ];
@@ -965,7 +972,7 @@ lookup wme_reorder_ikar {
     sub @cWmeHalfCForms' lookup _reorder_ikar_subst1 DevMaatraI' lookup _reorder_ikar_subst2 DevVowelA;
 } wme_reorder_ikar;
 # 
-# ------------------------------- Harfbuzz only -------------------------------
+# ------------------------------- Special case -------------------------------
 
 lookup Matra_i_20_target {
   lookupflag 0 ;

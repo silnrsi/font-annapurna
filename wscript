@@ -58,7 +58,7 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
     )
 
 # Make Nepal TypeTuned package
-npackage = package(appname="AnnapurnaSILNepalBeta", version="2.005")
+npackage = package(appname="AnnapurnaSILNepalBeta", version="2.050")
 # npackage = package(appname="AnnapurnaSILNepalBeta", version=devver)
 # npackage = package(appname="AnnapurnaSILNepal", version="2.100") # use only for release versions
 for f in d.fonts:
