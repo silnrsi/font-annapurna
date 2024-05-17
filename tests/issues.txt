@@ -1,9 +1,10 @@
-Annapurna v 2.000
-reorder halfCons+fullVowel+ikar
-ब्‍अि
-reorder fullCons+fullVowel+ikar
-बअि
-reorder fullVowel+ikar
-अि
+Wambule DDA and BA implosives
+reorder Cons+halant+ZWJ (halfCons)+fullVowel+ikar
+ब्‍अि   ड्‍अि 
 reorder Cons+halant+fullVowel+ikar
-ब्अि
+ब्अि  ड्अि 
+reorder Cons+fullVowel+ikar
+बअि  डअि 
+some implosive tests
+ ब्‍अि  ब्‍अी  ब्‍अु  ड्‍अि  ड्‍अी  ड्‍अु  
+ 

@@ -536,6 +536,7 @@
     <string>DevHalfTth.YaNuktaRa</string>
     <string>DevDda</string>
     <string>DevHalfDda</string>
+    <string>DevHalfDdaZWJ</string>
     <string>DevDd.Dda</string>
     <string>DevDd.Dda.alt</string>
     <string>DevDd.Ya</string>
@@ -1517,6 +1518,8 @@
     <string>uni0921094D.half</string>
     <key>DevHalfDdaNukta</key>
     <string>uni095C094D.half</string>
+    <key>DevHalfDdaZWJ</key>
+    <string>uni0921094D200D.half</string>
     <key>DevHalfDdda</key>
     <string>uni097E094D.half</string>
     <key>DevHalfDddaNukta</key>

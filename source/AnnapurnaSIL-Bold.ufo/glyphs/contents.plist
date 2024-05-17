@@ -420,6 +420,8 @@
   <string>D_evH_alfD_da.glif</string>
   <key>DevHalfDdaNukta</key>
   <string>D_evH_alfD_daN_ukta.glif</string>
+  <key>DevHalfDdaZWJ</key>
+  <string>D_evH_alfD_daZ_W_J_.glif</string>
   <key>DevHalfDdda</key>
   <string>D_evH_alfD_dda.glif</string>
   <key>DevHalfDddaNukta</key>
