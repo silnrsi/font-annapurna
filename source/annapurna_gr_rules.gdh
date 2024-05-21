@@ -234,6 +234,9 @@ table(glyph) {AttributeOverride = false}
         g__dev_half_bba_nukta    g__dev_half_nna_archaic    g__dev_half_k_ssa    g__dev_half_k_ssa_archaic            g__dev_half_j_nya    g__dev_half_t_ta
         g__dev_half_cha_alt);
 
+    //    Special class for Wambule
+    cls_wme_nHalf = (g__dev_dda g__dev_ba g__dev_la);
+
 
     //    Full conjuncts
 
@@ -928,8 +931,11 @@ pass(PASS_VORDER)    // 4
     //    TODO: possibly add yet another consonant in the chain.
 
 
-    //    Rare case - reorder ikar before full vowel and possible cons or half-cons 
-    cls_nHalf g_halant  g_zwj  cls_vowelFull  cls_vowelLeft  > @5 @1 @2 @3 @4; // reorder before a forced halfCons (by use of ZWJ)
+    //  Reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel.
+    //  Fixes rendering in an unusual sequence (an implosive) in the Wambule language
+    //  consisting of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A.  
+
+    cls_wme_nHalf g_halant  g_zwj  g__dev_vowel_a  g__dev_maatra_i  > @5 @1 @2 @3 @4; // reorder before a forced halfCons (by use of ZWJ)
     cls_vowelFull  cls_vowelLeft  > @2 @1 ;                                    // only reorders before a fullVowel
 
 

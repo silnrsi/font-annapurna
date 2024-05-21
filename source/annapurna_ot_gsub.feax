@@ -956,7 +956,7 @@ lookup dev2_NoHalfHalantForms {
 # make a change, we want to have special code for their implosive sequence.
 
 # Named glyph class for Wambule
-@cWmeHalfCForms = [ DevHalfDdaZWJ DevHalfBa ];
+@cWmeHalfCForms = [ DevHalfDdaZWJ DevHalfBa DevHalfLa ];
 
 # reorder so that ikar precedes a half form
 lookup _reorder_ikar_subst1 {

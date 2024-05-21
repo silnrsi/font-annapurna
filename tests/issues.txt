@@ -1,10 +1,5 @@
-Wambule DDA and BA implosives
-reorder Cons+halant+ZWJ (halfCons)+fullVowel+ikar
-ब्‍अि   ड्‍अि 
-reorder Cons+halant+fullVowel+ikar
-ब्अि  ड्अि 
-reorder Cons+fullVowel+ikar
-बअि  डअि 
-some implosive tests
- ब्‍अि  ब्‍अी  ब्‍अु  ड्‍अि  ड्‍अी  ड्‍अु  
- 
+Wambule BA DDA LA implosives
+ब्‍अि  ब्‍अा  ब्‍अी  ब्‍अु  ब्‍अे  ब्‍अो  
+ड्‍अि  ड्‍अा  ड्‍अी  ड्‍अु  ड्‍अे  ड्‍अो  
+ल्‍अि  ल्‍अा  ल्‍अी  ल्‍अु  ल्‍अे  ल्‍अो  
+
