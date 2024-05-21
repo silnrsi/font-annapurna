@@ -1,3 +1,3 @@
 #!/bin/sh
 
-psfufo2glyphs source/AnnapurnaSIL-RB.designspace source/AnnapurnaSIL-RB.glyphs
+psfufo2glyphs source/AnnapurnaSILDesign.designspace source/AnnapurnaSILDesign.glyphs
