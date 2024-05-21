@@ -71,4 +71,10 @@
       <point x="912" y="397" type="curve"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCPPPP</string>
+    </dict>
+  </lib>
 </glyph>

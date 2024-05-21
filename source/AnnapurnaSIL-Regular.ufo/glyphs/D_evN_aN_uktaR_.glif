@@ -48,4 +48,10 @@
       <point x="800" y="540" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CPPPPP</string>
+    </dict>
+  </lib>
 </glyph>

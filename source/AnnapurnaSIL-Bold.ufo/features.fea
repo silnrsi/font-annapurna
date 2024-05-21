@@ -1997,16 +1997,18 @@ lookup dev2_NoHalfHalantForms {
 # Until the language community is made aware of the encoded implosives and they
 # make a change, we want to have special code for their implosive sequence.
 # Named glyph class for Wambule
-@cWmeHalfCForms = [DevHalfDdaZWJ DevHalfBa];
+@cWmeHalfCForms = [DevHalfDdaZWJ DevHalfBa DevHalfLa];
 # reorder so that ikar precedes a half form
 lookup _reorder_ikar_subst1 {
     sub DevHalfDdaZWJ by DevMaatraI DevHalfDdaZWJ;
     sub DevHalfBa by DevMaatraI DevHalfBa;
+    sub DevHalfLa by DevMaatraI DevHalfLa;
 } _reorder_ikar_subst1;
 
 lookup _reorder_ikar_subst2 {
     sub DevHalfDdaZWJ DevMaatraI by DevHalfDdaZWJ;
     sub DevHalfBa DevMaatraI by DevHalfBa;
+    sub DevHalfLa DevMaatraI by DevHalfLa;
 } _reorder_ikar_subst2;
 
 lookup wme_reorder_ikar {
