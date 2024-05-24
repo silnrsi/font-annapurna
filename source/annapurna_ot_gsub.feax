@@ -943,17 +943,18 @@ lookup dev2_NoHalfHalantForms {
 
 # ------------------------------- Special case -------------------------------
 # 
-# Reorder ikar to precede a half form (representing cons+halant+ZWJ) and a vowel
+# Reorder ikar to precede a half form (representing cons+halant+ZWJ) and the vowel A.
 # Fixes rendering in an unusual sequence (an implosive) in the Wambule language
-# consisting of a DDA or BA half-form (using ZWJ) plus a full vowel A.
+# consisting of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A.
 # test case: U+092C U+094D U+200D U+0905 U+093F
 # Citation: *A Grammar of Wambule* by Opgenort, Jean Robert;
 # Citation: *A Wambule Rai – Nepali Dictionary* Compiled and edited by Abi Nath Rai 
 #            and published by Wambule Rai Society (WAMRAS) in 2000
-# In 2007 Unicode encoded these implosives as Sindhi implosives U+097E and U+097F, however, 
+# In 2007 Unicode encoded DDA and BA implosives as Sindhi implosives U+097E and U+097F, however, 
 # the language community still uses the old half-form+vowelA sequence in their writing.
 # Until the language community is made aware of the encoded implosives and they
 # make a change, we want to have special code for their implosive sequence.
+# Also, note the Wambule LA implosive does not have a corresponding Unicode encoding. 
 
 # Named glyph class for Wambule
 @cWmeHalfCForms = [ DevHalfDdaZWJ DevHalfBa DevHalfLa ];
@@ -971,6 +972,12 @@ lookup wme_reorder_ikar {
     # reorder so that ikar precedes a half form in context with a vowel
     sub @cWmeHalfCForms' lookup _reorder_ikar_subst1 DevMaatraI' lookup _reorder_ikar_subst2 DevVowelA;
 } wme_reorder_ikar;
+
+lookup wme_delete_circle {
+    # delete the dotted circle following the vowel letter A (part of the implosive) and preceding a vowel sign AA or O 
+    sub DevVowelA DottedCirc' [ DevMaatraAA DevMaatraO ]' by [ DevMaatraAA DevMaatraO ];
+} wme_delete_circle;
+
 # 
 # ------------------------------- Special case -------------------------------
 

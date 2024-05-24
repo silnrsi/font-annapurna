@@ -401,92 +401,92 @@
 		<alias name="AboveRephAdjust" value="12" />
 		<alias name="AboveSignsAdjust" value="29" />
 		<alias name="Akhand" value="8" />
-		<alias name="AllAlternates" value="117" />
-		<alias name="BUZZ_reorder_ikar" value="67" />
+		<alias name="AllAlternates" value="122" />
 		<alias name="BelowHalantAdjust" value="58" />
 		<alias name="BelowMatraAdjust" value="39" />
 		<alias name="BelowSignsAdjust" value="44" />
 		<alias name="CandrabinduAdjust" value="8" />
-		<alias name="CandrabinduAlt" value="54" />
-		<alias name="CandrabinduAlt_target" value="53" />
+		<alias name="CandrabinduAlt" value="61" />
+		<alias name="CandrabinduAlt_target" value="60" />
 		<alias name="CandrabinduRaAdjust" value="10" />
-		<alias name="CharVar01JhaAlternates" value="68" />
-		<alias name="CharVar10DigitNineAlt" value="78" />
-		<alias name="CharVar21AltHeadstroke" value="91" />
-		<alias name="CharVar22AltJainOm" value="92" />
+		<alias name="CharVar01JhaAlternates" value="71" />
+		<alias name="CharVar10DigitNineAlt" value="81" />
+		<alias name="CharVar21AltHeadstroke" value="96" />
+		<alias name="CharVar22AltJainOm" value="97" />
 		<alias name="ConjunctsHalf" value="37" />
-		<alias name="ConsMatraLigatures" value="52" />
+		<alias name="ConsMatraLigatures" value="59" />
 		<alias name="ConsRakarHalfForms" value="34" />
-		<alias name="DevFractions" value="64" />
+		<alias name="DevFractions" value="70" />
 		<alias name="EyelashRa" value="10" />
 		<alias name="EyelashRa_target" value="9" />
-		<alias name="HalantForm" value="63" />
-		<alias name="LatinDiacsEnc" value="119" />
-		<alias name="LatinDiacsUnenc" value="118" />
-		<alias name="LatinPunctuationMark" value="121" />
-		<alias name="LatinPunctuationMark_target" value="120" />
-		<alias name="Liga_AA_Candrabindu_Ra_Ai" value="46" />
-		<alias name="Liga_AA_Candrabindu_Ra_Ai_target" value="45" />
+		<alias name="HalantForm" value="69" />
+		<alias name="LatinDiacsEnc" value="124" />
+		<alias name="LatinDiacsUnenc" value="123" />
+		<alias name="LatinPunctuationMark" value="126" />
+		<alias name="LatinPunctuationMark_target" value="125" />
+		<alias name="Liga_AA_Candrabindu_Ra_Ai" value="53" />
+		<alias name="Liga_AA_Candrabindu_Ra_Ai_target" value="52" />
 		<alias name="MatraNukta_ccmp" value="5" />
-		<alias name="MatraRephLigatures" value="47" />
-		<alias name="MatraRephMarkLigatures" value="48" />
-		<alias name="Matra_i_20" value="39" />
-		<alias name="Matra_i_20_target" value="38" />
-		<alias name="Matra_i_30" value="41" />
-		<alias name="Matra_i_30_target" value="40" />
-		<alias name="Matra_i_40" value="43" />
-		<alias name="Matra_i_40_target" value="42" />
-		<alias name="Matra_ii_20" value="56" />
-		<alias name="Matra_ii_20_target" value="55" />
-		<alias name="Matra_ii_30" value="58" />
-		<alias name="Matra_ii_30_target" value="57" />
-		<alias name="Ng_AA_Candrabindu_Ra_Ai" value="44" />
+		<alias name="MatraRephLigatures" value="54" />
+		<alias name="MatraRephMarkLigatures" value="55" />
+		<alias name="Matra_i_20" value="46" />
+		<alias name="Matra_i_20_target" value="45" />
+		<alias name="Matra_i_30" value="48" />
+		<alias name="Matra_i_30_target" value="47" />
+		<alias name="Matra_i_40" value="50" />
+		<alias name="Matra_i_40_target" value="49" />
+		<alias name="Matra_ii_20" value="63" />
+		<alias name="Matra_ii_20_target" value="62" />
+		<alias name="Matra_ii_30" value="65" />
+		<alias name="Matra_ii_30_target" value="64" />
+		<alias name="Ng_AA_Candrabindu_Ra_Ai" value="51" />
 		<alias name="Nukta" value="4" />
-		<alias name="RUstackLigatures" value="51" />
+		<alias name="RUstackLigatures" value="58" />
 		<alias name="Reph" value="11" />
-		<alias name="RephMarkLigatures" value="49" />
-		<alias name="Stacking_Conjuncts_u_uu" value="114" />
-		<alias name="Stacking_Conjuncts_u_uu_target" value="113" />
-		<alias name="StyleSet01JhaAlt" value="69" />
-		<alias name="StyleSet02JhaAlt2" value="70" />
-		<alias name="StyleSet03KraAlt" value="71" />
-		<alias name="StyleSet04TraAlt" value="72" />
-		<alias name="StyleSet05ShraAlt" value="73" />
-		<alias name="StyleSet06UmatraNuktaAlt" value="74" />
-		<alias name="StyleSet07EmatraNuktaAlt" value="75" />
-		<alias name="StyleSet08DigitFiveAlt" value="76" />
-		<alias name="StyleSet09DigitEightAlt" value="77" />
-		<alias name="StyleSet10DigitNineAlt" value="79" />
-		<alias name="StyleSet11DigitNineAlt2" value="80" />
-		<alias name="StyleSet12VisargaWithBar" value="81" />
-		<alias name="StyleSet13GlottalNoBar" value="82" />
-		<alias name="StyleSet14AltYa" value="83" />
-		<alias name="StyleSet14altYA_context" value="86" />
-		<alias name="StyleSet15ArchaicForms" value="87" />
-		<alias name="StyleSet16AltRaUkarNukta" value="88" />
-		<alias name="StyleSet17AltCha" value="90" />
+		<alias name="RephMarkLigatures" value="56" />
+		<alias name="Stacking_Conjuncts_u_uu" value="119" />
+		<alias name="Stacking_Conjuncts_u_uu_target" value="118" />
+		<alias name="StyleSet01JhaAlt" value="72" />
+		<alias name="StyleSet02JhaAlt2" value="73" />
+		<alias name="StyleSet03KraAlt" value="74" />
+		<alias name="StyleSet04TraAlt" value="75" />
+		<alias name="StyleSet05ShraAlt" value="76" />
+		<alias name="StyleSet06UmatraNuktaAlt" value="77" />
+		<alias name="StyleSet07EmatraNuktaAlt" value="78" />
+		<alias name="StyleSet08DigitFiveAlt" value="79" />
+		<alias name="StyleSet09DigitEightAlt" value="80" />
+		<alias name="StyleSet10DigitNineAlt" value="82" />
+		<alias name="StyleSet11DigitNineAlt2" value="83" />
+		<alias name="StyleSet12VisargaWithBar" value="84" />
+		<alias name="StyleSet13GlottalNoBar" value="85" />
+		<alias name="StyleSet14AltYa" value="86" />
+		<alias name="StyleSet14altYA_context" value="89" />
+		<alias name="StyleSet15ArchaicForms" value="90" />
+		<alias name="StyleSet16AltRaUkarNukta" value="91" />
+		<alias name="StyleSet17AltCha" value="93" />
+		<alias name="StyleSet17AltCha_context" value="94" />
 		<alias name="TTEkarNuktaHigh" value="3" />
-		<alias name="TTNEP_StyleSet01JhaStd" value="94" />
-		<alias name="TTNEP_StyleSet02JhaAlt2" value="95" />
-		<alias name="TTNEP_StyleSet10DigitNineStd" value="105" />
-		<alias name="TTNEP_StyleSet11DigitNineAlt2" value="106" />
-		<alias name="TTNEW_StyleSet01JhaAlt" value="96" />
-		<alias name="TTNEW_StyleSet02JhaStd" value="97" />
-		<alias name="TTNEW_StyleSet10DigitNineAlt" value="107" />
-		<alias name="TTNEW_StyleSet11DigitNineStd" value="108" />
+		<alias name="TTNEP_StyleSet01JhaStd" value="99" />
+		<alias name="TTNEP_StyleSet02JhaAlt2" value="100" />
+		<alias name="TTNEP_StyleSet10DigitNineStd" value="110" />
+		<alias name="TTNEP_StyleSet11DigitNineAlt2" value="111" />
+		<alias name="TTNEW_StyleSet01JhaAlt" value="101" />
+		<alias name="TTNEW_StyleSet02JhaStd" value="102" />
+		<alias name="TTNEW_StyleSet10DigitNineAlt" value="112" />
+		<alias name="TTNEW_StyleSet11DigitNineStd" value="113" />
 		<alias name="TTRaOpenYa" value="7" />
-		<alias name="TTRaUkarNuktaLig" value="89" />
-		<alias name="TTStyleSet03KraAlt" value="98" />
-		<alias name="TTStyleSet04TraAlt" value="99" />
-		<alias name="TTStyleSet05ShraAlt" value="100" />
-		<alias name="TTStyleSet06UmatraNuktaAlt" value="101" />
-		<alias name="TTStyleSet07EmatraNuktaAlt" value="102" />
-		<alias name="TTStyleSet08DigitFiveAlt" value="103" />
-		<alias name="TTStyleSet09DigitEightAlt" value="104" />
-		<alias name="TTStyleSet12VisargaWithBar" value="109" />
-		<alias name="TTStyleSet13GlottalNoBar" value="110" />
-		<alias name="TTStyleSet14AltYa" value="111" />
-		<alias name="TTStyleSet15ArchaicForms" value="112" />
+		<alias name="TTRaUkarNuktaLig" value="92" />
+		<alias name="TTStyleSet03KraAlt" value="103" />
+		<alias name="TTStyleSet04TraAlt" value="104" />
+		<alias name="TTStyleSet05ShraAlt" value="105" />
+		<alias name="TTStyleSet06UmatraNuktaAlt" value="106" />
+		<alias name="TTStyleSet07EmatraNuktaAlt" value="107" />
+		<alias name="TTStyleSet08DigitFiveAlt" value="108" />
+		<alias name="TTStyleSet09DigitEightAlt" value="109" />
+		<alias name="TTStyleSet12VisargaWithBar" value="114" />
+		<alias name="TTStyleSet13GlottalNoBar" value="115" />
+		<alias name="TTStyleSet14AltYa" value="116" />
+		<alias name="TTStyleSet15ArchaicForms" value="117" />
 		<alias name="TTUkarNuktaBelow" value="2" />
 		<alias name="TTarchaicKSSA" value="6" />
 		<alias name="TTdev2_Conjuncts_NoPrebase_Ya" value="31" />
@@ -499,12 +499,12 @@
 		<alias name="TTdeva_KraAlt" value="24" />
 		<alias name="TTdeva_ShraAlt" value="26" />
 		<alias name="TTdeva_TraAlt" value="25" />
-		<alias name="VariantRaOpenYa" value="93" />
-		<alias name="VowelMarkLigatures" value="50" />
-		<alias name="_reorder_ikar_subst1" value="65" />
-		<alias name="_reorder_ikar_subst2" value="66" />
-		<alias name="altYA_context" value="62" />
-		<alias name="altYA_subst" value="61" />
+		<alias name="VariantRaOpenYa" value="98" />
+		<alias name="VowelMarkLigatures" value="57" />
+		<alias name="_reorder_ikar_subst1" value="39" />
+		<alias name="_reorder_ikar_subst2" value="40" />
+		<alias name="altYA_context" value="68" />
+		<alias name="altYA_subst" value="67" />
 		<alias name="base_Halant_base" value="0" />
 		<alias name="base_LowerAlt_base" value="2" />
 		<alias name="base_LowerCenter_base" value="3" />
@@ -520,7 +520,7 @@
 		<alias name="dev2_ConsRakarFullForms" value="15" />
 		<alias name="dev2_HalfPrebaseConjunct" value="22" />
 		<alias name="dev2_HalfPrebaseForms" value="21" />
-		<alias name="dev2_NoHalfHalantForms" value="59" />
+		<alias name="dev2_NoHalfHalantForms" value="38" />
 		<alias name="dev2_Rakar" value="18" />
 		<alias name="dev2_Rakar_target" value="17" />
 		<alias name="deva_ConjunctsFull" value="33" />
@@ -530,15 +530,13 @@
 		<alias name="deva_Rakar" value="16" />
 		<alias name="locl_NEP" value="0" />
 		<alias name="locl_NEW" value="1" />
-		<alias name="noHalf_subst" value="60" />
-		<alias name="ss14altYA_subst" value="85" />
-		<alias name="ss14noHalf_subst" value="84" />
-		<alias name="u_uu_Stacking_Conjuncts" value="116" />
-		<alias name="u_uu_Stacking_Conjuncts_target" value="115" />
-		<alias name="BUZZ_DFLT_dflt" value="BUZZ" />
-		<alias name="BUZZ_dev2_dflt" value="BUZZ" />
-		<alias name="BUZZ_deva_dflt" value="BUZZ" />
-		<alias name="BUZZ_latn_dflt" value="BUZZ" />
+		<alias name="noHalf_subst" value="66" />
+		<alias name="ss14altYA_subst" value="88" />
+		<alias name="ss14noHalf_subst" value="87" />
+		<alias name="u_uu_Stacking_Conjuncts" value="121" />
+		<alias name="u_uu_Stacking_Conjuncts_target" value="120" />
+		<alias name="wme_delete_circle" value="42" />
+		<alias name="wme_reorder_ikar" value="41" />
 		<alias name="aalt_DFLT_dflt" value="aalt" />
 		<alias name="aalt_dev2_dflt" value="aalt" />
 		<alias name="aalt_deva_dflt" value="aalt" />
