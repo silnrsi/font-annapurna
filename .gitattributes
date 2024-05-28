@@ -5,11 +5,8 @@
 # To tweak to your particular needs, 
 # see http://git-scm.com/book/en/Customizing-Git-Git-Attributes
 
-# This file last updated 2017-08-17 by JDC
-
 # Windows users should use consider setting "core.autocrlf" to "input" and 
-# "core.eol" to "lf" 
-# to catch files that are not explicitly declared below.
+# "core.eol" to "lf" to catch files that are not explicitly declared below.
 # See http://git-scm.com/docs/git-config
 
 # This causes git to auto detect text files
@@ -25,12 +22,15 @@
 *.cfg text eol=lf
 *.css text eol=lf
 *.fea text eol=lf
+*.feax text eol=lf
 *.ftml text eol=lf
 *.gdl text eol=lf
 *.gdh text eol=lf
 *.html text eol=lf
 *.htxt text eol=lf
+*.json text eol=lf
 *.md text eol=lf
+*.py text eol=lf
 *.sil text eol=lf
 *.srctext text eol=lf
 *.tex text eol=lf
@@ -41,17 +41,27 @@
 *.xsl text eol=lf
 *.xml text eol=lf
 
-preflight text eol=lf
-wscript text eol=lf
-makedocs text eol=lf
-
 # Declare text files that will stay in LF (i.e. not expected to be used on Windows)
+makedocs text eol=lf
+preflight text eol=lf
+preflightg text eol=lf
+preflightff text eol=lf
+preglyphs text eol=lf
+wscript text eol=lf
+copycommon* text eol=lf
+
 *.sh text eol=lf
 *.sfd text eol=lf
 
 # Keep these as LF because vfb2ufo generates LF, even on Windows:
 *.glif text eol=lf
 *.plist text eol=lf
+
+# Explicitly declare the below matches to be text files, to convert eols to CRLF when 
+# writing to the working copy, and to convert CRLF to LF eols when adding to the repo.
+
+# For graide-related work done on Windows:
+*.bat text eol=crlf
 
 # Declare all files that are truly binary and should not be modified.
 *.png binary
