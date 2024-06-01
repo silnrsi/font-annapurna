@@ -10,28 +10,55 @@ any derivative works.
 
 ## Basic Font Information
 
-Annapurna SIL is a TrueType font with smart font capabilities added using 
+Annapurna SIL is a Unicode-based font family with broad support for writing 
+systems that use the Devanagari script. Inspired by traditional calligraphic 
+forms, the design is intended to be highly readable, reasonably compact, and 
+visually attractive.
+
+It is a TrueType font with smart font capabilities added using 
 state-of-the-art font technologies. This means that complex typographic 
 issues such as the placement of combining marks or the formation of ligatures 
 are handled by the font, provided you are running an application that provides 
 an adequate level of support for one of these smart font technologies.
 
-Annapurna SIL has a calligraphic design that reflects the stroke contrast of 
-writing the characters with a broad nib used for Devanagari.
 
-SIL International is the creator of the Annapurna SIL fonts, and is the owner
-of all proprietary rights therein.
-
-
-## A Note Regarding the Open Font License
+## A Note Regarding the Open Font License and TypeTuner
 
 The OFL prohibits the use of Reserved Font Names "Annapurna" and "SIL" in
 the name of any font that is derived from the Original Version of Annapurna
-SIL.
+SIL. However, SIL International (the Copyright Holder) grants through
+this separate written agreement the right to use the Reserved Font Names
+in any Modified Version of this font created by using TypeTuner as long
+as the feature information contained in the Original Version is used, 
+unmodified, as the source for TypeTuner feature information, and 
+"Annapurna SIL" is not the resulting font family name.
+
+TypeTuner-produced fonts created in this manner are still bound by the
+terms of the OFL. Specifically, the use of Reserved Font Names is
+prohibited when making derivatives of a TypeTuner-produced font. Anyone
+making a derivative of a TypeTuner font will need to find a different
+name. For example a TypeTuner-produced font may be named 
+"Annapurna SIL Special Feature" but a derivative of that font made 
+with other tools would not be allowed to use the "Annapurna" or "SIL" 
+Reserved Font Names and would have to be named something like 
+"My Personal Font".
 
 
 ## ChangeLog
 (This should list both major and minor changes, most recent first.)
+
+### 07 June 2024 (SIL WSTech team)  Annapurna SIL version 2.100
+
+- Enabled rendering for a unique sequence (an implosive) in the Wambule language
+    - Consists of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A
+    - Inspect the GSUB OpenType code for details since this is not usual behaviour
+
+- Added TypeTuner support for Ra+Ukar+Nukta ligature (feature in Stylistic Set 16)
+
+- Fixed CHA variant bug (feature in Stylistic Set 17)
+
+- Fixed ikar + vowel reordering bug (Graphite only)
+
 
 ### 08 November 2023 (SIL WSTech team)  Annapurna SIL version 2.000
 
@@ -269,7 +296,7 @@ be sure to add your name (N), email (E), web-address (W) and description
 
 N: Jonathan Coblentz, Sharon Correll, Peter Martin, Annie Olsen
 E: https://software.sil.org/annapurna/about/contact/
-W: https://software.sil.org/annapurna/
+W: https://software.sil.org/wstech/
 D: SIL font designers and engineers
 
 The Annapurna SIL project is maintained by SIL International.

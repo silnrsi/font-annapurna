@@ -1986,7 +1986,7 @@ lookup dev2_NoHalfHalantForms {
 # ------------------------------- Special case -------------------------------
 # 
 # Reorder ikar to precede a half form (representing cons+halant+ZWJ) and the vowel A.
-# Fixes rendering in an unusual sequence (an implosive) in the Wambule language
+# Enables rendering for a unique sequence (an implosive) in the Wambule language
 # consisting of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A.
 # test case: U+092C U+094D U+200D U+0905 U+093F
 # Citation: *A Grammar of Wambule* by Opgenort, Jean Robert;
