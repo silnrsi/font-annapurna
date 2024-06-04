@@ -60,10 +60,8 @@ d = designspace('source/AnnapurnaSIL-RB.designspace',
 npackage = package(appname="AnnapurnaSILNepalBeta", 
                    version = VERSION, 
                    package_files = {
-                                    'FONTLOG.txt': 'Nepal/', 
-                                    'OFL.txt': 'Nepal/', 
-                                    'OFL-FAQ.txt': 'Nepal/', 
-                                    'source/typetuner/README.txt': 'Nepal/', 
+                                    '*.txt': 'Nepal/', 
+                                    'source/typetuner/README_Nepal.txt': 'Nepal/', 
                                     'source/typetuner/feat_set_Nepal.xml': 'Nepal/', 
                                     'documentation/': 'Nepal/documentation/', 
                                     'web/*.*': 'Nepal/web/'
