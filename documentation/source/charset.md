@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Character Set Support
-fontversion: 2.000
+fontversion: 2.100
 ---
 
 This font supports over 500 characters from [The Unicode Standard](https://unicode.org/). In total, over 1,080 glyphs are included, supporting character variants for a number of characters as well as a large number of ligated sequences, half forms and conjuncts. 

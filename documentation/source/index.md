@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Documentation
-fontversion: 2.000
+fontversion: 2.100
 ---
 
 Thank you for your interest in the Annapurna SIL fonts. This font family supports over 200 writing systems that use the Devanagari script. The design is optimized for high readability at a wide range of sizes and resolutions, making it ideal for a large corpus of text. 

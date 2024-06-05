@@ -1,6 +1,6 @@
 ---
 title: SIL Font Documentation Markdown Test
-fontversion: 6.000
+fontversion: 2.100
 ---
 
 This document gives examples of how to use markdown for font documentation, for both in-project docs (html, pdf) and product site page source (md). Although these three target doc types each support some unique capabilities (e.g. product site accordions) this doc focuses on markdown that works for all three types.

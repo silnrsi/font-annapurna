@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Developer information
-fontversion: 2.000
+fontversion: 2.100
 ---
 
 ## Welcome font developers!

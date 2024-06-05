@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Versions and Changes
-fontversion: 2.000
+fontversion: 2.100
 ---
 
 ## Announcement list
@@ -15,7 +15,7 @@ The latest version of the fonts is always available from the [Annapurna SIL down
 
 This font package is also available in the [SIL software repository for Ubuntu](https://packages.sil.org/). Users can subscribe to this software repository and get current versions and updates automatically.
 
-Annapurna SIL is also available through the [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) service, which allows you to choose among the smart font features and download a font with those features preset. This enables them to work in many applications that do not make use of Graphite or OpenType Stylistic Sets. *TypeTuner Web currently uses version 5 fonts, however we will be working to update it to use the newest version 6 fonts soon.*
+Annapurna SIL is also available through the [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) service, which allows you to choose among the smart font features and download a font with those features preset. This enables them to work in many applications that do not make use of Graphite or OpenType Stylistic Sets.
 
 ## Previous versions
 

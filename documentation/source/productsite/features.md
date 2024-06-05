@@ -1,7 +1,7 @@
 
 Annapurna SIL is a Graphite and OpenType-enabled font family that supports the Devanagari script. It includes a number of optional user-selected features that may be useful or required for particular uses or languages. These Graphite and OpenType features are primarily specified using four-letter tags (e.g. 'cv04' or 'ss04') to display variant characters or specific behavior. Certain apps, such as web browsers, can also use language tags to display all the language-specific variants and behaviors.
 
-This document lists all the language and user-selected features in Annapurna SIL. For more information on how to access these features in specific environments and applications, see [Using Font Features](https://software.sil.org/fonts/features).
+This document lists all the language and user-selected features in Annapurna SIL. For more information on how to access these features in specific environments and applications, see [Using Font Features](https://software.sil.org/fonts/features). This is the preferred way of using features, however, Annapurna SIL is also available through the [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) service, which allows you to choose among the user-selected font features (shown below) and download a font with those features preset. This enables them to work in many applications that do not make use of Graphite or OpenType Stylistic Sets.
 
 This page uses web fonts (WOFF2) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Annapurna SIL as a web font see [Annapurna SIL Webfont Example](../web/AnnapurnaSIL-webfont-example.html). For detailed information see [Using SIL Fonts on Web Pages](https://software.sil.org/fonts/webfonts).
 

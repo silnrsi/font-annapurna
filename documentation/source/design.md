@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Design and Type Sample
-fontversion: 2.000
+fontversion: 2.100
 ---
 
 Annapurna SIL is optimized for readability in long printed documents. Inspired by traditional calligraphic forms, the design is intended to be highly readable, reasonably compact, and visually attractive.
