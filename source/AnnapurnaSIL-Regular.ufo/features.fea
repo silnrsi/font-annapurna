@@ -1984,7 +1984,8 @@ lookup dev2_NoHalfHalantForms {
 # 
 # Reorder ikar to precede a half form (representing cons+halant+ZWJ) and the vowel A.
 # Enables rendering for a unique sequence (an implosive) in the Wambule language
-# consisting of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A.
+# consisting of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A and
+# may include a vowel sign or virama (halant).
 # test case: U+092C U+094D U+200D U+0905 U+093F
 # Citation: *A Grammar of Wambule* by Opgenort, Jean Robert;
 # Citation: *A Wambule Rai – Nepali Dictionary* Compiled and edited by Abi Nath Rai 

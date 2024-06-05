@@ -1,6 +1,7 @@
 ### 07 June 2024 (SIL WSTech team)  Annapurna SIL version 2.100
 - Enabled rendering for a unique sequence (an implosive) in the Wambule language
   - Consists of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A
+  - The sequence may include a vowel sign or virama (halant)
   - Inspect the GSUB OpenType code for details since this is not usual behaviour
 - Added TypeTuner support for Ra+Ukar+Nukta ligature (feature in Stylistic Set 16)
 - Fixed CHA variant bug (feature in Stylistic Set 17)
