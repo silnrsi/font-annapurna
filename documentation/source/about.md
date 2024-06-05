@@ -11,7 +11,7 @@ For more information on the visual characteristics of the font family see [Desig
 
 For a complete list of characters included in Annapurna, see Character Set Support.
 
-For variant glyphs and features supported in Akatab, see Font Features.
+For variant glyphs and features supported in Annapurna, see Font Features.
 
 ## Future plans
 
@@ -23,7 +23,7 @@ The highest priorities for future additions and enhancements are mainly driven b
 - Requests from language communities using the fonts
 - Needs of the linguistic and academic community
 
-Please send us your requests using the [form on the font website](https://software.sil.org/annapurna/about/contact/). If you are interested in helping us make the fonts better see the [Developer](developer.md) page.
+Please send us your requests using the [form on the font website](https://software.sil.org/annapurna/about/contact/). If you are interested in helping us make the fonts better, see the [Developer](developer.md) page.
 
 ## Announcement list
 
@@ -35,11 +35,11 @@ You can subscribe using either of the two following options.
 
 - If you would rather not use a Google profile, you can subscribe any email address by sending a message to [sil-font-news+subscribe@groups.sil.org](mailto:sil-font-news+subscribe@groups.sil.org) and following the instructions you get in the confirmation message.
 
-Our font announcements are also available through Twitter [\@silfonts](https://twitter.com/silfonts).
+Our font announcements are also available through X (formerly Twitter) [\@silfonts](https://twitter.com/silfonts).
 
 ## Supporting the project
 
-These fonts are provided at no cost, however they are expensive to produce and maintain. Please consider donating to SIL’s font development efforts to support future development. Go to [SIL’s Give Direct page](https://donate.givedirect.org/?cid=13536&n=206909) and designate your gift for _Scripts & Fonts_. **Thank you!** 
+These fonts are provided at no cost; however, they are expensive to produce and maintain. Please consider donating to SIL’s font development efforts to support future development. Go to [SIL’s Give Direct page](https://donate.givedirect.org/?cid=13536&n=206909) and designate your gift for _Scripts & Fonts_. **Thank you!** 
 
 ## About SIL International
 
