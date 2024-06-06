@@ -310,7 +310,9 @@
 		</value>
 		<value name="True" tag="True">
 			<cmd name="lookup_add" args="GSUB {rlig_DFLT_dflt} {TTRaUkarNuktaLig}" />
+			<cmd name="lookup_del" args="GSUB {ss16_DFLT_dflt} {StyleSet16AltRaUkarNukta}" />
 			<cmd name="lookup_add" args="GSUB {rlig_dev2_dflt} {TTRaUkarNuktaLig}" />
+			<cmd name="lookup_del" args="GSUB {ss16_dev2_dflt} {StyleSet16AltRaUkarNukta}" />
 			<cmd name="gr_feat" args="{gr_cv16} 1" />
 			</value>
 	</feature>

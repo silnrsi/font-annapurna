@@ -11,7 +11,7 @@ For more information on the visual characteristics of the font family see [Desig
 
 For a complete list of characters included in Annapurna, see Character Set Support.
 
-For variant glyphs and features supported in Annapurna, see Font Features.
+For variant glyphs and features supported in Annapurna, see [Font Features](features.md).
 
 ## Future plans
 
