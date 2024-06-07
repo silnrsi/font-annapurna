@@ -160,8 +160,8 @@ Ligature form| <span class='annapurna-R normal' style='font-feature-settings: "c
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard | <span class='annapurna-R normal'>छ छ्</span> | `cv17=0 or ss17=0`
-With tail or no stem| <span class='annapurna-R normal' style='font-feature-settings: "cv17" 1, "ss17" 1'>छ छ्</span> | `cv17=1 or ss17=1`
+Standard | <span class='annapurna-R normal'>छ छ् छ्क</span> | `cv17=0 or ss17=0`
+With tail or no stem| <span class='annapurna-R normal' style='font-feature-settings: "cv17" 1, "ss17" 1'>छ छ् छ्क</span> | `cv17=1 or ss17=1`
 
 #### Headstroke alternates
 

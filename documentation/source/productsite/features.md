@@ -156,8 +156,8 @@ Ligature form| <span class='annapurna-cv16-1-ss16-1-R normal'>रु़ ऱु�
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard | <span class='annapurna-R normal'>छ छ्</span> | `cv17=0 or ss17=0`
-With tail or no stem| <span class='annapurna-cv17-1-ss17-1-R normal'>छ छ्</span> | `cv17=1 or ss17=1`
+Standard | <span class='annapurna-R normal'>छ छ् छ्क</span> | `cv17=0 or ss17=0`
+With tail or no stem| <span class='annapurna-cv17-1-ss17-1-R normal'>छ छ् छ्क</span> | `cv17=1 or ss17=1`
 
 #### Headstroke alternates
 
