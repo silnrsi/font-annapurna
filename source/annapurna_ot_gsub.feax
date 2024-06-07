@@ -1084,12 +1084,29 @@ lookup VowelMarkLigatures {
     sub DevVowelII DevCandrabindu by DevVowelIICandrabindu ;
 } VowelMarkLigatures;
 
+lookup TTRaUkarNuktaLig {
+  lookupflag 0 ;
+    sub DevRa      DevMaatraUNukta  by DevR.UNukta ;
+    sub DevRaNukta DevMaatraUNukta  by DevRNukta.UNukta ;
+    sub DevRa      DevMaatraUUNukta by DevR.UUNukta ;
+    sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta ;
+} TTRaUkarNuktaLig;
+
 lookup RUstackLigatures {
   lookupflag 0 ;
     sub DevRa      ZeroWidthJoiner DevMaatraU      by DevRaMaatraU ;
     sub DevRa      ZeroWidthJoiner DevMaatraUNukta by DevRaMaatraUNukta ;
+    sub DevRa                      DevMaatraUNukta by DevRaMaatraUNukta ;
     sub DevRaNukta ZeroWidthJoiner DevMaatraU      by DevRaNuktaMaatraU ;
     sub DevRaNukta ZeroWidthJoiner DevMaatraUNukta by DevRaNuktaMaatraUNukta ;
+    sub DevRaNukta                 DevMaatraUNukta by DevRaNuktaMaatraUNukta ;
+
+    sub DevRa      ZeroWidthJoiner DevMaatraUU      by DevRaMaatraUU ;
+    sub DevRa      ZeroWidthJoiner DevMaatraUUNukta by DevRaMaatraUUNukta ;
+    sub DevRa                      DevMaatraUUNukta by DevRaMaatraUUNukta ;
+    sub DevRaNukta ZeroWidthJoiner DevMaatraUU      by DevRaNuktaMaatraUU ;
+    sub DevRaNukta ZeroWidthJoiner DevMaatraUUNukta by DevRaNuktaMaatraUUNukta ;
+    sub DevRaNukta                 DevMaatraUUNukta by DevRaNuktaMaatraUUNukta ;
 } RUstackLigatures;
 
 lookup ConsMatraLigatures {
@@ -1329,19 +1346,11 @@ lookup StyleSet15ArchaicForms {
 
 lookup StyleSet16AltRaUkarNukta {
   lookupflag 0 ;
-    sub DevRa      DevMaatraUNukta  by DevR.UNukta ;
-    sub DevRaNukta DevMaatraUNukta  by DevRNukta.UNukta ;
-    sub DevRa      DevMaatraUUNukta by DevR.UUNukta ;
-    sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta ;
+    sub DevRaMaatraUNukta       by DevR.UNukta ;
+    sub DevRaNuktaMaatraUNukta  by DevRNukta.UNukta ;
+    sub DevRaMaatraUUNukta      by DevR.UUNukta ;
+    sub DevRaNuktaMaatraUUNukta by DevRNukta.UUNukta ;
 } StyleSet16AltRaUkarNukta;
-
-lookup TTRaUkarNuktaLig {
-  lookupflag 0 ;
-    sub DevRa      DevMaatraUNukta  by DevR.UNukta ;
-    sub DevRaNukta DevMaatraUNukta  by DevRNukta.UNukta ;
-    sub DevRa      DevMaatraUUNukta by DevR.UUNukta ;
-    sub DevRaNukta DevMaatraUUNukta by DevRNukta.UUNukta ;
-} TTRaUkarNuktaLig;
 
 lookup StyleSet17AltCha {
   lookupflag 0 ;
@@ -1520,6 +1529,14 @@ lookup TTStyleSet15ArchaicForms {
     sub DevK.Ssa by DevK.Ssa.archaic ;
     sub DevHalfK.Ssa by DevHalfK.Ssa.archaic ;
 } TTStyleSet15ArchaicForms;
+
+lookup TTStyleSet16AltRaUkarNukta {
+  lookupflag 0 ;
+    sub DevR.UNukta       by DevRaMaatraUNukta ;
+    sub DevRNukta.UNukta  by DevRaNuktaMaatraUNukta ;
+    sub DevR.UUNukta      by DevRaMaatraUUNukta ;
+    sub DevRNukta.UUNukta by DevRaNuktaMaatraUUNukta ;
+} TTStyleSet16AltRaUkarNukta;
 
 lookup Stacking_Conjuncts_u_uu_target {
   lookupflag 0 ;
