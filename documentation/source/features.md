@@ -133,8 +133,8 @@ No bar   | <span class='annapurna-R normal' style='font-feature-settings: "cv13"
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard       | <span class='annapurna-R normal'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=0 or ss14=0`
-Open Ya | <span class='annapurna-R normal' style='font-feature-settings: "cv14" 1, "ss14" 1'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=1 or ss14=1`
+Standard       | <span class='annapurna-R normal'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=0 or ss14=0`
+Open Ya | <span class='annapurna-R normal' style='font-feature-settings: "cv14" 1, "ss14" 1'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=1 or ss14=1`
 
 #### Archaic forms
 

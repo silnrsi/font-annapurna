@@ -129,8 +129,8 @@ No bar   | <span class='annapurna-cv13-1-ss13-1-R normal'>ॽ</span> | `cv13=1 o
 
 Feature  | Sample                       | Feature setting
 :------- | :--------------------------- | :-------
-Standard       | <span class='annapurna-R normal'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=0 or ss14=0`
-Open Ya | <span class='annapurna-cv14-1-ss14-1-R normal'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=1 or ss14=1`
+Standard       | <span class='annapurna-R normal'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=0 or ss14=0`
+Open Ya | <span class='annapurna-cv14-1-ss14-1-R normal'>द्य द्य्&zwj; द्य़ द्य़्&zwj; द्य्र द्य़्र &nbsp;&nbsp; ह्य ह्य्&zwj; ह्य़ ह्य़्&zwj; ह्य्र ह्य़्र</span> | `cv14=1 or ss14=1`
 
 #### Archaic forms
 
