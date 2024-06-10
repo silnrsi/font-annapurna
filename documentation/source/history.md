@@ -2,7 +2,7 @@
 title: Annapurna SIL - Version History
 fontversion: 2.100
 ---
-### 07 June 2024 (SIL WSTech team)  Annapurna SIL version 2.100
+### 10 June 2024 (SIL WSTech team)  Annapurna SIL version 2.100
 - Enabled rendering for a unique sequence (an implosive) in the Wambule language
   - Consists of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A
   - The sequence may include a vowel sign or virama (halant)
