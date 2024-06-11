@@ -39,8 +39,8 @@ U+0970..U+097F| <span class='annapurna-R normal'> ॰	ॱ	ॲ	ॳ	ॴ	ॵ	ॶ	�
 
 Unicode range | Unicode characters                       
 :-------------| :---------------------------
-U+A8E0..U+08EF| <span class='annapurna-R normal'> &#x25CC;꣠ &#x25CC;꣡ &#x25CC;꣢ &#x25CC;꣣ &#x25CC;꣤ &#x25CC;꣥ &#x25CC;꣦ &#x25CC;꣧ &#x25CC;꣨ &#x25CC;꣩ &#x25CC;꣪ &#x25CC;꣫ &#x25CC;꣬ &#x25CC;꣭ &#x25CC;꣮ &#x25CC;꣯ </span>
-U+A8F0..U+08FF| <span class='annapurna-R normal'> &#x25CC;꣰ &#x25CC;꣱	ꣲ	ꣳ	ꣴ	ꣵ	ꣶ	ꣷ	꣸	꣹	꣺	ꣻ	꣼	ꣽ	ꣾ &#x25CC;ꣿ  </span>
+U+A8E0..U+A8EF| <span class='annapurna-R normal'> &#x25CC;꣠ &#x25CC;꣡ &#x25CC;꣢ &#x25CC;꣣ &#x25CC;꣤ &#x25CC;꣥ &#x25CC;꣦ &#x25CC;꣧ &#x25CC;꣨ &#x25CC;꣩ &#x25CC;꣪ &#x25CC;꣫ &#x25CC;꣬ &#x25CC;꣭ &#x25CC;꣮ &#x25CC;꣯ </span>
+U+A8F0..U+A8FF| <span class='annapurna-R normal'> &#x25CC;꣰ &#x25CC;꣱	ꣲ	ꣳ	ꣴ	ꣵ	ꣶ	ꣷ	꣸	꣹	꣺	ꣻ	꣼	ꣽ	ꣾ &#x25CC;ꣿ  </span>
 
 #### Currency symbols
 
