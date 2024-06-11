@@ -4,7 +4,7 @@
 # override the default folders
 DOCDIR = ['documentation', 'web']  # add 'web' to default
 # STANDARDS = 'references/dev_build'
-STANDARDS = 'references/v2000'
+STANDARDS = 'references/v2100'
 
 # set package name
 APPNAME = 'AnnapurnaSIL'
