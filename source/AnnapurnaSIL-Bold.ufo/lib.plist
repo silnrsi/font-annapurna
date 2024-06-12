@@ -30,6 +30,11 @@
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
   <string>3260</string>
+  <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
+  <array>
+    <string>/DevVowelShortANukta/DevVowelA</string>
+    <string>/DevVowelA.archaic/DevVowelAA.archaic</string>
+  </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesLastChange</key>
