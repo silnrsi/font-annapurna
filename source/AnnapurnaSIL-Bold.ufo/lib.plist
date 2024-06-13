@@ -32,8 +32,9 @@
   <string>3260</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
-    <string>/DevVowelShortANukta/DevVowelA</string>
-    <string>/DevVowelA.archaic/DevVowelAA.archaic</string>
+    <string>/DevVowelI/DevVowelII/DevVowelIICandrabindu/DevVowelIIBindu</string>
+    <string>/DevVowelU/DevVowelR/DevKa/DevHalfKa/DevK.Ka/DevK.Ka.alt/DevK.Ta/DevKaR/DevKaR.alt/DevHalfKaR/DevHalfKaR.alt</string>
+    <string>/DevVowelI/DevK.Ssa/DevHalfK.Ssa/space/DevK.Ssa.archaic/DevHalfK.Ssa.archaic/DevK.SsaR/DevHalfK.SsaR</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
