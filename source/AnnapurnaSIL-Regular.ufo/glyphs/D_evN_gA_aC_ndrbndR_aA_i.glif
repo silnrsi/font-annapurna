@@ -2,10 +2,10 @@
 <glyph name="DevNgAaCndrbndRaAi" format="2">
   <advance width="2819"/>
   <outline>
+    <component base="DevNga"/>
     <component base="DevMaatraAA" xOffset="1396"/>
     <component base="DevCandrabindu" xOffset="2102" yOffset="60"/>
     <component base="DevRa" xOffset="1951"/>
     <component base="DevMaatraAi.short" xOffset="2776"/>
-    <component base="DevNga"/>
   </outline>
 </glyph>
