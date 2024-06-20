@@ -38,6 +38,7 @@
     <string>/DevKaR/DevKha/DevHalfKha/DevKhaR/DevHalfKhaR</string>
     <string>/DevHalfGa/DevGaR/DevHalfGaR/DevGha/DevGhaNuktaR/DevHalfGha/DevGhaR</string>
     <string>/DevNga/space/space/DevNgAaCndrbndRaAi/space/space/DevNg.Ka.alt/DevNg.Kha/DevNg.Kha.alt/DevNg.Ga/DevNg.Ga.alt/DevNg.Gha/DevNg.Gha.alt/DevNg.Nga/DevNg.Nga.alt/DevNg.Ya/DevNg.HalfYa/DevNg.YaRa/DevHalfNg.YaRa/DevNg.Ha/DevNg.Ha.alt/DevNg.YaNukta/DevNg.HalfYaNukta/DevNg.YaNuktaRa/DevHalfNg.YaNuktaRa</string>
+    <string>/DevCa/DevCaNuktaR/DevHalfCaNuktaR/DevHalfCa/DevC.Ca/DevC.Ca.alt/DevCaR/DevHalfCaR/DevCh.Ya/DevCh.HalfYa/DevCh.YaRa/DevHalfCh.YaRa/DevCh.YaNukta/DevCh.HalfYaNukta/DevCh.YaNuktaRa/DevHalfCh.YaNuktaRa</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
