@@ -8,19 +8,12 @@
   <anchor x="481" y="1416" name="UpperCenter"/>
   <outline>
     <contour>
-      <point x="764" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="870" y="1162" type="line"/>
-    </contour>
-    <contour>
       <point x="1071" y="1346" type="line"/>
-      <point x="84" y="1346" type="line"/>
-      <point x="192" y="1162" type="line"/>
+      <point x="-110" y="1346" type="line"/>
+      <point x="-2" y="1162" type="line"/>
       <point x="1177" y="1162" type="line"/>
     </contour>
     <contour>
-      <point x="776" y="1285" type="line"/>
       <point x="628" y="1285" type="line"/>
       <point x="628" y="1031" type="line"/>
       <point x="353" y="1004"/>
@@ -45,9 +38,9 @@
       <point x="297" y="836"/>
       <point x="454" y="870"/>
       <point x="776" y="904" type="curve"/>
+      <point x="776" y="1285" type="line"/>
     </contour>
     <contour>
-      <point x="776" y="480" type="line"/>
       <point x="628" y="480" type="line"/>
       <point x="628" y="226" type="line"/>
       <point x="353" y="199"/>
@@ -72,6 +65,7 @@
       <point x="297" y="31"/>
       <point x="454" y="65"/>
       <point x="776" y="99" type="curve"/>
+      <point x="776" y="480" type="line"/>
     </contour>
   </outline>
 </glyph>

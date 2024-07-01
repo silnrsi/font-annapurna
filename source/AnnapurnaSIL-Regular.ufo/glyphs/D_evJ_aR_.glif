@@ -8,6 +8,18 @@
   <anchor x="681" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
+      <point x="1433" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="1509" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="1077" y="78" type="line"/>
+      <point x="1212" y="0" type="line"/>
+      <point x="1212" y="1250" type="line"/>
+      <point x="1077" y="1250" type="line"/>
+    </contour>
+    <contour>
       <point x="461" y="934" type="line"/>
       <point x="439" y="879" type="line"/>
       <point x="507" y="848"/>
@@ -34,28 +46,10 @@
       <point x="1100" y="934" type="line"/>
     </contour>
     <contour>
-      <point x="754" y="1320" type="line"/>
-      <point x="-86" y="1320" type="line"/>
-      <point x="-10" y="1188" type="line"/>
-      <point x="830" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1433" y="1320" type="line"/>
-      <point x="528" y="1320" type="line"/>
-      <point x="604" y="1188" type="line"/>
-      <point x="1509" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1077" y="78" type="line"/>
-      <point x="1212" y="0" type="line"/>
-      <point x="1212" y="1320" type="line"/>
-      <point x="1077" y="1320" type="line"/>
-    </contour>
-    <contour>
-      <point x="1211" y="575" type="line"/>
+      <point x="1181" y="548" type="line"/>
       <point x="588" y="10" type="line"/>
       <point x="737" y="10" type="line"/>
-      <point x="1211" y="440" type="line"/>
+      <point x="1181" y="413" type="line"/>
     </contour>
   </outline>
 </glyph>
