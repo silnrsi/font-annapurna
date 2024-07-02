@@ -2,8 +2,9 @@
 <glyph name="DevTth.HalfYaNukta" format="2">
   <advance width="2510"/>
   <outline>
+    <component base="DevNukta" xOffset="2486" yOffset="280"/>
     <contour>
-      <point x="775" y="1216" type="line"/>
+      <point x="775" y="1214" type="line"/>
       <point x="775" y="974" type="line" smooth="yes"/>
       <point x="775" y="890"/>
       <point x="729" y="872"/>
@@ -26,6 +27,12 @@
       <point x="952" y="1214" type="line"/>
     </contour>
     <contour>
+      <point x="352" y="379" type="curve" smooth="yes"/>
+      <point x="352" y="595"/>
+      <point x="521" y="711"/>
+      <point x="730" y="711" type="curve" smooth="yes"/>
+      <point x="777" y="711"/>
+      <point x="816" y="717"/>
       <point x="847" y="729" type="curve"/>
       <point x="945" y="681"/>
       <point x="989" y="639"/>
@@ -38,35 +45,11 @@
       <point x="397" y="234" type="curve"/>
       <point x="386" y="246"/>
       <point x="352" y="286"/>
-      <point x="352" y="379" type="curve" smooth="yes"/>
-      <point x="352" y="595"/>
-      <point x="521" y="711"/>
-      <point x="730" y="711" type="curve" smooth="yes"/>
-      <point x="777" y="711"/>
-      <point x="816" y="717"/>
-    </contour>
-    <contour>
-      <point x="798" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="904" y="1162" type="line"/>
-    </contour>
-    <contour>
-      <point x="1348" y="1346" type="line"/>
-      <point x="317" y="1346" type="line"/>
-      <point x="424" y="1162" type="line"/>
-      <point x="1455" y="1162" type="line"/>
-    </contour>
-    <contour>
-      <point x="2123" y="1346" type="line"/>
-      <point x="1234" y="1346" type="line"/>
-      <point x="1340" y="1162" type="line"/>
-      <point x="2231" y="1162" type="line"/>
     </contour>
     <contour>
       <point x="2520" y="1346" type="line"/>
-      <point x="1493" y="1346" type="line"/>
-      <point x="1601" y="1162" type="line"/>
+      <point x="-110" y="1346" type="line"/>
+      <point x="-2" y="1162" type="line"/>
       <point x="2627" y="1162" type="line"/>
     </contour>
     <contour>
@@ -102,19 +85,11 @@
       <point x="1756" y="1042" type="curve" smooth="yes"/>
       <point x="1403" y="1042" type="line"/>
     </contour>
-    <contour>
-      <point x="1962" y="30" type="curve" smooth="yes"/>
-      <point x="1962" y="-7"/>
-      <point x="2046" y="-91"/>
-      <point x="2083" y="-91" type="curve" smooth="yes"/>
-      <point x="2119" y="-91"/>
-      <point x="2204" y="-7"/>
-      <point x="2204" y="30" type="curve" smooth="yes"/>
-      <point x="2204" y="66"/>
-      <point x="2119" y="151"/>
-      <point x="2083" y="151" type="curve" smooth="yes"/>
-      <point x="2046" y="151"/>
-      <point x="1962" y="66"/>
-    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CPPPP</string>
+    </dict>
+  </lib>
 </glyph>

@@ -9,27 +9,24 @@
   <outline>
     <component base="DevNukta" xOffset="2497" yOffset="310"/>
     <contour>
-      <point x="754" y="1320" type="line"/>
+      <point x="2841" y="1320" type="line"/>
       <point x="-86" y="1320" type="line"/>
       <point x="-10" y="1188" type="line"/>
-      <point x="830" y="1188" type="line"/>
+      <point x="2917" y="1188" type="line"/>
     </contour>
     <contour>
-      <point x="1367" y="1320" type="line"/>
-      <point x="315" y="1320" type="line"/>
-      <point x="391" y="1188" type="line"/>
-      <point x="1443" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1003" y="1203" type="line"/>
-      <point x="868" y="1203" type="line"/>
+      <point x="1003" y="1250" type="line"/>
+      <point x="868" y="1250" type="line"/>
       <point x="868" y="988" type="line"/>
       <point x="512" y="988" type="line" smooth="yes"/>
       <point x="321" y="988"/>
       <point x="250" y="936"/>
       <point x="250" y="830" type="curve" smooth="yes"/>
-      <point x="250" y="713"/>
-      <point x="544" y="462"/>
+      <point x="250" y="775"/>
+      <point x="314" y="692"/>
+      <point x="394" y="618" type="curve" smooth="yes"/>
+      <point x="485" y="533"/>
+      <point x="597" y="462"/>
       <point x="658" y="462" type="curve" smooth="yes"/>
       <point x="752" y="462"/>
       <point x="828" y="504"/>
@@ -83,10 +80,11 @@
       <point x="1963" y="242"/>
       <point x="2185" y="242" type="curve" smooth="yes"/>
       <point x="2309" y="242"/>
-      <point x="2437" y="277"/>
-      <point x="2488" y="333" type="curve"/>
-      <point x="2488" y="668" type="line"/>
-      <point x="2488" y="481"/>
+      <point x="2459" y="280"/>
+      <point x="2508" y="355" type="curve"/>
+      <point x="2508" y="628" type="line"/>
+      <point x="2488" y="680" type="line"/>
+      <point x="2488" y="473"/>
       <point x="2337" y="326"/>
       <point x="2124" y="326" type="curve" smooth="yes"/>
       <point x="2039" y="326"/>
@@ -101,28 +99,16 @@
       <point x="1457" y="1016" type="line"/>
     </contour>
     <contour>
-      <point x="2143" y="1320" type="line"/>
-      <point x="1271" y="1320" type="line"/>
-      <point x="1347" y="1188" type="line"/>
-      <point x="2219" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="2841" y="1320" type="line"/>
-      <point x="1945" y="1320" type="line"/>
-      <point x="2021" y="1188" type="line"/>
-      <point x="2917" y="1188" type="line"/>
-    </contour>
-    <contour>
       <point x="2486" y="78" type="line"/>
       <point x="2621" y="0" type="line"/>
-      <point x="2621" y="1320" type="line"/>
-      <point x="2486" y="1320" type="line"/>
+      <point x="2621" y="1250" type="line"/>
+      <point x="2486" y="1250" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPPPPPP</string>
+      <string>CPPPP</string>
     </dict>
   </lib>
 </glyph>

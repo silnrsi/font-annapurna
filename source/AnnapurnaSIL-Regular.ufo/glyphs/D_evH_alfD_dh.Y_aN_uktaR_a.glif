@@ -4,6 +4,12 @@
   <outline>
     <component base="DevNukta" xOffset="2186" yOffset="341"/>
     <contour>
+      <point x="2425" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="2501" y="1188" type="line"/>
+    </contour>
+    <contour>
       <point x="879" y="1262" type="line"/>
       <point x="879" y="974" type="line"/>
       <point x="607" y="974" type="line" smooth="yes"/>
@@ -54,30 +60,6 @@
       <point x="1014" y="1262" type="line"/>
     </contour>
     <contour>
-      <point x="812" y="1320" type="line"/>
-      <point x="-86" y="1320" type="line"/>
-      <point x="-10" y="1188" type="line"/>
-      <point x="888" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1324" y="1320" type="line"/>
-      <point x="326" y="1320" type="line"/>
-      <point x="402" y="1188" type="line"/>
-      <point x="1400" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="2100" y="1320" type="line"/>
-      <point x="1228" y="1320" type="line"/>
-      <point x="1304" y="1188" type="line"/>
-      <point x="2176" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="2425" y="1320" type="line"/>
-      <point x="1902" y="1320" type="line"/>
-      <point x="1978" y="1188" type="line"/>
-      <point x="2501" y="1188" type="line"/>
-    </contour>
-    <contour>
       <point x="1484" y="884" type="line"/>
       <point x="1784" y="884" type="line" smooth="yes"/>
       <point x="1878" y="884"/>
@@ -111,16 +93,16 @@
       <point x="1414" y="1016" type="line"/>
     </contour>
     <contour>
-      <point x="2439" y="461" type="line"/>
       <point x="1939" y="10" type="line"/>
       <point x="2088" y="10" type="line"/>
       <point x="2439" y="327" type="line"/>
+      <point x="2439" y="461" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPPPPPP</string>
+      <string>CPPPP</string>
     </dict>
   </lib>
 </glyph>

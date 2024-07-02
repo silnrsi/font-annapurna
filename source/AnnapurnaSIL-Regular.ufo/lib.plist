@@ -45,6 +45,10 @@
 /DevJha.alt/DevHalfJha.alt/DevJhaR.alt/DevHalfJhaR.alt/DevJhaNuktaR.alt/DevHalfJhaNuktaR.alt</string>
     <string>/DevNyaNuktaR/DevHalfNyaNuktaR/DevHalfNya/DevNyaR/DevHalfNyaR/space/DevTt.Tta/DevTt.Tta.alt/DevTt.Ttha/DevTt.Ttha.alt 
 /DevTt.Ya/DevTt.HalfYa/DevTt.YaRa/DevHalfTt.YaRa/DevTt.YaNukta/DevTt.HalfYaNukta/DevTt.YaNuktaRa/DevHalfTt.YaNuktaRa</string>
+    <string>/DevTth.YaRa/DevHalfTth.YaRa/DevTth.HalfYaNukta/DevTth.YaNuktaRa/DevHalfTth.YaNuktaRa</string>
+    <string>/DevDda/DevHalant/DevHalfDda/DevHalfDdaZWJ/DevDd.Dda/DevDd.Dda.alt/DevDd.Ya/DevDd.HalfYa/DevDd.YaRa/DevHalfDd.YaRa/DevDdaR/DevDd.YaNukta/DevDd.HalfYaNukta/DevDd.YaNuktaRa/DevHalfDd.YaNuktaRa</string>
+    <string>/DevDdha/DevHalfDdha/DevDdh.Ya/DevDdh.HalfYa/DevDdh.YaRa/DevHalfDdh.YaRa/DevDdhaR/DevDdh.YaNukta/DevDdh.HalfYaNukta/DevDdh.YaNuktaRa/DevHalfDdh.YaNuktaRa/DevNna/DevHalfNna/DevNnaNukta/DevHalfNnaNukta/DevNnaR/DevHalfNnaR/DevNnaNuktaR/DevHalfNnaNuktaR</string>
+    <string>/DevNna.archaic/DevHalfNna.archaic/DevTa/DevTaNukta/DevHalfTaNukta/DevTaNuktaR/space/DevTaNuktaR.alt/space/DevHalfTaNuktaR/space/DevHalfTaNuktaR.alt/space/DevHalfTa/space/DevT.Ta/space/DevHalfT.Ta/space/DevTaR/space/DevTaR.alt/space/DevHalfTaR/space/DevHalfTaR.alt</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>

@@ -9,15 +9,9 @@
   <anchor x="570" y="1390" name="UpperCenter"/>
   <outline>
     <contour>
-      <point x="833" y="1320" type="line"/>
+      <point x="1107" y="1320" type="line"/>
       <point x="-86" y="1320" type="line"/>
       <point x="-10" y="1188" type="line"/>
-      <point x="909" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1107" y="1320" type="line"/>
-      <point x="227" y="1320" type="line"/>
-      <point x="303" y="1188" type="line"/>
       <point x="1183" y="1188" type="line"/>
     </contour>
     <contour>
