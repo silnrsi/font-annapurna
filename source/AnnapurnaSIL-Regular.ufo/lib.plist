@@ -49,6 +49,8 @@
     <string>/DevDda/DevHalant/DevHalfDda/DevHalfDdaZWJ/DevDd.Dda/DevDd.Dda.alt/DevDd.Ya/DevDd.HalfYa/DevDd.YaRa/DevHalfDd.YaRa/DevDdaR/DevDd.YaNukta/DevDd.HalfYaNukta/DevDd.YaNuktaRa/DevHalfDd.YaNuktaRa</string>
     <string>/DevDdha/DevHalfDdha/DevDdh.Ya/DevDdh.HalfYa/DevDdh.YaRa/DevHalfDdh.YaRa/DevDdhaR/DevDdh.YaNukta/DevDdh.HalfYaNukta/DevDdh.YaNuktaRa/DevHalfDdh.YaNuktaRa/DevNna/DevHalfNna/DevNnaNukta/DevHalfNnaNukta/DevNnaR/DevHalfNnaR/DevNnaNuktaR/DevHalfNnaNuktaR</string>
     <string>/DevNna.archaic/DevHalfNna.archaic/DevTa/DevTaNukta/DevHalfTaNukta/DevTaNuktaR/space/DevTaNuktaR.alt/space/DevHalfTaNuktaR/space/DevHalfTaNuktaR.alt/space/DevHalfTa/space/DevT.Ta/space/DevHalfT.Ta/space/DevTaR/space/DevTaR.alt/space/DevHalfTaR/space/DevHalfTaR.alt</string>
+    <string>/DevTha/DevThaNukta/DevHalfTha/DevHalfThaNukta/DevThaNuktaR/DevHalfThaNuktaR/DevThaR/DevHalfThaR 
+/DevDa/DevDaNukta/DevHalfDaNukta/DevDaNuktaR/DevHalfDa/DevD.Da/DevD.Dha</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
