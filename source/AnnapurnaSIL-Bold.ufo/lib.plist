@@ -52,6 +52,11 @@
     <string>/DevTha/DevThaNukta/DevHalfTha/DevHalfThaNukta/DevThaNuktaR/DevHalfThaNuktaR/DevThaR/DevHalfThaR 
 /DevDa/DevDaNukta/DevHalfDaNukta/DevDaNuktaR/DevHalfDa/DevD.Da/DevD.Dha</string>
     <string>/DevD.Ma/DevD.Ya/DevD.Ya.alt/DevD.HalfYa/DevD.YaRa/DevHalfD.YaRa/DevDaR/DevD.Wa/DevD.YaNukta/DevD.HalfYaNukta/DevD.YaNuktaRa/DevHalfD.YaNuktaRa/DevDha/DevDhaNukta/DevHalfDhaNukta/DevDhaNuktaR/DevHalfDhaNuktaR/DevHalfDha/DevDhaR/DevHalfDhaR</string>
+    <string>/DevNa/DevHalfNa/DevN.Na/DevNaR/DevHalfNaR/DevNaNukta/DevHalfNaNukta/DevNaNuktaR/DevHalfNaNuktaR 
+/DevPa/DevPaNukta/DevHalfPa/DevHalfPaNukta/DevPaNuktaR/DevHalfPaNuktaR/DevHalfPa/DevP.Ta/DevPaR/DevHalfPaR/DevPha/DevHalfPha/DevPhaR/DevHalfPhaR</string>
+    <string>/DevBa/DevBaNukta/DevHalfBaNukta/DevBaNuktaR/DevHalfBaNuktaR/DevHalfBa/DevBaR/DevHalfBaR 
+/DevBha/DevBhaNukta/DevHalfBhaNukta/DevBhaNuktaR/DevHalfBhaNuktaR/DevHalfBha/DevBhaR/DevHalfBhaR</string>
+    <string>/DevMa/DevMaNukta/DevHalfMaNukta/DevMaNuktaR/DevHalfMaNuktaR/DevHalfMa/DevMaR/DevHalfMaR/DevM.La/DevM.La.alt</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>

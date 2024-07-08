@@ -4,22 +4,16 @@
   <anchor x="381" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
-      <point x="823" y="1320" type="line"/>
+      <point x="842" y="1320" type="line"/>
       <point x="-86" y="1320" type="line"/>
       <point x="-10" y="1188" type="line"/>
-      <point x="899" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="842" y="1320" type="line"/>
-      <point x="9" y="1320" type="line"/>
-      <point x="85" y="1188" type="line"/>
       <point x="918" y="1188" type="line"/>
     </contour>
     <contour>
       <point x="240" y="640" type="line"/>
       <point x="375" y="640" type="line"/>
-      <point x="375" y="1200" type="line"/>
-      <point x="240" y="1200" type="line"/>
+      <point x="375" y="1250" type="line"/>
+      <point x="240" y="1250" type="line"/>
     </contour>
     <contour>
       <point x="862" y="669" type="line"/>
@@ -37,10 +31,10 @@
       <point x="862" y="537" type="line"/>
     </contour>
     <contour>
-      <point x="862" y="579" type="line"/>
       <point x="233" y="10" type="line"/>
       <point x="382" y="10" type="line"/>
       <point x="862" y="444" type="line"/>
+      <point x="862" y="579" type="line"/>
     </contour>
   </outline>
 </glyph>

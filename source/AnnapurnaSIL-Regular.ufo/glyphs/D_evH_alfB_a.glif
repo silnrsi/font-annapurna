@@ -44,15 +44,9 @@
       <point x="425" y="825" type="line"/>
     </contour>
     <contour>
-      <point x="868" y="1320" type="line"/>
+      <point x="1021" y="1320" type="line"/>
       <point x="-86" y="1320" type="line"/>
       <point x="-10" y="1188" type="line"/>
-      <point x="944" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1021" y="1320" type="line"/>
-      <point x="-5" y="1320" type="line"/>
-      <point x="71" y="1188" type="line"/>
       <point x="1097" y="1188" type="line"/>
     </contour>
   </outline>

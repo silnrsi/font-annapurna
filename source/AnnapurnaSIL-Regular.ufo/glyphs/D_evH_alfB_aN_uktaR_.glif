@@ -5,6 +5,12 @@
   <outline>
     <component base="DevNukta" xOffset="723" yOffset="440"/>
     <contour>
+      <point x="955" y="523" type="line"/>
+      <point x="386" y="10" type="line"/>
+      <point x="535" y="10" type="line"/>
+      <point x="955" y="388" type="line"/>
+    </contour>
+    <contour>
       <point x="180" y="649" type="curve" smooth="yes"/>
       <point x="180" y="496"/>
       <point x="419" y="294"/>
@@ -45,28 +51,16 @@
       <point x="425" y="825" type="line"/>
     </contour>
     <contour>
-      <point x="868" y="1320" type="line"/>
+      <point x="1021" y="1320" type="line"/>
       <point x="-86" y="1320" type="line"/>
       <point x="-10" y="1188" type="line"/>
-      <point x="944" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1022" y="1320" type="line"/>
-      <point x="-5" y="1320" type="line"/>
-      <point x="71" y="1188" type="line"/>
-      <point x="1098" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="955" y="523" type="line"/>
-      <point x="386" y="10" type="line"/>
-      <point x="535" y="10" type="line"/>
-      <point x="955" y="388" type="line"/>
+      <point x="1097" y="1188" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPPPPP</string>
+      <string>CPPPPP</string>
     </dict>
   </lib>
 </glyph>
