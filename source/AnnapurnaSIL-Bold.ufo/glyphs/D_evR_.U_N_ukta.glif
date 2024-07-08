@@ -34,19 +34,13 @@
       <point x="912" y="397" type="curve"/>
     </contour>
     <contour>
-      <point x="832" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="938" y="1162" type="line"/>
-    </contour>
-    <contour>
       <point x="1278" y="1346" type="line"/>
-      <point x="192" y="1346" type="line"/>
-      <point x="299" y="1162" type="line"/>
+      <point x="-110" y="1346" type="line"/>
+      <point x="-3" y="1162" type="line"/>
       <point x="1385" y="1162" type="line"/>
     </contour>
     <contour>
-      <point x="428" y="1298" type="line"/>
+      <point x="428" y="1250" type="line"/>
       <point x="428" y="788" type="line" smooth="yes"/>
       <point x="428" y="746"/>
       <point x="401" y="721"/>
@@ -67,13 +61,13 @@
       <point x="532" y="498"/>
       <point x="615" y="566"/>
       <point x="615" y="703" type="curve" smooth="yes"/>
-      <point x="615" y="1298" type="line"/>
+      <point x="615" y="1250" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPPP</string>
+      <string>CPPP</string>
     </dict>
   </lib>
 </glyph>

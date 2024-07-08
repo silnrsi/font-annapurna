@@ -3,6 +3,33 @@
   <anchor x="-470" y="1330" name="_Upper"/>
   <outline>
     <component base="DevCandrabindu.alt" xOffset="128"/>
-    <component base="DevRaReph.alt2" xOffset="-232"/>
+    <contour>
+      <point x="-619" y="1658" type="curve" smooth="yes"/>
+      <point x="-619" y="1772"/>
+      <point x="-554" y="1842"/>
+      <point x="-460" y="1842" type="curve" smooth="yes"/>
+      <point x="-419" y="1842"/>
+      <point x="-368" y="1831"/>
+      <point x="-325" y="1801" type="curve"/>
+      <point x="-285" y="1828" type="line"/>
+      <point x="-352" y="1897"/>
+      <point x="-435" y="1930"/>
+      <point x="-510" y="1930" type="curve" smooth="yes"/>
+      <point x="-623" y="1930"/>
+      <point x="-718" y="1856"/>
+      <point x="-718" y="1715" type="curve" smooth="yes"/>
+      <point x="-718" y="1557"/>
+      <point x="-606" y="1398"/>
+      <point x="-499" y="1310" type="curve"/>
+      <point x="-452" y="1310" type="line"/>
+      <point x="-538" y="1390"/>
+      <point x="-619" y="1545"/>
+    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
+    </dict>
+  </lib>
 </glyph>
