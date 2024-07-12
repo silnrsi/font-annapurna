@@ -9,7 +9,13 @@
   <outline>
     <component base="DevNukta" xOffset="712" yOffset="289"/>
     <contour>
-      <point x="716" y="744" type="curve"/>
+      <point x="1517" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="1593" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="716" y="744" type="line"/>
       <point x="659" y="864"/>
       <point x="529" y="976"/>
       <point x="430" y="976" type="curve" smooth="yes"/>
@@ -29,8 +35,6 @@
       <point x="598" y="850"/>
       <point x="636" y="799"/>
       <point x="680" y="701" type="curve"/>
-      <point x="692" y="708"/>
-      <point x="709" y="724"/>
     </contour>
     <contour>
       <point x="794" y="507" type="line"/>
@@ -43,9 +47,7 @@
       <point x="1086" y="850"/>
       <point x="1124" y="799"/>
       <point x="1168" y="701" type="curve"/>
-      <point x="1180" y="708"/>
-      <point x="1197" y="724"/>
-      <point x="1204" y="744" type="curve"/>
+      <point x="1204" y="744" type="line"/>
       <point x="1147" y="864"/>
       <point x="1017" y="976"/>
       <point x="918" y="976" type="curve" smooth="yes"/>
@@ -57,22 +59,10 @@
       <point x="694" y="465" type="curve"/>
     </contour>
     <contour>
-      <point x="778" y="1320" type="line"/>
-      <point x="-86" y="1320" type="line"/>
-      <point x="-10" y="1188" type="line"/>
-      <point x="854" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1517" y="1320" type="line"/>
-      <point x="609" y="1320" type="line"/>
-      <point x="685" y="1188" type="line"/>
-      <point x="1593" y="1188" type="line"/>
-    </contour>
-    <contour>
       <point x="1162" y="78" type="line"/>
       <point x="1297" y="0" type="line"/>
-      <point x="1297" y="1320" type="line"/>
-      <point x="1162" y="1320" type="line"/>
+      <point x="1297" y="1250" type="line"/>
+      <point x="1162" y="1250" type="line"/>
     </contour>
     <contour>
       <point x="1280" y="815" type="line"/>
@@ -84,7 +74,7 @@
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPPPPP</string>
+      <string>CPPPPP</string>
     </dict>
   </lib>
 </glyph>

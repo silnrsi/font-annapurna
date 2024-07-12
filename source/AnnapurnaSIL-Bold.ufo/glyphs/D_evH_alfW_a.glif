@@ -4,15 +4,9 @@
   <anchor x="501" y="-138" name="LowerAlt"/>
   <outline>
     <contour>
-      <point x="1067" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="1174" y="1162" type="line"/>
-    </contour>
-    <contour>
       <point x="1116" y="1346" type="line"/>
-      <point x="-62" y="1346" type="line"/>
-      <point x="46" y="1162" type="line"/>
+      <point x="-112" y="1346" type="line"/>
+      <point x="-4" y="1162" type="line"/>
       <point x="1222" y="1162" type="line"/>
     </contour>
     <contour>
