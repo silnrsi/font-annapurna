@@ -58,6 +58,10 @@
     <string>/DevLa/DevLaNukta/DevHalfLaNukta/DevLaNuktaR/DevHalfLaNuktaR/DevHalfLa/DevLaR/DevHalfLaR/DevL.La/DevL.La.alt 
 /DevLla/DevHalfLla/DevLlaR/DevLlaNukta/DevHalfLlaNukta/DevLlaNuktaR 
 /DevWa/DevWaNukta/DevHalfWaNukta/DevWaNuktaR/DevHalfWaNuktaR/DevHalfWa/DevWaR/DevHalfWaR</string>
+    <string>/DevSha/DevShaNukta/DevHalfShaNukta/DevShaNuktaR.alt/DevShaR.alt/DevHalfShaNuktaR.alt/DevHalfSha/DevHalfShaR.alt 
+/DevShaNuktaR/DevShaR/DevHalfShaR/DevHalfShaNuktaR/DevSh.Ca/DevSh.Wa</string>
+    <string>/DevSsa/DevSsaNukta/DevHalfSsaNukta/DevSsaNuktaR/DevHalfSsaNuktaR/DevHalfSsa/DevSs.Tta/DevSs.Ttha/DevSsaR/DevHalfSsaR</string>
+    <string>/DevSa/DevSaNukta/DevHalfSa/DevHalfSaNukta/DevSaNuktaR/DevHalfSaNuktaR/DevHalfSa/DevS.Na/DevSaR/DevHalfSaR</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
