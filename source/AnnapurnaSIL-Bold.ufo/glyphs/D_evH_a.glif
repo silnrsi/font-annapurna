@@ -63,15 +63,9 @@
       <point x="747" y="726"/>
     </contour>
     <contour>
-      <point x="809" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="916" y="1162" type="line"/>
-    </contour>
-    <contour>
       <point x="1137" y="1346" type="line"/>
-      <point x="218" y="1346" type="line"/>
-      <point x="326" y="1162" type="line"/>
+      <point x="-110" y="1346" type="line"/>
+      <point x="-2" y="1162" type="line"/>
       <point x="1244" y="1162" type="line"/>
     </contour>
   </outline>
