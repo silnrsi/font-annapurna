@@ -11,26 +11,14 @@
       <point x="914" y="769" type="line"/>
     </contour>
     <contour>
-      <point x="744" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="851" y="1162" type="line"/>
-    </contour>
-    <contour>
       <point x="1270" y="1346" type="line"/>
-      <point x="723" y="1346" type="line"/>
-      <point x="831" y="1162" type="line"/>
+      <point x="-110" y="1346" type="line"/>
+      <point x="-2" y="1162" type="line"/>
       <point x="1377" y="1162" type="line"/>
     </contour>
     <contour>
-      <point x="800" y="84" type="line"/>
-      <point x="988" y="-25" type="line"/>
-      <point x="988" y="1338" type="line"/>
-      <point x="800" y="1338" type="line"/>
-    </contour>
-    <contour>
-      <point x="911" y="703" type="line"/>
-      <point x="759" y="704"/>
+      <point x="911" y="706" type="line"/>
+      <point x="759" y="706"/>
       <point x="509" y="1016"/>
       <point x="264" y="1016" type="curve" smooth="yes"/>
       <point x="198" y="1016"/>
@@ -45,6 +33,16 @@
       <point x="877" y="617" type="curve"/>
     </contour>
     <contour>
+      <point x="800" y="84" type="line"/>
+      <point x="988" y="-25" type="line"/>
+      <point x="988" y="1250" type="line"/>
+      <point x="800" y="1250" type="line"/>
+    </contour>
+    <contour>
+      <point x="968" y="475" type="line"/>
+      <point x="998" y="593"/>
+      <point x="1116" y="771"/>
+      <point x="1290" y="771" type="curve"/>
       <point x="1290" y="925" type="line"/>
       <point x="1261" y="938"/>
       <point x="1229" y="943"/>
@@ -52,17 +50,12 @@
       <point x="1068" y="943"/>
       <point x="959" y="876"/>
       <point x="909" y="810" type="curve"/>
-      <point x="909" y="520" type="line"/>
-      <point x="968" y="475" type="line"/>
-      <point x="998" y="593"/>
-      <point x="1116" y="771"/>
-      <point x="1290" y="771" type="curve"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPPPPP</string>
+      <string>CPPPPP</string>
     </dict>
   </lib>
 </glyph>

@@ -7,6 +7,33 @@
     <component base="DevMaatraAA"/>
     <component base="DevMaatraE" xOffset="576"/>
     <component base="DevCandrabindu.alt" xOffset="903"/>
-    <component base="DevRaReph.alt2" xOffset="545"/>
+    <contour>
+      <point x="158" y="1658" type="curve" smooth="yes"/>
+      <point x="158" y="1772"/>
+      <point x="223" y="1842"/>
+      <point x="317" y="1842" type="curve" smooth="yes"/>
+      <point x="358" y="1842"/>
+      <point x="409" y="1831"/>
+      <point x="452" y="1801" type="curve"/>
+      <point x="492" y="1828" type="line"/>
+      <point x="425" y="1897"/>
+      <point x="342" y="1930"/>
+      <point x="267" y="1930" type="curve" smooth="yes"/>
+      <point x="154" y="1930"/>
+      <point x="59" y="1856"/>
+      <point x="59" y="1715" type="curve" smooth="yes"/>
+      <point x="59" y="1557"/>
+      <point x="171" y="1398"/>
+      <point x="278" y="1310" type="curve"/>
+      <point x="325" y="1310" type="line"/>
+      <point x="239" y="1390"/>
+      <point x="158" y="1545"/>
+    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CCCP</string>
+    </dict>
+  </lib>
 </glyph>

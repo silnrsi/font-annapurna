@@ -4,12 +4,6 @@
   <anchor x="-396" y="1332" name="_Upper"/>
   <outline>
     <contour>
-      <point x="-87" y="1399" type="line"/>
-      <point x="-87" y="1583" type="line"/>
-      <point x="-704" y="1583" type="line"/>
-      <point x="-704" y="1399" type="line"/>
-    </contour>
-    <contour>
       <point x="-813" y="1980" type="line"/>
       <point x="-716" y="1848"/>
       <point x="-501" y="1663"/>
@@ -24,6 +18,12 @@
       <point x="-577" y="1825"/>
       <point x="-654" y="1881"/>
       <point x="-770" y="2026" type="curve"/>
+    </contour>
+    <contour>
+      <point x="-87" y="1399" type="line"/>
+      <point x="-87" y="1583" type="line"/>
+      <point x="-704" y="1583" type="line"/>
+      <point x="-704" y="1399" type="line"/>
     </contour>
   </outline>
 </glyph>
