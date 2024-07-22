@@ -5,15 +5,9 @@
   <outline>
     <component base="DevNukta" xOffset="1142" yOffset="280"/>
     <contour>
-      <point x="779" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="887" y="1162" type="line"/>
-    </contour>
-    <contour>
       <point x="1176" y="1346" type="line"/>
-      <point x="149" y="1346" type="line"/>
-      <point x="257" y="1162" type="line"/>
+      <point x="-110" y="1346" type="line"/>
+      <point x="-2" y="1162" type="line"/>
       <point x="1283" y="1162" type="line"/>
     </contour>
     <contour>
@@ -53,7 +47,7 @@
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPP</string>
+      <string>CPP</string>
     </dict>
   </lib>
 </glyph>

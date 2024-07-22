@@ -5,7 +5,18 @@
   <outline>
     <component base="DevNukta" xOffset="681" yOffset="620"/>
     <contour>
-      <point x="841" y="769" type="line"/>
+      <point x="368" y="1250" type="line"/>
+      <point x="184" y="1250" type="line"/>
+      <point x="184" y="840" type="line" smooth="yes"/>
+      <point x="184" y="769"/>
+      <point x="240" y="684"/>
+      <point x="316" y="609" type="curve" smooth="yes"/>
+      <point x="407" y="518"/>
+      <point x="520" y="451"/>
+      <point x="590" y="451" type="curve" smooth="yes"/>
+      <point x="738" y="451"/>
+      <point x="800" y="488"/>
+      <point x="856" y="539" type="curve"/>
       <point x="790" y="814" type="line"/>
       <point x="767" y="773"/>
       <point x="745" y="741"/>
@@ -18,37 +29,19 @@
       <point x="390" y="630" type="curve" smooth="yes"/>
       <point x="377" y="643"/>
       <point x="368" y="670"/>
-      <point x="368" y="715" type="curve"/>
-      <point x="368" y="1311" type="line"/>
-      <point x="184" y="1311" type="line"/>
-      <point x="184" y="840" type="line"/>
-      <point x="184" y="769"/>
-      <point x="240" y="684"/>
-      <point x="316" y="609" type="curve" smooth="yes"/>
-      <point x="407" y="518"/>
-      <point x="520" y="451"/>
-      <point x="590" y="451" type="curve" smooth="yes"/>
-      <point x="738" y="451"/>
-      <point x="800" y="488"/>
-      <point x="856" y="539" type="curve"/>
-    </contour>
-    <contour>
-      <point x="850" y="1346" type="line"/>
-      <point x="-110" y="1346" type="line"/>
-      <point x="-4" y="1162" type="line"/>
-      <point x="957" y="1162" type="line"/>
+      <point x="368" y="715" type="curve" smooth="yes"/>
     </contour>
     <contour>
       <point x="1186" y="1346" type="line"/>
-      <point x="322" y="1346" type="line"/>
-      <point x="429" y="1162" type="line"/>
+      <point x="-110" y="1346" type="line"/>
+      <point x="-3" y="1162" type="line"/>
       <point x="1293" y="1162" type="line"/>
     </contour>
     <contour>
       <point x="739" y="84" type="line"/>
       <point x="926" y="-25" type="line"/>
-      <point x="926" y="1338" type="line"/>
-      <point x="739" y="1338" type="line"/>
+      <point x="926" y="1250" type="line"/>
+      <point x="739" y="1250" type="line"/>
     </contour>
     <contour>
       <point x="1206" y="860" type="line"/>
@@ -58,7 +51,6 @@
       <point x="921" y="902"/>
       <point x="812" y="835"/>
       <point x="762" y="769" type="curve"/>
-      <point x="762" y="479" type="line"/>
       <point x="821" y="434" type="line"/>
       <point x="847" y="553"/>
       <point x="985" y="740"/>
@@ -68,16 +60,16 @@
       <point x="1206" y="725" type="curve"/>
     </contour>
     <contour>
-      <point x="838" y="618" type="line"/>
       <point x="238" y="76" type="line"/>
       <point x="507" y="76" type="line"/>
       <point x="838" y="380" type="line"/>
+      <point x="838" y="618" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CPPPPPP</string>
+      <string>CPPPPP</string>
     </dict>
   </lib>
 </glyph>
