@@ -51,7 +51,11 @@
     <string>/DevKaNukta/DevHalfKaNukta/DevKaNuktaR/DevKaNuktaR.alt/DevHalfKaNuktaR/DevHalfKaNuktaR.alt</string>
     <string>/DevKha/DevKhaNukta/DevHalfKha/DevHalfKhaNukta/DevKhaNuktaR/DevHalfKhaNuktaR/DevGa/DevGaNukta/DevHalfGaNukta/DevGaNuktaR/DevHalfGaNuktaR/DevJaNukta/DevHalfJa/DevHalfJaNukta/DevJaNuktaR/DevHalfJaNuktaR/DevDdaNukta/DevHalfDdaNukta/DevDdaNuktaR</string>
     <string>/DevZero/DevOne/DevOneHalf/DevOneQuarter/DevTwo/DevThree/DevThreeQuarters/DevFour/DevFive/DevFive.alt/DevSix/DevSeven/DevEight/DevEight.alt/DevNine/DevNine.alt/DevNine.alt2</string>
-    <string>/DevFive</string>
+    <string>/DevAbbreviation/DevHighSpacingDot/DevVowelCandraA/DevVowelCandraANukta/DevVowelOE/DevVowelAA/DevVowelOOE/space/DevMaatraAW/DevVowelAW/DevVowelUE/DevVowelUUE/DevDdaMarawari/DevZha/DevHeavyYa</string>
+    <string>/DevGa/DevGga/DevGgaNukta/DevHalfGgaNukta/DevGgaNuktaR/DevHalfGgaNuktaR/DevHalfGga/DevGgaR/DevHalfGgaR/DevJja/DevJjaNukta/DevHalfJjaNukta/DevJjaNuktaR/DevHalfJjaNuktaR/DevHalfJja/DevJjaR/DevHalfJjaR</string>
+    <string>/DevJa</string>
+    <string>/DevJaR</string>
+    <string>/DevGlottalStop/DevGlottalStop.alt/DevDdda/DevDddaNukta/DevHalfDddaNukta/DevDddaNuktaR/DevHalfDdda/DevDddaR/DevBa/DevHalfBaNuktaR/DevHalfBa/DevBaR/DevBba/DevBbaNukta/DevHalfBbaNukta/DevBbaNuktaR/DevHalfBbaNuktaR/DevHalfBba/DevBbaR/DevHalfBbaR</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>

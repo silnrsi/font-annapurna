@@ -3,6 +3,13 @@
   <advance width="1020"/>
   <anchor x="476" y="-112" name="LowerAlt"/>
   <outline>
+    <component base="DevNukta" xOffset="516" yOffset="584"/>
+    <contour>
+      <point x="1030" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="1106" y="1188" type="line"/>
+    </contour>
     <contour>
       <point x="180" y="655" type="curve" smooth="yes"/>
       <point x="180" y="492"/>
@@ -38,42 +45,16 @@
       <point x="425" y="825" type="line"/>
     </contour>
     <contour>
-      <point x="817" y="1320" type="line"/>
-      <point x="-86" y="1320" type="line"/>
-      <point x="-10" y="1188" type="line"/>
-      <point x="893" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="1030" y="1320" type="line"/>
-      <point x="436" y="1320" type="line"/>
-      <point x="512" y="1188" type="line"/>
-      <point x="1106" y="1188" type="line"/>
-    </contour>
-    <contour>
-      <point x="817" y="132" type="line"/>
+      <point x="1050" y="132" type="line"/>
       <point x="67" y="132" type="line"/>
       <point x="143" y="0" type="line"/>
-      <point x="893" y="0" type="line"/>
-    </contour>
-    <contour>
-      <point x="1050" y="132" type="line"/>
-      <point x="146" y="132" type="line"/>
-      <point x="222" y="0" type="line"/>
       <point x="1050" y="0" type="line"/>
     </contour>
-    <contour>
-      <point x="13" y="335" type="curve" smooth="yes"/>
-      <point x="13" y="300"/>
-      <point x="78" y="235"/>
-      <point x="113" y="235" type="curve" smooth="yes"/>
-      <point x="147" y="235"/>
-      <point x="213" y="300"/>
-      <point x="213" y="335" type="curve" smooth="yes"/>
-      <point x="213" y="369"/>
-      <point x="147" y="435"/>
-      <point x="113" y="435" type="curve"/>
-      <point x="78" y="435"/>
-      <point x="13" y="369"/>
-    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CPPPPP</string>
+    </dict>
+  </lib>
 </glyph>
