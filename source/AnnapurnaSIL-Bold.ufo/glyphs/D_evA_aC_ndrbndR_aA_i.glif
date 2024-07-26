@@ -9,7 +9,7 @@
   <outline>
     <component base="DevMaatraAA"/>
     <component base="DevCandrabindu" xOffset="521" yOffset="28"/>
-    <component base="DevMaatraAi.short" xOffset="1374"/>
     <component base="DevRa" xOffset="555"/>
+    <component base="DevMaatraAi.short" xOffset="1374"/>
   </outline>
 </glyph>

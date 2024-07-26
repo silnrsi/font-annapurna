@@ -56,6 +56,9 @@
     <string>/DevJa</string>
     <string>/DevJaR</string>
     <string>/DevGlottalStop/DevGlottalStop.alt/DevDdda/DevDddaNukta/DevHalfDddaNukta/DevDddaNuktaR/DevHalfDdda/DevDddaR/DevBa/DevHalfBaNuktaR/DevHalfBa/DevBaR/DevBba/DevBbaNukta/DevHalfBbaNukta/DevBbaNuktaR/DevHalfBbaNuktaR/DevHalfBba/DevBbaR/DevHalfBbaR</string>
+    <string>/RupeeSgn/IndianRupeeSgn/DottedCirc/NorthIndicFracOneQuarter/NorthIndicFracOneHalf/NorthIndicFracThreeQuarters/NorthIndicFracOneSixteenth/NorthIndicFracOneEighth/NorthIndicFracThreeSixteenths/NorthIndicQuarterMark/NorthIndicPlaceholderMark/NorthIndicRupeeMark/NorthIndicQuantityMark/DevSpacingCandrabindu/DevCandrabinduVirama/DevDblCandrabinduVirama/DevTwo/DevCandrabinduTwo/DevCandrabinduThree/DevCandrabinduAvagraha/DevPushpika/DevGapFiller/DevCaret/DevHeadstroke/DevHeadstroke.discrete/DevHeadstroke.narrow/DevHeadstroke.filler/DevSignSiddham/DevJainOm/DevJainOm.alt/DevVowelAY</string>
+    <string>/DevAaCndrbndRaAi/DevNgAaCndrbndRaAi.001</string>
+    <string>/DevRaNuktaE/DevRaNuktaAi/DevRaE/DevRaAi</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
