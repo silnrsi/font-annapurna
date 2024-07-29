@@ -39,6 +39,7 @@
     <string>ABCDEFGHIJKLMNOPQRSTUVWXYZ[/backslash ]^_</string>
     <string>`abcdefghijklmnopqrstuvwxyz{|}~/nbspace ¡x/exclam.alt C¢£¤¥</string>
     <string>¦§¨©ª«¬­®¯6°±²³´µ¶·¸¹º»¼½¾¿</string>
+    <string>AÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞ</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
