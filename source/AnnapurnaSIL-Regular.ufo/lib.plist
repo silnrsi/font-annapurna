@@ -32,33 +32,12 @@
   <string>3260</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
-    <string>/DevHalfJha.alt2/DevHalfJhaNukta.alt2/DevJhaR.alt2/DevJha.alt2/DevJhaNukta.alt2/DevJhaNuktaR.alt2 
-/DevJha.alt/DevHalfJha.alt/DevJhaR.alt/DevHalfJhaR.alt/DevJhaNuktaR.alt/DevHalfJhaNuktaR.alt</string>
-    <string>/DevMa/DevMaNukta/DevHalfMaNukta/DevMaNuktaR/DevHalfMaNuktaR/DevHalfMa/DevMaR/DevHalfMaR/DevM.La/DevM.La.alt</string>
-    <string>/DevYa/DevYa.alt/DevHalfYa/DevHalfYa.alt/DevYaR/DevYaR.alt/DevHalfYaR 
-/DevRa/DevRaNuktaE/DevRaNuktaAi/DevR.U/DevRaMaatraU/DevR.UNukta/DevRaMaatraUNukta/DevR.UU/DevRaMaatraUU/DevR.UUNukta/DevRaMaatraUUNukta/DevRaE/DevRaAi</string>
-    <string>/DevHalfRa/DevRa.Ya/DevRa.HalfYa/DevRa.YaRa/DevRa.YaNukta/DevRa.HalfYaNukta/DevRa.YaNuktaRa/DevRaNukta/DevRNukta.U/DevRaNuktaMaatraU/DevRNukta.UNukta/DevRaNuktaMaatraUNukta/DevRNukta.UU/DevRaNuktaMaatraUU/DevRNukta.UUNukta/DevRaNuktaMaatraUUNukta/DevHalfRaNukta</string>
-    <string>/DevLa/DevLaNukta/DevHalfLaNukta/DevLaNuktaR/DevHalfLaNuktaR/DevHalfLa/DevLaR/DevHalfLaR/DevL.La/DevL.La.alt 
-/DevLla/DevHalfLla/DevLlaR/DevLlaNukta/DevHalfLlaNukta/DevLlaNuktaR 
-/DevWa/DevWaNukta/DevHalfWaNukta/DevWaNuktaR/DevHalfWaNuktaR/DevHalfWa/DevWaR/DevHalfWaR</string>
-    <string>/DevSha/DevShaNukta/DevHalfShaNukta/DevShaNuktaR.alt/DevShaR.alt/DevHalfShaNuktaR.alt/DevHalfSha/DevHalfShaR.alt 
-/DevShaNuktaR/DevShaR/DevHalfShaR/DevHalfShaNuktaR/DevSh.Ca/DevSh.Wa</string>
-    <string>/DevSsa/DevSsaNukta/DevHalfSsaNukta/DevSsaNuktaR/DevHalfSsaNuktaR/DevHalfSsa/DevSs.Tta/DevSs.Ttha/DevSsaR/DevHalfSsaR</string>
-    <string>/DevSa/DevSaNukta/DevHalfSa/DevHalfSaNukta/DevSaNuktaR/DevHalfSaNuktaR/DevHalfSa/DevS.Na/DevSaR/DevHalfSaR</string>
-    <string>/DevHa/DevHaNukta/DevHaNuktaMaatraUU/DevHaNukta.halant/DevHalfHaNukta/DevHaNuktaR/DevHalfHaNuktaR/DevH.Ri/DevHa.halant/DevHalfHa 
-/DevH.Na/DevH.Ma/DevH.Ya/DevH.Ya.alt/DevH.HalfYa/DevH.YaRa/DevHalfH.YaRa 
-/DevHaR/DevHalfHaR/DevH.La/DevH.Wa/DevH.YaNukta/DevH.HalfYaNukta/DevH.YaNuktaRa/DevHalfH.YaNuktaRa</string>
-    <string>/DevKaNukta/DevHalfKaNukta/DevKaNuktaR/DevKaNuktaR.alt/DevHalfKaNuktaR/DevHalfKaNuktaR.alt</string>
-    <string>/DevKha/DevKhaNukta/DevHalfKha/DevHalfKhaNukta/DevKhaNuktaR/DevHalfKhaNuktaR/DevGa/DevGaNukta/DevHalfGaNukta/DevGaNuktaR/DevHalfGaNuktaR/DevJaNukta/DevHalfJa/DevHalfJaNukta/DevJaNuktaR/DevHalfJaNuktaR/DevDdaNukta/DevHalfDdaNukta/DevDdaNuktaR</string>
-    <string>/DevZero/DevOne/DevOneHalf/DevOneQuarter/DevTwo/DevThree/DevThreeQuarters/DevFour/DevFive/DevFive.alt/DevSix/DevSeven/DevEight/DevEight.alt/DevNine/DevNine.alt/DevNine.alt2</string>
-    <string>/DevAbbreviation/DevHighSpacingDot/DevVowelCandraA/DevVowelCandraANukta/DevVowelOE/DevVowelAA/DevVowelOOE/space/DevMaatraAW/DevVowelAW/DevVowelUE/DevVowelUUE/DevDdaMarawari/DevZha/DevHeavyYa</string>
-    <string>/DevGa/DevGga/DevGgaNukta/DevHalfGgaNukta/DevGgaNuktaR/DevHalfGgaNuktaR/DevHalfGga/DevGgaR/DevHalfGgaR/DevJja/DevJjaNukta/DevHalfJjaNukta/DevJjaNuktaR/DevHalfJjaNuktaR/DevHalfJja/DevJjaR/DevHalfJjaR</string>
-    <string>/DevJa</string>
-    <string>/DevJaR</string>
-    <string>/DevGlottalStop/DevGlottalStop.alt/DevDdda/DevDddaNukta/DevHalfDddaNukta/DevDddaNuktaR/DevHalfDdda/DevDddaR/DevBa/DevHalfBaNuktaR/DevHalfBa/DevBaR/DevBba/DevBbaNukta/DevHalfBbaNukta/DevBbaNuktaR/DevHalfBbaNuktaR/DevHalfBba/DevBbaR/DevHalfBbaR</string>
     <string>/RupeeSgn/IndianRupeeSgn/DottedCirc/NorthIndicFracOneQuarter/NorthIndicFracOneHalf/NorthIndicFracThreeQuarters/NorthIndicFracOneSixteenth/NorthIndicFracOneEighth/NorthIndicFracThreeSixteenths/NorthIndicQuarterMark/NorthIndicPlaceholderMark/NorthIndicRupeeMark/NorthIndicQuantityMark/DevSpacingCandrabindu/DevCandrabinduVirama/DevDblCandrabinduVirama/DevTwo/DevCandrabinduTwo/DevCandrabinduThree/DevCandrabinduAvagraha/DevPushpika/DevGapFiller/DevCaret/DevHeadstroke/DevHeadstroke.discrete/DevHeadstroke.narrow/DevHeadstroke.filler/DevSignSiddham/DevJainOm/DevJainOm.alt/DevVowelAY</string>
     <string>/DevAaCndrbndRaAi/DevNgAaCndrbndRaAi.001</string>
     <string>/DevRaNuktaE/DevRaNuktaAi/DevRaE/DevRaAi</string>
+    <string>!/exclam.alt "#$%&amp;'()*+,-.//0123456789:;&lt;=&gt;?/question.alt @</string>
+    <string>ABCDEFGHIJKLMNOPQRSTUVWXYZ[/backslash ]^_</string>
+    <string>`abcdefghijklmnopqrstuvwxyz{|}~/nbspace ¡¢£¤¥</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
