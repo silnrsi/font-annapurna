@@ -37,7 +37,8 @@
     <string>/DevRaNuktaE/DevRaNuktaAi/DevRaE/DevRaAi</string>
     <string>!/exclam.alt "#$%&amp;'()*+,-.//0123456789:;&lt;=&gt;?/question.alt @</string>
     <string>ABCDEFGHIJKLMNOPQRSTUVWXYZ[/backslash ]^_</string>
-    <string>`abcdefghijklmnopqrstuvwxyz{|}~/nbspace ¡¢£¤¥</string>
+    <string>`abcdefghijklmnopqrstuvwxyz{|}~/nbspace ¡x/exclam.alt C¢£¤¥</string>
+    <string>¦§¨©ª«¬­®¯6°±²³´µ¶·¸¹º»¼½¾¿</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
