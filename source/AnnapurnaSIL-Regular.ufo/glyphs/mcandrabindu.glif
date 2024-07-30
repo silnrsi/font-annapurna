@@ -2,7 +2,7 @@
 <glyph name="mcandrabindu" format="2">
   <advance width="1566"/>
   <outline>
-    <component base="m" yOffset="40"/>
-    <component base="candrabinducomb" xOffset="1206" yOffset="-140"/>
+    <component base="m"/>
+    <component base="candrabinducomb" xOffset="1206" yOffset="-180"/>
   </outline>
 </glyph>

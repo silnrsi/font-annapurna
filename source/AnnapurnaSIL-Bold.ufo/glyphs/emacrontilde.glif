@@ -2,7 +2,7 @@
 <glyph name="emacrontilde" format="2">
   <advance width="975"/>
   <outline>
-    <component base="emacron" yOffset="40"/>
-    <component base="tildenosp" xOffset="1051" yOffset="373"/>
+    <component base="emacron"/>
+    <component base="tildenosp" xOffset="1051" yOffset="273"/>
   </outline>
 </glyph>

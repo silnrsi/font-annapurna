@@ -2,67 +2,7 @@
 <glyph name="omacrontilde" format="2">
   <advance width="1003"/>
   <outline>
-    <contour>
-      <point x="940" y="483" type="curve" smooth="yes"/>
-      <point x="940" y="753"/>
-      <point x="775" y="950"/>
-      <point x="506" y="950" type="curve" smooth="yes"/>
-      <point x="235" y="950"/>
-      <point x="63" y="751"/>
-      <point x="63" y="483" type="curve" smooth="yes"/>
-      <point x="63" y="214"/>
-      <point x="230" y="18"/>
-      <point x="499" y="18" type="curve" smooth="yes"/>
-      <point x="767" y="18"/>
-      <point x="940" y="215"/>
-    </contour>
-    <contour>
-      <point x="749" y="485" type="curve" smooth="yes"/>
-      <point x="749" y="304"/>
-      <point x="682" y="101"/>
-      <point x="501" y="101" type="curve" smooth="yes"/>
-      <point x="324" y="101"/>
-      <point x="256" y="305"/>
-      <point x="256" y="485" type="curve" smooth="yes"/>
-      <point x="256" y="667"/>
-      <point x="322" y="867"/>
-      <point x="504" y="867" type="curve" smooth="yes"/>
-      <point x="681" y="867"/>
-      <point x="749" y="665"/>
-    </contour>
-    <contour>
-      <point x="860" y="1118" type="line"/>
-      <point x="860" y="1236" type="line"/>
-      <point x="144" y="1236" type="line"/>
-      <point x="144" y="1118" type="line"/>
-    </contour>
-    <contour>
-      <point x="852" y="1591" type="curve"/>
-      <point x="770" y="1591" type="line"/>
-      <point x="767" y="1567"/>
-      <point x="755" y="1547"/>
-      <point x="734" y="1529" type="curve" smooth="yes"/>
-      <point x="713" y="1511"/>
-      <point x="688" y="1502"/>
-      <point x="662" y="1502" type="curve" smooth="yes"/>
-      <point x="547" y="1502"/>
-      <point x="474" y="1591"/>
-      <point x="383" y="1591" type="curve" smooth="yes"/>
-      <point x="264" y="1591"/>
-      <point x="185" y="1523"/>
-      <point x="148" y="1388" type="curve"/>
-      <point x="229" y="1388" type="line"/>
-      <point x="233" y="1412"/>
-      <point x="244" y="1431"/>
-      <point x="264" y="1449" type="curve" smooth="yes"/>
-      <point x="285" y="1468"/>
-      <point x="309" y="1476"/>
-      <point x="334" y="1476" type="curve" smooth="yes"/>
-      <point x="459" y="1476"/>
-      <point x="517" y="1388"/>
-      <point x="616" y="1388" type="curve" smooth="yes"/>
-      <point x="736" y="1388"/>
-      <point x="814" y="1456"/>
-    </contour>
+    <component base="omacron"/>
+    <component base="tildenosp" xOffset="980" yOffset="270"/>
   </outline>
 </glyph>

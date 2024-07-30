@@ -33,13 +33,14 @@
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
     <string>/RupeeSgn/IndianRupeeSgn/DottedCirc/NorthIndicFracOneQuarter/NorthIndicFracOneHalf/NorthIndicFracThreeQuarters/NorthIndicFracOneSixteenth/NorthIndicFracOneEighth/NorthIndicFracThreeSixteenths/NorthIndicQuarterMark/NorthIndicPlaceholderMark/NorthIndicRupeeMark/NorthIndicQuantityMark/DevSpacingCandrabindu/DevCandrabinduVirama/DevDblCandrabinduVirama/DevTwo/DevCandrabinduTwo/DevCandrabinduThree/DevCandrabinduAvagraha/DevPushpika/DevGapFiller/DevCaret/DevHeadstroke/DevHeadstroke.discrete/DevHeadstroke.narrow/DevHeadstroke.filler/DevSignSiddham/DevJainOm/DevJainOm.alt/DevVowelAY</string>
-    <string>/DevAaCndrbndRaAi/DevNgAaCndrbndRaAi.001</string>
-    <string>/DevRaNuktaE/DevRaNuktaAi/DevRaE/DevRaAi</string>
     <string>!/exclam.alt "#$%&amp;'()*+,-.//0123456789:;&lt;=&gt;?/question.alt @</string>
     <string>ABCDEFGHIJKLMNOPQRSTUVWXYZ[/backslash ]^_</string>
     <string>`abcdefghijklmnopqrstuvwxyz{|}~/nbspace ¡x/exclam.alt C¢£¤¥</string>
     <string>¦§¨©ª«¬­®¯6°±²³´µ¶·¸¹º»¼½¾¿</string>
     <string>AÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞ</string>
+    <string>ßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ/ydieresis</string>
+    <string>/amacron/emacron/itilde/imacron/dotlessi/eng/omacron/OE/oe/Scaron/scaron/utilde/umacron/Ydieresis/LtnCapZCaron/LtnSmZCaron/florin/ascript/cturn/ccurl/drthook/schwa/epsilonlatin/Ismallcap/nlftlfthook/nrthook/srthook/trthook/upsilonlatin/vturn/zcurl/glottalstop/hsuper/apostrophe/circumflex/caron/modifiermacron/length/breve/dotaccent/ring/ogonek/tilde/hungarumlaut</string>
+    <string>/etilde/amacron/amacrontilde/emacron/emacrontilde/imacrontilde/omacrontilde/umacrontilde m/mcandrabindu/FracSlash</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
