@@ -4,6 +4,6 @@
   <outline>
     <component base="DevMaatraAi" xOffset="-235"/>
     <component base="DevRaReph.alt2" xOffset="-233"/>
-    <component base="DevNukta" xOffset="44" yOffset="1825"/>
+    <component base="DevAnusvara" xOffset="-194" yOffset="1"/>
   </outline>
 </glyph>

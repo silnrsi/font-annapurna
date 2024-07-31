@@ -7,6 +7,6 @@
     <component base="DevMaatraAA"/>
     <component base="DevMaatraAi" xOffset="591"/>
     <component base="DevRaReph.alt2" xOffset="593"/>
-    <component base="DevNukta" xOffset="870" yOffset="1825"/>
+    <component base="DevAnusvara" xOffset="632" yOffset="1"/>
   </outline>
 </glyph>

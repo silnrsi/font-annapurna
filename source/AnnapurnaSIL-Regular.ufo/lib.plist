@@ -41,6 +41,8 @@
     <string>ßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ/ydieresis</string>
     <string>/amacron/emacron/itilde/imacron/dotlessi/eng/omacron/OE/oe/Scaron/scaron/utilde/umacron/Ydieresis/LtnCapZCaron/LtnSmZCaron/florin/ascript/cturn/ccurl/drthook/schwa/epsilonlatin/Ismallcap/nlftlfthook/nrthook/srthook/trthook/upsilonlatin/vturn/zcurl/glottalstop/hsuper/apostrophe/circumflex/caron/modifiermacron/length/breve/dotaccent/ring/ogonek/tilde/hungarumlaut</string>
     <string>/etilde/amacron/amacrontilde/emacron/emacrontilde/imacrontilde/omacrontilde/umacrontilde m/mcandrabindu/FracSlash</string>
+    <string>/sixsuperior/ninesuperior/euro/trademark/fi/fl</string>
+    <string>/DevHalfBbaNuktaR/DevHalfBba/DevHalfBbaR</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>

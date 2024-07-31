@@ -3,6 +3,6 @@
   <anchor x="-470" y="1330" name="_Upper"/>
   <outline>
     <component base="DevRaReph.alt2" xOffset="-232"/>
-    <component base="DevNukta" xOffset="45" yOffset="1825"/>
+    <component base="DevAnusvara" xOffset="-193"/>
   </outline>
 </glyph>
