@@ -28,7 +28,7 @@ cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
 cmds.append(cmd('${TYPETUNER} -o ${TGT} add ${SRC} ${DEP}', "source/typetuner/feat_all.xml"))
 
 # set the build and test parameters
-d = designspace('source/AnnapurnaSIL-RB.designspace',
+d = designspace('source/AnnapurnaSILDesign.designspace',
         target = process('${DS:FILENAME_BASE}.ttf', *cmds),
         # instanceparams = "-W",
         ap = 'source/ap/${DS:FILENAME_BASE}.xml',
