@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevSignBhale" format="2">
-  <advance width="1367"/>
+  <advance width="1150"/>
   <unicode hex="11B02"/>
-  <anchor x="1122" y="-100" name="Halant"/>
-  <anchor x="1122" y="-30" name="Lower"/>
-  <anchor x="687" y="-112" name="LowerCenter"/>
-  <anchor x="1121" y="1330" name="Upper"/>
-  <anchor x="687" y="1390" name="UpperCenter"/>
   <outline>
-    <component base="DevNna"/>
+    <contour>
+      <point x="558" y="0" type="curve" smooth="yes"/>
+      <point x="690" y="0"/>
+      <point x="772" y="54"/>
+      <point x="848" y="135" type="curve"/>
+      <point x="845" y="354" type="line"/>
+      <point x="806" y="378" type="line"/>
+      <point x="791" y="208"/>
+      <point x="696" y="94"/>
+      <point x="522" y="94" type="curve" smooth="yes"/>
+      <point x="432" y="94"/>
+      <point x="345" y="147"/>
+      <point x="345" y="258" type="curve" smooth="yes"/>
+      <point x="345" y="1242" type="line"/>
+      <point x="210" y="1320" type="line"/>
+      <point x="210" y="343" type="line" smooth="yes"/>
+      <point x="210" y="188"/>
+      <point x="434" y="0"/>
+    </contour>
+    <contour>
+      <point x="1196" y="-150" type="line"/>
+      <point x="1211" y="-132"/>
+      <point x="1227" y="-108"/>
+      <point x="1240" y="-85" type="curve"/>
+      <point x="1010" y="49" type="line" smooth="yes"/>
+      <point x="959" y="79"/>
+      <point x="940" y="126"/>
+      <point x="940" y="201" type="curve" smooth="yes"/>
+      <point x="940" y="742" type="line"/>
+      <point x="805" y="820" type="line"/>
+      <point x="805" y="498" type="line"/>
+      <point x="805" y="253" type="line" smooth="yes"/>
+      <point x="805" y="96"/>
+      <point x="899" y="23"/>
+      <point x="976" y="-22" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="286" y="1188" type="line"/>
+      <point x="960" y="1188" type="line"/>
+      <point x="884" y="1320" type="line"/>
+      <point x="210" y="1320" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>

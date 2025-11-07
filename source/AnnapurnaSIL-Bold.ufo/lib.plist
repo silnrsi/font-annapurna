@@ -29,7 +29,7 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3260</string>
+  <string>3436</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
     <string>/RupeeSgn/IndianRupeeSgn/DottedCirc/NorthIndicFracOneQuarter/NorthIndicFracOneHalf/NorthIndicFracThreeQuarters/NorthIndicFracOneSixteenth/NorthIndicFracOneEighth/NorthIndicFracThreeSixteenths/NorthIndicQuarterMark/NorthIndicPlaceholderMark/NorthIndicRupeeMark/NorthIndicQuantityMark/DevSpacingCandrabindu/DevCandrabinduVirama/DevDblCandrabinduVirama/DevTwo/DevCandrabinduTwo/DevCandrabinduThree/DevCandrabinduAvagraha/DevPushpika/DevGapFiller/DevCaret/DevHeadstroke/DevHeadstroke.discrete/DevHeadstroke.narrow/DevHeadstroke.filler/DevSignSiddham/DevJainOm/DevJainOm.alt/DevVowelAY</string>
@@ -43,6 +43,7 @@
     <string>/etilde/amacron/amacrontilde/emacron/emacrontilde/imacrontilde/omacrontilde/umacrontilde m/mcandrabindu/FracSlash</string>
     <string>/sixsuperior/ninesuperior/euro/trademark/fi/fl</string>
     <string>/DevHalfBbaNuktaR/DevHalfBba/DevHalfBbaR</string>
+    <string>/DevDoubleDanda/DevHeadMark/DevHeadMarkHeadstoke/DevSignBhale/DevSignBhaleHook/DevSignBhaleExtended/DevSignBhaleExtendedHook/DevSignBhaleWesternFive/DevSignBhaleWesternNine/DevSignBhaleReversedNine/DevSignMindu/DevPa/DevVowelE/DevGa/DevHalfNna.archaic/DevHalfSa/DevShaR/DevNna/DevSignBhaleReversedNine/DevDoubleDanda</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
