@@ -704,6 +704,10 @@
   <string>D_evH_alfY_aN_uktaR_.glif</string>
   <key>DevHalfYaR</key>
   <string>D_evH_alfY_aR_.glif</string>
+  <key>DevHeadMark</key>
+  <string>D_evH_eadM_ark.glif</string>
+  <key>DevHeadMarkHeadstoke</key>
+  <string>D_evH_eadM_arkH_eadstoke.glif</string>
   <key>DevHeadstroke</key>
   <string>D_evH_eadstroke.glif</string>
   <key>DevHeadstroke.discrete</key>
@@ -1210,6 +1214,8 @@
   <string>D_evS_h.W_a.glif</string>
   <key>DevSha</key>
   <string>D_evS_ha.glif</string>
+  <key>DevSha.alt</key>
+  <string>D_evS_ha.alt.glif</string>
   <key>DevShaNukta</key>
   <string>D_evS_haN_ukta.glif</string>
   <key>DevShaNuktaR</key>
@@ -1220,6 +1226,22 @@
   <string>D_evS_haR_.glif</string>
   <key>DevShaR.alt</key>
   <string>D_evS_haR_.alt.glif</string>
+  <key>DevSignBhale</key>
+  <string>D_evS_ignB_hale.glif</string>
+  <key>DevSignBhaleExtended</key>
+  <string>D_evS_ignB_haleE_xtended.glif</string>
+  <key>DevSignBhaleExtendedHook</key>
+  <string>D_evS_ignB_haleE_xtendedH_ook.glif</string>
+  <key>DevSignBhaleHook</key>
+  <string>D_evS_ignB_haleH_ook.glif</string>
+  <key>DevSignBhaleReversedNine</key>
+  <string>D_evS_ignB_haleR_eversedN_ine.glif</string>
+  <key>DevSignBhaleWesternFive</key>
+  <string>D_evS_ignB_haleW_esternF_ive.glif</string>
+  <key>DevSignBhaleWesternNine</key>
+  <string>D_evS_ignB_haleW_esternN_ine.glif</string>
+  <key>DevSignMindu</key>
+  <string>D_evS_ignM_indu.glif</string>
   <key>DevSignSiddham</key>
   <string>D_evS_ignS_iddham.glif</string>
   <key>DevSix</key>

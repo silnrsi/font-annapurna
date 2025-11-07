@@ -48,8 +48,6 @@
   <true/>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesLastChange</key>
   <true/>
-  <key>com.schriftgestaltung.customParameter.GSFont.uniqueID</key>
-  <string>SIL International: Annapurna SIL Regular: 2021</string>
   <key>com.schriftgestaltung.customParameter.GSFont.useNiceNames</key>
   <integer>1</integer>
   <key>com.schriftgestaltung.customParameter.GSFontMaster.customValue</key>
@@ -775,6 +773,7 @@
     <string>DevHalfShaNuktaR</string>
     <string>DevHalfShaNuktaR.alt</string>
     <string>DevHalfSha</string>
+    <string>DevSha.alt</string>
     <string>DevSh.Ca</string>
     <string>DevShaR</string>
     <string>DevShaR.alt</string>
@@ -1073,6 +1072,16 @@
     <string>DevJainOm.alt</string>
     <string>DevVowelAY</string>
     <string>DevMaatraAY</string>
+    <string>DevHeadMark</string>
+    <string>DevHeadMarkHeadstoke</string>
+    <string>DevSignBhale</string>
+    <string>DevSignBhaleHook</string>
+    <string>DevSignBhaleExtended</string>
+    <string>DevSignBhaleExtendedHook</string>
+    <string>DevSignBhaleWesternFive</string>
+    <string>DevSignBhaleWesternNine</string>
+    <string>DevSignBhaleReversedNine</string>
+    <string>DevSignMindu</string>
     <string>enquad</string>
     <string>emquad</string>
     <string>enspace</string>
@@ -1837,6 +1846,10 @@
     <string>uni095F094D0930094D.half</string>
     <key>DevHalfYaR</key>
     <string>uni092F094D0930094D.half</string>
+    <key>DevHeadMark</key>
+    <string>u11B00</string>
+    <key>DevHeadMarkHeadstoke</key>
+    <string>u11B01</string>
     <key>DevHeadstroke</key>
     <string>uniA8FB</string>
     <key>DevHeadstroke.discrete</key>
@@ -2341,6 +2354,8 @@
     <string>uni0936094D0935</string>
     <key>DevSha</key>
     <string>uni0936</string>
+    <key>DevSha.alt</key>
+    <string>uni0936.alt</string>
     <key>DevShaNukta</key>
     <string>uni0936093C</string>
     <key>DevShaNuktaR</key>
@@ -2351,6 +2366,22 @@
     <string>uni0936094D0930</string>
     <key>DevShaR.alt</key>
     <string>uni0936094D0930.alt</string>
+    <key>DevSignBhale</key>
+    <string>u11B02</string>
+    <key>DevSignBhaleExtended</key>
+    <string>u11B04</string>
+    <key>DevSignBhaleExtendedHook</key>
+    <string>u11B05</string>
+    <key>DevSignBhaleHook</key>
+    <string>u11B03</string>
+    <key>DevSignBhaleReversedNine</key>
+    <string>u11B08</string>
+    <key>DevSignBhaleWesternFive</key>
+    <string>u11B06</string>
+    <key>DevSignBhaleWesternNine</key>
+    <string>u11B07</string>
+    <key>DevSignMindu</key>
+    <string>u11B09</string>
     <key>DevSignSiddham</key>
     <string>uniA8FC</string>
     <key>DevSix</key>

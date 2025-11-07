@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevSignBhaleHook" format="2">
+  <advance width="1367"/>
+  <unicode hex="11B03"/>
+  <anchor x="1122" y="-100" name="Halant"/>
+  <anchor x="1122" y="-30" name="Lower"/>
+  <anchor x="687" y="-112" name="LowerCenter"/>
+  <anchor x="1121" y="1330" name="Upper"/>
+  <anchor x="687" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevNna"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>
