@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevCaret" format="2">
+  <advance width="2"/>
   <unicode hex="A8FA"/>
   <outline>
     <contour>
