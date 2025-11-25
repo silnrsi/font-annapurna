@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>.Scratch</key>
-  <string>_S_cratch.glif</string>
   <key>.notdef</key>
   <string>_notdef.glif</string>
   <key>.null</key>
@@ -26,24 +24,8 @@
   <string>A_tilde.glif</string>
   <key>B</key>
   <string>B_.glif</string>
-  <key>BarClubLeft</key>
-  <string>B_arC_lubL_eft.glif</string>
-  <key>BarH670</key>
-  <string>B_arH_670.glif</string>
-  <key>BarTop</key>
-  <string>B_arT_op.glif</string>
-  <key>BarTopShort</key>
-  <string>B_arT_opS_hort.glif</string>
-  <key>BarVertical</key>
-  <string>B_arV_ertical.glif</string>
-  <key>BarVertical400</key>
-  <string>B_arV_ertical400.glif</string>
-  <key>BarVertical560</key>
-  <string>B_arV_ertical560.glif</string>
   <key>C</key>
   <string>C_.glif</string>
-  <key>Candra</key>
-  <string>C_andra.glif</string>
   <key>Ccedilla</key>
   <string>C_cedilla.glif</string>
   <key>CombCedilla</key>
@@ -54,10 +36,6 @@
   <string>C_ombR_ingA_bv.glif</string>
   <key>D</key>
   <string>D_.glif</string>
-  <key>Dda.Comp</key>
-  <string>D_da.C_omp.glif</string>
-  <key>Dda.small</key>
-  <string>D_da.small.glif</string>
   <key>Delta</key>
   <string>D_elta.glif</string>
   <key>DevAaCndrbndRaAi</key>
@@ -1478,16 +1456,6 @@
   <string>D_evZ_ero.glif</string>
   <key>DevZha</key>
   <string>D_evZ_ha.glif</string>
-  <key>DogLeg</key>
-  <string>D_ogL_eg.glif</string>
-  <key>DogLegShort</key>
-  <string>D_ogL_egS_hort.glif</string>
-  <key>Dot200</key>
-  <string>D_ot200.glif</string>
-  <key>Dot240</key>
-  <string>D_ot240.glif</string>
-  <key>DotLarge</key>
-  <string>D_otL_arge.glif</string>
   <key>DottedCirc</key>
   <string>D_ottedC_irc.glif</string>
   <key>E</key>
@@ -1504,20 +1472,12 @@
   <string>E_th.glif</string>
   <key>F</key>
   <string>F_.glif</string>
-  <key>Flame</key>
-  <string>F_lame.glif</string>
   <key>FracSlash</key>
   <string>F_racS_lash.glif</string>
-  <key>FractionBar</key>
-  <string>F_ractionB_ar.glif</string>
   <key>G</key>
   <string>G_.glif</string>
-  <key>GlobalMask</key>
-  <string>G_lobalM_ask.glif</string>
   <key>H</key>
   <string>H_.glif</string>
-  <key>HookLeft</key>
-  <string>H_ookL_eft.glif</string>
   <key>I</key>
   <string>I_.glif</string>
   <key>Iacute</key>
@@ -1538,14 +1498,6 @@
   <string>K_.glif</string>
   <key>L</key>
   <string>L_.glif</string>
-  <key>LaCurves</key>
-  <string>L_aC_urves.glif</string>
-  <key>LoopLeftClosed</key>
-  <string>L_oopL_eftC_losed.glif</string>
-  <key>LoopRightOpen</key>
-  <string>L_oopR_ightO_pen.glif</string>
-  <key>LoopRtAngle</key>
-  <string>L_oopR_tA_ngle.glif</string>
   <key>LtnCapZCaron</key>
   <string>L_tnC_apZ_C_aron.glif</string>
   <key>LtnSmSharpS</key>
@@ -1558,8 +1510,6 @@
   <string>N_.glif</string>
   <key>NarrowNoBreakSpace</key>
   <string>N_arrowN_oB_reakS_pace.glif</string>
-  <key>NineTail</key>
-  <string>N_ineT_ail.glif</string>
   <key>NorthIndicFracOneEighth</key>
   <string>N_orthI_ndicF_racO_neE_ighth.glif</string>
   <key>NorthIndicFracOneHalf</key>
@@ -1614,16 +1564,12 @@
   <string>S_.glif</string>
   <key>Scaron</key>
   <string>S_caron.glif</string>
-  <key>Sha.comp</key>
-  <string>S_ha.comp.glif</string>
   <key>T</key>
   <string>T_.glif</string>
   <key>ThinSpace</key>
   <string>T_hinS_pace.glif</string>
   <key>Thorn</key>
   <string>T_horn.glif</string>
-  <key>ThreeTail</key>
-  <string>T_hreeT_ail.glif</string>
   <key>U</key>
   <string>U_.glif</string>
   <key>Uacute</key>
@@ -1668,8 +1614,6 @@
   <string>V_S_8.glif</string>
   <key>VS9</key>
   <string>V_S_9.glif</string>
-  <key>VowelI.comp</key>
-  <string>V_owelI_.comp.glif</string>
   <key>W</key>
   <string>W_.glif</string>
   <key>X</key>
@@ -1688,8 +1632,64 @@
   <string>Z_eroW_idthN_onJ_oiner.glif</string>
   <key>ZeroWidthSpace</key>
   <string>Z_eroW_idthS_pace.glif</string>
+  <key>_.Scratch</key>
+  <string>_.S_cratch.glif</string>
+  <key>_BarClubLeft</key>
+  <string>_B_arC_lubL_eft.glif</string>
+  <key>_BarH670</key>
+  <string>_B_arH_670.glif</string>
+  <key>_BarTop</key>
+  <string>_B_arT_op.glif</string>
+  <key>_BarTopShort</key>
+  <string>_B_arT_opS_hort.glif</string>
   <key>_BarTopShortExt</key>
   <string>_B_arT_opS_hortE_xt.glif</string>
+  <key>_BarVertical</key>
+  <string>_B_arV_ertical.glif</string>
+  <key>_BarVertical400</key>
+  <string>_B_arV_ertical400.glif</string>
+  <key>_BarVertical560</key>
+  <string>_B_arV_ertical560.glif</string>
+  <key>_Candra</key>
+  <string>_C_andra.glif</string>
+  <key>_Dda.Comp</key>
+  <string>_D_da.C_omp.glif</string>
+  <key>_Dda.small</key>
+  <string>_D_da.small.glif</string>
+  <key>_DogLeg</key>
+  <string>_D_ogL_eg.glif</string>
+  <key>_DogLegShort</key>
+  <string>_D_ogL_egS_hort.glif</string>
+  <key>_Dot200</key>
+  <string>_D_ot200.glif</string>
+  <key>_Dot240</key>
+  <string>_D_ot240.glif</string>
+  <key>_DotLarge</key>
+  <string>_D_otL_arge.glif</string>
+  <key>_Flame</key>
+  <string>_F_lame.glif</string>
+  <key>_FractionBar</key>
+  <string>_F_ractionB_ar.glif</string>
+  <key>_GlobalMask</key>
+  <string>_G_lobalM_ask.glif</string>
+  <key>_HookLeft</key>
+  <string>_H_ookL_eft.glif</string>
+  <key>_LaCurves</key>
+  <string>_L_aC_urves.glif</string>
+  <key>_LoopLeftClosed</key>
+  <string>_L_oopL_eftC_losed.glif</string>
+  <key>_LoopRightOpen</key>
+  <string>_L_oopR_ightO_pen.glif</string>
+  <key>_LoopRtAngle</key>
+  <string>_L_oopR_tA_ngle.glif</string>
+  <key>_NineTail</key>
+  <string>_N_ineT_ail.glif</string>
+  <key>_Sha.comp</key>
+  <string>_S_ha.comp.glif</string>
+  <key>_ThreeTail</key>
+  <string>_T_hreeT_ail.glif</string>
+  <key>_VowelI.comp</key>
+  <string>_V_owelI_.comp.glif</string>
   <key>a</key>
   <string>a.glif</string>
   <key>aacute</key>

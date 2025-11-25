@@ -1165,40 +1165,38 @@
     <string>replacementCharacter</string>
     <string>DevAaCndrbndRaAi</string>
     <string>DevNgAaCndrbndRaAi.001</string>
-    <string>GlobalMask</string>
-    <string>BarTop</string>
-    <string>BarTopShort</string>
-    <string>BarVertical</string>
-    <string>BarVertical560</string>
-    <string>BarVertical400</string>
-    <string>BarH670</string>
-    <string>BarClubLeft</string>
-    <string>LoopRightOpen</string>
-    <string>LoopLeftClosed</string>
-    <string>LoopRtAngle</string>
-    <string>DogLeg</string>
-    <string>DogLegShort</string>
-    <string>Dda.Comp</string>
-    <string>DotLarge</string>
-    <string>Dot200</string>
-    <string>Dot240</string>
-    <string>Flame</string>
-    <string>Candra</string>
-    <string>ThreeTail</string>
-    <string>VowelI.comp</string>
-    <string>NineTail</string>
-    <string>Sha.comp</string>
-    <string>Dda.small</string>
-    <string>HookLeft</string>
-    <string>LaCurves</string>
-    <string>.Scratch</string>
-    <string>FractionBar</string>
+    <string>_GlobalMask</string>
+    <string>_BarTop</string>
+    <string>_BarTopShort</string>
+    <string>_BarVertical</string>
+    <string>_BarVertical560</string>
+    <string>_BarVertical400</string>
+    <string>_BarH670</string>
+    <string>_BarClubLeft</string>
+    <string>_LoopRightOpen</string>
+    <string>_LoopLeftClosed</string>
+    <string>_LoopRtAngle</string>
+    <string>_DogLeg</string>
+    <string>_DogLegShort</string>
+    <string>_Dda.Comp</string>
+    <string>_DotLarge</string>
+    <string>_Dot200</string>
+    <string>_Dot240</string>
+    <string>_Flame</string>
+    <string>_Candra</string>
+    <string>_ThreeTail</string>
+    <string>_VowelI.comp</string>
+    <string>_NineTail</string>
+    <string>_Sha.comp</string>
+    <string>_Dda.small</string>
+    <string>_HookLeft</string>
+    <string>_LaCurves</string>
+    <string>_.Scratch</string>
+    <string>_FractionBar</string>
     <string>_BarTopShortExt</string>
   </array>
   <key>public.postscriptNames</key>
   <dict>
-    <key>.Scratch</key>
-    <string>Scratch</string>
     <key>CombCedilla</key>
     <string>uni0327</string>
     <key>CombOverline</key>
@@ -2701,6 +2699,8 @@
     <string>uni200C</string>
     <key>ZeroWidthSpace</key>
     <string>uni200B</string>
+    <key>_.Scratch</key>
+    <string>Scratch</string>
     <key>acutenosp</key>
     <string>acutecomb</string>
     <key>amacrontilde</key>
