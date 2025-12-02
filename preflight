@@ -27,8 +27,8 @@ echo "Updating woff metadata xml file..."
 psfmakewoffmetadata -q -n AnnapurnaSIL -i org.sil.fonts -o source/AnnapurnaSIL-WOFF-metadata.xml source/AnnapurnaSIL-Regular.ufo -l source/logs/makewoff.log
 
 echo "Building internal fea..."
-makefea -o source/AnnapurnaSIL-Regular.ufo/features.fea -l source/logs/AnnapurnaSIL-Regular-makefea.log -i source/annapurna_ot.feax source/*-Regular.ufo  &
-makefea -o source/AnnapurnaSIL-Bold.ufo/features.fea    -l source/logs/AnnapurnaSIL-Bold-makefea.log    -i source/annapurna_ot.feax source/*-Bold.ufo     &
+makefea -o source/AnnapurnaSIL-Regular.ufo/features.fea -i source/annapurna_ot.feax --ignoreglyphs -l source/logs/AnnapurnaSIL-Regular-makefea.log source/AnnapurnaSIL-Regular.ufo  &
+makefea -o source/AnnapurnaSIL-Bold.ufo/features.fea    -i source/annapurna_ot.feax --ignoreglyphs -l source/logs/AnnapurnaSIL-Regular-makefea.log source/AnnapurnaSIL-Bold.ufo     &
 wait
 
 echo "preflight completed!"

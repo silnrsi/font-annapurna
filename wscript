@@ -29,6 +29,7 @@ cmds.append(cmd('${TYPETUNER} -o ${TGT} add ${SRC} ${DEP}', "source/typetuner/fe
 
 # set the build and test parameters
 d = designspace('source/AnnapurnaSILDesign.designspace',
+        params = '-c ^_',
         target = process('${DS:FILENAME_BASE}.ttf', *cmds),
         # instanceparams = "-W",
         ap = 'source/ap/${DS:FILENAME_BASE}.xml',
@@ -36,6 +37,7 @@ d = designspace('source/AnnapurnaSILDesign.designspace',
 
         opentype = fea('source/fea/${DS:FILENAME_BASE}.fea',
             master = 'source/annapurna_ot.feax',
+            make_params = '--ignoreglyphs ^_',
             mapfile = 'source/typetuner/${DS:FILENAME_BASE}.map', 
             # make_params = omitAPs
         ),
