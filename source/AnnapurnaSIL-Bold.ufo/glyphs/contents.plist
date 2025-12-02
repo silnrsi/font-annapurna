@@ -4,8 +4,6 @@
 <dict>
   <key>.notdef</key>
   <string>_notdef.glif</string>
-  <key>.null</key>
-  <string>_null.glif</string>
   <key>A</key>
   <string>A_.glif</string>
   <key>AE</key>
@@ -1988,8 +1986,6 @@
   <string>ninesuperior.glif</string>
   <key>nlftlfthook</key>
   <string>nlftlfthook.glif</string>
-  <key>nonmarkingreturn</key>
-  <string>nonmarkingreturn.glif</string>
   <key>notequal</key>
   <string>notequal.glif</string>
   <key>nrthook</key>
