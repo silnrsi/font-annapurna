@@ -59,6 +59,6 @@ U+A830..U+A839| <span class='annapurna-R normal'>	꠰	꠱	꠲	꠳	꠴	꠵	꠶	�
 <p> For a complete list of Latin, punctuation and other Unicode characters included in Annapurna, see [Character Set Support](charset). <br> 
 *Note: Inclusion of basic Latin repertoire is provided as a convenience but is not intended for extensive Latin script use.* </p>
 
-SIL International is the creator of the Annapurna fonts, and is the owner of all proprietary rights therein.
+SIL Global is the creator of the Annapurna fonts, and is the owner of all proprietary rights therein.
 
-*Annapurna* is a trademark of SIL International.
+*Annapurna* is a trademark of SIL Global.

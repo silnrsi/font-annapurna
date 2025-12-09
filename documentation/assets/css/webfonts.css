@@ -1,11 +1,19 @@
 /*
 This file is from the SIL Fontdocs project (https://github.com/silnrsi/fontdocs).
-Copyright (c) 2021-2024 SIL International (https://www.sil.org/). This Font Software is
-released under the MIT license (http://opensource.org/licenses/MIT).
+Copyright (c) 2021-2024 SIL Global (https://www.sil.org/). This Font Software is
+released under the MIT license (https://opensource.org/licenses/MIT).
 */
 @font-face {
     font-family: AnnapurnaSIL-R;
     src: url("../../../web/AnnapurnaSIL-Regular.woff2") format("woff2"); 
+}
+@font-face {
+    font-family: AnnapurnaSIL-M;
+    src: url("../../../web/AnnapurnaSIL-Medium.woff2") format("woff2"); 
+}
+@font-face {
+    font-family: AnnapurnaSIL-SB;
+    src: url("../../../web/AnnapurnaSIL-SemiBold.woff2") format("woff2"); 
 }
 @font-face {
     font-family: AnnapurnaSIL-B;
@@ -13,4 +21,6 @@ released under the MIT license (http://opensource.org/licenses/MIT).
 }
 
 .annapurna-R  { font-family: AnnapurnaSIL-R; }
+.annapurna-M  { font-family: AnnapurnaSIL-M; }
+.annapurna-SB  { font-family: AnnapurnaSIL-SB; }
 .annapurna-B  { font-family: AnnapurnaSIL-B; }

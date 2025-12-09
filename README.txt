@@ -13,7 +13,7 @@ and licensing, please see the documentation on the website
 subfolder of this font package. 
 
 Annapurna SIL is released under the SIL Open Font License.
-Annapurna SIL is a trademark of SIL International.
+Annapurna SIL is a trademark of SIL Global.
 	
 See the OFL and OFL-FAQ for details of the SIL Open Font License.
 See the FONTLOG for information on this and previous releases.
@@ -75,5 +75,5 @@ at https://software.sil.org/fonts/installation.
 
 CONTACT
 ========
-For more information please visit the Annapurna SIL page on SIL International's 
+For more information please visit the Annapurna SIL page on SIL Global's 
 software website: https://software.sil.org/annapurna.

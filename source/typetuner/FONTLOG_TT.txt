@@ -19,7 +19,7 @@ an adequate level of support for one of these smart font technologies.
 Annapurna SIL has a calligraphic design that reflects the stroke contrast of 
 writing the characters with a broad nib used for Devanagari.
 
-SIL International is the creator of the Annapurna SIL fonts, and is the owner
+SIL Global is the creator of the Annapurna SIL fonts, and is the owner
 of all proprietary rights therein.
 
 
@@ -235,7 +235,7 @@ OFL and OFL-FAQ. The OFL-FAQ also gives a very general rationale regarding why
 you would want to contribute to the project.
 
 Anyone can make their own modified version of Annapurna SIL (using a different
-name), but SIL International will continue to maintain and develop the
+name), but SIL Global will continue to maintain and develop the
 canonical version of the Annapurna SIL fonts. As the package maintainer, we
 warmly welcome contributions. Here are some things to keep in mind:
 
@@ -249,7 +249,7 @@ the future.
 
 Copyright attribution: If you submit something for inclusion in the main
 Annapurna SIL fonts, we will ask you to affirm that it is your original work,
-and ask you to assign the copyright of your work to SIL International. This
+and ask you to assign the copyright of your work to SIL Global. This
 is to ensure that future releases can be made under improved versions of the
 OFL without needing to track you down for further permission. This follows
 the same principle used by the FSF. Keep in mind that we are a
@@ -287,8 +287,8 @@ E: https://software.sil.org/annapurna/about/contact/
 W: https://software.sil.org/annapurna/
 D: SIL font designers and engineers
 
-The Annapurna SIL project is maintained by SIL International.
+The Annapurna SIL project is maintained by SIL Global.
 
-For more information please visit the Annapurna SIL page on SIL International's 
+For more information please visit the Annapurna SIL page on SIL Global's 
 software website: https://software.sil.org/annapurna.
 

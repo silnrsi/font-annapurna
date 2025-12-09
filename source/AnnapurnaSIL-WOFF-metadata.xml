@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata version="1.0">
-  <uniqueid id="org.sil.fonts.AnnapurnaSIL.2.105" />
-  <vendor name="SIL International" url="https://www.sil.org" />
+  <uniqueid id="org.sil.fonts.AnnapurnaSIL.2.106" />
+  <vendor name="SIL Global" url="https://www.sil.org" />
   <credits>
     <credit
       name="Jonathan Coblentz, Sharon Correll, Peter Martin, Annie Olsen"
@@ -16,7 +16,7 @@
   </description>
   <license url="https://openfontlicense.org" id="org.openfontlicense.1.1">
     <text lang="en">
-      Copyright (c) 2007-2024, SIL International (https://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
+      Copyright (c) 2007-2024, SIL Global (https://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
       
       This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: https://scripts.sil.org/OFL
       
@@ -63,10 +63,10 @@
   </license>
   <copyright>
     <text lang="en">
-      Copyright (c) 2007-2024 by SIL International
+      Copyright (c) 2007-2024 by SIL Global
     </text>
   </copyright>
   <trademark>
-    <text lang="en">Annapurna SIL is a trademark of SIL International.</text>
+    <text lang="en">Annapurna SIL is a trademark of SIL Global.</text>
   </trademark>
 </metadata>

@@ -7,7 +7,7 @@
   <key>capHeight</key>
   <integer>1434</integer>
   <key>copyright</key>
-  <string>Copyright (c) 2007-2024 by SIL International</string>
+  <string>Copyright (c) 2007-2024 by SIL Global</string>
   <key>descender</key>
   <integer>-984</integer>
   <key>familyName</key>
@@ -33,7 +33,7 @@
   <key>openTypeNameDesignerURL</key>
   <string>https://software.sil.org/wstech/</string>
   <key>openTypeNameLicense</key>
-  <string>Copyright (c) 2007-2024, SIL International (https://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
+  <string>Copyright (c) 2007-2024, SIL Global (https://www.sil.org/) with Reserved Font Names "Annapurna" and "SIL".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: https://scripts.sil.org/OFL
 
@@ -79,7 +79,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNameLicenseURL</key>
   <string>https://scripts.sil.org/OFL</string>
   <key>openTypeNameManufacturer</key>
-  <string>SIL International</string>
+  <string>SIL Global</string>
   <key>openTypeNameManufacturerURL</key>
   <string>https://www.sil.org</string>
   <key>openTypeNamePreferredFamilyName</key>
@@ -87,9 +87,9 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNamePreferredSubfamilyName</key>
   <string>Regular</string>
   <key>openTypeNameUniqueID</key>
-  <string>SIL International: Annapurna SIL Regular: 2025</string>
+  <string>SIL Global: Annapurna SIL Regular: 2025</string>
   <key>openTypeNameVersion</key>
-  <string>Version 2.105</string>
+  <string>Version 2.106</string>
   <key>openTypeOS2CodePageRanges</key>
   <array>
     <integer>0</integer>
@@ -211,13 +211,13 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>styleName</key>
   <string>Regular</string>
   <key>trademark</key>
-  <string>Annapurna SIL is a trademark of SIL International.</string>
+  <string>Annapurna SIL is a trademark of SIL Global.</string>
   <key>unitsPerEm</key>
   <integer>2048</integer>
   <key>versionMajor</key>
   <integer>2</integer>
   <key>versionMinor</key>
-  <integer>105</integer>
+  <integer>106</integer>
   <key>woffMetadataCredits</key>
   <dict>
     <key>credits</key>
