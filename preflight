@@ -6,7 +6,7 @@
 set -e
 
 echo "-----Update version number..."
-psfsetversion source/AnnapurnaSIL-Regular.ufo "2.106" -l source/logs/setversionR.log
+psfsetversion source/AnnapurnaSIL-Regular.ufo "2.107" -l source/logs/setversionR.log
 
 echo "-----Normalizing Regular UFO..."
 echo "-----Updating production names in Regular..."
@@ -21,7 +21,7 @@ psfnormalize -p checkfix=fix source/AnnapurnaSIL-Bold.ufo
 wait
 
 echo "Syncing glyph orders, psnames, and other metadata to other UFOs..."
-psfsyncmasters -q source/AnnapurnaSIL-RB.designspace
+psfsyncmasters -q source/AnnapurnaSILDesign.designspace
 
 echo "Updating woff metadata xml file..."
 psfmakewoffmetadata -q -n AnnapurnaSIL -i org.sil.fonts -o source/AnnapurnaSIL-WOFF-metadata.xml source/AnnapurnaSIL-Regular.ufo -l source/logs/makewoff.log

@@ -1546,12 +1546,19 @@ table(glyph)
         g_multiply g__oslash g__ugrave g__uacute g__ucircumflex g__udieresis g__yacute  
         g__thorn g__ltn_sm_sharp_s g_agrave g_aacute g_acircumflex g_atilde g_adieresis g_aring g_ae g_ccedilla g_egrave g_eacute g_ecircumflex 
         g_edieresis g_igrave g_iacute g_icircumflex g_idieresis g_eth g_ntilde g_ograve g_oacute g_ocircumflex g_otilde g_odieresis g_divide 
-        g_oslash g_ugrave g_uacute g_ucircumflex g_udieresis g_yacute g_thorn g_ydieresis g_amacron g_emacron g_itilde g_imacron g_dotlessi 
-        g_eng g_omacron g__o_e g_oe g__scaron g_scaron g_utilde g_umacron g__ydieresis g_florin 
-        g_ascript g_cturn g_ccurl g_drthook g_schwa g_epsilonlatin g__ismallcap g_nlftlfthook g_nrthook g_srthook g_trthook g_upsilonlatin 
-        g_vturn g_zcurl g_glottalstop g_hsuper g_apostrophe g_circumflex g_length g_tilde g_gravenosp g_acutenosp g_circumflexnosp g_tildenosp 
+// removed some lowercase glyphs with no matching uppercase
+//      g_oslash g_ugrave g_uacute g_ucircumflex g_udieresis g_yacute g_thorn g_ydieresis g_amacron g_emacron g_itilde g_imacron g_dotlessi  
+//      g_eng g_omacron g__o_e g_oe g__scaron g_scaron g_utilde g_umacron g__ydieresis g_florin 
+//      g_ascript g_cturn g_ccurl g_drthook g_schwa g_epsilonlatin g__ismallcap g_nlftlfthook g_nrthook g_srthook g_trthook g_upsilonlatin 
+//      g_vturn g_zcurl g_glottalstop g_hsuper g_apostrophe g_circumflex g_length g_tilde g_gravenosp g_acutenosp g_circumflexnosp g_tildenosp 
+//      g_macronnosp g__comb_overline g_dotnosp g_dieresisnosp g__comb_ring_abv g_haceknosp g_candrabinducomb g_dotsubnosp g_ringsubnosp 
+//      g__comb_cedilla g_etilde g_endash g_emdash g_quoteleft g_quoteright g_quotesinglbase g_quotedblleft g_quotedblright g_quotedblbase  
+        g_oslash g_ugrave g_uacute g_ucircumflex g_udieresis g_yacute g_thorn g_ydieresis g_dotlessi 
+        g__o_e g_oe g__scaron g_scaron g__ydieresis g_florin 
+        g_ascript g_ccurl g_nrthook g_srthook 
+        g_zcurl g_glottalstop g_hsuper g_apostrophe g_circumflex g_length g_tilde g_gravenosp g_acutenosp g_circumflexnosp g_tildenosp 
         g_macronnosp g__comb_overline g_dotnosp g_dieresisnosp g__comb_ring_abv g_haceknosp g_candrabinducomb g_dotsubnosp g_ringsubnosp 
-        g__comb_cedilla g_etilde g_endash g_emdash g_quoteleft g_quoteright g_quotesinglbase g_quotedblleft g_quotedblright g_quotedblbase 
+        g__comb_cedilla g_endash g_emdash g_quoteleft g_quoteright g_quotesinglbase g_quotedblleft g_quotedblright g_quotedblbase 
         g_dagger g_daggerdbl g_bullet g_ellipsis g_perthousand g_guilsinglleft g_guilsinglright g_zerosuperior g_foursuperior g_fivesuperior 
         g_sixsuperior g_sevensuperior g_eightsuperior g_ninesuperior g_euro g_trademark g_minus g_amacrontilde g_emacrontilde g_imacrontilde 
         g_omacrontilde g_umacrontilde g_mcandrabindu );

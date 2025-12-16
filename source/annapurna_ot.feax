@@ -363,13 +363,19 @@
     Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute  
     Thorn LtnSmSharpS agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute  
     icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis  
-    yacute thorn ydieresis amacron emacron itilde imacron dotlessi eng omacron OE oe Scaron scaron utilde umacron Ydieresis florin  
-    ascript cturn ccurl drthook schwa epsilonlatin Ismallcap nlftlfthook nrthook srthook trthook upsilonlatin vturn zcurl glottalstop hsuper  
+    yacute thorn ydieresis dotlessi OE oe Scaron scaron Ydieresis florin  
+    ascript ccurl nrthook srthook zcurl glottalstop hsuper  
     apostrophe circumflex length tilde gravenosp acutenosp circumflexnosp tildenosp macronnosp CombOverline dotnosp dieresisnosp CombRingAbv haceknosp candrabinducomb  
-    dotsubnosp ringsubnosp CombCedilla etilde endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase  
+    dotsubnosp ringsubnosp CombCedilla endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase  
     dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright zerosuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior  
     ninesuperior euro trademark minus amacrontilde emacrontilde imacrontilde omacrontilde umacrontilde  
     mcandrabindu  ] ; 
+        
+    # -----
+    # These LtnAllChars glyphs no longer in the final TTF font (v3.000)
+    # amacron emacron itilde imacron eng omacron utilde umacron cturn 
+    # drthook schwa epsilonlatin Ismallcap nlftlfthook trthook upsilonlatin vturn etilde 
+    # -----
 
 @xDevFullCNuktaAboveBaseline = [ DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevCaNukta DevJaNukta DevJhaNukta DevNyaNukta DevNnaNukta  
     DevTaNukta DevThaNukta DevDaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta  

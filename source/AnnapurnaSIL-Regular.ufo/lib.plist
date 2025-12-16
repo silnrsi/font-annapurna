@@ -2817,6 +2817,24 @@
   </dict>
   <key>public.skipExportGlyphs</key>
   <array>
+    <string>amacron</string>
+    <string>emacron</string>
+    <string>itilde</string>
+    <string>imacron</string>
+    <string>eng</string>
+    <string>omacron</string>
+    <string>utilde</string>
+    <string>umacron</string>
+    <string>cturn</string>
+    <string>drthook</string>
+    <string>schwa</string>
+    <string>epsilonlatin</string>
+    <string>Ismallcap</string>
+    <string>nlftlfthook</string>
+    <string>trthook</string>
+    <string>upsilonlatin</string>
+    <string>vturn</string>
+    <string>etilde</string>
     <string>DevRaVattu.alt</string>
     <string>DevAaCndrbndRaAi</string>
     <string>DevNgAaCndrbndRaAi.001</string>
