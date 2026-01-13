@@ -1,1 +1,0 @@
-This folder is where alternative markdown files for SIL Product Sites will be placed

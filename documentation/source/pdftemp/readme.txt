@@ -1,1 +1,0 @@
-This folder is for temporary generated html files used by weasyprint to generated pdfs
