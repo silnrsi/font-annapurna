@@ -64,7 +64,7 @@ some glyphs widths have changed and linespacing has been adjusted.***
 - First release that uses a UFO-based design and production workflow
     - All sources are in open formats
     - Build toolkit and workflow is completely open-source
-    - See https://silnrsi.github.io/silfontdev/en-US/Introduction.html
+    - See https://writingsystems.info/topics/fonts/building-and-modifying-sil-fonts/#introduction
 - Web fonts are provided in both WOFF and WOFF2 formats
 - Added Devanagari characters:
   - U+A8FC DEVANAGARI SIGN SIDDHAM
