@@ -5,7 +5,7 @@ We welcome other developers who wish to get involved in supporting and enhancing
 
 ## Permissions granted by the OFL
 
-SIL’s fonts are licensed according to the terms of the [SIL Open Font License](https://scripts.sil.org/OFL). The OFL allows the fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. For details see the OFL.txt and OFL-FAQ.txt files in the package.
+SIL’s fonts are licensed according to the terms of the [SIL Open Font License](https://openfontlicense.org/). The OFL allows the fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. For details see the OFL.txt and OFL-FAQ.txt files in the package.
 
 ## Building the fonts from source code
 
@@ -13,15 +13,15 @@ The full source code for our Devanagari fonts is available on Github:
 
 - [Annapurna SIL Github repository](https://github.com/silnrsi/font-annapurna)
 
-Font sources are in the [UFO3](http://unifiedfontobject.org/versions/ufo3/) format with font family structures defined using [designspace](https://github.com/fonttools/fonttools/tree/master/Doc/source/designspaceLib). OpenType source code is stored in the [.fea](https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html) format in the UFO (features.fea) but is maintained in a separate file using the more efficient and powerful [.feax](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md) format.
+Font sources are in the [UFO3](https://unifiedfontobject.org/versions/ufo3/) format with font family structures defined using [designspace](https://github.com/fonttools/fonttools/tree/master/Doc/source/designspaceLib). OpenType source code is stored in the [.fea](https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html) format in the UFO (features.fea) but is maintained in a separate file using the more efficient and powerful [.feax](https://github.com/silnrsi/feax/blob/main/docs/feaextensions.md) format.
 
 The fonts are built using a completely free and open source workflow using industry-standard tools ([fonttools](https://github.com/fonttools/fonttools)), a package of custom python scripts ([pysilfont](https://github.com/silnrsi/pysilfont)), and a build and packaging system ([Smith](https://github.com/silnrsi/smith)). The whole toolchain is available as a Docker container. 
 
-Full instructions for setting up the tools and building SIL fonts are available on a dedicated web site: [SIL Font Development Guide](https://silnrsi.github.io/silfontdev/).
+Full instructions for setting up the tools and building SIL fonts are available on a dedicated web site: [Building and Modifying SIL Fonts](https://writingsystems.info/topics/fonts/building-and-modifying-sil-fonts/).
 
 ## Contributing to the project
 
-We warmly welcome contributions to the fonts, such as new glyphs, enhanced smart font code, or bug fixes. The [brief overview of contributing changes](https://silnrsi.github.io/silfontdev/en-US/Contributing_Changes.html) is a good place to begin. The next step is to contact us by responding to an existing issue or creating an issue in the Github repository and expressing your interest. We can then work together to plan and integrate your contributions.
+We warmly welcome contributions to the fonts, such as new glyphs, enhanced smart font code, or bug fixes. The [brief overview of contributing changes](https://writingsystems.info/topics/fonts/building-and-modifying-sil-fonts/#contributing-changes) is a good place to begin. The next step is to contact us by responding to an existing issue or creating an issue in the Github repository and expressing your interest. We can then work together to plan and integrate your contributions.
 
 Because we want to be able to guarantee a high level of quality for our fonts, we will review submissions carefully. Contributions will need to cover all the weights and styles of the family. Please don’t be discouraged if we do not include a submission due to quality or incompleteness, or if we ask you to make specific revisions. 
 

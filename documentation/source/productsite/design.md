@@ -1,9 +1,11 @@
 
 Annapurna SIL is optimized for readability in long printed documents. Inspired by traditional calligraphic forms, the design is intended to be highly readable, reasonably compact, and visually attractive.
 
-Two weights for this typeface family are included:
+Four weights for this typeface family are included:
 
 - Annapurna Regular
+- Annapurna Medium
+- Annapurna SemiBold
 - Annapurna Bold
 
 ### Example text (UDHR 26)
