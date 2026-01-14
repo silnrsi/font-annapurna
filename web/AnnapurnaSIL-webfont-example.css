@@ -6,21 +6,35 @@ Released under the MIT license.
 
 /* webfonts section */
 @font-face {
-    font-family: LPR;
+    font-family: Annapurna-R;
     font-weight: normal;
     font-style: normal;
     src: url("AnnapurnaSIL-Regular.woff2") format("woff2");
 }
 @font-face {
-    font-family: LPR;
+    font-family: Annapurna-B;
     font-weight: bold;
     font-style: normal;
     src: url("AnnapurnaSIL-Bold.woff2") format("woff2");
 }
-.lpr {
-    font-family: 'LPR', serif;
-    font-size: 22px;
+@font-face {
+    font-family: Annapurna-M;
+    font-weight: medium;
+    font-style: normal;
+    src: url("AnnapurnaSIL-Medium.woff2") format("woff2");
 }
+@font-face {
+    font-family: Annapurna-SB;
+    font-weight: semibold;
+    font-style: normal;
+    src: url("AnnapurnaSIL-SemiBold.woff2") format("woff2");
+}
+
+.annapurna-R  { font-family: Annapurna-R;  font-size: 22px; }
+.annapurna-B  { font-family: Annapurna-B;  font-size: 22px; }
+.annapurna-M  { font-family: Annapurna-M;  font-size: 22px; }
+.annapurna-SB { font-family: Annapurna-SB; font-size: 22px; }
+
 
 /* testtheme section */
 html {
