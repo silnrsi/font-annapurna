@@ -839,11 +839,11 @@ feature cjct {  # Conjunct Forms
 
 # feature cv17 {  # Character Variant 17 
 #     cvParameters {
-#       FeatUILabelNameID  { name 3 1 0x0409 "Cha alternates" ; };
-#       ParamUILabelNameID { name 3 1 0x0409 "Cha with tail, halfCha no stem" ; };
+#       FeatUILabelNameID  { name 3 1 0x0409 "Cha and Sha alternates" ; };
+#       ParamUILabelNameID { name 3 1 0x0409 "Cha with tail, Sha as a loop" ; };
 #     } ;
 #     script dev2;  # Devanagari v.2 
-#           lookup StyleSet17AltCha;
+#           lookup StyleSet17AltCha_Sha;
 #         language dflt;  # Default
 # } cv17 ;
 
@@ -1371,13 +1371,13 @@ feature ss16 {  # Stylistic Set 16
 } ss16 ;
 
 feature ss17 {  # Stylistic Set 17 
-    featureNames { name 3 1 0x409 "Cha with tail, halfCha no stem" ; };
+    featureNames { name 3 1 0x409 "Cha with tail, Sha as a loop" ; };
     script DFLT;  # Default
         language dflt;  # Default
-            lookup StyleSet17AltCha;
+            lookup StyleSet17AltCha_Sha;
     script dev2;  # Devanagari v.2 
         language dflt;  # Default
-            lookup StyleSet17AltCha;
+            lookup StyleSet17AltCha_Sha;
 } ss17 ;
 
 feature vatu {  # Vattu Variants
