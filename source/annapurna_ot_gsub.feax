@@ -1352,12 +1352,11 @@ lookup StyleSet16AltRaUkarNukta {
     sub DevRaNuktaMaatraUUNukta by DevRNukta.UUNukta ;
 } StyleSet16AltRaUkarNukta;
 
-lookup StyleSet17AltCha_Sha {
+lookup StyleSet17AltCha {
   lookupflag 0 ;
     sub DevCha by DevCha.alt ;
     sub DevHalfCha by DevHalfCha.halant ;
-    sub DevSha by DevSha.alt ;
-} StyleSet17AltCha_Sha;
+} StyleSet17AltCha;
 
 # The DevCha only has a halant form as a dead consonant.
 # The DevCha variant has a halant form as well as a "stemless" half-consonant form,
@@ -1369,6 +1368,11 @@ lookup StyleSet17AltCha_context {
     sub DevHalfCha.halant'                    @cDevFullCForms  by DevHalfCha.alt ;
     sub DevHalfCha.halant' ZeroWidthJoiner                     by DevHalfCha.alt ;
 } StyleSet17AltCha_context;
+
+lookup StyleSet18AltSha {
+  lookupflag 0 ;
+    sub DevSha by DevSha.alt ;
+} StyleSet18AltSha;
 
 lookup CharVar21AltHeadstroke {
   lookupflag 0 ;

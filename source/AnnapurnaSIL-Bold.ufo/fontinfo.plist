@@ -13,7 +13,7 @@
   <key>familyName</key>
   <string>Annapurna SIL</string>
   <key>openTypeHeadCreated</key>
-  <string>2026/01/12 14:17:38</string>
+  <string>2026/04/27 08:55:37</string>
   <key>openTypeHeadFlags</key>
   <array>
     <integer>0</integer>
@@ -89,7 +89,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNameUniqueID</key>
   <string>SIL Global: Annapurna SIL Bold: 2026</string>
   <key>openTypeNameVersion</key>
-  <string>Version 2.108</string>
+  <string>Version 2.110</string>
   <key>openTypeOS2CodePageRanges</key>
   <array>
     <integer>0</integer>
@@ -216,7 +216,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>versionMajor</key>
   <integer>2</integer>
   <key>versionMinor</key>
-  <integer>108</integer>
+  <integer>110</integer>
   <key>woffMetadataCredits</key>
   <dict>
     <key>credits</key>

@@ -2416,6 +2416,11 @@ lookup StyleSet17AltCha_context {
     sub DevHalfCha.halant' ZeroWidthJoiner by DevHalfCha.alt;
 } StyleSet17AltCha_context;
 
+lookup StyleSet18AltSha {
+    lookupflag 0;
+    sub DevSha by DevSha.alt;
+} StyleSet18AltSha;
+
 lookup CharVar21AltHeadstroke {
     lookupflag 0;
     sub DevHeadstroke from [DevHeadstroke.discrete DevHeadstroke.narrow DevHeadstroke.filler];
@@ -4360,9 +4365,18 @@ feature cjct {
 #       FeatUILabelNameID  { name 3 1 0x0409 "Cha alternates" ; };
 #       ParamUILabelNameID { name 3 1 0x0409 "Cha with tail, halfCha no stem" ; };
 #     } ;
-#     script dev2;  # Devanagari v.2 
+#     script dev2; 
 #           lookup StyleSet17AltCha;
-#         language dflt;  # Default
+#         language dflt;
+# } cv17 ;
+# feature cv18 {  # Character Variant 18 
+#     cvParameters {
+#       FeatUILabelNameID  { name 3 1 0x0409 "Sha alternates" ; };
+#       ParamUILabelNameID { name 3 1 0x0409 "Sha as a loop" ; };
+#     } ;
+#     script dev2; 
+#           lookup StyleSet18AltSha;
+#         language dflt;
 # } cv17 ;
 feature cv21 {
     # Character Variant 21 
@@ -5187,16 +5201,26 @@ feature ss17 {
     };
 
     script DFLT;
-    # Default
     language dflt;
-    # Default
     lookup StyleSet17AltCha;
     script dev2;
-    # Devanagari v.2 
     language dflt;
-    # Default
     lookup StyleSet17AltCha;
 } ss17;
+
+feature ss18 {
+    # Stylistic Set 18 
+        featureNames {
+        name "Sha as a loop";
+    };
+
+    script DFLT;
+    language dflt;
+    lookup StyleSet18AltSha;
+    script dev2;
+    language dflt;
+    lookup StyleSet18AltSha;
+} ss18;
 
 feature vatu {
     # Vattu Variants
