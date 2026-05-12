@@ -42,11 +42,11 @@ d = designspace('source/AnnapurnaSILDesign.designspace',
             # make_params = omitAPs
         ),
 
-        graphite = gdl('source/gdl/${DS:FILENAME_BASE}.gdl',
-            master = 'source/annapurna_gr_rules.gdh',
-            params = '-q -d -v5 -e gdlerr-${DS:FILENAME_BASE}.txt', 
-            depends = ['source/annapurna_gr_features.gdh']
-        ),
+#        graphite = gdl('source/gdl/${DS:FILENAME_BASE}.gdl',
+#           master = 'source/annapurna_gr_rules.gdh',
+#            params = '-q -d -v5 -e gdlerr-${DS:FILENAME_BASE}.txt', 
+#            depends = ['source/annapurna_gr_features.gdh']
+#        ),
 
         typetuner = typetuner('source/typetuner/feat_all.xml'),
 

@@ -33,10 +33,6 @@
 			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
-			<cmd name="gr_feat" args="{gr_cv01} 1" />
-			<cmd name="gr_feat" args="{gr_cv08} 1" />
-			<cmd name="gr_feat" args="{gr_cv09} 1" />
-			<cmd name="gr_feat" args="{gr_cv10} 1" />
 		</value>
 		<value name="Newar" tag="Newar">
 			<cmd name="encode" args="091D uni091D.alt2" />
@@ -67,10 +63,6 @@
 			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW_StyleSet11DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="gr_feat" args="{gr_cv01} 2" />
-			<cmd name="gr_feat" args="{gr_cv08} 1" />
-			<cmd name="gr_feat" args="{gr_cv09} 1" />
-			<cmd name="gr_feat" args="{gr_cv10} 2" />
 		</value>
 	</feature>
 	<feature name="Jha variants" value="Jha standard style" tag="Jha">
@@ -87,7 +79,6 @@
 			<cmd name="lookup_add" args="GSUB {ss02_DFLT_dflt} {TTNEP_StyleSet02JhaAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
 			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEP_StyleSet02JhaAlt2}" />
-			<cmd name="gr_feat" args="{gr_cv01} 1" />
 		</value>
 		<value name="Jha Newar style" tag="NEW">
 			<cmd name="encode" args="091D uni091D.alt2" />
@@ -99,7 +90,6 @@
 			<cmd name="lookup_del" args="GSUB {ss02_DFLT_dflt} {StyleSet02JhaAlt2}" />
 			<cmd name="lookup_add" args="GSUB {ss02_dev2_dflt} {TTNEW_StyleSet02JhaStd}" />
 			<cmd name="lookup_del" args="GSUB {ss02_dev2_dflt} {StyleSet02JhaAlt2}" />
-			<cmd name="gr_feat" args="{gr_cv01} 2" />
 		</value>
 	</feature>
 	<feature name="Kra variant" value="Closed" tag="Kra">
@@ -114,7 +104,6 @@
 			<cmd name="lookup_add" args="GSUB {ss03_DFLT_dflt} {TTStyleSet03KraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss03_dev2_dflt} {StyleSet03KraAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss03_dev2_dflt} {TTStyleSet03KraAlt}" />
-			<cmd name="gr_feat" args="{gr_cv03} 1" />
 		</value>
 	</feature>
 	<feature name="Tra variant" value="False" tag="Tra">
@@ -129,7 +118,6 @@
 			<cmd name="lookup_add" args="GSUB {ss04_DFLT_dflt} {TTStyleSet04TraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss04_dev2_dflt} {StyleSet04TraAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss04_dev2_dflt} {TTStyleSet04TraAlt}" />
-			<cmd name="gr_feat" args="{gr_cv04} 1" />
 		</value>
 	</feature>
 	<feature name="Shra variant" value="False" tag="Shra">
@@ -144,7 +132,6 @@
 			<cmd name="lookup_add" args="GSUB {ss05_DFLT_dflt} {TTStyleSet05ShraAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss05_dev2_dflt} {StyleSet05ShraAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss05_dev2_dflt} {TTStyleSet05ShraAlt}" />
-			<cmd name="gr_feat" args="{gr_cv05} 1" />
 		</value>
 	</feature>
 	<feature name="Da and Ha with openYa" value="False" tag="OpenYa">
@@ -164,7 +151,6 @@
 			<cmd name="lookup_add" args="GSUB {ss14_DFLT_dflt} {TTStyleSet14AltYa}" />
 			<cmd name="lookup_del" args="GSUB {ss14_dev2_dflt} {StyleSet14AltYa}" />
 			<cmd name="lookup_add" args="GSUB {ss14_dev2_dflt} {TTStyleSet14AltYa}" />
-			<cmd name="gr_feat" args="{gr_cv14} 1" />
 		</value>
 	</feature>
 	<feature name="Ukar Nukta position" value="Inside" tag="UkarNukta">
@@ -182,7 +168,6 @@
 			<cmd name="lookup_add" args="GSUB {ss06_DFLT_dflt} {TTStyleSet06UmatraNuktaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss06_dev2_dflt} {StyleSet06UmatraNuktaAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss06_dev2_dflt} {TTStyleSet06UmatraNuktaAlt}" />
-			<cmd name="gr_feat" args="{gr_cv06} 1" />
 			</value>
 	</feature>
 	<feature name="Ekar Nukta position" value="Low" tag="EkarNukta">
@@ -200,7 +185,6 @@
 			<cmd name="lookup_add" args="GSUB {ss07_DFLT_dflt} {TTStyleSet07EmatraNuktaAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss07_dev2_dflt} {StyleSet07EmatraNuktaAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss07_dev2_dflt} {TTStyleSet07EmatraNuktaAlt}" />
-			<cmd name="gr_feat" args="{gr_cv07} 1" />
 			</value>
 	</feature>
 	<feature name="Digit five variant" value="Digit five standard style" tag="Dig5">
@@ -213,7 +197,6 @@
 			<cmd name="lookup_add" args="GSUB {ss08_DFLT_dflt} {TTStyleSet08DigitFiveAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss08_dev2_dflt} {StyleSet08DigitFiveAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss08_dev2_dflt} {TTStyleSet08DigitFiveAlt}" />
-			<cmd name="gr_feat" args="{gr_cv08} 1" />
 		</value>
 	</feature>
 	<feature name="Digit eight variant" value="Digit eight standard style" tag="Dig8">
@@ -226,7 +209,6 @@
 			<cmd name="lookup_add" args="GSUB {ss09_DFLT_dflt} {TTStyleSet09DigitEightAlt}" />
 			<cmd name="lookup_del" args="GSUB {ss09_dev2_dflt} {StyleSet09DigitEightAlt}" />
 			<cmd name="lookup_add" args="GSUB {ss09_dev2_dflt} {TTStyleSet09DigitEightAlt}" />
-			<cmd name="gr_feat" args="{gr_cv09} 1" />
 		</value>
 	</feature>
 	<feature name="Digit nine variants" value="Digit nine standard style" tag="Dig9">
@@ -243,7 +225,6 @@
 			<cmd name="lookup_add" args="GSUB {ss11_DFLT_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEP_StyleSet11DigitNineAlt2}" />
-			<cmd name="gr_feat" args="{gr_cv10} 1" />
 		</value>
 		<value name="Digit nine Newar style" tag="NEW">
 			<cmd name="encode" args="096F uni096F.alt2" />
@@ -255,7 +236,6 @@
 			<cmd name="lookup_del" args="GSUB {ss11_DFLT_dflt} {StyleSet11DigitNineAlt2}" />
 			<cmd name="lookup_add" args="GSUB {ss11_dev2_dflt} {TTNEW_StyleSet11DigitNineStd}" />
 			<cmd name="lookup_del" args="GSUB {ss11_dev2_dflt} {StyleSet11DigitNineAlt2}" />
-			<cmd name="gr_feat" args="{gr_cv10} 2" />
 		</value>
 	</feature>
 	<feature name="Visarga connecting line (shiro-rekha) variant" value="No connecting line" tag="Visarga">
@@ -268,7 +248,6 @@
 			<cmd name="lookup_add" args="GSUB {ss12_DFLT_dflt} {TTStyleSet12VisargaWithBar}" />
 			<cmd name="lookup_del" args="GSUB {ss12_dev2_dflt} {StyleSet12VisargaWithBar}" />
 			<cmd name="lookup_add" args="GSUB {ss12_dev2_dflt} {TTStyleSet12VisargaWithBar}" />
-			<cmd name="gr_feat" args="{gr_cv12} 1" />
 		</value>
 	</feature>
 	<feature name="Limbu glottal stop connecting line (shiro-rekha) variant" value="With connecting line" tag="GlottalStop">
@@ -281,7 +260,6 @@
 			<cmd name="lookup_add" args="GSUB {ss13_DFLT_dflt} {TTStyleSet13GlottalNoBar}" />
 			<cmd name="lookup_del" args="GSUB {ss13_dev2_dflt} {StyleSet13GlottalNoBar}" />
 			<cmd name="lookup_add" args="GSUB {ss13_dev2_dflt} {TTStyleSet13GlottalNoBar}" />
-			<cmd name="gr_feat" args="{gr_cv13} 1" />
 		</value>
 	</feature>
 	<feature name="Archaic forms" value="False" tag="Archaic">
@@ -301,7 +279,6 @@
 			<cmd name="lookup_add" args="GSUB {ss15_DFLT_dflt} {TTStyleSet15ArchaicForms}" />
 			<cmd name="lookup_del" args="GSUB {ss15_dev2_dflt} {StyleSet15ArchaicForms}" />
 			<cmd name="lookup_add" args="GSUB {ss15_dev2_dflt} {TTStyleSet15ArchaicForms}" />
-			<cmd name="gr_feat" args="{gr_cv15} 1" />
 		</value>
 	</feature>
 	<feature name="RaUkarNukta ligature" value="False" tag="RaUkarNuktaLig">
@@ -315,7 +292,6 @@
 			<cmd name="lookup_add" args="GSUB {blws_dev2_dflt} {TTRaUkarNuktaLig}" />
 			<cmd name="lookup_del" args="GSUB {ss16_dev2_dflt} {StyleSet16AltRaUkarNukta}" />
 			<cmd name="lookup_add" args="GSUB {ss16_dev2_dflt} {TTStyleSet16AltRaUkarNukta}" />
-			<cmd name="gr_feat" args="{gr_cv16} 1" />
 			</value>
 	</feature>
 	<feature name="Cha variant" value="No tail" tag="Cha">
@@ -324,7 +300,6 @@
 		</value>
 		<value name="With tail" tag="WithTail"> 
 			<cmd name="encode" args="091B uni091B.alt" />
-			<cmd name="gr_feat" args="{gr_cv17} 1" />
 		</value>
 	</feature>
 	<feature name="No Stylistic Sets" value="False" tag="noSS">
@@ -410,65 +385,66 @@
 		<alias name="BelowMatraAdjust" value="39" />
 		<alias name="BelowSignsAdjust" value="44" />
 		<alias name="CandrabinduAdjust" value="8" />
-		<alias name="CandrabinduAlt" value="62" />
-		<alias name="CandrabinduAlt_target" value="61" />
+		<alias name="CandrabinduAlt" value="61" />
+		<alias name="CandrabinduAlt_target" value="60" />
 		<alias name="CandrabinduRaAdjust" value="10" />
-		<alias name="CharVar01JhaAlternates" value="72" />
-		<alias name="CharVar10DigitNineAlt" value="82" />
+		<alias name="CharVar01JhaAlternates" value="71" />
+		<alias name="CharVar10DigitNineAlt" value="81" />
 		<alias name="CharVar21AltHeadstroke" value="96" />
 		<alias name="CharVar22AltJainOm" value="97" />
 		<alias name="ConjunctsHalf" value="37" />
-		<alias name="ConsMatraLigatures" value="60" />
+		<alias name="ConsMatraLigatures" value="59" />
 		<alias name="ConsRakarHalfForms" value="34" />
-		<alias name="DevFractions" value="71" />
+		<alias name="DevFractions" value="70" />
 		<alias name="EyelashRa" value="10" />
 		<alias name="EyelashRa_target" value="9" />
-		<alias name="HalantForm" value="70" />
+		<alias name="HalantForm" value="69" />
 		<alias name="LatinDiacsEnc" value="125" />
 		<alias name="LatinDiacsUnenc" value="124" />
 		<alias name="LatinPunctuationMark" value="127" />
 		<alias name="LatinPunctuationMark_target" value="126" />
-		<alias name="Liga_AA_Candrabindu_Ra_Ai" value="53" />
-		<alias name="Liga_AA_Candrabindu_Ra_Ai_target" value="52" />
+		<alias name="Liga_AA_Candrabindu_Ra_Ai" value="52" />
+		<alias name="Liga_AA_Candrabindu_Ra_Ai_target" value="51" />
 		<alias name="MatraNukta_ccmp" value="5" />
-		<alias name="MatraRephLigatures" value="54" />
-		<alias name="MatraRephMarkLigatures" value="55" />
-		<alias name="Matra_i_20" value="46" />
-		<alias name="Matra_i_20_target" value="45" />
-		<alias name="Matra_i_30" value="48" />
-		<alias name="Matra_i_30_target" value="47" />
-		<alias name="Matra_i_40" value="50" />
-		<alias name="Matra_i_40_target" value="49" />
-		<alias name="Matra_ii_20" value="64" />
-		<alias name="Matra_ii_20_target" value="63" />
-		<alias name="Matra_ii_30" value="66" />
-		<alias name="Matra_ii_30_target" value="65" />
-		<alias name="Ng_AA_Candrabindu_Ra_Ai" value="51" />
+		<alias name="MatraRephLigatures" value="53" />
+		<alias name="MatraRephMarkLigatures" value="54" />
+		<alias name="Matra_i_20" value="45" />
+		<alias name="Matra_i_20_target" value="44" />
+		<alias name="Matra_i_30" value="47" />
+		<alias name="Matra_i_30_target" value="46" />
+		<alias name="Matra_i_40" value="49" />
+		<alias name="Matra_i_40_target" value="48" />
+		<alias name="Matra_ii_20" value="63" />
+		<alias name="Matra_ii_20_target" value="62" />
+		<alias name="Matra_ii_30" value="65" />
+		<alias name="Matra_ii_30_target" value="64" />
+		<alias name="Ng_AA_Candrabindu_Ra_Ai" value="50" />
 		<alias name="Nukta" value="4" />
-		<alias name="RUstackLigatures" value="59" />
+		<alias name="RUstackLigatures" value="58" />
 		<alias name="Reph" value="11" />
-		<alias name="RephMarkLigatures" value="56" />
+		<alias name="RephMarkLigatures" value="55" />
 		<alias name="Stacking_Conjuncts_u_uu" value="120" />
 		<alias name="Stacking_Conjuncts_u_uu_target" value="119" />
-		<alias name="StyleSet01JhaAlt" value="73" />
-		<alias name="StyleSet02JhaAlt2" value="74" />
-		<alias name="StyleSet03KraAlt" value="75" />
-		<alias name="StyleSet04TraAlt" value="76" />
-		<alias name="StyleSet05ShraAlt" value="77" />
-		<alias name="StyleSet06UmatraNuktaAlt" value="78" />
-		<alias name="StyleSet07EmatraNuktaAlt" value="79" />
-		<alias name="StyleSet08DigitFiveAlt" value="80" />
-		<alias name="StyleSet09DigitEightAlt" value="81" />
-		<alias name="StyleSet10DigitNineAlt" value="83" />
-		<alias name="StyleSet11DigitNineAlt2" value="84" />
-		<alias name="StyleSet12VisargaWithBar" value="85" />
-		<alias name="StyleSet13GlottalNoBar" value="86" />
-		<alias name="StyleSet14AltYa" value="87" />
-		<alias name="StyleSet14altYA_context" value="90" />
-		<alias name="StyleSet15ArchaicForms" value="91" />
-		<alias name="StyleSet16AltRaUkarNukta" value="92" />
-		<alias name="StyleSet17AltCha" value="93" />
-		<alias name="StyleSet17AltCha_context" value="94" />
+		<alias name="StyleSet01JhaAlt" value="72" />
+		<alias name="StyleSet02JhaAlt2" value="73" />
+		<alias name="StyleSet03KraAlt" value="74" />
+		<alias name="StyleSet04TraAlt" value="75" />
+		<alias name="StyleSet05ShraAlt" value="76" />
+		<alias name="StyleSet06UmatraNuktaAlt" value="77" />
+		<alias name="StyleSet07EmatraNuktaAlt" value="78" />
+		<alias name="StyleSet08DigitFiveAlt" value="79" />
+		<alias name="StyleSet09DigitEightAlt" value="80" />
+		<alias name="StyleSet10DigitNineAlt" value="82" />
+		<alias name="StyleSet11DigitNineAlt2" value="83" />
+		<alias name="StyleSet12VisargaWithBar" value="84" />
+		<alias name="StyleSet13GlottalNoBar" value="85" />
+		<alias name="StyleSet14AltYa" value="86" />
+		<alias name="StyleSet14altYA_context" value="89" />
+		<alias name="StyleSet15ArchaicForms" value="90" />
+		<alias name="StyleSet16AltRaUkarNukta" value="91" />
+		<alias name="StyleSet17AltCha" value="92" />
+		<alias name="StyleSet17AltCha_context" value="93" />
+		<alias name="StyleSet18AltSha" value="95" />
 		<alias name="TTEkarNuktaHigh" value="3" />
 		<alias name="TTNEP_StyleSet01JhaStd" value="99" />
 		<alias name="TTNEP_StyleSet02JhaAlt2" value="100" />
@@ -479,7 +455,7 @@
 		<alias name="TTNEW_StyleSet10DigitNineAlt" value="112" />
 		<alias name="TTNEW_StyleSet11DigitNineStd" value="113" />
 		<alias name="TTRaOpenYa" value="7" />
-		<alias name="TTRaUkarNuktaLig" value="58" />
+		<alias name="TTRaUkarNuktaLig" value="57" />
 		<alias name="TTStyleSet03KraAlt" value="103" />
 		<alias name="TTStyleSet04TraAlt" value="104" />
 		<alias name="TTStyleSet05ShraAlt" value="105" />
@@ -505,11 +481,11 @@
 		<alias name="TTdeva_ShraAlt" value="26" />
 		<alias name="TTdeva_TraAlt" value="25" />
 		<alias name="VariantRaOpenYa" value="98" />
-		<alias name="VowelMarkLigatures" value="57" />
+		<alias name="VowelMarkLigatures" value="56" />
 		<alias name="_reorder_ikar_subst1" value="39" />
 		<alias name="_reorder_ikar_subst2" value="40" />
-		<alias name="altYA_context" value="69" />
-		<alias name="altYA_subst" value="68" />
+		<alias name="altYA_context" value="68" />
+		<alias name="altYA_subst" value="67" />
 		<alias name="base_Halant_base" value="0" />
 		<alias name="base_LowerAlt_base" value="2" />
 		<alias name="base_LowerCenter_base" value="3" />
@@ -535,9 +511,9 @@
 		<alias name="deva_Rakar" value="16" />
 		<alias name="locl_NEP" value="0" />
 		<alias name="locl_NEW" value="1" />
-		<alias name="noHalf_subst" value="67" />
-		<alias name="ss14altYA_subst" value="89" />
-		<alias name="ss14noHalf_subst" value="88" />
+		<alias name="noHalf_subst" value="66" />
+		<alias name="ss14altYA_subst" value="88" />
+		<alias name="ss14noHalf_subst" value="87" />
 		<alias name="u_uu_Stacking_Conjuncts" value="122" />
 		<alias name="u_uu_Stacking_Conjuncts_target" value="121" />
 		<alias name="wme_delete_circle" value="42" />
@@ -633,6 +609,8 @@
 		<alias name="ss16_dev2_dflt" value="ss16" />
 		<alias name="ss17_DFLT_dflt" value="ss17" />
 		<alias name="ss17_dev2_dflt" value="ss17" />
+		<alias name="ss18_DFLT_dflt" value="ss18" />
+		<alias name="ss18_dev2_dflt" value="ss18" />
 		<alias name="vatu_deva_dflt" value="vatu" />
 		<alias name="abvm_DFLT_dflt" value="abvm" />
 		<alias name="abvm_dev2_dflt" value="abvm" />
@@ -643,40 +621,6 @@
 		<alias name="dist_DFLT_dflt" value="dist" />
 		<alias name="dist_dev2_dflt" value="dist" />
 		<alias name="dist_deva_dflt" value="dist" />
-		<alias name="gr_arch" value="1634886504" />
-		<alias name="gr_cv01" value="1668689969" />
-		<alias name="gr_cv03" value="1668689971" />
-		<alias name="gr_cv04" value="1668689972" />
-		<alias name="gr_cv05" value="1668689973" />
-		<alias name="gr_cv06" value="1668689974" />
-		<alias name="gr_cv07" value="1668689975" />
-		<alias name="gr_cv08" value="1668689976" />
-		<alias name="gr_cv09" value="1668689977" />
-		<alias name="gr_cv10" value="1668690224" />
-		<alias name="gr_cv12" value="1668690226" />
-		<alias name="gr_cv13" value="1668690227" />
-		<alias name="gr_cv14" value="1668690228" />
-		<alias name="gr_cv15" value="1668690229" />
-		<alias name="gr_cv16" value="1668690230" />
-		<alias name="gr_cv17" value="1668690231" />
-		<alias name="gr_cv21" value="1668690481" />
-		<alias name="gr_cv22" value="1668690482" />
-		<alias name="gr_dig5" value="1684629301" />
-		<alias name="gr_dig8" value="1684629304" />
-		<alias name="gr_dig9" value="1684629305" />
-		<alias name="gr_dyah" value="1685676392" />
-		<alias name="gr_ekar" value="1701536114" />
-		<alias name="gr_gbar" value="1734500722" />
-		<alias name="gr_jhav" value="1785225590" />
-		<alias name="gr_krav" value="1802658166" />
-		<alias name="gr_ryav" value="1920557430" />
-		<alias name="gr_shra" value="1936224865" />
-		<alias name="gr_ss16" value="1936929078" />
-		<alias name="gr_ss17" value="1936929079" />
-		<alias name="gr_ss22" value="1936929330" />
-		<alias name="gr_trav" value="1953653110" />
-		<alias name="gr_ukar" value="1969971570" />
-		<alias name="gr_vbar" value="1986158962" />
 		</aliases>
 
 </all_features>
