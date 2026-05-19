@@ -29,7 +29,7 @@
   <key>openTypeNameDescription</key>
   <string>Annapurna SIL is a high-quality font family that supports the many diverse languages that use the Devanagari script.</string>
   <key>openTypeNameDesigner</key>
-  <string>Peter Martin, Annie Olsen</string>
+  <string>Peter Martin, Annie Olsen, Victor Gaultney</string>
   <key>openTypeNameDesignerURL</key>
   <string>https://software.sil.org/wstech/</string>
   <key>openTypeNameLicense</key>
@@ -89,7 +89,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNameUniqueID</key>
   <string>SIL Global: Annapurna SIL Regular: 2026</string>
   <key>openTypeNameVersion</key>
-  <string>Version 2.900</string>
+  <string>Version 2.901</string>
   <key>openTypeOS2CodePageRanges</key>
   <array>
     <integer>0</integer>
@@ -216,7 +216,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>versionMajor</key>
   <integer>2</integer>
   <key>versionMinor</key>
-  <integer>900</integer>
+  <integer>901</integer>
   <key>woffMetadataCredits</key>
   <dict>
     <key>credits</key>

@@ -22,7 +22,7 @@ getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
 
 # Commands to process with target font
 cmds = []
-cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']))
+cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${source}']))
 cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
 cmds.append(cmd('${TYPETUNER} -o ${TGT} add ${SRC} ${DEP}', "source/typetuner/feat_all.xml"))
 

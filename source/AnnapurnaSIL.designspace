@@ -39,11 +39,12 @@
     </sources>
     <instances>
         <instance       familyname="Annapurna SIL" 
+                          filename="instances/AnnapurnaSIL-Regular.ufo"
                               name="Annapurna SIL Regular" 
                 stylemapfamilyname="Annapurna SIL" 
-                         stylename="Regular" 
                  stylemapstylename="regular"
-                filename="AnnapurnaSIL-Regular.ufo">
+                         stylename="Regular" 
+                postscriptfontname="AnnapurnaSIL-Regular">
             <location>
                 <dimension name="weight" xvalue="400.000000" />
                 <dimension name="width" xvalue="100.000000" />
@@ -52,12 +53,13 @@
             <info />
             <kerning />
         </instance>
-        <instance       familyname="Annapurna SIL" 
+        <instance       familyname="Annapurna SIL"
+                          filename="instances/AnnapurnaSIL-Medium.ufo"
                               name="Annapurna SIL Medium" 
                 stylemapfamilyname="Annapurna SIL Medium" 
-                         stylename="Medium" 
                  stylemapstylename="regular"
-                filename="AnnapurnaSIL-Medium.ufo">
+                         stylename="Medium"
+                postscriptfontname="AnnapurnaSIL-Medium">
             <location>
                 <dimension name="weight" xvalue="500.000000" />
                 <dimension name="width" xvalue="100.000000" />
@@ -67,11 +69,12 @@
             <kerning />
         </instance>
         <instance       familyname="Annapurna SIL" 
-                              name="Annapurna SIL SemiBold" 
-                stylemapfamilyname="Annapurna SIL SemiBold" 
-                         stylename="SemiBold" 
+                          filename="instances/AnnapurnaSIL-SemiBold.ufo"
+                              name="Annapurna SIL SemiBold"
+                stylemapfamilyname="Annapurna SIL SemiBold"
                  stylemapstylename="regular"
-                filename="AnnapurnaSIL-SemiBold.ufo">
+                         stylename="SemiBold" 
+                postscriptfontname="AnnapurnaSIL-SemiBold">
             <location>
                 <dimension name="weight" xvalue="600.000000" />
                 <dimension name="width" xvalue="100.000000" />
@@ -81,11 +84,12 @@
             <kerning />
         </instance>
         <instance       familyname="Annapurna SIL"
+                          filename="instances/AnnapurnaSIL-Bold.ufo"
                               name="Annapurna SIL Bold"
                 stylemapfamilyname="Annapurna SIL"
-                         stylename="Bold"
                  stylemapstylename="bold"
-                filename="AnnapurnaSIL-Bold.ufo">
+                         stylename="Bold"
+                postscriptfontname="AnnapurnaSIL-Bold">
             <location>
                 <dimension name="weight" xvalue="700.000000" />
                 <dimension name="width" xvalue="100.000000" />
