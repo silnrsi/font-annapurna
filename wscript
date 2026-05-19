@@ -16,7 +16,6 @@ DESC_SHORT = 'Devanagari Unicode TrueType font with OT and Graphite support'
 
 # Get version info from Regular UFO; must be first function call:
 getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
-# BUILDLABEL = 'beta'
 
 # APs to ignore when generating OT and GDL classes
 # omitAPs = '--omitaps "UpperCenter"'
@@ -28,7 +27,7 @@ cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
 cmds.append(cmd('${TYPETUNER} -o ${TGT} add ${SRC} ${DEP}', "source/typetuner/feat_all.xml"))
 
 # set the build and test parameters
-d = designspace('source/AnnapurnaSILDesign.designspace',
+d = designspace('source/AnnapurnaSIL.designspace',
         params = '-c ^_',
         target = process('${DS:FILENAME_BASE}.ttf', *cmds),
         # instanceparams = "-W",
@@ -41,12 +40,6 @@ d = designspace('source/AnnapurnaSILDesign.designspace',
             mapfile = 'source/typetuner/${DS:FILENAME_BASE}.map', 
             # make_params = omitAPs
         ),
-
-#        graphite = gdl('source/gdl/${DS:FILENAME_BASE}.gdl',
-#           master = 'source/annapurna_gr_rules.gdh',
-#            params = '-q -d -v5 -e gdlerr-${DS:FILENAME_BASE}.txt', 
-#            depends = ['source/annapurna_gr_features.gdh']
-#        ),
 
         typetuner = typetuner('source/typetuner/feat_all.xml'),
 
