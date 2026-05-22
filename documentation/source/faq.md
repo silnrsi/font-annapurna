@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Frequently Asked Questions
-fontversion: 2.100
+fontversion: 3.000
 ---
 
 Many questions can be answered by consulting the following FAQ pages. Here are a few sample questions answered in each FAQ:
@@ -22,8 +22,8 @@ Here are a few of the most frequently asked questions specifically regarding Ann
 
 #### *My language uses variant forms of some Devanagari characters. How do I type these using the Annapurna font?*
 
-If your application supports Graphite, the OpenType Stylistic Sets or Character Variants features, you can use these to access the font features built into the font. See [Font features](features.md) for more details.
+If your application supports OpenType Stylistic Sets or Character Variants features, you can use these to access the font features built into the font. See [Font features](features.md) for more details.
 
 #### *What characters are included with this release?*
 
-Annapurna SIL covers all the characters from the Devanagari, Devanagari Extended and North Indic Number Forms blocks in The Unicode Standard plus the Rupee currency symbols. See the [Design and Type Sample](design.md) page to see the design of these characters. For the full listing of characters in Annapurna, see the [Character set support](charset.md) page.
+Annapurna SIL covers all the characters from the Devanagari, Devanagari Extended, Devanagari Extended-A and North Indic Number Forms blocks in The Unicode Standard plus the Rupee currency symbols. See the [Design and Type Sample](design.md) page to see the design of these characters. For the full listing of characters in Annapurna, see the [Character set support](charset.md) page.

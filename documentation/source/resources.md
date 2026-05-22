@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Resources
-fontversion: 2.100
+fontversion: 3.000
 ---
 
 ## Requirements
@@ -13,7 +13,9 @@ Install the fonts by decompressing the .zip archive and installing the fonts usi
 
 ## Keyboarding and character set support
 
-These fonts do not include keyboards or other software for entering text. To type the symbols in these fonts use the keyboarding systems provided in your OS or use a separate utility. SIL’s [Keyman](https://keyman.com/) provides keyboards for over 2000 languages and works on all major desktop and mobile platforms. For information on other keyboarding options see the overview at [Keyboard Systems Overview (ScriptSource)](https://scriptsource.org/entry/ytr8g8n6sw).
+These fonts do not include keyboards or other software for entering text. To type the symbols in these fonts use the keyboarding systems provided in your OS or use a separate utility. SIL’s [Keyman](https://keyman.com/) provides keyboards for over 2000 languages and works on all major desktop and mobile platforms. 
+
+Various other means may be available for different operating system platforms to create additional input methods. Some suggestions are listed here: [Keyboards and Tools](https://writingsystems.info/topics/input/keyboards-and-tools/#keyboard-tools).
 
 See [Character set support](charset.md) for details of the Unicode characters supported by these fonts.
 
@@ -31,4 +33,4 @@ Web font versions of these fonts (in WOFF and WOFF2 formats) are available in th
 
 ## Text conversion
 
-These fonts are encoded according to [The Unicode Standard](https://unicode.org). If you have text that uses a legacy, non-Unicode encoding there are tools that can help you convert that text for use with Unicode fonts. See [Introduction to Text Conversion and Transliteration](https://scriptsource.org/entry/xlzd6n5aqt).
+These fonts are encoded according to [The Unicode Standard](https://unicode.org). If you have text that uses a legacy, non-Unicode encoding there are tools that can help you convert that text for use with Unicode fonts. See an article on [Encoding Conversion](https://writingsystems.info/topics/encoding/encoding-conversion/) for an overview of available options.

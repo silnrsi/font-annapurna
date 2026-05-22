@@ -14,14 +14,14 @@
     <header>
         <h1 class="title">Annapurna SIL - Font Features</h1>
     </header>
-    <p>Annapurna SIL is a Graphite and OpenType-enabled font family that
-    supports the Devanagari script. It includes a number of optional
+    <p>Annapurna SIL is an OpenType-enabled font family that supports
+    the Devanagari script. It includes a number of optional
     user-selected features that may be useful or required for particular
-    uses or languages. These Graphite and OpenType features are
-    primarily specified using four-letter tags (e.g. 'cv04' or 'ss04')
-    to display variant characters or specific behavior. Certain apps,
-    such as web browsers, can also use language tags to display all the
-    language-specific variants and behaviors.</p>
+    uses or languages. These OpenType features are primarily specified
+    using four-letter tags (e.g. 'cv04' or 'ss04') to display variant
+    characters or specific behavior. Certain apps, such as web browsers,
+    can also use language tags to display all the language-specific
+    variants and behaviors.</p>
     <p>This document lists all the language and user-selected features
     in Annapurna SIL. For more information on how to access these
     features in specific environments and applications, see <a
@@ -32,7 +32,7 @@
     service, which allows you to choose among the user-selected font
     features (shown below) and download a font with those features
     preset. This enables them to work in many applications that do not
-    make use of Graphite or OpenType Stylistic Sets.</p>
+    make use of OpenType Stylistic Sets.</p>
     <p>This page uses web fonts (WOFF2) to demonstrate font features and
     should display correctly in all modern browsers. For a more concise
     example of how to use Annapurna SIL as a web font see <a
@@ -56,7 +56,7 @@
     <tr class="header">
     <th style="text-align: left;">Language</th>
     <th style="text-align: left;">Test sequences</th>
-    <th style="text-align: left;">OpenType/Graphite tag</th>
+    <th style="text-align: left;">OpenType lang tag</th>
     </tr>
     </thead>
     <tbody>
@@ -70,13 +70,13 @@
     <td style="text-align: left;">Nepali</td>
     <td style="text-align: left;"><span class="annapurna-R normal"
     lang="ne">झ झ् झ़ झ़् झ्र झ़्र    ५ ८ ९</span></td>
-    <td style="text-align: left;"><code>NEP  / ne</code></td>
+    <td style="text-align: left;"><code>NEP or ne</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Newari</td>
     <td style="text-align: left;"><span class="annapurna-R normal"
     lang="new">झ झ् झ़ झ़् झ्र झ़्र    ५ ८ ९</span></td>
-    <td style="text-align: left;"><code>NEW  / new</code></td>
+    <td style="text-align: left;"><code>NEW or new</code></td>
     </tr>
     </tbody>
     </table>
@@ -561,6 +561,37 @@
     </tr>
     </tbody>
     </table>
+    <h4 id="sha-alternate">Sha alternate</h4>
+    <p><span class="affects">Affects: U+0936</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 18%" />
+    <col style="width: 63%" />
+    <col style="width: 18%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">Feature</th>
+    <th style="text-align: left;">Sample</th>
+    <th style="text-align: left;">Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: left;">Standard</td>
+    <td style="text-align: left;"><span class="annapurna-R normal">श
+    शृं</span></td>
+    <td style="text-align: left;"><code>cv18=0 or ss18=0</code></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">As a loop</td>
+    <td style="text-align: left;"><span class="annapurna-R normal"
+    style="font-feature-settings: &quot;cv18&quot; 1, &quot;ss18&quot; 1">श
+    शृं</span></td>
+    <td style="text-align: left;"><code>cv18=1 or ss18=1</code></td>
+    </tr>
+    </tbody>
+    </table>
     <h4 id="headstroke-alternates">Headstroke alternates</h4>
     <p><span class="affects">Affects: U+A8FB</span></p>
     <table>
@@ -755,7 +786,7 @@
     [font id='annapurna' face='AnnapurnaSIL-Regular' bold='AnnapurnaSIL-Bold' size='150%']
     -->
     <footer class="footer">
-        <p>This guide is from the <a href="https://software.sil.org/annapurna/" title="" class="active">Annapurna SIL project</a> version 2.1 and is copyright © 1997-2026 SIL Global.</p>
+        <p>This guide is from the <a href="https://software.sil.org/annapurna/" title="" class="active">Annapurna SIL project</a> version 3 and is copyright © 1997-2026 SIL Global.</p>
     </footer>
 </article>
 </div>

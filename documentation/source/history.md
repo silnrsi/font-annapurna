@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Version History
-fontversion: 2.100
+fontversion: 3.000
 ---
 ### 11 June 2024 (SIL WSTech team)  Annapurna SIL version 2.100
 - Enabled rendering for a unique sequence (an implosive) in the Wambule language
