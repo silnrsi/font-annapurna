@@ -43,8 +43,8 @@ d = designspace('source/AnnapurnaSIL.designspace',
 
         typetuner = typetuner('source/typetuner/feat_all.xml'),
 
-        woff = woff('web/${DS:FILENAME_BASE}.woff', 
-            params = '-v ' + VERSION + ' -m ../source/AnnapurnaSIL-WOFF-metadata.xml'
+        woff = woff('web/${DS:FILENAME_BASE}', 
+            metadata=f'../source/AnnapurnaSIL-WOFF-metadata.xml'
         ),
 
         script = ['dev2'],
