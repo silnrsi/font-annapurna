@@ -4377,7 +4377,7 @@ feature cjct {
 #     script dev2; 
 #           lookup StyleSet18AltSha;
 #         language dflt;
-# } cv17 ;
+# } cv18 ;
 feature cv21 {
     # Character Variant 21 
         cvParameters {
