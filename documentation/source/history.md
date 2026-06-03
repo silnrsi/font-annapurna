@@ -2,6 +2,52 @@
 title: Annapurna SIL - Version History
 fontversion: 3.000
 ---
+
+### 04 June 2026 (SIL WSTech team)  Annapurna SIL version 3.000
+- There are additional intermediate weights. Previously existing weights have not changed. 
+  Here is a list, with retained weights in **bold** and new weights in *italic*. 
+  The CSS values for the weights within each family are in parentheses.
+  - **Annapurna SIL Regular** (400)
+  - *Annapurna SIL Medium* (500)
+  - *Annapurna SIL SemiBold* (600)
+  - **Annapurna SIL Bold** (700)
+- Added Devanagari characters from the Devanagari Extended-A block:
+  - U+11B00 DEVANAGARI HEAD MARK
+  - U+11B01 DEVANAGARI HEAD MARK WITH HEADSTROKE
+  - U+11B02 DEVANAGARI SIGN BHALE
+  - U+11B03 DEVANAGARI SIGN BHALE WITH HOOK
+  - U+11B04 DEVANAGARI SIGN EXTENDED BHALE
+  - U+11B05 DEVANAGARI SIGN EXTENDED BHALE WITH HOOK
+  - U+11B06 DEVANAGARI SIGN WESTERN FIVE-LIKE BHALE
+  - U+11B07 DEVANAGARI DEVANAGARI SIGN WESTERN NINE-LIKE BHALE
+  - U+11B08 DEVANAGARI SIGN REVERSED NINE-LIKE BHALE
+  - U+11B09 DEVANAGARI SIGN MINDU
+- Added a DEVANAGARI SHA variant (SHA as a loop)
+  - To enable, use Stylistic Set 18 (ss18=1)
+  - Postscript glyph name is uni0936.alt
+- **Graphite has been removed.** Application and OS support for OpenType
+  has greatly improved, so the need for Graphite in this font family is
+  greatly reduced. Note: Versions 2.100 and earlier have Graphite.
+- Removed some lowercase characters that have no matching uppercase:
+  - U+0101: LATIN SMALL LETTER A WITH MACRON
+  - U+0113: LATIN SMALL LETTER E WITH MACRON
+  - U+0129: LATIN SMALL LETTER I WITH TILDE
+  - U+012B: LATIN SMALL LETTER I WITH MACRON
+  - U+014B: LATIN SMALL LETTER ENG
+  - U+014D: LATIN SMALL LETTER O WITH MACRON
+  - U+0169: LATIN SMALL LETTER U WITH TILDE
+  - U+016B: LATIN SMALL LETTER U WITH MACRON
+  - U+0254: LATIN SMALL LETTER OPEN O
+  - U+0256: LATIN SMALL LETTER D WITH TAIL
+  - U+0259: LATIN SMALL LETTER SCHWA
+  - U+025B: LATIN SMALL LETTER OPEN E
+  - U+026A: LATIN LETTER SMALL CAPITAL I
+  - U+0272: LATIN SMALL LETTER N WITH LEFT HOOK
+  - U+0288: LATIN SMALL LETTER T WITH RETROFLEX HOOK
+  - U+028A: LATIN SMALL LETTER UPSILON
+  - U+028C: LATIN SMALL LETTER TURNED V
+  - U+1EBD: LATIN SMALL LETTER E WITH TILDE
+
 ### 11 June 2024 (SIL WSTech team)  Annapurna SIL version 2.100
 - Enabled rendering for a unique sequence (an implosive) in the Wambule language
   - Consists of a DDA, BA or LA half-form (using ZWJ) plus a full vowel A

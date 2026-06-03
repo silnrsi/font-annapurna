@@ -7,7 +7,7 @@ We hope you find it useful!
 
 Annapurna SIL provides glyphs for a wide range of Devanagari and Latin.
 For further information about this font, including Unicode ranges
-supported, Graphite and OpenType font features and how to use them, 
+supported, OpenType font features and how to use them, 
 and licensing, please see the documentation on the website 
 (https://software.sil.org/annapurna) or in the documentation 
 subfolder of this font package. 

@@ -12,8 +12,5 @@ For practical information about using, modifying and redistributing this font se
 
 For more details about this project, including changelog and acknowledgements see [FONTLOG.txt](FONTLOG.txt).
 
-For further information, including Unicode ranges supported, Graphite and OpenType font features
-and how to use them, please see the documentation on [software.sil.org/annapurna](https://software.sil.org/annapurna/)
+For further information, including Unicode ranges supported, OpenType font features and how to use them, please see the documentation on [software.sil.org/annapurna](https://software.sil.org/annapurna/)
 or in the documentation subfolder.
-
-Enjoy!
