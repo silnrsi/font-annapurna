@@ -302,6 +302,14 @@
 			<cmd name="encode" args="091B uni091B.alt" />
 		</value>
 	</feature>
+	<feature name="Sha variant" value="Default" tag="Sha">
+		<value name="Default" tag="Default">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="As a loop" tag="As a loop"> 
+			<cmd name="encode" args="0936 uni0936.alt" />
+		</value>
+	</feature>
 	<feature name="No Stylistic Sets" value="False" tag="noSS">
 		<value name="False" tag="False">
 			<cmd name="null" args="null" />
@@ -373,6 +381,8 @@
 			<cmd name="feat_del" args="GSUB dev2 {NEW_} {ss16_dev2_NEW_}" />
 			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss17_DFLT_dflt}" />
 			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss17_dev2_dflt}" />
+			<cmd name="feat_del" args="GSUB DFLT {dflt} {ss18_DFLT_dflt}" />
+			<cmd name="feat_del" args="GSUB dev2 {dflt} {ss18_dev2_dflt}" />
 		</value>
 	</feature>
 		<aliases><alias name="AboveMarksRephAdjust" value="37" />

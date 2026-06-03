@@ -849,7 +849,7 @@ feature cjct {  # Conjunct Forms
 
 # feature cv18 {  # Character Variant 18 
 #     cvParameters {
-#       FeatUILabelNameID  { name 3 1 0x0409 "Sha alternates" ; };
+#       FeatUILabelNameID  { name 3 1 0x0409 "Sha alternate" ; };
 #       ParamUILabelNameID { name 3 1 0x0409 "Sha as a loop" ; };
 #     } ;
 #     script dev2; 
