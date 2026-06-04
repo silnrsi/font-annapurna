@@ -306,7 +306,7 @@
 		<value name="Sha default" tag="Default">
 			<cmd name="null" args="null" />
 		</value>
-		<value name="As a loop" tag="As a loop"> 
+		<value name="As a loop" tag="Loop"> 
 			<cmd name="encode" args="0936 uni0936.alt" />
 		</value>
 	</feature>
