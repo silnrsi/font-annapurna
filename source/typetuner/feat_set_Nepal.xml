@@ -68,6 +68,10 @@
 		<value name="No tail"/>
 		<value name="With tail"/>
 	</feature>
+	<feature name="Sha variant" value="Sha default">
+		<value name="Sha default"/>
+		<value name="As a loop"/>
+	</feature>
 	<feature name="No Stylistic Sets" value="False">
 		<value name="False"/>
 		<value name="True"/>
