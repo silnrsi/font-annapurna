@@ -15,11 +15,11 @@ systems that use the Devanagari script. Inspired by traditional calligraphic
 forms, the design is intended to be highly readable, reasonably compact, and 
 visually attractive.
 
-It is a TrueType font with smart font capabilities added using 
+It is a TrueType font with OpenType font capabilities added using 
 state-of-the-art font technologies. This means that complex typographic 
 issues such as the placement of combining marks or the formation of ligatures 
 are handled by the font, provided you are running an application that provides 
-an adequate level of support for one of these smart font technologies.
+an adequate level of support for one of these font technologies.
 
 
 ## A Note Regarding the Open Font License and TypeTuner
