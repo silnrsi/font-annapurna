@@ -4,7 +4,7 @@
 # override the default folders
 DOCDIR = ['documentation', 'web']  # add 'web' to default
 # STANDARDS = 'references/dev_build'
-STANDARDS = 'references/v2100'
+STANDARDS = 'references/v3000'
 
 # set package name
 APPNAME = 'AnnapurnaSIL'
@@ -51,26 +51,29 @@ d = designspace('source/AnnapurnaSIL.designspace',
         pdf = fret(params="-r -oi"),
     )
 
+# 2026-Jun-06 This package does not name the Medium and SemiBold fonts properly.
+# Likely the code for naming needs fixed. Use TypeTuner Web to produce the Nepal version for now.
+# 
 # Make Nepal TypeTuned package
-npackage = package(appname="AnnapurnaSILNepal", 
-                   version = VERSION, 
-                   package_files = {
-                                    'FONTLOG.txt': 'Nepal/', 
-                                    'OFL.txt': 'Nepal/', 
-                                    'OFL-FAQ.txt': 'Nepal/', 
-                                    'README.txt': 'Nepal/', 
-                                    'source/typetuner/README_Nepal.txt': 'Nepal/', 
-                                    'source/typetuner/feat_set_Nepal.xml': 'Nepal/', 
-                                    'documentation/': 'Nepal/documentation/', 
-                                    'web/*.*': 'Nepal/web/'
-                                   })
-for f in d.fonts:
-    font(target = process('Nepal/'+f.target.replace('AnnapurnaSIL', 'AnnapurnaSILNepal'),
-                        cmd('${TYPETUNER} -o ${TGT} applyset ${SRC} ${DEP}', ['source/typetuner/feat_set_Nepal.xml']), 
-                        name('Annapurna SIL Nepal')),
-            opentype = internal(),
-            source = f.target,
-            package = npackage)
+# npackage = package(appname="AnnapurnaSILNepal", 
+#                    version = VERSION, 
+#                    package_files = {
+#                                     'FONTLOG.txt': 'Nepal/', 
+#                                     'OFL.txt': 'Nepal/', 
+#                                     'OFL-FAQ.txt': 'Nepal/', 
+#                                     'README.txt': 'Nepal/', 
+#                                     'source/typetuner/README_Nepal.txt': 'Nepal/', 
+#                                     'source/typetuner/feat_set_Nepal.xml': 'Nepal/', 
+#                                     'documentation/': 'Nepal/documentation/', 
+#                                     'web/*.*': 'Nepal/web/'
+#                                   })
+# for f in d.fonts:
+#     font(target = process('Nepal/'+f.target.replace('AnnapurnaSIL', 'AnnapurnaSILNepal'),
+#                         cmd('${TYPETUNER} -o ${TGT} applyset ${SRC} ${DEP}', # # ['source/typetuner/feat_set_Nepal.xml']), 
+#                         name('Annapurna SIL Nepal')),
+#             opentype = internal(),
+#             source = f.target,
+#             package = npackage)
 
 def configure(ctx) :
     ctx.find_program('ttfautohint')
