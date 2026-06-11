@@ -194,7 +194,7 @@ Extended headstroke | <span class='annapurna-R normal' style='font-feature-setti
 
 ## Default behavior
 
-Many font features in Annapurna SIL, common to both OpenType and Graphite rendering engines, work behind the scenes to display the proper shaping of Devanagari characters, such as half forms and conjuncts, and to correctly position diacritics or marks. Other features (listed below) are used to create a more pleasing look. These features are always “on”.
+Many font features in Annapurna SIL work behind the scenes to display the proper shaping of Devanagari characters, such as half forms and conjuncts, and to correctly position diacritics or marks. Other features (listed below) are used to create a more pleasing look. These features are always “on”.
 
 ### Stacking conjunct compression
 
