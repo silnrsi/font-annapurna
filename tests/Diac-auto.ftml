@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>250</fontscale>
+    <fontsrc>url(../references/v3000/AnnapurnaSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/AnnapurnaSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/AnnapurnaSIL-Medium.ttf)</fontsrc>
+    <fontsrc>url(../results/AnnapurnaSIL-SemiBold.ttf)</fontsrc>
+    <fontsrc>url(../results/AnnapurnaSIL-Bold.ttf)</fontsrc>
+    <title>Diac (auto)</title>
+    <widths string="15%"/>
+  </head>
+  <testgroup background="#f0f0f0" label="Rendering Check">
+    <test label="check">
+      <string>RenderingUnknown</string>
+    </test>
+  </testgroup>
+  <testgroup label="Representative diacritics on all bases that take diacritics">
+    <test label="U+0294
+U+0901">
+      <comment>glottalstop DevCandrabindu</comment>
+      <string>\u000294\u000901 \u000294\u000902 \u000294\u000903 \u000294\u00093E \u000294\u00093F \u000294\u000947 \u000294\u00094C \u000294\u00094D</string>
+    </test>
+    <test label="U+0904
+U+0901">
+      <comment>DevVowelShortA DevCandrabindu</comment>
+      <string>\u000904\u000901 \u000904\u000902 \u000904\u000903 \u000904\u00093E \u000904\u00093F \u000904\u000947 \u000904\u00094C \u000904\u00094D</string>
+    </test>
+    <test label="U+0905
+U+0901">
+      <comment>DevVowelA DevCandrabindu</comment>
+      <string>\u000905\u000901 \u000905\u000902 \u000905\u000903 \u000905\u00093E \u000905\u00093F \u000905\u000947 \u000905\u00094C \u000905\u00094D</string>
+    </test>
+    <test label="U+0906
+U+0901">
+      <comment>DevVowelAA DevCandrabindu</comment>
+      <string>\u000906\u000901 \u000906\u000902 \u000906\u000903 \u000906\u00093E \u000906\u00093F \u000906\u000947 \u000906\u00094C \u000906\u00094D</string>
+    </test>
+    <test label="U+0907
+U+0901">
+      <comment>DevVowelI DevCandrabindu</comment>
+      <string>\u000907\u000901 \u000907\u000902 \u000907\u000903 \u000907\u00093E \u000907\u00093F \u000907\u000947 \u000907\u00094C \u000907\u00094D</string>
+    </test>
+    <test label="U+0908
+U+0901">
+      <comment>DevVowelII DevCandrabindu</comment>
+      <string>\u000908\u000901 \u000908\u000902 \u000908\u000903 \u000908\u00093E \u000908\u00093F \u000908\u000947 \u000908\u00094C \u000908\u00094D</string>
+    </test>
+    <test label="U+0909
+U+0901">
+      <comment>DevVowelU DevCandrabindu</comment>
+      <string>\u000909\u000901 \u000909\u000902 \u000909\u000903 \u000909\u00093E \u000909\u00093F \u000909\u000947 \u000909\u00094C \u000909\u00094D</string>
+    </test>
+    <test label="U+090A
+U+0901">
+      <comment>DevVowelUU DevCandrabindu</comment>
+      <string>\u00090A\u000901 \u00090A\u000902 \u00090A\u000903 \u00090A\u00093E \u00090A\u00093F \u00090A\u000947 \u00090A\u00094C \u00090A\u00094D</string>
+    </test>
+    <test label="U+090B
+U+0901">
+      <comment>DevVowelR DevCandrabindu</comment>
+      <string>\u00090B\u000901 \u00090B\u000902 \u00090B\u000903 \u00090B\u00093E \u00090B\u00093F \u00090B\u000947 \u00090B\u00094C \u00090B\u00094D</string>
+    </test>
+    <test label="U+090C
+U+0901">
+      <comment>DevVowelL DevCandrabindu</comment>
+      <string>\u00090C\u000901 \u00090C\u000902 \u00090C\u000903 \u00090C\u00093E \u00090C\u00093F \u00090C\u000947 \u00090C\u00094C \u00090C\u00094D</string>
+    </test>
+    <test label="U+090D
+U+0901">
+      <comment>DevVowelCandraE DevCandrabindu</comment>
+      <string>\u00090D\u000901 \u00090D\u000902 \u00090D\u000903 \u00090D\u00093E \u00090D\u00093F \u00090D\u000947 \u00090D\u00094C \u00090D\u00094D</string>
+    </test>
+    <test label="U+090E
+U+0901">
+      <comment>DevVowelShortE DevCandrabindu</comment>
+      <string>\u00090E\u000901 \u00090E\u000902 \u00090E\u000903 \u00090E\u00093E \u00090E\u00093F \u00090E\u000947 \u00090E\u00094C \u00090E\u00094D</string>
+    </test>
+    <test label="U+090F
+U+0901">
+      <comment>DevVowelE DevCandrabindu</comment>
+      <string>\u00090F\u000901 \u00090F\u000902 \u00090F\u000903 \u00090F\u00093E \u00090F\u00093F \u00090F\u000947 \u00090F\u00094C \u00090F\u00094D</string>
+    </test>
+    <test label="U+0910
+U+0901">
+      <comment>DevVowelAI DevCandrabindu</comment>
+      <string>\u000910\u000901 \u000910\u000902 \u000910\u000903 \u000910\u00093E \u000910\u00093F \u000910\u000947 \u000910\u00094C \u000910\u00094D</string>
+    </test>
+    <test label="U+0911
+U+0901">
+      <comment>DevVowelCandraO DevCandrabindu</comment>
+      <string>\u000911\u000901 \u000911\u000902 \u000911\u000903 \u000911\u00093E \u000911\u00093F \u000911\u000947 \u000911\u00094C \u000911\u00094D</string>
+    </test>
+    <test label="U+0912
+U+0901">
+      <comment>DevVowelShortO DevCandrabindu</comment>
+      <string>\u000912\u000901 \u000912\u000902 \u000912\u000903 \u000912\u00093E \u000912\u00093F \u000912\u000947 \u000912\u00094C \u000912\u00094D</string>
+    </test>
+    <test label="U+0913
+U+0901">
+      <comment>DevVowelO DevCandrabindu</comment>
+      <string>\u000913\u000901 \u000913\u000902 \u000913\u000903 \u000913\u00093E \u000913\u00093F \u000913\u000947 \u000913\u00094C \u000913\u00094D</string>
+    </test>
+    <test label="U+0914
+U+0901">
+      <comment>DevVowelAU DevCandrabindu</comment>
+      <string>\u000914\u000901 \u000914\u000902 \u000914\u000903 \u000914\u00093E \u000914\u00093F \u000914\u000947 \u000914\u00094C \u000914\u00094D</string>
+    </test>
+    <test label="U+0915
+U+0901">
+      <comment>DevKa DevCandrabindu</comment>
+      <string>\u000915\u000901 \u000915\u000902 \u000915\u000903 \u000915\u00093E \u000915\u00093F \u000915\u000947 \u000915\u00094C \u000915\u00094D</string>
+    </test>
+    <test label="U+0916
+U+0901">
+      <comment>DevKha DevCandrabindu</comment>
+      <string>\u000916\u000901 \u000916\u000902 \u000916\u000903 \u000916\u00093E \u000916\u00093F \u000916\u000947 \u000916\u00094C \u000916\u00094D</string>
+    </test>
+    <test label="U+0917
+U+0901">
+      <comment>DevGa DevCandrabindu</comment>
+      <string>\u000917\u000901 \u000917\u000902 \u000917\u000903 \u000917\u00093E \u000917\u00093F \u000917\u000947 \u000917\u00094C \u000917\u00094D</string>
+    </test>
+    <test label="U+0918
+U+0901">
+      <comment>DevGha DevCandrabindu</comment>
+      <string>\u000918\u000901 \u000918\u000902 \u000918\u000903 \u000918\u00093E \u000918\u00093F \u000918\u000947 \u000918\u00094C \u000918\u00094D</string>
+    </test>
+    <test label="U+0919
+U+0901">
+      <comment>DevNga DevCandrabindu</comment>
+      <string>\u000919\u000901 \u000919\u000902 \u000919\u000903 \u000919\u00093E \u000919\u00093F \u000919\u000947 \u000919\u00094C \u000919\u00094D</string>
+    </test>
+    <test label="U+091A
+U+0901">
+      <comment>DevCa DevCandrabindu</comment>
+      <string>\u00091A\u000901 \u00091A\u000902 \u00091A\u000903 \u00091A\u00093E \u00091A\u00093F \u00091A\u000947 \u00091A\u00094C \u00091A\u00094D</string>
+    </test>
+    <test label="U+091B
+U+0901">
+      <comment>DevCha DevCandrabindu</comment>
+      <string>\u00091B\u000901 \u00091B\u000902 \u00091B\u000903 \u00091B\u00093E \u00091B\u00093F \u00091B\u000947 \u00091B\u00094C \u00091B\u00094D</string>
+    </test>
+    <test label="U+091C
+U+0901">
+      <comment>DevJa DevCandrabindu</comment>
+      <string>\u00091C\u000901 \u00091C\u000902 \u00091C\u000903 \u00091C\u00093E \u00091C\u00093F \u00091C\u000947 \u00091C\u00094C \u00091C\u00094D</string>
+    </test>
+    <test label="U+091D
+U+0901">
+      <comment>DevJha DevCandrabindu</comment>
+      <string>\u00091D\u000901 \u00091D\u000902 \u00091D\u000903 \u00091D\u00093E \u00091D\u00093F \u00091D\u000947 \u00091D\u00094C \u00091D\u00094D</string>
+    </test>
+    <test label="U+091E
+U+0901">
+      <comment>DevNya DevCandrabindu</comment>
+      <string>\u00091E\u000901 \u00091E\u000902 \u00091E\u000903 \u00091E\u00093E \u00091E\u00093F \u00091E\u000947 \u00091E\u00094C \u00091E\u00094D</string>
+    </test>
+    <test label="U+091F
+U+0901">
+      <comment>DevTta DevCandrabindu</comment>
+      <string>\u00091F\u000901 \u00091F\u000902 \u00091F\u000903 \u00091F\u00093E \u00091F\u00093F \u00091F\u000947 \u00091F\u00094C \u00091F\u00094D</string>
+    </test>
+    <test label="U+0920
+U+0901">
+      <comment>DevTtha DevCandrabindu</comment>
+      <string>\u000920\u000901 \u000920\u000902 \u000920\u000903 \u000920\u00093E \u000920\u00093F \u000920\u000947 \u000920\u00094C \u000920\u00094D</string>
+    </test>
+    <test label="U+0921
+U+0901">
+      <comment>DevDda DevCandrabindu</comment>
+      <string>\u000921\u000901 \u000921\u000902 \u000921\u000903 \u000921\u00093E \u000921\u00093F \u000921\u000947 \u000921\u00094C \u000921\u00094D</string>
+    </test>
+    <test label="U+0922
+U+0901">
+      <comment>DevDdha DevCandrabindu</comment>
+      <string>\u000922\u000901 \u000922\u000902 \u000922\u000903 \u000922\u00093E \u000922\u00093F \u000922\u000947 \u000922\u00094C \u000922\u00094D</string>
+    </test>
+    <test label="U+0923
+U+0901">
+      <comment>DevNna DevCandrabindu</comment>
+      <string>\u000923\u000901 \u000923\u000902 \u000923\u000903 \u000923\u00093E \u000923\u00093F \u000923\u000947 \u000923\u00094C \u000923\u00094D</string>
+    </test>
+    <test label="U+0924
+U+0901">
+      <comment>DevTa DevCandrabindu</comment>
+      <string>\u000924\u000901 \u000924\u000902 \u000924\u000903 \u000924\u00093E \u000924\u00093F \u000924\u000947 \u000924\u00094C \u000924\u00094D</string>
+    </test>
+    <test label="U+0925
+U+0901">
+      <comment>DevTha DevCandrabindu</comment>
+      <string>\u000925\u000901 \u000925\u000902 \u000925\u000903 \u000925\u00093E \u000925\u00093F \u000925\u000947 \u000925\u00094C \u000925\u00094D</string>
+    </test>
+    <test label="U+0926
+U+0901">
+      <comment>DevDa DevCandrabindu</comment>
+      <string>\u000926\u000901 \u000926\u000902 \u000926\u000903 \u000926\u00093E \u000926\u00093F \u000926\u000947 \u000926\u00094C \u000926\u00094D</string>
+    </test>
+    <test label="U+0927
+U+0901">
+      <comment>DevDha DevCandrabindu</comment>
+      <string>\u000927\u000901 \u000927\u000902 \u000927\u000903 \u000927\u00093E \u000927\u00093F \u000927\u000947 \u000927\u00094C \u000927\u00094D</string>
+    </test>
+    <test label="U+0928
+U+0901">
+      <comment>DevNa DevCandrabindu</comment>
+      <string>\u000928\u000901 \u000928\u000902 \u000928\u000903 \u000928\u00093E \u000928\u00093F \u000928\u000947 \u000928\u00094C \u000928\u00094D</string>
+    </test>
+    <test label="U+0929
+U+0901">
+      <comment>DevNaNukta DevCandrabindu</comment>
+      <string>\u000929\u000901 \u000929\u000902 \u000929\u000903 \u000929\u00093E \u000929\u00093F \u000929\u000947 \u000929\u00094C \u000929\u00094D</string>
+    </test>
+    <test label="U+092A
+U+0901">
+      <comment>DevPa DevCandrabindu</comment>
+      <string>\u00092A\u000901 \u00092A\u000902 \u00092A\u000903 \u00092A\u00093E \u00092A\u00093F \u00092A\u000947 \u00092A\u00094C \u00092A\u00094D</string>
+    </test>
+    <test label="U+092B
+U+0901">
+      <comment>DevPha DevCandrabindu</comment>
+      <string>\u00092B\u000901 \u00092B\u000902 \u00092B\u000903 \u00092B\u00093E \u00092B\u00093F \u00092B\u000947 \u00092B\u00094C \u00092B\u00094D</string>
+    </test>
+    <test label="U+092C
+U+0901">
+      <comment>DevBa DevCandrabindu</comment>
+      <string>\u00092C\u000901 \u00092C\u000902 \u00092C\u000903 \u00092C\u00093E \u00092C\u00093F \u00092C\u000947 \u00092C\u00094C \u00092C\u00094D</string>
+    </test>
+    <test label="U+092D
+U+0901">
+      <comment>DevBha DevCandrabindu</comment>
+      <string>\u00092D\u000901 \u00092D\u000902 \u00092D\u000903 \u00092D\u00093E \u00092D\u00093F \u00092D\u000947 \u00092D\u00094C \u00092D\u00094D</string>
+    </test>
+    <test label="U+092E
+U+0901">
+      <comment>DevMa DevCandrabindu</comment>
+      <string>\u00092E\u000901 \u00092E\u000902 \u00092E\u000903 \u00092E\u00093E \u00092E\u00093F \u00092E\u000947 \u00092E\u00094C \u00092E\u00094D</string>
+    </test>
+    <test label="U+092F
+U+0901">
+      <comment>DevYa DevCandrabindu</comment>
+      <string>\u00092F\u000901 \u00092F\u000902 \u00092F\u000903 \u00092F\u00093E \u00092F\u00093F \u00092F\u000947 \u00092F\u00094C \u00092F\u00094D</string>
+    </test>
+    <test label="U+0930
+U+0901">
+      <comment>DevRa DevCandrabindu</comment>
+      <string>\u000930\u000901 \u000930\u000902 \u000930\u000903 \u000930\u00093E \u000930\u00093F \u000930\u000947 \u000930\u00094C \u000930\u00094D</string>
+    </test>
+    <test label="U+0931
+U+0901">
+      <comment>DevRaNukta DevCandrabindu</comment>
+      <string>\u000931\u000901 \u000931\u000902 \u000931\u000903 \u000931\u00093E \u000931\u00093F \u000931\u000947 \u000931\u00094C \u000931\u00094D</string>
+    </test>
+    <test label="U+0932
+U+0901">
+      <comment>DevLa DevCandrabindu</comment>
+      <string>\u000932\u000901 \u000932\u000902 \u000932\u000903 \u000932\u00093E \u000932\u00093F \u000932\u000947 \u000932\u00094C \u000932\u00094D</string>
+    </test>
+    <test label="U+0933
+U+0901">
+      <comment>DevLla DevCandrabindu</comment>
+      <string>\u000933\u000901 \u000933\u000902 \u000933\u000903 \u000933\u00093E \u000933\u00093F \u000933\u000947 \u000933\u00094C \u000933\u00094D</string>
+    </test>
+    <test label="U+0934
+U+0901">
+      <comment>DevLlaNukta DevCandrabindu</comment>
+      <string>\u000934\u000901 \u000934\u000902 \u000934\u000903 \u000934\u00093E \u000934\u00093F \u000934\u000947 \u000934\u00094C \u000934\u00094D</string>
+    </test>
+    <test label="U+0935
+U+0901">
+      <comment>DevWa DevCandrabindu</comment>
+      <string>\u000935\u000901 \u000935\u000902 \u000935\u000903 \u000935\u00093E \u000935\u00093F \u000935\u000947 \u000935\u00094C \u000935\u00094D</string>
+    </test>
+    <test label="U+0936
+U+0901">
+      <comment>DevSha DevCandrabindu</comment>
+      <string>\u000936\u000901 \u000936\u000902 \u000936\u000903 \u000936\u00093E \u000936\u00093F \u000936\u000947 \u000936\u00094C \u000936\u00094D</string>
+    </test>
+    <test label="U+0937
+U+0901">
+      <comment>DevSsa DevCandrabindu</comment>
+      <string>\u000937\u000901 \u000937\u000902 \u000937\u000903 \u000937\u00093E \u000937\u00093F \u000937\u000947 \u000937\u00094C \u000937\u00094D</string>
+    </test>
+    <test label="U+0938
+U+0901">
+      <comment>DevSa DevCandrabindu</comment>
+      <string>\u000938\u000901 \u000938\u000902 \u000938\u000903 \u000938\u00093E \u000938\u00093F \u000938\u000947 \u000938\u00094C \u000938\u00094D</string>
+    </test>
+    <test label="U+0939
+U+0901">
+      <comment>DevHa DevCandrabindu</comment>
+      <string>\u000939\u000901 \u000939\u000902 \u000939\u000903 \u000939\u00093E \u000939\u00093F \u000939\u000947 \u000939\u00094C \u000939\u00094D</string>
+    </test>
+    <test label="U+093D
+U+0901">
+      <comment>DevAvagraha DevCandrabindu</comment>
+      <string>\u00093D\u000901 \u00093D\u000902 \u00093D\u000903 \u00093D\u00093E \u00093D\u00093F \u00093D\u000947 \u00093D\u00094C \u00093D\u00094D</string>
+    </test>
+    <test label="U+0950
+U+0901">
+      <comment>DevOm DevCandrabindu</comment>
+      <string>\u000950\u000901 \u000950\u000902 \u000950\u000903 \u000950\u00093E \u000950\u00093F \u000950\u000947 \u000950\u00094C \u000950\u00094D</string>
+    </test>
+    <test label="U+0958
+U+0901">
+      <comment>DevKaNukta DevCandrabindu</comment>
+      <string>\u000958\u000901 \u000958\u000902 \u000958\u000903 \u000958\u00093E \u000958\u00093F \u000958\u000947 \u000958\u00094C \u000958\u00094D</string>
+    </test>
+    <test label="U+0959
+U+0901">
+      <comment>DevKhaNukta DevCandrabindu</comment>
+      <string>\u000959\u000901 \u000959\u000902 \u000959\u000903 \u000959\u00093E \u000959\u00093F \u000959\u000947 \u000959\u00094C \u000959\u00094D</string>
+    </test>
+    <test label="U+095A
+U+0901">
+      <comment>DevGaNukta DevCandrabindu</comment>
+      <string>\u00095A\u000901 \u00095A\u000902 \u00095A\u000903 \u00095A\u00093E \u00095A\u00093F \u00095A\u000947 \u00095A\u00094C \u00095A\u00094D</string>
+    </test>
+    <test label="U+095B
+U+0901">
+      <comment>DevJaNukta DevCandrabindu</comment>
+      <string>\u00095B\u000901 \u00095B\u000902 \u00095B\u000903 \u00095B\u00093E \u00095B\u00093F \u00095B\u000947 \u00095B\u00094C \u00095B\u00094D</string>
+    </test>
+    <test label="U+095C
+U+0901">
+      <comment>DevDdaNukta DevCandrabindu</comment>
+      <string>\u00095C\u000901 \u00095C\u000902 \u00095C\u000903 \u00095C\u00093E \u00095C\u00093F \u00095C\u000947 \u00095C\u00094C \u00095C\u00094D</string>
+    </test>
+    <test label="U+095D
+U+0901">
+      <comment>DevDdhaNukta DevCandrabindu</comment>
+      <string>\u00095D\u000901 \u00095D\u000902 \u00095D\u000903 \u00095D\u00093E \u00095D\u00093F \u00095D\u000947 \u00095D\u00094C \u00095D\u00094D</string>
+    </test>
+    <test label="U+095E
+U+0901">
+      <comment>DevPhaNukta DevCandrabindu</comment>
+      <string>\u00095E\u000901 \u00095E\u000902 \u00095E\u000903 \u00095E\u00093E \u00095E\u00093F \u00095E\u000947 \u00095E\u00094C \u00095E\u00094D</string>
+    </test>
+    <test label="U+095F
+U+0901">
+      <comment>DevYaNukta DevCandrabindu</comment>
+      <string>\u00095F\u000901 \u00095F\u000902 \u00095F\u000903 \u00095F\u00093E \u00095F\u00093F \u00095F\u000947 \u00095F\u00094C \u00095F\u00094D</string>
+    </test>
+    <test label="U+0960
+U+0901">
+      <comment>DevVowelRR DevCandrabindu</comment>
+      <string>\u000960\u000901 \u000960\u000902 \u000960\u000903 \u000960\u00093E \u000960\u00093F \u000960\u000947 \u000960\u00094C \u000960\u00094D</string>
+    </test>
+    <test label="U+0961
+U+0901">
+      <comment>DevVowelLL DevCandrabindu</comment>
+      <string>\u000961\u000901 \u000961\u000902 \u000961\u000903 \u000961\u00093E \u000961\u00093F \u000961\u000947 \u000961\u00094C \u000961\u00094D</string>
+    </test>
+    <test label="U+0972
+U+0901">
+      <comment>DevVowelCandraA DevCandrabindu</comment>
+      <string>\u000972\u000901 \u000972\u000902 \u000972\u000903 \u000972\u00093E \u000972\u00093F \u000972\u000947 \u000972\u00094C \u000972\u00094D</string>
+    </test>
+    <test label="U+0973
+U+0901">
+      <comment>DevVowelOE DevCandrabindu</comment>
+      <string>\u000973\u000901 \u000973\u000902 \u000973\u000903 \u000973\u00093E \u000973\u00093F \u000973\u000947 \u000973\u00094C \u000973\u00094D</string>
+    </test>
+    <test label="U+0974
+U+0901">
+      <comment>DevVowelOOE DevCandrabindu</comment>
+      <string>\u000974\u000901 \u000974\u000902 \u000974\u000903 \u000974\u00093E \u000974\u00093F \u000974\u000947 \u000974\u00094C \u000974\u00094D</string>
+    </test>
+    <test label="U+0975
+U+0901">
+      <comment>DevVowelAW DevCandrabindu</comment>
+      <string>\u000975\u000901 \u000975\u000902 \u000975\u000903 \u000975\u00093E \u000975\u00093F \u000975\u000947 \u000975\u00094C \u000975\u00094D</string>
+    </test>
+    <test label="U+0976
+U+0901">
+      <comment>DevVowelUE DevCandrabindu</comment>
+      <string>\u000976\u000901 \u000976\u000902 \u000976\u000903 \u000976\u00093E \u000976\u00093F \u000976\u000947 \u000976\u00094C \u000976\u00094D</string>
+    </test>
+    <test label="U+0977
+U+0901">
+      <comment>DevVowelUUE DevCandrabindu</comment>
+      <string>\u000977\u000901 \u000977\u000902 \u000977\u000903 \u000977\u00093E \u000977\u00093F \u000977\u000947 \u000977\u00094C \u000977\u00094D</string>
+    </test>
+    <test label="U+0978
+U+0901">
+      <comment>DevDdaMarawari DevCandrabindu</comment>
+      <string>\u000978\u000901 \u000978\u000902 \u000978\u000903 \u000978\u00093E \u000978\u00093F \u000978\u000947 \u000978\u00094C \u000978\u00094D</string>
+    </test>
+    <test label="U+0979
+U+0901">
+      <comment>DevZha DevCandrabindu</comment>
+      <string>\u000979\u000901 \u000979\u000902 \u000979\u000903 \u000979\u00093E \u000979\u00093F \u000979\u000947 \u000979\u00094C \u000979\u00094D</string>
+    </test>
+    <test label="U+097A
+U+0901">
+      <comment>DevHeavyYa DevCandrabindu</comment>
+      <string>\u00097A\u000901 \u00097A\u000902 \u00097A\u000903 \u00097A\u00093E \u00097A\u00093F \u00097A\u000947 \u00097A\u00094C \u00097A\u00094D</string>
+    </test>
+    <test label="U+097B
+U+0901">
+      <comment>DevGga DevCandrabindu</comment>
+      <string>\u00097B\u000901 \u00097B\u000902 \u00097B\u000903 \u00097B\u00093E \u00097B\u00093F \u00097B\u000947 \u00097B\u00094C \u00097B\u00094D</string>
+    </test>
+    <test label="U+097C
+U+0901">
+      <comment>DevJja DevCandrabindu</comment>
+      <string>\u00097C\u000901 \u00097C\u000902 \u00097C\u000903 \u00097C\u00093E \u00097C\u00093F \u00097C\u000947 \u00097C\u00094C \u00097C\u00094D</string>
+    </test>
+    <test label="U+097D
+U+0901">
+      <comment>DevGlottalStop DevCandrabindu</comment>
+      <string>\u00097D\u000901 \u00097D\u000902 \u00097D\u000903 \u00097D\u00093E \u00097D\u00093F \u00097D\u000947 \u00097D\u00094C \u00097D\u00094D</string>
+    </test>
+    <test label="U+097E
+U+0901">
+      <comment>DevDdda DevCandrabindu</comment>
+      <string>\u00097E\u000901 \u00097E\u000902 \u00097E\u000903 \u00097E\u00093E \u00097E\u00093F \u00097E\u000947 \u00097E\u00094C \u00097E\u00094D</string>
+    </test>
+    <test label="U+097F
+U+0901">
+      <comment>DevBba DevCandrabindu</comment>
+      <string>\u00097F\u000901 \u00097F\u000902 \u00097F\u000903 \u00097F\u00093E \u00097F\u00093F \u00097F\u000947 \u00097F\u00094C \u00097F\u00094D</string>
+    </test>
+    <test label="U+A8F2
+U+0901">
+      <comment>DevSpacingCandrabindu DevCandrabindu</comment>
+      <string>\u00A8F2\u000901 \u00A8F2\u000902 \u00A8F2\u000903 \u00A8F2\u00093E \u00A8F2\u00093F \u00A8F2\u000947 \u00A8F2\u00094C \u00A8F2\u00094D</string>
+    </test>
+    <test label="U+A8F3
+U+0901">
+      <comment>DevCandrabinduVirama DevCandrabindu</comment>
+      <string>\u00A8F3\u000901 \u00A8F3\u000902 \u00A8F3\u000903 \u00A8F3\u00093E \u00A8F3\u00093F \u00A8F3\u000947 \u00A8F3\u00094C \u00A8F3\u00094D</string>
+    </test>
+    <test label="U+A8F4
+U+0901">
+      <comment>DevDblCandrabinduVirama DevCandrabindu</comment>
+      <string>\u00A8F4\u000901 \u00A8F4\u000902 \u00A8F4\u000903 \u00A8F4\u00093E \u00A8F4\u00093F \u00A8F4\u000947 \u00A8F4\u00094C \u00A8F4\u00094D</string>
+    </test>
+    <test label="U+A8F5
+U+0901">
+      <comment>DevCandrabinduTwo DevCandrabindu</comment>
+      <string>\u00A8F5\u000901 \u00A8F5\u000902 \u00A8F5\u000903 \u00A8F5\u00093E \u00A8F5\u00093F \u00A8F5\u000947 \u00A8F5\u00094C \u00A8F5\u00094D</string>
+    </test>
+    <test label="U+A8F6
+U+0901">
+      <comment>DevCandrabinduThree DevCandrabindu</comment>
+      <string>\u00A8F6\u000901 \u00A8F6\u000902 \u00A8F6\u000903 \u00A8F6\u00093E \u00A8F6\u00093F \u00A8F6\u000947 \u00A8F6\u00094C \u00A8F6\u00094D</string>
+    </test>
+    <test label="U+A8F7
+U+0901">
+      <comment>DevCandrabinduAvagraha DevCandrabindu</comment>
+      <string>\u00A8F7\u000901 \u00A8F7\u000902 \u00A8F7\u000903 \u00A8F7\u00093E \u00A8F7\u00093F \u00A8F7\u000947 \u00A8F7\u00094C \u00A8F7\u00094D</string>
+    </test>
+    <test label="U+A8FB
+U+0901">
+      <comment>DevHeadstroke DevCandrabindu</comment>
+      <string>\u00A8FB\u000901 \u00A8FB\u000902 \u00A8FB\u000903 \u00A8FB\u00093E \u00A8FB\u00093F \u00A8FB\u000947 \u00A8FB\u00094C \u00A8FB\u00094D</string>
+    </test>
+    <test label="U+A8FD
+U+0901">
+      <comment>DevJainOm DevCandrabindu</comment>
+      <string>\u00A8FD\u000901 \u00A8FD\u000902 \u00A8FD\u000903 \u00A8FD\u00093E \u00A8FD\u00093F \u00A8FD\u000947 \u00A8FD\u00094C \u00A8FD\u00094D</string>
+    </test>
+    <test label="U+A8FE
+U+0901">
+      <comment>DevVowelAY DevCandrabindu</comment>
+      <string>\u00A8FE\u000901 \u00A8FE\u000902 \u00A8FE\u000903 \u00A8FE\u00093E \u00A8FE\u00093F \u00A8FE\u000947 \u00A8FE\u00094C \u00A8FE\u00094D</string>
+    </test>
+  </testgroup>
+  <testgroup label="All diacritics on representative bases">
+    <test label="U+0915
+U+0900">
+      <comment>DevKa DevInvCandrabindu</comment>
+      <string>\u000915\u000900 \u000917\u000900 \u000919\u000900 \u00091D\u000900 \u000922\u000900 \u000939\u000900</string>
+    </test>
+    <test label="U+0915
+U+0901">
+      <comment>DevKa DevCandrabindu</comment>
+      <string>\u000915\u000901 \u000917\u000901 \u000919\u000901 \u00091D\u000901 \u000922\u000901 \u000939\u000901</string>
+    </test>
+    <test label="U+0915
+U+0902">
+      <comment>DevKa DevAnusvara</comment>
+      <string>\u000915\u000902 \u000917\u000902 \u000919\u000902 \u00091D\u000902 \u000922\u000902 \u000939\u000902</string>
+    </test>
+    <test label="U+0915
+U+093A">
+      <comment>DevKa DevMaatraOE</comment>
+      <string>\u000915\u00093A \u000917\u00093A \u000919\u00093A \u00091D\u00093A \u000922\u00093A \u000939\u00093A</string>
+    </test>
+    <test label="U+0915
+U+093C">
+      <comment>DevKa DevNukta</comment>
+      <string>\u000915\u00093C \u000917\u00093C \u000919\u00093C \u00091D\u00093C \u000922\u00093C \u000939\u00093C</string>
+    </test>
+    <test label="U+0915
+U+0941">
+      <comment>DevKa DevMaatraU</comment>
+      <string>\u000915\u000941 \u000917\u000941 \u000919\u000941 \u00091D\u000941 \u000922\u000941 \u000939\u000941</string>
+    </test>
+    <test label="U+0915
+U+0942">
+      <comment>DevKa DevMaatraUU</comment>
+      <string>\u000915\u000942 \u000917\u000942 \u000919\u000942 \u00091D\u000942 \u000922\u000942 \u000939\u000942</string>
+    </test>
+    <test label="U+0915
+U+0943">
+      <comment>DevKa DevMaatraR</comment>
+      <string>\u000915\u000943 \u000917\u000943 \u000919\u000943 \u00091D\u000943 \u000922\u000943 \u000939\u000943</string>
+    </test>
+    <test label="U+0915
+U+0944">
+      <comment>DevKa DevMaatraRR</comment>
+      <string>\u000915\u000944 \u000917\u000944 \u000919\u000944 \u00091D\u000944 \u000922\u000944 \u000939\u000944</string>
+    </test>
+    <test label="U+0915
+U+0945">
+      <comment>DevKa DevMaatraCandraE</comment>
+      <string>\u000915\u000945 \u000917\u000945 \u000919\u000945 \u00091D\u000945 \u000922\u000945 \u000939\u000945</string>
+    </test>
+    <test label="U+0915
+U+0946">
+      <comment>DevKa DevMaatraShortE</comment>
+      <string>\u000915\u000946 \u000917\u000946 \u000919\u000946 \u00091D\u000946 \u000922\u000946 \u000939\u000946</string>
+    </test>
+    <test label="U+0915
+U+0947">
+      <comment>DevKa DevMaatraE</comment>
+      <string>\u000915\u000947 \u000917\u000947 \u000919\u000947 \u00091D\u000947 \u000922\u000947 \u000939\u000947</string>
+    </test>
+    <test label="U+0915
+U+0948">
+      <comment>DevKa DevMaatraAi</comment>
+      <string>\u000915\u000948 \u000917\u000948 \u000919\u000948 \u00091D\u000948 \u000922\u000948 \u000939\u000948</string>
+    </test>
+    <test label="U+0915
+U+094D">
+      <comment>DevKa DevHalant</comment>
+      <string>\u000915\u00094D \u000917\u00094D \u000919\u00094D \u00091D\u00094D \u000922\u00094D \u000939\u00094D</string>
+    </test>
+    <test label="U+0915
+U+0951">
+      <comment>DevKa DevUdatta</comment>
+      <string>\u000915\u000951 \u000917\u000951 \u000919\u000951 \u00091D\u000951 \u000922\u000951 \u000939\u000951</string>
+    </test>
+    <test label="U+0915
+U+0952">
+      <comment>DevKa DevAnudatta</comment>
+      <string>\u000915\u000952 \u000917\u000952 \u000919\u000952 \u00091D\u000952 \u000922\u000952 \u000939\u000952</string>
+    </test>
+    <test label="U+0915
+U+0953">
+      <comment>DevKa DevGrave</comment>
+      <string>\u000915\u000953 \u000917\u000953 \u000919\u000953 \u00091D\u000953 \u000922\u000953 \u000939\u000953</string>
+    </test>
+    <test label="U+0915
+U+0954">
+      <comment>DevKa DevAcute</comment>
+      <string>\u000915\u000954 \u000917\u000954 \u000919\u000954 \u00091D\u000954 \u000922\u000954 \u000939\u000954</string>
+    </test>
+    <test label="U+0915
+U+0955">
+      <comment>DevKa DevMaatraCandraLongE</comment>
+      <string>\u000915\u000955 \u000917\u000955 \u000919\u000955 \u00091D\u000955 \u000922\u000955 \u000939\u000955</string>
+    </test>
+    <test label="U+0915
+U+0956">
+      <comment>DevKa DevMaatraUE</comment>
+      <string>\u000915\u000956 \u000917\u000956 \u000919\u000956 \u00091D\u000956 \u000922\u000956 \u000939\u000956</string>
+    </test>
+    <test label="U+0915
+U+0957">
+      <comment>DevKa DevMaatraUUE</comment>
+      <string>\u000915\u000957 \u000917\u000957 \u000919\u000957 \u00091D\u000957 \u000922\u000957 \u000939\u000957</string>
+    </test>
+    <test label="U+0915
+U+0962">
+      <comment>DevKa DevMaatraL</comment>
+      <string>\u000915\u000962 \u000917\u000962 \u000919\u000962 \u00091D\u000962 \u000922\u000962 \u000939\u000962</string>
+    </test>
+    <test label="U+0915
+U+0963">
+      <comment>DevKa DevMaatraLL</comment>
+      <string>\u000915\u000963 \u000917\u000963 \u000919\u000963 \u00091D\u000963 \u000922\u000963 \u000939\u000963</string>
+    </test>
+    <test label="U+0915
+U+A8E0">
+      <comment>DevKa DevCombDigZero</comment>
+      <string>\u000915\u00A8E0 \u000917\u00A8E0 \u000919\u00A8E0 \u00091D\u00A8E0 \u000922\u00A8E0 \u000939\u00A8E0</string>
+    </test>
+    <test label="U+0915
+U+A8E1">
+      <comment>DevKa DevCombDigOne</comment>
+      <string>\u000915\u00A8E1 \u000917\u00A8E1 \u000919\u00A8E1 \u00091D\u00A8E1 \u000922\u00A8E1 \u000939\u00A8E1</string>
+    </test>
+    <test label="U+0915
+U+A8E2">
+      <comment>DevKa DevCombDigTwo</comment>
+      <string>\u000915\u00A8E2 \u000917\u00A8E2 \u000919\u00A8E2 \u00091D\u00A8E2 \u000922\u00A8E2 \u000939\u00A8E2</string>
+    </test>
+    <test label="U+0915
+U+A8E3">
+      <comment>DevKa DevCombDigThree</comment>
+      <string>\u000915\u00A8E3 \u000917\u00A8E3 \u000919\u00A8E3 \u00091D\u00A8E3 \u000922\u00A8E3 \u000939\u00A8E3</string>
+    </test>
+    <test label="U+0915
+U+A8E4">
+      <comment>DevKa DevCombDigFour</comment>
+      <string>\u000915\u00A8E4 \u000917\u00A8E4 \u000919\u00A8E4 \u00091D\u00A8E4 \u000922\u00A8E4 \u000939\u00A8E4</string>
+    </test>
+    <test label="U+0915
+U+A8E5">
+      <comment>DevKa DevCombDigFive</comment>
+      <string>\u000915\u00A8E5 \u000917\u00A8E5 \u000919\u00A8E5 \u00091D\u00A8E5 \u000922\u00A8E5 \u000939\u00A8E5</string>
+    </test>
+    <test label="U+0915
+U+A8E6">
+      <comment>DevKa DevCombDigSix</comment>
+      <string>\u000915\u00A8E6 \u000917\u00A8E6 \u000919\u00A8E6 \u00091D\u00A8E6 \u000922\u00A8E6 \u000939\u00A8E6</string>
+    </test>
+    <test label="U+0915
+U+A8E7">
+      <comment>DevKa DevCombDigSeven</comment>
+      <string>\u000915\u00A8E7 \u000917\u00A8E7 \u000919\u00A8E7 \u00091D\u00A8E7 \u000922\u00A8E7 \u000939\u00A8E7</string>
+    </test>
+    <test label="U+0915
+U+A8E8">
+      <comment>DevKa DevCombDigEight</comment>
+      <string>\u000915\u00A8E8 \u000917\u00A8E8 \u000919\u00A8E8 \u00091D\u00A8E8 \u000922\u00A8E8 \u000939\u00A8E8</string>
+    </test>
+    <test label="U+0915
+U+A8E9">
+      <comment>DevKa DevCombDigNine</comment>
+      <string>\u000915\u00A8E9 \u000917\u00A8E9 \u000919\u00A8E9 \u00091D\u00A8E9 \u000922\u00A8E9 \u000939\u00A8E9</string>
+    </test>
+    <test label="U+0915
+U+A8EA">
+      <comment>DevKa DevCombLtrA</comment>
+      <string>\u000915\u00A8EA \u000917\u00A8EA \u000919\u00A8EA \u00091D\u00A8EA \u000922\u00A8EA \u000939\u00A8EA</string>
+    </test>
+    <test label="U+0915
+U+A8EC">
+      <comment>DevKa DevCombLtrKa</comment>
+      <string>\u000915\u00A8EC \u000917\u00A8EC \u000919\u00A8EC \u00091D\u00A8EC \u000922\u00A8EC \u000939\u00A8EC</string>
+    </test>
+    <test label="U+0915
+U+A8ED">
+      <comment>DevKa DevCombLtrNa</comment>
+      <string>\u000915\u00A8ED \u000917\u00A8ED \u000919\u00A8ED \u00091D\u00A8ED \u000922\u00A8ED \u000939\u00A8ED</string>
+    </test>
+    <test label="U+0915
+U+A8EE">
+      <comment>DevKa DevCombLtrPa</comment>
+      <string>\u000915\u00A8EE \u000917\u00A8EE \u000919\u00A8EE \u00091D\u00A8EE \u000922\u00A8EE \u000939\u00A8EE</string>
+    </test>
+    <test label="U+0915
+U+A8EF">
+      <comment>DevKa DevCombLtrRA</comment>
+      <string>\u000915\u00A8EF \u000917\u00A8EF \u000919\u00A8EF \u00091D\u00A8EF \u000922\u00A8EF \u000939\u00A8EF</string>
+    </test>
+    <test label="U+0915
+U+A8F0">
+      <comment>DevKa DevCombLtrVI</comment>
+      <string>\u000915\u00A8F0 \u000917\u00A8F0 \u000919\u00A8F0 \u00091D\u00A8F0 \u000922\u00A8F0 \u000939\u00A8F0</string>
+    </test>
+    <test label="U+0915
+U+A8F1">
+      <comment>DevKa DevCombAvagraha</comment>
+      <string>\u000915\u00A8F1 \u000917\u00A8F1 \u000919\u00A8F1 \u00091D\u00A8F1 \u000922\u00A8F1 \u000939\u00A8F1</string>
+    </test>
+    <test label="U+0915
+U+A8FF">
+      <comment>DevKa DevMaatraAY</comment>
+      <string>\u000915\u00A8FF \u000917\u00A8FF \u000919\u00A8FF \u00091D\u00A8FF \u000922\u00A8FF \u000939\u00A8FF</string>
+    </test>
+  </testgroup>
+</ftml>
