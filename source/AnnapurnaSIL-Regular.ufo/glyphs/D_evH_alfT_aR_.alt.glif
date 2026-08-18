@@ -4,18 +4,6 @@
   <anchor x="384" y="-112" name="LowerAlt"/>
   <outline>
     <contour>
-      <point x="868" y="775" type="line"/>
-      <point x="518" y="233" type="line"/>
-      <point x="667" y="233" type="line"/>
-      <point x="868" y="544" type="line"/>
-    </contour>
-    <contour>
-      <point x="848" y="1320" type="line"/>
-      <point x="-86" y="1320" type="line"/>
-      <point x="-10" y="1188" type="line"/>
-      <point x="924" y="1188" type="line"/>
-    </contour>
-    <contour>
       <point x="868" y="887" type="line"/>
       <point x="461" y="887" type="line" smooth="yes"/>
       <point x="311" y="887"/>
@@ -35,6 +23,18 @@
       <point x="389" y="755"/>
       <point x="550" y="755" type="curve" smooth="yes"/>
       <point x="868" y="755" type="line"/>
+    </contour>
+    <contour>
+      <point x="848" y="1320" type="line"/>
+      <point x="-86" y="1320" type="line"/>
+      <point x="-10" y="1188" type="line"/>
+      <point x="924" y="1188" type="line"/>
+    </contour>
+    <contour>
+      <point x="868" y="775" type="line"/>
+      <point x="518" y="233" type="line"/>
+      <point x="667" y="233" type="line"/>
+      <point x="868" y="544" type="line"/>
     </contour>
   </outline>
 </glyph>
