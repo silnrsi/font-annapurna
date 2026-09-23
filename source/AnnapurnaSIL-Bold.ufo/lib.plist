@@ -1009,6 +1009,12 @@
     <string>DevDddaNuktaR</string>
     <string>DevHalfDdda</string>
     <string>DevDddaR</string>
+    <string>DevAltDdda</string>
+    <string>DevAltDddaNukta</string>
+    <string>DevHalfAltDddaNukta</string>
+    <string>DevAltDddaNuktaR</string>
+    <string>DevHalfAltDdda</string>
+    <string>DevAltDddaR</string>
     <string>DevBba</string>
     <string>DevBbaNukta</string>
     <string>DevHalfBbaNukta</string>
@@ -1176,6 +1182,14 @@
     <string>uni0970</string>
     <key>DevAcute</key>
     <string>uni0954</string>
+    <key>DevAltDdda</key>
+    <string>u11B0A</string>
+    <key>DevAltDddaNukta</key>
+    <string>u11B0A093C</string>
+    <key>DevAltDddaNuktaR</key>
+    <string>u11B0A093C094D0930</string>
+    <key>DevAltDddaR</key>
+    <string>u11B0A094D0930</string>
     <key>DevAnudatta</key>
     <string>uni0952</string>
     <key>DevAnusvara</key>
@@ -1470,6 +1484,10 @@
     <string>uni0939094D0930</string>
     <key>DevHalant</key>
     <string>uni094D</string>
+    <key>DevHalfAltDdda</key>
+    <string>u11B0A094D.half</string>
+    <key>DevHalfAltDddaNukta</key>
+    <string>u11B0A093C094D.half</string>
     <key>DevHalfBa</key>
     <string>uni092C094D.half</string>
     <key>DevHalfBaNukta</key>

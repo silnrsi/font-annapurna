@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DevAltDddaNukta" format="2">
+  <advance width="1357"/>
+  <anchor x="890" y="-239" name="Halant"/>
+  <anchor x="940" y="-200" name="Lower"/>
+  <anchor x="583" y="-237" name="LowerCenter"/>
+  <anchor x="940" y="1330" name="Upper"/>
+  <anchor x="582" y="1390" name="UpperCenter"/>
+  <outline>
+    <component base="DevAltDdda"/>
+    <component base="DevNukta" xOffset="454" yOffset="419"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.97,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

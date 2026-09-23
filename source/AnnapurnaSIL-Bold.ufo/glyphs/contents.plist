@@ -42,6 +42,14 @@
   <string>D_evA_bbreviation.glif</string>
   <key>DevAcute</key>
   <string>D_evA_cute.glif</string>
+  <key>DevAltDdda</key>
+  <string>D_evA_ltD_dda.glif</string>
+  <key>DevAltDddaNukta</key>
+  <string>D_evA_ltD_ddaN_ukta.glif</string>
+  <key>DevAltDddaNuktaR</key>
+  <string>D_evA_ltD_ddaN_uktaR_.glif</string>
+  <key>DevAltDddaR</key>
+  <string>D_evA_ltD_ddaR_.glif</string>
   <key>DevAnudatta</key>
   <string>D_evA_nudatta.glif</string>
   <key>DevAnusvara</key>
@@ -336,6 +344,10 @@
   <string>D_evH_aR_.glif</string>
   <key>DevHalant</key>
   <string>D_evH_alant.glif</string>
+  <key>DevHalfAltDdda</key>
+  <string>D_evH_alfA_ltD_dda.glif</string>
+  <key>DevHalfAltDddaNukta</key>
+  <string>D_evH_alfA_ltD_ddaN_ukta.glif</string>
   <key>DevHalfBa</key>
   <string>D_evH_alfB_a.glif</string>
   <key>DevHalfBaNukta</key>
