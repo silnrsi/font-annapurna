@@ -170,7 +170,8 @@
 
 @cDevFullCForms = [ DevKa DevKha DevGa DevGha DevNga DevCa DevCha DevJa DevJha DevNya DevTta DevTtha DevDda DevDdha  
     DevNna DevTa DevTha DevDa DevDha DevNa DevPa DevPha DevBa DevBha DevMa DevYa DevRa DevLa DevLla DevWa  
-    DevSha DevSsa DevSa DevHa DevZha DevHeavyYa DevGga DevJja DevDdda DevBba DevGlottalStop DevDdaMarawari  ] ; 
+    DevSha DevSsa DevSa DevHa DevZha DevHeavyYa DevGga DevJja DevDdda DevAltDdda DevBba 
+	DevGlottalStop DevDdaMarawari  ] ; 
 
 @cDevFullCForms_noHa_noHalf = [ DevKa DevKha DevGa DevGha DevCa DevJa DevJha DevNya DevNna DevTa DevTha DevDha  
     DevNa DevPa DevPha DevBa DevBha DevMa DevYa DevRa DevLa DevLla DevWa DevSha DevSsa DevSa DevGga DevJja  
@@ -179,7 +180,7 @@
 @cDevFullCNukta = [ DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevNgaNukta DevCaNukta DevChaNukta DevJaNukta DevJhaNukta DevNyaNukta  
     DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta DevNnaNukta DevTaNukta DevThaNukta DevDaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta  
     DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta  
-    DevHaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevBbaNukta  ] ; 
+    DevHaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevAltDddaNukta DevBbaNukta  ] ; 
 
 @cDevFullCNuktaRakar = [ DevKaNuktaR DevKhaNuktaR DevGaNuktaR DevGhaNuktaR DevNgaNuktaR  
     DevCaNuktaR DevChaNuktaR DevJaNuktaR DevJhaNuktaR DevNyaNuktaR DevTtaNuktaR  
@@ -187,7 +188,7 @@
     DevDaNuktaR DevDhaNuktaR DevNaNuktaR DevPaNuktaR DevPhaNuktaR DevBaNuktaR  
     DevBhaNuktaR DevMaNuktaR DevYaNuktaR DevLaNuktaR DevLlaNuktaR DevWaNuktaR  
     DevShaNuktaR DevSsaNuktaR DevSaNuktaR DevHaNuktaR DevGgaNuktaR DevJjaNuktaR  
-    DevDddaNuktaR DevBbaNuktaR  ] ; 
+    DevDddaNuktaR DevAltDddaNuktaR DevBbaNuktaR  ] ; 
 
 @cDevFullCNukta_noHa_noHalf = [ DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevCaNukta DevJaNukta DevJhaNukta DevNyaNukta DevNnaNukta  
     DevTaNukta DevThaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta DevLaNukta  
@@ -197,7 +198,7 @@
     DevJaR DevJhaR DevNyaR DevTtaR DevTthaR DevDdaR DevDdhaR DevNnaR  
     DevTaR DevThaR DevDaR DevDhaR DevNaR DevPaR DevPhaR DevBaR  
     DevBhaR DevMaR DevYaR DevLaR DevLlaR DevWaR DevShaR DevSsaR  
-    DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevBbaR  ] ; 
+    DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevAltDddaR DevBbaR  ] ; 
 
 @cDevAllCons_Conjuncts = [ @cDevFullCForms @cDevFullCNukta @cDevFullCRakar @cDevFullCNuktaRakar @cDevConjuncts @cDevConjunctsYaAlt   
     ] ; 
@@ -206,13 +207,13 @@
     DevChaR DevJaR DevJhaR DevNyaR DevTtaR DevTthaR DevDdaR DevDdhaR  
     DevNnaR DevTaR DevThaR DevDaR DevDhaR DevNaR DevPaR DevPhaR  
     DevBaR DevBhaR DevMaR DevYaR DevLaR DevLlaR DevWaR DevShaR  
-    DevSsaR DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevBbaR DevKaNuktaR  
+    DevSsaR DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevAltDddaR DevBbaR DevKaNuktaR  
     DevKhaNuktaR DevGaNuktaR DevGhaNuktaR DevNgaNuktaR DevCaNuktaR DevChaNuktaR DevJaNuktaR  
     DevJhaNuktaR DevNyaNuktaR DevTtaNuktaR DevTthaNuktaR DevDdaNuktaR DevDdhaNuktaR  
     DevNnaNuktaR DevTaNuktaR DevThaNuktaR DevDaNuktaR DevDhaNuktaR DevNaNuktaR  
     DevPaNuktaR DevPhaNuktaR DevBaNuktaR DevBhaNuktaR DevMaNuktaR DevYaNuktaR  
     DevLaNuktaR DevLlaNuktaR DevWaNuktaR DevShaNuktaR DevSsaNuktaR DevSaNuktaR  
-    DevHaNuktaR DevGgaNuktaR DevJjaNuktaR DevDddaNuktaR DevBbaNuktaR DevK.SsaR  
+    DevHaNuktaR DevGgaNuktaR DevJjaNuktaR DevDddaNuktaR DevAltDddaNuktaR DevBbaNuktaR DevK.SsaR  
     DevJ.NyaR DevKaR.alt DevKaNuktaR.alt DevJhaR.alt DevJhaNuktaR.alt  
     DevJhaR.alt2 DevJhaNuktaR.alt2 DevTaR.alt DevTaNuktaR.alt DevYaR.alt  
     DevYaNuktaR.alt DevShaR.alt DevShaNuktaR.alt  ] ; 
@@ -379,7 +380,7 @@
 
 @xDevFullCNuktaAboveBaseline = [ DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevCaNukta DevJaNukta DevJhaNukta DevNyaNukta DevNnaNukta  
     DevTaNukta DevThaNukta DevDaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta  
-    DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevBbaNukta  ] ; 
+    DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevAltDddaNukta DevBbaNukta  ] ; 
 
 
 #**********************************

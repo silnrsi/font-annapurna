@@ -965,14 +965,14 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 @cDevConsNarrowLeftofStem2 = [@cDev091FfullTta @cDev0920fullTtha @cDev0926fullDa @cDev0928fullNa @cDev092BfullPha @cDev0939fullHa DevTt.Tta DevTt.Ttha DevTth.Ttha DevD.Da DevD.Wa DevN.Na DevH.Na DevH.La DevH.Wa];
 @cDevConsNarrowRightofStem1 = [@cDev0916fullKha @cDev0917fullGa @cDev0918fullGha @cDev091AfullCa @cDev091CfullJa @cDev091DfullJhaAlt1 @cDev091EfullNya @cDev091FfullTta @cDev0923fullNna @cDev0924fullTa @cDev0925fullTha @cDev0926fullDa @cDev0927fullDha @cDev0928fullNa @cDev092AfullPa @cDev092CfullBa @cDev092DfullBha @cDev092EfullMa @cDev092FfullYa @cDev0930fullRa @cDev0932fullLa @cDev0935fullWa @cDev0936fullSha @cDev0937fullSsa @cDev0938fullSa @cDev0939fullHa DevK.Ssa DevK.SsaR DevK.Ssa.archaic DevC.Ca DevJ.Nya DevJ.NyaR DevT.Ta DevD.Da DevD.Dha DevD.Ma DevD.Ya DevD.Wa DevN.Na DevP.Ta DevM.La DevL.La DevSh.Ca DevSh.Wa DevSs.Tta DevSs.Ttha DevS.Na DevH.Na DevH.Ma DevH.Ya DevH.La DevH.Wa DevH.Ri @cDevConjunctsYaAlt];
 @cDevConsNarrowRightofStem2 = [@cDev0916fullKha @cDev0917fullGa @cDev0918fullGha @cDev0919fullNga @cDev091AfullCa @cDev091BfullCha @cDev091CfullJa @cDev091DfullJha @cDev091EfullNya @cDev091FfullTta @cDev0920fullTtha @cDev0921fullDda @cDev0922fullDdha @cDev0923fullNna @cDev0924fullTa @cDev0925fullTha @cDev0926fullDa @cDev0927fullDha @cDev0928fullNa @cDev092AfullPa @cDev092CfullBa @cDev092DfullBha @cDev092EfullMa @cDev092FfullYa @cDev0930fullRa @cDev0932fullLa @cDev0933fullLla @cDev0935fullWa @cDev0936fullSha @cDev0937fullSsa @cDev0938fullSa @cDev0939fullHa DevK.Ssa DevK.SsaR DevK.Ssa.archaic DevC.Ca DevJ.Nya DevJ.NyaR DevT.Ta DevD.Da DevD.Dha DevD.Ma DevD.Ya DevD.Wa DevN.Na DevP.Ta DevM.La DevL.La DevSh.Ca DevSh.Wa DevSs.Tta DevSs.Ttha DevS.Na DevH.Na DevH.Ma DevH.Ya DevH.La DevH.Wa DevH.Ri @cDevConjunctsYaAlt];
-@cDevFullCForms = [DevKa DevKha DevGa DevGha DevNga DevCa DevCha DevJa DevJha DevNya DevTta DevTtha DevDda DevDdha DevNna DevTa DevTha DevDa DevDha DevNa DevPa DevPha DevBa DevBha DevMa DevYa DevRa DevLa DevLla DevWa DevSha DevSsa DevSa DevHa DevZha DevHeavyYa DevGga DevJja DevDdda DevBba DevGlottalStop DevDdaMarawari];
+@cDevFullCForms = [DevKa DevKha DevGa DevGha DevNga DevCa DevCha DevJa DevJha DevNya DevTta DevTtha DevDda DevDdha DevNna DevTa DevTha DevDa DevDha DevNa DevPa DevPha DevBa DevBha DevMa DevYa DevRa DevLa DevLla DevWa DevSha DevSsa DevSa DevHa DevZha DevHeavyYa DevGga DevJja DevDdda DevAltDdda DevBba DevGlottalStop DevDdaMarawari];
 @cDevFullCForms_noHa_noHalf = [DevKa DevKha DevGa DevGha DevCa DevJa DevJha DevNya DevNna DevTa DevTha DevDha DevNa DevPa DevPha DevBa DevBha DevMa DevYa DevRa DevLa DevLla DevWa DevSha DevSsa DevSa DevGga DevJja DevBba DevGlottalStop DevDdaMarawari];
-@cDevFullCNukta = [DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevNgaNukta DevCaNukta DevChaNukta DevJaNukta DevJhaNukta DevNyaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta DevNnaNukta DevTaNukta DevThaNukta DevDaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta DevHaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevBbaNukta];
-@cDevFullCNuktaRakar = [DevKaNuktaR DevKhaNuktaR DevGaNuktaR DevGhaNuktaR DevNgaNuktaR DevCaNuktaR DevChaNuktaR DevJaNuktaR DevJhaNuktaR DevNyaNuktaR DevTtaNuktaR DevTthaNuktaR DevDdaNuktaR DevDdhaNuktaR DevNnaNuktaR DevTaNuktaR DevThaNuktaR DevDaNuktaR DevDhaNuktaR DevNaNuktaR DevPaNuktaR DevPhaNuktaR DevBaNuktaR DevBhaNuktaR DevMaNuktaR DevYaNuktaR DevLaNuktaR DevLlaNuktaR DevWaNuktaR DevShaNuktaR DevSsaNuktaR DevSaNuktaR DevHaNuktaR DevGgaNuktaR DevJjaNuktaR DevDddaNuktaR DevBbaNuktaR];
+@cDevFullCNukta = [DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevNgaNukta DevCaNukta DevChaNukta DevJaNukta DevJhaNukta DevNyaNukta DevTtaNukta DevTthaNukta DevDdaNukta DevDdhaNukta DevNnaNukta DevTaNukta DevThaNukta DevDaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta DevHaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevAltDddaNukta DevBbaNukta];
+@cDevFullCNuktaRakar = [DevKaNuktaR DevKhaNuktaR DevGaNuktaR DevGhaNuktaR DevNgaNuktaR DevCaNuktaR DevChaNuktaR DevJaNuktaR DevJhaNuktaR DevNyaNuktaR DevTtaNuktaR DevTthaNuktaR DevDdaNuktaR DevDdhaNuktaR DevNnaNuktaR DevTaNuktaR DevThaNuktaR DevDaNuktaR DevDhaNuktaR DevNaNuktaR DevPaNuktaR DevPhaNuktaR DevBaNuktaR DevBhaNuktaR DevMaNuktaR DevYaNuktaR DevLaNuktaR DevLlaNuktaR DevWaNuktaR DevShaNuktaR DevSsaNuktaR DevSaNuktaR DevHaNuktaR DevGgaNuktaR DevJjaNuktaR DevDddaNuktaR DevAltDddaNuktaR DevBbaNuktaR];
 @cDevFullCNukta_noHa_noHalf = [DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevCaNukta DevJaNukta DevJhaNukta DevNyaNukta DevNnaNukta DevTaNukta DevThaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta DevGgaNukta DevJjaNukta DevBbaNukta];
-@cDevFullCRakar = [DevKaR DevKhaR DevGaR DevGhaR DevNgaR DevCaR DevChaR DevJaR DevJhaR DevNyaR DevTtaR DevTthaR DevDdaR DevDdhaR DevNnaR DevTaR DevThaR DevDaR DevDhaR DevNaR DevPaR DevPhaR DevBaR DevBhaR DevMaR DevYaR DevLaR DevLlaR DevWaR DevShaR DevSsaR DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevBbaR];
+@cDevFullCRakar = [DevKaR DevKhaR DevGaR DevGhaR DevNgaR DevCaR DevChaR DevJaR DevJhaR DevNyaR DevTtaR DevTthaR DevDdaR DevDdhaR DevNnaR DevTaR DevThaR DevDaR DevDhaR DevNaR DevPaR DevPhaR DevBaR DevBhaR DevMaR DevYaR DevLaR DevLlaR DevWaR DevShaR DevSsaR DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevAltDddaR DevBbaR];
 @cDevAllCons_Conjuncts = [@cDevFullCForms @cDevFullCNukta @cDevFullCRakar @cDevFullCNuktaRakar @cDevConjuncts @cDevConjunctsYaAlt];
-@cDevFullRakarForms = [DevKaR DevKhaR DevGaR DevGhaR DevNgaR DevCaR DevChaR DevJaR DevJhaR DevNyaR DevTtaR DevTthaR DevDdaR DevDdhaR DevNnaR DevTaR DevThaR DevDaR DevDhaR DevNaR DevPaR DevPhaR DevBaR DevBhaR DevMaR DevYaR DevLaR DevLlaR DevWaR DevShaR DevSsaR DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevBbaR DevKaNuktaR DevKhaNuktaR DevGaNuktaR DevGhaNuktaR DevNgaNuktaR DevCaNuktaR DevChaNuktaR DevJaNuktaR DevJhaNuktaR DevNyaNuktaR DevTtaNuktaR DevTthaNuktaR DevDdaNuktaR DevDdhaNuktaR DevNnaNuktaR DevTaNuktaR DevThaNuktaR DevDaNuktaR DevDhaNuktaR DevNaNuktaR DevPaNuktaR DevPhaNuktaR DevBaNuktaR DevBhaNuktaR DevMaNuktaR DevYaNuktaR DevLaNuktaR DevLlaNuktaR DevWaNuktaR DevShaNuktaR DevSsaNuktaR DevSaNuktaR DevHaNuktaR DevGgaNuktaR DevJjaNuktaR DevDddaNuktaR DevBbaNuktaR DevK.SsaR DevJ.NyaR DevKaR.alt DevKaNuktaR.alt DevJhaR.alt DevJhaNuktaR.alt DevJhaR.alt2 DevJhaNuktaR.alt2 DevTaR.alt DevTaNuktaR.alt DevYaR.alt DevYaNuktaR.alt DevShaR.alt DevShaNuktaR.alt];
+@cDevFullRakarForms = [DevKaR DevKhaR DevGaR DevGhaR DevNgaR DevCaR DevChaR DevJaR DevJhaR DevNyaR DevTtaR DevTthaR DevDdaR DevDdhaR DevNnaR DevTaR DevThaR DevDaR DevDhaR DevNaR DevPaR DevPhaR DevBaR DevBhaR DevMaR DevYaR DevLaR DevLlaR DevWaR DevShaR DevSsaR DevSaR DevHaR DevGgaR DevJjaR DevDddaR DevAltDddaR DevBbaR DevKaNuktaR DevKhaNuktaR DevGaNuktaR DevGhaNuktaR DevNgaNuktaR DevCaNuktaR DevChaNuktaR DevJaNuktaR DevJhaNuktaR DevNyaNuktaR DevTtaNuktaR DevTthaNuktaR DevDdaNuktaR DevDdhaNuktaR DevNnaNuktaR DevTaNuktaR DevThaNuktaR DevDaNuktaR DevDhaNuktaR DevNaNuktaR DevPaNuktaR DevPhaNuktaR DevBaNuktaR DevBhaNuktaR DevMaNuktaR DevYaNuktaR DevLaNuktaR DevLlaNuktaR DevWaNuktaR DevShaNuktaR DevSsaNuktaR DevSaNuktaR DevHaNuktaR DevGgaNuktaR DevJjaNuktaR DevDddaNuktaR DevAltDddaNuktaR DevBbaNuktaR DevK.SsaR DevJ.NyaR DevKaR.alt DevKaNuktaR.alt DevJhaR.alt DevJhaNuktaR.alt DevJhaR.alt2 DevJhaNuktaR.alt2 DevTaR.alt DevTaNuktaR.alt DevYaR.alt DevYaNuktaR.alt DevShaR.alt DevShaNuktaR.alt];
 @cDevFullVowels = [DevVowelShortA DevVowelA DevVowelAA DevVowelI DevVowelII DevVowelU DevVowelUU DevVowelR DevVowelRR DevVowelL DevVowelLL DevVowelCandraE DevVowelShortE DevVowelE DevVowelAI DevVowelCandraO DevVowelShortO DevVowelO DevVowelAU DevVowelCandraA DevVowelOE DevVowelOOE DevVowelAW DevVowelUE DevVowelUUE];
 @cDevFullVowelsNukta = [DevVowelShortANukta DevVowelANukta DevVowelAANukta DevVowelINukta DevVowelIINukta DevVowelUNukta DevVowelUUNukta DevVowelRNukta DevVowelRRNukta DevVowelLNukta DevVowelLLNukta DevVowelCandraENukta DevVowelShortENukta DevVowelENukta DevVowelAINukta DevVowelCandraONukta DevVowelShortONukta DevVowelONukta DevVowelAUNukta DevVowelCandraANukta];
 @cDevFullVowelsNukta_noE_Ai = [DevVowelShortANukta DevVowelANukta DevVowelAANukta DevVowelINukta DevVowelIINukta DevVowelUNukta DevVowelUUNukta DevVowelRNukta DevVowelRRNukta DevVowelLNukta DevVowelLLNukta DevVowelCandraONukta DevVowelShortONukta DevVowelONukta DevVowelAUNukta DevVowelCandraANukta];
@@ -1014,7 +1014,7 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 # amacron emacron itilde imacron eng omacron utilde umacron cturn 
 # drthook schwa epsilonlatin Ismallcap nlftlfthook trthook upsilonlatin vturn etilde 
 # -----
-@xDevFullCNuktaAboveBaseline = [DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevCaNukta DevJaNukta DevJhaNukta DevNyaNukta DevNnaNukta DevTaNukta DevThaNukta DevDaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevBbaNukta];
+@xDevFullCNuktaAboveBaseline = [DevKaNukta DevKhaNukta DevGaNukta DevGhaNukta DevCaNukta DevJaNukta DevJhaNukta DevNyaNukta DevNnaNukta DevTaNukta DevThaNukta DevDaNukta DevDhaNukta DevNaNukta DevPaNukta DevPhaNukta DevBaNukta DevBhaNukta DevMaNukta DevYaNukta DevRaNukta DevLaNukta DevLlaNukta DevWaNukta DevShaNukta DevSsaNukta DevSaNukta DevGgaNukta DevJjaNukta DevDddaNukta DevAltDddaNukta DevBbaNukta];
 #**********************************
 #  Language Systems
 #**********************************
@@ -1143,6 +1143,7 @@ lookup Nukta {
     sub DevGga DevNukta by DevGgaNukta;
     sub DevJja DevNukta by DevJjaNukta;
     sub DevDdda DevNukta by DevDddaNukta;
+    sub DevAltDdda DevNukta by DevAltDddaNukta;
     sub DevBba DevNukta by DevBbaNukta;
 } Nukta;
 
@@ -1263,6 +1264,7 @@ lookup dev2_ConsRakarFullForms {
     sub DevGga DevHalant DevRa by DevGgaR;
     sub DevJja DevHalant DevRa by DevJjaR;
     sub DevDdda DevHalant DevRa by DevDddaR;
+    sub DevAltDdda DevHalant DevRa by DevAltDddaR;
     sub DevBba DevHalant DevRa by DevBbaR;
     sub DevKaNukta DevHalant DevRa by DevKaNuktaR;
     sub DevKhaNukta DevHalant DevRa by DevKhaNuktaR;
@@ -1302,6 +1304,7 @@ lookup dev2_ConsRakarFullForms {
     sub DevGgaNukta DevHalant DevRa by DevGgaNuktaR;
     sub DevJjaNukta DevHalant DevRa by DevJjaNuktaR;
     sub DevDddaNukta DevHalant DevRa by DevDddaNuktaR;
+    sub DevAltDddaNukta DevHalant DevRa by DevAltDddaNuktaR;
     sub DevBbaNukta DevHalant DevRa by DevBbaNuktaR;
     sub DevK.Ssa DevHalant DevRa by DevK.SsaR;
     sub DevJ.Nya DevHalant DevRa by DevJ.NyaR;
@@ -1407,6 +1410,8 @@ lookup deva_HalfForms {
     sub DevJjaNukta DevHalant by DevHalfJjaNukta;
     sub DevDdda DevHalant by DevHalfDdda;
     sub DevDddaNukta DevHalant by DevHalfDddaNukta;
+    sub DevAltDdda DevHalant by DevHalfAltDdda;
+    sub DevAltDddaNukta DevHalant by DevHalfAltDddaNukta;
     sub DevBba DevHalant by DevHalfBba;
     sub DevBbaNukta DevHalant by DevHalfBbaNukta;
     sub DevNna.archaic DevHalant by DevHalfNna.archaic;
@@ -1587,6 +1592,7 @@ lookup deva_ConsRakarFullForms {
     sub DevGga DevRaVattu by DevGgaR;
     sub DevJja DevRaVattu by DevJjaR;
     sub DevDdda DevRaVattu by DevDddaR;
+    sub DevAltDdda DevRaVattu by DevAltDddaR;
     sub DevBba DevRaVattu by DevBbaR;
     sub DevKaNukta DevRaVattu by DevKaNuktaR;
     sub DevKhaNukta DevRaVattu by DevKhaNuktaR;
@@ -1626,6 +1632,7 @@ lookup deva_ConsRakarFullForms {
     sub DevGgaNukta DevRaVattu by DevGgaNuktaR;
     sub DevJjaNukta DevRaVattu by DevJjaNuktaR;
     sub DevDddaNukta DevRaVattu by DevDddaNuktaR;
+    sub DevAltDddaNukta DevRaVattu by DevAltDddaNuktaR;
     sub DevBbaNukta DevRaVattu by DevBbaNuktaR;
     sub DevK.Ssa DevRaVattu by DevK.SsaR;
     sub DevJ.Nya DevRaVattu by DevJ.NyaR;
@@ -1983,6 +1990,8 @@ lookup dev2_NoHalfHalantForms {
     sub DevDaNukta DevHalant by DevHalfDaNukta;
     sub DevDdda DevHalant by DevHalfDdda;
     sub DevDddaNukta DevHalant by DevHalfDddaNukta;
+    sub DevAltDdda DevHalant by DevHalfAltDdda;
+    sub DevAltDddaNukta DevHalant by DevHalfAltDddaNukta;
 } dev2_NoHalfHalantForms;
 
 # ------------------------------- Special case -------------------------------
