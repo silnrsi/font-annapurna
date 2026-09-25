@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevHalfAltDddaNukta" format="2">
-  <advance width="1357"/>
+  <advance width="1129"/>
   <anchor x="678" y="-612" name="LowerAlt"/>
-  <anchor x="940" y="1330" name="Upper"/>
+  <anchor x="850" y="1330" name="Upper"/>
   <anchor x="582" y="1390" name="UpperCenter"/>
   <outline>
     <component base="DevAltDdda"/>
-    <component base="DevHalant" xOffset="1130" yOffset="-172"/>
-    <component base="DevNukta" xOffset="454" yOffset="419"/>
+    <component base="DevHalant" xOffset="940" yOffset="-172"/>
+    <component base="DevNukta" xOffset="624" yOffset="419"/>
   </outline>
   <lib>
     <dict>

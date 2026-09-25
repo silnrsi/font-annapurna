@@ -44,6 +44,9 @@
     <string>/sixsuperior/ninesuperior/euro/trademark/fi/fl</string>
     <string>/DevHalfBbaNuktaR/DevHalfBba/DevHalfBbaR</string>
     <string>/DevDoubleDanda/DevHeadMark/DevHeadMarkHeadstoke/DevSignBhale/DevSignBhaleHook/DevSignBhaleExtended/DevSignBhaleExtendedHook/DevSignBhaleWesternFive/DevSignBhaleWesternNine/DevSignBhaleReversedNine/DevSignMindu/DevPa/DevVowelE/DevGa/DevHalfNna.archaic/DevHalfSa/DevShaR/DevNna/DevSignBhaleReversedNine/DevDoubleDanda</string>
+    <string>/DevDdda/DevDddaNukta/DevHalfDddaNukta/DevDddaNuktaR/DevHalfDdda/DevDddaR 
+/DevAltDdda/DevHalfAltDddaNukta/DevAltDddaNuktaR/DevHalfAltDdda/DevAltDddaR 
+/DevDa/DevDaNukta/DevHalfDaNukta/DevDaNuktaR/DevHalfDa</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>

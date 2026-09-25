@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="DevHalfAltDdda" format="2">
-  <advance width="1357"/>
+  <advance width="1129"/>
   <anchor x="678" y="-638" name="LowerAlt"/>
-  <anchor x="940" y="1356" name="Upper"/>
+  <anchor x="850" y="1356" name="Upper"/>
   <anchor x="582" y="1416" name="UpperCenter"/>
   <outline>
     <component base="DevAltDdda"/>
-    <component base="DevHalant" xOffset="1130" yOffset="-173"/>
+    <component base="DevHalant" xOffset="940" yOffset="-173"/>
   </outline>
   <lib>
     <dict>
