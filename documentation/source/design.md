@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Design and Type Sample
-fontversion: 3.000
+fontversion: 3.100
 ---
 
 Annapurna SIL is optimized for readability in long printed documents. Inspired by traditional calligraphic forms, the design is intended to be highly readable, reasonably compact, and visually attractive.
@@ -60,7 +60,7 @@ U+A8F0..U+A8FF| <span class='annapurna-R normal'> &#x25CC;꣰ &#x25CC;꣱	ꣲ	�
 
 Unicode range | Unicode characters                       
 :-------------| :---------------------------
-U+11B00..U+11B09| <span class='annapurna-R normal'> 𑬀 𑬁 𑬂 𑬃 𑬄 𑬅 𑬆 𑬇 𑬈 𑬉  </span>
+U+11B00..U+11B0A| <span class='annapurna-R normal'> 𑬀 𑬁 𑬂 𑬃 𑬄 𑬅 𑬆 𑬇 𑬈 𑬉 𑬊  </span>
 
 #### Currency symbols
 

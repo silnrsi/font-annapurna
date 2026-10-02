@@ -1,6 +1,6 @@
 ---
 title: Annapurna SIL - Font Features
-fontversion: 3.000
+fontversion: 3.100
 ---
 
 Annapurna SIL is an OpenType-enabled font family that supports the Devanagari script. It includes a number of optional user-selected features that may be useful or required for particular uses or languages. These OpenType features are primarily specified using four-letter tags (e.g. 'cv04' or 'ss04') to display variant characters or specific behavior. Certain apps, such as web browsers, can also use language tags to display all the language-specific variants and behaviors.
